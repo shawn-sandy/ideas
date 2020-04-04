@@ -3,21 +3,17 @@ module.exports = function(eleventyConfig) {
     notify: true,
     open: true
   });
-  eleventyConfig.addPassthroughCopy({
-    "**/src/styles/*.css": "styles"
-  });
+  eleventyConfig.addPassthroughCopy("**/dist/styles/css");
+  eleventyConfig.addPassthroughCopy("**/dist/js");
+  eleventyConfig.addPassthroughCopy("**/dist/images");
 
-  eleventyConfig.addPassthroughCopy({
-    "**/src/js/*.js": "js"
-  });
-
-  eleventyConfig.addPassthroughCopy({
-    "**/src/images/**.*": "images"
-  });
+  eleventyConfig.addPassthroughCopy("system/styles/css", "css");
+  eleventyConfig.addPassthroughCopy("system/js/*.js", "js");
+  eleventyConfig.addPassthroughCopy("system/images", "images");
 
   return {
     dir: {
-      output: "./dist",
+      output: "./www",
       input: ".",
       includes: "/system/_includes",
       data: "/system/_data"
