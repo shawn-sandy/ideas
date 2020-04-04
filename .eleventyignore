@@ -1,5 +1,8 @@
 README.md
-_drafts/
-_partials/
-src
-node_modules
+**/_drafts
+**/_partials
+**/src
+**/dist
+**/public
+node_modules/
+**/node_modules
