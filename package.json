@@ -11,7 +11,10 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
     "auto-changelog": "^1.16.2",
-    "lerna": "^3.20.2"
+    "flat-cache": "^2.0.1",
+    "fs": "0.0.1-security",
+    "lerna": "^3.20.2",
+    "node-fetch": "^2.6.0"
   },
   "auto-changelog": {
     "unreleased": true,
