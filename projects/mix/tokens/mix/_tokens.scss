@@ -1,0 +1,29 @@
+
+/*
+  Do not edit directly
+  Generated on Fri, 17 Jan 2020 05:27:38 GMT
+*/
+
+$sg-default-swatch-width: 100% !default;
+$sg-default-swatch-min-height: 60px !default;
+$sg-default-swatch-padding: 10px !default;
+$sg-component-swatch-min-height: 60px !default;
+$sg-component-swatch-width: 100% !default;
+$sg-component-swatch-padding: 10px !default;
+
+$tokens: (
+  'default': (
+    'swatch': (
+      'width': $sg-default-swatch-width,
+      'min-height': $sg-default-swatch-min-height,
+      'padding': $sg-default-swatch-padding
+    )
+  ),
+  'component': (
+    'swatch': (
+      'min-height': $sg-component-swatch-min-height,
+      'width': $sg-component-swatch-width,
+      'padding': $sg-component-swatch-padding
+    )
+  )
+);

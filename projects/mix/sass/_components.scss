@@ -1,0 +1,152 @@
+/// gets a map.key and outputs css rules
+@mixin map-component($key, $map: $mix-tokens, $prefix: "-") {
+  $maps: get($key, $map);
+
+  @each $item, $value in $maps {
+    @if is-modifier-state($item) {
+      @if type-of($value) == "map" {
+        &:#{$item} {
+          @each $c-key, $c-value in $value {
+            #{$c-key}: $c-value;
+          }
+        }
+      }
+    } @else if type-of($value) == "map" {
+      &#{$prefix}#{$item} {
+        @include map-component("#{$key}.#{$item}");
+      }
+    } @else {
+      #{$item}: $value;
+      @if type-of($value) == "color" {
+        &#{$prefix}hover\:#{$item} {
+          &:hover {
+            #{$item}: transparentize($value, 0.2) !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+/// grabs multiple components and generates rules using the map-component mixin
+@mixin _mix-component(
+  $components: $mix-components,
+  $map: $mix-tokens,
+  $prefix: $mix-prefix
+) {
+  $maps: map-get($map, $components);
+
+  @if type-of($maps) == "map" {
+    @each $key, $val in $maps {
+      // @error "#{s}.#{$key}";
+      &#{$prefix}#{$key} {
+        @include map-component("#{components}.#{$key}", $map);
+      }
+    }
+  }
+}
+
+/// output component key/values as class properties
+/// mix with existing class or generate new ones
+/// .class-name { mix-modifiers(buttons.btn) }
+@mixin mix-modifier($key, $map: $mix-tokens) {
+  $token: get($key, $map);
+
+  @if length($token) >=0 {
+    @each $item, $value in $token {
+      @if type-of($value) == "map" {
+        @if is-modifier-state($item) {
+          &:#{$item} {
+            @include mix-modifier("#{$key}.#{$item}");
+          }
+        } @else {
+          &#{$mix-prefix}#{$item} {
+            @include mix-modifier("#{$key}.#{$item}");
+          }
+        }
+      } @else {
+        @if is-modifier-state($item) {
+          &:#{$item} {
+            #{$item}: $value;
+          }
+        } @else {
+          #{$item}: $value;
+        }
+      }
+    }
+  }
+}
+
+@mixin mix-rules($key, $map: $mix-tokens) {
+  @include mix-modifier($key, $map);
+}
+
+@mixin mix-add($args...) {
+  @if length($args) >= 1 {
+    @each $key in $args {
+      @include mix-modifier($item);
+    }
+  }
+}
+
+/// generate rules from multiple classes using mix-modifier()
+/// mix-styles(btn, links)
+@mixin mix-styles($keys...) {
+  @if length($keys) >=1 {
+    @each $item in $keys {
+      @include mix-modifier($item);
+    }
+  }
+}
+
+// generate classes from component key in your map
+// @include build-components()
+@mixin build-components($component: $mix-components) {
+  $components: get($component, $mix-tokens);
+  // check if length greater that 0 the proceed else throw error
+  @if length($components) >=0 {
+    // check if comps loop through components
+    @each $comp, $keys in $components {
+      @if type-of($keys) == "map" {
+        .#{if($mix-namespace != "null", #{$mix-namespace}#{$mix-prefix}, ""),
+        }#{$comp} {
+          @each $key, $value in $keys {
+            @if type-of($value) == "map" {
+              @if is-modifier-state($key) {
+                &:#{$key} {
+                  @include build-components("#{$component}.#{$comp}.#{$key}");
+                }
+              } @else {
+                &#{$mix-prefix}#{$key} {
+                  @include build-components("#{$component}.#{$comp}.#{$key}");
+                }
+              }
+            } @else {
+              // #{$key}: $value;
+              @if is-modifier-state($key) {
+                &:#{$key} {
+                  #{$key}: $value;
+                }
+              } @else {
+                #{$key}: $value;
+              }
+            }
+          }
+        }
+      } @else {
+        // @debug "Error sass map required";
+        #{$comp}: $keys;
+      }
+    }
+  } @else {
+    @debug "Sorry your map(s) is empty";
+  }
+}
+
+// Quickly generate classes for components from token keys using build-components()
+// mix-build-components("buttons', 'cards')
+@mixin mix-components($tokens...) {
+  @each $token in $tokens {
+    @include build-components($token);
+  }
+}

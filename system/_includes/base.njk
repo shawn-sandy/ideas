@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@shawnsandy/bootstrap-lite@0.0.20/dist/bootstrap-lite.min.css">
+    <link rel="stylesheet" href="/styles/styles.min.css">
+    {% if stylesheets %}
+    {% for style in stylesheets %}
+    <link rel="stylesheet" href="{{ style }}" />
+    {% endfor %}
+    {% endif %}
+    {% block head %}
+    {% endblock %}
+    <style>
+
+    </style>
+</head>
+
+<body class="ss-bg-classic-blue">
+    {#% include "partials/no-ie.html" %#}
+    <!-- header -->
+    {% block header %} {% endblock %}
+    <!-- main content -->
+    {% block main %}
+    <main class="container-fluid ss-bg-white">
+        <section class="row ss-cover ">
+            {% block content %}
+            <div class="w-100 d-flex justify-content-center align-items-center">
+                <div class="wrapper text-center">
+                    <object id="logo-svg" class="py-5" type="image/svg+xml" data="/images/Design.svg"></object>
+                    <p id="lead-text" class="text-left- welcome ss-classic-blue ss-classic-blue-hover">
+                        I’m a FULL STACK DESIGNER & WEB DEVELOPER, with a passion for building Web Applications that
+                        actively engages users in responsive thought.
+                    </p>
+                </div>
+            </div>
+
+            {% endblock %}
+        </section>
+
+    </main>
+    {% endblock %}
+    <!-- footer -->
+    {% block footer %} {% endblock %}
+    <!-- scripts  -->
+    {#% include "./partials/footer-scripts.html" %#}
+    {% if scripts %}
+    {% for script in scripts %}
+    <script src="{{ script }}"></script>
+    {% endfor %}
+    {% endif %}
+</body>
+
+</html>

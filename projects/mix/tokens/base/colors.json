@@ -1,0 +1,68 @@
+{
+  "color": {
+    "black": {
+      "value": "#000000"
+    },
+    "white": {
+      "value": "#ffffff"
+    },
+    "gray": {
+      "value": "#6a737d"
+    },
+    "red": {
+      "value": "#d73a49"
+    },
+    "blue": {
+      "value": "#0366d6"
+    },
+    "orange": {
+      "value": "#f66a0a"
+    },
+    "yellow": {
+      "value": "#ffd33d"
+    },
+    "green": {
+      "value": "#28a745"
+    },
+    "olive": {
+      "value": "#B5CC18"
+    },
+    "teal": {
+      "value": "#00B5AD"
+    },
+    "violet": {
+      "value": "#6435C9"
+    },
+    "purple": {
+      "value": "#A333C8"
+    },
+    "pink": {
+      "value": "#E03997"
+    },
+    "brown": {
+      "value": "#A5673F"
+    },
+    "ui": {
+      "primary": {
+        "value": "#0366D6",
+        "comment": "Primary branding color used for the logo, feature text/foreground elements"
+      },
+      "secondary": {
+        "value": "#070707",
+        "comment": "Secondary branding color used for backgrounds to emphasis the lift the Primary brand color"
+      },
+      "light": {
+        "value": "#FEFCFC",
+        "comment": "Primary text on dark colors"
+      },
+      "text": {
+        "value": "#707070",
+        "comment": "Primary text color"
+      },
+      "black-smoke": {
+        "value": "#0F0F0F",
+        "comment": "Dark overlays and backgrounds"
+      }
+    }
+  }
+}

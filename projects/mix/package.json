@@ -1,0 +1,45 @@
+{
+  "name": "@shawnsandy/mix",
+  "version": "0.7.3",
+  "description": "StyleMix--A toolkit for generating utility classes, components and styles-sheets for your design system, style-guide or website from SASS MAPS",
+  "keywords": [
+    "SASS",
+    "SASS-MAPS",
+    "CSS",
+    "SASS-Minxins",
+    "Design Systems",
+    "Design Tokens"
+  ],
+  "author": "shawnsandy <shawnsandy04@gmail.com>",
+  "homepage": "https://github.com/shawn-sandy/idea/tree/master/_components/mix#stylemix",
+  "license": "MIT",
+  "main": "index.scss",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shawn-sandy/idea.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "tokens": "style-dictionary build --config ./config/tokens.js && gulp sass",
+    "test-tokens": "style-dictionary build --config ./config/config.js && gulp sass",
+    "mix-tokens": "style-dictionary build --config ./config/mix-tokens.js && gulp sass",
+    "build": "npm run tokens && gulp sass"
+  },
+  "bugs": {
+    "url": "https://github.com/shawn-sandy/idea/issues"
+  },
+  "devDependencies": {
+    "es-dev-server": "^1.18.3",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sizereport": "^1.2.1",
+    "snowpack": "^1.4.0",
+    "style-dictionary": "^2.8.2"
+  },
+  "gitHead": "48c83e4fb5bcad0ddd74eb1771f876f487ff1538"
+}
