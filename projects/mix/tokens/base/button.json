@@ -1,0 +1,45 @@
+{
+  "button-padding": {
+    "value": "0 1.5rem"
+  },
+  "buttons": {
+    "btn": {
+      "height": {
+        "value": "2.5rem"
+      },
+      "padding": {
+        "value": "{button-padding.value}"
+      },
+      "display": {
+        "value": "inline-block"
+      },
+      "text-align": {
+        "value": "center"
+      },
+      "transition": {
+        "value": "all .2s"
+      },
+      "border": {
+        "value": "none"
+      },
+      "focus": {
+        "border": {
+          "value": "none"
+        },
+        "outline": {
+          "value": "none"
+        }
+      },
+      "pill": {
+        "border-radius": {
+          "value": "9999rem"
+        }
+      },
+      "rounded": {
+        "border-radius": {
+          "value": "0.31rem"
+        }
+      }
+    }
+  }
+}
