@@ -1,0 +1,24 @@
+{
+  "name": "ideas",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy",
+    "changelog": "auto-changelog -p --template config/_changelog.hbs"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "auto-changelog": "^1.16.2",
+    "lerna": "^3.20.2"
+  },
+  "auto-changelog": {
+    "unreleased": true,
+    "template": "config/_changelog.hbs"
+  },
+  "main": "index.js",
+  "repository": "https://github.com/shawn-sandy/idea.git",
+  "author": "shawnsandy <shawnsandy04@gmail.com>",
+  "license": "MIT"
+}
