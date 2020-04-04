@@ -1,7 +1,7 @@
 {
   "packages": [
     "projects/*",
-    "core/*"
+    "apps/*"
   ],
   "version": "independent"
 }
