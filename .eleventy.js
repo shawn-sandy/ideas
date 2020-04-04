@@ -1,7 +1,8 @@
-const fs = require("fs")
+const fs = require("fs");
 
+const htmlmin = require("html-minifier");
 
-module.exports = function (eleventyConfig) {
+module.exports = function(eleventyConfig) {
   eleventyConfig.setBrowserSyncConfig({
     notify: true,
     open: true,
@@ -26,6 +27,19 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("system/styles/css", "css");
   eleventyConfig.addPassthroughCopy("system/js/*.js", "js");
   eleventyConfig.addPassthroughCopy("system/images", "images");
+
+  // Minify our HTML
+  eleventyConfig.addTransform("htmlmin", (content, outputPath) => {
+    if (outputPath.endsWith(".html")) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true
+      });
+      return minified;
+    }
+    return content;
+  });
 
   return {
     dir: {
