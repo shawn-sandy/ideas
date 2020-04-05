@@ -1,2 +1,3 @@
 # ideas
-A toolkit for creating and managing digital products--design systems, pattern libraries, style-guides, etc.
+
+A toolkit for creating and managing digital products--design systems, pattern libraries, style-guides and websites.
