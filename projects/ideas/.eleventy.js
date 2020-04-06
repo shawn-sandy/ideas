@@ -1,3 +1,4 @@
+//  eleventyConfig.addPlugin(require("@shawnsandy/ideas"));
 const elements = require("./lib/elements");
 const forms = require("./lib/form");
 const shared = require("./lib/shared");
