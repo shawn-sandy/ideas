@@ -12,6 +12,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@shawnsandy/bootstrap-lite@0.0.20/dist/bootstrap-lite.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;800&family=Roboto:ital,wght@0,400;0,500;0,900;1,500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/styles/styles.min.css">
     {% if stylesheets %}
     {% for style in stylesheets %}
@@ -20,23 +23,28 @@
     {% endif %}
     {% block head %}
     {% endblock %}
-    <style>
-
-    </style>
+    <!-- page styles -->
+    {% include "partials/ideas/styles.njk" %}
 </head>
 
-<body class="ss-bg-classic-blue">
+<body class="ss-bg-classic-blue min-vh-100">
     {#% include "partials/no-ie.html" %#}
+    <!-- nav -->
+    {% include "partials/main-nav.njk" %}
     <!-- header -->
-    {% block header %} {% endblock %}
+    {% block header %}
+
+    {% include "partials/hero.njk" %}
+
+    {% endblock %}
+
     <!-- main content -->
     {% block main %}
     <main class="container-fluid ss-bg-white">
         <section class="row ss-cover ">
             {% block content %}
-            <div class="w-100 d-flex justify-content-center align-items-center">
+            <div class="w-100 vh-50 d-flex justify-content-center align-items-center">
                 <div class="wrapper text-center">
-                    <object id="logo-svg" class="py-5" type="image/svg+xml" data="/images/Design.svg"></object>
                     <p id="lead-text" class="text-left- welcome ss-classic-blue ss-classic-blue-hover">
                         I’m a FULL STACK DESIGNER & WEB DEVELOPER, with a passion for building Web Applications that
                         actively engages users in responsive thought.
@@ -46,7 +54,6 @@
 
             {% endblock %}
         </section>
-
     </main>
     {% endblock %}
     <!-- footer -->

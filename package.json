@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
-    "auto-changelog": "^1.16.2",
+    "auto-changelog": "^1.16.4",
     "flat-cache": "^2.0.1",
     "fs": "0.0.1-security",
     "html-minifier": "^4.0.0",
