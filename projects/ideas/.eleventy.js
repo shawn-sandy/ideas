@@ -7,7 +7,7 @@ module.exports = (eleventy, options = {}) => {
   /**
    * Collections
    */
-  eleventy.addCollection("all", collection => {
+  eleventy.addCollection("all", (collection) => {
     return shared.getAll(collection);
   });
 

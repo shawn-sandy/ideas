@@ -1,15 +1,23 @@
 {
-    "title": "Your Blog Name",
-    "url": "https://myurl.com/",
-    "description": "I am writing about my experiences as a naval navel-gazer.",
+    "title": "idea~.",
+    "url": "https://proideas.dev/",
+    "description": "Turn your vision into products.",
     "feed": {
-        "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+        "subtitle": "IDEA(beta) is a toolkit (framework if you prefer) for creating and managing digital products",
         "filename": "feed.xml",
         "path": "/feed/feed.xml",
-        "id": "https://myurl.com/"
+        "id": "https://proideas.dev/"
     },
     "author": {
-        "name": "Your Name Here",
-        "email": "youremailaddress@example.com"
-    }
+        "name": "Shawn Sandy",
+        "email": "shawnsandy@proideas.dev"
+    },
+    "styles": [
+        "https://cdn.jsdelivr.net/npm/@shawnsandy/bootstrap-lite@0.0.20/dist/bootstrap-lite.min.css",
+        "https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;800&family=Roboto:ital,wght@0,400;0,500;0,900;1,500&display=swap",
+        "/styles/styles.min.css"
+    ],
+    "scripts": [
+        "https://cdn.jsdelivr.net/npm/vue@2.6.11"
+    ]
 }

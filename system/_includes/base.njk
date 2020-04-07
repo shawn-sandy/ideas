@@ -10,12 +10,12 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@shawnsandy/bootstrap-lite@0.0.20/dist/bootstrap-lite.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;800&family=Roboto:ital,wght@0,400;0,500;0,900;1,500&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/styles/styles.min.css">
+    <title>{{ metadata.title }} | {{ metadata.description }}</title>
+    <!-- settings style -->
+    {% for styles in metadata.styles %}
+    <link href="{{ styles }}" rel="stylesheet">
+    {% endfor %}
+    <!-- custom stylesheets -->
     {% if stylesheets %}
     {% for style in stylesheets %}
     <link rel="stylesheet" href="{{ style }}" />
@@ -58,7 +58,10 @@
     {% endblock %}
     <!-- footer -->
     {% block footer %} {% endblock %}
-    <!-- scripts  -->
+    <!-- scripts - replaced jquery with vue -->
+    {% for js in metadata.scripts %}
+    <script src="{{ js }}"></script>
+    {% endfor %}
     {#% include "./partials/footer-scripts.html" %#}
     {% if scripts %}
     {% for script in scripts %}
