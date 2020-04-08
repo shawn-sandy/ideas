@@ -1,6 +1,7 @@
 {
   "name": "@local/debug",
   "version": "1.0.1",
+  "private": true,
   "description": "> TODO: description",
   "author": "Shawn Sandy <38263979+shawn-sandy@users.noreply.github.com>",
   "homepage": "https://github.com/shawn-sandy/ideas#readme",
@@ -13,6 +14,9 @@
   "files": [
     "lib"
   ],
+  "publishConfig": {
+    "access": "private"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
     "@shawnsandy/ideas": "^0.1.3",
@@ -35,5 +39,6 @@
   },
   "bugs": {
     "url": "https://github.com/shawn-sandy/ideas/issues"
-  }
+  },
+  "gitHead": "d52d29e8fcf09f9a45e7399ad47e0b2f2576c1ba"
 }
