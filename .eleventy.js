@@ -2,12 +2,12 @@ const fs = require("fs");
 
 const htmlmin = require("html-minifier");
 
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   eleventyConfig.setBrowserSyncConfig({
     notify: true,
     open: true,
     callbacks: {
-      ready: function(err, bs) {
+      ready: function (err, bs) {
         bs.addMiddleware("*", (req, res) => {
           const content_404 = fs.readFileSync("www/404.html");
           // Provides the 404 content without redirect.
@@ -17,8 +17,8 @@ module.exports = function(eleventyConfig) {
           res.writeHead(404);
           res.end();
         });
-      }
-    }
+      },
+    },
   });
   eleventyConfig.addPassthroughCopy("**/dist/styles/css");
   eleventyConfig.addPassthroughCopy("**/dist/js");
@@ -28,13 +28,15 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("system/js/*.js", "js");
   eleventyConfig.addPassthroughCopy("system/images", "images");
 
+  eleventyConfig.addPlugin(require("@shawnsandy/ideas"));
+
   // Minify our HTML
   eleventyConfig.addTransform("htmlmin", (content, outputPath) => {
     if (outputPath.endsWith(".html")) {
       let minified = htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
-        collapseWhitespace: true
+        collapseWhitespace: true,
       });
       return minified;
     }
@@ -46,12 +48,12 @@ module.exports = function(eleventyConfig) {
       output: "./www",
       input: ".",
       includes: "/system/_includes",
-      data: "/system/_data"
+      data: "/system/_data",
     },
     templateFormats: ["njk", "html"],
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk",
     passthroughFileCopy: true,
-    pathPrefix: "/"
+    pathPrefix: "/",
   };
 };

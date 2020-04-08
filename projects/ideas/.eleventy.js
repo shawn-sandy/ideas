@@ -50,9 +50,4 @@ module.exports = (eleventy, options = {}) => {
   /**
    * Plugins
    */
-
-  // adds Mo
-  eleventy.addPlugin(require("./modular"));
-  // adds atomic modules as collections
-  eleventy.addPlugin(require("./atomic"));
 };
