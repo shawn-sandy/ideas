@@ -1,0 +1,39 @@
+{
+  "name": "@local/debug",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "Shawn Sandy <38263979+shawn-sandy@users.noreply.github.com>",
+  "homepage": "https://github.com/shawn-sandy/ideas#readme",
+  "license": "ISC",
+  "main": "lib/debug.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "@shawnsandy/ideas": "0.1.2",
+    "@shawnsandy/mix": "^0.7.3",
+    "auto-changelog": "^1.16.4",
+    "flat-cache": "^2.0.1",
+    "fs": "0.0.1-security",
+    "html-minifier": "^4.0.0",
+    "node-fetch": "^2.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shawn-sandy/ideas.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy",
+    "changelog": "auto-changelog -p --template config/_changelog.hbs"
+  },
+  "bugs": {
+    "url": "https://github.com/shawn-sandy/ideas/issues"
+  }
+}
