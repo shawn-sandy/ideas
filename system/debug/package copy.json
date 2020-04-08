@@ -10,8 +10,8 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
-    "@shawnsandy/ideas": "0.1.4",
-    "@shawnsandy/mix": "^0.7.6",
+    "@shawnsandy/ideas": "0.1.2",
+    "@shawnsandy/mix": "^0.7.3",
     "auto-changelog": "^1.16.4",
     "flat-cache": "^2.0.1",
     "fs": "0.0.1-security",

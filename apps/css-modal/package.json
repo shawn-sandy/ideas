@@ -1,0 +1,47 @@
+{
+  "name": "@shawnsandy/css-modal",
+  "version": "0.3.4",
+  "scripts": {
+    "start": "es-dev-server --compatibility all --legacy --app-index index.html --node-resolve --open",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "core-js": "^3.2.1",
+    "vue": "^2.6.10"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "devDependencies": {
+    "@vue/cli-service": "^3.11.0",
+    "browser-sync": "^2.26.7",
+    "es-dev-server": "^1.18.0",
+    "snowpack": "^1.4.0"
+  },
+  "gitHead": "d52d29e8fcf09f9a45e7399ad47e0b2f2576c1ba"
+}
