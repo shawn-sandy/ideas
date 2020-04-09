@@ -1,0 +1,50 @@
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+}
+body {
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
+}
+
+.roboto {
+  &-bold {
+    font-weight: 700;
+  }
+  &-black {
+    font-weight: 900;
+  }
+}
+
+.roboto-slab {
+  font-weight: 500;
+
+  &-bold {
+    font-weight: 200;
+  }
+}
+/** Import tokens, replace the import file below with your own **/
+@import "node_modules/@shawnsandy/mix/tokens/tokens";
+
+/** Config StyleMix SASS defaults */
+
+$mix-tokens: $tokens; // token variable name
+$mix-namespace: "ui"; // namespace
+$mix-base: "base"; // default utility name
+$mix-colors: "color"; // color key
+$mix-fonts: "fonts"; // font key
+$mix-spacing: "spacing"; // padding and margin
+$mix-sizing: "sizing"; //  width heights
+$mix-prefix: "-"; // separator for you class names my-class-name
+$mix-components: "components"; // default component key
+$mix-modifier-states: active focus focus-within hover visited; // define the states that you use
+$mix-color-attrs: "color", "background-color", "border-color";
+
+/** import stylemix **/
+@import "node_modules/@shawnsandy/mix/index";
+
+/** utility mixin example--create font utility form our tokens **/
+.ui {
+  @include mix-utilities("font");
+}
