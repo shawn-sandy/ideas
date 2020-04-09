@@ -6,7 +6,6 @@ const autoprefixer = require("gulp-autoprefixer");
 const minify = require("gulp-clean-css");
 const sass = require("gulp-sass");
 const shell = require("gulp-shell");
-const srcToJson = require("scsstojson");
 const rename = require("gulp-rename");
 
 /**
@@ -14,7 +13,7 @@ const rename = require("gulp-rename");
   for the sake of clarity.
  */
 require("require-dir")("./gulp");
-// require("require-dir")("node_modules/@shawnsandy/mix/gulp/");
+// require("require-dir")("./node_modules/@shawnsandy/mix/gulp/");
 
 gulp.task("default", function (done) {
   console.log("Gulp default");
@@ -30,14 +29,14 @@ gulp.task("sass", () =>
     ])
     .pipe(sass().on("error", sass.logError))
     .pipe(autoprefixer())
-    .pipe(gulp.dest("./www/css/"))
+    .pipe(gulp.dest("./www"))
     .pipe(minify())
     .pipe(
       rename({
         suffix: ".min",
       })
     )
-    .pipe(gulp.dest("./www/css/"))
+    .pipe(gulp.dest("./www/"))
     .pipe(reports({ gzip: true }))
 );
 
