@@ -15,9 +15,19 @@
     "auto-changelog": "^1.16.4",
     "flat-cache": "^2.0.1",
     "fs": "0.0.1-security",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-print": "^5.0.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-shell": "^0.8.0",
+    "gulp-sizereport": "^1.2.1",
+    "gulp-string-replace": "^1.1.2",
     "html-minifier": "^4.0.0",
     "lerna": "^3.20.2",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.0",
+    "require-dir": "^1.2.0",
+    "scsstojson": "^1.0.2"
   },
   "auto-changelog": {
     "unreleased": true,

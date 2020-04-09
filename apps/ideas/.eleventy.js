@@ -10,6 +10,7 @@ module.exports = (eleventy, options = {}) => {
   eleventy.addCollection("all", (collection) => {
     return shared.getAll(collection);
   });
+  218;
 
   /**
    * Shortcodes
