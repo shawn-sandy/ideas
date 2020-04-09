@@ -13,12 +13,8 @@ const rename = require("gulp-rename");
   for the sake of clarity.
  */
 require("require-dir")("./gulp");
-// require("require-dir")("./node_modules/@shawnsandy/mix/gulp/");
+require("require-dir")("./node_modules/@shawnsandy/mix/gulp/");
 
-gulp.task("default", function (done) {
-  console.log("Gulp default");
-  done();
-});
 
 gulp.task("sass", () =>
   gulp
