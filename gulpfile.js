@@ -14,7 +14,7 @@ const rename = require("gulp-rename");
  */
 require("require-dir")("./gulp");
 require("require-dir")("./node_modules/@shawnsandy/ideas/gulp/");
-
+require("require-dir")("./node_modules/@shawnsandy/mix/gulp/");
 
 gulp.task("sass", () =>
   gulp
