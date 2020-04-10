@@ -17,7 +17,7 @@
     "lib",
     "gulp"
   ],
-  "devDependencies": {
+  "dependencies": {
     "@11ty/eleventy": "^0.10.0",
     "@shawnsandy/ideas": "0.1.9",
     "@shawnsandy/mix": "^0.7.8",
