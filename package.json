@@ -8,6 +8,15 @@
     "build": "npx @11ty/eleventy",
     "changelog": "auto-changelog -p --template config/_changelog.hbs"
   },
+  "directories": {
+    "lib": "dist",
+    "gulp": "gulp",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib",
+    "gulp"
+  ],
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
     "@shawnsandy/ideas": "0.1.9",
