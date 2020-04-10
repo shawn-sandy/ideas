@@ -10,6 +10,7 @@ module.exports = (eleventy, options = {}) => {
   eleventy.addCollection("all", (collection) => {
     return shared.getAll(collection);
   });
+  218;
 
   /**
    * Shortcodes
@@ -51,8 +52,8 @@ module.exports = (eleventy, options = {}) => {
    * Plugins
    */
 
-  // adds Mo
-  eleventy.addPlugin(require("./modular"));
-  // adds atomic modules as collections
-  eleventy.addPlugin(require("./atomic"));
+  // // adds Mo
+  // eleventy.addPlugin(require("./libs/modular"));
+  // // adds atomic modules as collections
+  // eleventy.addPlugin(require("./libs/atomic"));
 };

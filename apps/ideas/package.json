@@ -1,6 +1,6 @@
 {
   "name": "@shawnsandy/ideas",
-  "version": "0.1.4",
+  "version": "0.1.9",
   "description": "Eleventy toolkit",
   "keywords": [
     "design",
@@ -14,10 +14,12 @@
   "main": ".eleventy.js",
   "directories": {
     "lib": "lib",
+    "gulp": "gulp",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "lib",
+    "gulp"
   ],
   "publishConfig": {
     "access": "public"
