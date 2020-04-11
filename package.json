@@ -21,7 +21,7 @@
     "@11ty/eleventy": "^0.10.0",
     "@shawnsandy/ideas": "0.1.9",
     "@shawnsandy/mix": "^0.7.8",
-    "auto-changelog": "^1.16.4",
+    "auto-changelog": "^2.0.0",
     "flat-cache": "^2.0.1",
     "fs": "0.0.1-security",
     "gulp": "^4.0.2",
@@ -46,5 +46,8 @@
   "main": "index.js",
   "repository": "https://github.com/shawn-sandy/idea.git",
   "author": "shawnsandy <shawnsandy04@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^1.12.4"
+  }
 }

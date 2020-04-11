@@ -25,7 +25,8 @@
     "flat-cache": "^2.0.1",
     "fs": "0.0.1-security",
     "html-minifier": "^4.0.0",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.0",
+    "parcel": "^1.12.4"
   },
   "repository": {
     "type": "git",

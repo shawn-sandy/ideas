@@ -37,6 +37,7 @@
     "gulp-rename": "^2.0.0",
     "gulp-sizereport": "^1.2.1",
     "gulp-sourcemaps": "^2.6.5",
+    "parcel": "^1.12.4",
     "snowpack": "^1.4.0"
   },
   "gitHead": "d52d29e8fcf09f9a45e7399ad47e0b2f2576c1ba"
