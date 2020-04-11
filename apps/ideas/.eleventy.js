@@ -1,7 +1,7 @@
 //  eleventyConfig.addPlugin(require("@shawnsandy/ideas"));
 const elements = require("./lib/elements");
-const forms = require("./lib/form");
 const shared = require("./lib/shared");
+const htmlmin = require("html-minifier");
 
 module.exports = (eleventy, options = {}) => {
   /**
@@ -10,7 +10,6 @@ module.exports = (eleventy, options = {}) => {
   eleventy.addCollection("all", (collection) => {
     return shared.getAll(collection);
   });
-  218;
 
   /**
    * Shortcodes

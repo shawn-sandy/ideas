@@ -30,7 +30,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(require("@shawnsandy/ideas"));
 
-  // Minify our HTML
+  // // Minify our HTML
   eleventyConfig.addTransform("htmlmin", (content, outputPath) => {
     if (outputPath.endsWith(".html")) {
       let minified = htmlmin.minify(content, {
