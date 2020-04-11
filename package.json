@@ -20,6 +20,19 @@
   ],
   "dependencies": {
     "@11ty/eleventy": "^0.10.0",
+    "@shawnsandy/bootstrap-lite": "^0.1.3"
+  },
+  "auto-changelog": {
+    "unreleased": true,
+    "template": "config/_changelog.hbs"
+  },
+  "main": "index.js",
+  "repository": "https://github.com/shawn-sandy/idea.git",
+  "author": "shawnsandy <shawnsandy04@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^1.12.4",
+    "@11ty/eleventy": "^0.10.0",
     "@shawnsandy/ideas": "0.1.9",
     "@shawnsandy/mix": "^0.7.8",
     "auto-changelog": "^2.0.0",
@@ -37,18 +50,6 @@
     "html-minifier": "^4.0.0",
     "lerna": "^3.20.2",
     "node-fetch": "^2.6.0",
-    "require-dir": "^1.2.0",
-    "scsstojson": "^1.0.2"
-  },
-  "auto-changelog": {
-    "unreleased": true,
-    "template": "config/_changelog.hbs"
-  },
-  "main": "index.js",
-  "repository": "https://github.com/shawn-sandy/idea.git",
-  "author": "shawnsandy <shawnsandy04@gmail.com>",
-  "license": "MIT",
-  "devDependencies": {
-    "parcel": "^1.12.4"
+    "require-dir": "^1.2.0"
   }
 }
