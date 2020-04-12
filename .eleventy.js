@@ -28,6 +28,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("system/js/*.js", "js");
   eleventyConfig.addPassthroughCopy("system/images", "images");
 
+  eleventyConfig.addWatchTarget("www/**/*.css");
+
   eleventyConfig.addPlugin(require("@shawnsandy/ideas"));
 
   // // Minify our HTML

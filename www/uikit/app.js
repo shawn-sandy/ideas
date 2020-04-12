@@ -209,7 +209,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.hello = void 0;
 
 var hello = function hello(name) {
-  return "Hello ".concat(name || "World");
+  return "Hello, ".concat(name || "World");
 };
 
 exports.hello = hello;
@@ -224,7 +224,10 @@ require("./system/styles/styles.scss");
 
 var _js = require("./system/js");
 
-console.log(_js.hello);
+var hi = (0, _js.hello)();
+console.log(hi);
+var sayhi = (0, _js.hello)("What's your name");
+console.log(sayhi);
 },{"@fortawesome/fontawesome-free/css/regular.css":"node_modules/@fortawesome/fontawesome-free/css/regular.css","@shawnsandy/bootstrap-lite":"node_modules/@shawnsandy/bootstrap-lite/dist/bootstrap-lite.min.css","./system/styles/styles.scss":"system/styles/styles.scss","./system/js":"system/js/index.js"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';

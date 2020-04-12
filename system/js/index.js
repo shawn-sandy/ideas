@@ -1,5 +1,5 @@
 const hello = (name) => {
-  return `Hello ${name || "World"}`;
+  return `Hello, ${name || "World"}`;
 };
 
 export { hello };

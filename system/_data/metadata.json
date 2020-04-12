@@ -15,9 +15,10 @@
     "styles": [
         "https://cdn.jsdelivr.net/npm/@shawnsandy/bootstrap-lite@0.0.20/dist/bootstrap-lite.min.css",
         "https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;800&family=Roboto:ital,wght@0,400;0,500;0,900;1,500&display=swap",
-        "/styles/styles.min.css"
+        "/uikit/app.css"
     ],
     "scripts": [
-        "https://cdn.jsdelivr.net/npm/vue@2.6.11"
+        "https://cdn.jsdelivr.net/npm/vue@2.6.11",
+        "/uikit/app.js"
     ]
 }
