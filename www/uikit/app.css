@@ -49,46 +49,46 @@ body {
   font-weight: 800; }
 
 /** utility mixin example--create font utility form our tokens **/
--font {
+.ui-font {
   font: 1rem; }
 
--fine-print {
+.ui-fine-print {
   font-size: 0.75rem !important; }
 
--notes {
+.ui-notes {
   font-size: 0.875rem !important; }
 
--short-copy {
+.ui-short-copy {
   font-size: 1.3rem !important; }
 
--lead {
+.ui-lead {
   font-size: 1.5rem !important; }
 
--subtitles {
+.ui-subtitles {
   font-size: 1.75rem !important; }
 
--header-font {
+.ui-header-font {
   font: 2rem; }
 
--header-xs {
+.ui-header-xs {
   font-size: 2.5rem !important; }
 
--header-sm {
+.ui-header-sm {
   font-size: 3rem !important; }
 
--header-md {
+.ui-header-md {
   font-size: 3.5rem !important; }
 
--header-lg {
+.ui-header-lg {
   font-size: 4rem !important; }
 
--header-xl {
+.ui-header-xl {
   font-size: 5rem !important; }
 
--medium {
+.ui-medium {
   font-weight: 500 !important; }
 
--bold {
+.ui-bold {
   font-weight: 700 !important; }
 
 /*# sourceMappingURL=/app.css.map */

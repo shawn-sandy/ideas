@@ -45,4 +45,6 @@ body {
 }
 
 /** utility mixin example--create font utility form our tokens **/
-@include mix-utilities("font");
+.ui {
+  @include mix-utilities("font");
+}
