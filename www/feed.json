@@ -4,23 +4,30 @@
 "link": "https://proideas.dev/",
 "feed": "",
 "author": "Shawn Sandy",
-
 "entries" : [
 
+{
+"title": "shawnsandy.com",
+"link": "https://proideas.dev/apps/css-modal/",
+"updated": "2020-04-04T11:59:57.597-04:00"
+},
 
+{
+"title": "News and Articles",
+"link": "https://proideas.dev/content/",
+"updated": "2020-04-12T13:29:25.368-04:00"
+},
 
-,
+{
+"title": "Ideas UIKit",
+"link": "https://proideas.dev/",
+"updated": "2020-04-04T10:32:55.879-04:00"
+},
 
-
-
-,
-
-
-
-,
-
-
-
-
+{
+"title": "Apps",
+"link": "https://proideas.dev/apps/",
+"updated": "2020-04-04T15:29:17.144-04:00"
+}
 ]
 }

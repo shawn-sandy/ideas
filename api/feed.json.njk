@@ -1,0 +1,25 @@
+---
+permalink: feed.json
+eleventyExcludeFromCollections: true
+---
+{
+"title": "{{ metadata.title }}",
+"subtitle": "{{ metadata.feed.subtitle }}",
+"link": "{{ metadata.feed.id }}",
+"feed": "{{ metadata.feed.url }}",
+"author": "{{ metadata.author.name }}",
+"entries" : [
+{%- for post in collections.all %}
+{% set absolutePostUrl %}
+{%- if post.data.externalurl -%}{{ post.data.externalurl }}{%- else -%}
+{{ post.url | url | absoluteUrl(metadata.url) }}{%- endif -%}
+{% endset %}
+{
+"title": "{{ post.data.title }}",
+"link": "{{ absolutePostUrl }}",
+"updated": "{{ post.date | rssDate }}"
+}{% if not loop.last %},{% else %}{%- endif -%}
+
+{%- endfor %}
+]
+}

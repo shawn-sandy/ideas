@@ -46,12 +46,6 @@ module.exports = function (eleventyConfig) {
   });
 
   /**
-   * RSS plugin
-   */
-  eleventyConfig.addPlugin(pluginRss);
-}
-
-  /**
    * Plugin @shawnsandy/ideas
    *
    */
@@ -59,10 +53,9 @@ module.exports = function (eleventyConfig) {
   // eleventyConfig.addPlugin(require("@shawnsandy/ideas", {siteMap: ["**/*.njk", "apps/**/*.html"];})); // siteMap defines directory to include
 
   eleventyConfig.addPlugin(require("@shawnsandy/ideas"));
-   
-  /** 
-   * Config settings
-   */
+
+  eleventyConfig.addPlugin(pluginRss);
+
   return {
     dir: {
       output: "./www",

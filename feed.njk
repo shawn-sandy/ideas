@@ -1,20 +1,39 @@
----
-permalink: feed.json
----
+---json
 {
-"title": "{{ metadata.title }}",
-"subtitle": "{{ metadata.feed.subtitle }}",
-"link": "{{ metadata.feed.id }}",
-"feed": "{{ metadata.feed.url }}",
-"author": "{{ metadata.author.name }}",
-
-"entries" : [
-{%- for post in collections.pages %}
-
-
-
-{% if not loop.last %},{% else %}{%- endif -%}
-
-{%- endfor %}
-]
+"permalink": "feed.xml",
+"eleventyExcludeFromCollections": true,
+"metadata": {
+"title": "My Blog about Boats",
+"subtitle": "I am writing about my experiences as a naval navel-gazer.",
+"url": "https://example.com/",
+"feedUrl": "https://example.com/feed.xml",
+"author": {
+"name": "Boaty McBoatFace",
+"email": "me@example.com"
 }
+}
+}
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ metadata.title }}</title>
+  <subtitle>{{ metadata.subtitle }}</subtitle>
+  <link href="{{ metadata.feedUrl }}" rel="self" />
+  <link href="{{ metadata.url }}" />
+  <updated>{{ collections.all | rssLastUpdatedDate }}</updated>
+  <id>{{ metadata.url }}</id>
+  <author>
+    <name>{{ metadata.author.name }}</name>
+    <email>{{ metadata.author.email }}</email>
+  </author>
+  {%- for post in collections.all %}
+  {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+  <entry>
+    <title>{{ post.data.title }}</title>
+    <link href="{{ absolutePostUrl }}" />
+    <updated>{{ post.date | rssDate }}</updated>
+    <id>{{ absolutePostUrl }}</id>
+    <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+  </entry>
+  {%- endfor %}
+</feed>
