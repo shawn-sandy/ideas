@@ -4,7 +4,7 @@ const shared = require("./lib/shared");
 const htmlmin = require("html-minifier");
 
 module.exports = (eleventy, options = {}) => {
-  let siteMap = options.siteMap || ["content/**/*.html", "content/**/*.md"];
+  let siteMap = options.siteMap || ["**/*.njk", "apps/**/*.html"];
 
   /**
    * Collections
