@@ -4,7 +4,7 @@ const shared = require("./lib/shared");
 const htmlmin = require("html-minifier");
 
 module.exports = (eleventy, options = {}) => {
-  let pageMaps = options.siteMaps || ["content/**/*.html", "content/**/*.md"];
+  let siteMap = options.siteMap || ["content/**/*.html", "content/**/*.md"];
 
   /**
    * Collections
@@ -25,6 +25,6 @@ module.exports = (eleventy, options = {}) => {
   });
 
   eleventyConfig.addCollection("pages", (collection) => {
-    return collection.getFilteredByGlob(pageMaps);
+    return collection.getFilteredByGlob(siteMap);
   });
 };
