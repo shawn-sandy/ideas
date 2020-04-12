@@ -20,11 +20,6 @@
     "lib",
     "gulp"
   ],
-  "dependencies": {
-    "@11ty/eleventy": "^0.10.0",
-    "@shawnsandy/bootstrap-lite": "^0.1.3",
-    "lodash": "^4.17.15"
-  },
   "auto-changelog": {
     "unreleased": true,
     "template": "config/_changelog.hbs"
@@ -33,12 +28,17 @@
   "repository": "https://github.com/shawn-sandy/idea.git",
   "author": "shawnsandy <shawnsandy04@gmail.com>",
   "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "@shawnsandy/bootstrap-lite": "^0.1.6",
+    "lodash": "^4.17.15"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
     "@11ty/eleventy-navigation": "^0.1.5",
     "@fortawesome/fontawesome-free": "^5.13.0",
-    "@shawnsandy/ideas": "0.1.11",
-    "@shawnsandy/mix": "^0.7.8",
+    "@shawnsandy/ideas": "0.1.12",
+    "@shawnsandy/mix": "^0.7.11",
     "auto-changelog": "^2.0.0",
     "flat-cache": "^2.0.1",
     "fs": "0.0.1-security",
