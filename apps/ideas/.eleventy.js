@@ -24,7 +24,7 @@ module.exports = (eleventy, options = {}) => {
     return collection.getFilteredByGlob(["apps/**/*.html", "apps/**/*.md"]);
   });
 
-  eleventyConfig.addCollection("pages", (collection) => {
+  eleventy.addCollection("pages", (collection) => {
     return collection.getFilteredByGlob(siteMap);
   });
 };

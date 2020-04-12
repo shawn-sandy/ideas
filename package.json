@@ -37,7 +37,7 @@
     "@11ty/eleventy": "^0.10.0",
     "@11ty/eleventy-navigation": "^0.1.5",
     "@fortawesome/fontawesome-free": "^5.13.0",
-    "@shawnsandy/ideas": "0.1.9",
+    "@shawnsandy/ideas": "0.1.11",
     "@shawnsandy/mix": "^0.7.8",
     "auto-changelog": "^2.0.0",
     "flat-cache": "^2.0.1",
