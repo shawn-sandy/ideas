@@ -1,7 +1,5 @@
 const fs = require("fs");
 
-const htmlmin = require("html-minifier");
-
 module.exports = function (eleventyConfig) {
   eleventyConfig.setBrowserSyncConfig({
     notify: true,
@@ -11,7 +9,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(require("@shawnsandy/ideas"));
 
   // Minify our HTML
-  eleventyConfig.addTransform("htmlmin", (content, outputPath) => {
+  eleventy.addTransform("htmlmin", (content, outputPath) => {
     if (outputPath.endsWith(".html")) {
       let minified = htmlmin.minify(content, {
         useShortDoctype: true,

@@ -49,5 +49,10 @@
     "parcel": "^1.12.4",
     "snowpack": "^1.4.0"
   },
-  "gitHead": "d52d29e8fcf09f9a45e7399ad47e0b2f2576c1ba"
+  "gitHead": "d52d29e8fcf09f9a45e7399ad47e0b2f2576c1ba",
+  "dependencies": {
+    "flat-cache": "^2.0.1",
+    "node-fetch": "^2.6.0",
+    "path": "^0.12.7"
+  }
 }

@@ -1,3 +1,48 @@
-.roboto-slab {
-  color: red;
+/** Import tokens, replace the import file below with your own **/
+@import "~@shawnsandy/mix/tokens/_tokens.scss";
+
+/** Config StyleMix SASS defaults */
+
+$mix-tokens: $tokens; // token variable name
+$mix-namespace: "mx"; // namespace
+$mix-base: "base"; // default utility name
+$mix-colors: "color"; // color key
+$mix-fonts: "fonts"; // font key
+$mix-spacing: "spacing"; // padding and margin
+$mix-sizing: "sizing"; //  width heights
+$mix-prefix: "-"; // separator for you class names my-class-name
+$mix-components: "components"; // default component key
+$mix-modifier-states: active focus focus-within hover visited; // define the states that you use
+$mix-color-attrs: "color", "background-color", "border-color";
+
+/** import stylemix **/
+@import "~@shawnsandy/mix";
+
+html {
+  -webkit-font-smoothing: antialiased !important;
+  height: 100% !important;
 }
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.roboto-slab {
+  font-family: "Roboto Slab", sans-serif !important;
+  font-weight: 500;
+}
+
+.roboto-medium {
+  font-weight: 400;
+}
+
+.roboto-semibold {
+  font-weight: 500;
+}
+
+.roboto-extra {
+  font-weight: 800;
+}
+
+/** utility mixin example--create font utility form our tokens **/
+@include mix-utilities("font");
