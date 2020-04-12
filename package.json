@@ -4,8 +4,10 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx @11ty/eleventy --serve",
+    "start": "npm run parcel:watch && npx @11ty/eleventy --serve",
     "build": "npx @11ty/eleventy",
+    "parcel": "parcel build app.js --no-content-hash --out-dir build/uikit",
+    "parcel:watch": "parcel watch app.js --out-dir www/uikit",
     "changelog": "auto-changelog -p --template config/_changelog.hbs",
     "debug": "cd system/debug"
   },
@@ -34,6 +36,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
     "@11ty/eleventy-navigation": "^0.1.5",
+    "@fortawesome/fontawesome-free": "^5.13.0",
     "@shawnsandy/ideas": "0.1.9",
     "@shawnsandy/mix": "^0.7.8",
     "auto-changelog": "^2.0.0",
