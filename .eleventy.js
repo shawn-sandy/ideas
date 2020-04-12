@@ -20,6 +20,11 @@ module.exports = function (eleventyConfig) {
       },
     },
   });
+
+  eleventyConfig.addCollection("pages", (collection) => {
+    return collection.getFilteredByGlob(["**/*.njk", "apps/**/*.html"]);
+  });
+
   eleventyConfig.addPassthroughCopy("**/dist/styles/css");
   eleventyConfig.addPassthroughCopy("**/dist/js");
   eleventyConfig.addPassthroughCopy("**/dist/images");

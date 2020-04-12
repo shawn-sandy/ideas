@@ -3,6 +3,7 @@ README.md
 **/_drafts
 **/_partials
 **/src
+**/dist
 dist
 www
 **/public
