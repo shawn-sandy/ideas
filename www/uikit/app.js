@@ -200,7 +200,20 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel/src/builtins/css-loader.js"}],"app.js":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel/src/builtins/css-loader.js"}],"system/js/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.hello = void 0;
+
+var hello = function hello(name) {
+  return "Hello ".concat(name || "World");
+};
+
+exports.hello = hello;
+},{}],"app.js":[function(require,module,exports) {
 "use strict";
 
 require("@fortawesome/fontawesome-free/css/regular.css");
@@ -208,7 +221,11 @@ require("@fortawesome/fontawesome-free/css/regular.css");
 require("@shawnsandy/bootstrap-lite");
 
 require("./system/styles/styles.scss");
-},{"@fortawesome/fontawesome-free/css/regular.css":"node_modules/@fortawesome/fontawesome-free/css/regular.css","@shawnsandy/bootstrap-lite":"node_modules/@shawnsandy/bootstrap-lite/dist/bootstrap-lite.min.css","./system/styles/styles.scss":"system/styles/styles.scss"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+
+var _js = require("./system/js");
+
+console.log(_js.hello);
+},{"@fortawesome/fontawesome-free/css/regular.css":"node_modules/@fortawesome/fontawesome-free/css/regular.css","@shawnsandy/bootstrap-lite":"node_modules/@shawnsandy/bootstrap-lite/dist/bootstrap-lite.min.css","./system/styles/styles.scss":"system/styles/styles.scss","./system/js":"system/js/index.js"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
