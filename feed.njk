@@ -1,0 +1,20 @@
+---
+permalink: feed.json
+---
+{
+"title": "{{ metadata.title }}",
+"subtitle": "{{ metadata.feed.subtitle }}",
+"link": "{{ metadata.feed.id }}",
+"feed": "{{ metadata.feed.url }}",
+"author": "{{ metadata.author.name }}",
+
+"entries" : [
+{%- for post in collections.pages %}
+
+
+
+{% if not loop.last %},{% else %}{%- endif -%}
+
+{%- endfor %}
+]
+}

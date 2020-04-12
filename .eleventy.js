@@ -1,6 +1,7 @@
 const fs = require("fs");
 
 const htmlmin = require("html-minifier");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.setBrowserSyncConfig({
@@ -45,6 +46,12 @@ module.exports = function (eleventyConfig) {
   });
 
   /**
+   * RSS plugin
+   */
+  eleventyConfig.addPlugin(pluginRss);
+}
+
+  /**
    * Plugin @shawnsandy/ideas
    *
    */
@@ -52,7 +59,10 @@ module.exports = function (eleventyConfig) {
   // eleventyConfig.addPlugin(require("@shawnsandy/ideas", {siteMap: ["**/*.njk", "apps/**/*.html"];})); // siteMap defines directory to include
 
   eleventyConfig.addPlugin(require("@shawnsandy/ideas"));
-
+   
+  /** 
+   * Config settings
+   */
   return {
     dir: {
       output: "./www",
