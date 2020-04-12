@@ -11,6 +11,14 @@ module.exports = (eleventy, options = {}) => {
     return shared.getAll(collection);
   });
 
+  eleventy.addCollection("content", (collection) => {
+    return collection.getFilteredByGlob([
+      "content/**/*.html",
+      "content/**/*.md"
+    ]);
+  });
+  os;
+
   /**
    * Shortcodes
    */

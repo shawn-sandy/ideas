@@ -21,7 +21,7 @@ module.exports = async function () {
       .then((res) => res.json())
       .then((json) => {
         return {
-          stargazers: json.stargazers_count,
+          stargazers: json.stargazers_count
         };
       });
 
