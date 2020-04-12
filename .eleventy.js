@@ -1,6 +1,7 @@
 const fs = require("fs");
 
 const htmlmin = require("html-minifier");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.setBrowserSyncConfig({
@@ -31,12 +32,6 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addWatchTarget("www/**/*.css");
 
-  eleventyConfig.addPlugin(require("@shawnsandy/ideas"));
-
-  // eleventyConfig.addCollection("pages", (collection) => {
-  //   return collection.getFilteredByGlob(["**/*.njk", "apps/**/*.html"]);
-  // });
-
   // // Minify our HTML
   eleventyConfig.addTransform("htmlmin", (content, outputPath) => {
     if (outputPath.endsWith(".html")) {
@@ -49,6 +44,17 @@ module.exports = function (eleventyConfig) {
     }
     return content;
   });
+
+  /**
+   * Plugin @shawnsandy/ideas
+   *
+   */
+
+  // eleventyConfig.addPlugin(require("@shawnsandy/ideas", {siteMap: ["**/*.njk", "apps/**/*.html"];})); // siteMap defines directory to include
+
+  eleventyConfig.addPlugin(require("@shawnsandy/ideas"));
+
+  eleventyConfig.addPlugin(pluginRss);
 
   return {
     dir: {

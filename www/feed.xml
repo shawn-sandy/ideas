@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>My Blog about Boats</title>
+  <subtitle>I am writing about my experiences as a naval navel-gazer.</subtitle>
+  <link href="https://example.com/feed.xml" rel="self" />
+  <link href="https://example.com/" />
+  <updated>2020-04-04T15:29:17.144-04:00</updated>
+  <id>https://example.com/</id>
+  <author>
+    <name>Boaty McBoatFace</name>
+    <email>me@example.com</email>
+  </author>
+  
+  <entry>
+    <title>shawnsandy.com</title>
+    <link href="https://example.com/apps/css-modal/" />
+    <updated>2020-04-04T11:59:57.597-04:00</updated>
+    <id>https://example.com/apps/css-modal/</id>
+    <content type="html">
+&lt;p&gt;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta quibusdam facere placeat, voluptates laborum
+        amet quas hic, rerum minus iure quod corrupti, a autem vel laudantium eos. Cumque, laborum labore.&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>News and Articles</title>
+    <link href="https://example.com/content/" />
+    <updated>2020-04-12T13:29:25.368-04:00</updated>
+    <id>https://example.com/content/</id>
+    <content type="html"></content>
+  </entry>
+  
+  <entry>
+    <title>Ideas UIKit</title>
+    <link href="https://example.com/" />
+    <updated>2020-04-04T10:32:55.879-04:00</updated>
+    <id>https://example.com/</id>
+    <content type="html"></content>
+  </entry>
+  
+  <entry>
+    <title>Apps</title>
+    <link href="https://example.com/apps/" />
+    <updated>2020-04-04T15:29:17.144-04:00</updated>
+    <id>https://example.com/apps/</id>
+    <content type="html"></content>
+  </entry>
+</feed>
