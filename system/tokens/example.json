@@ -1,0 +1,14 @@
+{
+    "size": {
+        "font": {
+            "base": {
+                "value": "16",
+                "comment": "the base size of the font"
+            },
+            "large": {
+                "value": "20",
+                "comment": "the large size of the font"
+            }
+        }
+    }
+}
