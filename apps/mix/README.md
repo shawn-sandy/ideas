@@ -1,13 +1,16 @@
-# StyleMix (beta)
+# Atomix `(beta)`
 
-A SASS toolkit for generating CSS utility classes and components from **Design Tokens**.
+A SASS toolkit for generating CSS utility classes and components from 
+**Design Tokens**.
 
 ## Install
 
-- **Install StyleMix(beta)**
+- **Install Atomix(beta)**
 
 ```
+
 npm i -D @shawnsandy/mix
+
 ```
 
 - **Install Style Dictionary**
@@ -24,19 +27,20 @@ npm i -g style-dictionary
 **Uility classes** (example)
 
 1. Create/Import your tokens [(creating tokens)](#creating-tokens)
-2. Config StyleMix using SASS defaults
-3. Import StyleMix
+2. Config Atomix using SASS defaults
+3. Import Atomix
 4. Include the utility mixin and run you build
 5. View [UTILITY TOKENS]('./dist/color.css') example
 
 ```scss
-/** Import tokens, replace the import file below with your own **/
-@import "~@shawnsandy/mix/tokens/_tokens.scss";
 
-/** Config StyleMix SASS defaults */
+/** Import tokens, replace the import file below with your own **/
+@import "node_modules/@shawnsandy/mix/tokens/tokens";
+
+/** Config Atomix SASS defaults */
 
 $mix-tokens: $tokens; // token variable name
-$mix-namespace: "mx"; // namespace
+$mix-namespace: "ui"; // namespace
 $mix-base: "base"; // default utility name
 $mix-colors: "color"; // color key
 $mix-fonts: "fonts"; // font key
@@ -47,11 +51,14 @@ $mix-components: "components"; // default component key
 $mix-modifier-states: active focus focus-within hover visited; // define the states that you use
 $mix-color-attrs: "color", "background-color", "border-color";
 
-/** import stylemix **/
-@import "~@shawnsandy/mix";
+/** import Atomix **/
+@import "node_modules/@shawnsandy/mix/index";
 
 /** utility mixin example--create font utility form our tokens **/
-@include mix-utilities("font");
+.ui {
+  @include mix-utilities("font");
+}
+
 ```
 
 ### Design Tokens
@@ -74,15 +81,15 @@ $mix-color-attrs: "color", "background-color", "border-color";
 
 #### Creating Tokens
 
-StyleMix really only needs a SASS-MAPS to do it's thing, and you can write SASS-MAPS on your own, thats entirely up to you, once you stick to the map format(s). The workflow below is not mandatory but strongly recommend.
+Atomix really only needs a SASS-MAPS to do it's thing, and you can write SASS-MAPS on your own, thats entirely up to you, once you stick to the map format(s). The workflow below is not mandatory but strongly recommend.
 
 - If you haven't yet install the Style Dictionary : [Style Dictionary Quick Start](https://amzn.github.io/style-dictionary/#/quick_start)
-- Create a config
-- Write you tokens be sure to read about how to [format tokens for stylemix](#token-formats)
+- Create a token config file
+- Write your tokens be sure to read about how to [format tokens for Atomix](#token-formats)
 - Run style-dictionary
 
 ```js
-// config.js
+// tokens.js
 const config = require("@shawnsandy/mix/config/tokens");
 
 module.exports = config({
@@ -92,27 +99,29 @@ module.exports = config({
 });
 ```
 
-- Run the build script
+#### Run the build script
 
-Command line
-
-```
-style-dictionary build --config ./config.js
+- Command line
 
 ```
+style-dictionary build --config ./tokens.js
 
-NPM Scripts
+```
+
+- NPM scripts
 
 ```
  "scripts": {
-    "tokens": "style-dictionary build --config ./config.js"
+    "tokens": "style-dictionary build --config ./tokens.js"
   },
 ```
 
 Run the scripts
 
 ```
+
 npm run tokens
+
 ```
 
 #### Token Formats
