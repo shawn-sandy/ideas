@@ -1,0 +1,17 @@
+
+/*
+  Do not edit directly
+  Generated on Mon, 13 Apr 2020 11:54:18 GMT
+*/
+
+$mx-size-font-base: 16rem !default; // the base size of the font
+$mx-size-font-large: 20rem !default; // the large size of the font
+
+$tokens: (
+  'size': (
+    'font': (
+      'base': $mx-size-font-base,
+      'large': $mx-size-font-large
+    )
+  )
+);

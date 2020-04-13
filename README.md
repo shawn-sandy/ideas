@@ -1,4 +1,4 @@
-# IDEA~..
+# IDEA~.
 
 ## A UI toolkit for managing and creating digital products--design systems, pattern libraries, style-guides, etc.
 
