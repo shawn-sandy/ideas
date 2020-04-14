@@ -40,7 +40,7 @@
     "gulp-clean-css": "^4.3.0",
     "gulp-sass": "^4.0.2",
     "gulp-sizereport": "^1.2.1",
-    "parcel": "^1.12.4",
+    "parcel": "^1.12.4"
   },
   "gitHead": "4577741794f126834eade633db5dd9e94cd6ec62"
 }
