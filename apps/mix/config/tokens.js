@@ -53,7 +53,7 @@ module.exports = function(options = {}) {
         // the underlying transform
         transformGroup: "scss",
         buildPath: build_dir,
-        prefix: "mx",
+        prefix: options.prefix || "atx",
         files: [
           {
             destination: name,
