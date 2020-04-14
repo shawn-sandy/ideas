@@ -8,13 +8,17 @@
   }
 }
 
+@mixin atomix-utility($tokenArgs) {
+  @include mix-utilities($tokenArgs)
+}
+
 /** generates a series of modifies based a list of attributes  **/
 // @mixin mix-colors($map: $tokens) {
 //   @include mix-utilities("color");
 // }
 
 @mixin mix-fonts($map: $mix-tokens) {
-  @include mix-utilities("font");
+  @include mix-utilities("font", $map);
 }
 
 @mixin utilities($token, $map: $mix-tokens) {
