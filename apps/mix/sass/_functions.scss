@@ -28,6 +28,14 @@
     @error 'The argument $map: `#{$map}` doesn\'t has some of the $keys: `#{$keys}`!';
   }
   @return deep-map-get($map, $keys...);
+
+}
+
+//------
+// alias for get function
+
+@function token($key, $map: $tokens) {  
+  @return get($key, $map)
 }
 
 // ---------------------------------------------------------
