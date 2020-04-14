@@ -1,6 +1,6 @@
 # Atomix `(beta)`
 
-A SASS toolkit for generating CSS utility classes and components from 
+A SASS toolkit for generating CSS utility classes and components from
 **Design Tokens**.
 
 ## Install
@@ -33,7 +33,6 @@ npm i -g style-dictionary
 5. View [UTILITY TOKENS]('./dist/color.css') example
 
 ```scss
-
 /** Import tokens, replace the import file below with your own **/
 @import "node_modules/@shawnsandy/mix/tokens/tokens";
 
@@ -58,19 +57,15 @@ $mix-color-attrs: "color", "background-color", "border-color";
 .ui {
   @include mix-utilities("font");
 }
-
 ```
-
 
 #### Creating Design Tokens
 
+_The workflow below is not mandatory but strongly recommend_, Atomix really only needs a SASS-MAPS to do it's thing can write SASS-MAPS on your own, thats entirely up to you, once you stick to the map format(s).
 
-*The workflow below is not mandatory but strongly recommend*, Atomix really only needs a SASS-MAPS to do it's thing can write SASS-MAPS on your own, thats entirely up to you, once you stick to the map format(s).
-
-*What are design tokens?*
+_What are design tokens?_
 
 > Design tokens are the visual design atoms of the design system — specifically, they are named entities that store visual design attributes. We use them in place of hard-coded values (such as hex values for color or pixel values for spacing) in order to maintain a scalable and consistent visual system for UI development. [Token Guide](./tokens.md)
-
 
 - If you haven't yet install the Style Dictionary : [Style Dictionary Quick Start](https://amzn.github.io/style-dictionary/#/quick_start)
 - Create a `token.js` config file
@@ -85,6 +80,7 @@ module.exports = config({
   source: "tokens/**/*", // tokens dir--/tokens/my-tokens.json
   build: "scss/_tokens/", // build dir trailing slash required--scss/_tokens.scss
   name: "token/", // name of you scss token output file--tokens.scss
+  prefix: "mx", // change prefix on tokens
 });
 ```
 
