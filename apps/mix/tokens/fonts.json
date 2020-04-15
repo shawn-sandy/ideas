@@ -1,0 +1,62 @@
+{
+  "font": {
+    "size": {
+      "fs": {
+        "base": {
+          "value": "1rem",
+          "comment": "descriptions..."
+        },
+        "1x": {
+          "value": "0.75rem",
+          "comment": "descriptions..."
+        },
+        "2x": {
+          "value": "0.875rem",
+          "comment": "descriptions..."
+        },
+        "3x": {
+          "value": "1.3rem",
+          "comment": "descriptions..."
+        },
+        "4x": {
+          "value": "1.5rem",
+          "comment": "descriptions..."
+        },
+        "5x": {
+          "value": "1.75rem",
+          "comment": "descriptions..."
+        },
+        "6x": {
+          "value": "2rem",
+          "comment": "descriptions..."
+        },
+        "7x": {
+          "value": "2.5rem",
+          "comment": "descriptions..."
+        },
+        "8x": {
+          "value": "3.5rem",
+          "comment": "descriptions..."
+        },
+        "9x": {
+          "value": "4rem",
+          "comment": "descriptions..."
+        },
+        "10x": {
+          "value": "5em",
+          "comment": "descriptions..."
+        }
+      }
+    }
+  },
+  "weight": {
+    "medium": {
+      "value": "500",
+      "comment": "descriptions..."
+    },
+    "bold": {
+      "value": "700",
+      "comment": "descriptions..."
+    }
+  }
+}

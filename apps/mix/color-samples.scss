@@ -1,11 +1,15 @@
 // StyleMix demo
 
 //import tokens
-@import "./tokens/tokens";
+@import "./token-test/tokens";
 
 // import mix library
 @import "./index.scss";
 
 .samp {
   @include mix-colors("color");
+}
+
+.font {
+  @include mix-utilities("font");
 }
