@@ -1,6 +1,6 @@
 /*
   Do not edit directly
-  Generated on Wed, 15 Apr 2020 01:39:41 GMT
+  Generated on Wed, 15 Apr 2020 14:27:45 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 /** generates a series of modifies based a list of attributes  **/
@@ -305,35 +305,35 @@
   .samp-border-olive-tp {
     border-color: rgba(181, 204, 24, 0.91) !important; }
 
-.font-fs-font {
-  font: 1rem; }
+.samp-font-size-default {
+  font-size: 1rem !important; }
 
-.font-fs-1x {
+.samp-font-size-1x {
   font-size: 0.75rem !important; }
 
-.font-fs-2x {
+.samp-font-size-2x {
   font-size: 0.875rem !important; }
 
-.font-fs-3x {
+.samp-font-size-3x {
   font-size: 1.3rem !important; }
 
-.font-fs-4x {
+.samp-font-size-4x {
   font-size: 1.5rem !important; }
 
-.font-fs-5x {
+.samp-font-size-5x {
   font-size: 1.75rem !important; }
 
-.font-fs-6x {
+.samp-font-size-6x {
   font-size: 2rem !important; }
 
-.font-fs-7x {
+.samp-font-size-7x {
   font-size: 2.5rem !important; }
 
-.font-fs-8x {
+.samp-font-size-8x {
   font-size: 3.5rem !important; }
 
-.font-fs-9x {
+.samp-font-size-9x {
   font-size: 4rem !important; }
 
-.font-fs-10x {
+.samp-font-size-10x {
   font-size: 5em !important; }

@@ -1,10 +1,11 @@
 {
   "font": {
     "size": {
-      "fs": {
-        "base": {
+      "font-size": {
+        "default": {
           "value": "1rem",
-          "comment": "descriptions..."
+          "comment": "descriptions...",
+          "group": "typography"
         },
         "1x": {
           "value": "0.75rem",
