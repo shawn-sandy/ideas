@@ -19,11 +19,11 @@ const propertiesToCTI = {
   icon: { category: "content", type: "icon" },
   "font-size": { category: "size", type: "font" },
   "line-height": { category: "size", type: "line-height" },
-  size: { category: "size", type: "icon" }
+  size: { category: "size", type: "icon" },
 };
 
 const CTITransform = {
-  transformer: prop => {
+  transformer: (prop) => {
     // Only do this custom functionality in the 'component' top-level namespace.
     if (prop.path[0] === "component") {
       // When defining component tokens, the key of the token is the relevant CSS property
@@ -33,18 +33,18 @@ const CTITransform = {
       // Fallback to the original 'attribute/cti' transformer
       return StyleDictionary.transform["attribute/cti"].transformer(prop);
     }
-  }
+  },
 };
 
-module.exports = function(options = {}) {
-  const source = options.source || ["./tokens/base/**/*.json"];
+module.exports = function (options = {}) {
+  const source = options.source || ["./tokens/**.json"];
   const build_dir = options.build || "./tokens/";
   const name = options.name ? `${options.name}.scss` : "_tokens.scss";
 
   var config = {
     transform: {
       // Override the attribute/cti transform
-      "attribute/cti": CTITransform
+      "attribute/cti": CTITransform,
     },
     source: source,
     platforms: {
@@ -53,15 +53,15 @@ module.exports = function(options = {}) {
         // the underlying transform
         transformGroup: "scss",
         buildPath: build_dir,
-        prefix: options.prefix || "atx",
+        prefix: "mx",
         files: [
           {
             destination: name,
-            format: "scss/map-deep"
-          }
-        ]
-      }
-    }
+            format: "scss/map-deep",
+          },
+        ],
+      },
+    },
   };
   return config;
 };

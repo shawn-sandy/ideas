@@ -1,6 +1,6 @@
 /*
   Do not edit directly
-  Generated on Mon, 06 Jan 2020 00:31:39 GMT
+  Generated on Wed, 15 Apr 2020 14:27:45 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 /** generates a series of modifies based a list of attributes  **/
@@ -107,116 +107,6 @@
   .samp-olive-tp {
     color: rgba(181, 204, 24, 0.91) !important; }
 
-.samp-teal {
-  color: #00b5ad !important; }
-  .samp-teal-hover:hover {
-    color: rgba(0, 181, 173, 0.91) !important; }
-  .samp-teal\:hover:hover {
-    color: rgba(0, 181, 173, 0.91) !important; }
-  .samp-teal\:focus:focus {
-    color: rgba(0, 181, 173, 0.91) !important; }
-  .samp-teal-tp {
-    color: rgba(0, 181, 173, 0.91) !important; }
-
-.samp-violet {
-  color: #6435c9 !important; }
-  .samp-violet-hover:hover {
-    color: rgba(100, 53, 201, 0.91) !important; }
-  .samp-violet\:hover:hover {
-    color: rgba(100, 53, 201, 0.91) !important; }
-  .samp-violet\:focus:focus {
-    color: rgba(100, 53, 201, 0.91) !important; }
-  .samp-violet-tp {
-    color: rgba(100, 53, 201, 0.91) !important; }
-
-.samp-purple {
-  color: #a333c8 !important; }
-  .samp-purple-hover:hover {
-    color: rgba(163, 51, 200, 0.91) !important; }
-  .samp-purple\:hover:hover {
-    color: rgba(163, 51, 200, 0.91) !important; }
-  .samp-purple\:focus:focus {
-    color: rgba(163, 51, 200, 0.91) !important; }
-  .samp-purple-tp {
-    color: rgba(163, 51, 200, 0.91) !important; }
-
-.samp-pink {
-  color: #e03997 !important; }
-  .samp-pink-hover:hover {
-    color: #c71f7e !important; }
-  .samp-pink\:hover:hover {
-    color: #c71f7e !important; }
-  .samp-pink\:focus:focus {
-    color: #c71f7e !important; }
-  .samp-pink-tp {
-    color: #c71f7e !important; }
-
-.samp-brown {
-  color: #a5673f !important; }
-  .samp-brown-hover:hover {
-    color: rgba(165, 103, 63, 0.91) !important; }
-  .samp-brown\:hover:hover {
-    color: rgba(165, 103, 63, 0.91) !important; }
-  .samp-brown\:focus:focus {
-    color: rgba(165, 103, 63, 0.91) !important; }
-  .samp-brown-tp {
-    color: rgba(165, 103, 63, 0.91) !important; }
-
-.samp-ui-primary {
-  color: #0366d6 !important; }
-  .samp-ui-primary-hover:hover {
-    color: rgba(3, 102, 214, 0.91) !important; }
-  .samp-ui-primary\:hover:hover {
-    color: rgba(3, 102, 214, 0.91) !important; }
-  .samp-ui-primary\:focus:focus {
-    color: rgba(3, 102, 214, 0.91) !important; }
-  .samp-ui-primary-tp {
-    color: rgba(3, 102, 214, 0.91) !important; }
-
-.samp-ui-secondary {
-  color: #070707 !important; }
-  .samp-ui-secondary-hover:hover {
-    color: rgba(7, 7, 7, 0.91) !important; }
-  .samp-ui-secondary\:hover:hover {
-    color: rgba(7, 7, 7, 0.91) !important; }
-  .samp-ui-secondary\:focus:focus {
-    color: rgba(7, 7, 7, 0.91) !important; }
-  .samp-ui-secondary-tp {
-    color: rgba(7, 7, 7, 0.91) !important; }
-
-.samp-ui-light {
-  color: #fefcfc !important; }
-  .samp-ui-light-hover:hover {
-    color: #f1d6d6 !important; }
-  .samp-ui-light\:hover:hover {
-    color: #f1d6d6 !important; }
-  .samp-ui-light\:focus:focus {
-    color: #f1d6d6 !important; }
-  .samp-ui-light-tp {
-    color: #f1d6d6 !important; }
-
-.samp-ui-text {
-  color: #707070 !important; }
-  .samp-ui-text-hover:hover {
-    color: rgba(112, 112, 112, 0.91) !important; }
-  .samp-ui-text\:hover:hover {
-    color: rgba(112, 112, 112, 0.91) !important; }
-  .samp-ui-text\:focus:focus {
-    color: rgba(112, 112, 112, 0.91) !important; }
-  .samp-ui-text-tp {
-    color: rgba(112, 112, 112, 0.91) !important; }
-
-.samp-ui-black-smoke {
-  color: #0f0f0f !important; }
-  .samp-ui-black-smoke-hover:hover {
-    color: rgba(15, 15, 15, 0.91) !important; }
-  .samp-ui-black-smoke\:hover:hover {
-    color: rgba(15, 15, 15, 0.91) !important; }
-  .samp-ui-black-smoke\:focus:focus {
-    color: rgba(15, 15, 15, 0.91) !important; }
-  .samp-ui-black-smoke-tp {
-    color: rgba(15, 15, 15, 0.91) !important; }
-
 .samp-bg-black {
   background-color: #000000 !important; }
   .samp-bg-black-hover:hover {
@@ -315,116 +205,6 @@
     background-color: rgba(181, 204, 24, 0.91) !important; }
   .samp-bg-olive-tp {
     background-color: rgba(181, 204, 24, 0.91) !important; }
-
-.samp-bg-teal {
-  background-color: #00b5ad !important; }
-  .samp-bg-teal-hover:hover {
-    background-color: rgba(0, 181, 173, 0.91) !important; }
-  .samp-bg-teal\:hover:hover {
-    background-color: rgba(0, 181, 173, 0.91) !important; }
-  .samp-bg-teal\:focus:focus {
-    background-color: rgba(0, 181, 173, 0.91) !important; }
-  .samp-bg-teal-tp {
-    background-color: rgba(0, 181, 173, 0.91) !important; }
-
-.samp-bg-violet {
-  background-color: #6435c9 !important; }
-  .samp-bg-violet-hover:hover {
-    background-color: rgba(100, 53, 201, 0.91) !important; }
-  .samp-bg-violet\:hover:hover {
-    background-color: rgba(100, 53, 201, 0.91) !important; }
-  .samp-bg-violet\:focus:focus {
-    background-color: rgba(100, 53, 201, 0.91) !important; }
-  .samp-bg-violet-tp {
-    background-color: rgba(100, 53, 201, 0.91) !important; }
-
-.samp-bg-purple {
-  background-color: #a333c8 !important; }
-  .samp-bg-purple-hover:hover {
-    background-color: rgba(163, 51, 200, 0.91) !important; }
-  .samp-bg-purple\:hover:hover {
-    background-color: rgba(163, 51, 200, 0.91) !important; }
-  .samp-bg-purple\:focus:focus {
-    background-color: rgba(163, 51, 200, 0.91) !important; }
-  .samp-bg-purple-tp {
-    background-color: rgba(163, 51, 200, 0.91) !important; }
-
-.samp-bg-pink {
-  background-color: #e03997 !important; }
-  .samp-bg-pink-hover:hover {
-    background-color: #c71f7e !important; }
-  .samp-bg-pink\:hover:hover {
-    background-color: #c71f7e !important; }
-  .samp-bg-pink\:focus:focus {
-    background-color: #c71f7e !important; }
-  .samp-bg-pink-tp {
-    background-color: #c71f7e !important; }
-
-.samp-bg-brown {
-  background-color: #a5673f !important; }
-  .samp-bg-brown-hover:hover {
-    background-color: rgba(165, 103, 63, 0.91) !important; }
-  .samp-bg-brown\:hover:hover {
-    background-color: rgba(165, 103, 63, 0.91) !important; }
-  .samp-bg-brown\:focus:focus {
-    background-color: rgba(165, 103, 63, 0.91) !important; }
-  .samp-bg-brown-tp {
-    background-color: rgba(165, 103, 63, 0.91) !important; }
-
-.samp-ui-bg-primary {
-  background-color: #0366d6 !important; }
-  .samp-ui-bg-primary-hover:hover {
-    background-color: rgba(3, 102, 214, 0.91) !important; }
-  .samp-ui-bg-primary\:hover:hover {
-    background-color: rgba(3, 102, 214, 0.91) !important; }
-  .samp-ui-bg-primary\:focus:focus {
-    background-color: rgba(3, 102, 214, 0.91) !important; }
-  .samp-ui-bg-primary-tp {
-    background-color: rgba(3, 102, 214, 0.91) !important; }
-
-.samp-ui-bg-secondary {
-  background-color: #070707 !important; }
-  .samp-ui-bg-secondary-hover:hover {
-    background-color: rgba(7, 7, 7, 0.91) !important; }
-  .samp-ui-bg-secondary\:hover:hover {
-    background-color: rgba(7, 7, 7, 0.91) !important; }
-  .samp-ui-bg-secondary\:focus:focus {
-    background-color: rgba(7, 7, 7, 0.91) !important; }
-  .samp-ui-bg-secondary-tp {
-    background-color: rgba(7, 7, 7, 0.91) !important; }
-
-.samp-ui-bg-light {
-  background-color: #fefcfc !important; }
-  .samp-ui-bg-light-hover:hover {
-    background-color: #f1d6d6 !important; }
-  .samp-ui-bg-light\:hover:hover {
-    background-color: #f1d6d6 !important; }
-  .samp-ui-bg-light\:focus:focus {
-    background-color: #f1d6d6 !important; }
-  .samp-ui-bg-light-tp {
-    background-color: #f1d6d6 !important; }
-
-.samp-ui-bg-text {
-  background-color: #707070 !important; }
-  .samp-ui-bg-text-hover:hover {
-    background-color: rgba(112, 112, 112, 0.91) !important; }
-  .samp-ui-bg-text\:hover:hover {
-    background-color: rgba(112, 112, 112, 0.91) !important; }
-  .samp-ui-bg-text\:focus:focus {
-    background-color: rgba(112, 112, 112, 0.91) !important; }
-  .samp-ui-bg-text-tp {
-    background-color: rgba(112, 112, 112, 0.91) !important; }
-
-.samp-ui-bg-black-smoke {
-  background-color: #0f0f0f !important; }
-  .samp-ui-bg-black-smoke-hover:hover {
-    background-color: rgba(15, 15, 15, 0.91) !important; }
-  .samp-ui-bg-black-smoke\:hover:hover {
-    background-color: rgba(15, 15, 15, 0.91) !important; }
-  .samp-ui-bg-black-smoke\:focus:focus {
-    background-color: rgba(15, 15, 15, 0.91) !important; }
-  .samp-ui-bg-black-smoke-tp {
-    background-color: rgba(15, 15, 15, 0.91) !important; }
 
 .samp-border-black {
   border-color: #000000 !important; }
@@ -525,112 +305,35 @@
   .samp-border-olive-tp {
     border-color: rgba(181, 204, 24, 0.91) !important; }
 
-.samp-border-teal {
-  border-color: #00b5ad !important; }
-  .samp-border-teal-hover:hover {
-    border-color: rgba(0, 181, 173, 0.91) !important; }
-  .samp-border-teal\:hover:hover {
-    border-color: rgba(0, 181, 173, 0.91) !important; }
-  .samp-border-teal\:focus:focus {
-    border-color: rgba(0, 181, 173, 0.91) !important; }
-  .samp-border-teal-tp {
-    border-color: rgba(0, 181, 173, 0.91) !important; }
+.samp-font-size-default {
+  font-size: 1rem !important; }
 
-.samp-border-violet {
-  border-color: #6435c9 !important; }
-  .samp-border-violet-hover:hover {
-    border-color: rgba(100, 53, 201, 0.91) !important; }
-  .samp-border-violet\:hover:hover {
-    border-color: rgba(100, 53, 201, 0.91) !important; }
-  .samp-border-violet\:focus:focus {
-    border-color: rgba(100, 53, 201, 0.91) !important; }
-  .samp-border-violet-tp {
-    border-color: rgba(100, 53, 201, 0.91) !important; }
+.samp-font-size-1x {
+  font-size: 0.75rem !important; }
 
-.samp-border-purple {
-  border-color: #a333c8 !important; }
-  .samp-border-purple-hover:hover {
-    border-color: rgba(163, 51, 200, 0.91) !important; }
-  .samp-border-purple\:hover:hover {
-    border-color: rgba(163, 51, 200, 0.91) !important; }
-  .samp-border-purple\:focus:focus {
-    border-color: rgba(163, 51, 200, 0.91) !important; }
-  .samp-border-purple-tp {
-    border-color: rgba(163, 51, 200, 0.91) !important; }
+.samp-font-size-2x {
+  font-size: 0.875rem !important; }
 
-.samp-border-pink {
-  border-color: #e03997 !important; }
-  .samp-border-pink-hover:hover {
-    border-color: #c71f7e !important; }
-  .samp-border-pink\:hover:hover {
-    border-color: #c71f7e !important; }
-  .samp-border-pink\:focus:focus {
-    border-color: #c71f7e !important; }
-  .samp-border-pink-tp {
-    border-color: #c71f7e !important; }
+.samp-font-size-3x {
+  font-size: 1.3rem !important; }
 
-.samp-border-brown {
-  border-color: #a5673f !important; }
-  .samp-border-brown-hover:hover {
-    border-color: rgba(165, 103, 63, 0.91) !important; }
-  .samp-border-brown\:hover:hover {
-    border-color: rgba(165, 103, 63, 0.91) !important; }
-  .samp-border-brown\:focus:focus {
-    border-color: rgba(165, 103, 63, 0.91) !important; }
-  .samp-border-brown-tp {
-    border-color: rgba(165, 103, 63, 0.91) !important; }
+.samp-font-size-4x {
+  font-size: 1.5rem !important; }
 
-.samp-ui-border-primary {
-  border-color: #0366d6 !important; }
-  .samp-ui-border-primary-hover:hover {
-    border-color: rgba(3, 102, 214, 0.91) !important; }
-  .samp-ui-border-primary\:hover:hover {
-    border-color: rgba(3, 102, 214, 0.91) !important; }
-  .samp-ui-border-primary\:focus:focus {
-    border-color: rgba(3, 102, 214, 0.91) !important; }
-  .samp-ui-border-primary-tp {
-    border-color: rgba(3, 102, 214, 0.91) !important; }
+.samp-font-size-5x {
+  font-size: 1.75rem !important; }
 
-.samp-ui-border-secondary {
-  border-color: #070707 !important; }
-  .samp-ui-border-secondary-hover:hover {
-    border-color: rgba(7, 7, 7, 0.91) !important; }
-  .samp-ui-border-secondary\:hover:hover {
-    border-color: rgba(7, 7, 7, 0.91) !important; }
-  .samp-ui-border-secondary\:focus:focus {
-    border-color: rgba(7, 7, 7, 0.91) !important; }
-  .samp-ui-border-secondary-tp {
-    border-color: rgba(7, 7, 7, 0.91) !important; }
+.samp-font-size-6x {
+  font-size: 2rem !important; }
 
-.samp-ui-border-light {
-  border-color: #fefcfc !important; }
-  .samp-ui-border-light-hover:hover {
-    border-color: #f1d6d6 !important; }
-  .samp-ui-border-light\:hover:hover {
-    border-color: #f1d6d6 !important; }
-  .samp-ui-border-light\:focus:focus {
-    border-color: #f1d6d6 !important; }
-  .samp-ui-border-light-tp {
-    border-color: #f1d6d6 !important; }
+.samp-font-size-7x {
+  font-size: 2.5rem !important; }
 
-.samp-ui-border-text {
-  border-color: #707070 !important; }
-  .samp-ui-border-text-hover:hover {
-    border-color: rgba(112, 112, 112, 0.91) !important; }
-  .samp-ui-border-text\:hover:hover {
-    border-color: rgba(112, 112, 112, 0.91) !important; }
-  .samp-ui-border-text\:focus:focus {
-    border-color: rgba(112, 112, 112, 0.91) !important; }
-  .samp-ui-border-text-tp {
-    border-color: rgba(112, 112, 112, 0.91) !important; }
+.samp-font-size-8x {
+  font-size: 3.5rem !important; }
 
-.samp-ui-border-black-smoke {
-  border-color: #0f0f0f !important; }
-  .samp-ui-border-black-smoke-hover:hover {
-    border-color: rgba(15, 15, 15, 0.91) !important; }
-  .samp-ui-border-black-smoke\:hover:hover {
-    border-color: rgba(15, 15, 15, 0.91) !important; }
-  .samp-ui-border-black-smoke\:focus:focus {
-    border-color: rgba(15, 15, 15, 0.91) !important; }
-  .samp-ui-border-black-smoke-tp {
-    border-color: rgba(15, 15, 15, 0.91) !important; }
+.samp-font-size-9x {
+  font-size: 4rem !important; }
+
+.samp-font-size-10x {
+  font-size: 5em !important; }
