@@ -1,6 +1,6 @@
 /*
   Do not edit directly
-  Generated on Wed, 15 Apr 2020 14:27:45 GMT
+  Generated on Thu, 16 Apr 2020 11:58:12 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 /** generates a series of modifies based a list of attributes  **/
@@ -107,6 +107,17 @@
   .samp-olive-tp {
     color: rgba(181, 204, 24, 0.91) !important; }
 
+.samp-test-red-1 {
+  color: #ff0000 !important; }
+  .samp-test-red-1-hover:hover {
+    color: rgba(255, 0, 0, 0.91) !important; }
+  .samp-test-red-1\:hover:hover {
+    color: rgba(255, 0, 0, 0.91) !important; }
+  .samp-test-red-1\:focus:focus {
+    color: rgba(255, 0, 0, 0.91) !important; }
+  .samp-test-red-1-tp {
+    color: rgba(255, 0, 0, 0.91) !important; }
+
 .samp-bg-black {
   background-color: #000000 !important; }
   .samp-bg-black-hover:hover {
@@ -205,6 +216,17 @@
     background-color: rgba(181, 204, 24, 0.91) !important; }
   .samp-bg-olive-tp {
     background-color: rgba(181, 204, 24, 0.91) !important; }
+
+.samp-test-bg-red-1 {
+  background-color: #ff0000 !important; }
+  .samp-test-bg-red-1-hover:hover {
+    background-color: rgba(255, 0, 0, 0.91) !important; }
+  .samp-test-bg-red-1\:hover:hover {
+    background-color: rgba(255, 0, 0, 0.91) !important; }
+  .samp-test-bg-red-1\:focus:focus {
+    background-color: rgba(255, 0, 0, 0.91) !important; }
+  .samp-test-bg-red-1-tp {
+    background-color: rgba(255, 0, 0, 0.91) !important; }
 
 .samp-border-black {
   border-color: #000000 !important; }
@@ -305,35 +327,13 @@
   .samp-border-olive-tp {
     border-color: rgba(181, 204, 24, 0.91) !important; }
 
-.samp-font-size-default {
-  font-size: 1rem !important; }
-
-.samp-font-size-1x {
-  font-size: 0.75rem !important; }
-
-.samp-font-size-2x {
-  font-size: 0.875rem !important; }
-
-.samp-font-size-3x {
-  font-size: 1.3rem !important; }
-
-.samp-font-size-4x {
-  font-size: 1.5rem !important; }
-
-.samp-font-size-5x {
-  font-size: 1.75rem !important; }
-
-.samp-font-size-6x {
-  font-size: 2rem !important; }
-
-.samp-font-size-7x {
-  font-size: 2.5rem !important; }
-
-.samp-font-size-8x {
-  font-size: 3.5rem !important; }
-
-.samp-font-size-9x {
-  font-size: 4rem !important; }
-
-.samp-font-size-10x {
-  font-size: 5em !important; }
+.samp-test-border-red-1 {
+  border-color: #ff0000 !important; }
+  .samp-test-border-red-1-hover:hover {
+    border-color: rgba(255, 0, 0, 0.91) !important; }
+  .samp-test-border-red-1\:hover:hover {
+    border-color: rgba(255, 0, 0, 0.91) !important; }
+  .samp-test-border-red-1\:focus:focus {
+    border-color: rgba(255, 0, 0, 0.91) !important; }
+  .samp-test-border-red-1-tp {
+    border-color: rgba(255, 0, 0, 0.91) !important; }

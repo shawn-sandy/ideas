@@ -9,7 +9,7 @@
 }
 
 @mixin atomix-utility($tokenArgs) {
-  @include mix-utilities($tokenArgs)
+  @include mix-utilities($tokenArgs);
 }
 
 /** generates a series of modifies based a list of attributes  **/
@@ -56,7 +56,6 @@
         }
       } @else {
         // TODO refactor to handle color maps--remove `color` from output
-
         @if $key == "base" {
           &#{$mix-prefix}#{$token} {
             @if type-of($val) == "color" {
