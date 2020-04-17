@@ -95,7 +95,7 @@
   @each $attribute in $mix-color-attrs {
     $attr: map-color-attrs($attribute);
     &#{$attr}#{$mix-prefix}#{$item} {
-      #{$attribute}: transparentize($val, 0.2) !important;
+      #{$attribute}: $val !important;
     }
     &#{$attr}#{$mix-prefix}#{$item}-hover {
       &:hover {

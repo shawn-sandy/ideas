@@ -26,6 +26,17 @@
         },
         "olive": {
             "value": "#B5CC18"
+        },
+        "test": {
+            "yellow": {
+                "value": "#ffd33d"
+            },
+            "green": {
+                "value": "#28a745"
+            },
+            "olive": {
+                "value": "#B5CC18"
+            }
         }
     }
 }
