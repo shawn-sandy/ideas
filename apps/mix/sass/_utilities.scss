@@ -65,13 +65,13 @@
         } @else {
           @if type-of($val) == "color" {
             &#{$mix-prefix}#{$key} {
-              color: $val;
+              @include map-colors($val, $key);
             }
           } @else {
             @if $key == "base" {
               &#{$mix-prefix}#{$token} {
                 @if type-of($val) == "color" {
-                  color: $val !important;
+                  @include map-colors($val, $key);
                 } @else {
                   #{$token}: $val;
                 }
