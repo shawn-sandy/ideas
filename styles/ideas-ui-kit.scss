@@ -46,5 +46,5 @@ $mix-color-attrs: "color", "background-color", "border-color";
 
 /** utility mixin example--create font utility form our tokens **/
 .ui {
-  @include mix-utilities("font");
+  @include mix-utilities("color");
 }

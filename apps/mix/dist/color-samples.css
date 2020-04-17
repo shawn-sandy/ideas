@@ -337,3 +337,36 @@
     border-color: rgba(255, 0, 0, 0.91) !important; }
   .samp-test-border-red-1-tp {
     border-color: rgba(255, 0, 0, 0.91) !important; }
+
+.samp-default {
+  font-size: 1rem !important; }
+
+.samp-1x {
+  font-size: 0.75rem !important; }
+
+.samp-2x {
+  font-size: 0.875rem !important; }
+
+.samp-3x {
+  font-size: 1.3rem !important; }
+
+.samp-4x {
+  font-size: 1.5rem !important; }
+
+.samp-5x {
+  font-size: 1.75rem !important; }
+
+.samp-6x {
+  font-size: 2rem !important; }
+
+.samp-7x {
+  font-size: 2.5rem !important; }
+
+.samp-8x {
+  font-size: 3.5rem !important; }
+
+.samp-9x {
+  font-size: 4rem !important; }
+
+.samp-10x {
+  font-size: 5em !important; }
