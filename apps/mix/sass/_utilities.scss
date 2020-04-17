@@ -58,6 +58,7 @@
           &#{$mix-prefix}#{$token} {
             @if type-of($val) == "color" {
               color: $val !important;
+              @include map-colors($val, $key);
             } @else {
               #{$token}: $val;
             }
@@ -92,7 +93,7 @@
 }
 
 @mixin map-colors($val, $item) {
-  color: $val;
+  //color: $val;
   @each $attribute in $mix-color-attrs {
     $attr: map-color-attrs($attribute);
     &#{$attr} {
