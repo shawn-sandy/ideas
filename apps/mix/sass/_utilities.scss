@@ -32,14 +32,14 @@
       } @else {
         &#{$mix-prefix}#{$key} {
           @if type-of($value) == "color" {
-            color: $value;
+            @include map-colors($value, $key);
           } @else {
             #{$key}: $value !important;
           }
         }
-        @if type-of($value) == "color" {
-          @include map-colors($value, $key);
-        }
+        // @if type-of($value) == "color" {
+        //   @include map-colors($value, $key);
+        // }
       }
     }
   } @else {
@@ -82,9 +82,9 @@
               }
             }
           }
-        }
-        @if type-of($val) == "color" {
-          @include map-colors($val, $key);
+          // @if type-of($val) == "color" {
+          //   @include map-colors($val, $key);
+          // }
         }
       }
     }
@@ -92,27 +92,28 @@
 }
 
 @mixin map-colors($val, $item) {
+  color: $val;
   @each $attribute in $mix-color-attrs {
     $attr: map-color-attrs($attribute);
-    &#{$attr}#{$mix-prefix}#{$item} {
+    &#{$attr} {
       #{$attribute}: $val !important;
     }
-    &#{$attr}#{$mix-prefix}#{$item}-hover {
+    &#{$attr}-hover {
       &:hover {
         #{$attribute}: transparentize($val, 0.2) !important;
       }
     }
-    &#{$attr}#{$mix-prefix}#{$item}\:hover {
+    &#{$attr}\:hover {
       &:hover {
         #{$attribute}: $val !important;
       }
     }
-    &#{$attr}#{$mix-prefix}#{$item}\:focus {
+    &#{$attr}\:focus {
       &:focus {
         #{$attribute}: $val !important;
       }
     }
-    &#{$attr}#{$mix-prefix}#{$item}#{$mix-prefix}tp {
+    &#{$attr}#{$mix-prefix}tp {
       #{$attribute}: darken($val, 3%) !important;
     }
   }
