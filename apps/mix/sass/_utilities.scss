@@ -51,11 +51,13 @@
   @if type-of($values) == "map" {
     @each $key, $val in $values {
       @if type-of($val) == "map" {
-        @include map-values($token, $modifier-key, $val);
+        &#{$mix-prefix}#{$modifier-key} {
+          @include map-values($token, $modifier-key, $val);
+        }
       } @else {
         // TODO refactor to handle color maps--remove `color` from output
         @if $key == "base" {
-          &#{$mix-prefix}#{$token} {
+          &#{$mix-prefix}#{$modifier-key}#{$mix-prefix}#{$token} {
             @if type-of($val) == "color" {
               color: $val !important;
               @include map-colors($val, $key);
@@ -65,7 +67,7 @@
           }
         } @else {
           @if type-of($val) == "color" {
-            &#{$mix-prefix}#{$key} {
+            &#{$mix-prefix}#{$modifier-key}#{$mix-prefix}#{$key} {
               @include map-colors($val, $key);
             }
           } @else {
