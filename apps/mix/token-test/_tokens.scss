@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Wed, 15 Apr 2020 14:27:45 GMT
+  Generated on Fri, 17 Apr 2020 23:25:40 GMT
 */
 
 $mx-color-black: #000000 !default;
@@ -13,6 +13,9 @@ $mx-color-orange: #f66a0a !default;
 $mx-color-yellow: #ffd33d !default;
 $mx-color-green: #28a745 !default;
 $mx-color-olive: #b5cc18 !default;
+$mx-color-test-yellow: #ffd33d !default;
+$mx-color-test-green: #28a745 !default;
+$mx-color-test-olive: #b5cc18 !default;
 $mx-font-size-font-size-default: 1rem !default; // descriptions...
 $mx-font-size-font-size-1-x: 0.75rem !default; // descriptions...
 $mx-font-size-font-size-2-x: 0.875rem !default; // descriptions...
@@ -57,7 +60,12 @@ $tokens: (
     'orange': $mx-color-orange,
     'yellow': $mx-color-yellow,
     'green': $mx-color-green,
-    'olive': $mx-color-olive
+    'olive': $mx-color-olive,
+    'test': (
+      'yellow': $mx-color-test-yellow,
+      'green': $mx-color-test-green,
+      'olive': $mx-color-test-olive
+    )
   ),
   'font': (
     'size': (

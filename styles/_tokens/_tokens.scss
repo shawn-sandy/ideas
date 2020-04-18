@@ -1,0 +1,45 @@
+
+/*
+  Do not edit directly
+  Generated on Fri, 17 Apr 2020 05:25:06 GMT
+*/
+
+$mx-color-black: #000000 !default;
+$mx-color-white: #ffffff !default;
+$mx-color-gray: #6a737d !default;
+$mx-color-red: #d73a49 !default;
+$mx-color-blue: #0366d6 !default;
+$mx-color-orange: #f66a0a !default;
+$mx-color-yellow: #ffd33d !default;
+$mx-color-green: #28a745 !default;
+$mx-color-olive: #b5cc18 !default;
+$mx-color-test-yellow: #ffd33d !default;
+$mx-color-test-green: #28a745 !default;
+$mx-color-test-olive: #b5cc18 !default;
+$mx-size-font-base: 16rem !default; // the base size of the font
+$mx-size-font-large: 20rem !default; // the large size of the font
+
+$tokens: (
+  'color': (
+    'black': $mx-color-black,
+    'white': $mx-color-white,
+    'gray': $mx-color-gray,
+    'red': $mx-color-red,
+    'blue': $mx-color-blue,
+    'orange': $mx-color-orange,
+    'yellow': $mx-color-yellow,
+    'green': $mx-color-green,
+    'olive': $mx-color-olive,
+    'test': (
+      'yellow': $mx-color-test-yellow,
+      'green': $mx-color-test-green,
+      'olive': $mx-color-test-olive
+    )
+  ),
+  'size': (
+    'font': (
+      'base': $mx-size-font-base,
+      'large': $mx-size-font-large
+    )
+  )
+);

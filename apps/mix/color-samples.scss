@@ -8,7 +8,6 @@
 
 .samp {
   @include mix-colors("color");
-  @include mix-utilities("font");
 }
 
 .font {

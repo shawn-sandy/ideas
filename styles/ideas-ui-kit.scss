@@ -25,7 +25,7 @@ body {
   }
 }
 /** Import tokens, replace the import file below with your own **/
-@import "node_modules/@shawnsandy/mix/tokens/tokens";
+@import "./_tokens/tokens";
 
 /** Config StyleMix SASS defaults */
 
@@ -46,5 +46,5 @@ $mix-color-attrs: "color", "background-color", "border-color";
 
 /** utility mixin example--create font utility form our tokens **/
 .ui {
-  @include mix-utilities("font");
+  @include mix-utilities("color");
 }
