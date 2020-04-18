@@ -1,86 +1,46 @@
 {
     "height": {
-        "1x": {
-            "value": "10vh",
-            "description": "Height 10vh"
-        },
-        "2x": {
-            "value": "20vh",
-            "description": "Height 10vh"
-        },
-        "3x": {
-            "value": "30vh",
-            "description": "Height 10vh"
-        },
-        "4x": {
-            "value": "40vh",
-            "description": "Height 10vh"
-        },
-        "5x": {
-            "value": "50vh",
-            "description": "Height 10vh"
-        },
-        "6x": {
-            "value": "60vh",
-            "description": "Height 10vh"
-        },
-        "7x": {
-            "value": "70vh",
-            "description": "Height 10vh"
-        },
-        "8x": {
-            "value": "80vh",
-            "description": "Height 10vh"
-        },
-        "9x": {
-            "value": "90vh",
-            "description": "Height 10vh"
-        },
-        "10x": {
-            "value": "100vh",
-            "description": "Height 10vh"
-        }
-    },
-    "width": {
-        "1x": {
-            "value": "10vw",
-            "description": "Height 10vw"
-        },
-        "2x": {
-            "value": "20vw",
-            "description": "Height 10vw"
-        },
-        "3x": {
-            "value": "30vw",
-            "description": "Height 10vw"
-        },
-        "4x": {
-            "value": "40vw",
-            "description": "Height 10vw"
-        },
-        "5x": {
-            "value": "50vw",
-            "description": "Height 10vw"
-        },
-        "6x": {
-            "value": "60vw",
-            "description": "Height 10vw"
-        },
-        "7x": {
-            "value": "70vw",
-            "description": "Height 10vw"
-        },
-        "8x": {
-            "value": "80vw",
-            "description": "Height 10vw"
-        },
-        "9x": {
-            "value": "90vw",
-            "description": "Height 10vw"
-        },
-        "10x": {
-            "value": "100vw",
-            "description": "Height 10vw"
+        "height": {
+            "1x": {
+                "value": "10vh",
+                "comment": "Height 10vh"
+            },
+            "2x": {
+                "value": "20vh",
+                "comment": "Height 10vh"
+            },
+            "3x": {
+                "value": "30vh",
+                "comment": "Height 10vh"
+            },
+            "4x": {
+                "value": "40vh",
+                "comment": "Height 10vh"
+            },
+            "5x": {
+                "value": "50vh",
+                "comment": "Height 10vh"
+            },
+            "6x": {
+                "value": "60vh",
+                "comment": "Height 10vh"
+            },
+            "7x": {
+                "value": "70vh",
+                "comment": "Height 10vh"
+            },
+            "8x": {
+                "value": "80vh",
+                "comment": "Height 10vh"
+            },
+            "9x": {
+                "value": "90vh",
+                "comment": "Height 10vh"
+            },
+            "10x": {
+                "value": "100vh",
+                "comment": "Height 10vh"
+            }
         }
     }
 }

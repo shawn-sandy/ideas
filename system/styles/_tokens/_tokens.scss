@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Sat, 18 Apr 2020 02:08:54 GMT
+  Generated on Sat, 18 Apr 2020 02:59:55 GMT
 */
 
 $mx-color-black: #000000 !default;
@@ -28,26 +28,16 @@ $mx-font-size-font-size-9-x: 4rem !default; // descriptions...
 $mx-font-size-font-size-10-x: 5em !default; // descriptions...
 $mx-weight-medium: 500 !default; // descriptions...
 $mx-weight-bold: 700 !default; // descriptions...
-$mx-height-1-x: 10vh !default;
-$mx-height-2-x: 20vh !default;
-$mx-height-3-x: 30vh !default;
-$mx-height-4-x: 40vh !default;
-$mx-height-5-x: 50vh !default;
-$mx-height-6-x: 60vh !default;
-$mx-height-7-x: 70vh !default;
-$mx-height-8-x: 80vh !default;
-$mx-height-9-x: 90vh !default;
-$mx-height-10-x: 100vh !default;
-$mx-width-1-x: 10vw !default;
-$mx-width-2-x: 20vw !default;
-$mx-width-3-x: 30vw !default;
-$mx-width-4-x: 40vw !default;
-$mx-width-5-x: 50vw !default;
-$mx-width-6-x: 60vw !default;
-$mx-width-7-x: 70vw !default;
-$mx-width-8-x: 80vw !default;
-$mx-width-9-x: 90vw !default;
-$mx-width-10-x: 100vw !default;
+$mx-height-height-1-x: 10vh !default; // Height 10vh
+$mx-height-height-2-x: 20vh !default; // Height 10vh
+$mx-height-height-3-x: 30vh !default; // Height 10vh
+$mx-height-height-4-x: 40vh !default; // Height 10vh
+$mx-height-height-5-x: 50vh !default; // Height 10vh
+$mx-height-height-6-x: 60vh !default; // Height 10vh
+$mx-height-height-7-x: 70vh !default; // Height 10vh
+$mx-height-height-8-x: 80vh !default; // Height 10vh
+$mx-height-height-9-x: 90vh !default; // Height 10vh
+$mx-height-height-10-x: 100vh !default; // Height 10vh
 
 $tokens: (
   'color': (
@@ -89,27 +79,17 @@ $tokens: (
     'bold': $mx-weight-bold
   ),
   'height': (
-    '1x': $mx-height-1-x,
-    '2x': $mx-height-2-x,
-    '3x': $mx-height-3-x,
-    '4x': $mx-height-4-x,
-    '5x': $mx-height-5-x,
-    '6x': $mx-height-6-x,
-    '7x': $mx-height-7-x,
-    '8x': $mx-height-8-x,
-    '9x': $mx-height-9-x,
-    '10x': $mx-height-10-x
-  ),
-  'width': (
-    '1x': $mx-width-1-x,
-    '2x': $mx-width-2-x,
-    '3x': $mx-width-3-x,
-    '4x': $mx-width-4-x,
-    '5x': $mx-width-5-x,
-    '6x': $mx-width-6-x,
-    '7x': $mx-width-7-x,
-    '8x': $mx-width-8-x,
-    '9x': $mx-width-9-x,
-    '10x': $mx-width-10-x
+    'height': (
+      '1x': $mx-height-height-1-x,
+      '2x': $mx-height-height-2-x,
+      '3x': $mx-height-height-3-x,
+      '4x': $mx-height-height-4-x,
+      '5x': $mx-height-height-5-x,
+      '6x': $mx-height-height-6-x,
+      '7x': $mx-height-height-7-x,
+      '8x': $mx-height-height-8-x,
+      '9x': $mx-height-height-9-x,
+      '10x': $mx-height-height-10-x
+    )
   )
 );
