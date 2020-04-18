@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx @11ty/eleventy --serve",
     "build": "npx @11ty/eleventy",
-    "parcel": "parcel build app.js --no-content-hash --out-dir build/uikit --no-minify",
-    "parcel:watch": "parcel watch app.js --out-dir www/uikit",
+    "parcel": "parcel build main.js --no-content-hash --out-dir build/uikit --no-minify",
+    "parcel:watch": "parcel watch main.js --out-dir www/uikit",
     "changelog": "auto-changelog -p --template config/_changelog.hbs",
     "debug": "cd system/debug",
     "tokens": "style-dictionary build --config ./tokens.js"
@@ -56,6 +56,7 @@
     "gulp-string-replace": "^1.1.2",
     "html-minifier": "^4.0.0",
     "lerna": "^3.20.2",
+    "mvp": "git+https://github.com/shawn-sandy/mvp.git",
     "node-fetch": "^2.6.0",
     "parcel": "^1.12.4",
     "require-dir": "^1.2.0",
