@@ -1,20 +1,9 @@
 
 /*
   Do not edit directly
-  Generated on Mon, 06 Jan 2020 00:31:39 GMT
+  Generated on Sat, 18 Apr 2020 02:06:08 GMT
 */
 
-$mx-button-padding: 0 1.5rem !default;
-$mx-buttons-btn-height: 2.5rem !default;
-$mx-buttons-btn-padding: 0 1.5rem !default;
-$mx-buttons-btn-display: inline-block !default;
-$mx-buttons-btn-text-align: center !default;
-$mx-buttons-btn-transition: all .2s !default;
-$mx-buttons-btn-border: none !default;
-$mx-buttons-btn-focus-border: none !default;
-$mx-buttons-btn-focus-outline: none !default;
-$mx-buttons-btn-pill-border-radius: 9999rem !default;
-$mx-buttons-btn-rounded-border-radius: 0.31rem !default;
 $mx-color-black: #000000 !default;
 $mx-color-white: #ffffff !default;
 $mx-color-gray: #6a737d !default;
@@ -24,84 +13,44 @@ $mx-color-orange: #f66a0a !default;
 $mx-color-yellow: #ffd33d !default;
 $mx-color-green: #28a745 !default;
 $mx-color-olive: #b5cc18 !default;
-$mx-color-teal: #00b5ad !default;
-$mx-color-violet: #6435c9 !default;
-$mx-color-purple: #a333c8 !default;
-$mx-color-pink: #e03997 !default;
-$mx-color-brown: #a5673f !default;
-$mx-color-ui-primary: #0366d6 !default; // Primary branding color used for the logo, feature text/foreground elements
-$mx-color-ui-secondary: #070707 !default; // Secondary branding color used for backgrounds to emphasis the lift the Primary brand color
-$mx-color-ui-light: #fefcfc !default; // Primary text on dark colors
-$mx-color-ui-text: #707070 !default; // Primary text color
-$mx-color-ui-black-smoke: #0f0f0f !default; // Dark overlays and backgrounds
-$mx-truncate-clip-box-overflow: hidden !default;
-$mx-truncate-clip-box-position: relative !default;
-$mx-truncate-clip-box-line-height: 1rem !default;
-$mx-truncate-clip-box-max-height: 3rem !default;
-$mx-truncate-clip-box-text-align: null !default;
-$mx-truncate-clip-box-margin-right: -1rem !default;
-$mx-truncate-clip-box-padding-right: 1rem !default;
-$mx-truncate-clip-box-before-content: "..." !default;
-$mx-truncate-clip-box-before-position: absolute !default;
-$mx-truncate-clip-box-before-right: 0 !default;
-$mx-truncate-clip-box-before-bottom: 0 !default;
-$mx-truncate-clip-box-after-content: "" !default;
-$mx-truncate-clip-box-after-position: absolute !default;
-$mx-truncate-clip-box-after-right: 0 !default;
-$mx-truncate-clip-box-after-width: 1rem !default;
-$mx-truncate-clip-box-after-height: 1rem !default;
-$mx-truncate-clip-box-after-background: transparent !default;
-$mx-font-size-base: 1rem !default; // descriptions...
-$mx-font-size-fine-print: 0.75rem !default; // descriptions...
-$mx-font-size-notes: 0.875rem !default; // descriptions...
-$mx-font-size-short-copy: 1.3rem !default; // descriptions...
-$mx-font-size-lead: 1.5rem !default; // descriptions...
-$mx-font-size-subtitles: 1.75rem !default; // descriptions...
-$mx-font-size-header-base: 2rem !default; // descriptions...
-$mx-font-size-header-xs: 2.5rem !default; // descriptions...
-$mx-font-size-header-sm: 3rem !default; // descriptions...
-$mx-font-size-header-md: 3.5rem !default; // descriptions...
-$mx-font-size-header-lg: 4rem !default; // descriptions...
-$mx-font-size-header-xl: 5rem !default; // descriptions...
-$mx-font-weight-medium: 500 !default; // descriptions...
-$mx-font-weight-bold: 700 !default; // descriptions...
-$mx-links-primary-color: #000000 !default;
-$mx-links-primary-hover-color: #010101 !default;
-$mx-nav-nav-bar-display: flex !default;
-$mx-nav-nav-bar-align-items: center !default;
-$mx-nav-nav-bar-height: 60px !default;
-$mx-nav-nav-bar-elm-padding: 0 1rem !default;
-$mx-nav-nav-bar-list-display: flex !default;
-$mx-nav-nav-bar-list-flex-direction: row !default;
-$mx-nav-nav-bar-list-list-style: none !default;
-$mx-nav-nav-bar-list-margin: auto 0 !default;
-$mx-nav-nav-bar-sm-height: 20rem !important !default;
-$mx-nav-nav-bar-md-height: 40rem !important !default;
-$mx-nav-nav-bar-lg-height: 80rem !important !default;
-$mx-nav-nav-bar-xl-height: 100rem !important !default;
+$mx-color-test-yellow: #ffd33d !default;
+$mx-color-test-green: #28a745 !default;
+$mx-color-test-olive: #b5cc18 !default;
+$mx-font-size-font-size-default: 1rem !default; // descriptions...
+$mx-font-size-font-size-1-x: 0.75rem !default; // descriptions...
+$mx-font-size-font-size-2-x: 0.875rem !default; // descriptions...
+$mx-font-size-font-size-3-x: 1.3rem !default; // descriptions...
+$mx-font-size-font-size-4-x: 1.5rem !default; // descriptions...
+$mx-font-size-font-size-5-x: 1.75rem !default; // descriptions...
+$mx-font-size-font-size-6-x: 2rem !default; // descriptions...
+$mx-font-size-font-size-7-x: 2.5rem !default; // descriptions...
+$mx-font-size-font-size-8-x: 3.5rem !default; // descriptions...
+$mx-font-size-font-size-9-x: 4rem !default; // descriptions...
+$mx-font-size-font-size-10-x: 5em !default; // descriptions...
+$mx-weight-medium: 500 !default; // descriptions...
+$mx-weight-bold: 700 !default; // descriptions...
+$mx-height-1-x: 10vh !default;
+$mx-height-2-x: 20vh !default;
+$mx-height-3-x: 30vh !default;
+$mx-height-4-x: 40vh !default;
+$mx-height-5-x: 50vh !default;
+$mx-height-6-x: 60vh !default;
+$mx-height-7-x: 70vh !default;
+$mx-height-8-x: 80vh !default;
+$mx-height-9-x: 90vh !default;
+$mx-height-10-x: 100vh !default;
+$mx-width-1-x: 10vw !default;
+$mx-width-2-x: 20vw !default;
+$mx-width-3-x: 30vw !default;
+$mx-width-4-x: 40vw !default;
+$mx-width-5-x: 50vw !default;
+$mx-width-6-x: 60vw !default;
+$mx-width-7-x: 70vw !default;
+$mx-width-8-x: 80vw !default;
+$mx-width-9-x: 90vw !default;
+$mx-width-10-x: 100vw !default;
 
 $tokens: (
-  'button-padding': $mx-button-padding,
-  'buttons': (
-    'btn': (
-      'height': $mx-buttons-btn-height,
-      'padding': $mx-buttons-btn-padding,
-      'display': $mx-buttons-btn-display,
-      'text-align': $mx-buttons-btn-text-align,
-      'transition': $mx-buttons-btn-transition,
-      'border': $mx-buttons-btn-border,
-      'focus': (
-        'border': $mx-buttons-btn-focus-border,
-        'outline': $mx-buttons-btn-focus-outline
-      ),
-      'pill': (
-        'border-radius': $mx-buttons-btn-pill-border-radius
-      ),
-      'rounded': (
-        'border-radius': $mx-buttons-btn-rounded-border-radius
-      )
-    )
-  ),
   'color': (
     'black': $mx-color-black,
     'white': $mx-color-white,
@@ -112,100 +61,55 @@ $tokens: (
     'yellow': $mx-color-yellow,
     'green': $mx-color-green,
     'olive': $mx-color-olive,
-    'teal': $mx-color-teal,
-    'violet': $mx-color-violet,
-    'purple': $mx-color-purple,
-    'pink': $mx-color-pink,
-    'brown': $mx-color-brown,
-    'ui': (
-      'primary': $mx-color-ui-primary,
-      'secondary': $mx-color-ui-secondary,
-      'light': $mx-color-ui-light,
-      'text': $mx-color-ui-text,
-      'black-smoke': $mx-color-ui-black-smoke
-    )
-  ),
-  'truncate': (
-    'clip-box': (
-      'overflow': $mx-truncate-clip-box-overflow,
-      'position': $mx-truncate-clip-box-position,
-      'line-height': $mx-truncate-clip-box-line-height,
-      'max-height': $mx-truncate-clip-box-max-height,
-      'text-align': $mx-truncate-clip-box-text-align,
-      'margin-right': $mx-truncate-clip-box-margin-right,
-      'padding-right': $mx-truncate-clip-box-padding-right,
-      'before': (
-        'content': $mx-truncate-clip-box-before-content,
-        'position': $mx-truncate-clip-box-before-position,
-        'right': $mx-truncate-clip-box-before-right,
-        'bottom': $mx-truncate-clip-box-before-bottom
-      ),
-      'after': (
-        'content': $mx-truncate-clip-box-after-content,
-        'position': $mx-truncate-clip-box-after-position,
-        'right': $mx-truncate-clip-box-after-right,
-        'width': $mx-truncate-clip-box-after-width,
-        'height': $mx-truncate-clip-box-after-height,
-        'background': $mx-truncate-clip-box-after-background
-      )
+    'test': (
+      'yellow': $mx-color-test-yellow,
+      'green': $mx-color-test-green,
+      'olive': $mx-color-test-olive
     )
   ),
   'font': (
     'size': (
-      'base': $mx-font-size-base,
-      'fine-print': $mx-font-size-fine-print,
-      'notes': $mx-font-size-notes,
-      'short-copy': $mx-font-size-short-copy,
-      'lead': $mx-font-size-lead,
-      'subtitles': $mx-font-size-subtitles,
-      'header': (
-        'base': $mx-font-size-header-base,
-        'xs': $mx-font-size-header-xs,
-        'sm': $mx-font-size-header-sm,
-        'md': $mx-font-size-header-md,
-        'lg': $mx-font-size-header-lg,
-        'xl': $mx-font-size-header-xl
-      )
-    ),
-    'weight': (
-      'medium': $mx-font-weight-medium,
-      'bold': $mx-font-weight-bold
-    )
-  ),
-  'links': (
-    'primary': (
-      'color': $mx-links-primary-color,
-      'hover': (
-        'color': $mx-links-primary-hover-color
+      'font-size': (
+        'default': $mx-font-size-font-size-default,
+        '1x': $mx-font-size-font-size-1-x,
+        '2x': $mx-font-size-font-size-2-x,
+        '3x': $mx-font-size-font-size-3-x,
+        '4x': $mx-font-size-font-size-4-x,
+        '5x': $mx-font-size-font-size-5-x,
+        '6x': $mx-font-size-font-size-6-x,
+        '7x': $mx-font-size-font-size-7-x,
+        '8x': $mx-font-size-font-size-8-x,
+        '9x': $mx-font-size-font-size-9-x,
+        '10x': $mx-font-size-font-size-10-x
       )
     )
   ),
-  'nav': (
-    'nav-bar': (
-      'display': $mx-nav-nav-bar-display,
-      'align-items': $mx-nav-nav-bar-align-items,
-      'height': $mx-nav-nav-bar-height,
-      'elm': (
-        'padding': $mx-nav-nav-bar-elm-padding
-      ),
-      'list': (
-        'display': $mx-nav-nav-bar-list-display,
-        'flex-direction': $mx-nav-nav-bar-list-flex-direction,
-        'list-style': $mx-nav-nav-bar-list-list-style,
-        'margin': $mx-nav-nav-bar-list-margin
-      ),
-      'sm': (
-        'height': $mx-nav-nav-bar-sm-height
-      ),
-      'md': (
-        'height': $mx-nav-nav-bar-md-height
-      ),
-      'lg': (
-        'height': $mx-nav-nav-bar-lg-height
-      ),
-      'xl': (
-        'height': $mx-nav-nav-bar-xl-height
-      )
-    )
+  'weight': (
+    'medium': $mx-weight-medium,
+    'bold': $mx-weight-bold
+  ),
+  'height': (
+    '1x': $mx-height-1-x,
+    '2x': $mx-height-2-x,
+    '3x': $mx-height-3-x,
+    '4x': $mx-height-4-x,
+    '5x': $mx-height-5-x,
+    '6x': $mx-height-6-x,
+    '7x': $mx-height-7-x,
+    '8x': $mx-height-8-x,
+    '9x': $mx-height-9-x,
+    '10x': $mx-height-10-x
+  ),
+  'width': (
+    '1x': $mx-width-1-x,
+    '2x': $mx-width-2-x,
+    '3x': $mx-width-3-x,
+    '4x': $mx-width-4-x,
+    '5x': $mx-width-5-x,
+    '6x': $mx-width-6-x,
+    '7x': $mx-width-7-x,
+    '8x': $mx-width-8-x,
+    '9x': $mx-width-9-x,
+    '10x': $mx-width-10-x
   )
 );

@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Fri, 17 Apr 2020 05:30:21 GMT
+  Generated on Sat, 18 Apr 2020 02:08:54 GMT
 */
 
 $mx-color-black: #000000 !default;
@@ -13,11 +13,41 @@ $mx-color-orange: #f66a0a !default;
 $mx-color-yellow: #ffd33d !default;
 $mx-color-green: #28a745 !default;
 $mx-color-olive: #b5cc18 !default;
-$mx-color-test-yellow: #ffd33d !default;
-$mx-color-test-green: #28a745 !default;
-$mx-color-test-olive: #b5cc18 !default;
 $mx-size-font-base: 16rem !default; // the base size of the font
 $mx-size-font-large: 20rem !default; // the large size of the font
+$mx-font-size-font-size-default: 1rem !default; // descriptions...
+$mx-font-size-font-size-1-x: 0.75rem !default; // descriptions...
+$mx-font-size-font-size-2-x: 0.875rem !default; // descriptions...
+$mx-font-size-font-size-3-x: 1.3rem !default; // descriptions...
+$mx-font-size-font-size-4-x: 1.5rem !default; // descriptions...
+$mx-font-size-font-size-5-x: 1.75rem !default; // descriptions...
+$mx-font-size-font-size-6-x: 2rem !default; // descriptions...
+$mx-font-size-font-size-7-x: 2.5rem !default; // descriptions...
+$mx-font-size-font-size-8-x: 3.5rem !default; // descriptions...
+$mx-font-size-font-size-9-x: 4rem !default; // descriptions...
+$mx-font-size-font-size-10-x: 5em !default; // descriptions...
+$mx-weight-medium: 500 !default; // descriptions...
+$mx-weight-bold: 700 !default; // descriptions...
+$mx-height-1-x: 10vh !default;
+$mx-height-2-x: 20vh !default;
+$mx-height-3-x: 30vh !default;
+$mx-height-4-x: 40vh !default;
+$mx-height-5-x: 50vh !default;
+$mx-height-6-x: 60vh !default;
+$mx-height-7-x: 70vh !default;
+$mx-height-8-x: 80vh !default;
+$mx-height-9-x: 90vh !default;
+$mx-height-10-x: 100vh !default;
+$mx-width-1-x: 10vw !default;
+$mx-width-2-x: 20vw !default;
+$mx-width-3-x: 30vw !default;
+$mx-width-4-x: 40vw !default;
+$mx-width-5-x: 50vw !default;
+$mx-width-6-x: 60vw !default;
+$mx-width-7-x: 70vw !default;
+$mx-width-8-x: 80vw !default;
+$mx-width-9-x: 90vw !default;
+$mx-width-10-x: 100vw !default;
 
 $tokens: (
   'color': (
@@ -29,17 +59,57 @@ $tokens: (
     'orange': $mx-color-orange,
     'yellow': $mx-color-yellow,
     'green': $mx-color-green,
-    'olive': $mx-color-olive,
-    'test': (
-      'yellow': $mx-color-test-yellow,
-      'green': $mx-color-test-green,
-      'olive': $mx-color-test-olive
-    )
+    'olive': $mx-color-olive
   ),
   'size': (
     'font': (
       'base': $mx-size-font-base,
       'large': $mx-size-font-large
     )
+  ),
+  'font': (
+    'size': (
+      'font-size': (
+        'default': $mx-font-size-font-size-default,
+        '1x': $mx-font-size-font-size-1-x,
+        '2x': $mx-font-size-font-size-2-x,
+        '3x': $mx-font-size-font-size-3-x,
+        '4x': $mx-font-size-font-size-4-x,
+        '5x': $mx-font-size-font-size-5-x,
+        '6x': $mx-font-size-font-size-6-x,
+        '7x': $mx-font-size-font-size-7-x,
+        '8x': $mx-font-size-font-size-8-x,
+        '9x': $mx-font-size-font-size-9-x,
+        '10x': $mx-font-size-font-size-10-x
+      )
+    )
+  ),
+  'weight': (
+    'medium': $mx-weight-medium,
+    'bold': $mx-weight-bold
+  ),
+  'height': (
+    '1x': $mx-height-1-x,
+    '2x': $mx-height-2-x,
+    '3x': $mx-height-3-x,
+    '4x': $mx-height-4-x,
+    '5x': $mx-height-5-x,
+    '6x': $mx-height-6-x,
+    '7x': $mx-height-7-x,
+    '8x': $mx-height-8-x,
+    '9x': $mx-height-9-x,
+    '10x': $mx-height-10-x
+  ),
+  'width': (
+    '1x': $mx-width-1-x,
+    '2x': $mx-width-2-x,
+    '3x': $mx-width-3-x,
+    '4x': $mx-width-4-x,
+    '5x': $mx-width-5-x,
+    '6x': $mx-width-6-x,
+    '7x': $mx-width-7-x,
+    '8x': $mx-width-8-x,
+    '9x': $mx-width-9-x,
+    '10x': $mx-width-10-x
   )
 );
