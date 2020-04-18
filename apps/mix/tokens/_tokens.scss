@@ -1,9 +1,20 @@
 
 /*
   Do not edit directly
-  Generated on Sat, 18 Apr 2020 02:06:08 GMT
+  Generated on Sat, 18 Apr 2020 12:15:35 GMT
 */
 
+$mx-button-padding: 0 1.5rem !default;
+$mx-buttons-btn-height: 2.5rem !default;
+$mx-buttons-btn-padding: 0 1.5rem !default;
+$mx-buttons-btn-display: inline-block !default;
+$mx-buttons-btn-text-align: center !default;
+$mx-buttons-btn-transition: all .2s !default;
+$mx-buttons-btn-border: none !default;
+$mx-buttons-btn-focus-border: none !default;
+$mx-buttons-btn-focus-outline: none !default;
+$mx-buttons-btn-pill-border-radius: 9999rem !default;
+$mx-buttons-btn-rounded-border-radius: 0.31rem !default;
 $mx-color-black: #000000 !default;
 $mx-color-white: #ffffff !default;
 $mx-color-gray: #6a737d !default;
@@ -49,8 +60,60 @@ $mx-width-7-x: 70vw !default;
 $mx-width-8-x: 80vw !default;
 $mx-width-9-x: 90vw !default;
 $mx-width-10-x: 100vw !default;
+$mx-links-primary-color: #000000 !default;
+$mx-links-primary-hover-color: #010101 !default;
+$mx-nav-nav-bar-display: flex !default;
+$mx-nav-nav-bar-align-items: center !default;
+$mx-nav-nav-bar-height: 60px !default;
+$mx-nav-nav-bar-elm-padding: 0 1rem !default;
+$mx-nav-nav-bar-list-display: flex !default;
+$mx-nav-nav-bar-list-flex-direction: row !default;
+$mx-nav-nav-bar-list-list-style: none !default;
+$mx-nav-nav-bar-list-margin: auto 0 !default;
+$mx-nav-nav-bar-sm-height: 20rem !important !default;
+$mx-nav-nav-bar-md-height: 40rem !important !default;
+$mx-nav-nav-bar-lg-height: 80rem !important !default;
+$mx-nav-nav-bar-xl-height: 100rem !important !default;
+$mx-truncate-clip-box-overflow: hidden !default;
+$mx-truncate-clip-box-position: relative !default;
+$mx-truncate-clip-box-line-height: 1rem !default;
+$mx-truncate-clip-box-max-height: 3rem !default;
+$mx-truncate-clip-box-text-align: null !default;
+$mx-truncate-clip-box-margin-right: -1rem !default;
+$mx-truncate-clip-box-padding-right: 1rem !default;
+$mx-truncate-clip-box-before-content: "..." !default;
+$mx-truncate-clip-box-before-position: absolute !default;
+$mx-truncate-clip-box-before-right: 0 !default;
+$mx-truncate-clip-box-before-bottom: 0 !default;
+$mx-truncate-clip-box-after-content: "" !default;
+$mx-truncate-clip-box-after-position: absolute !default;
+$mx-truncate-clip-box-after-right: 0 !default;
+$mx-truncate-clip-box-after-width: 1rem !default;
+$mx-truncate-clip-box-after-height: 1rem !default;
+$mx-truncate-clip-box-after-background: transparent !default;
 
 $tokens: (
+  'button-padding': $mx-button-padding,
+  'buttons': (
+    'btn': (
+      'height': $mx-buttons-btn-height,
+      'padding': $mx-buttons-btn-padding,
+      'display': $mx-buttons-btn-display,
+      'text-align': $mx-buttons-btn-text-align,
+      'transition': $mx-buttons-btn-transition,
+      'border': $mx-buttons-btn-border,
+      'focus': (
+        'border': $mx-buttons-btn-focus-border,
+        'outline': $mx-buttons-btn-focus-outline
+      ),
+      'pill': (
+        'border-radius': $mx-buttons-btn-pill-border-radius
+      ),
+      'rounded': (
+        'border-radius': $mx-buttons-btn-rounded-border-radius
+      )
+    )
+  ),
   'color': (
     'black': $mx-color-black,
     'white': $mx-color-white,
@@ -111,5 +174,66 @@ $tokens: (
     '8x': $mx-width-8-x,
     '9x': $mx-width-9-x,
     '10x': $mx-width-10-x
+  ),
+  'links': (
+    'primary': (
+      'color': $mx-links-primary-color,
+      'hover': (
+        'color': $mx-links-primary-hover-color
+      )
+    )
+  ),
+  'nav': (
+    'nav-bar': (
+      'display': $mx-nav-nav-bar-display,
+      'align-items': $mx-nav-nav-bar-align-items,
+      'height': $mx-nav-nav-bar-height,
+      'elm': (
+        'padding': $mx-nav-nav-bar-elm-padding
+      ),
+      'list': (
+        'display': $mx-nav-nav-bar-list-display,
+        'flex-direction': $mx-nav-nav-bar-list-flex-direction,
+        'list-style': $mx-nav-nav-bar-list-list-style,
+        'margin': $mx-nav-nav-bar-list-margin
+      ),
+      'sm': (
+        'height': $mx-nav-nav-bar-sm-height
+      ),
+      'md': (
+        'height': $mx-nav-nav-bar-md-height
+      ),
+      'lg': (
+        'height': $mx-nav-nav-bar-lg-height
+      ),
+      'xl': (
+        'height': $mx-nav-nav-bar-xl-height
+      )
+    )
+  ),
+  'truncate': (
+    'clip-box': (
+      'overflow': $mx-truncate-clip-box-overflow,
+      'position': $mx-truncate-clip-box-position,
+      'line-height': $mx-truncate-clip-box-line-height,
+      'max-height': $mx-truncate-clip-box-max-height,
+      'text-align': $mx-truncate-clip-box-text-align,
+      'margin-right': $mx-truncate-clip-box-margin-right,
+      'padding-right': $mx-truncate-clip-box-padding-right,
+      'before': (
+        'content': $mx-truncate-clip-box-before-content,
+        'position': $mx-truncate-clip-box-before-position,
+        'right': $mx-truncate-clip-box-before-right,
+        'bottom': $mx-truncate-clip-box-before-bottom
+      ),
+      'after': (
+        'content': $mx-truncate-clip-box-after-content,
+        'position': $mx-truncate-clip-box-after-position,
+        'right': $mx-truncate-clip-box-after-right,
+        'width': $mx-truncate-clip-box-after-width,
+        'height': $mx-truncate-clip-box-after-height,
+        'background': $mx-truncate-clip-box-after-background
+      )
+    )
   )
 );
