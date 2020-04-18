@@ -1,0 +1,6 @@
+@import "./imports";
+
+.amx {
+  @include atx-utility("dimensions.height", "height");
+  @include atx-utility("dimensions.width", "width");
+}
