@@ -8,7 +8,7 @@
   }
 }
 
-@mixin atx-utility($tokens, $modifier: "") {
+@mixin mix-utility($tokens, $modifier: "") {
   @if length($tokens) >= 1 {
     @each $var in $tokens {
       @include utilities($var, $modifier: $modifier, $map: $mix-tokens);

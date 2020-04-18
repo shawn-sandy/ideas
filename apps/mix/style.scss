@@ -23,6 +23,6 @@
 
   @include mix-utilities("font");
   @include mix-utilities("color");
-  @include atx-utility("dimensions.height", "height");
-  @include atx-utility("dimensions.width", "width");
+  @include mix-utility("dimensions.height", "height");
+  @include mix-utility("dimensions.width", "width");
 }
