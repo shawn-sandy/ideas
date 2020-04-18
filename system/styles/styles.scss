@@ -1,7 +1,9 @@
 /** Import tokens, replace the import file below with your own **/
 @import "~@shawnsandy/mix/tokens/_tokens.scss";
 
-@import "./system/styles/_tokens/_tokens.scss"; /** Config StyleMix SASS defaults */
+// @import "./system/styles/_tokens/_tokens.scss";
+
+/** Config StyleMix SASS defaults */
 
 $mix-tokens: $tokens; // token variable name
 $mix-namespace: "mx"; // namespace
@@ -48,5 +50,6 @@ body {
 .ui {
   @include mix-utilities("color");
   @include mix-utilities("font");
-  // @include mix-utilities("height");
+  @include mix-utility("dimensions.height", "height");
+  @include mix-utility("dimensions.width", "width");
 }
