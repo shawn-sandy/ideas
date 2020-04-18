@@ -117,27 +117,17 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"bijh":[function(require,module,exports) {
+})({"y3D1":[function(require,module,exports) {
+
+},{"./..\\webfonts\\fa-regular-400.eot":[["fa-regular-400.a2c1909d.eot","nv22"],"nv22"],"./..\\webfonts\\fa-regular-400.woff2":[["fa-regular-400.5ca8c932.woff2","M504"],"M504"],"./..\\webfonts\\fa-regular-400.woff":[["fa-regular-400.3c3cc54e.woff","H1q6"],"H1q6"],"./..\\webfonts\\fa-regular-400.ttf":[["fa-regular-400.cde05ce7.ttf","Evul"],"Evul"],"./..\\webfonts\\fa-regular-400.svg":[["fa-regular-400.6ef294e6.svg","D7rB"],"D7rB"]}],"UsdY":[function(require,module,exports) {
+
+},{}],"XEZO":[function(require,module,exports) {
 "use strict";
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.hello = void 0;
+require("@fortawesome/fontawesome-free/css/regular.css");
 
-var hello = function hello(name) {
-  return "Hello, ".concat(name || "World");
-};
+require("@shawnsandy/bootstrap-lite");
 
-exports.hello = hello;
-},{}],"epB2":[function(require,module,exports) {
-"use strict";
-
-var _js = require("./system/js");
-
-var hi = (0, _js.hello)();
-console.log(hi);
-var sayhi = (0, _js.hello)("What's your name");
-console.log(sayhi);
-},{"./system/js":"bijh"}]},{},["epB2"], null)
-//# sourceMappingURL=/main.js.map
+require("./system/styles/styles.scss");
+},{"@fortawesome/fontawesome-free/css/regular.css":"y3D1","@shawnsandy/bootstrap-lite":"UsdY","./system/styles/styles.scss":"UsdY"}]},{},["XEZO"], null)
+//# sourceMappingURL=/styles.js.map
