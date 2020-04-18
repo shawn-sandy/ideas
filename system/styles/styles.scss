@@ -1,7 +1,7 @@
 /** Import tokens, replace the import file below with your own **/
-// @import "~@shawnsandy/mix/tokens/_tokens.scss";
+@import "~@shawnsandy/mix/tokens/_tokens.scss";
 
-@import "./_tokens/tokens"; /** Config StyleMix SASS defaults */
+@import "./system/styles/_tokens/_tokens.scss"; /** Config StyleMix SASS defaults */
 
 $mix-tokens: $tokens; // token variable name
 $mix-namespace: "mx"; // namespace
@@ -47,4 +47,6 @@ body {
 /** utility mixin example--create font utility form our tokens **/
 .ui {
   @include mix-utilities("color");
+  @include mix-utilities("font");
+  // @include mix-utilities("height");
 }
