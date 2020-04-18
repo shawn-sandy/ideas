@@ -1,9 +1,20 @@
 
 /*
   Do not edit directly
-  Generated on Sat, 18 Apr 2020 02:06:08 GMT
+  Generated on Sat, 18 Apr 2020 18:27:33 GMT
 */
 
+$mx-button-padding: 0 1.5rem !default;
+$mx-buttons-btn-height: 2.5rem !default;
+$mx-buttons-btn-padding: 0 1.5rem !default;
+$mx-buttons-btn-display: inline-block !default;
+$mx-buttons-btn-text-align: center !default;
+$mx-buttons-btn-transition: all .2s !default;
+$mx-buttons-btn-border: none !default;
+$mx-buttons-btn-focus-border: none !default;
+$mx-buttons-btn-focus-outline: none !default;
+$mx-buttons-btn-pill-border-radius: 9999rem !default;
+$mx-buttons-btn-rounded-border-radius: 0.31rem !default;
 $mx-color-black: #000000 !default;
 $mx-color-white: #ffffff !default;
 $mx-color-gray: #6a737d !default;
@@ -29,28 +40,80 @@ $mx-font-size-font-size-9-x: 4rem !default; // descriptions...
 $mx-font-size-font-size-10-x: 5em !default; // descriptions...
 $mx-weight-medium: 500 !default; // descriptions...
 $mx-weight-bold: 700 !default; // descriptions...
-$mx-height-1-x: 10vh !default;
-$mx-height-2-x: 20vh !default;
-$mx-height-3-x: 30vh !default;
-$mx-height-4-x: 40vh !default;
-$mx-height-5-x: 50vh !default;
-$mx-height-6-x: 60vh !default;
-$mx-height-7-x: 70vh !default;
-$mx-height-8-x: 80vh !default;
-$mx-height-9-x: 90vh !default;
-$mx-height-10-x: 100vh !default;
-$mx-width-1-x: 10vw !default;
-$mx-width-2-x: 20vw !default;
-$mx-width-3-x: 30vw !default;
-$mx-width-4-x: 40vw !default;
-$mx-width-5-x: 50vw !default;
-$mx-width-6-x: 60vw !default;
-$mx-width-7-x: 70vw !default;
-$mx-width-8-x: 80vw !default;
-$mx-width-9-x: 90vw !default;
-$mx-width-10-x: 100vw !default;
+$mx-dimensions-height-h-1-x: 10vh !default;
+$mx-dimensions-height-h-2-x: 20vh !default;
+$mx-dimensions-height-h-3-x: 30vh !default;
+$mx-dimensions-height-h-4-x: 40vh !default;
+$mx-dimensions-height-h-5-x: 50vh !default;
+$mx-dimensions-height-h-6-x: 60vh !default;
+$mx-dimensions-height-h-7-x: 70vh !default;
+$mx-dimensions-height-h-8-x: 80vh !default;
+$mx-dimensions-height-h-9-x: 90vh !default;
+$mx-dimensions-height-h-10-x: 100vh !default;
+$mx-dimensions-width-w-1-x: 10vw !default;
+$mx-dimensions-width-w-2-x: 20vw !default;
+$mx-dimensions-width-w-3-x: 30vw !default;
+$mx-dimensions-width-w-4-x: 40vw !default;
+$mx-dimensions-width-w-5-x: 50vw !default;
+$mx-dimensions-width-w-6-x: 60vw !default;
+$mx-dimensions-width-w-7-x: 70vw !default;
+$mx-dimensions-width-w-8-x: 80vw !default;
+$mx-dimensions-width-w-9-x: 90vw !default;
+$mx-dimensions-width-w-10-x: 100vw !default;
+$mx-links-primary-color: #000000 !default;
+$mx-links-primary-hover-color: #010101 !default;
+$mx-nav-nav-bar-display: flex !default;
+$mx-nav-nav-bar-align-items: center !default;
+$mx-nav-nav-bar-height: 60px !default;
+$mx-nav-nav-bar-elm-padding: 0 1rem !default;
+$mx-nav-nav-bar-list-display: flex !default;
+$mx-nav-nav-bar-list-flex-direction: row !default;
+$mx-nav-nav-bar-list-list-style: none !default;
+$mx-nav-nav-bar-list-margin: auto 0 !default;
+$mx-nav-nav-bar-sm-height: 20rem !important !default;
+$mx-nav-nav-bar-md-height: 40rem !important !default;
+$mx-nav-nav-bar-lg-height: 80rem !important !default;
+$mx-nav-nav-bar-xl-height: 100rem !important !default;
+$mx-truncate-clip-box-overflow: hidden !default;
+$mx-truncate-clip-box-position: relative !default;
+$mx-truncate-clip-box-line-height: 1rem !default;
+$mx-truncate-clip-box-max-height: 3rem !default;
+$mx-truncate-clip-box-text-align: null !default;
+$mx-truncate-clip-box-margin-right: -1rem !default;
+$mx-truncate-clip-box-padding-right: 1rem !default;
+$mx-truncate-clip-box-before-content: "..." !default;
+$mx-truncate-clip-box-before-position: absolute !default;
+$mx-truncate-clip-box-before-right: 0 !default;
+$mx-truncate-clip-box-before-bottom: 0 !default;
+$mx-truncate-clip-box-after-content: "" !default;
+$mx-truncate-clip-box-after-position: absolute !default;
+$mx-truncate-clip-box-after-right: 0 !default;
+$mx-truncate-clip-box-after-width: 1rem !default;
+$mx-truncate-clip-box-after-height: 1rem !default;
+$mx-truncate-clip-box-after-background: transparent !default;
 
 $tokens: (
+  'button-padding': $mx-button-padding,
+  'buttons': (
+    'btn': (
+      'height': $mx-buttons-btn-height,
+      'padding': $mx-buttons-btn-padding,
+      'display': $mx-buttons-btn-display,
+      'text-align': $mx-buttons-btn-text-align,
+      'transition': $mx-buttons-btn-transition,
+      'border': $mx-buttons-btn-border,
+      'focus': (
+        'border': $mx-buttons-btn-focus-border,
+        'outline': $mx-buttons-btn-focus-outline
+      ),
+      'pill': (
+        'border-radius': $mx-buttons-btn-pill-border-radius
+      ),
+      'rounded': (
+        'border-radius': $mx-buttons-btn-rounded-border-radius
+      )
+    )
+  ),
   'color': (
     'black': $mx-color-black,
     'white': $mx-color-white,
@@ -88,28 +151,91 @@ $tokens: (
     'medium': $mx-weight-medium,
     'bold': $mx-weight-bold
   ),
-  'height': (
-    '1x': $mx-height-1-x,
-    '2x': $mx-height-2-x,
-    '3x': $mx-height-3-x,
-    '4x': $mx-height-4-x,
-    '5x': $mx-height-5-x,
-    '6x': $mx-height-6-x,
-    '7x': $mx-height-7-x,
-    '8x': $mx-height-8-x,
-    '9x': $mx-height-9-x,
-    '10x': $mx-height-10-x
+  'dimensions': (
+    'height': (
+      'h1x': $mx-dimensions-height-h-1-x,
+      'h2x': $mx-dimensions-height-h-2-x,
+      'h3x': $mx-dimensions-height-h-3-x,
+      'h4x': $mx-dimensions-height-h-4-x,
+      'h5x': $mx-dimensions-height-h-5-x,
+      'h6x': $mx-dimensions-height-h-6-x,
+      'h7x': $mx-dimensions-height-h-7-x,
+      'h8x': $mx-dimensions-height-h-8-x,
+      'h9x': $mx-dimensions-height-h-9-x,
+      'h10x': $mx-dimensions-height-h-10-x
+    ),
+    'width': (
+      'w1x': $mx-dimensions-width-w-1-x,
+      'w2x': $mx-dimensions-width-w-2-x,
+      'w3x': $mx-dimensions-width-w-3-x,
+      'w4x': $mx-dimensions-width-w-4-x,
+      'w5x': $mx-dimensions-width-w-5-x,
+      'w6x': $mx-dimensions-width-w-6-x,
+      'w7x': $mx-dimensions-width-w-7-x,
+      'w8x': $mx-dimensions-width-w-8-x,
+      'w9x': $mx-dimensions-width-w-9-x,
+      'w10x': $mx-dimensions-width-w-10-x
+    )
   ),
-  'width': (
-    '1x': $mx-width-1-x,
-    '2x': $mx-width-2-x,
-    '3x': $mx-width-3-x,
-    '4x': $mx-width-4-x,
-    '5x': $mx-width-5-x,
-    '6x': $mx-width-6-x,
-    '7x': $mx-width-7-x,
-    '8x': $mx-width-8-x,
-    '9x': $mx-width-9-x,
-    '10x': $mx-width-10-x
+  'links': (
+    'primary': (
+      'color': $mx-links-primary-color,
+      'hover': (
+        'color': $mx-links-primary-hover-color
+      )
+    )
+  ),
+  'nav': (
+    'nav-bar': (
+      'display': $mx-nav-nav-bar-display,
+      'align-items': $mx-nav-nav-bar-align-items,
+      'height': $mx-nav-nav-bar-height,
+      'elm': (
+        'padding': $mx-nav-nav-bar-elm-padding
+      ),
+      'list': (
+        'display': $mx-nav-nav-bar-list-display,
+        'flex-direction': $mx-nav-nav-bar-list-flex-direction,
+        'list-style': $mx-nav-nav-bar-list-list-style,
+        'margin': $mx-nav-nav-bar-list-margin
+      ),
+      'sm': (
+        'height': $mx-nav-nav-bar-sm-height
+      ),
+      'md': (
+        'height': $mx-nav-nav-bar-md-height
+      ),
+      'lg': (
+        'height': $mx-nav-nav-bar-lg-height
+      ),
+      'xl': (
+        'height': $mx-nav-nav-bar-xl-height
+      )
+    )
+  ),
+  'truncate': (
+    'clip-box': (
+      'overflow': $mx-truncate-clip-box-overflow,
+      'position': $mx-truncate-clip-box-position,
+      'line-height': $mx-truncate-clip-box-line-height,
+      'max-height': $mx-truncate-clip-box-max-height,
+      'text-align': $mx-truncate-clip-box-text-align,
+      'margin-right': $mx-truncate-clip-box-margin-right,
+      'padding-right': $mx-truncate-clip-box-padding-right,
+      'before': (
+        'content': $mx-truncate-clip-box-before-content,
+        'position': $mx-truncate-clip-box-before-position,
+        'right': $mx-truncate-clip-box-before-right,
+        'bottom': $mx-truncate-clip-box-before-bottom
+      ),
+      'after': (
+        'content': $mx-truncate-clip-box-after-content,
+        'position': $mx-truncate-clip-box-after-position,
+        'right': $mx-truncate-clip-box-after-right,
+        'width': $mx-truncate-clip-box-after-width,
+        'height': $mx-truncate-clip-box-after-height,
+        'background': $mx-truncate-clip-box-after-background
+      )
+    )
   )
 );

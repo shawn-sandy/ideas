@@ -1,6 +1,6 @@
 // utility generator
 
-@mixin mix-utilities($tokens...) {
+@mixin mix-utilities($tokens) {
   @if length($tokens) >= 1 {
     @each $var in $tokens {
       @include utilities($var);
@@ -8,8 +8,12 @@
   }
 }
 
-@mixin atomix-utility($tokenArgs) {
-  @include mix-utilities($tokenArgs);
+@mixin mix-utility($tokens, $modifier: "") {
+  @if length($tokens) >= 1 {
+    @each $var in $tokens {
+      @include utilities($var, $modifier: $modifier, $map: $mix-tokens);
+    }
+  }
 }
 
 /** generates a series of modifies based a list of attributes  **/
@@ -21,8 +25,12 @@
   @include mix-utilities("font", $map);
 }
 
-@mixin utilities($token, $map: $mix-tokens) {
+@mixin utilities($token, $map: $mix-tokens, $modifier: "") {
   $utility: get($token, $map);
+  @if $modifier != "" {
+    $token: $modifier;
+    @debug "modifier: #{$modifier}";
+  }
   @if length($list: $utility) >= 0 {
     @debug "we got the utility map";
     @each $key, $value in $utility {
@@ -33,6 +41,8 @@
         &#{$mix-prefix}#{$key} {
           @if type-of($value) == "color" {
             @include map-colors($value, $key);
+          } @else if $modifier != "" {
+            #{$modifier}: $value !important;
           } @else {
             #{$key}: $value !important;
           }

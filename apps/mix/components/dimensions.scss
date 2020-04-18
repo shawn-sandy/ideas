@@ -1,0 +1,6 @@
+@import "./imports";
+
+.amx {
+  @include mix-utility("dimensions.height", "height");
+  @include mix-utility("dimensions.width", "width");
+}
