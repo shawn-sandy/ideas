@@ -8,5 +8,5 @@
 
 .mix {
   /** default colors */
-  @include mix-colors("color");
+  @include mix-utilities("color");
 }

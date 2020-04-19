@@ -27,10 +27,7 @@
 
 @mixin utilities($token, $map: $mix-tokens, $modifier: "") {
   $utility: get($token, $map);
-  // @if $modifier != "" {
-  //   $token: $modifier;
-  //   @debug "modifier: #{$modifier}";
-  // }
+
   @if length($list: $utility) >= 0 {
     @debug "we got the utility map";
     @each $key, $value in $utility {
@@ -69,25 +66,23 @@
       } @else {
         // TODO refactor to handle color maps--remove `color` from output
         @if $key == "base" {
-          &#{$mix-prefix}#{$modifier-key}#{$mix-prefix}#{$token} {
-            @if type-of($val) == "color" {
-              // color: $val !important;
-              @include map-colors($val, $key, $modifier-key);
-            } @else {
+          @if type-of($val) == "color" {
+            // color: $val !important;
+            @include map-colors($val, $key, $modifier-key);
+          } @else {
+            &#{$mix-prefix}#{$modifier-key}#{$mix-prefix}#{$token} {
               #{$token}: $val;
             }
           }
         } @else {
           @if type-of($val) == "color" {
-            &#{$mix-prefix}#{$modifier-key}#{$mix-prefix}#{$key} {
-              @include map-colors($val, $key, $modifier-key);
-            }
+            @include map-colors($val, $key, #{$modifier-key});
           } @else {
             @if $key == "base" {
-              &#{$mix-prefix}#{$modifier-key} {
-                @if type-of($val) == "color" {
-                  @include map-colors($val, $key, $modifier-key);
-                } @else {
+              @if type-of($val) == "color" {
+                @include map-colors($val, $key);
+              } @else {
+                &#{$mix-prefix}#{$modifier-key} {
                   #{$token}: $val;
                 }
               }
@@ -108,30 +103,40 @@
 }
 
 @mixin map-colors($val, $item, $name: "") {
+  @debug $mix-color-attrs;
+  $selector: null;
+  @if $name != "" {
+    @debug "name #{$name}";
+    $selector: #{$name}#{$mix-prefix};
+  }
   @each $attribute in $mix-color-attrs {
     //color: $val;
-    @debug "Name: #{$name}";
     $attr: map-color-attrs($attribute);
-    #{$attr}#{$mix-prefix} {
-      &#{$name} {
+
+    @if $name != "" {
+      @debug "Attribute Name: #{$attr}  #{$selector}";
+    }
+
+    &#{$attr}#{$mix-prefix}#{$selector} {
+      &#{$item} {
         #{$attribute}: $val !important;
       }
-      &#{$name}-hover {
+      &#{$item}#{$mix-prefix}hover {
         &:hover {
           #{$attribute}: transparentize($val, 0.2) !important;
         }
       }
-      &#{$name}\:hover {
+      &#{$item}\:hover {
         &:hover {
           #{$attribute}: $val !important;
         }
       }
-      &#{$attr}\:focus {
+      &#{$item}\:focus {
         &:focus {
           #{$attribute}: $val !important;
         }
       }
-      &#{$attr}#{$mix-prefix}tp {
+      &#{$item}#{$mix-prefix}tp {
         #{$attribute}: darken($val, 3%) !important;
       }
     }
