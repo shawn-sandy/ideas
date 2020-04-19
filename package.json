@@ -42,7 +42,7 @@
     "@11ty/eleventy-plugin-rss": "^1.0.7",
     "@fortawesome/fontawesome-free": "^5.13.0",
     "@shawnsandy/ideas": "0.1.12",
-    "@shawnsandy/mix": "^0.8.2",
+    "@shawnsandy/mix": "^0.8.3",
     "auto-changelog": "^2.0.0",
     "flat-cache": "^2.0.1",
     "fs": "0.0.1-security",
