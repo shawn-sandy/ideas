@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Sat, 18 Apr 2020 18:27:33 GMT
+  Generated on Sun, 19 Apr 2020 00:08:31 GMT
 */
 
 $mx-button-padding: 0 1.5rem !default;
@@ -40,26 +40,27 @@ $mx-font-size-font-size-9-x: 4rem !default; // descriptions...
 $mx-font-size-font-size-10-x: 5em !default; // descriptions...
 $mx-weight-medium: 500 !default; // descriptions...
 $mx-weight-bold: 700 !default; // descriptions...
-$mx-dimensions-height-h-1-x: 10vh !default;
-$mx-dimensions-height-h-2-x: 20vh !default;
-$mx-dimensions-height-h-3-x: 30vh !default;
-$mx-dimensions-height-h-4-x: 40vh !default;
-$mx-dimensions-height-h-5-x: 50vh !default;
-$mx-dimensions-height-h-6-x: 60vh !default;
-$mx-dimensions-height-h-7-x: 70vh !default;
-$mx-dimensions-height-h-8-x: 80vh !default;
-$mx-dimensions-height-h-9-x: 90vh !default;
-$mx-dimensions-height-h-10-x: 100vh !default;
-$mx-dimensions-width-w-1-x: 10vw !default;
-$mx-dimensions-width-w-2-x: 20vw !default;
-$mx-dimensions-width-w-3-x: 30vw !default;
-$mx-dimensions-width-w-4-x: 40vw !default;
-$mx-dimensions-width-w-5-x: 50vw !default;
-$mx-dimensions-width-w-6-x: 60vw !default;
-$mx-dimensions-width-w-7-x: 70vw !default;
-$mx-dimensions-width-w-8-x: 80vw !default;
-$mx-dimensions-width-w-9-x: 90vw !default;
-$mx-dimensions-width-w-10-x: 100vw !default;
+$mx-dimensions-height-ht-05: 5vh !default;
+$mx-dimensions-height-ht-1: 10vh !default;
+$mx-dimensions-height-ht-2: 20vh !default;
+$mx-dimensions-height-ht-3: 30vh !default;
+$mx-dimensions-height-ht-4: 40vh !default;
+$mx-dimensions-height-ht-5: 50vh !default;
+$mx-dimensions-height-ht-6: 60vh !default;
+$mx-dimensions-height-ht-7: 70vh !default;
+$mx-dimensions-height-ht-8: 80vh !default;
+$mx-dimensions-height-ht-9: 90vh !default;
+$mx-dimensions-height-ht-10: 100vh !default;
+$mx-dimensions-width-wd-1: 10vw !default;
+$mx-dimensions-width-wd-2: 20vw !default;
+$mx-dimensions-width-wd-3: 30vw !default;
+$mx-dimensions-width-wd-4: 40vw !default;
+$mx-dimensions-width-wd-5: 50vw !default;
+$mx-dimensions-width-wd-6: 60vw !default;
+$mx-dimensions-width-wd-7: 70vw !default;
+$mx-dimensions-width-wd-8: 80vw !default;
+$mx-dimensions-width-wd-9: 90vw !default;
+$mx-dimensions-width-wd-10: 100vw !default;
 $mx-links-primary-color: #000000 !default;
 $mx-links-primary-hover-color: #010101 !default;
 $mx-nav-nav-bar-display: flex !default;
@@ -153,28 +154,29 @@ $tokens: (
   ),
   'dimensions': (
     'height': (
-      'h1x': $mx-dimensions-height-h-1-x,
-      'h2x': $mx-dimensions-height-h-2-x,
-      'h3x': $mx-dimensions-height-h-3-x,
-      'h4x': $mx-dimensions-height-h-4-x,
-      'h5x': $mx-dimensions-height-h-5-x,
-      'h6x': $mx-dimensions-height-h-6-x,
-      'h7x': $mx-dimensions-height-h-7-x,
-      'h8x': $mx-dimensions-height-h-8-x,
-      'h9x': $mx-dimensions-height-h-9-x,
-      'h10x': $mx-dimensions-height-h-10-x
+      'ht-05': $mx-dimensions-height-ht-05,
+      'ht-1': $mx-dimensions-height-ht-1,
+      'ht-2': $mx-dimensions-height-ht-2,
+      'ht-3': $mx-dimensions-height-ht-3,
+      'ht-4': $mx-dimensions-height-ht-4,
+      'ht-5': $mx-dimensions-height-ht-5,
+      'ht-6': $mx-dimensions-height-ht-6,
+      'ht-7': $mx-dimensions-height-ht-7,
+      'ht-8': $mx-dimensions-height-ht-8,
+      'ht-9': $mx-dimensions-height-ht-9,
+      'ht-10': $mx-dimensions-height-ht-10
     ),
     'width': (
-      'w1x': $mx-dimensions-width-w-1-x,
-      'w2x': $mx-dimensions-width-w-2-x,
-      'w3x': $mx-dimensions-width-w-3-x,
-      'w4x': $mx-dimensions-width-w-4-x,
-      'w5x': $mx-dimensions-width-w-5-x,
-      'w6x': $mx-dimensions-width-w-6-x,
-      'w7x': $mx-dimensions-width-w-7-x,
-      'w8x': $mx-dimensions-width-w-8-x,
-      'w9x': $mx-dimensions-width-w-9-x,
-      'w10x': $mx-dimensions-width-w-10-x
+      'wd-1': $mx-dimensions-width-wd-1,
+      'wd-2': $mx-dimensions-width-wd-2,
+      'wd-3': $mx-dimensions-width-wd-3,
+      'wd-4': $mx-dimensions-width-wd-4,
+      'wd-5': $mx-dimensions-width-wd-5,
+      'wd-6': $mx-dimensions-width-wd-6,
+      'wd-7': $mx-dimensions-width-wd-7,
+      'wd-8': $mx-dimensions-width-wd-8,
+      'wd-9': $mx-dimensions-width-wd-9,
+      'wd-10': $mx-dimensions-width-wd-10
     )
   ),
   'links': (

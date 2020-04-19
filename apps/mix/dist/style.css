@@ -1,6 +1,6 @@
 /*
   Do not edit directly
-  Generated on Sat, 18 Apr 2020 18:27:33 GMT
+  Generated on Sun, 19 Apr 2020 00:08:31 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 /** generates a series of modifies based a list of attributes  **/
@@ -638,62 +638,65 @@
 .amx-test-olive-border-tp {
   border-color: #a9be16 !important; }
 
-.amx-h1x {
+.amx-ht-05 {
+  height: 5vh !important; }
+
+.amx-ht-1 {
   height: 10vh !important; }
 
-.amx-h2x {
+.amx-ht-2 {
   height: 20vh !important; }
 
-.amx-h3x {
+.amx-ht-3 {
   height: 30vh !important; }
 
-.amx-h4x {
+.amx-ht-4 {
   height: 40vh !important; }
 
-.amx-h5x {
+.amx-ht-5 {
   height: 50vh !important; }
 
-.amx-h6x {
+.amx-ht-6 {
   height: 60vh !important; }
 
-.amx-h7x {
+.amx-ht-7 {
   height: 70vh !important; }
 
-.amx-h8x {
+.amx-ht-8 {
   height: 80vh !important; }
 
-.amx-h9x {
+.amx-ht-9 {
   height: 90vh !important; }
 
-.amx-h10x {
+.amx-ht-10 {
   height: 100vh !important; }
 
-.amx-w1x {
+.amx-wd-1 {
   width: 10vw !important; }
 
-.amx-w2x {
+.amx-wd-2 {
   width: 20vw !important; }
 
-.amx-w3x {
+.amx-wd-3 {
   width: 30vw !important; }
 
-.amx-w4x {
+.amx-wd-4 {
   width: 40vw !important; }
 
-.amx-w5x {
+.amx-wd-5 {
   width: 50vw !important; }
 
-.amx-w6x {
+.amx-wd-6 {
   width: 60vw !important; }
 
-.amx-w7x {
+.amx-wd-7 {
   width: 70vw !important; }
 
-.amx-w8x {
+.amx-wd-8 {
   width: 80vw !important; }
 
-.amx-w9x {
+.amx-wd-9 {
   width: 90vw !important; }
 
-.amx-w10x {
+.amx-wd-10 {
   width: 100vw !important; }
