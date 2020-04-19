@@ -1,93 +1,93 @@
 {
     "dimensions": {
         "height": {
-            "ht-05": {
+            "ht-5": {
                 "value": "5vh",
                 "description": "Height 10vh"
             },
-            "ht-1": {
+            "ht-10": {
                 "value": "10vh",
                 "description": "Height 10vh"
             },
-            "ht-2": {
+            "ht-20": {
                 "value": "20vh",
                 "description": "Height 10vh"
             },
-            "ht-3": {
+            "ht-30": {
                 "value": "30vh",
                 "description": "Height 10vh"
             },
-            "ht-4": {
+            "ht-40": {
                 "value": "40vh",
                 "description": "Height 10vh"
             },
-            "ht-5": {
+            "ht-50": {
                 "value": "50vh",
                 "description": "Height 10vh"
             },
-            "ht-6": {
+            "ht-60": {
                 "value": "60vh",
                 "description": "Height 10vh"
             },
-            "ht-7": {
+            "ht-70": {
                 "value": "70vh",
                 "description": "Height 10vh"
             },
-            "ht-8": {
+            "ht-80": {
                 "value": "80vh",
                 "description": "Height 10vh"
             },
-            "ht-9": {
+            "ht-90": {
                 "value": "90vh",
                 "description": "Height 10vh"
             },
-            "ht-10": {
+            "ht-100": {
                 "value": "100vh",
                 "description": "Height 10vh"
             }
         },
         "width": {
-            "wd-05": {
+            "wd-5": {
                 "value": "5vw",
                 "description": "Heigw 10vw"
             },
-            "wd-1": {
+            "wd-10": {
                 "value": "10vw",
                 "description": "Heigw 10vw"
             },
-            "wd-2": {
+            "wd-20": {
                 "value": "20vw",
                 "description": "Heigw 10vw"
             },
-            "wd-3": {
+            "wd-30": {
                 "value": "30vw",
                 "description": "Heigw 10vw"
             },
-            "wd-4": {
+            "wd-40": {
                 "value": "40vw",
                 "description": "Heigw 10vw"
             },
-            "wd-5": {
+            "wd-50": {
                 "value": "50vw",
                 "description": "Heigw 10vw"
             },
-            "wd-6": {
+            "wd-60": {
                 "value": "60vw",
                 "description": "Heigw 10vw"
             },
-            "wd-7": {
+            "wd-70": {
                 "value": "70vw",
                 "description": "Heigw 10vw"
             },
-            "wd-8": {
+            "wd-80": {
                 "value": "80vw",
                 "description": "Heigw 10vw"
             },
-            "wd-9": {
+            "wd-90": {
                 "value": "90vw",
                 "description": "Heigw 10vw"
             },
-            "wd-10": {
+            "wd-100": {
                 "value": "100vw",
                 "description": "Height 10vw"
             }
