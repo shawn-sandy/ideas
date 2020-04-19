@@ -27,10 +27,10 @@
 
 @mixin utilities($token, $map: $mix-tokens, $modifier: "") {
   $utility: get($token, $map);
-  @if $modifier != "" {
-    $token: $modifier;
-    @debug "modifier: #{$modifier}";
-  }
+  // @if $modifier != "" {
+  //   $token: $modifier;
+  //   @debug "modifier: #{$modifier}";
+  // }
   @if length($list: $utility) >= 0 {
     @debug "we got the utility map";
     @each $key, $value in $utility {
