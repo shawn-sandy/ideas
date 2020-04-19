@@ -47,6 +47,10 @@
             }
         },
         "width": {
+            "wd-05": {
+                "value": "5vw",
+                "description": "Heigw 10vw"
+            },
             "wd-1": {
                 "value": "10vw",
                 "description": "Heigw 10vw"

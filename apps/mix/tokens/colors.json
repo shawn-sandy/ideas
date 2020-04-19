@@ -9,6 +9,9 @@
         "gray": {
             "value": "#6a737d"
         },
+        "lightgray": {
+            "value": "#D3D3D3"
+        },
         "red": {
             "value": "#d73a49"
         },
@@ -22,21 +25,7 @@
             "value": "#ffd33d"
         },
         "green": {
-            "value": "#28a745"
-        },
-        "olive": {
-            "value": "#B5CC18"
-        },
-        "test": {
-            "yellow": {
-                "value": "#ffd33d"
-            },
-            "green": {
-                "value": "#28a745"
-            },
-            "olive": {
-                "value": "#B5CC18"
-            }
+            "value": "#008000"
         }
     }
 }
