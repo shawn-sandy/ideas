@@ -108,30 +108,32 @@
 }
 
 @mixin map-colors($val, $item, $name: "") {
-  //color: $val;
-  @debug "Name: #{$name}";
   @each $attribute in $mix-color-attrs {
+    //color: $val;
+    @debug "Name: #{$name}";
     $attr: map-color-attrs($attribute);
-    &#{$attr} {
-      #{$attribute}: $val !important;
-    }
-    &#{$attr}-hover {
-      &:hover {
-        #{$attribute}: transparentize($val, 0.2) !important;
-      }
-    }
-    &#{$attr}\:hover {
-      &:hover {
+    #{$attr}#{$mix-prefix} {
+      &#{$name} {
         #{$attribute}: $val !important;
       }
-    }
-    &#{$attr}\:focus {
-      &:focus {
-        #{$attribute}: $val !important;
+      &#{$name}-hover {
+        &:hover {
+          #{$attribute}: transparentize($val, 0.2) !important;
+        }
       }
-    }
-    &#{$attr}#{$mix-prefix}tp {
-      #{$attribute}: darken($val, 3%) !important;
+      &#{$name}\:hover {
+        &:hover {
+          #{$attribute}: $val !important;
+        }
+      }
+      &#{$attr}\:focus {
+        &:focus {
+          #{$attribute}: $val !important;
+        }
+      }
+      &#{$attr}#{$mix-prefix}tp {
+        #{$attribute}: darken($val, 3%) !important;
+      }
     }
   }
 }
