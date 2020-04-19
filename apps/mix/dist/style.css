@@ -1,6 +1,6 @@
 /*
   Do not edit directly
-  Generated on Sun, 19 Apr 2020 17:06:34 GMT
+  Generated on Sun, 19 Apr 2020 17:51:04 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 /** generates a series of modifies based a list of attributes  **/
@@ -593,68 +593,68 @@
 .mx-border-test-green-tp {
   border-color: #007100 !important; }
 
-.mx-ht-05 {
+.mx-ht-5 {
   height: 5vh !important; }
 
-.mx-ht-1 {
+.mx-ht-10 {
   height: 10vh !important; }
 
-.mx-ht-2 {
+.mx-ht-20 {
   height: 20vh !important; }
 
-.mx-ht-3 {
+.mx-ht-30 {
   height: 30vh !important; }
 
-.mx-ht-4 {
+.mx-ht-40 {
   height: 40vh !important; }
 
-.mx-ht-5 {
+.mx-ht-50 {
   height: 50vh !important; }
 
-.mx-ht-6 {
+.mx-ht-60 {
   height: 60vh !important; }
 
-.mx-ht-7 {
+.mx-ht-70 {
   height: 70vh !important; }
 
-.mx-ht-8 {
+.mx-ht-80 {
   height: 80vh !important; }
 
-.mx-ht-9 {
+.mx-ht-90 {
   height: 90vh !important; }
 
-.mx-ht-10 {
+.mx-ht-100 {
   height: 100vh !important; }
 
-.mx-wd-05 {
+.mx-wd-5 {
   width: 5vw !important; }
 
-.mx-wd-1 {
+.mx-wd-10 {
   width: 10vw !important; }
 
-.mx-wd-2 {
+.mx-wd-20 {
   width: 20vw !important; }
 
-.mx-wd-3 {
+.mx-wd-30 {
   width: 30vw !important; }
 
-.mx-wd-4 {
+.mx-wd-40 {
   width: 40vw !important; }
 
-.mx-wd-5 {
+.mx-wd-50 {
   width: 50vw !important; }
 
-.mx-wd-6 {
+.mx-wd-60 {
   width: 60vw !important; }
 
-.mx-wd-7 {
+.mx-wd-70 {
   width: 70vw !important; }
 
-.mx-wd-8 {
+.mx-wd-80 {
   width: 80vw !important; }
 
-.mx-wd-9 {
+.mx-wd-90 {
   width: 90vw !important; }
 
-.mx-wd-10 {
+.mx-wd-100 {
   width: 100vw !important; }
