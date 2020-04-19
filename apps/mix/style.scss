@@ -13,7 +13,7 @@
 
 // generate button modifiers using the mix-modifier (mixin)
 /** generate buttons using the modifier **/
-.amx {
+.mx {
   &-btn {
     @include mix-rules("buttons.btn");
   }
