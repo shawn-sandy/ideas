@@ -38,13 +38,15 @@
         @include map-values($token, $key, $value);
         // @debug "values: #{$value}";
       } @else {
-        &#{$mix-prefix}#{$key} {
-          @if type-of($value) == "color" {
-            @include map-colors($value, $key);
-          } @else if $modifier != "" {
-            #{$modifier}: $value !important;
-          } @else {
-            #{$key}: $value !important;
+        @if type-of($value) == "color" {
+          @include map-colors($value, $key);
+        } @else {
+          &#{$mix-prefix}#{$key} {
+            @if $modifier != "" {
+              #{$modifier}: $value !important;
+            } @else {
+              #{$key}: $value !important;
+            }
           }
         }
         // @if type-of($value) == "color" {
@@ -69,8 +71,8 @@
         @if $key == "base" {
           &#{$mix-prefix}#{$modifier-key}#{$mix-prefix}#{$token} {
             @if type-of($val) == "color" {
-              color: $val !important;
-              @include map-colors($val, $key);
+              // color: $val !important;
+              @include map-colors($val, $key, $modifier-key);
             } @else {
               #{$token}: $val;
             }
@@ -78,19 +80,19 @@
         } @else {
           @if type-of($val) == "color" {
             &#{$mix-prefix}#{$modifier-key}#{$mix-prefix}#{$key} {
-              @include map-colors($val, $key);
+              @include map-colors($val, $key, $modifier-key);
             }
           } @else {
             @if $key == "base" {
               &#{$mix-prefix}#{$modifier-key} {
                 @if type-of($val) == "color" {
-                  @include map-colors($val, $key);
+                  @include map-colors($val, $key, $modifier-key);
                 } @else {
                   #{$token}: $val;
                 }
               }
             } @else {
-              @debug "modifier #{$modifier-key}, Key: #{$key}, Token: #{$token}";
+              // @debug "modifier #{$modifier-key}, Key: #{$key}, Token: #{$token}";
               &#{$mix-prefix}#{$modifier-key}#{$mix-prefix}#{$key} {
                 #{$token}#{$mix-prefix}#{$modifier-key}: $val !important;
               }
@@ -105,8 +107,9 @@
   }
 }
 
-@mixin map-colors($val, $item) {
+@mixin map-colors($val, $item, $name: "") {
   //color: $val;
+  @debug "Name: #{$name}";
   @each $attribute in $mix-color-attrs {
     $attr: map-color-attrs($attribute);
     &#{$attr} {
