@@ -26,6 +26,14 @@
         },
         "green": {
             "value": "#008000"
+        },
+        "test": {
+            "yellow": {
+                "value": "#ffd33d"
+            },
+            "green": {
+                "value": "#008000"
+            }
         }
     }
 }
