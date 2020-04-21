@@ -455,7 +455,7 @@ blockquote footer {
 /** Import tokens, replace the import file below with your own **/
 /*
   Do not edit directly
-  Generated on Tue, 21 Apr 2020 02:27:44 GMT
+  Generated on Tue, 21 Apr 2020 02:54:09 GMT
 */
 /** Config StyleMix SASS defaults */
 /** import stylemix **/
@@ -1096,13 +1096,13 @@ body {
   height: 100vh !important; }
 
 .ui-ht-40vmin {
-  height: 40vmin !important; }
+  min-height: 40vh !important; }
 
 .ui-ht-20vmin {
-  height: 40vmin !important; }
+  min-height: 40vh !important; }
 
 .ui-ht-10vmin {
-  height: 10vmin !important; }
+  min-height: 10vh !important; }
 
 .ui-wd-5 {
   width: 5vw !important; }

@@ -51,5 +51,6 @@ body {
   @include mix-utilities("color");
   @include mix-utility("font", "font");
   @include mix-utility("dimensions.height", "height");
+  @include mix-utility("dimensions.min-height", "min-height");
   @include mix-utility("dimensions.width", "width");
 }

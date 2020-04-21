@@ -38,11 +38,11 @@
     {% endblock %}
 
     <!-- main content -->
-    {% block main %}
-    <main class="container-fluid ss-bg-white">
-
+    <main class="ss-bg-white ui-ht-40vmin">
+        {% block content %}
+        {{ content | safe }}
+        {% endblock %}
     </main>
-    {% endblock %}
     <!-- footer -->
     {% block footer %}
     {% include "partials/footer.njk" %}

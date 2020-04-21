@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Tue, 21 Apr 2020 02:27:44 GMT
+  Generated on Tue, 21 Apr 2020 02:54:09 GMT
 */
 
 $mx-button-padding: 0 1.5rem !default;
@@ -52,9 +52,6 @@ $mx-dimensions-height-ht-70: 70vh !default;
 $mx-dimensions-height-ht-80: 80vh !default;
 $mx-dimensions-height-ht-90: 90vh !default;
 $mx-dimensions-height-ht-100: 100vh !default;
-$mx-dimensions-height-ht-40-vmin: 40vmin !default; // Layout main section
-$mx-dimensions-height-ht-20-vmin: 40vmin !default; // Layout main section
-$mx-dimensions-height-ht-10-vmin: 10vmin !default; // Footer heigt
 $mx-dimensions-width-wd-5: 5vw !default;
 $mx-dimensions-width-wd-10: 10vw !default;
 $mx-dimensions-width-wd-20: 20vw !default;
@@ -66,6 +63,9 @@ $mx-dimensions-width-wd-70: 70vw !default;
 $mx-dimensions-width-wd-80: 80vw !default;
 $mx-dimensions-width-wd-90: 90vw !default;
 $mx-dimensions-width-wd-100: 100vw !default;
+$mx-dimensions-min-height-ht-40-vmin: 40vh !default; // Layout main section
+$mx-dimensions-min-height-ht-20-vmin: 40vh !default; // Layout main section
+$mx-dimensions-min-height-ht-10-vmin: 10vh !default; // Footer heigt
 $mx-links-primary-color: #000000 !default;
 $mx-links-primary-hover-color: #010101 !default;
 $mx-nav-nav-bar-display: flex !default;
@@ -176,10 +176,7 @@ $tokens: (
       'ht-70': $mx-dimensions-height-ht-70,
       'ht-80': $mx-dimensions-height-ht-80,
       'ht-90': $mx-dimensions-height-ht-90,
-      'ht-100': $mx-dimensions-height-ht-100,
-      'ht-40vmin': $mx-dimensions-height-ht-40-vmin,
-      'ht-20vmin': $mx-dimensions-height-ht-20-vmin,
-      'ht-10vmin': $mx-dimensions-height-ht-10-vmin
+      'ht-100': $mx-dimensions-height-ht-100
     ),
     'width': (
       'wd-5': $mx-dimensions-width-wd-5,
@@ -193,6 +190,11 @@ $tokens: (
       'wd-80': $mx-dimensions-width-wd-80,
       'wd-90': $mx-dimensions-width-wd-90,
       'wd-100': $mx-dimensions-width-wd-100
+    ),
+    'min-height': (
+      'ht-40vmin': $mx-dimensions-min-height-ht-40-vmin,
+      'ht-20vmin': $mx-dimensions-min-height-ht-20-vmin,
+      'ht-10vmin': $mx-dimensions-min-height-ht-10-vmin
     )
   ),
   'links': (
