@@ -455,7 +455,7 @@ blockquote footer {
 /** Import tokens, replace the import file below with your own **/
 /*
   Do not edit directly
-  Generated on Sun, 19 Apr 2020 17:51:04 GMT
+  Generated on Tue, 21 Apr 2020 02:27:44 GMT
 */
 /** Config StyleMix SASS defaults */
 /** import stylemix **/
@@ -981,6 +981,51 @@ body {
 .ui-border-test-green-tp {
   border-color: #007100 !important; }
 
+.ui-brand-primary {
+  color: #1e90ff !important; }
+
+.ui-brand-primary-hover:hover {
+  color: rgba(30, 144, 255, 0.8) !important; }
+
+.ui-brand-primary\:hover:hover {
+  color: #1e90ff !important; }
+
+.ui-brand-primary\:focus:focus {
+  color: #1e90ff !important; }
+
+.ui-brand-primary-tp {
+  color: #0f88ff !important; }
+
+.ui-bg-brand-primary {
+  background-color: #1e90ff !important; }
+
+.ui-bg-brand-primary-hover:hover {
+  background-color: rgba(30, 144, 255, 0.8) !important; }
+
+.ui-bg-brand-primary\:hover:hover {
+  background-color: #1e90ff !important; }
+
+.ui-bg-brand-primary\:focus:focus {
+  background-color: #1e90ff !important; }
+
+.ui-bg-brand-primary-tp {
+  background-color: #0f88ff !important; }
+
+.ui-border-brand-primary {
+  border-color: #1e90ff !important; }
+
+.ui-border-brand-primary-hover:hover {
+  border-color: rgba(30, 144, 255, 0.8) !important; }
+
+.ui-border-brand-primary\:hover:hover {
+  border-color: #1e90ff !important; }
+
+.ui-border-brand-primary\:focus:focus {
+  border-color: #1e90ff !important; }
+
+.ui-border-brand-primary-tp {
+  border-color: #0f88ff !important; }
+
 .ui-font-size-default {
   font-size: 1rem !important; }
 
@@ -1014,6 +1059,9 @@ body {
 .ui-font-size-10x {
   font-size: 5em !important; }
 
+.ui-font-size-default {
+  font-size: 1rem !important; }
+
 .ui-ht-5 {
   height: 5vh !important; }
 
@@ -1046,6 +1094,15 @@ body {
 
 .ui-ht-100 {
   height: 100vh !important; }
+
+.ui-ht-40vmin {
+  height: 40vmin !important; }
+
+.ui-ht-20vmin {
+  height: 40vmin !important; }
+
+.ui-ht-10vmin {
+  height: 10vmin !important; }
 
 .ui-wd-5 {
   width: 5vw !important; }
