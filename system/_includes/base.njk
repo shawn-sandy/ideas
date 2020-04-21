@@ -40,23 +40,13 @@
     <!-- main content -->
     {% block main %}
     <main class="container-fluid ss-bg-white">
-        <section class="row ss-cover ">
-            {% block content %}
-            <div class="w-100 vh-50 d-flex justify-content-center align-items-center">
-                <div class="wrapper text-center">
-                    <p id="lead-text" class="text-left- welcome ss-classic-blue ss-classic-blue-hover">
-                        I’m a FULL STACK DESIGNER & WEB DEVELOPER, with a passion for building Web Applications that
-                        actively engages users in responsive thought.
-                    </p>
-                </div>
-            </div>
 
-            {% endblock %}
-        </section>
     </main>
     {% endblock %}
     <!-- footer -->
-    {% block footer %} {% endblock %}
+    {% block footer %}
+    {% include "partials/footer.njk" %}
+    {% endblock %}
     <!-- scripts - replaced jquery with vue -->
     {% for js in metadata.scripts %}
     <script src="{{ js }}"></script>
