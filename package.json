@@ -42,7 +42,7 @@
     "@11ty/eleventy-plugin-rss": "^1.0.7",
     "@fortawesome/fontawesome-free": "^5.13.0",
     "@shawnsandy/ideas": "0.1.12",
-    "@shawnsandy/mix": "^0.8.5",
+    "@shawnsandy/mix": "^0.8.6",
     "auto-changelog": "^2.0.0",
     "flat-cache": "^2.0.1",
     "fs": "0.0.1-security",
@@ -61,6 +61,6 @@
     "node-fetch": "^2.6.0",
     "parcel": "^1.12.4",
     "require-dir": "^1.2.0",
-    "style-dictionary": "^2.8.3"
+    "style-dictionary": "^2.9.0"
   }
 }
