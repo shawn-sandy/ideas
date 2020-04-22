@@ -455,7 +455,7 @@ blockquote footer {
 /** Import tokens, replace the import file below with your own **/
 /*
   Do not edit directly
-  Generated on Tue, 21 Apr 2020 02:54:09 GMT
+  Generated on Tue, 21 Apr 2020 10:58:35 GMT
 */
 /** Config StyleMix SASS defaults */
 /** import stylemix **/
@@ -982,49 +982,49 @@ body {
   border-color: #007100 !important; }
 
 .ui-brand-primary {
-  color: #1e90ff !important; }
+  color: #6495ed !important; }
 
 .ui-brand-primary-hover:hover {
-  color: rgba(30, 144, 255, 0.8) !important; }
+  color: rgba(100, 149, 237, 0.8) !important; }
 
 .ui-brand-primary\:hover:hover {
-  color: #1e90ff !important; }
+  color: #6495ed !important; }
 
 .ui-brand-primary\:focus:focus {
-  color: #1e90ff !important; }
+  color: #6495ed !important; }
 
 .ui-brand-primary-tp {
-  color: #0f88ff !important; }
+  color: #568ceb !important; }
 
 .ui-bg-brand-primary {
-  background-color: #1e90ff !important; }
+  background-color: #6495ed !important; }
 
 .ui-bg-brand-primary-hover:hover {
-  background-color: rgba(30, 144, 255, 0.8) !important; }
+  background-color: rgba(100, 149, 237, 0.8) !important; }
 
 .ui-bg-brand-primary\:hover:hover {
-  background-color: #1e90ff !important; }
+  background-color: #6495ed !important; }
 
 .ui-bg-brand-primary\:focus:focus {
-  background-color: #1e90ff !important; }
+  background-color: #6495ed !important; }
 
 .ui-bg-brand-primary-tp {
-  background-color: #0f88ff !important; }
+  background-color: #568ceb !important; }
 
 .ui-border-brand-primary {
-  border-color: #1e90ff !important; }
+  border-color: #6495ed !important; }
 
 .ui-border-brand-primary-hover:hover {
-  border-color: rgba(30, 144, 255, 0.8) !important; }
+  border-color: rgba(100, 149, 237, 0.8) !important; }
 
 .ui-border-brand-primary\:hover:hover {
-  border-color: #1e90ff !important; }
+  border-color: #6495ed !important; }
 
 .ui-border-brand-primary\:focus:focus {
-  border-color: #1e90ff !important; }
+  border-color: #6495ed !important; }
 
 .ui-border-brand-primary-tp {
-  border-color: #0f88ff !important; }
+  border-color: #568ceb !important; }
 
 .ui-font-size-default {
   font-size: 1rem !important; }

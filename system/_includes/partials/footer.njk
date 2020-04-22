@@ -1,7 +1,12 @@
 <footer class="ui-ht-10">
     <section class="attribution text-center">
-        <p class="ui-font-size-2x">
-            {{ metadata.title }} - {{ metadata.description }} | ver {{ pkg.version }}
-        </p>
+        <div class="col-12">
+            <p class="ui-font-size-2x">
+                {{ pkg.description }}
+            </p>
+            <p class="ui-font-size-2x">
+                {{ metadata.title }} | ver {{ pkg.version }}
+            </p>
+        </div>
     </section>
 </footer>
