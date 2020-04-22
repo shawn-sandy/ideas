@@ -2,7 +2,7 @@
   "name": "ideas",
   "version": "0.0.1",
   "private": true,
-  "description": "IDEA~. (beta) is a simple and easy to use HTML, CSS and JAVASCRIPT toolkit (framework if you prefer) for creating and managing digital products--style/design systems, pattern libraries, UI Kits, style-guides, prototypes, etc.",
+  "description": "A UI toolkit for managing and creating digital products--design systems, pattern libraries, style-guides, etc.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx @11ty/eleventy --serve",
@@ -42,7 +42,7 @@
     "@11ty/eleventy-plugin-rss": "^1.0.7",
     "@fortawesome/fontawesome-free": "^5.13.0",
     "@shawnsandy/ideas": "0.1.12",
-    "@shawnsandy/mix": "^0.8.4",
+    "@shawnsandy/mix": "^0.8.5",
     "auto-changelog": "^2.0.0",
     "flat-cache": "^2.0.1",
     "fs": "0.0.1-security",

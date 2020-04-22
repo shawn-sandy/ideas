@@ -1,9 +1,9 @@
 {
     "title": "idea~.",
     "url": "https://proideas.dev/",
-    "description": "Turn your vision into products.",
+    "description": "idea~ (ideas) is a simple and easy to use HTML, CSS and JAVASCRIPT UI Toolkit (framework if you prefer) for creating and managing digital products--style/design systems, pattern libraries, UI Kits, style-guides, prototypes or even JAMSTACK sites.",
     "feed": {
-        "subtitle": "IDEA(beta) is a toolkit (framework if you prefer) for creating and managing digital products",
+        "subtitle": "A UI toolkit for creating and managing design/style systems, pattern libraries, style-guides, etc",
         "filename": "feed.xml",
         "path": "/feed/feed.xml",
         "id": "https://proideas.dev/"

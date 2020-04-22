@@ -455,7 +455,7 @@ blockquote footer {
 /** Import tokens, replace the import file below with your own **/
 /*
   Do not edit directly
-  Generated on Sun, 19 Apr 2020 17:06:34 GMT
+  Generated on Tue, 21 Apr 2020 10:58:35 GMT
 */
 /** Config StyleMix SASS defaults */
 /** import stylemix **/
@@ -981,6 +981,51 @@ body {
 .ui-border-test-green-tp {
   border-color: #007100 !important; }
 
+.ui-brand-primary {
+  color: #6495ed !important; }
+
+.ui-brand-primary-hover:hover {
+  color: rgba(100, 149, 237, 0.8) !important; }
+
+.ui-brand-primary\:hover:hover {
+  color: #6495ed !important; }
+
+.ui-brand-primary\:focus:focus {
+  color: #6495ed !important; }
+
+.ui-brand-primary-tp {
+  color: #568ceb !important; }
+
+.ui-bg-brand-primary {
+  background-color: #6495ed !important; }
+
+.ui-bg-brand-primary-hover:hover {
+  background-color: rgba(100, 149, 237, 0.8) !important; }
+
+.ui-bg-brand-primary\:hover:hover {
+  background-color: #6495ed !important; }
+
+.ui-bg-brand-primary\:focus:focus {
+  background-color: #6495ed !important; }
+
+.ui-bg-brand-primary-tp {
+  background-color: #568ceb !important; }
+
+.ui-border-brand-primary {
+  border-color: #6495ed !important; }
+
+.ui-border-brand-primary-hover:hover {
+  border-color: rgba(100, 149, 237, 0.8) !important; }
+
+.ui-border-brand-primary\:hover:hover {
+  border-color: #6495ed !important; }
+
+.ui-border-brand-primary\:focus:focus {
+  border-color: #6495ed !important; }
+
+.ui-border-brand-primary-tp {
+  border-color: #568ceb !important; }
+
 .ui-font-size-default {
   font-size: 1rem !important; }
 
@@ -1014,70 +1059,82 @@ body {
 .ui-font-size-10x {
   font-size: 5em !important; }
 
-.ui-ht-05 {
-  height: 5vh !important; }
-
-.ui-ht-1 {
-  height: 10vh !important; }
-
-.ui-ht-2 {
-  height: 20vh !important; }
-
-.ui-ht-3 {
-  height: 30vh !important; }
-
-.ui-ht-4 {
-  height: 40vh !important; }
+.ui-font-size-default {
+  font-size: 1rem !important; }
 
 .ui-ht-5 {
-  height: 50vh !important; }
-
-.ui-ht-6 {
-  height: 60vh !important; }
-
-.ui-ht-7 {
-  height: 70vh !important; }
-
-.ui-ht-8 {
-  height: 80vh !important; }
-
-.ui-ht-9 {
-  height: 90vh !important; }
+  height: 5vh !important; }
 
 .ui-ht-10 {
+  height: 10vh !important; }
+
+.ui-ht-20 {
+  height: 20vh !important; }
+
+.ui-ht-30 {
+  height: 30vh !important; }
+
+.ui-ht-40 {
+  height: 40vh !important; }
+
+.ui-ht-50 {
+  height: 50vh !important; }
+
+.ui-ht-60 {
+  height: 60vh !important; }
+
+.ui-ht-70 {
+  height: 70vh !important; }
+
+.ui-ht-80 {
+  height: 80vh !important; }
+
+.ui-ht-90 {
+  height: 90vh !important; }
+
+.ui-ht-100 {
   height: 100vh !important; }
 
-.ui-wd-05 {
-  width: 5vw !important; }
+.ui-ht-40vmin {
+  min-height: 40vh !important; }
 
-.ui-wd-1 {
-  width: 10vw !important; }
+.ui-ht-20vmin {
+  min-height: 40vh !important; }
 
-.ui-wd-2 {
-  width: 20vw !important; }
-
-.ui-wd-3 {
-  width: 30vw !important; }
-
-.ui-wd-4 {
-  width: 40vw !important; }
+.ui-ht-10vmin {
+  min-height: 10vh !important; }
 
 .ui-wd-5 {
-  width: 50vw !important; }
-
-.ui-wd-6 {
-  width: 60vw !important; }
-
-.ui-wd-7 {
-  width: 70vw !important; }
-
-.ui-wd-8 {
-  width: 80vw !important; }
-
-.ui-wd-9 {
-  width: 90vw !important; }
+  width: 5vw !important; }
 
 .ui-wd-10 {
+  width: 10vw !important; }
+
+.ui-wd-20 {
+  width: 20vw !important; }
+
+.ui-wd-30 {
+  width: 30vw !important; }
+
+.ui-wd-40 {
+  width: 40vw !important; }
+
+.ui-wd-50 {
+  width: 50vw !important; }
+
+.ui-wd-60 {
+  width: 60vw !important; }
+
+.ui-wd-70 {
+  width: 70vw !important; }
+
+.ui-wd-80 {
+  width: 80vw !important; }
+
+.ui-wd-90 {
+  width: 90vw !important; }
+
+.ui-wd-100 {
   width: 100vw !important; }
 
 /*# sourceMappingURL=/styles.css.map */

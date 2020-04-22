@@ -1,45 +1,17 @@
 {
-    "height": {
-        "height": {
-            "1x": {
-                "value": "10vh",
-                "comment": "Height 10vh"
-            },
-            "2x": {
-                "value": "20vh",
-                "comment": "Height 10vh"
-            },
-            "3x": {
-                "value": "30vh",
-                "comment": "Height 10vh"
-            },
-            "4x": {
+    "dimensions": {
+        "min-height": {
+            "ht-40vmin": {
                 "value": "40vh",
-                "comment": "Height 10vh"
+                "comment": "Layout main section"
             },
-            "5x": {
-                "value": "50vh",
-                "comment": "Height 10vh"
+            "ht-20vmin": {
+                "value": "40vh",
+                "comment": "Layout main section"
             },
-            "6x": {
-                "value": "60vh",
-                "comment": "Height 10vh"
-            },
-            "7x": {
-                "value": "70vh",
-                "comment": "Height 10vh"
-            },
-            "8x": {
-                "value": "80vh",
-                "comment": "Height 10vh"
-            },
-            "9x": {
-                "value": "90vh",
-                "comment": "Height 10vh"
-            },
-            "10x": {
-                "value": "100vh",
-                "comment": "Height 10vh"
+            "ht-10vmin": {
+                "value": "10vh",
+                "comment": "Footer heigt"
             }
         }
     }
