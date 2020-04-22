@@ -40,9 +40,9 @@
         } @else {
           &#{$mix-prefix}#{$key} {
             @if $modifier != "" {
-              #{$modifier}: $value !important;
+              #{$modifier}: $value $mix-use-important;
             } @else {
-              #{$key}: $value !important;
+              #{$key}: $value $mix-use-important;
             }
           }
         }
@@ -67,7 +67,7 @@
         // TODO refactor to handle color maps--remove `color` from output
         @if $key == "base" {
           @if type-of($val) == "color" {
-            // color: $val !important;
+            // color: $val $mix-use-important;
             @include map-colors($val, $key, $modifier-key);
           } @else {
             &#{$mix-prefix}#{$modifier-key}#{$mix-prefix}#{$token} {
@@ -89,7 +89,8 @@
             } @else {
               // @debug "modifier #{$modifier-key}, Key: #{$key}, Token: #{$token}";
               &#{$mix-prefix}#{$modifier-key}#{$mix-prefix}#{$key} {
-                #{$token}#{$mix-prefix}#{$modifier-key}: $val !important;
+                #{$token}#{$mix-prefix}#{$modifier-key}: $val
+                  $mix-use-important;
               }
             }
           }
@@ -103,10 +104,10 @@
 }
 
 @mixin map-colors($val, $item, $name: "") {
-  @debug $mix-color-attrs;
+  // @debug $mix-color-attrs;
   $selector: null;
   @if $name != "" {
-    @debug "name #{$name}";
+    // @debug "name #{$name}";
     $selector: #{$name}#{$mix-prefix};
   }
   @each $attribute in $mix-color-attrs {
@@ -114,30 +115,30 @@
     $attr: map-color-attrs($attribute);
 
     @if $name != "" {
-      @debug "Attribute Name: #{$attr}  #{$selector}";
+      // @debug "Attribute Name: #{$attr}  #{$selector}";
     }
 
     &#{$attr}#{$mix-prefix}#{$selector} {
       &#{$item} {
-        #{$attribute}: $val !important;
+        #{$attribute}: $val $mix-use-important;
       }
       &#{$item}#{$mix-prefix}hover {
         &:hover {
-          #{$attribute}: transparentize($val, 0.2) !important;
+          #{$attribute}: transparentize($val, 0.2) $mix-use-important;
         }
       }
       &#{$item}\:hover {
         &:hover {
-          #{$attribute}: $val !important;
+          #{$attribute}: $val $mix-use-important;
         }
       }
       &#{$item}\:focus {
         &:focus {
-          #{$attribute}: $val !important;
+          #{$attribute}: $val $mix-use-important;
         }
       }
       &#{$item}#{$mix-prefix}tp {
-        #{$attribute}: darken($val, 3%) !important;
+        #{$attribute}: darken($val, 3%) $mix-use-important;
       }
     }
   }
