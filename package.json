@@ -12,7 +12,11 @@
     "parcel:watch": "parcel watch main.js --out-dir www/uikit",
     "changelog": "auto-changelog -p --template config/_changelog.hbs",
     "debug": "cd system/debug",
-    "tokens": "style-dictionary build --config ./tokens.js"
+    "tokens": "style-dictionary build --config ./tokens.js",
+    "lodash": "npm run _collection && npm run _function && npm run _array",
+    "_collection": "lodash include=forEach,size,orderBy -o system/js/_collection.js",
+    "_array": "lodash include=chunk,size -o system/js/_array.js",
+    "_function": "lodash include=debounce,throttle -o system/js/_function.js"
   },
   "directories": {
     "lib": "dist",
