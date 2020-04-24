@@ -7,44 +7,44 @@
           "comment": "descriptions...",
           "group": "typography"
         },
-        "1x": {
+        "1sm": {
           "value": "0.75rem",
           "comment": "descriptions..."
         },
-        "2x": {
+        "2sm": {
           "value": "0.875rem",
           "comment": "descriptions..."
         },
-        "3x": {
+        "3sm": {
           "value": "1.3rem",
           "comment": "descriptions..."
         },
-        "4x": {
+        "4md": {
           "value": "1.5rem",
           "comment": "descriptions..."
         },
-        "5x": {
+        "5md": {
           "value": "1.75rem",
           "comment": "descriptions..."
         },
-        "6x": {
+        "6md": {
           "value": "2rem",
           "comment": "descriptions..."
         },
-        "7x": {
+        "7lg": {
           "value": "2.5rem",
           "comment": "descriptions..."
         },
-        "8x": {
+        "8lg": {
           "value": "3.5rem",
           "comment": "descriptions..."
         },
-        "9x": {
+        "9lg": {
           "value": "4rem",
           "comment": "descriptions..."
         },
-        "10x": {
-          "value": "5em",
+        "10xl": {
+          "value": "5.2em",
           "comment": "descriptions..."
         }
       }

@@ -45,11 +45,15 @@ body {
   font-weight: 800;
 }
 
+p {
+  line-height: 1.5 !important;
+}
+
 /** utility mixin example--create font utility form our tokens **/
 .ui {
-  @include mix-utility("color");
   @include mix-utility("font", "font");
   @include mix-utility("dimensions.height", "height");
   @include mix-utility("dimensions.min-height", "min-height");
   @include mix-utility("dimensions.width", "width");
+  @include mix-utility("color");
 }

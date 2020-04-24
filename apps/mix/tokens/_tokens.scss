@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Tue, 21 Apr 2020 02:14:20 GMT
+  Generated on Fri, 24 Apr 2020 18:07:03 GMT
 */
 
 $mx-button-padding: 0 1.5rem !default;
@@ -24,19 +24,17 @@ $mx-color-blue: #0366d6 !default;
 $mx-color-orange: #f66a0a !default;
 $mx-color-yellow: #ffd33d !default;
 $mx-color-green: #008000 !default;
-$mx-color-test-yellow: #ffd33d !default;
-$mx-color-test-green: #008000 !default;
 $mx-font-size-type-default: 1rem !default; // descriptions...
-$mx-font-size-type-1-x: 0.75rem !default; // descriptions...
-$mx-font-size-type-2-x: 0.875rem !default; // descriptions...
-$mx-font-size-type-3-x: 1.3rem !default; // descriptions...
-$mx-font-size-type-4-x: 1.5rem !default; // descriptions...
-$mx-font-size-type-5-x: 1.75rem !default; // descriptions...
-$mx-font-size-type-6-x: 2rem !default; // descriptions...
-$mx-font-size-type-7-x: 2.5rem !default; // descriptions...
-$mx-font-size-type-8-x: 3.5rem !default; // descriptions...
-$mx-font-size-type-9-x: 4rem !default; // descriptions...
-$mx-font-size-type-10-x: 5em !default; // descriptions...
+$mx-font-size-type-1-sm: 0.75rem !default; // descriptions...
+$mx-font-size-type-2-sm: 0.875rem !default; // descriptions...
+$mx-font-size-type-3-sm: 1.3rem !default; // descriptions...
+$mx-font-size-type-4-md: 1.5rem !default; // descriptions...
+$mx-font-size-type-5-md: 1.75rem !default; // descriptions...
+$mx-font-size-type-6-md: 2rem !default; // descriptions...
+$mx-font-size-type-7-lg: 2.5rem !default; // descriptions...
+$mx-font-size-type-8-lg: 3.5rem !default; // descriptions...
+$mx-font-size-type-9-lg: 4rem !default; // descriptions...
+$mx-font-size-type-10-xl: 5.2em !default; // descriptions...
 $mx-weight-medium: 500 !default; // descriptions...
 $mx-weight-bold: 700 !default; // descriptions...
 $mx-dimensions-height-ht-5: 5vh !default;
@@ -124,26 +122,22 @@ $tokens: (
     'blue': $mx-color-blue,
     'orange': $mx-color-orange,
     'yellow': $mx-color-yellow,
-    'green': $mx-color-green,
-    'test': (
-      'yellow': $mx-color-test-yellow,
-      'green': $mx-color-test-green
-    )
+    'green': $mx-color-green
   ),
   'font': (
     'size': (
       'type': (
         'default': $mx-font-size-type-default,
-        '1x': $mx-font-size-type-1-x,
-        '2x': $mx-font-size-type-2-x,
-        '3x': $mx-font-size-type-3-x,
-        '4x': $mx-font-size-type-4-x,
-        '5x': $mx-font-size-type-5-x,
-        '6x': $mx-font-size-type-6-x,
-        '7x': $mx-font-size-type-7-x,
-        '8x': $mx-font-size-type-8-x,
-        '9x': $mx-font-size-type-9-x,
-        '10x': $mx-font-size-type-10-x
+        '1sm': $mx-font-size-type-1-sm,
+        '2sm': $mx-font-size-type-2-sm,
+        '3sm': $mx-font-size-type-3-sm,
+        '4md': $mx-font-size-type-4-md,
+        '5md': $mx-font-size-type-5-md,
+        '6md': $mx-font-size-type-6-md,
+        '7lg': $mx-font-size-type-7-lg,
+        '8lg': $mx-font-size-type-8-lg,
+        '9lg': $mx-font-size-type-9-lg,
+        '10xl': $mx-font-size-type-10-xl
       )
     )
   ),
