@@ -1,6 +1,6 @@
 /*
   Do not edit directly
-  Generated on Tue, 21 Apr 2020 02:14:20 GMT
+  Generated on Fri, 24 Apr 2020 18:07:03 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 /** generates a series of modifies based a list of attributes  **/
@@ -68,35 +68,35 @@
 .mx-font-size-default {
   font-size: 1rem; }
 
-.mx-font-size-1x {
+.mx-font-size-1sm {
   font-size: 0.75rem; }
 
-.mx-font-size-2x {
+.mx-font-size-2sm {
   font-size: 0.875rem; }
 
-.mx-font-size-3x {
+.mx-font-size-3sm {
   font-size: 1.3rem; }
 
-.mx-font-size-4x {
+.mx-font-size-4md {
   font-size: 1.5rem; }
 
-.mx-font-size-5x {
+.mx-font-size-5md {
   font-size: 1.75rem; }
 
-.mx-font-size-6x {
+.mx-font-size-6md {
   font-size: 2rem; }
 
-.mx-font-size-7x {
+.mx-font-size-7lg {
   font-size: 2.5rem; }
 
-.mx-font-size-8x {
+.mx-font-size-8lg {
   font-size: 3.5rem; }
 
-.mx-font-size-9x {
+.mx-font-size-9lg {
   font-size: 4rem; }
 
-.mx-font-size-10x {
-  font-size: 5em; }
+.mx-font-size-10xl {
+  font-size: 5.2em; }
 
 .mx-black {
   color: #000000; }
@@ -501,96 +501,6 @@
   border-color: #008000; }
 
 .mx-border-green-tp {
-  border-color: #007100; }
-
-.mx-test-yellow {
-  color: #ffd33d; }
-
-.mx-test-yellow-hover:hover {
-  color: rgba(255, 211, 61, 0.8); }
-
-.mx-test-yellow\:hover:hover {
-  color: #ffd33d; }
-
-.mx-test-yellow\:focus:focus {
-  color: #ffd33d; }
-
-.mx-test-yellow-tp {
-  color: #ffd02e; }
-
-.mx-bg-test-yellow {
-  background-color: #ffd33d; }
-
-.mx-bg-test-yellow-hover:hover {
-  background-color: rgba(255, 211, 61, 0.8); }
-
-.mx-bg-test-yellow\:hover:hover {
-  background-color: #ffd33d; }
-
-.mx-bg-test-yellow\:focus:focus {
-  background-color: #ffd33d; }
-
-.mx-bg-test-yellow-tp {
-  background-color: #ffd02e; }
-
-.mx-border-test-yellow {
-  border-color: #ffd33d; }
-
-.mx-border-test-yellow-hover:hover {
-  border-color: rgba(255, 211, 61, 0.8); }
-
-.mx-border-test-yellow\:hover:hover {
-  border-color: #ffd33d; }
-
-.mx-border-test-yellow\:focus:focus {
-  border-color: #ffd33d; }
-
-.mx-border-test-yellow-tp {
-  border-color: #ffd02e; }
-
-.mx-test-green {
-  color: #008000; }
-
-.mx-test-green-hover:hover {
-  color: rgba(0, 128, 0, 0.8); }
-
-.mx-test-green\:hover:hover {
-  color: #008000; }
-
-.mx-test-green\:focus:focus {
-  color: #008000; }
-
-.mx-test-green-tp {
-  color: #007100; }
-
-.mx-bg-test-green {
-  background-color: #008000; }
-
-.mx-bg-test-green-hover:hover {
-  background-color: rgba(0, 128, 0, 0.8); }
-
-.mx-bg-test-green\:hover:hover {
-  background-color: #008000; }
-
-.mx-bg-test-green\:focus:focus {
-  background-color: #008000; }
-
-.mx-bg-test-green-tp {
-  background-color: #007100; }
-
-.mx-border-test-green {
-  border-color: #008000; }
-
-.mx-border-test-green-hover:hover {
-  border-color: rgba(0, 128, 0, 0.8); }
-
-.mx-border-test-green\:hover:hover {
-  border-color: #008000; }
-
-.mx-border-test-green\:focus:focus {
-  border-color: #008000; }
-
-.mx-border-test-green-tp {
   border-color: #007100; }
 
 .mx-ht-5 {

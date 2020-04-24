@@ -1,6 +1,6 @@
 /*
   Do not edit directly
-  Generated on Tue, 21 Apr 2020 02:14:20 GMT
+  Generated on Fri, 24 Apr 2020 18:07:03 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 /** generates a series of modifies based a list of attributes  **/
@@ -279,64 +279,4 @@
   .mix-border-green\:focus:focus {
     border-color: #008000; }
   .mix-border-green-tp {
-    border-color: #007100; }
-  .mix-test-yellow {
-    color: #ffd33d; }
-  .mix-test-yellow-hover:hover {
-    color: rgba(255, 211, 61, 0.8); }
-  .mix-test-yellow\:hover:hover {
-    color: #ffd33d; }
-  .mix-test-yellow\:focus:focus {
-    color: #ffd33d; }
-  .mix-test-yellow-tp {
-    color: #ffd02e; }
-  .mix-bg-test-yellow {
-    background-color: #ffd33d; }
-  .mix-bg-test-yellow-hover:hover {
-    background-color: rgba(255, 211, 61, 0.8); }
-  .mix-bg-test-yellow\:hover:hover {
-    background-color: #ffd33d; }
-  .mix-bg-test-yellow\:focus:focus {
-    background-color: #ffd33d; }
-  .mix-bg-test-yellow-tp {
-    background-color: #ffd02e; }
-  .mix-border-test-yellow {
-    border-color: #ffd33d; }
-  .mix-border-test-yellow-hover:hover {
-    border-color: rgba(255, 211, 61, 0.8); }
-  .mix-border-test-yellow\:hover:hover {
-    border-color: #ffd33d; }
-  .mix-border-test-yellow\:focus:focus {
-    border-color: #ffd33d; }
-  .mix-border-test-yellow-tp {
-    border-color: #ffd02e; }
-  .mix-test-green {
-    color: #008000; }
-  .mix-test-green-hover:hover {
-    color: rgba(0, 128, 0, 0.8); }
-  .mix-test-green\:hover:hover {
-    color: #008000; }
-  .mix-test-green\:focus:focus {
-    color: #008000; }
-  .mix-test-green-tp {
-    color: #007100; }
-  .mix-bg-test-green {
-    background-color: #008000; }
-  .mix-bg-test-green-hover:hover {
-    background-color: rgba(0, 128, 0, 0.8); }
-  .mix-bg-test-green\:hover:hover {
-    background-color: #008000; }
-  .mix-bg-test-green\:focus:focus {
-    background-color: #008000; }
-  .mix-bg-test-green-tp {
-    background-color: #007100; }
-  .mix-border-test-green {
-    border-color: #008000; }
-  .mix-border-test-green-hover:hover {
-    border-color: rgba(0, 128, 0, 0.8); }
-  .mix-border-test-green\:hover:hover {
-    border-color: #008000; }
-  .mix-border-test-green\:focus:focus {
-    border-color: #008000; }
-  .mix-border-test-green-tp {
     border-color: #007100; }

@@ -1,0 +1,42 @@
+/*
+  Do not edit directly
+  Generated on Fri, 24 Apr 2020 18:07:03 GMT
+*/
+/** GENERAL PURPOSE SASS-MIXINS **/
+/** generates a series of modifies based a list of attributes  **/
+/**
+
+
+**/
+.mix-font-size-default {
+  font-size: 1rem; }
+
+.mix-font-size-1sm {
+  font-size: 0.75rem; }
+
+.mix-font-size-2sm {
+  font-size: 0.875rem; }
+
+.mix-font-size-3sm {
+  font-size: 1.3rem; }
+
+.mix-font-size-4md {
+  font-size: 1.5rem; }
+
+.mix-font-size-5md {
+  font-size: 1.75rem; }
+
+.mix-font-size-6md {
+  font-size: 2rem; }
+
+.mix-font-size-7lg {
+  font-size: 2.5rem; }
+
+.mix-font-size-8lg {
+  font-size: 3.5rem; }
+
+.mix-font-size-9lg {
+  font-size: 4rem; }
+
+.mix-font-size-10xl {
+  font-size: 5.2em; }
