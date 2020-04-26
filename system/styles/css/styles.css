@@ -455,7 +455,7 @@ blockquote footer {
 /** Import tokens, replace the import file below with your own **/
 /*
   Do not edit directly
-  Generated on Sat, 25 Apr 2020 00:29:49 GMT
+  Generated on Sat, 25 Apr 2020 01:00:28 GMT
 */
 /** Config StyleMix SASS defaults */
 /** import stylemix **/
@@ -465,6 +465,7 @@ blockquote footer {
 
 
 **/
+@use "bootstrap";
 html {
   -webkit-font-smoothing: antialiased !important;
   height: 100% !important; }
@@ -559,13 +560,13 @@ p {
   height: 100vh; }
 
 .ui-ht-40vmin {
-  ht-40vmin: 40vh; }
+  min-height: 40vh; }
 
 .ui-ht-20vmin {
-  ht-20vmin: 40vh; }
+  min-height: 40vh; }
 
 .ui-ht-10vmin {
-  ht-10vmin: 10vh; }
+  min-height: 10vh; }
 
 .ui-wd-5 {
   width: 5vw; }

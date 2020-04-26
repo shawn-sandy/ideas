@@ -65,6 +65,7 @@
     "node-fetch": "^2.6.0",
     "parcel": "^1.12.4",
     "require-dir": "^1.2.0",
+    "sass": "^1.26.5",
     "style-dictionary": "^2.9.0"
   }
 }
