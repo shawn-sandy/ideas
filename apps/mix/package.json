@@ -32,7 +32,7 @@
     "url": "https://github.com/shawn-sandy/idea/issues"
   },
   "dependencies": {
-    "style-dictionary": "^2.8.3"
+    "style-dictionary": "^2.9.0"
   },
   "devDependencies": {
     "gulp": "^4.0.2",

@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Fri, 24 Apr 2020 18:07:03 GMT
+  Generated on Sun, 26 Apr 2020 21:20:46 GMT
 */
 
 $mx-button-padding: 0 1.5rem !default;
@@ -24,19 +24,21 @@ $mx-color-blue: #0366d6 !default;
 $mx-color-orange: #f66a0a !default;
 $mx-color-yellow: #ffd33d !default;
 $mx-color-green: #008000 !default;
-$mx-font-size-type-default: 1rem !default; // descriptions...
-$mx-font-size-type-1-sm: 0.75rem !default; // descriptions...
-$mx-font-size-type-2-sm: 0.875rem !default; // descriptions...
-$mx-font-size-type-3-sm: 1.3rem !default; // descriptions...
-$mx-font-size-type-4-md: 1.5rem !default; // descriptions...
-$mx-font-size-type-5-md: 1.75rem !default; // descriptions...
-$mx-font-size-type-6-md: 2rem !default; // descriptions...
-$mx-font-size-type-7-lg: 2.5rem !default; // descriptions...
-$mx-font-size-type-8-lg: 3.5rem !default; // descriptions...
-$mx-font-size-type-9-lg: 4rem !default; // descriptions...
-$mx-font-size-type-10-xl: 5.2em !default; // descriptions...
-$mx-weight-medium: 500 !default; // descriptions...
-$mx-weight-bold: 700 !default; // descriptions...
+$mx-font-size-group-default: 1rem !default; // descriptions...
+$mx-font-size-group-1-sm: 0.75rem !default; // descriptions...
+$mx-font-size-group-2-sm: 0.875rem !default; // descriptions...
+$mx-font-size-group-3-sm: 1.3rem !default; // descriptions...
+$mx-font-size-group-4-md: 1.5rem !default; // descriptions...
+$mx-font-size-group-5-md: 1.75rem !default; // descriptions...
+$mx-font-size-group-6-md: 2rem !default; // descriptions...
+$mx-font-size-group-7-lg: 2.5rem !default; // descriptions...
+$mx-font-size-group-8-lg: 3.5rem !default; // descriptions...
+$mx-font-size-group-9-lg: 4rem !default; // descriptions...
+$mx-font-size-group-10-xl: 5.2em !default; // descriptions...
+$mx-font-size-group-spacing: 1.5rem !default;
+$mx-font-weight-medium: 500 !default; // descriptions...
+$mx-font-weight-bold: 700 !default; // descriptions...
+$mx-letter-spacing-group-1-sm: 1rem !default;
 $mx-dimensions-height-ht-5: 5vh !default;
 $mx-dimensions-height-ht-10: 10vh !default;
 $mx-dimensions-height-ht-20: 20vh !default;
@@ -126,24 +128,32 @@ $tokens: (
   ),
   'font': (
     'size': (
-      'type': (
-        'default': $mx-font-size-type-default,
-        '1sm': $mx-font-size-type-1-sm,
-        '2sm': $mx-font-size-type-2-sm,
-        '3sm': $mx-font-size-type-3-sm,
-        '4md': $mx-font-size-type-4-md,
-        '5md': $mx-font-size-type-5-md,
-        '6md': $mx-font-size-type-6-md,
-        '7lg': $mx-font-size-type-7-lg,
-        '8lg': $mx-font-size-type-8-lg,
-        '9lg': $mx-font-size-type-9-lg,
-        '10xl': $mx-font-size-type-10-xl
+      'group': (
+        'default': $mx-font-size-group-default,
+        '1sm': $mx-font-size-group-1-sm,
+        '2sm': $mx-font-size-group-2-sm,
+        '3sm': $mx-font-size-group-3-sm,
+        '4md': $mx-font-size-group-4-md,
+        '5md': $mx-font-size-group-5-md,
+        '6md': $mx-font-size-group-6-md,
+        '7lg': $mx-font-size-group-7-lg,
+        '8lg': $mx-font-size-group-8-lg,
+        '9lg': $mx-font-size-group-9-lg,
+        '10xl': $mx-font-size-group-10-xl,
+        'spacing': $mx-font-size-group-spacing
       )
+    ),
+    'weight': (
+      'medium': $mx-font-weight-medium,
+      'bold': $mx-font-weight-bold
     )
   ),
-  'weight': (
-    'medium': $mx-weight-medium,
-    'bold': $mx-weight-bold
+  'letter': (
+    'spacing': (
+      'group': (
+        '1sm': $mx-letter-spacing-group-1-sm
+      )
+    )
   ),
   'dimensions': (
     'height': (

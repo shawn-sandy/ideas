@@ -51,7 +51,7 @@ p {
 
 /** utility mixin example--create font utility form our tokens **/
 .ui {
-  @include mix-utility("font", "font");
+  @include mix-utility("font");
   @include mix-utility("dimensions.height", "height");
   @include mix-utility("dimensions.min-height", "min-height");
   @include mix-utility("dimensions.width", "width");

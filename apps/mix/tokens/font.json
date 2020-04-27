@@ -1,7 +1,7 @@
 {
   "font": {
     "size": {
-      "type": {
+      "group": {
         "default": {
           "value": "1rem",
           "comment": "descriptions...",
@@ -46,18 +46,31 @@
         "10xl": {
           "value": "5.2em",
           "comment": "descriptions..."
+        },
+        "spacing": {
+          "value": "1.5rem",
+          "comments": "basic spacing"
         }
+      }
+    },
+    "weight": {
+      "medium": {
+        "value": "500",
+        "comment": "descriptions..."
+      },
+      "bold": {
+        "value": "700",
+        "comment": "descriptions..."
       }
     }
   },
-  "weight": {
-    "medium": {
-      "value": "500",
-      "comment": "descriptions..."
-    },
-    "bold": {
-      "value": "700",
-      "comment": "descriptions..."
+  "letter": {
+    "spacing": {
+      "group": {
+        "1sm": {
+          "value": "1rem"
+        }
+      }
     }
   }
 }
