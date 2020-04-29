@@ -455,7 +455,7 @@ blockquote footer {
 /** Import tokens, replace the import file below with your own **/
 /*
   Do not edit directly
-  Generated on Tue, 21 Apr 2020 10:58:35 GMT
+  Generated on Sat, 25 Apr 2020 01:00:28 GMT
 */
 /** Config StyleMix SASS defaults */
 /** import stylemix **/
@@ -465,6 +465,7 @@ blockquote footer {
 
 
 **/
+@use "bootstrap";
 html {
   -webkit-font-smoothing: antialiased !important;
   height: 100% !important; }
@@ -492,35 +493,35 @@ p {
 .ui-font-size-default {
   font-size: 1rem; }
 
-.ui-font-size-1x {
+.ui-font-size-1sm {
   font-size: 0.75rem; }
 
-.ui-font-size-2x {
+.ui-font-size-2sm {
   font-size: 0.875rem; }
 
-.ui-font-size-3x {
+.ui-font-size-3sm {
   font-size: 1.3rem; }
 
-.ui-font-size-4x {
+.ui-font-size-4md {
   font-size: 1.5rem; }
 
-.ui-font-size-5x {
+.ui-font-size-5md {
   font-size: 1.75rem; }
 
-.ui-font-size-6x {
+.ui-font-size-6md {
   font-size: 2rem; }
 
-.ui-font-size-7x {
+.ui-font-size-7lg {
   font-size: 2.5rem; }
 
-.ui-font-size-8x {
+.ui-font-size-8lg {
   font-size: 3.5rem; }
 
-.ui-font-size-9x {
+.ui-font-size-9lg {
   font-size: 4rem; }
 
-.ui-font-size-10x {
-  font-size: 5em; }
+.ui-font-size-10xl {
+  font-size: 5.2em; }
 
 .ui-font-size-default {
   font-size: 1rem; }
@@ -1003,96 +1004,6 @@ p {
   border-color: #008000; }
 
 .ui-border-green-tp {
-  border-color: #007100; }
-
-.ui-test-yellow {
-  color: #ffd33d; }
-
-.ui-test-yellow-hover:hover {
-  color: rgba(255, 211, 61, 0.8); }
-
-.ui-test-yellow\:hover:hover {
-  color: #ffd33d; }
-
-.ui-test-yellow\:focus:focus {
-  color: #ffd33d; }
-
-.ui-test-yellow-tp {
-  color: #ffd02e; }
-
-.ui-bg-test-yellow {
-  background-color: #ffd33d; }
-
-.ui-bg-test-yellow-hover:hover {
-  background-color: rgba(255, 211, 61, 0.8); }
-
-.ui-bg-test-yellow\:hover:hover {
-  background-color: #ffd33d; }
-
-.ui-bg-test-yellow\:focus:focus {
-  background-color: #ffd33d; }
-
-.ui-bg-test-yellow-tp {
-  background-color: #ffd02e; }
-
-.ui-border-test-yellow {
-  border-color: #ffd33d; }
-
-.ui-border-test-yellow-hover:hover {
-  border-color: rgba(255, 211, 61, 0.8); }
-
-.ui-border-test-yellow\:hover:hover {
-  border-color: #ffd33d; }
-
-.ui-border-test-yellow\:focus:focus {
-  border-color: #ffd33d; }
-
-.ui-border-test-yellow-tp {
-  border-color: #ffd02e; }
-
-.ui-test-green {
-  color: #008000; }
-
-.ui-test-green-hover:hover {
-  color: rgba(0, 128, 0, 0.8); }
-
-.ui-test-green\:hover:hover {
-  color: #008000; }
-
-.ui-test-green\:focus:focus {
-  color: #008000; }
-
-.ui-test-green-tp {
-  color: #007100; }
-
-.ui-bg-test-green {
-  background-color: #008000; }
-
-.ui-bg-test-green-hover:hover {
-  background-color: rgba(0, 128, 0, 0.8); }
-
-.ui-bg-test-green\:hover:hover {
-  background-color: #008000; }
-
-.ui-bg-test-green\:focus:focus {
-  background-color: #008000; }
-
-.ui-bg-test-green-tp {
-  background-color: #007100; }
-
-.ui-border-test-green {
-  border-color: #008000; }
-
-.ui-border-test-green-hover:hover {
-  border-color: rgba(0, 128, 0, 0.8); }
-
-.ui-border-test-green\:hover:hover {
-  border-color: #008000; }
-
-.ui-border-test-green\:focus:focus {
-  border-color: #008000; }
-
-.ui-border-test-green-tp {
   border-color: #007100; }
 
 .ui-brand-primary {
