@@ -1,6 +1,6 @@
 /*
   Do not edit directly
-  Generated on Tue, 28 Apr 2020 23:30:27 GMT
+  Generated on Thu, 30 Apr 2020 21:35:19 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 /** generates a series of modifies based a list of attributes  **/
@@ -69,37 +69,34 @@
   font-size: 1rem; }
 
 .mx-font-size-1sm {
-  font-size: 0.75rem; }
+  font-size: 0.79rem; }
 
 .mx-font-size-2sm {
-  font-size: 0.875rem; }
+  font-size: 0.889rem; }
 
 .mx-font-size-3sm {
-  font-size: 1.3rem; }
+  font-size: 1.24rem; }
 
 .mx-font-size-4md {
-  font-size: 1.5rem; }
+  font-size: 1.266rem; }
 
 .mx-font-size-5md {
-  font-size: 1.75rem; }
+  font-size: 1.1602rem; }
 
 .mx-font-size-6md {
-  font-size: 2rem; }
+  font-size: 1.802rem; }
 
 .mx-font-size-7lg {
-  font-size: 2.5rem; }
+  font-size: 2.396rem; }
 
 .mx-font-size-8lg {
-  font-size: 3.5rem; }
+  font-size: 3.157rem; }
 
 .mx-font-size-9lg {
-  font-size: 4rem; }
+  font-size: 4.209rem; }
 
 .mx-font-size-10xl {
-  font-size: 5.2em; }
-
-.mx-font-size-spacing {
-  font-size: 1.5rem; }
+  font-size: 5.61rem; }
 
 .mx-weight-medium {
   font-weight: 500; }

@@ -8,48 +8,44 @@
           "group": "typography"
         },
         "1sm": {
-          "value": "0.75rem",
+          "value": "0.79rem",
           "comment": "descriptions..."
         },
         "2sm": {
-          "value": "0.875rem",
+          "value": "0.889rem",
           "comment": "descriptions..."
         },
         "3sm": {
-          "value": "1.3rem",
+          "value": "1.24rem",
           "comment": "descriptions..."
         },
         "4md": {
-          "value": "1.5rem",
+          "value": "1.266rem",
           "comment": "descriptions..."
         },
         "5md": {
-          "value": "1.75rem",
+          "value": "1.1602rem",
           "comment": "descriptions..."
         },
         "6md": {
-          "value": "2rem",
+          "value": "1.802rem",
           "comment": "descriptions..."
         },
         "7lg": {
-          "value": "2.5rem",
+          "value": "2.396rem",
           "comment": "descriptions..."
         },
         "8lg": {
-          "value": "3.5rem",
+          "value": "3.157rem",
           "comment": "descriptions..."
         },
         "9lg": {
-          "value": "4rem",
+          "value": "4.209rem",
           "comment": "descriptions..."
         },
         "10xl": {
-          "value": "5.2em",
+          "value": "5.61rem",
           "comment": "descriptions..."
-        },
-        "spacing": {
-          "value": "1.5rem",
-          "comments": "basic spacing"
         }
       }
     },
