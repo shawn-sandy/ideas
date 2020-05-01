@@ -1,6 +1,6 @@
 /*
   Do not edit directly
-  Generated on Thu, 30 Apr 2020 21:35:19 GMT
+  Generated on Fri, 01 May 2020 11:20:36 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 /** generates a series of modifies based a list of attributes  **/
@@ -8,47 +8,53 @@
 
 
 **/
-.mix-font-size-default {
+.mx-font-size-default {
   font-size: 1rem; }
 
-.mix-font-size-1sm {
+.mx-font-size-1sm {
+  font-size: 0.702rem; }
+
+.mx-font-size-2sm {
   font-size: 0.79rem; }
 
-.mix-font-size-2sm {
+.mx-font-size-3sm {
   font-size: 0.889rem; }
 
-.mix-font-size-3sm {
-  font-size: 1.24rem; }
+.mx-font-size-4md {
+  font-size: 1.26rem; }
 
-.mix-font-size-4md {
-  font-size: 1.266rem; }
+.mx-font-size-5md {
+  font-size: 1.424rem; }
 
-.mix-font-size-5md {
-  font-size: 1.1602rem; }
+.mx-font-size-6md {
+  font-size: 1.602rem; }
 
-.mix-font-size-6md {
+.mx-font-size-7lg {
   font-size: 1.802rem; }
 
-.mix-font-size-7lg {
-  font-size: 2.396rem; }
+.mx-font-size-8lg {
+  font-size: 2.369rem; }
 
-.mix-font-size-8lg {
+.mx-font-size-9lg {
   font-size: 3.157rem; }
 
-.mix-font-size-9lg {
+.mx-font-size-10xl {
   font-size: 4.209rem; }
 
-.mix-font-size-10xl {
+.mx-font-size-11xl {
   font-size: 5.61rem; }
 
-.mix-weight-medium {
+.mx-font-size-12xl {
+  font-size: 7.478rem; }
+
+.mx-weight-medium {
   font-weight: 500; }
 
-.mix-weight-bold {
+.mx-weight-bold {
   font-weight: 700; }
 
-.mix-letter-spacing-1sm {
+.mx-letter-spacing-1sm {
   letter-spacing: 1rem; }
 
-.mix-letter-spacing-1sm {
+.mx-letter-spacing-1sm {
   letter-spacing: 1rem; }

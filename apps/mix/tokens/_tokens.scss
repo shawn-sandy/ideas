@@ -1,244 +1,248 @@
 
 /*
   Do not edit directly
-  Generated on Thu, 30 Apr 2020 21:35:19 GMT
+  Generated on Fri, 01 May 2020 11:20:36 GMT
 */
 
-$mix-button-padding: 0 1.5rem !default;
-$mix-buttons-btn-height: 2.5rem !default;
-$mix-buttons-btn-padding: 0 1.5rem !default;
-$mix-buttons-btn-display: inline-block !default;
-$mix-buttons-btn-text-align: center !default;
-$mix-buttons-btn-transition: all .2s !default;
-$mix-buttons-btn-border: none !default;
-$mix-buttons-btn-focus-border: none !default;
-$mix-buttons-btn-focus-outline: none !default;
-$mix-buttons-btn-pill-border-radius: 9999rem !default;
-$mix-buttons-btn-rounded-border-radius: 0.31rem !default;
-$mix-color-black: #000000 !default;
-$mix-color-white: #ffffff !default;
-$mix-color-gray: #6a737d !default;
-$mix-color-lightgray: #d3d3d3 !default;
-$mix-color-red: #d73a49 !default;
-$mix-color-blue: #0366d6 !default;
-$mix-color-orange: #f66a0a !default;
-$mix-color-yellow: #ffd33d !default;
-$mix-color-green: #008000 !default;
-$mix-font-size-group-default: 1rem !default; // descriptions...
-$mix-font-size-group-1-sm: 0.79rem !default; // descriptions...
-$mix-font-size-group-2-sm: 0.889rem !default; // descriptions...
-$mix-font-size-group-3-sm: 1.24rem !default; // descriptions...
-$mix-font-size-group-4-md: 1.266rem !default; // descriptions...
-$mix-font-size-group-5-md: 1.1602rem !default; // descriptions...
-$mix-font-size-group-6-md: 1.802rem !default; // descriptions...
-$mix-font-size-group-7-lg: 2.396rem !default; // descriptions...
-$mix-font-size-group-8-lg: 3.157rem !default; // descriptions...
-$mix-font-size-group-9-lg: 4.209rem !default; // descriptions...
-$mix-font-size-group-10-xl: 5.61rem !default; // descriptions...
-$mix-font-weight-medium: 500 !default; // descriptions...
-$mix-font-weight-bold: 700 !default; // descriptions...
-$mix-letter-spacing-group-1-sm: 1rem !default;
-$mix-dimensions-height-ht-5: 5vh !default;
-$mix-dimensions-height-ht-10: 10vh !default;
-$mix-dimensions-height-ht-20: 20vh !default;
-$mix-dimensions-height-ht-30: 30vh !default;
-$mix-dimensions-height-ht-40: 40vh !default;
-$mix-dimensions-height-ht-50: 50vh !default;
-$mix-dimensions-height-ht-60: 60vh !default;
-$mix-dimensions-height-ht-70: 70vh !default;
-$mix-dimensions-height-ht-80: 80vh !default;
-$mix-dimensions-height-ht-90: 90vh !default;
-$mix-dimensions-height-ht-100: 100vh !default;
-$mix-dimensions-width-wd-5: 5vw !default;
-$mix-dimensions-width-wd-10: 10vw !default;
-$mix-dimensions-width-wd-20: 20vw !default;
-$mix-dimensions-width-wd-30: 30vw !default;
-$mix-dimensions-width-wd-40: 40vw !default;
-$mix-dimensions-width-wd-50: 50vw !default;
-$mix-dimensions-width-wd-60: 60vw !default;
-$mix-dimensions-width-wd-70: 70vw !default;
-$mix-dimensions-width-wd-80: 80vw !default;
-$mix-dimensions-width-wd-90: 90vw !default;
-$mix-dimensions-width-wd-100: 100vw !default;
-$mix-links-primary-color: #000000 !default;
-$mix-links-primary-hover-color: #010101 !default;
-$mix-nav-nav-bar-display: flex !default;
-$mix-nav-nav-bar-align-items: center !default;
-$mix-nav-nav-bar-height: 60px !default;
-$mix-nav-nav-bar-elm-padding: 0 1rem !default;
-$mix-nav-nav-bar-list-display: flex !default;
-$mix-nav-nav-bar-list-flex-direction: row !default;
-$mix-nav-nav-bar-list-list-style: none !default;
-$mix-nav-nav-bar-list-margin: auto 0 !default;
-$mix-nav-nav-bar-sm-height: 20rem !important !default;
-$mix-nav-nav-bar-md-height: 40rem !important !default;
-$mix-nav-nav-bar-lg-height: 80rem !important !default;
-$mix-nav-nav-bar-xl-height: 100rem !important !default;
-$mix-truncate-clip-box-overflow: hidden !default;
-$mix-truncate-clip-box-position: relative !default;
-$mix-truncate-clip-box-line-height: 1rem !default;
-$mix-truncate-clip-box-max-height: 3rem !default;
-$mix-truncate-clip-box-text-align: null !default;
-$mix-truncate-clip-box-margin-right: -1rem !default;
-$mix-truncate-clip-box-padding-right: 1rem !default;
-$mix-truncate-clip-box-before-content: "..." !default;
-$mix-truncate-clip-box-before-position: absolute !default;
-$mix-truncate-clip-box-before-right: 0 !default;
-$mix-truncate-clip-box-before-bottom: 0 !default;
-$mix-truncate-clip-box-after-content: "" !default;
-$mix-truncate-clip-box-after-position: absolute !default;
-$mix-truncate-clip-box-after-right: 0 !default;
-$mix-truncate-clip-box-after-width: 1rem !default;
-$mix-truncate-clip-box-after-height: 1rem !default;
-$mix-truncate-clip-box-after-background: transparent !default;
+$mx-button-padding: 0 1.5rem !default;
+$mx-buttons-btn-height: 2.5rem !default;
+$mx-buttons-btn-padding: 0 1.5rem !default;
+$mx-buttons-btn-display: inline-block !default;
+$mx-buttons-btn-text-align: center !default;
+$mx-buttons-btn-transition: all .2s !default;
+$mx-buttons-btn-border: none !default;
+$mx-buttons-btn-focus-border: none !default;
+$mx-buttons-btn-focus-outline: none !default;
+$mx-buttons-btn-pill-border-radius: 9999rem !default;
+$mx-buttons-btn-rounded-border-radius: 0.31rem !default;
+$mx-color-black: #000000 !default;
+$mx-color-white: #ffffff !default;
+$mx-color-gray: #6a737d !default;
+$mx-color-lightgray: #d3d3d3 !default;
+$mx-color-red: #d73a49 !default;
+$mx-color-blue: #0366d6 !default;
+$mx-color-orange: #f66a0a !default;
+$mx-color-yellow: #ffd33d !default;
+$mx-color-green: #008000 !default;
+$mx-font-size-group-default: 1rem !default; // default font size 16px.
+$mx-font-size-group-1-sm: 0.702rem !default; // 11px - used for fine print
+$mx-font-size-group-2-sm: 0.79rem !default; // 12px great for notes small text.
+$mx-font-size-group-3-sm: 0.889rem !default; // 14px sidebar, links, navs, product list
+$mx-font-size-group-4-md: 1.26rem !default; // 18px great for long posts, blogs
+$mx-font-size-group-5-md: 1.424rem !default; // 22px
+$mx-font-size-group-6-md: 1.602rem !default; // 25px
+$mx-font-size-group-7-lg: 1.802rem !default; // 28px descriptions...
+$mx-font-size-group-8-lg: 2.369rem !default; // 37px descriptions...
+$mx-font-size-group-9-lg: 3.157rem !default; // 50px descriptions...
+$mx-font-size-group-10-xl: 4.209rem !default; // 67px descriptions...
+$mx-font-size-group-11-xl: 5.61rem !default; // 90px descriptions...
+$mx-font-size-group-12-xl: 7.478rem !default; // 120px descriptions...
+$mx-font-weight-medium: 500 !default; // descriptions...
+$mx-font-weight-bold: 700 !default; // descriptions...
+$mx-letter-spacing-group-1-sm: 1rem !default;
+$mx-dimensions-height-ht-5: 5vh !default;
+$mx-dimensions-height-ht-10: 10vh !default;
+$mx-dimensions-height-ht-20: 20vh !default;
+$mx-dimensions-height-ht-30: 30vh !default;
+$mx-dimensions-height-ht-40: 40vh !default;
+$mx-dimensions-height-ht-50: 50vh !default;
+$mx-dimensions-height-ht-60: 60vh !default;
+$mx-dimensions-height-ht-70: 70vh !default;
+$mx-dimensions-height-ht-80: 80vh !default;
+$mx-dimensions-height-ht-90: 90vh !default;
+$mx-dimensions-height-ht-100: 100vh !default;
+$mx-dimensions-width-wd-5: 5vw !default;
+$mx-dimensions-width-wd-10: 10vw !default;
+$mx-dimensions-width-wd-20: 20vw !default;
+$mx-dimensions-width-wd-30: 30vw !default;
+$mx-dimensions-width-wd-40: 40vw !default;
+$mx-dimensions-width-wd-50: 50vw !default;
+$mx-dimensions-width-wd-60: 60vw !default;
+$mx-dimensions-width-wd-70: 70vw !default;
+$mx-dimensions-width-wd-80: 80vw !default;
+$mx-dimensions-width-wd-90: 90vw !default;
+$mx-dimensions-width-wd-100: 100vw !default;
+$mx-links-primary-color: #000000 !default;
+$mx-links-primary-hover-color: #010101 !default;
+$mx-nav-nav-bar-display: flex !default;
+$mx-nav-nav-bar-align-items: center !default;
+$mx-nav-nav-bar-height: 60px !default;
+$mx-nav-nav-bar-elm-padding: 0 1rem !default;
+$mx-nav-nav-bar-list-display: flex !default;
+$mx-nav-nav-bar-list-flex-direction: row !default;
+$mx-nav-nav-bar-list-list-style: none !default;
+$mx-nav-nav-bar-list-margin: auto 0 !default;
+$mx-nav-nav-bar-sm-height: 20rem !important !default;
+$mx-nav-nav-bar-md-height: 40rem !important !default;
+$mx-nav-nav-bar-lg-height: 80rem !important !default;
+$mx-nav-nav-bar-xl-height: 100rem !important !default;
+$mx-truncate-clip-box-overflow: hidden !default;
+$mx-truncate-clip-box-position: relative !default;
+$mx-truncate-clip-box-line-height: 1rem !default;
+$mx-truncate-clip-box-max-height: 3rem !default;
+$mx-truncate-clip-box-text-align: null !default;
+$mx-truncate-clip-box-margin-right: -1rem !default;
+$mx-truncate-clip-box-padding-right: 1rem !default;
+$mx-truncate-clip-box-before-content: "..." !default;
+$mx-truncate-clip-box-before-position: absolute !default;
+$mx-truncate-clip-box-before-right: 0 !default;
+$mx-truncate-clip-box-before-bottom: 0 !default;
+$mx-truncate-clip-box-after-content: "" !default;
+$mx-truncate-clip-box-after-position: absolute !default;
+$mx-truncate-clip-box-after-right: 0 !default;
+$mx-truncate-clip-box-after-width: 1rem !default;
+$mx-truncate-clip-box-after-height: 1rem !default;
+$mx-truncate-clip-box-after-background: transparent !default;
 
 $tokens: (
-  'button-padding': $mix-button-padding,
+  'button-padding': $mx-button-padding,
   'buttons': (
     'btn': (
-      'height': $mix-buttons-btn-height,
-      'padding': $mix-buttons-btn-padding,
-      'display': $mix-buttons-btn-display,
-      'text-align': $mix-buttons-btn-text-align,
-      'transition': $mix-buttons-btn-transition,
-      'border': $mix-buttons-btn-border,
+      'height': $mx-buttons-btn-height,
+      'padding': $mx-buttons-btn-padding,
+      'display': $mx-buttons-btn-display,
+      'text-align': $mx-buttons-btn-text-align,
+      'transition': $mx-buttons-btn-transition,
+      'border': $mx-buttons-btn-border,
       'focus': (
-        'border': $mix-buttons-btn-focus-border,
-        'outline': $mix-buttons-btn-focus-outline
+        'border': $mx-buttons-btn-focus-border,
+        'outline': $mx-buttons-btn-focus-outline
       ),
       'pill': (
-        'border-radius': $mix-buttons-btn-pill-border-radius
+        'border-radius': $mx-buttons-btn-pill-border-radius
       ),
       'rounded': (
-        'border-radius': $mix-buttons-btn-rounded-border-radius
+        'border-radius': $mx-buttons-btn-rounded-border-radius
       )
     )
   ),
   'color': (
-    'black': $mix-color-black,
-    'white': $mix-color-white,
-    'gray': $mix-color-gray,
-    'lightgray': $mix-color-lightgray,
-    'red': $mix-color-red,
-    'blue': $mix-color-blue,
-    'orange': $mix-color-orange,
-    'yellow': $mix-color-yellow,
-    'green': $mix-color-green
+    'black': $mx-color-black,
+    'white': $mx-color-white,
+    'gray': $mx-color-gray,
+    'lightgray': $mx-color-lightgray,
+    'red': $mx-color-red,
+    'blue': $mx-color-blue,
+    'orange': $mx-color-orange,
+    'yellow': $mx-color-yellow,
+    'green': $mx-color-green
   ),
   'font': (
     'size': (
       'group': (
-        'default': $mix-font-size-group-default,
-        '1sm': $mix-font-size-group-1-sm,
-        '2sm': $mix-font-size-group-2-sm,
-        '3sm': $mix-font-size-group-3-sm,
-        '4md': $mix-font-size-group-4-md,
-        '5md': $mix-font-size-group-5-md,
-        '6md': $mix-font-size-group-6-md,
-        '7lg': $mix-font-size-group-7-lg,
-        '8lg': $mix-font-size-group-8-lg,
-        '9lg': $mix-font-size-group-9-lg,
-        '10xl': $mix-font-size-group-10-xl
+        'default': $mx-font-size-group-default,
+        '1sm': $mx-font-size-group-1-sm,
+        '2sm': $mx-font-size-group-2-sm,
+        '3sm': $mx-font-size-group-3-sm,
+        '4md': $mx-font-size-group-4-md,
+        '5md': $mx-font-size-group-5-md,
+        '6md': $mx-font-size-group-6-md,
+        '7lg': $mx-font-size-group-7-lg,
+        '8lg': $mx-font-size-group-8-lg,
+        '9lg': $mx-font-size-group-9-lg,
+        '10xl': $mx-font-size-group-10-xl,
+        '11xl': $mx-font-size-group-11-xl,
+        '12xl': $mx-font-size-group-12-xl
       )
     ),
     'weight': (
-      'medium': $mix-font-weight-medium,
-      'bold': $mix-font-weight-bold
+      'medium': $mx-font-weight-medium,
+      'bold': $mx-font-weight-bold
     )
   ),
   'letter': (
     'spacing': (
       'group': (
-        '1sm': $mix-letter-spacing-group-1-sm
+        '1sm': $mx-letter-spacing-group-1-sm
       )
     )
   ),
   'dimensions': (
     'height': (
-      'ht-5': $mix-dimensions-height-ht-5,
-      'ht-10': $mix-dimensions-height-ht-10,
-      'ht-20': $mix-dimensions-height-ht-20,
-      'ht-30': $mix-dimensions-height-ht-30,
-      'ht-40': $mix-dimensions-height-ht-40,
-      'ht-50': $mix-dimensions-height-ht-50,
-      'ht-60': $mix-dimensions-height-ht-60,
-      'ht-70': $mix-dimensions-height-ht-70,
-      'ht-80': $mix-dimensions-height-ht-80,
-      'ht-90': $mix-dimensions-height-ht-90,
-      'ht-100': $mix-dimensions-height-ht-100
+      'ht-5': $mx-dimensions-height-ht-5,
+      'ht-10': $mx-dimensions-height-ht-10,
+      'ht-20': $mx-dimensions-height-ht-20,
+      'ht-30': $mx-dimensions-height-ht-30,
+      'ht-40': $mx-dimensions-height-ht-40,
+      'ht-50': $mx-dimensions-height-ht-50,
+      'ht-60': $mx-dimensions-height-ht-60,
+      'ht-70': $mx-dimensions-height-ht-70,
+      'ht-80': $mx-dimensions-height-ht-80,
+      'ht-90': $mx-dimensions-height-ht-90,
+      'ht-100': $mx-dimensions-height-ht-100
     ),
     'width': (
-      'wd-5': $mix-dimensions-width-wd-5,
-      'wd-10': $mix-dimensions-width-wd-10,
-      'wd-20': $mix-dimensions-width-wd-20,
-      'wd-30': $mix-dimensions-width-wd-30,
-      'wd-40': $mix-dimensions-width-wd-40,
-      'wd-50': $mix-dimensions-width-wd-50,
-      'wd-60': $mix-dimensions-width-wd-60,
-      'wd-70': $mix-dimensions-width-wd-70,
-      'wd-80': $mix-dimensions-width-wd-80,
-      'wd-90': $mix-dimensions-width-wd-90,
-      'wd-100': $mix-dimensions-width-wd-100
+      'wd-5': $mx-dimensions-width-wd-5,
+      'wd-10': $mx-dimensions-width-wd-10,
+      'wd-20': $mx-dimensions-width-wd-20,
+      'wd-30': $mx-dimensions-width-wd-30,
+      'wd-40': $mx-dimensions-width-wd-40,
+      'wd-50': $mx-dimensions-width-wd-50,
+      'wd-60': $mx-dimensions-width-wd-60,
+      'wd-70': $mx-dimensions-width-wd-70,
+      'wd-80': $mx-dimensions-width-wd-80,
+      'wd-90': $mx-dimensions-width-wd-90,
+      'wd-100': $mx-dimensions-width-wd-100
     )
   ),
   'links': (
     'primary': (
-      'color': $mix-links-primary-color,
+      'color': $mx-links-primary-color,
       'hover': (
-        'color': $mix-links-primary-hover-color
+        'color': $mx-links-primary-hover-color
       )
     )
   ),
   'nav': (
     'nav-bar': (
-      'display': $mix-nav-nav-bar-display,
-      'align-items': $mix-nav-nav-bar-align-items,
-      'height': $mix-nav-nav-bar-height,
+      'display': $mx-nav-nav-bar-display,
+      'align-items': $mx-nav-nav-bar-align-items,
+      'height': $mx-nav-nav-bar-height,
       'elm': (
-        'padding': $mix-nav-nav-bar-elm-padding
+        'padding': $mx-nav-nav-bar-elm-padding
       ),
       'list': (
-        'display': $mix-nav-nav-bar-list-display,
-        'flex-direction': $mix-nav-nav-bar-list-flex-direction,
-        'list-style': $mix-nav-nav-bar-list-list-style,
-        'margin': $mix-nav-nav-bar-list-margin
+        'display': $mx-nav-nav-bar-list-display,
+        'flex-direction': $mx-nav-nav-bar-list-flex-direction,
+        'list-style': $mx-nav-nav-bar-list-list-style,
+        'margin': $mx-nav-nav-bar-list-margin
       ),
       'sm': (
-        'height': $mix-nav-nav-bar-sm-height
+        'height': $mx-nav-nav-bar-sm-height
       ),
       'md': (
-        'height': $mix-nav-nav-bar-md-height
+        'height': $mx-nav-nav-bar-md-height
       ),
       'lg': (
-        'height': $mix-nav-nav-bar-lg-height
+        'height': $mx-nav-nav-bar-lg-height
       ),
       'xl': (
-        'height': $mix-nav-nav-bar-xl-height
+        'height': $mx-nav-nav-bar-xl-height
       )
     )
   ),
   'truncate': (
     'clip-box': (
-      'overflow': $mix-truncate-clip-box-overflow,
-      'position': $mix-truncate-clip-box-position,
-      'line-height': $mix-truncate-clip-box-line-height,
-      'max-height': $mix-truncate-clip-box-max-height,
-      'text-align': $mix-truncate-clip-box-text-align,
-      'margin-right': $mix-truncate-clip-box-margin-right,
-      'padding-right': $mix-truncate-clip-box-padding-right,
+      'overflow': $mx-truncate-clip-box-overflow,
+      'position': $mx-truncate-clip-box-position,
+      'line-height': $mx-truncate-clip-box-line-height,
+      'max-height': $mx-truncate-clip-box-max-height,
+      'text-align': $mx-truncate-clip-box-text-align,
+      'margin-right': $mx-truncate-clip-box-margin-right,
+      'padding-right': $mx-truncate-clip-box-padding-right,
       'before': (
-        'content': $mix-truncate-clip-box-before-content,
-        'position': $mix-truncate-clip-box-before-position,
-        'right': $mix-truncate-clip-box-before-right,
-        'bottom': $mix-truncate-clip-box-before-bottom
+        'content': $mx-truncate-clip-box-before-content,
+        'position': $mx-truncate-clip-box-before-position,
+        'right': $mx-truncate-clip-box-before-right,
+        'bottom': $mx-truncate-clip-box-before-bottom
       ),
       'after': (
-        'content': $mix-truncate-clip-box-after-content,
-        'position': $mix-truncate-clip-box-after-position,
-        'right': $mix-truncate-clip-box-after-right,
-        'width': $mix-truncate-clip-box-after-width,
-        'height': $mix-truncate-clip-box-after-height,
-        'background': $mix-truncate-clip-box-after-background
+        'content': $mx-truncate-clip-box-after-content,
+        'position': $mx-truncate-clip-box-after-position,
+        'right': $mx-truncate-clip-box-after-right,
+        'width': $mx-truncate-clip-box-after-width,
+        'height': $mx-truncate-clip-box-after-height,
+        'background': $mx-truncate-clip-box-after-background
       )
     )
   )

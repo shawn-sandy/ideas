@@ -4,48 +4,56 @@
       "group": {
         "default": {
           "value": "1rem",
-          "comment": "descriptions...",
+          "comment": "default font size 16px.",
           "group": "typography"
         },
         "1sm": {
-          "value": "0.79rem",
-          "comment": "descriptions..."
+          "value": "0.702rem",
+          "comment": "11px - used for fine print"
         },
         "2sm": {
-          "value": "0.889rem",
-          "comment": "descriptions..."
+          "value": "0.79rem",
+          "comment": "12px great for notes small text."
         },
         "3sm": {
-          "value": "1.24rem",
-          "comment": "descriptions..."
+          "value": "0.889rem",
+          "comment": "14px sidebar, links, navs, product list"
         },
         "4md": {
-          "value": "1.266rem",
-          "comment": "descriptions..."
+          "value": "1.26rem",
+          "comment": "18px great for long posts, blogs"
         },
         "5md": {
-          "value": "1.1602rem",
-          "comment": "descriptions..."
+          "value": "1.424rem",
+          "comment": "22px"
         },
         "6md": {
-          "value": "1.802rem",
-          "comment": "descriptions..."
+          "value": "1.602rem",
+          "comment": "25px"
         },
         "7lg": {
-          "value": "2.396rem",
-          "comment": "descriptions..."
+          "value": "1.802rem",
+          "comment": "28px descriptions..."
         },
         "8lg": {
-          "value": "3.157rem",
-          "comment": "descriptions..."
+          "value": "2.369rem",
+          "comment": "37px descriptions..."
         },
         "9lg": {
-          "value": "4.209rem",
-          "comment": "descriptions..."
+          "value": "3.157rem",
+          "comment": "50px descriptions..."
         },
         "10xl": {
+          "value": "4.209rem",
+          "comment": "67px descriptions..."
+        },
+        "11xl": {
           "value": "5.61rem",
-          "comment": "descriptions..."
+          "comment": "90px descriptions..."
+        },
+        "12xl": {
+          "value": "7.478rem",
+          "comment": "120px descriptions..."
         }
       }
     },
