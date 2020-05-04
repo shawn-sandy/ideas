@@ -19,14 +19,9 @@ $mix-color-attrs: "color", "background-color", "border-color";
 /** import stylemix **/
 @import "~@shawnsandy/mix";
 
-html {
-  -webkit-font-smoothing: antialiased !important;
-  height: 100% !important;
-}
+@import "../../apps/mix/sass/components/html";
 
-body {
-  font-family: "Roboto", sans-serif;
-}
+@include html;
 
 .roboto-slab {
   font-family: "Roboto Slab", sans-serif !important;
@@ -57,3 +52,5 @@ p {
   @include mix-utility("dimensions.width", "width");
   @include mix-utility("color");
 }
+
+@import "../../apps/mix/sass/navbar.scss";
