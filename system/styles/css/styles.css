@@ -18,7 +18,7 @@
 /** Import tokens, replace the import file below with your own **/
 /*
   Do not edit directly
-  Generated on Sat, 25 Apr 2020 01:00:28 GMT
+  Generated on Mon, 04 May 2020 21:31:05 GMT
 */
 /** Config StyleMix SASS defaults */
 /** import stylemix **/
@@ -63,69 +63,81 @@ p {
   font-size: 1rem; }
 
 .ui-font-size-1sm {
-  font-size: 0.75rem; }
+  font-size: 0.702rem; }
 
 .ui-font-size-2sm {
-  font-size: 0.875rem; }
+  font-size: 0.79rem; }
 
 .ui-font-size-3sm {
-  font-size: 1.3rem; }
+  font-size: 0.889rem; }
 
 .ui-font-size-4md {
-  font-size: 1.5rem; }
+  font-size: 1.26rem; }
 
 .ui-font-size-5md {
-  font-size: 1.75rem; }
+  font-size: 1.424rem; }
 
 .ui-font-size-6md {
-  font-size: 2rem; }
+  font-size: 1.602rem; }
 
 .ui-font-size-7lg {
-  font-size: 2.5rem; }
+  font-size: 1.802rem; }
 
 .ui-font-size-8lg {
-  font-size: 3.5rem; }
+  font-size: 2.369rem; }
 
 .ui-font-size-9lg {
-  font-size: 4rem; }
+  font-size: 3.157rem; }
 
 .ui-font-size-10xl {
-  font-size: 5.2em; }
+  font-size: 4.209rem; }
+
+.ui-font-size-11xl {
+  font-size: 5.61rem; }
+
+.ui-font-size-12xl {
+  font-size: 7.478rem; }
 
 .ui-font-size-default {
   font-size: 1rem; }
 
-.ui-ht-5 {
+.ui-weight-medium {
+  font-weight: 500; }
+
+.ui-weight-bold {
+  font-weight: 700; }
+
+.ui-vh-5 {
   height: 5vh; }
 
-.ui-ht-10 {
+.ui-vh-10 {
   height: 10vh; }
 
-.ui-ht-20 {
+.ui-vh-20 {
   height: 20vh; }
 
-.ui-ht-30 {
+.ui-vh-30 {
   height: 30vh; }
 
-.ui-ht-40 {
+.ui-vh-40 {
   height: 40vh; }
 
-.ui-ht-50 {
+.ui-vh-50 {
   height: 50vh; }
 
-.ui-ht-60 {
+.ui-vh-60 {
   height: 60vh; }
 
-.ui-ht-70 {
+.ui-vh-70 {
   height: 70vh; }
 
-.ui-ht-80 {
+.ui-vh-80 {
   height: 80vh; }
 
-.ui-ht-90 {
+.ui-vh-90 {
   height: 90vh; }
 
-.ui-ht-100 {
+.ui-vh-100 {
   height: 100vh; }
 
 .ui-ht-40vmin {
@@ -137,37 +149,37 @@ p {
 .ui-ht-10vmin {
   min-height: 10vh; }
 
-.ui-wd-5 {
+.ui-vw5 {
   width: 5vw; }
 
-.ui-wd-10 {
+.ui-vw10 {
   width: 10vw; }
 
-.ui-wd-20 {
+.ui-vw20 {
   width: 20vw; }
 
-.ui-wd-30 {
+.ui-vw30 {
   width: 30vw; }
 
-.ui-wd-40 {
+.ui-vw40 {
   width: 40vw; }
 
-.ui-wd-50 {
+.ui-vw50 {
   width: 50vw; }
 
-.ui-wd-60 {
+.ui-vw60 {
   width: 60vw; }
 
-.ui-wd-70 {
+.ui-vw70 {
   width: 70vw; }
 
-.ui-wd-80 {
+.ui-vw80 {
   width: 80vw; }
 
-.ui-wd-90 {
+.ui-vw90 {
   width: 90vw; }
 
-.ui-wd-100 {
+.ui-vw100 {
   width: 100vw; }
 
 .ui-black {
@@ -619,25 +631,5 @@ p {
 
 .ui-border-brand-primary-tp {
   border-color: #568ceb; }
-
-nav {
-  display: flex;
-  align-items: center; }
-  @media (max-width: 580px) {
-    nav {
-      display: block; } }
-  nav a {
-    height: 100% !important;
-    display: inline-flex;
-    align-items: center;
-    text-align: center;
-    align-content: stretch;
-    padding: 0 3rem;
-    text-decoration: none; }
-    nav a:hover {
-      opacity: 0.9; }
-    @media (max-width: 580px) {
-      nav a {
-        display: block; } }
 
 /*# sourceMappingURL=/styles.css.map */

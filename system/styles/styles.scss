@@ -47,10 +47,10 @@ p {
 /** utility mixin example--create font utility form our tokens **/
 .ui {
   @include mix-utility("font");
-  @include mix-utility("dimensions.height", "height");
-  @include mix-utility("dimensions.min-height", "min-height");
-  @include mix-utility("dimensions.width", "width");
+  @include mix-utility("layout.height", "height");
+  @include mix-utility("layout.min-height", "min-height");
+  @include mix-utility("layout.width", "width");
   @include mix-utility("color");
 }
 
-@import "../../apps/mix/sass/navbar.scss";
+// @import "../../apps/mix/sass/navbar.scss";
