@@ -1,93 +1,93 @@
 {
     "layout": {
         "height": {
-            "hg-5": {
+            "vh-5": {
                 "value": "5vh",
                 "description": "Height 10vh"
             },
-            "hg-10": {
+            "vh-10": {
                 "value": "10vh",
                 "description": "Height 10vh"
             },
-            "hg-20": {
+            "vh-20": {
                 "value": "20vh",
                 "description": "Height 10vh"
             },
-            "hg-30": {
+            "vh-30": {
                 "value": "30vh",
                 "description": "Height 10vh"
             },
-            "hg-40": {
+            "vh-40": {
                 "value": "40vh",
                 "description": "Height 10vh"
             },
-            "hg-50": {
+            "vh-50": {
                 "value": "50vh",
                 "description": "Height 10vh"
             },
-            "hg-60": {
+            "vh-60": {
                 "value": "60vh",
                 "description": "Height 10vh"
             },
-            "hg-70": {
+            "vh-70": {
                 "value": "70vh",
                 "description": "Height 10vh"
             },
-            "hg-80": {
+            "vh-80": {
                 "value": "80vh",
                 "description": "Height 10vh"
             },
-            "hg-90": {
+            "vh-90": {
                 "value": "90vh",
                 "description": "Height 10vh"
             },
-            "hg-100": {
+            "vh-100": {
                 "value": "100vh",
                 "description": "Height 10vh"
             }
         },
         "width": {
-            "wd-5": {
+            "vw5": {
                 "value": "5vw",
-                "description": "Heigw 10vw"
+                "description": "Width 10vw"
             },
-            "wd-10": {
+            "vw10": {
                 "value": "10vw",
-                "description": "Heigw 10vw"
+                "description": "Width 10vw"
             },
-            "wd-20": {
+            "vw20": {
                 "value": "20vw",
-                "description": "Heigw 10vw"
+                "description": "Width 10vw"
             },
-            "wd-30": {
+            "vw30": {
                 "value": "30vw",
-                "description": "Heigw 10vw"
+                "description": "Width 10vw"
             },
-            "wd-40": {
+            "vw40": {
                 "value": "40vw",
-                "description": "Heigw 10vw"
+                "description": "Width 10vw"
             },
-            "wd-50": {
+            "vw50": {
                 "value": "50vw",
-                "description": "Heigw 10vw"
+                "description": "Width 10vw"
             },
-            "wd-60": {
+            "vw60": {
                 "value": "60vw",
-                "description": "Heigw 10vw"
+                "description": "Width 10vw"
             },
-            "wd-70": {
+            "vw70": {
                 "value": "70vw",
-                "description": "Heigw 10vw"
+                "description": "Width 10vw"
             },
-            "wd-80": {
+            "vw80": {
                 "value": "80vw",
-                "description": "Heigw 10vw"
+                "description": "Width 10vw"
             },
-            "wd-90": {
+            "vw90": {
                 "value": "90vw",
-                "description": "Heigw 10vw"
+                "description": "Width 10vw"
             },
-            "wd-100": {
+            "vw100": {
                 "value": "100vw",
                 "description": "Height 10vw"
             }
