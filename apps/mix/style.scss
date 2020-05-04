@@ -24,6 +24,6 @@
 
   @include mix-utilities("font");
   @include mix-utilities("color");
-  @include mix-utility("dimensions.height", "height");
-  @include mix-utility("dimensions.width", "width");
+  @include mix-utility("layout.height", "height");
+  @include mix-utility("layout.width", "width");
 }

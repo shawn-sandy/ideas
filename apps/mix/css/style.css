@@ -1,6 +1,6 @@
 /*
   Do not edit directly
-  Generated on Fri, 01 May 2020 11:20:36 GMT
+  Generated on Mon, 04 May 2020 11:33:34 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 /** generates a series of modifies based a list of attributes  **/
@@ -515,37 +515,37 @@
 .mx-border-green-tp {
   border-color: #007100; }
 
-.mx-ht-5 {
+.mx-hg-5 {
   height: 5vh; }
 
-.mx-ht-10 {
+.mx-hg-10 {
   height: 10vh; }
 
-.mx-ht-20 {
+.mx-hg-20 {
   height: 20vh; }
 
-.mx-ht-30 {
+.mx-hg-30 {
   height: 30vh; }
 
-.mx-ht-40 {
+.mx-hg-40 {
   height: 40vh; }
 
-.mx-ht-50 {
+.mx-hg-50 {
   height: 50vh; }
 
-.mx-ht-60 {
+.mx-hg-60 {
   height: 60vh; }
 
-.mx-ht-70 {
+.mx-hg-70 {
   height: 70vh; }
 
-.mx-ht-80 {
+.mx-hg-80 {
   height: 80vh; }
 
-.mx-ht-90 {
+.mx-hg-90 {
   height: 90vh; }
 
-.mx-ht-100 {
+.mx-hg-100 {
   height: 100vh; }
 
 .mx-wd-5 {

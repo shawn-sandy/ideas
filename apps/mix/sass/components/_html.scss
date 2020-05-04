@@ -1,0 +1,18 @@
+@mixin html {
+  html {
+    -webkit-font-smoothing: antialiased !important;
+    height: 100% !important;
+    font-size: 16px;
+    @media (max-width: 540px) {
+      font-size: 13px;
+    }
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+
+  body {
+    padding: 0 !important;
+    @content;
+  }
+}

@@ -1,47 +1,47 @@
 {
-    "dimensions": {
+    "layout": {
         "height": {
-            "ht-5": {
+            "hg-5": {
                 "value": "5vh",
                 "description": "Height 10vh"
             },
-            "ht-10": {
+            "hg-10": {
                 "value": "10vh",
                 "description": "Height 10vh"
             },
-            "ht-20": {
+            "hg-20": {
                 "value": "20vh",
                 "description": "Height 10vh"
             },
-            "ht-30": {
+            "hg-30": {
                 "value": "30vh",
                 "description": "Height 10vh"
             },
-            "ht-40": {
+            "hg-40": {
                 "value": "40vh",
                 "description": "Height 10vh"
             },
-            "ht-50": {
+            "hg-50": {
                 "value": "50vh",
                 "description": "Height 10vh"
             },
-            "ht-60": {
+            "hg-60": {
                 "value": "60vh",
                 "description": "Height 10vh"
             },
-            "ht-70": {
+            "hg-70": {
                 "value": "70vh",
                 "description": "Height 10vh"
             },
-            "ht-80": {
+            "hg-80": {
                 "value": "80vh",
                 "description": "Height 10vh"
             },
-            "ht-90": {
+            "hg-90": {
                 "value": "90vh",
                 "description": "Height 10vh"
             },
-            "ht-100": {
+            "hg-100": {
                 "value": "100vh",
                 "description": "Height 10vh"
             }
