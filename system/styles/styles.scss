@@ -53,4 +53,4 @@ p {
   @include mix-utility("color");
 }
 
-// @import "../../apps/mix/sass/navbar.scss";
+@import "~@shawnsandy/mix/sass/navbar.scss";

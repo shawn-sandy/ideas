@@ -632,4 +632,24 @@ p {
 .ui-border-brand-primary-tp {
   border-color: #568ceb; }
 
+nav {
+  display: flex;
+  align-items: center; }
+  @media (max-width: 580px) {
+    nav {
+      display: block; } }
+  nav a {
+    height: 100% !important;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    align-content: stretch;
+    padding: 0 3rem;
+    text-decoration: none; }
+    nav a:hover {
+      opacity: 0.9; }
+    @media (max-width: 580px) {
+      nav a {
+        display: block; } }
+
 /*# sourceMappingURL=/styles.css.map */
