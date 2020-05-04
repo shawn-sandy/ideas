@@ -21,8 +21,6 @@ $mix-color-attrs: "color", "background-color", "border-color";
 
 @import "../../apps/mix/sass/components/html";
 
-@include html;
-
 .roboto-slab {
   font-family: "Roboto Slab", sans-serif !important;
   font-weight: 500;
