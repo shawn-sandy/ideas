@@ -1,6 +1,6 @@
 /*
   Do not edit directly
-  Generated on Mon, 04 May 2020 11:33:34 GMT
+  Generated on Mon, 04 May 2020 21:56:51 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 /** generates a series of modifies based a list of attributes  **/
@@ -8,6 +8,40 @@
 
 
 **/
+html {
+  -webkit-font-smoothing: antialiased !important;
+  height: 100% !important;
+  font-size: 16px; }
+  @media (max-width: 540px) {
+    html {
+      font-size: 13px; } }
+  @media (max-width: 768px) {
+    html {
+      font-size: 14px; } }
+
+body {
+  padding: 0 !important; }
+
+nav {
+  display: flex;
+  align-items: center; }
+  @media (max-width: 580px) {
+    nav {
+      display: block; } }
+  nav a {
+    height: 100% !important;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    align-content: stretch;
+    padding: 0 3rem;
+    text-decoration: none; }
+    nav a:hover {
+      opacity: 0.9; }
+    @media (max-width: 580px) {
+      nav a {
+        display: block; } }
+
 /** generate all components in specified map--default component **/
 .mx-btn {
   height: 2.5rem;
@@ -44,26 +78,6 @@
     border-radius: 9999rem; }
   .mx-btn-rounded {
     border-radius: 0.31rem; }
-
-.mx-nav {
-  display: flex;
-  align-items: center;
-  height: 60px; }
-  .mx-nav-elm {
-    padding: 0 1rem; }
-  .mx-nav-list {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    margin: auto 0; }
-  .mx-nav-sm {
-    height: 20rem !important; }
-  .mx-nav-md {
-    height: 40rem !important; }
-  .mx-nav-lg {
-    height: 80rem !important; }
-  .mx-nav-xl {
-    height: 100rem !important; }
 
 .mx-font-size-default {
   font-size: 1rem; }
@@ -515,68 +529,68 @@
 .mx-border-green-tp {
   border-color: #007100; }
 
-.mx-hg-5 {
+.mx-vh-5 {
   height: 5vh; }
 
-.mx-hg-10 {
+.mx-vh-10 {
   height: 10vh; }
 
-.mx-hg-20 {
+.mx-vh-20 {
   height: 20vh; }
 
-.mx-hg-30 {
+.mx-vh-30 {
   height: 30vh; }
 
-.mx-hg-40 {
+.mx-vh-40 {
   height: 40vh; }
 
-.mx-hg-50 {
+.mx-vh-50 {
   height: 50vh; }
 
-.mx-hg-60 {
+.mx-vh-60 {
   height: 60vh; }
 
-.mx-hg-70 {
+.mx-vh-70 {
   height: 70vh; }
 
-.mx-hg-80 {
+.mx-vh-80 {
   height: 80vh; }
 
-.mx-hg-90 {
+.mx-vh-90 {
   height: 90vh; }
 
-.mx-hg-100 {
+.mx-vh-100 {
   height: 100vh; }
 
-.mx-wd-5 {
+.mx-vw5 {
   width: 5vw; }
 
-.mx-wd-10 {
+.mx-vw10 {
   width: 10vw; }
 
-.mx-wd-20 {
+.mx-vw20 {
   width: 20vw; }
 
-.mx-wd-30 {
+.mx-vw30 {
   width: 30vw; }
 
-.mx-wd-40 {
+.mx-vw40 {
   width: 40vw; }
 
-.mx-wd-50 {
+.mx-vw50 {
   width: 50vw; }
 
-.mx-wd-60 {
+.mx-vw60 {
   width: 60vw; }
 
-.mx-wd-70 {
+.mx-vw70 {
   width: 70vw; }
 
-.mx-wd-80 {
+.mx-vw80 {
   width: 80vw; }
 
-.mx-wd-90 {
+.mx-vw90 {
   width: 90vw; }
 
-.mx-wd-100 {
+.mx-vw100 {
   width: 100vw; }

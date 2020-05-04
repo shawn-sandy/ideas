@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Mon, 04 May 2020 11:33:34 GMT
+  Generated on Mon, 04 May 2020 21:56:51 GMT
 */
 
 $mx-button-padding: 0 1.5rem !default;
@@ -40,28 +40,28 @@ $mx-font-size-group-12-xl: 7.478rem !default; // 120px descriptions...
 $mx-font-weight-medium: 500 !default; // descriptions...
 $mx-font-weight-bold: 700 !default; // descriptions...
 $mx-letter-spacing-group-1-sm: 1rem !default;
-$mx-layout-height-hg-5: 5vh !default;
-$mx-layout-height-hg-10: 10vh !default;
-$mx-layout-height-hg-20: 20vh !default;
-$mx-layout-height-hg-30: 30vh !default;
-$mx-layout-height-hg-40: 40vh !default;
-$mx-layout-height-hg-50: 50vh !default;
-$mx-layout-height-hg-60: 60vh !default;
-$mx-layout-height-hg-70: 70vh !default;
-$mx-layout-height-hg-80: 80vh !default;
-$mx-layout-height-hg-90: 90vh !default;
-$mx-layout-height-hg-100: 100vh !default;
-$mx-layout-width-wd-5: 5vw !default;
-$mx-layout-width-wd-10: 10vw !default;
-$mx-layout-width-wd-20: 20vw !default;
-$mx-layout-width-wd-30: 30vw !default;
-$mx-layout-width-wd-40: 40vw !default;
-$mx-layout-width-wd-50: 50vw !default;
-$mx-layout-width-wd-60: 60vw !default;
-$mx-layout-width-wd-70: 70vw !default;
-$mx-layout-width-wd-80: 80vw !default;
-$mx-layout-width-wd-90: 90vw !default;
-$mx-layout-width-wd-100: 100vw !default;
+$mx-layout-height-vh-5: 5vh !default;
+$mx-layout-height-vh-10: 10vh !default;
+$mx-layout-height-vh-20: 20vh !default;
+$mx-layout-height-vh-30: 30vh !default;
+$mx-layout-height-vh-40: 40vh !default;
+$mx-layout-height-vh-50: 50vh !default;
+$mx-layout-height-vh-60: 60vh !default;
+$mx-layout-height-vh-70: 70vh !default;
+$mx-layout-height-vh-80: 80vh !default;
+$mx-layout-height-vh-90: 90vh !default;
+$mx-layout-height-vh-100: 100vh !default;
+$mx-layout-width-vw-5: 5vw !default;
+$mx-layout-width-vw-10: 10vw !default;
+$mx-layout-width-vw-20: 20vw !default;
+$mx-layout-width-vw-30: 30vw !default;
+$mx-layout-width-vw-40: 40vw !default;
+$mx-layout-width-vw-50: 50vw !default;
+$mx-layout-width-vw-60: 60vw !default;
+$mx-layout-width-vw-70: 70vw !default;
+$mx-layout-width-vw-80: 80vw !default;
+$mx-layout-width-vw-90: 90vw !default;
+$mx-layout-width-vw-100: 100vw !default;
 $mx-links-primary-color: #000000 !default;
 $mx-links-primary-hover-color: #010101 !default;
 $mx-nav-nav-bar-display: flex !default;
@@ -159,30 +159,30 @@ $tokens: (
   ),
   'layout': (
     'height': (
-      'hg-5': $mx-layout-height-hg-5,
-      'hg-10': $mx-layout-height-hg-10,
-      'hg-20': $mx-layout-height-hg-20,
-      'hg-30': $mx-layout-height-hg-30,
-      'hg-40': $mx-layout-height-hg-40,
-      'hg-50': $mx-layout-height-hg-50,
-      'hg-60': $mx-layout-height-hg-60,
-      'hg-70': $mx-layout-height-hg-70,
-      'hg-80': $mx-layout-height-hg-80,
-      'hg-90': $mx-layout-height-hg-90,
-      'hg-100': $mx-layout-height-hg-100
+      'vh-5': $mx-layout-height-vh-5,
+      'vh-10': $mx-layout-height-vh-10,
+      'vh-20': $mx-layout-height-vh-20,
+      'vh-30': $mx-layout-height-vh-30,
+      'vh-40': $mx-layout-height-vh-40,
+      'vh-50': $mx-layout-height-vh-50,
+      'vh-60': $mx-layout-height-vh-60,
+      'vh-70': $mx-layout-height-vh-70,
+      'vh-80': $mx-layout-height-vh-80,
+      'vh-90': $mx-layout-height-vh-90,
+      'vh-100': $mx-layout-height-vh-100
     ),
     'width': (
-      'wd-5': $mx-layout-width-wd-5,
-      'wd-10': $mx-layout-width-wd-10,
-      'wd-20': $mx-layout-width-wd-20,
-      'wd-30': $mx-layout-width-wd-30,
-      'wd-40': $mx-layout-width-wd-40,
-      'wd-50': $mx-layout-width-wd-50,
-      'wd-60': $mx-layout-width-wd-60,
-      'wd-70': $mx-layout-width-wd-70,
-      'wd-80': $mx-layout-width-wd-80,
-      'wd-90': $mx-layout-width-wd-90,
-      'wd-100': $mx-layout-width-wd-100
+      'vw5': $mx-layout-width-vw-5,
+      'vw10': $mx-layout-width-vw-10,
+      'vw20': $mx-layout-width-vw-20,
+      'vw30': $mx-layout-width-vw-30,
+      'vw40': $mx-layout-width-vw-40,
+      'vw50': $mx-layout-width-vw-50,
+      'vw60': $mx-layout-width-vw-60,
+      'vw70': $mx-layout-width-vw-70,
+      'vw80': $mx-layout-width-vw-80,
+      'vw90': $mx-layout-width-vw-90,
+      'vw100': $mx-layout-width-vw-100
     )
   ),
   'links': (
