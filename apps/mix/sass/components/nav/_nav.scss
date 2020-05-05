@@ -6,6 +6,9 @@
   }
 }
 
+/**
+ * navbar
+ */
 @mixin navbar {
   nav {
     @include nav();

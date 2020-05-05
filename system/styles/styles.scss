@@ -43,7 +43,9 @@ p {
   line-height: 1.5 !important;
 }
 
-/** utility mixin example--create font utility form our tokens **/
+/**
+ * ui layout
+ */
 .ui {
   @include mix-utility("font");
   @include mix-utility("layout.height", "height");
