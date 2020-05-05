@@ -7,10 +7,10 @@
 // import mix library
 @import "./index.scss";
 
-// foundation
+// foundation styles
 
 @include html;
-@include nav-bar;
+@include navbar;
 
 /** generate all components in specified map--default component **/
 @include mix-components("buttons");
