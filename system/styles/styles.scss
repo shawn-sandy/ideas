@@ -20,7 +20,7 @@ $mix-color-attrs: "color", "background-color", "border-color";
 @import "~@shawnsandy/mix";
 
 @include html;
-@include nav-bar;
+@include navbar;
 
 .roboto-slab {
   font-family: "Roboto Slab", sans-serif !important;
