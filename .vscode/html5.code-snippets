@@ -1,0 +1,26 @@
+{
+  "generate html5 (basic) template": {
+    "prefix": "html5",
+    "body": [
+      "<!doctype html>",
+      "",
+      "<html lang=\"en\">",
+      "<head>",
+      "  <meta charset=\"utf-8\">",
+      "",
+      "  <title>${1:title}</title>",
+      "  <meta name=\"description\" content=\"${1:title}\">",
+      "  <meta name=\"author\" content=\"${2:author}\">",
+      "",
+      "  <link rel=\"stylesheet\" href=\"css/styles.css?v=1.0\">",
+      "",
+      "</head>",
+      "",
+      "<body>",
+      "  <script src=\"index.js\"></script>",
+      "</body>",
+      "</html>"
+    ],
+    "description": "generate html5 (basic) template"
+  }
+}
