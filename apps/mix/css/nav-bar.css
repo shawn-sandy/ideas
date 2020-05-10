@@ -8,22 +8,31 @@
 
 
 **/
-.mx-nav-bar {
+/**
+ * navbar
+ */
+/**
+ * base navbar
+ */
+/**
+ * Nav links
+ */
+nav {
   display: flex;
-  align-items: center;
-  height: 60px; }
-  .mx-nav-bar-elm {
-    padding: 0 1rem; }
-  .mx-nav-bar-list {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    margin: auto 0; }
-  .mx-nav-bar-sm {
-    height: 20rem !important; }
-  .mx-nav-bar-md {
-    height: 40rem !important; }
-  .mx-nav-bar-lg {
-    height: 80rem !important; }
-  .mx-nav-bar-xl {
-    height: 100rem !important; }
+  align-items: center; }
+  @media all and (max-width: 580px) {
+    nav {
+      display: block; } }
+  nav a {
+    height: 100% !important;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    align-content: stretch;
+    padding: 0 3rem;
+    text-decoration: none; }
+    nav a:hover, nav a:focus {
+      opacity: 0.95; }
+    @media all and (max-width: 580px) {
+      nav a {
+        display: block; } }

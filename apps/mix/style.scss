@@ -10,7 +10,7 @@
 // foundation styles
 
 @include html;
-@include navbar;
+@include mix-navbar;
 
 /** generate all components in specified map--default component **/
 @include mix-components("buttons");

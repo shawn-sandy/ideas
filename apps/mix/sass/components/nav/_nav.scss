@@ -1,17 +1,17 @@
 /**
  * navbar
  */
-@mixin mx-navbar {
+@mixin mix-navbar {
   nav {
-    @include nav();
-    @include links();
+    @include mix-nav();
+    @include mix-nav-links();
   }
 }
 
 /**
  * base navbar
  */
-@mixin mx-nav {
+@mixin mix-nav {
   display: flex;
   align-items: center;
   @media all and (max-width: 580px) {
@@ -22,7 +22,7 @@
 /**
  * Nav links
  */
-@mixin mx-nav-links {
+@mixin mix-nav-links {
   a {
     height: 100% !important;
     display: inline-flex;
@@ -34,7 +34,6 @@
     &:hover,
     &:focus {
       opacity: 0.95;
-      filter: drop-shadow(16px 16px 10px black);
     }
     @media all and (max-width: 580px) {
       display: block;

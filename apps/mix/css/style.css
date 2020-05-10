@@ -8,6 +8,15 @@
 
 
 **/
+/**
+ * navbar
+ */
+/**
+ * base navbar
+ */
+/**
+ * Nav links
+ */
 html {
   -webkit-font-smoothing: antialiased !important;
   height: 100% !important;
@@ -25,7 +34,7 @@ body {
 nav {
   display: flex;
   align-items: center; }
-  @media (max-width: 580px) {
+  @media all and (max-width: 580px) {
     nav {
       display: block; } }
   nav a {
@@ -36,9 +45,9 @@ nav {
     align-content: stretch;
     padding: 0 3rem;
     text-decoration: none; }
-    nav a:hover {
-      opacity: 0.9; }
-    @media (max-width: 580px) {
+    nav a:hover, nav a:focus {
+      opacity: 0.95; }
+    @media all and (max-width: 580px) {
       nav a {
         display: block; } }
 
