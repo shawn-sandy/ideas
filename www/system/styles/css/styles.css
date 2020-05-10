@@ -78,7 +78,9 @@ nav {
 p {
   line-height: 1.5 !important; }
 
-/** utility mixin example--create font utility form our tokens **/
+/**
+ * ui layout
+ */
 .ui-font-size-default {
   font-size: 1rem; }
 

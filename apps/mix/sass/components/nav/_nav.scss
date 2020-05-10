@@ -1,32 +1,43 @@
-@mixin nav {
+/**
+ * navbar
+ */
+@mixin mx-navbar {
+  nav {
+    @include nav();
+    @include links();
+  }
+}
+
+/**
+ * base navbar
+ */
+@mixin mx-nav {
   display: flex;
   align-items: center;
-  @media (max-width: 580px) {
+  @media all and (max-width: 580px) {
     display: block;
   }
 }
 
 /**
- * navbar
+ * Nav links
  */
-@mixin navbar {
-  nav {
-    @include nav();
-
-    a {
-      height: 100% !important;
-      display: inline-flex;
-      align-items: center;
-      text-align: center;
-      align-content: stretch;
-      padding: 0 3rem;
-      text-decoration: none;
-      &:hover {
-        opacity: 0.9;
-      }
-      @media (max-width: 580px) {
-        display: block;
-      }
+@mixin mx-nav-links {
+  a {
+    height: 100% !important;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    align-content: stretch;
+    padding: 0 3rem;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      opacity: 0.95;
+      filter: drop-shadow(16px 16px 10px black);
+    }
+    @media all and (max-width: 580px) {
+      display: block;
     }
     @content;
   }
