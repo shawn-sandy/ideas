@@ -32,6 +32,7 @@
     "url": "https://github.com/shawn-sandy/idea/issues"
   },
   "dependencies": {
+    "parcel": "^1.12.4",
     "style-dictionary": "^2.9.0"
   },
   "devDependencies": {

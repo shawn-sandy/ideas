@@ -92,5 +92,8 @@
   "browserslist": [
     "last 5 version"
   ],
-  "gitHead": "4577741794f126834eade633db5dd9e94cd6ec62"
+  "gitHead": "4577741794f126834eade633db5dd9e94cd6ec62",
+  "dependencies": {
+    "parcel": "^1.12.4"
+  }
 }

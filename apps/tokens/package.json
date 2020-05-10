@@ -14,6 +14,7 @@
   "dependencies": {
     "@shawnsandy/vue-services": "^0.2.6",
     "core-js": "^3.6.4",
+    "parcel": "^1.12.4",
     "vue": "^2.6.11"
   },
   "devDependencies": {

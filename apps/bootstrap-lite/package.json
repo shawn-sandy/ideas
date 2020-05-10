@@ -17,7 +17,8 @@
   ],
   "homepage": "https://github.com/shawn-sandy/idea/tree/master/packages/bootstrap-lite",
   "dependencies": {
-    "bootstrap": "^4.4.1"
+    "bootstrap": "^4.4.1",
+    "parcel": "^1.12.4"
   },
   "bugs": {
     "url": "https://github.com/shawn-sandy/idea/issues"

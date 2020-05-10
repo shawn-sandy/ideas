@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "parcel": "^1.12.4",
     "vue": "^2.5.16"
   },
   "devDependencies": {
