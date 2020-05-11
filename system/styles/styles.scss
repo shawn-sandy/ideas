@@ -19,8 +19,8 @@ $mix-color-attrs: "color", "background-color", "border-color";
 /** import stylemix **/
 @import "~@shawnsandy/mix";
 
-@include html;
-@include navbar;
+// @include html;
+// @include mix-navbar;
 
 .roboto-slab {
   font-family: "Roboto Slab", sans-serif !important;

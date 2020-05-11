@@ -128,6 +128,8 @@ require("@fortawesome/fontawesome-free/css/regular.css");
 
 require("@shawnsandy/bootstrap-lite");
 
+require("@shawnsandy/mix/foundation.scss");
+
 require("./system/styles/styles.scss");
-},{"@fortawesome/fontawesome-free/css/regular.css":"y3D1","@shawnsandy/bootstrap-lite":"UsdY","./system/styles/styles.scss":"UsdY"}]},{},["XEZO"], null)
+},{"@fortawesome/fontawesome-free/css/regular.css":"y3D1","@shawnsandy/bootstrap-lite":"UsdY","@shawnsandy/mix/foundation.scss":"UsdY","./system/styles/styles.scss":"UsdY"}]},{},["XEZO"], null)
 //# sourceMappingURL=/styles.js.map
