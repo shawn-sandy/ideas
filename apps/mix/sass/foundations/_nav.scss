@@ -32,24 +32,28 @@ $nav-bg: #ffffff !default;
  */
 @mixin mix-nav-links {
   a {
-    &:first-child {
-      padding: 0;
-      padding-right: 1rem;
-      &:hover,
-      &:focus {
-        background-color: transparent;
-      }
-    }
     height: inherit !important;
     display: inline-flex;
     text-align: center;
     align-items: center;
+    align-content: stretch;
     padding: 0 2rem;
     text-decoration: none;
     &:hover,
     &:focus {
       background-color: darken($color: $nav-bg, $amount: 5);
       opacity: 0.95;
+    }
+    &:first-child {
+      padding: 0;
+      padding-right: 1rem;
+      text-align: center;
+      align-items: center;
+      height: 100% !important;
+      &:hover,
+      &:focus {
+        background-color: transparent;
+      }
     }
     @media all and (max-width: 580px) {
       display: block;

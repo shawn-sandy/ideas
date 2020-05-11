@@ -83,19 +83,9 @@ nav {
       display: inline-flex;
       text-align: center;
       align-items: center;
+      align-content: stretch;
       padding: 0 2rem;
       text-decoration: none; }
-      nav > section a:first-child,
-      nav div a:first-child,
-      nav ul a:first-child {
-        padding: 0;
-        padding-right: 1rem; }
-        nav > section a:first-child:hover, nav > section a:first-child:focus,
-        nav div a:first-child:hover,
-        nav div a:first-child:focus,
-        nav ul a:first-child:hover,
-        nav ul a:first-child:focus {
-          background-color: transparent; }
       nav > section a:hover, nav > section a:focus,
       nav div a:hover,
       nav div a:focus,
@@ -103,6 +93,20 @@ nav {
       nav ul a:focus {
         background-color: #f2f2f2;
         opacity: 0.95; }
+      nav > section a:first-child,
+      nav div a:first-child,
+      nav ul a:first-child {
+        padding: 0;
+        padding-right: 1rem;
+        text-align: center;
+        align-items: center;
+        height: 100% !important; }
+        nav > section a:first-child:hover, nav > section a:first-child:focus,
+        nav div a:first-child:hover,
+        nav div a:first-child:focus,
+        nav ul a:first-child:hover,
+        nav ul a:first-child:focus {
+          background-color: transparent; }
       @media all and (max-width: 580px) {
         nav > section a,
         nav div a,
