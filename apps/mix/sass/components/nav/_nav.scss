@@ -1,10 +1,14 @@
 /**
  * navbar
  */
+
+$nav-min-height: $mx-layout-height-vh-10 !default;
+$nav-bg: $mx-color-lightgray !default;
+
 @mixin mix-navbar {
   nav {
+    background-color: $nav-bg;
     @include mix-nav();
-    @include mix-nav-links();
   }
 }
 
@@ -12,10 +16,13 @@
  * base navbar
  */
 @mixin mix-nav {
-  display: flex;
-  align-items: center;
-  @media all and (max-width: 580px) {
-    display: block;
+  > section,
+  div,
+  ul {
+    min-height: $nav-min-height;
+    display: flex;
+    align-items: center;
+    @include mix-nav-links();
   }
 }
 
@@ -23,7 +30,10 @@
  * Nav links
  */
 @mixin mix-nav-links {
-  a {
+  > a {
+    &:first-child {
+      padding: 0;
+    }
     height: 100% !important;
     display: inline-flex;
     align-items: center;
