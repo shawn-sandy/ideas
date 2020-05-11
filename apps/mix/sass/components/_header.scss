@@ -1,0 +1,12 @@
+$mx-header-vh: 40vh !default;
+$mx-header-bg: lightgray !default;
+
+@mixin mix-header {
+  header {
+    height: $mx-header-vh;
+    background-color: $mx-header-bg;
+    display: flex;
+    align-items: center;
+    align-content: stretch;
+  }
+}

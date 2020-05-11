@@ -23,6 +23,7 @@
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
+    "start": "parcel src/index.html",
     "tokens": "style-dictionary build --config ./config/config.js && gulp sass",
     "test-tokens": "style-dictionary build --config ./config/config.js && gulp sass",
     "mix-tokens": "style-dictionary build --config ./config/mix-tokens.js && gulp sass",
@@ -41,6 +42,7 @@
     "gulp-clean-css": "^4.3.0",
     "gulp-sass": "^4.0.2",
     "gulp-sizereport": "^1.2.1",
+    "normalize.css": "^8.0.1",
     "parcel": "^1.12.4"
   },
   "gitHead": "4577741794f126834eade633db5dd9e94cd6ec62"

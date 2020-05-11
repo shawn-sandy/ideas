@@ -1,0 +1,12 @@
+$mx-footer-vh: 5vh;
+$mx-footer-bg: lighten(lightgray, 8);
+
+@mixin mix-footer {
+  footer {
+    min-height: $mx-footer-vh;
+    display: flex;
+    align-items: center;
+    align-content: stretch;
+    background-color: $mx-footer-bg;
+  }
+}

@@ -11,6 +11,7 @@
 
 @include html;
 @include mix-navbar;
+@include mix-header;
 
 /** generate all components in specified map--default component **/
 @include mix-components("buttons");

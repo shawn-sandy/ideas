@@ -1,0 +1,13 @@
+$mx-main-vh: 40vh;
+
+@mixin mix-main {
+  main {
+    min-height: $mx-main-vh;
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+    > section {
+      display: block !important;
+    }
+  }
+}
