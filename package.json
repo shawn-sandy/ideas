@@ -60,7 +60,7 @@
     "gulp-sizereport": "^1.2.1",
     "gulp-string-replace": "^1.1.2",
     "html-minifier": "^4.0.0",
-    "lerna": "^3.20.2",
+    "lerna": "^3.21.0",
     "mvp": "git+https://github.com/shawn-sandy/mvp.git",
     "node-fetch": "^2.6.0",
     "parcel": "^1.12.4",
