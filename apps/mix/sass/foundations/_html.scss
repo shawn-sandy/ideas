@@ -19,12 +19,14 @@
     padding: 0 !important;
     @content;
 
-    > nav,
+    nav,
     header,
     main,
     footer {
       > div,
-      section {
+      section,
+      aside,
+      article {
         max-width: 98%;
         margin: auto;
         @media screen and (min-width: 960px) {
