@@ -2,7 +2,7 @@
  * navbar
  */
 
-$mx-nav-min-height: $mx-layout-height-vh-10 !default;
+$mx-nav-min-height: 10rem !default;
 $nav-bg: #ffffff !default;
 
 @mixin mix-navbar {
@@ -19,14 +19,14 @@ $nav-bg: #ffffff !default;
   > section,
   div,
   ul {
-    min-height: $mx-layout-height-vh-10;
-    display: flex;
-    align-items: center;
-    align-content: stretch;
-    @include mix-nav-links();
-  }
-  @media all and (max-width: 580px) {
+    // min-height: $mx-layout-height-vh-10;
     display: block;
+    @media all and (min-width: 960px) {
+      display: flex;
+      align-items: center;
+      height: $mx-layout-height-vh-10;
+    }
+    @include mix-nav-links();
   }
 }
 
@@ -35,32 +35,34 @@ $nav-bg: #ffffff !default;
  */
 @mixin mix-nav-links {
   a {
-    height: inherit !important;
-    display: inline-flex;
-    text-align: center;
-    align-items: center;
-    align-content: stretch;
-    padding: 0 2rem;
-    text-decoration: none;
-    &:hover,
-    &:focus {
-      background-color: darken($color: $nav-bg, $amount: 5);
-      opacity: 0.95;
-    }
     &:first-child {
-      padding: 0;
-      padding-right: 1rem;
+      // padding: 0;
+      // padding-right: 1rem;
       text-align: center;
-      align-items: center;
       height: 100% !important;
       &:hover,
       &:focus {
         background-color: transparent;
       }
     }
-    @media all and (max-width: 580px) {
-      display: block;
-      width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    text-decoration: none;
+    display: block;
+    &:hover,
+    &:focus {
+      background-color: darken($color: $nav-bg, $amount: 5);
+      opacity: 0.95;
+    }
+    @media all and (min-width: 980px) {
+      &:first-child {
+        padding: 0;
+        padding-right: 1rem;
+      }
+      height: 100% !important;
+      display: inline-flex;
+      align-items: center;
+      padding: 0 2rem;
     }
     @content;
   }
