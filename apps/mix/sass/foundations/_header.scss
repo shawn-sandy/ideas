@@ -1,6 +1,3 @@
-$mx-header-vh: 40vh !default;
-$mx-header-bg: lightgray !default;
-
 @mixin mix-header {
   header {
     height: $mx-header-vh;
@@ -8,5 +5,10 @@ $mx-header-bg: lightgray !default;
     display: flex;
     align-items: center;
     align-content: stretch;
+    h1,
+    h2,
+    h3 {
+      margin-top: 0;
+    }
   }
 }

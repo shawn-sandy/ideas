@@ -1,6 +1,3 @@
-$mx-footer-vh: 5vh;
-$mx-footer-bg: lighten(lightgray, 8);
-
 @mixin mix-footer {
   footer {
     min-height: $mx-footer-vh;
@@ -8,5 +5,8 @@ $mx-footer-bg: lighten(lightgray, 8);
     align-items: center;
     align-content: stretch;
     background-color: $mx-footer-bg;
+    p {
+      text-align: center;
+    }
   }
 }

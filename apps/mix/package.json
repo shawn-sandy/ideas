@@ -1,7 +1,7 @@
 {
   "name": "@shawnsandy/mix",
   "version": "0.8.13",
-  "description": "StyleMix--A toolkit for generating utility classes, components and styles-sheets for your design system, style-guide or website from SASS MAPS",
+  "description": "AtomMix--A toolkit for generating utility classes, components and styles-sheets for your design system, style-guide or website from SASS MAPS",
   "keywords": [
     "SASS",
     "SASS-MAPS",
@@ -34,13 +34,13 @@
   },
   "dependencies": {
     "parcel": "^1.12.4",
-    "style-dictionary": "^2.9.0"
+    "style-dictionary": "^2.10.0"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-clean-css": "^4.3.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^4.1.0",
     "gulp-sizereport": "^1.2.1",
     "normalize.css": "^8.0.1",
     "parcel": "^1.12.4"
