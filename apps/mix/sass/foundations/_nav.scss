@@ -2,12 +2,9 @@
  * navbar
  */
 
-$mx-nav-min-height: 10rem !default;
-$nav-bg: #ffffff !default;
-
 @mixin mix-navbar {
   nav {
-    background-color: $nav-bg;
+    background-color: $mx-nav-bg;
     @include mix-nav();
   }
 }
@@ -51,7 +48,7 @@ $nav-bg: #ffffff !default;
     display: block;
     &:hover,
     &:focus {
-      background-color: darken($color: $nav-bg, $amount: 5);
+      background-color: darken($color: $mx-nav-bg, $amount: 5);
       opacity: 0.95;
     }
     @media all and (min-width: 980px) {

@@ -358,16 +358,8 @@ h6 {
   line-height: 1.5;
   color: inherit; }
 
-html {
-  font-size: 100%; }
-
-/*16px*/
-body {
-  background-color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  line-height: 1.65;
-  color: #333; }
+p {
+  line-height: 1.7; }
 
 h1,
 h2,
@@ -377,7 +369,7 @@ h5 {
   margin: 2.75rem 0 1.05rem;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  line-height: 1.6; }
+  line-height: 1.5; }
 
 h1 {
   font-size: 4.209rem; }
@@ -407,6 +399,53 @@ small,
 /**
  * Nav links
  */
+* {
+  box-sizing: border-box; }
+
+a[role="button"] {
+  text-decoration: none; }
+
+button {
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  padding: 0;
+  cursor: pointer; }
+  @media screen and (-ms-high-contrast: active) {
+    button {
+      border: 2px solid currentcolor; } }
+
+a[role="button"],
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: start;
+  background-color: blue;
+  color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+  padding: 0.25rem 1.2rem;
+  min-width: 10ch;
+  min-height: 44px;
+  text-align: center;
+  line-height: 1.1;
+  transition: 220ms all ease-in-out; }
+  a[role="button"]:hover, a[role="button"]:active,
+  button:hover,
+  button:active {
+    background-color: #000066; }
+  a[role="button"]:focus,
+  button:focus {
+    outline-style: solid;
+    outline-color: transparent;
+    box-shadow: 0 0 0 4px #000033; }
+  a[role="button"]--small,
+  button--small {
+    font-size: 1.15rem; }
+  a[role="button"]--block,
+  button--block {
+    width: 100%; }
 
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */

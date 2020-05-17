@@ -1,9 +1,10 @@
 @mixin mix-main {
   main {
     min-height: $mx-main-vh;
-    display: flex !important;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding: 3rem 0;
     > section {
       display: block !important;
     }

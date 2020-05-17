@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+// Reset default link styles
+a[role="button"] {
+  text-decoration: none;
+}
+
+// Reset default button styles
+button {
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  padding: 0;
+  cursor: pointer;
+
+  @media screen and (-ms-high-contrast: active) {
+    border: 2px solid currentcolor;
+  }
+}
+
+a[role="button"],
+button {
+  // Display
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: start; // Optional - see "Gotchas"
+
+  // Visual
+  background-color: $mx-blue;
+  color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+
+  // Size
+  padding: 0.25rem 1.2rem;
+  min-width: 10ch;
+  min-height: 44px;
+
+  // Text
+  text-align: center;
+  line-height: 1.1;
+
+  transition: 220ms all ease-in-out;
+
+  &:hover,
+  &:active {
+    background-color: darken($mx-blue, 30%);
+  }
+
+  &:focus {
+    outline-style: solid;
+    outline-color: transparent;
+    box-shadow: 0 0 0 4px darken($mx-blue, 40%);
+  }
+
+  &--small {
+    font-size: 1.15rem;
+  }
+
+  &--block {
+    width: 100%;
+  }
+}

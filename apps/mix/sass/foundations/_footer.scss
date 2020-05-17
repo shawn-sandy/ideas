@@ -1,12 +1,2 @@
 @mixin mix-footer {
-  footer {
-    min-height: $mx-footer-vh;
-    display: flex;
-    align-items: center;
-    align-content: stretch;
-    background-color: $mx-footer-bg;
-    p {
-      text-align: center;
-    }
-  }
 }
