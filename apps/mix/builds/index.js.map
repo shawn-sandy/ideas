@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":[],"mappings":";;;AACA,aADA,QAAA,+BACA,QAAA","file":"index.js","sourceRoot":"..\\..\\src","sourcesContent":["import \"normalize.css/normalize.css\";\r\nimport \"../sass/foundation.scss\";\r\n"]}
