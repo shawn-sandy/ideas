@@ -3,7 +3,7 @@
 }
 
 // Reset default link styles
-a[role="button"] {
+[role="button"] {
   text-decoration: none;
 }
 
@@ -20,7 +20,7 @@ button {
   }
 }
 
-a[role="button"],
+[role="button"],
 button {
   // Display
   display: inline-flex;

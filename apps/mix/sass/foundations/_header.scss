@@ -2,13 +2,5 @@
   header {
     height: $mx-header-vh;
     background-color: $mx-header-bg;
-    display: flex;
-    align-items: center;
-    align-content: stretch;
-    h1,
-    h2,
-    h3 {
-      margin-top: 0;
-    }
   }
 }

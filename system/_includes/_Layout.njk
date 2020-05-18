@@ -12,11 +12,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     {% block head %}
     <title>{{ metadata.title }} | {{ metadata.description }}</title>
-    <!-- settings style -->
-    <link rel="stylesheet" href="icons/css/style.css">
-    {% for styles in metadata.styles %}
-    <link href="{{ styles }}" rel="stylesheet">
-    {% endfor %}
     <!-- custom stylesheets -->
     {% if stylesheets %}
     {% for style in stylesheets %}
@@ -29,10 +24,10 @@
 <body class="ss-bg-classic-blue min-vh-100">
     {#% include "partials/no-ie.html" %#}
 
-    <!-- header -->
     {% block header %}
     <!-- nav -->
     {% include "partials/main-nav.njk" %}
+    <!-- header -->
     {% include "partials/hero.njk" %}
 
     {% endblock %}
