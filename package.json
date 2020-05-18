@@ -16,7 +16,8 @@
     "lodash": "npm run _collection && npm run _function && npm run _array",
     "_collection": "lodash include=forEach,size,orderBy -o system/js/_collection.js",
     "_array": "lodash include=chunk,size -o system/js/_array.js",
-    "_function": "lodash include=debounce,throttle -o system/js/_function.js"
+    "_function": "lodash include=debounce,throttle -o system/js/_function.js",
+    "clean": "rm -rf www"
   },
   "directories": {
     "lib": "dist",
