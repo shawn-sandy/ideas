@@ -4,7 +4,7 @@
   <subtitle>I am writing about my experiences as a naval navel-gazer.</subtitle>
   <link href="https://example.com/feed.xml" rel="self" />
   <link href="https://example.com/" />
-  <updated>2020-04-12T17:34:57.185-04:00</updated>
+  <updated>2020-05-18T16:23:34.139-04:00</updated>
   <id>https://example.com/</id>
   <author>
     <name>Boaty McBoatFace</name>
@@ -50,6 +50,22 @@
   </entry>
   
   <entry>
+    <title>Apps</title>
+    <link href="https://example.com/apps/" />
+    <updated>2020-04-12T17:34:57.185-04:00</updated>
+    <id>https://example.com/apps/</id>
+    <content type="html"></content>
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://example.com/apps/mix/builds/" />
+    <updated>2020-05-18T19:01:03.610-04:00</updated>
+    <id>https://example.com/apps/mix/builds/</id>
+    <content type="html">&lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;title&gt;Atomix&lt;/title&gt;&lt;meta name=&quot;description&quot; content=&quot;Atomix&quot;&gt;&lt;meta name=&quot;author&quot; content=&quot;Shawn Sandy&quot;&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;&gt;&lt;script src=&quot;https://kit.fontawesome.com/e2ffdf4c70.js&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://example.com/foundation.e205c33b.css&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://example.com/src.e31bb0bc.css&quot;&gt;&lt;/head&gt;&lt;body&gt; &lt;nav class=&quot;mx-bg-lightgray border-bottom&quot; role=&quot;navigation&quot; ar=&quot;&quot;&gt; &lt;section&gt; &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt; &lt;a href=&quot;#&quot;&gt;Blog&lt;/a&gt; &lt;a href=&quot;#&quot;&gt;About&lt;/a&gt; &lt;a href=&quot;#&quot;&gt;Contact Us&lt;/a&gt; &lt;/section&gt; &lt;/nav&gt; &lt;header class=&quot;mx-bg-gray mx-vh-40&quot;&gt; &lt;section role=&quot;banner&quot;&gt; &lt;div&gt; &lt;h1&gt;AtomMix Foundation&lt;/h1&gt; &lt;h3&gt;A CSS foundation for building websites with plain semantic HTML elements.&lt;/h3&gt;&lt;/div&gt; &lt;/section&gt; &lt;/header&gt; &lt;main&gt; &lt;article&gt; &lt;h3&gt;Sample Article 1&lt;/h3&gt; &lt;p&gt; Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt voluptatibus eaque! &lt;/p&gt; &lt;p&gt; Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt voluptatibus eaque! &lt;/p&gt; &lt;p&gt; Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt voluptatibus eaque! &lt;/p&gt; &lt;p&gt; &lt;button&gt;Read more&lt;/button&gt; &lt;/p&gt; &lt;p&gt; &lt;a href=&quot;https://example.com/apps/mix/builds/&quot; role=&quot;button&quot;&gt;Read more&lt;/a&gt; &lt;/p&gt; &lt;p&gt; &lt;a href=&quot;https://example.com/apps/mix/builds/&quot;&gt;Read more&lt;/a&gt; &lt;/p&gt; &lt;footer&gt; &lt;/footer&gt; &lt;/article&gt; &lt;article&gt; &lt;h3&gt;Sample Article 2&lt;/h3&gt; &lt;p&gt; Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt voluptatibus eaque! &lt;/p&gt; &lt;p&gt; Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt voluptatibus eaque! &lt;/p&gt; &lt;p&gt; Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt voluptatibus eaque! &lt;/p&gt; &lt;/article&gt; &lt;/main&gt; &lt;footer&gt; &lt;section&gt; &lt;p&gt; &lt;small&gt; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut odit expedita aliquam commodi incidunt nam maiores eum sunt minima corrupti dolore, fugiat veritatis sit, nobis harum ducimus repudiandae quos laboriosam? &lt;/small&gt; &lt;/p&gt; &lt;/section&gt; &lt;/footer&gt; &lt;script src=&quot;https://example.com/src.e31bb0bc.js&quot;&gt;&lt;/script&gt; &lt;/body&gt;&lt;/html&gt;</content>
+  </entry>
+  
+  <entry>
     <title>Atommix.</title>
     <link href="https://example.com/apps/mix/" />
     <updated>2020-05-18T16:23:34.139-04:00</updated>
@@ -67,13 +83,5 @@
         repudiandae itaque alias quis aliquam ipsa optio. Enim tempore, ratione perferendis voluptatum corrupti quos
         molestiae.&lt;/p&gt;
 &lt;/article&gt;</content>
-  </entry>
-  
-  <entry>
-    <title>Apps</title>
-    <link href="https://example.com/apps/" />
-    <updated>2020-04-12T17:34:57.185-04:00</updated>
-    <id>https://example.com/apps/</id>
-    <content type="html"></content>
   </entry>
 </feed>

@@ -26,6 +26,7 @@
     "start": "parcel src/index.html --open",
     "parcel": "parcel build src/index.js --no-content-hash -d builds",
     "tokens": "style-dictionary build --config ./config/config.js && gulp sass",
+    "clean": "rm -rf dist && rm -rf builds",
     "test-tokens": "style-dictionary build --config ./config/config.js && gulp sass",
     "mix-tokens": "style-dictionary build --config ./config/mix-tokens.js && gulp sass",
     "build": "npm run tokens && gulp sass"
