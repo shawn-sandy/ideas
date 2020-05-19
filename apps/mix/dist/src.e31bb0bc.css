@@ -432,8 +432,8 @@ button {
   align-items: center;
   justify-content: center;
   align-self: start;
-  background-color: blue;
-  color: #fff;
+  background-color: silver;
+  color: #272727;
   border-radius: 2px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
   padding: 0.25rem 1.2rem;
@@ -445,12 +445,12 @@ button {
   [role="button"]:hover, [role="button"]:active,
   button:hover,
   button:active {
-    background-color: #000066; }
+    background-color: #747474; }
   [role="button"]:focus,
   button:focus {
     outline-style: solid;
     outline-color: transparent;
-    box-shadow: 0 0 0 4px #000033; }
+    box-shadow: 0 0 0 4px #5a5a5a; }
   [role="button"]--small,
   button--small {
     font-size: 1.15rem; }
@@ -465,7 +465,7 @@ html {
   font-size: 16px; }
   @media (max-width: 540px) {
     html {
-      font-size: 13px; } }
+      font-size: 12px; } }
   @media (max-width: 768px) {
     html {
       font-size: 14px; } }
@@ -489,8 +489,8 @@ body {
   body footer aside,
   body footer article {
     max-width: 90%;
-    margin: auto; }
-    @media screen and (min-width: 960px) {
+    margin: 0 auto; }
+    @media screen and (min-width: 980px) {
       body nav > div,
       body nav section,
       body nav aside,
@@ -507,8 +507,8 @@ body {
       body footer section,
       body footer aside,
       body footer article {
-        max-width: 80%;
-        width: 80%; } }
+        max-width: 75%;
+        width: 1600px; } }
     @media screen and (min-width: 1980px) {
       body nav > div,
       body nav section,
@@ -589,17 +589,22 @@ nav {
             padding-right: 1rem; } }
 
 header {
-  height: 50vh;
   background-color: lightgray; }
+  @media screen and (min-width: 980px) {
+    header {
+      height: 50vh; } }
 
 main {
-  min-height: 40vh;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 3rem 0; }
-  main > section {
-    display: block !important; }
+  min-height: 40vh; }
+  main > section article {
+    padding: 1rem; }
+  @media all and (min-width: 980px) {
+    main > section {
+      display: flex;
+      align-items: flex-start; }
+      main > section [role="sidebar"] {
+        max-width: 20vw;
+        padding: 1rem; } }
 
 [role="banner"] {
   display: flex;

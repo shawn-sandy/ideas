@@ -243,13 +243,15 @@ header {
   background-color: lightgray; }
 
 main {
-  min-height: 40vh;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 3rem 0; }
+  min-height: 40vh; }
   main > section {
-    display: block !important; }
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 3rem 0; }
+  main [role="sidebar"] {
+    max-width: 20vw;
+    padding: 1rem; }
 
 [role="banner"] {
   display: flex;

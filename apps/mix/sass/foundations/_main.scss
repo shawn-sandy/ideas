@@ -1,12 +1,18 @@
 @mixin mix-main {
   main {
     min-height: $mx-main-vh;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 3rem 0;
     > section {
-      display: block !important;
+      article {
+        padding: 1rem;
+      }
+      @media all and (min-width: 980px) {
+        display: flex;
+        align-items: flex-start;
+        [role="sidebar"] {
+          max-width: 20vw;
+          padding: 1rem;
+        }
+      }
     }
   }
 }

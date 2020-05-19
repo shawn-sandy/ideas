@@ -29,8 +29,8 @@ button {
   align-self: start; // Optional - see "Gotchas"
 
   // Visual
-  background-color: $mx-blue;
-  color: #fff;
+  background-color: $mx-sliver;
+  color: darken($mx-sliver, 60);
   border-radius: 2px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
 
@@ -47,13 +47,13 @@ button {
 
   &:hover,
   &:active {
-    background-color: darken($mx-blue, 30%);
+    background-color: darken($mx-sliver, 30%);
   }
 
   &:focus {
     outline-style: solid;
     outline-color: transparent;
-    box-shadow: 0 0 0 4px darken($mx-blue, 40%);
+    box-shadow: 0 0 0 4px darken($mx-sliver, 40%);
   }
 
   &--small {

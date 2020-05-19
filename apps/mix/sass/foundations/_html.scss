@@ -8,7 +8,7 @@
     font-size: 16px;
 
     @media (max-width: 540px) {
-      font-size: 13px;
+      font-size: 12px;
     }
     @media (max-width: 768px) {
       font-size: 14px;
@@ -28,10 +28,10 @@
       aside,
       article {
         max-width: 90%;
-        margin: auto;
-        @media screen and (min-width: 960px) {
-          max-width: 80%;
-          width: 80%;
+        margin: 0 auto;
+        @media screen and (min-width: 980px) {
+          max-width: 75%;
+          width: 1600px;
         }
         @media screen and (min-width: 1980px) {
           max-width: 1920px;
