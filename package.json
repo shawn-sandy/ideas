@@ -5,7 +5,7 @@
   "description": "A UI toolkit for creating and managing digital apps, products, design systems, pattern libraries, style-guides, etc.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx @11ty/eleventy --serve",
+    "start": "npm run clean && npx @11ty/eleventy --serve",
     "build": "npx @11ty/eleventy",
     "parcel": "parcel build main.js --no-content-hash --out-dir build/uikit --no-minify",
     "parcel-css": "parcel build styles.js --no-content-hash --out-dir system/styles/css --no-minify",

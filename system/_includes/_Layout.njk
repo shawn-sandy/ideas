@@ -21,27 +21,14 @@
     {% endblock %}
 </head>
 
-<body class="ss-bg-classic-blue min-vh-100">
-    {#% include "partials/no-ie.html" %#}
+<body class="">
 
-    {% block header %}
-    <!-- nav -->
-    {% include "partials/main-nav.njk" %}
-    <!-- header -->
-    {% include "partials/hero.njk" %}
-
+    {% block content %}
+    {{ content | safe }}
     {% endblock %}
-
-    <!-- main content -->
-    <main class="ss-bg-white ui-ht-40vmin py-5">
-        {% block content %}
-        {{ content | safe }}
-        {% endblock %}
     </main>
     <!-- footer -->
-    {% block footer %}
-    {% include "partials/footer.njk" %}
-    {% endblock %}
+
     <!-- scripts - replaced jquery with vue -->
     {% for js in metadata.scripts %}
     <script src="{{ js }}"></script>
