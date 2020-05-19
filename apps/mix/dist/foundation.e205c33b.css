@@ -255,7 +255,7 @@ main {
   display: flex;
   align-items: center;
   align-content: stretch;
-  height: inherit !important; }
+  height: inherit; }
   [role="banner"] h1,
   [role="banner"] h2,
   [role="banner"] h3 {
