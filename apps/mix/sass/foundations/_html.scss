@@ -19,7 +19,7 @@
     padding: 0 !important;
     @content;
 
-    nav,
+    > nav,
     header,
     main,
     footer {

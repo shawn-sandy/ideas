@@ -2,7 +2,7 @@
   header {
     background-color: $mx-header-bg;
     @media screen and (min-width: 980px) {
-      height: $mx-header-vh;
+      min-height: $mx-header-vh;
     }
   }
 }

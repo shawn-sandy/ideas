@@ -3,12 +3,16 @@
     display: flex;
     align-items: center;
     align-content: stretch;
-    height: inherit;
+    min-height: inherit;
     h1,
     h2,
     h3 {
       margin-top: 0;
     }
+    p {
+      font-size: 1.4rem;
+    }
+    padding: 3rem 0;
     @content;
   }
 }

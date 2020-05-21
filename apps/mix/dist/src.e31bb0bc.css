@@ -472,10 +472,10 @@ html {
 
 body {
   padding: 0 !important; }
-  body nav > div,
-  body nav section,
-  body nav aside,
-  body nav article,
+  body > nav > div,
+  body > nav section,
+  body > nav aside,
+  body > nav article,
   body header > div,
   body header section,
   body header aside,
@@ -491,10 +491,10 @@ body {
     max-width: 90%;
     margin: 0 auto; }
     @media screen and (min-width: 980px) {
-      body nav > div,
-      body nav section,
-      body nav aside,
-      body nav article,
+      body > nav > div,
+      body > nav section,
+      body > nav aside,
+      body > nav article,
       body header > div,
       body header section,
       body header aside,
@@ -510,10 +510,10 @@ body {
         max-width: 75%;
         width: 1600px; } }
     @media screen and (min-width: 1980px) {
-      body nav > div,
-      body nav section,
-      body nav aside,
-      body nav article,
+      body > nav > div,
+      body > nav section,
+      body > nav aside,
+      body > nav article,
       body header > div,
       body header section,
       body header aside,
@@ -592,7 +592,7 @@ header {
   background-color: lightgray; }
   @media screen and (min-width: 980px) {
     header {
-      height: 50vh; } }
+      min-height: 50vh; } }
 
 main {
   min-height: 40vh; }
@@ -610,11 +610,14 @@ main {
   display: flex;
   align-items: center;
   align-content: stretch;
-  height: inherit; }
+  min-height: inherit;
+  padding: 3rem 0; }
   [role="banner"] h1,
   [role="banner"] h2,
   [role="banner"] h3 {
     margin-top: 0; }
+  [role="banner"] p {
+    font-size: 1.4rem; }
 
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */
