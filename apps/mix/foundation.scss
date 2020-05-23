@@ -10,8 +10,10 @@
 // foundation styles
 
 @include html;
+@include mix-typography;
 @include mix-navbar;
 @include mix-header;
 @include mix-main;
 @include mix-footer;
 @include mix-banner;
+@include mix-flex-grid;

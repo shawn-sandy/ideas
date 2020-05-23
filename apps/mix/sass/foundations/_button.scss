@@ -2,40 +2,42 @@
   box-sizing: border-box;
 }
 
-// Reset default link styles
-[role="button"] {
-  text-decoration: none;
-}
-
 // Reset default button styles
 button {
-  border: none;
-  background-color: transparent;
-  font-family: inherit;
-  padding: 0;
-  cursor: pointer;
-
   @media screen and (-ms-high-contrast: active) {
     border: 2px solid currentcolor;
   }
 }
 
-[role="button"],
+// styles a link as button rel=action="action payment"
+[title*="action"],
+[role*="button"],
 button {
   // Display
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  align-self: start; // Optional - see "Gotchas"
+  @supports (align-items: center) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: start; // Optional - see "Gotchas"
+  }
+  border: 1px;
+  border-style: solid;
+  font-family: inherit;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
 
   // Visual
-  background-color: $mx-sliver;
-  color: darken($mx-sliver, 60);
+  background-color: $mx-lightgray;
+  color: darken($mx-blue, 15);
   border-radius: 2px;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+  border-color: darken($mx-lightgray, 20);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+  transition: background-color 0.95s ease-out;
+  font-size: smaller;
 
   // Size
-  padding: 0.25rem 1.2rem;
+  padding: 0.5rem 1.2rem;
   min-width: 10ch;
   min-height: 44px;
 
@@ -43,24 +45,25 @@ button {
   text-align: center;
   line-height: 1.1;
 
-  transition: 220ms all ease-in-out;
-
   &:hover,
   &:active {
-    background-color: darken($mx-sliver, 30%);
+    background-color: darken($mx-lightgray, 50%);
+    color: lighten($mx-lightgray, 40);
   }
 
   &:focus {
     outline-style: solid;
     outline-color: transparent;
-    box-shadow: 0 0 0 4px darken($mx-sliver, 40%);
+    box-shadow: 0 0 0 1px darken($mx-lightgray, 50);
   }
 
-  &--small {
-    font-size: 1.15rem;
-  }
-
-  &--block {
-    width: 100%;
+  &[title*="action"],
+  &[type="submit"] {
+    background-color: $mx-blue;
+    border-color: darken($mx-blue, 12);
+    color: $mx-white;
+    &:hover {
+      background-color: darken($mx-blue, 10);
+    }
   }
 }

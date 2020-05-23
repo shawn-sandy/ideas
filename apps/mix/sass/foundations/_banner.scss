@@ -1,13 +1,15 @@
 @mixin mix-banner {
-  [role="banner"] {
+  [role="row"] {
+    min-height: inherit;
+    font-size: larger;
     display: flex;
     align-items: center;
-    align-content: stretch;
-    min-height: inherit;
     h1,
     h2,
-    h3 {
+    h3,
+    h4 {
       margin-top: 0;
+      text-transform: capitalize;
     }
     p {
       font-size: 1.4rem;

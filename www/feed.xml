@@ -50,7 +50,7 @@
   </entry>
   
   <entry>
-    <title>Atommix.</title>
+    <title>AtomMix.</title>
     <link href="https://example.com/apps/mix/" />
     <updated>2020-05-18T16:23:34.139-04:00</updated>
     <id>https://example.com/apps/mix/</id>
@@ -122,6 +122,9 @@
         &lt;/p&gt;
     &lt;/article&gt;
 &lt;/main&gt;
+&lt;section&gt;
+
+&lt;/section&gt;
 &lt;footer&gt;
     &lt;section&gt;
         &lt;p&gt;

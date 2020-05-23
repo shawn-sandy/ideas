@@ -1,14 +1,22 @@
+$mx-white: #fff !default;
+$mx-transparent: transparent !default;
+$mx-whitesmoke: whitesmoke !default;
+$mx-sliver: silver !default;
+$mx-gray: gray !default;
+$mx-lightgray: lightgray !default;
+$mx-lightblue: lightblue !default;
+$mx-blue: #0366d6 !default;
+$mx-dark-blue: darkblue !default;
+$mx-font-default: “Roboto”, -apple-system, BlinkMacSystemFont, “Segoe UI”,
+  “Oxygen”, “Ubuntu”, “Cantarell”, “Fira Sans”, “Droid Sans”, “Helvetica Neue”,
+  sans-serif !default;
+$mx-bg: $mx-whitesmoke !default;
 $mx-main-vh: 40vh !default;
 $mx-header-vh: 50vh !default;
 $mx-header-bg: lightgray !default;
+$mx-header-bg-img: none !default;
 $mx-footer-vh: 10vh !default;
 $mx-footer-bg: lighten(lightgray, 8) !default;
 $mx-nav-min-height: 6rem !default;
-$mx-nav-bg: #ffffff !default;
-$mx-sliver: silver !default;
-$mx-gray: gray !default;
-$mx-dimgray: dimgray !default;
-$mx-lightgray: lightgray !default;
-$mx-lightblue: lightblue !default;
-$mx-blue: blue !default;
-$mx-dark-blue: darkblue !default;
+$mx-nav-bg: $mx-transparent !default;
+$mx-grid-cols: 4;

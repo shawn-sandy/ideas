@@ -5,33 +5,39 @@
       “Helvetica Neue”, sans-serif;
     -webkit-font-smoothing: antialiased !important;
     height: 100% !important;
-    font-size: 16px;
+    font-size: 12px;
 
-    @media (max-width: 540px) {
-      font-size: 12px;
+    @media all and (min-width: 1280px) {
+      font-size: 17px;
     }
-    @media (max-width: 768px) {
-      font-size: 14px;
-    }
+    background-color: #fff;
+  }
+
+  * {
+    transition: width 0.95s ease-in;
   }
 
   body {
     padding: 0 !important;
+    background-color: $mx-bg;
+    max-width: 1980px;
+    margin: 0 auto;
     @content;
 
     > nav,
-    header,
-    main,
-    footer {
+    > header,
+    > main,
+    > section,
+    > footer {
       > div,
-      section,
-      aside,
-      article {
+      > aside,
+      > section,
+      > article {
         max-width: 90%;
         margin: 0 auto;
-        @media screen and (min-width: 980px) {
-          max-width: 75%;
-          width: 1600px;
+        @media screen and (min-width: 1280px) {
+          max-width: 1600px;
+          width: 85%;
         }
         @media screen and (min-width: 1980px) {
           max-width: 1920px;
@@ -48,19 +54,13 @@
         text-align: center;
       }
     }
+
+    hr {
+      border-top: 1px solid $mx-whitesmoke;
+      margin: 2rem 0;
+    }
   }
-}
-
-h1,
-h1,
-h3,
-h4,
-h5,
-h6 {
-  line-height: 1.5;
-  color: inherit;
-}
-
-p {
-  line-height: 1.7;
+  [aria-hidden="true"] {
+    display: none;
+  }
 }
