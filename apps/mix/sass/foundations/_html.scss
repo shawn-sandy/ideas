@@ -5,10 +5,14 @@
       “Helvetica Neue”, sans-serif;
     -webkit-font-smoothing: antialiased !important;
     height: 100% !important;
-    font-size: 12px;
+    font-size: 75%;
+
+    @media all and (min-width: 580px) {
+      font-size: 90%;
+    }
 
     @media all and (min-width: 1280px) {
-      font-size: 17px;
+      font-size: 110%;
     }
     background-color: #fff;
   }
@@ -30,6 +34,7 @@
     > section,
     > footer {
       > div,
+      > ul,
       > aside,
       > section,
       > article {
@@ -49,6 +54,7 @@
       display: flex;
       align-items: center;
       align-content: stretch;
+      margin: 2rem 0 0;
       background-color: $mx-footer-bg;
       p {
         text-align: center;
@@ -57,7 +63,7 @@
 
     hr {
       border-top: 1px solid $mx-whitesmoke;
-      margin: 2rem 0;
+      margin: 3rem 0;
     }
   }
   [aria-hidden="true"] {

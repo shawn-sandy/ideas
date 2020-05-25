@@ -9,48 +9,6 @@
 
 
 **/
-@import url("https://fonts.googleapis.com/css?family=Roboto:400|Poppins:400");
-h1,
-h1,
-h3,
-h4,
-h5,
-h6 {
-  line-height: 1.5;
-  color: inherit; }
-
-p {
-  line-height: 1.7; }
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  margin: 2.75rem 0 1.05rem;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  line-height: 1.5; }
-
-h1 {
-  font-size: 4.209rem; }
-
-h2 {
-  font-size: 3.157rem; }
-
-h3 {
-  font-size: 2.369rem; }
-
-h4 {
-  font-size: 1.777rem; }
-
-h5 {
-  font-size: 1.333rem; }
-
-small,
-.text_small {
-  font-size: 0.75rem; }
-
 /**
  * navbar
  */
@@ -63,50 +21,66 @@ small,
 * {
   box-sizing: border-box; }
 
-[role="button"] {
-  text-decoration: none; }
+@media screen and (-ms-high-contrast: active) {
+  button {
+    border: 2px solid currentcolor; } }
 
+[title*="action"],
+[role*="button"],
 button {
-  border: none;
-  background-color: transparent;
+  border: 1px;
+  border-style: solid;
   font-family: inherit;
   padding: 0;
-  cursor: pointer; }
-  @media screen and (-ms-high-contrast: active) {
-    button {
-      border: 2px solid currentcolor; } }
-
-[role="button"],
-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  align-self: start;
-  background-color: blue;
-  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: lightgray;
+  color: #02428b;
   border-radius: 2px;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
-  padding: 0.25rem 1.2rem;
+  border-color: #a0a0a0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+  transition: background-color 0.95s ease-out;
+  font-size: smaller;
+  padding: 0.5rem 1.2rem;
   min-width: 10ch;
   min-height: 44px;
   text-align: center;
-  line-height: 1.1;
-  transition: 220ms all ease-in-out; }
-  [role="button"]:hover, [role="button"]:active,
+  line-height: 1.1; }
+  @supports (align-items: center) {
+    [title*="action"],
+    [role*="button"],
+    button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      align-self: start; } }
+  [title*="action"]:hover, [title*="action"]:active,
+  [role*="button"]:hover,
+  [role*="button"]:active,
   button:hover,
   button:active {
-    background-color: #000066; }
-  [role="button"]:focus,
+    background-color: #545454;
+    color: white; }
+  [title*="action"]:focus,
+  [role*="button"]:focus,
   button:focus {
     outline-style: solid;
     outline-color: transparent;
-    box-shadow: 0 0 0 4px #000033; }
-  [role="button"]--small,
-  button--small {
-    font-size: 1.15rem; }
-  [role="button"]--block,
-  button--block {
-    width: 100%; }
+    box-shadow: 0 0 0 1px #545454; }
+  [title*="action"][title*="action"], [title*="action"][type="submit"],
+  [role*="button"][title*="action"],
+  [role*="button"][type="submit"],
+  button[title*="action"],
+  button[type="submit"] {
+    background-color: #0366d6;
+    border-color: #02499a;
+    color: #fff; }
+    [title*="action"][title*="action"]:hover, [title*="action"][type="submit"]:hover,
+    [role*="button"][title*="action"]:hover,
+    [role*="button"][type="submit"]:hover,
+    button[title*="action"]:hover,
+    button[type="submit"]:hover {
+      background-color: #024ea4; }
 
 /** generate all components in specified map--default component **/
 .mx-swatch {

@@ -351,7 +351,7 @@ template {
 @charset "UTF-8";
 /*
   Do not edit directly
-  Generated on Mon, 18 May 2020 22:55:47 GMT
+  Generated on Sat, 23 May 2020 21:24:22 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 /** generates a series of modifies based a list of attributes  **/
@@ -436,11 +436,14 @@ html {
   font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, “Roboto”, “Oxygen”, “Ubuntu”, “Cantarell”, “Fira Sans”, “Droid Sans”, “Helvetica Neue”, sans-serif;
   -webkit-font-smoothing: antialiased !important;
   height: 100% !important;
-  font-size: 12px;
+  font-size: 75%;
   background-color: #fff; }
+  @media all and (min-width: 580px) {
+    html {
+      font-size: 90%; } }
   @media all and (min-width: 1280px) {
     html {
-      font-size: 17px; } }
+      font-size: 110%; } }
 
 * {
   transition: width 0.95s ease-in; }
@@ -451,22 +454,27 @@ body {
   max-width: 1980px;
   margin: 0 auto; }
   body > nav > div,
+  body > nav > ul,
   body > nav > aside,
   body > nav > section,
   body > nav > article,
   body > header > div,
+  body > header > ul,
   body > header > aside,
   body > header > section,
   body > header > article,
   body > main > div,
+  body > main > ul,
   body > main > aside,
   body > main > section,
   body > main > article,
   body > section > div,
+  body > section > ul,
   body > section > aside,
   body > section > section,
   body > section > article,
   body > footer > div,
+  body > footer > ul,
   body > footer > aside,
   body > footer > section,
   body > footer > article {
@@ -474,22 +482,27 @@ body {
     margin: 0 auto; }
     @media screen and (min-width: 1280px) {
       body > nav > div,
+      body > nav > ul,
       body > nav > aside,
       body > nav > section,
       body > nav > article,
       body > header > div,
+      body > header > ul,
       body > header > aside,
       body > header > section,
       body > header > article,
       body > main > div,
+      body > main > ul,
       body > main > aside,
       body > main > section,
       body > main > article,
       body > section > div,
+      body > section > ul,
       body > section > aside,
       body > section > section,
       body > section > article,
       body > footer > div,
+      body > footer > ul,
       body > footer > aside,
       body > footer > section,
       body > footer > article {
@@ -497,22 +510,27 @@ body {
         width: 85%; } }
     @media screen and (min-width: 1980px) {
       body > nav > div,
+      body > nav > ul,
       body > nav > aside,
       body > nav > section,
       body > nav > article,
       body > header > div,
+      body > header > ul,
       body > header > aside,
       body > header > section,
       body > header > article,
       body > main > div,
+      body > main > ul,
       body > main > aside,
       body > main > section,
       body > main > article,
       body > section > div,
+      body > section > ul,
       body > section > aside,
       body > section > section,
       body > section > article,
       body > footer > div,
+      body > footer > ul,
       body > footer > aside,
       body > footer > section,
       body > footer > article {
@@ -522,12 +540,13 @@ body {
     display: flex;
     align-items: center;
     align-content: stretch;
+    margin: 2rem 0 0;
     background-color: #e7e7e7; }
     body > footer p {
       text-align: center; }
   body hr {
     border-top: 1px solid whitesmoke;
-    margin: 2rem 0; }
+    margin: 3rem 0; }
 
 [aria-hidden="true"] {
   display: none; }
@@ -603,8 +622,7 @@ header[role="banner"] {
       min-height: 50vh; } }
 
 main {
-  min-height: 40vh;
-  padding: 2rem 0; }
+  min-height: 40vh; }
   main > section {
     width: 100%; }
     main > section article {
@@ -643,7 +661,7 @@ main {
   padding: 3rem 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: start; }
   [role="grid"] [role="gridcell"] {
     padding: 1rem;
     line-height: 1.6; }
