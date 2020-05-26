@@ -54,79 +54,115 @@
     <link href="https://example.com/apps/mix/" />
     <updated>2020-05-18T16:23:34.139-04:00</updated>
     <id>https://example.com/apps/mix/</id>
-    <content type="html">
-&lt;nav class=&quot;mx-bg-lightgray border-bottom&quot; role=&quot;navigation&quot; ar=&quot;&quot;&gt;
+    <content type="html">&lt;nav class=&quot;mx-bg-lightgray border-bottom&quot; role=&quot;navigation&quot;&gt;
     &lt;section&gt;
         &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
         &lt;a href=&quot;#&quot;&gt;Blog&lt;/a&gt;
         &lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;
         &lt;a href=&quot;#&quot;&gt;Contact Us&lt;/a&gt;
+        &lt;section&gt;
+        &lt;/section&gt;
+        &lt;a href=&quot;#&quot; role=&quot;button&quot;&gt;+&lt;/a&gt;
     &lt;/section&gt;
 &lt;/nav&gt;
 
-&lt;header class=&quot;mx-bg-gray mx-vh-40&quot;&gt;
-    &lt;section role=&quot;banner&quot;&gt;
+&lt;!-- header banner --&gt;
+&lt;header&gt;
+    &lt;section&gt;
         &lt;div&gt;
-            &lt;h1&gt;AtomMix Foundation&lt;/h1&gt;
-            &lt;h3&gt;A CSS foundation for building websites with plain semantic HTML elements.&lt;/h3&gt;
+            &lt;h1&gt;mxFoundation&lt;/h1&gt;
+            &lt;!-- &lt;h4&gt;A SASS library for generating stylesheets that allows you build websites with plain semantic HTML elements, no need for class-names.&lt;/h4&gt; --&gt;
+            &lt;h4&gt;A SASS/CSS library designed to help you learn/build websites with semantic HTML elements&lt;/h4&gt;
+            &lt;a href=&quot;#&quot; role=&quot;button&quot; title=&quot;Add word, cta action, to your button title&quot;&gt;Read the Docs&lt;/a&gt;
         &lt;/div&gt;
     &lt;/section&gt;
 &lt;/header&gt;
-&lt;main&gt;
-    &lt;article&gt;
-        &lt;h3&gt;Sample Article 1&lt;/h3&gt;
-        &lt;p&gt;
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
-            doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
-            voluptatibus eaque!
-        &lt;/p&gt;
-        &lt;p&gt;
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
-            doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
-            voluptatibus eaque!
-        &lt;/p&gt;
-        &lt;p&gt;
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
-            doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
-            voluptatibus eaque!
-        &lt;/p&gt;
-        &lt;p&gt;
-            &lt;button&gt;Read more&lt;/button&gt;
-        &lt;/p&gt;
-        &lt;p&gt;
-            &lt;a href=&quot;https://example.com/apps/mix/&quot; role=&quot;button&quot;&gt;Read more&lt;/a&gt;
-        &lt;/p&gt;
-        &lt;p&gt;
-            &lt;a href=&quot;https://example.com/apps/mix/&quot;&gt;Read more&lt;/a&gt;
-        &lt;/p&gt;
-        &lt;footer&gt;
 
-        &lt;/footer&gt;
-    &lt;/article&gt;
-    &lt;article&gt;
-        &lt;h3&gt;Sample Article 2&lt;/h3&gt;
-        &lt;p&gt;
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
-            doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
-            voluptatibus eaque!
-        &lt;/p&gt;
-        &lt;p&gt;
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
-            doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
-            voluptatibus eaque!
-        &lt;/p&gt;
-        &lt;p&gt;
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
-            doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
-            voluptatibus eaque!
-        &lt;/p&gt;
-    &lt;/article&gt;
+&lt;!-- feature section --&gt;
+&lt;section aria-label=&quot;feature grid&quot;&gt;
+    &lt;div role=&quot;list&quot;&gt;
+        &lt;aside role=&quot;listitem&quot;&gt;
+            &lt;h4&gt;Feature...&lt;/h4&gt;
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur assumenda, porro repudiandae
+            repellendus placeat iure officia inventore sint voluptas et blanditiis facilis voluptate quas accusamus
+            itaque ea, corporis odio.
+        &lt;/aside&gt;
+        &lt;aside role=&quot;listitem&quot;&gt;
+            &lt;h4&gt;Feature...&lt;/h4&gt;
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur assumenda, porro repudiandae
+            repellendus placeat iure officia inventore sint voluptas et blanditiis facilis voluptate quas accusamus
+            itaque ea, corporis odio.
+        &lt;/aside&gt;
+        &lt;aside role=&quot;listitem&quot;&gt;
+            &lt;h4&gt;Feature...&lt;/h4&gt;
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur assumenda, porro repudiandae
+            repellendus placeat iure officia inventore sint voluptas et blanditiis facilis voluptate quas accusamus
+            itaque ea, corporis odio.
+        &lt;/aside&gt;
+        &lt;aside role=&quot;listitem&quot;&gt;
+            &lt;h4&gt;Feature...&lt;/h4&gt;
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur assumenda, porro repudiandae
+            repellendus placeat iure officia inventore sint voluptas et blanditiis facilis voluptate quas accusamus
+            itaque ea, corporis odio.
+        &lt;/aside&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+&lt;hr&gt;
+&lt;main&gt;
+    &lt;section class=&quot;articles&quot;&gt;
+        &lt;article&gt;
+            &lt;h3&gt;Sample Article 1&lt;/h3&gt;
+            &lt;p&gt;
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
+                doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
+                voluptatibus eaque!
+            &lt;/p&gt;
+            &lt;p&gt;
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
+                doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
+                voluptatibus eaque!
+            &lt;/p&gt;
+            &lt;p&gt;
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
+                doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
+                voluptatibus eaque!
+            &lt;/p&gt;
+
+            &lt;footer&gt;
+                &lt;p&gt;
+                    &lt;a href=&quot;https://example.com/apps/mix/&quot; role=&quot;button&quot;&gt;Read more&lt;/a&gt;
+                &lt;/p&gt;
+                &lt;p&gt;
+                    &lt;a href=&quot;#&quot;&gt;Read more&lt;/a&gt;
+                &lt;/p&gt;
+            &lt;/footer&gt;
+        &lt;/article&gt;
+        &lt;aside role=&quot;sidebar&quot;&gt;
+            &lt;h5&gt;Sidebar&lt;/h5&gt;
+            &lt;p&gt;
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos error, quas at facilis temporibus optio
+                rem, doloremque, modi numquam commodi illum cumque. Sit eveniet, quod expedita libero obcaecati a
+                laudantium.
+            &lt;/p&gt;
+        &lt;/aside&gt;
+    &lt;/section&gt;
+
 &lt;/main&gt;
+&lt;hr&gt;
 &lt;section&gt;
+    &lt;div&gt;
+        &lt;h4&gt;Documentation&lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;ul&gt;
+        &lt;li&gt;one&lt;/li&gt;
+        &lt;li&gt;two&lt;/li&gt;
+        &lt;li&gt;three&lt;/li&gt;
+    &lt;/ul&gt;
 
 &lt;/section&gt;
 &lt;footer&gt;
     &lt;section&gt;
+
         &lt;p&gt;
             &lt;small&gt;
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut odit expedita aliquam commodi incidunt nam

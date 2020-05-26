@@ -666,24 +666,33 @@ header > section,
     font-size: 1.4rem; }
 
 section[aria-label*="grid"] > [role="list"],
+footer > section > [role="list"],
 section > div[role="list"] > [role="list"] {
   padding: 3rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: start; }
   section[aria-label*="grid"] > [role="list"] [role="listitem"],
+  footer > section > [role="list"] [role="listitem"],
   section > div[role="list"] > [role="list"] [role="listitem"] {
     flex-basis: 100%;
     padding: 1rem;
     line-height: 1.6; }
   @media all and (min-width: 580px) {
     section[aria-label*="grid"] > [role="list"] [role="listitem"],
+    footer > section > [role="list"] [role="listitem"],
     section > div[role="list"] > [role="list"] [role="listitem"] {
       max-width: 50%; } }
   @media all and (min-width: 980px) {
     section[aria-label*="grid"] > [role="list"] [role="listitem"],
+    footer > section > [role="list"] [role="listitem"],
     section > div[role="list"] > [role="list"] [role="listitem"] {
       max-width: 25%; } }
+  @media all and (min-width: 580px) and (min-width: 980px) {
+    section[aria-label*="grid"] > [role="list"] footer [role="listitem"],
+    footer > section > [role="list"] footer [role="listitem"],
+    section > div[role="list"] > [role="list"] footer [role="listitem"] {
+      max-width: auto; } }
 
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */

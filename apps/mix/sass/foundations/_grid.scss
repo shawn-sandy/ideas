@@ -1,5 +1,6 @@
 @mixin mix-flex-grid {
   section[aria-label*="grid"],
+  footer > section,
   section > div[role="list"] {
     > [role="list"] {
       padding: 3rem 0;
@@ -22,6 +23,13 @@
       @media all and (min-width: 980px) {
         [role="listitem"] {
           max-width: 25%;
+        }
+      }
+      @media all and (min-width: 580px) and (min-width: 980px) {
+        footer {
+          [role="listitem"] {
+            max-width: auto;
+          }
         }
       }
     }
