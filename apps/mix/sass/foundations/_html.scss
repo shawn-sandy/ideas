@@ -26,8 +26,12 @@
     background-color: $mx-bg;
     max-width: 1980px;
     margin: 0 auto;
-    @content;
 
+    @media print {
+      > *:not(main) {
+        display: none;
+      }
+    }
     > nav,
     > header,
     > main,
@@ -48,7 +52,9 @@
           max-width: 1920px;
         }
       }
+      @content;
     }
+
     > footer {
       min-height: $mx-footer-vh;
       display: flex;

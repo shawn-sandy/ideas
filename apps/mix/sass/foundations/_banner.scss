@@ -1,5 +1,6 @@
 @mixin mix-banner {
-  [role="row"] {
+  header > section,
+  [role="banner"] {
     min-height: inherit;
     font-size: larger;
     display: flex;
@@ -9,7 +10,6 @@
     h3,
     h4 {
       margin-top: 0;
-      text-transform: capitalize;
     }
     p {
       font-size: 1.4rem;

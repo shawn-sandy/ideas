@@ -1,8 +1,8 @@
 @mixin mix-header {
-  header[role="banner"] {
+  header {
     background-color: $mx-header-bg;
     background-image: $mx-header-bg-img;
-    @media screen and (min-width: 980px) {
+    @media screen and (min-width: 1280px) {
       min-height: $mx-header-vh;
     }
   }

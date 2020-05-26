@@ -453,6 +453,9 @@ body {
   background-color: whitesmoke;
   max-width: 1980px;
   margin: 0 auto; }
+  @media print {
+    body > *:not(main) {
+      display: none; } }
   body > nav > div,
   body > nav > ul,
   body > nav > aside,
@@ -598,7 +601,7 @@ nav {
       nav a:first-child:hover, nav a:first-child:focus {
         background-color: transparent; }
     nav a:hover, nav a:focus {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: white;
       opacity: 0.95; }
     @media all and (min-width: 980px) {
       nav a {
@@ -606,19 +609,19 @@ nav {
         nav a:first-child {
           padding: 0;
           padding-right: 2rem; } }
-  nav > section,
+  nav section,
   nav div,
   nav ul {
     display: block;
-    height: 6rem;
+    height: 5rem;
     display: flex;
     align-items: center; }
 
-header[role="banner"] {
+header {
   background-color: lightgray;
   background-image: none; }
-  @media screen and (min-width: 980px) {
-    header[role="banner"] {
+  @media screen and (min-width: 1280px) {
+    header {
       min-height: 50vh; } }
 
 main {
@@ -642,35 +645,45 @@ main {
           max-width: 25%;
           padding: 1rem; } }
 
-[role="row"] {
+header > section,
+[role="banner"] {
   min-height: inherit;
   font-size: larger;
   display: flex;
   align-items: center;
   padding: 3rem 0; }
-  [role="row"] h1,
-  [role="row"] h2,
-  [role="row"] h3,
-  [role="row"] h4 {
-    margin-top: 0;
-    text-transform: capitalize; }
-  [role="row"] p {
+  header > section h1,
+  header > section h2,
+  header > section h3,
+  header > section h4,
+  [role="banner"] h1,
+  [role="banner"] h2,
+  [role="banner"] h3,
+  [role="banner"] h4 {
+    margin-top: 0; }
+  header > section p,
+  [role="banner"] p {
     font-size: 1.4rem; }
 
-[role="grid"] {
+section[aria-label*="grid"] > [role="list"],
+section > div[role="list"] > [role="list"] {
   padding: 3rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: start; }
-  [role="grid"] [role="gridcell"] {
+  section[aria-label*="grid"] > [role="list"] [role="listitem"],
+  section > div[role="list"] > [role="list"] [role="listitem"] {
+    flex-basis: 100%;
     padding: 1rem;
     line-height: 1.6; }
   @media all and (min-width: 580px) {
-    [role="grid"] [role="gridcell"] {
-      max-width: calc(100% / (4 - 2)); } }
+    section[aria-label*="grid"] > [role="list"] [role="listitem"],
+    section > div[role="list"] > [role="list"] [role="listitem"] {
+      max-width: 50%; } }
   @media all and (min-width: 980px) {
-    [role="grid"] [role="gridcell"] {
-      max-width: calc(100% / 4); } }
+    section[aria-label*="grid"] > [role="list"] [role="listitem"],
+    section > div[role="list"] > [role="list"] [role="listitem"] {
+      max-width: 25%; } }
 
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */

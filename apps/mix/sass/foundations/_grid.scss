@@ -1,23 +1,28 @@
 @mixin mix-flex-grid {
-  [role="grid"] {
-    padding: 3rem 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-    // max-width: 100%;
-    [role="gridcell"] {
-      padding: 1rem;
-      line-height: 1.6;
-    }
+  section[aria-label*="grid"],
+  section > div[role="list"] {
+    > [role="list"] {
+      padding: 3rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: start;
+      // max-width: 100%;
 
-    @media all and (min-width: 580px) {
-      [role="gridcell"] {
-        max-width: calc(100% / (4 - 2));
+      [role="listitem"] {
+        flex-basis: 100%;
+        padding: 1rem;
+        line-height: 1.6;
       }
-    }
-    @media all and (min-width: 980px) {
-      [role="gridcell"] {
-        max-width: calc(100% / 4);
+
+      @media all and (min-width: 580px) {
+        [role="listitem"] {
+          max-width: 50%;
+        }
+      }
+      @media all and (min-width: 980px) {
+        [role="listitem"] {
+          max-width: 25%;
+        }
       }
     }
   }

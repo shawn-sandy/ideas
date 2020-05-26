@@ -14,7 +14,7 @@
  * base navbar
  */
 @mixin mix-nav {
-  > section,
+  section,
   div,
   ul {
     // min-height: $mx-layout-height-vh-10;
@@ -52,7 +52,7 @@
     text-decoration: none;
     &:hover,
     &:focus {
-      background-color: darken($color: $mx-nav-bg, $amount: 5);
+      background-color: white;
       opacity: 0.95;
     }
     @media all and (min-width: 980px) {
