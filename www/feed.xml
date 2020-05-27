@@ -59,18 +59,14 @@
         &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
         &lt;a href=&quot;#&quot;&gt;Blog&lt;/a&gt;
         &lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;
-        &lt;a href=&quot;#&quot;&gt;Contact Us&lt;/a&gt;
-        &lt;section&gt;
-        &lt;/section&gt;
-        &lt;a href=&quot;#&quot; role=&quot;button&quot;&gt;+&lt;/a&gt;
+        &lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;
     &lt;/section&gt;
 &lt;/nav&gt;
 
-&lt;!-- header banner --&gt;
 &lt;header&gt;
     &lt;section&gt;
         &lt;div&gt;
-            &lt;h1&gt;mxFoundation&lt;/h1&gt;
+            &lt;h1&gt;FirstPaint&lt;/h1&gt;
             &lt;!-- &lt;h4&gt;A SASS library for generating stylesheets that allows you build websites with plain semantic HTML elements, no need for class-names.&lt;/h4&gt; --&gt;
             &lt;h4&gt;A SASS/CSS library designed to help you learn/build websites with semantic HTML elements&lt;/h4&gt;
             &lt;a href=&quot;#&quot; role=&quot;button&quot; title=&quot;Add word, cta action, to your button title&quot;&gt;Read the Docs&lt;/a&gt;

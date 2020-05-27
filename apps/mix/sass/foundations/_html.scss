@@ -1,6 +1,6 @@
 @mixin html {
   html {
-    font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, “Roboto”,
+    font-family: “Roboto”, “Segoe UI”, -apple-system, BlinkMacSystemFont,
       “Oxygen”, “Ubuntu”, “Cantarell”, “Fira Sans”, “Droid Sans”,
       “Helvetica Neue”, sans-serif;
     -webkit-font-smoothing: antialiased !important;
@@ -12,7 +12,7 @@
     }
 
     @media all and (min-width: 1280px) {
-      font-size: 110%;
+      font-size: 100%;
     }
     background-color: #fff;
   }
@@ -37,16 +37,16 @@
     > main,
     > section,
     > footer {
-      > div,
-      > ul,
-      > aside,
-      > section,
-      > article {
+      div,
+      ul,
+      section,
+      aside,
+      article {
         max-width: 90%;
         margin: 0 auto;
         @media screen and (min-width: 1280px) {
           max-width: 1600px;
-          width: 85%;
+          width: 80%;
         }
         @media screen and (min-width: 1980px) {
           max-width: 1920px;

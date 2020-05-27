@@ -433,7 +433,7 @@ button {
       background-color: #024ea4; }
 
 html {
-  font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, “Roboto”, “Oxygen”, “Ubuntu”, “Cantarell”, “Fira Sans”, “Droid Sans”, “Helvetica Neue”, sans-serif;
+  font-family: “Roboto”, “Segoe UI”, -apple-system, BlinkMacSystemFont, “Oxygen”, “Ubuntu”, “Cantarell”, “Fira Sans”, “Droid Sans”, “Helvetica Neue”, sans-serif;
   -webkit-font-smoothing: antialiased !important;
   height: 100% !important;
   font-size: 75%;
@@ -443,7 +443,7 @@ html {
       font-size: 90%; } }
   @media all and (min-width: 1280px) {
     html {
-      font-size: 110%; } }
+      font-size: 100%; } }
 
 * {
   transition: width 0.95s ease-in; }
@@ -456,87 +456,87 @@ body {
   @media print {
     body > *:not(main) {
       display: none; } }
-  body > nav > div,
-  body > nav > ul,
-  body > nav > aside,
-  body > nav > section,
-  body > nav > article,
-  body > header > div,
-  body > header > ul,
-  body > header > aside,
-  body > header > section,
-  body > header > article,
-  body > main > div,
-  body > main > ul,
-  body > main > aside,
-  body > main > section,
-  body > main > article,
-  body > section > div,
-  body > section > ul,
-  body > section > aside,
-  body > section > section,
-  body > section > article,
-  body > footer > div,
-  body > footer > ul,
-  body > footer > aside,
-  body > footer > section,
-  body > footer > article {
+  body > nav div,
+  body > nav ul,
+  body > nav section,
+  body > nav aside,
+  body > nav article,
+  body > header div,
+  body > header ul,
+  body > header section,
+  body > header aside,
+  body > header article,
+  body > main div,
+  body > main ul,
+  body > main section,
+  body > main aside,
+  body > main article,
+  body > section div,
+  body > section ul,
+  body > section section,
+  body > section aside,
+  body > section article,
+  body > footer div,
+  body > footer ul,
+  body > footer section,
+  body > footer aside,
+  body > footer article {
     max-width: 90%;
     margin: 0 auto; }
     @media screen and (min-width: 1280px) {
-      body > nav > div,
-      body > nav > ul,
-      body > nav > aside,
-      body > nav > section,
-      body > nav > article,
-      body > header > div,
-      body > header > ul,
-      body > header > aside,
-      body > header > section,
-      body > header > article,
-      body > main > div,
-      body > main > ul,
-      body > main > aside,
-      body > main > section,
-      body > main > article,
-      body > section > div,
-      body > section > ul,
-      body > section > aside,
-      body > section > section,
-      body > section > article,
-      body > footer > div,
-      body > footer > ul,
-      body > footer > aside,
-      body > footer > section,
-      body > footer > article {
+      body > nav div,
+      body > nav ul,
+      body > nav section,
+      body > nav aside,
+      body > nav article,
+      body > header div,
+      body > header ul,
+      body > header section,
+      body > header aside,
+      body > header article,
+      body > main div,
+      body > main ul,
+      body > main section,
+      body > main aside,
+      body > main article,
+      body > section div,
+      body > section ul,
+      body > section section,
+      body > section aside,
+      body > section article,
+      body > footer div,
+      body > footer ul,
+      body > footer section,
+      body > footer aside,
+      body > footer article {
         max-width: 1600px;
-        width: 85%; } }
+        width: 80%; } }
     @media screen and (min-width: 1980px) {
-      body > nav > div,
-      body > nav > ul,
-      body > nav > aside,
-      body > nav > section,
-      body > nav > article,
-      body > header > div,
-      body > header > ul,
-      body > header > aside,
-      body > header > section,
-      body > header > article,
-      body > main > div,
-      body > main > ul,
-      body > main > aside,
-      body > main > section,
-      body > main > article,
-      body > section > div,
-      body > section > ul,
-      body > section > aside,
-      body > section > section,
-      body > section > article,
-      body > footer > div,
-      body > footer > ul,
-      body > footer > aside,
-      body > footer > section,
-      body > footer > article {
+      body > nav div,
+      body > nav ul,
+      body > nav section,
+      body > nav aside,
+      body > nav article,
+      body > header div,
+      body > header ul,
+      body > header section,
+      body > header aside,
+      body > header article,
+      body > main div,
+      body > main ul,
+      body > main section,
+      body > main aside,
+      body > main article,
+      body > section div,
+      body > section ul,
+      body > section section,
+      body > section aside,
+      body > section article,
+      body > footer div,
+      body > footer ul,
+      body > footer section,
+      body > footer aside,
+      body > footer article {
         max-width: 1920px; } }
   body > footer {
     min-height: 10vh;
@@ -591,10 +591,9 @@ nav {
   background-color: transparent; }
   nav a {
     padding: 0.5rem;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     height: 100% !important;
-    display: inline-flex;
     text-decoration: none; }
     nav a:first-child {
       height: 100% !important; }
@@ -609,10 +608,9 @@ nav {
         nav a:first-child {
           padding: 0;
           padding-right: 2rem; } }
-  nav section,
-  nav div,
-  nav ul {
-    display: block;
+  nav > section,
+  nav > div,
+  nav > ul {
     height: 5rem;
     display: flex;
     align-items: center; }
@@ -648,10 +646,12 @@ main {
 header > section,
 [role="banner"] {
   min-height: inherit;
+  min-width: inherit;
   font-size: larger;
   display: flex;
   align-items: center;
-  padding: 3rem 0; }
+  padding: 3rem 0;
+  text-align: center; }
   header > section h1,
   header > section h2,
   header > section h3,
