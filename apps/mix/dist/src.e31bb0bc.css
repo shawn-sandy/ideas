@@ -590,12 +590,14 @@ p {
 nav {
   background-color: transparent; }
   nav a {
-    padding: 0.5rem;
+    text-align: center;
     display: flex;
     align-items: center;
     height: 100% !important;
+    vertical-align: middle;
     text-decoration: none; }
     nav a:first-child {
+      text-align: center;
       height: 100% !important; }
       nav a:first-child:hover, nav a:first-child:focus {
         background-color: transparent; }
@@ -611,6 +613,7 @@ nav {
   nav > section,
   nav > div,
   nav > ul {
+    min-height: 10vh;
     height: 5rem;
     display: flex;
     align-items: center; }

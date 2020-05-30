@@ -17,7 +17,7 @@
   > section,
   > div,
   > ul {
-    // min-height: $mx-layout-height-vh-10;
+    min-height: $mx-layout-height-vh-10;
     height: $mx-nav-min-height;
     display: flex;
     align-items: center;
@@ -31,16 +31,16 @@
  */
 @mixin mix-nav-links {
   a {
-    // text-align: center;
-    padding: 0.5rem;
+    text-align: center;
     display: flex;
     align-items: center;
     height: 100% !important;
+    vertical-align: middle;
 
     &:first-child {
       // padding: 0;
       // padding-right: 1rem;
-      // text-align: center;
+      text-align: center;
       height: 100% !important;
       &:hover,
       &:focus {
