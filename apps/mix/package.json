@@ -23,7 +23,7 @@
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
-    "start": "parcel src/index.html --open",
+    "start": "parcel src/index.html -p 3050 --open",
     "parcel": "parcel build src/index.js --no-content-hash -d builds",
     "tokens": "style-dictionary build --config ./config/config.js && gulp sass",
     "clean": "rm -rf dist && rm -rf builds",

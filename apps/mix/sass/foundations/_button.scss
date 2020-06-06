@@ -2,13 +2,6 @@
   box-sizing: border-box;
 }
 
-// Reset default button styles
-button {
-  @media screen and (-ms-high-contrast: active) {
-    border: 2px solid currentcolor;
-  }
-}
-
 // styles a link as button rel=action="action payment"
 [title*="action"],
 [role*="button"],
@@ -23,7 +16,6 @@ button {
   border: 1px;
   border-style: solid;
   font-family: inherit;
-  padding: 0;
   cursor: pointer;
   text-decoration: none;
 
@@ -31,14 +23,13 @@ button {
   background-color: $mx-lightgray;
   color: darken($mx-blue, 15);
   border-radius: 2px;
-  border-color: darken($mx-lightgray, 20);
+  border-color: darken($mx-lightgray, 5);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
   transition: background-color 0.95s ease-out;
   font-size: smaller;
 
   // Size
-  padding: 0.5rem 1.2rem;
-  min-width: 10ch;
+  padding: 0.8rem 1.2rem;
   min-height: 44px;
 
   // Text

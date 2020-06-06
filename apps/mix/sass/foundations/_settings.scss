@@ -1,6 +1,6 @@
 $mx-white: #fff !default;
 $mx-transparent: transparent !default;
-$mx-whitesmoke: whitesmoke !default;
+$mx-whitesmoke: snow !default;
 $mx-sliver: silver !default;
 $mx-gray: gray !default;
 $mx-lightgray: lightgray !default;
@@ -19,4 +19,5 @@ $mx-footer-vh: 10vh !default;
 $mx-footer-bg: lighten(lightgray, 8) !default;
 $mx-nav-min-height: 5rem !default;
 $mx-nav-bg: $mx-transparent !default;
+$mx-nav-bg-hover: $mx-white !default;
 $mx-grid-cols: 4;

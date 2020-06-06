@@ -37,11 +37,10 @@
     > main,
     > section,
     > footer {
-      div,
-      ul,
-      section,
-      aside,
-      article {
+      > div,
+      > section,
+      > aside,
+      > article {
         max-width: 90%;
         margin: 0 auto;
         @media screen and (min-width: 1280px) {

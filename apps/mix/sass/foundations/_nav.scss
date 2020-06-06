@@ -5,8 +5,8 @@
 @mixin mix-navbar {
   nav {
     background-color: $mx-nav-bg;
-    @include mix-nav-links();
     @include mix-nav();
+    @include mix-nav-links();
   }
 }
 
@@ -16,12 +16,23 @@
 @mixin mix-nav {
   > section,
   > div,
-  > ul {
+  ul {
     min-height: $mx-layout-height-vh-10;
     height: $mx-nav-min-height;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     @media all and (min-width: 960px) {
+    }
+  }
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+  div {
+    height: 100%;
+    a {
+      display: inline-flex;
     }
   }
 }
@@ -30,12 +41,12 @@
  * Nav links
  */
 @mixin mix-nav-links {
-  a {
+  a,
+  li {
     text-align: center;
     display: flex;
     align-items: center;
     height: 100% !important;
-    vertical-align: middle;
 
     &:first-child {
       // padding: 0;
@@ -50,7 +61,7 @@
     text-decoration: none;
     &:hover,
     &:focus {
-      background-color: white;
+      background-color: $mx-nav-bg-hover;
       opacity: 0.95;
     }
     @media all and (min-width: 980px) {
@@ -60,6 +71,15 @@
       }
       padding: 0 2rem;
     }
-    @content;
+  }
+
+  li {
+    a {
+      padding: 0;
+    }
+  }
+
+  #navigation:target {
+    display: none;
   }
 }

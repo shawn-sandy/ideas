@@ -1,13 +1,10 @@
 @mixin mix-flex-grid {
-  section[aria-label*="grid"],
-  footer > section,
-  section > div[role="list"] {
+  section {
     > [role="list"] {
       padding: 3rem 0;
       display: flex;
       flex-wrap: wrap;
       justify-content: start;
-      // max-width: 100%;
 
       [role="listitem"] {
         flex-basis: 100%;
