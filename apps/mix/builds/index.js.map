@@ -1,1 +1,1 @@
-{"version":3,"sources":["index.js"],"names":[],"mappings":";;;AACA,aADA,QAAA,+BACA,QAAA","file":"index.js","sourceRoot":"..\\src","sourcesContent":["import \"normalize.css/normalize.css\";\r\nimport \"../foundation.scss\";\r\n"]}
+{"version":3,"sources":["index.js"],"names":[],"mappings":";;;AAAA,aAAA,QAAA","file":"index.js","sourceRoot":"..\\src","sourcesContent":["import \"../foundation.scss\";\r\n"]}

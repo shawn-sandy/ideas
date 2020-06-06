@@ -37,6 +37,7 @@
     > main,
     > section,
     > footer {
+      padding: 2rem 0;
       > div,
       > section,
       > aside,
@@ -52,6 +53,22 @@
         }
       }
       @content;
+    }
+
+    > nav,
+    > header {
+      padding: 0 0;
+    }
+
+    > header {
+      background-color: $mx-header-bg;
+      background-image: $mx-header-bg-img;
+      @media screen and (min-width: 1280px) {
+        min-height: $mx-header-vh;
+      }
+    }
+
+    main {
     }
 
     > footer {

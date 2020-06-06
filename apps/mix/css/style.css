@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*
   Do not edit directly
-  Generated on Sat, 23 May 2020 21:24:22 GMT
+  Generated on Sat, 06 Jun 2020 20:11:06 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 /** generates a series of modifies based a list of attributes  **/
@@ -21,28 +21,22 @@
 * {
   box-sizing: border-box; }
 
-@media screen and (-ms-high-contrast: active) {
-  button {
-    border: 2px solid currentcolor; } }
-
 [title*="action"],
 [role*="button"],
 button {
   border: 1px;
   border-style: solid;
   font-family: inherit;
-  padding: 0;
   cursor: pointer;
   text-decoration: none;
   background-color: lightgray;
   color: #02428b;
   border-radius: 2px;
-  border-color: #a0a0a0;
+  border-color: #c6c6c6;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
   transition: background-color 0.95s ease-out;
   font-size: smaller;
-  padding: 0.5rem 1.2rem;
-  min-width: 10ch;
+  padding: 0.8rem 1.2rem;
   min-height: 44px;
   text-align: center;
   line-height: 1.1; }
@@ -83,140 +77,182 @@ button {
       background-color: #024ea4; }
 
 html {
-  font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, “Roboto”, “Oxygen”, “Ubuntu”, “Cantarell”, “Fira Sans”, “Droid Sans”, “Helvetica Neue”, sans-serif;
+  font-family: “Roboto”, “Segoe UI”, -apple-system, BlinkMacSystemFont, “Oxygen”, “Ubuntu”, “Cantarell”, “Fira Sans”, “Droid Sans”, “Helvetica Neue”, sans-serif;
   -webkit-font-smoothing: antialiased !important;
   height: 100% !important;
-  font-size: 12px;
+  font-size: 75%;
   background-color: #fff; }
+  @media all and (min-width: 580px) {
+    html {
+      font-size: 90%; } }
   @media all and (min-width: 1280px) {
     html {
-      font-size: 17px; } }
+      font-size: 100%; } }
 
 * {
   transition: width 0.95s ease-in; }
 
 body {
   padding: 0 !important;
-  background-color: whitesmoke;
+  background-color: snow;
   max-width: 1980px;
   margin: 0 auto; }
-  body > nav > div,
-  body > nav > aside,
-  body > nav > section,
-  body > nav > article,
-  body > header > div,
-  body > header > aside,
-  body > header > section,
-  body > header > article,
-  body > main > div,
-  body > main > aside,
-  body > main > section,
-  body > main > article,
-  body > section > div,
-  body > section > aside,
-  body > section > section,
-  body > section > article,
-  body > footer > div,
-  body > footer > aside,
-  body > footer > section,
-  body > footer > article {
-    max-width: 90%;
-    margin: 0 auto; }
+  @media print {
+    body > *:not(main) {
+      display: none; } }
+  body > nav,
+  body > header,
+  body > main,
+  body > section,
+  body > footer {
+    padding: 2rem 0; }
+    body > nav > div,
+    body > nav > section,
+    body > nav > aside,
+    body > nav > article,
+    body > header > div,
+    body > header > section,
+    body > header > aside,
+    body > header > article,
+    body > main > div,
+    body > main > section,
+    body > main > aside,
+    body > main > article,
+    body > section > div,
+    body > section > section,
+    body > section > aside,
+    body > section > article,
+    body > footer > div,
+    body > footer > section,
+    body > footer > aside,
+    body > footer > article {
+      max-width: 90%;
+      margin: 0 auto; }
+      @media screen and (min-width: 1280px) {
+        body > nav > div,
+        body > nav > section,
+        body > nav > aside,
+        body > nav > article,
+        body > header > div,
+        body > header > section,
+        body > header > aside,
+        body > header > article,
+        body > main > div,
+        body > main > section,
+        body > main > aside,
+        body > main > article,
+        body > section > div,
+        body > section > section,
+        body > section > aside,
+        body > section > article,
+        body > footer > div,
+        body > footer > section,
+        body > footer > aside,
+        body > footer > article {
+          max-width: 1600px;
+          width: 80%; } }
+      @media screen and (min-width: 1980px) {
+        body > nav > div,
+        body > nav > section,
+        body > nav > aside,
+        body > nav > article,
+        body > header > div,
+        body > header > section,
+        body > header > aside,
+        body > header > article,
+        body > main > div,
+        body > main > section,
+        body > main > aside,
+        body > main > article,
+        body > section > div,
+        body > section > section,
+        body > section > aside,
+        body > section > article,
+        body > footer > div,
+        body > footer > section,
+        body > footer > aside,
+        body > footer > article {
+          max-width: 1920px; } }
+  body > nav,
+  body > header {
+    padding: 0 0; }
+  body > header {
+    background-color: lightgray;
+    background-image: none; }
     @media screen and (min-width: 1280px) {
-      body > nav > div,
-      body > nav > aside,
-      body > nav > section,
-      body > nav > article,
-      body > header > div,
-      body > header > aside,
-      body > header > section,
-      body > header > article,
-      body > main > div,
-      body > main > aside,
-      body > main > section,
-      body > main > article,
-      body > section > div,
-      body > section > aside,
-      body > section > section,
-      body > section > article,
-      body > footer > div,
-      body > footer > aside,
-      body > footer > section,
-      body > footer > article {
-        max-width: 1600px;
-        width: 85%; } }
-    @media screen and (min-width: 1980px) {
-      body > nav > div,
-      body > nav > aside,
-      body > nav > section,
-      body > nav > article,
-      body > header > div,
-      body > header > aside,
-      body > header > section,
-      body > header > article,
-      body > main > div,
-      body > main > aside,
-      body > main > section,
-      body > main > article,
-      body > section > div,
-      body > section > aside,
-      body > section > section,
-      body > section > article,
-      body > footer > div,
-      body > footer > aside,
-      body > footer > section,
-      body > footer > article {
-        max-width: 1920px; } }
+      body > header {
+        min-height: 50vh; } }
   body > footer {
     min-height: 10vh;
     display: flex;
     align-items: center;
     align-content: stretch;
+    margin: 2rem 0 0;
     background-color: #e7e7e7; }
     body > footer p {
       text-align: center; }
   body hr {
-    border-top: 1px solid whitesmoke;
-    margin: 2rem 0; }
+    border-top: 1px solid snow;
+    margin: 3rem 0; }
 
 [aria-hidden="true"] {
   display: none; }
 
 nav {
   background-color: transparent; }
-  nav a {
-    padding: 0.5rem;
-    display: inline-flex;
+  nav > section,
+  nav > div,
+  nav ul {
+    min-height: 10vh;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  nav ul {
+    padding: 0;
+    list-style: none; }
+  nav div {
+    height: 100%; }
+    nav div a {
+      display: inline-flex; }
+  nav a,
+  nav li {
+    text-align: center;
+    display: flex;
     align-items: center;
     height: 100% !important;
-    display: inline-flex;
     text-decoration: none; }
-    nav a:first-child {
+    nav a:first-child,
+    nav li:first-child {
+      text-align: center;
       height: 100% !important; }
-      nav a:first-child:hover, nav a:first-child:focus {
+      nav a:first-child:hover, nav a:first-child:focus,
+      nav li:first-child:hover,
+      nav li:first-child:focus {
         background-color: transparent; }
-    nav a:hover, nav a:focus {
-      background-color: rgba(0, 0, 0, 0);
+    nav a:hover, nav a:focus,
+    nav li:hover,
+    nav li:focus {
+      background-color: #fff;
       opacity: 0.95; }
     @media all and (min-width: 980px) {
-      nav a {
+      nav a,
+      nav li {
         padding: 0 2rem; }
-        nav a:first-child {
+        nav a:first-child,
+        nav li:first-child {
           padding: 0;
           padding-right: 2rem; } }
-  nav > section,
-  nav div,
-  nav ul {
-    display: block;
-    height: 6rem;
-    display: flex;
-    align-items: center; }
+  nav li a {
+    padding: 0; }
+  nav #navigation:target {
+    display: none; }
 
-header[role="banner"] {
+header {
   background-color: lightgray;
   background-image: none; }
-  @media screen and (min-width: 980px) {
-    header[role="banner"] {
+  @media screen and (min-width: 1280px) {
+    header {
       min-height: 50vh; } }
 
 /** generate all components in specified map--default component **/

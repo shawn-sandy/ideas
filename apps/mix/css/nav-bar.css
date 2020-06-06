@@ -1,6 +1,6 @@
 /*
   Do not edit directly
-  Generated on Sat, 23 May 2020 21:24:22 GMT
+  Generated on Sat, 06 Jun 2020 20:11:06 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 /** generates a series of modifies based a list of attributes  **/
@@ -20,28 +20,22 @@
 * {
   box-sizing: border-box; }
 
-@media screen and (-ms-high-contrast: active) {
-  button {
-    border: 2px solid currentcolor; } }
-
 [title*="action"],
 [role*="button"],
 button {
   border: 1px;
   border-style: solid;
   font-family: inherit;
-  padding: 0;
   cursor: pointer;
   text-decoration: none;
   background-color: lightgray;
   color: #02428b;
   border-radius: 2px;
-  border-color: #a0a0a0;
+  border-color: #c6c6c6;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
   transition: background-color 0.95s ease-out;
   font-size: smaller;
-  padding: 0.5rem 1.2rem;
-  min-width: 10ch;
+  padding: 0.8rem 1.2rem;
   min-height: 44px;
   text-align: center;
   line-height: 1.1; }
@@ -83,30 +77,50 @@ button {
 
 nav {
   background-color: transparent; }
-  nav a {
-    padding: 0.5rem;
-    display: inline-flex;
+  nav > section,
+  nav > div,
+  nav ul {
+    min-height: 10vh;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  nav ul {
+    padding: 0;
+    list-style: none; }
+  nav div {
+    height: 100%; }
+    nav div a {
+      display: inline-flex; }
+  nav a,
+  nav li {
+    text-align: center;
+    display: flex;
     align-items: center;
     height: 100% !important;
-    display: inline-flex;
     text-decoration: none; }
-    nav a:first-child {
+    nav a:first-child,
+    nav li:first-child {
+      text-align: center;
       height: 100% !important; }
-      nav a:first-child:hover, nav a:first-child:focus {
+      nav a:first-child:hover, nav a:first-child:focus,
+      nav li:first-child:hover,
+      nav li:first-child:focus {
         background-color: transparent; }
-    nav a:hover, nav a:focus {
-      background-color: rgba(0, 0, 0, 0);
+    nav a:hover, nav a:focus,
+    nav li:hover,
+    nav li:focus {
+      background-color: #fff;
       opacity: 0.95; }
     @media all and (min-width: 980px) {
-      nav a {
+      nav a,
+      nav li {
         padding: 0 2rem; }
-        nav a:first-child {
+        nav a:first-child,
+        nav li:first-child {
           padding: 0;
           padding-right: 2rem; } }
-  nav > section,
-  nav div,
-  nav ul {
-    display: block;
-    height: 6rem;
-    display: flex;
-    align-items: center; }
+  nav li a {
+    padding: 0; }
+  nav #navigation:target {
+    display: none; }
