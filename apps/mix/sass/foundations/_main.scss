@@ -10,7 +10,7 @@
         font-size: 1;
       }
 
-      [role="sidebar"] {
+      > aside {
         width: 100%;
         padding: 1rem;
         font-size: 0.95rem;
@@ -18,7 +18,7 @@
       @media all and (min-width: 1280px) {
         display: flex;
         align-items: flex-start;
-        [role="sidebar"] {
+        > aside {
           min-width: 25%;
           max-width: 25%;
           padding: 1rem;
