@@ -1,8 +1,12 @@
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5, [aria-label*="logo"] {
   font-family: "Roboto Slab", serif; }
+
+[aria-label*="logo"] {
+  font-size: larger; }
 
 
 /*# sourceMappingURL=/styles.7b0c6d85.css.map */

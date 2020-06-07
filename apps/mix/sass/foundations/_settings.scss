@@ -1,3 +1,4 @@
+$mx-default-color: rgba(0, 0, 0, 0.7);
 $mx-white: #fff !default;
 $mx-transparent: transparent !default;
 $mx-whitesmoke: snow !default;
@@ -13,7 +14,7 @@ $mx-font-default: “Roboto”, -apple-system, BlinkMacSystemFont, “Segoe UI�
 $mx-bg: $mx-whitesmoke !default;
 $mx-main-vh: 40vh !default;
 $mx-header-vh: 50vh !default;
-$mx-header-bg: lightgray !default;
+$mx-header-bg: rgba(0, 0, 0, 0.1) !default;
 $mx-header-bg-img: none !default;
 $mx-footer-vh: 10vh !default;
 $mx-footer-bg: lighten(lightgray, 8) !default;

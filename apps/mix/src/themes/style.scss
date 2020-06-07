@@ -7,7 +7,16 @@ header {
 h1,
 h2,
 h3,
-h4 {
-  font-family: "Roboto Slab", serif;
+h4,
+h5 {
+  @extend %roboto;
   // font-weight: 700;
+}
+
+%roboto {
+  font-family: "Roboto Slab", serif;
+}
+[aria-label*="logo"] {
+  @extend %roboto;
+  font-size: larger;
 }

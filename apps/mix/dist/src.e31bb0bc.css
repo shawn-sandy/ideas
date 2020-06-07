@@ -95,6 +95,7 @@ html {
 body {
   padding: 0 !important;
   background-color: snow;
+  color: rgba(0, 0, 0, 0.7);
   max-width: 1980px;
   margin: 0 auto; }
   @media print {
@@ -177,7 +178,7 @@ body {
   body > header {
     padding: 0 0; }
   body > header {
-    background-color: lightgray;
+    background-color: rgba(0, 0, 0, 0.1);
     background-image: none; }
     @media screen and (min-width: 1280px) {
       body > header {
@@ -209,7 +210,7 @@ h5 {
   font-weight: 500; }
 
 h1 {
-  font-size: 4.209rem;
+  font-size: 5rem;
   word-break: break-all; }
 
 h2 {
@@ -248,20 +249,27 @@ nav {
     height: 100%; }
     nav div a {
       display: inline-flex; }
+  nav img {
+    max-height: 60%;
+    width: auto; }
   nav a,
   nav li {
     text-align: center;
     display: flex;
     align-items: center;
     height: 100% !important;
+    font-size: smaller;
     text-decoration: none; }
-    nav a:first-child,
-    nav li:first-child {
+    nav a[aria-label*="logo"], nav a[aria-label*="brand"],
+    nav li[aria-label*="logo"],
+    nav li[aria-label*="brand"] {
       text-align: center;
       height: 100% !important; }
-      nav a:first-child:hover, nav a:first-child:focus,
-      nav li:first-child:hover,
-      nav li:first-child:focus {
+      nav a[aria-label*="logo"]:hover, nav a[aria-label*="logo"]:focus, nav a[aria-label*="brand"]:hover, nav a[aria-label*="brand"]:focus,
+      nav li[aria-label*="logo"]:hover,
+      nav li[aria-label*="logo"]:focus,
+      nav li[aria-label*="brand"]:hover,
+      nav li[aria-label*="brand"]:focus {
         background-color: transparent; }
     nav a:hover, nav a:focus,
     nav li:hover,
@@ -271,11 +279,7 @@ nav {
     @media all and (min-width: 980px) {
       nav a,
       nav li {
-        padding: 0 2rem; }
-        nav a:first-child,
-        nav li:first-child {
-          padding: 0;
-          padding-right: 2rem; } }
+        padding: 0 2rem; } }
   nav li a {
     padding: 0; }
   nav #navigation:target {
