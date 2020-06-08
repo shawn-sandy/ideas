@@ -3,10 +3,8 @@ h2,
 h3,
 h4,
 h5, [aria-label*="logo"] {
-  font-family: "Roboto Slab", serif; }
-
-[aria-label*="logo"] {
-  font-size: larger; }
+  font-family: "Roboto Slab", serif;
+  font-weight: 500; }
 
 
 /*# sourceMappingURL=/styles.7b0c6d85.css.map */

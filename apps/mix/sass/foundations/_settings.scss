@@ -20,5 +20,5 @@ $mx-footer-vh: 10vh !default;
 $mx-footer-bg: lighten(lightgray, 8) !default;
 $mx-nav-min-height: 5rem !default;
 $mx-nav-bg: $mx-transparent !default;
-$mx-nav-bg-hover: $mx-white !default;
+$mx-nav-bg-hover: darken(rgba(0, 0, 0, 0.1), 20%) !default;
 $mx-grid-cols: 4;

@@ -16,7 +16,7 @@
 @mixin mix-nav {
   > section,
   > div,
-  ul {
+  > ul {
     min-height: $mx-layout-height-vh-10;
     height: $mx-nav-min-height;
     display: flex;
@@ -31,14 +31,11 @@
   }
   div {
     height: 100%;
+    display: flex;
+    align-items: center;
     a {
       display: inline-flex;
     }
-  }
-
-  img {
-    max-height: 60%;
-    width: auto;
   }
 }
 
@@ -55,14 +52,21 @@
     font-size: smaller;
 
     &[aria-label*="logo"],
-    &[aria-label*="brand"] {
-      // padding: 0;
-      // padding-right: 1rem;
+    &[aria-label*="branding"] {
       text-align: center;
       height: 100% !important;
       &:hover,
       &:focus {
         background-color: transparent;
+      }
+      img[alt*="logo"] {
+        max-height: 70%;
+        width: auto;
+        padding: 0.3rem;
+        margin: 0.3rem;
+      }
+      span {
+        font-size: larger;
       }
     }
     text-decoration: none;

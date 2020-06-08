@@ -1,3 +1,8 @@
+%roboto {
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
+}
+
 nav {
 }
 
@@ -13,10 +18,6 @@ h5 {
   // font-weight: 700;
 }
 
-%roboto {
-  font-family: "Roboto Slab", serif;
-}
 [aria-label*="logo"] {
-  @extend %roboto;
-  font-size: larger;
+  @extend %#{roboto};
 }

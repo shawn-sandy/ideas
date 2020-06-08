@@ -80,12 +80,12 @@ html {
   font-family: “Roboto”, “Segoe UI”, -apple-system, BlinkMacSystemFont, “Oxygen”, “Ubuntu”, “Cantarell”, “Fira Sans”, “Droid Sans”, “Helvetica Neue”, sans-serif;
   -webkit-font-smoothing: antialiased !important;
   height: 100% !important;
-  font-size: 75%;
+  font-size: 85%;
   background-color: #fff; }
   @media all and (min-width: 580px) {
     html {
-      font-size: 90%; } }
-  @media all and (min-width: 1280px) {
+      font-size: 95%; } }
+  @media all and (min-width: 1380px) {
     html {
       font-size: 100%; } }
 
@@ -174,8 +174,7 @@ body {
         body > footer > aside,
         body > footer > article {
           max-width: 1920px; } }
-  body > nav,
-  body > header {
+  body > nav {
     padding: 0 0; }
   body > header {
     background-color: rgba(0, 0, 0, 0.1);
@@ -236,7 +235,7 @@ nav {
   background-color: transparent; }
   nav > section,
   nav > div,
-  nav ul {
+  nav > ul {
     min-height: 10vh;
     height: 5rem;
     display: flex;
@@ -246,12 +245,11 @@ nav {
     padding: 0;
     list-style: none; }
   nav div {
-    height: 100%; }
+    height: 100%;
+    display: flex;
+    align-items: center; }
     nav div a {
       display: inline-flex; }
-  nav img {
-    max-height: 60%;
-    width: auto; }
   nav a,
   nav li {
     text-align: center;
@@ -260,21 +258,32 @@ nav {
     height: 100% !important;
     font-size: smaller;
     text-decoration: none; }
-    nav a[aria-label*="logo"], nav a[aria-label*="brand"],
+    nav a[aria-label*="logo"], nav a[aria-label*="branding"],
     nav li[aria-label*="logo"],
-    nav li[aria-label*="brand"] {
+    nav li[aria-label*="branding"] {
       text-align: center;
       height: 100% !important; }
-      nav a[aria-label*="logo"]:hover, nav a[aria-label*="logo"]:focus, nav a[aria-label*="brand"]:hover, nav a[aria-label*="brand"]:focus,
+      nav a[aria-label*="logo"]:hover, nav a[aria-label*="logo"]:focus, nav a[aria-label*="branding"]:hover, nav a[aria-label*="branding"]:focus,
       nav li[aria-label*="logo"]:hover,
       nav li[aria-label*="logo"]:focus,
-      nav li[aria-label*="brand"]:hover,
-      nav li[aria-label*="brand"]:focus {
+      nav li[aria-label*="branding"]:hover,
+      nav li[aria-label*="branding"]:focus {
         background-color: transparent; }
+      nav a[aria-label*="logo"] img[alt*="logo"], nav a[aria-label*="branding"] img[alt*="logo"],
+      nav li[aria-label*="logo"] img[alt*="logo"],
+      nav li[aria-label*="branding"] img[alt*="logo"] {
+        max-height: 70%;
+        width: auto;
+        padding: 0.3rem;
+        margin: 0.3rem; }
+      nav a[aria-label*="logo"] span, nav a[aria-label*="branding"] span,
+      nav li[aria-label*="logo"] span,
+      nav li[aria-label*="branding"] span {
+        font-size: larger; }
     nav a:hover, nav a:focus,
     nav li:hover,
     nav li:focus {
-      background-color: #fff;
+      background-color: rgba(0, 0, 0, 0.1);
       opacity: 0.95; }
     @media all and (min-width: 980px) {
       nav a,
