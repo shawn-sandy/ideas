@@ -65,19 +65,17 @@ _The workflow below is not mandatory but strongly recommend_, Atomix really only
 
 _What are design tokens?_
 
-> Design tokens are the visual design atoms of the design system — specifically, they are named entities that store visual design attributes. We use them in place of hard-coded values (such as hex values for color or pixel values for spacing) in order to maintain a scalable and consistent visual system for UI development. 
+> Design tokens are the visual design atoms of the design system — specifically, they are named entities that store visual design attributes. We use them in place of hard-coded values (such as hex values for color or pixel values for spacing) in order to maintain a scalable and consistent visual system for UI development.
 
 ### Read the [Token Guide](./tokens.md)
 
-
 - Create your Tokens JSON
 
-``` json
-
+```json
 {
   "font": {
     "size": {
-      "font-size": {
+      "group": {
         "default": {
           "value": "1rem",
           "comment": "descriptions...",
@@ -91,29 +89,26 @@ _What are design tokens?_
     }
   }
 }
-
 ```
 
 - Use mixin in you `scss`
 
 ```scss
-
 .samp {
   @include mix-utilities("font");
 }
-
 ```
 
 - Output
 
 ```css
-
 .samp-font-size-default {
-  font-size: 1rem !important; }
+  font-size: 1rem !important;
+}
 
 .samp-font-size-1x {
-  font-size: 0.75rem !important; }
-
+  font-size: 0.75rem !important;
+}
 ```
 
 > [Token Guide](./tokens.md)

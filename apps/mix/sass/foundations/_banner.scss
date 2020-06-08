@@ -1,0 +1,22 @@
+@mixin mix-banner {
+  header > section,
+  [role="banner"] {
+    min-height: inherit;
+    min-width: inherit;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    h1,
+    h2,
+    h3,
+    h4 {
+      margin-top: 0;
+    }
+    p {
+      font-size: 1.4rem;
+    }
+    padding: 3rem 0;
+    text-align: center;
+    @content;
+  }
+}

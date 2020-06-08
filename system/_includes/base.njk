@@ -10,8 +10,10 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    {% block head %}
     <title>{{ metadata.title }} | {{ metadata.description }}</title>
     <!-- settings style -->
+    <link rel="stylesheet" href="icons/css/style.css">
     {% for styles in metadata.styles %}
     <link href="{{ styles }}" rel="stylesheet">
     {% endfor %}
@@ -21,23 +23,22 @@
     <link rel="stylesheet" href="{{ style }}" />
     {% endfor %}
     {% endif %}
-    {% block head %}
     {% endblock %}
 </head>
 
 <body class="ss-bg-classic-blue min-vh-100">
     {#% include "partials/no-ie.html" %#}
-    <!-- nav -->
-    {% include "partials/main-nav.njk" %}
+
     <!-- header -->
     {% block header %}
-
+    <!-- nav -->
+    {% include "partials/main-nav.njk" %}
     {% include "partials/hero.njk" %}
 
     {% endblock %}
 
     <!-- main content -->
-    <main class="ss-bg-white ui-ht-40vmin">
+    <main class="ss-bg-white ui-ht-40vmin py-5">
         {% block content %}
         {{ content | safe }}
         {% endblock %}

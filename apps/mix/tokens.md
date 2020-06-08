@@ -1,5 +1,3 @@
-
-
 # Design Tokens
 
 **What are design tokens?**
@@ -20,22 +18,25 @@
 
 #### Token Formats
 
+Utility tokens allow you to generate SASS Maps for utility classes.
+Structure **ELEMENT/MODIFIER/item-group/Items/\_** method or in a case where you don't need a group structure **_Rule/Item/Subitems_** when creating tokens for utilities classes:
+
 **Utility Token Structure**
 
-Utility tokens allow you to generate SASS Maps for utility classes.
-Structure **_Group/Rule/Item/Subitems/_** method or in a case where you don't need a group structure **_Rule/Item/Subitems_** when creating tokens for utilities classes:
-
-- Group: SASS group
-- Rule: Targets the CSS rule size for e.g: `size: 1rem`
+- ELEMENT: CSS element (fonts, color)
+- MODIFIER: Targets the CSS rule size for e.g: `size: 1rem`
+- group: named maps fr grouped elements
 - Items/Subitems: are used for the class names `.prefix-item-subitem: 0.75rem` e.g: `.mx-fs-xs: 0.75rem`
 
 ```json
 {
-  "GROUP": {
-    "RULE": {
-      "ITEM": {
-        "KEY": "VALUE",
-        "COMMENT": "COMMENT"
+  "ELEMENT": {
+    "MODIFIER": {
+      "group": {
+        "ITEM": {
+          "key": "VALUE",
+          "comments": "COMMENT"
+        }
       }
     }
   }
@@ -49,7 +50,7 @@ Structure **_Group/Rule/Item/Subitems/_** method or in a case where you don't ne
 {
   "font": {
     "size": {
-      "fs": {
+      "group": {
         "sm": {
           "value": "0.875rem",
           "comment": "descriptions..."

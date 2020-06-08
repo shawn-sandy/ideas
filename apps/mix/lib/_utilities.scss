@@ -39,16 +39,10 @@
           @include map-colors($value, $key);
         } @else {
           &#{$mix-prefix}#{$key} {
-            @if $modifier != "" {
-              #{$modifier}: $value $mix-use-important;
-            } @else {
-              #{$key}: $value $mix-use-important;
-            }
+            #{if($modifier != "", #{$modifier}, #{$key})}: $value
+              $mix-use-important;
           }
         }
-        // @if type-of($value) == "color" {
-        //   @include map-colors($value, $key);
-        // }
       }
     }
   } @else {

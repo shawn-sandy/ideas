@@ -119,17 +119,15 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"y3D1":[function(require,module,exports) {
 
-},{"./..\\webfonts\\fa-regular-400.eot":[["fa-regular-400.a2c1909d.eot","nv22"],"nv22"],"./..\\webfonts\\fa-regular-400.woff2":[["fa-regular-400.5ca8c932.woff2","M504"],"M504"],"./..\\webfonts\\fa-regular-400.woff":[["fa-regular-400.3c3cc54e.woff","H1q6"],"H1q6"],"./..\\webfonts\\fa-regular-400.ttf":[["fa-regular-400.cde05ce7.ttf","Evul"],"Evul"],"./..\\webfonts\\fa-regular-400.svg":[["fa-regular-400.6ef294e6.svg","D7rB"],"D7rB"]}],"UsdY":[function(require,module,exports) {
+},{"./..\\webfonts\\fa-regular-400.eot":[["fa-regular-400.a2c1909d.eot","nv22"],"nv22"],"./..\\webfonts\\fa-regular-400.woff2":[["fa-regular-400.5ca8c932.woff2","M504"],"M504"],"./..\\webfonts\\fa-regular-400.woff":[["fa-regular-400.3c3cc54e.woff","H1q6"],"H1q6"],"./..\\webfonts\\fa-regular-400.ttf":[["fa-regular-400.cde05ce7.ttf","Evul"],"Evul"],"./..\\webfonts\\fa-regular-400.svg":[["fa-regular-400.6ef294e6.svg","D7rB"],"D7rB"]}],"xndN":[function(require,module,exports) {
 
 },{}],"XEZO":[function(require,module,exports) {
 "use strict";
 
 require("@fortawesome/fontawesome-free/css/regular.css");
 
-require("@shawnsandy/bootstrap-lite");
-
-require("mvp/mvp.css");
+require("@shawnsandy/mix/foundation.scss");
 
 require("./system/styles/styles.scss");
-},{"@fortawesome/fontawesome-free/css/regular.css":"y3D1","@shawnsandy/bootstrap-lite":"UsdY","mvp/mvp.css":"UsdY","./system/styles/styles.scss":"UsdY"}]},{},["XEZO"], null)
+},{"@fortawesome/fontawesome-free/css/regular.css":"y3D1","@shawnsandy/mix/foundation.scss":"xndN","./system/styles/styles.scss":"xndN"}]},{},["XEZO"], null)
 //# sourceMappingURL=/styles.js.map

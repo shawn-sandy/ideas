@@ -1,5 +1,7 @@
 @import "imports";
 
-.mix {
-  @include mix-utility("font", "font");
+.mx {
+  @include mix-utility("font");
+  @include mix-utility("letter");
+  @include mix-utility("letter", "letter-spacing");
 }

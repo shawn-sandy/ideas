@@ -22,9 +22,9 @@ module.exports = function (eleventyConfig) {
     },
   });
 
-  eleventyConfig.addPassthroughCopy("**/dist/styles/css");
-  eleventyConfig.addPassthroughCopy("**/dist/js");
-  eleventyConfig.addPassthroughCopy("**/dist/images");
+  eleventyConfig.addPassthroughCopy("apps/**/builds/*.css");
+  eleventyConfig.addPassthroughCopy("apps/**/builds/*.js");
+  eleventyConfig.addPassthroughCopy("apps/**/builds/images");
 
   eleventyConfig.addPassthroughCopy("system/styles/css", "css");
   eleventyConfig.addPassthroughCopy("system/js/*.js", "js");

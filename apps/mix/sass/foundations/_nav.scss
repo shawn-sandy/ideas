@@ -1,0 +1,92 @@
+/**
+ * navbar
+ */
+
+@mixin mix-navbar {
+  nav {
+    background-color: $mx-nav-bg;
+    @include mix-nav();
+    @include mix-nav-links();
+  }
+}
+
+/**
+ * base navbar
+ */
+@mixin mix-nav {
+  > section,
+  > div,
+  > ul {
+    min-height: $mx-layout-height-vh-10;
+    height: $mx-nav-min-height;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media all and (min-width: 960px) {
+    }
+  }
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+  div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    a {
+      display: inline-flex;
+    }
+  }
+}
+
+/**
+ * Nav links
+ */
+@mixin mix-nav-links {
+  a,
+  li {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 100% !important;
+    font-size: smaller;
+
+    &[aria-label*="logo"],
+    &[aria-label*="branding"] {
+      text-align: center;
+      height: 100% !important;
+      &:hover,
+      &:focus {
+        background-color: transparent;
+      }
+      img[alt*="logo"] {
+        max-height: 70%;
+        width: auto;
+        padding: 0.3rem;
+        margin: 0.3rem;
+      }
+      span {
+        font-size: larger;
+      }
+    }
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      background-color: $mx-nav-bg-hover;
+      opacity: 0.95;
+    }
+    @media all and (min-width: 980px) {
+      padding: 0 2rem;
+    }
+  }
+
+  li {
+    a {
+      padding: 0;
+    }
+  }
+
+  #navigation:target {
+    display: none;
+  }
+}

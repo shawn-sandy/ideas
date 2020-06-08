@@ -1,6 +1,6 @@
 /*
   Do not edit directly
-  Generated on Fri, 24 Apr 2020 18:07:03 GMT
+  Generated on Sat, 06 Jun 2020 20:11:06 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 /** generates a series of modifies based a list of attributes  **/
@@ -8,6 +8,73 @@
 
 
 **/
+/**
+ * navbar
+ */
+/**
+ * base navbar
+ */
+/**
+ * Nav links
+ */
+* {
+  box-sizing: border-box; }
+
+[title*="action"],
+[role*="button"],
+button {
+  border: 1px;
+  border-style: solid;
+  font-family: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: lightgray;
+  color: #02428b;
+  border-radius: 2px;
+  border-color: #c6c6c6;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+  transition: background-color 0.95s ease-out;
+  font-size: smaller;
+  padding: 0.8rem 1.2rem;
+  min-height: 44px;
+  text-align: center;
+  line-height: 1.1; }
+  @supports (align-items: center) {
+    [title*="action"],
+    [role*="button"],
+    button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      align-self: start; } }
+  [title*="action"]:hover, [title*="action"]:active,
+  [role*="button"]:hover,
+  [role*="button"]:active,
+  button:hover,
+  button:active {
+    background-color: #545454;
+    color: white; }
+  [title*="action"]:focus,
+  [role*="button"]:focus,
+  button:focus {
+    outline-style: solid;
+    outline-color: transparent;
+    box-shadow: 0 0 0 1px #545454; }
+  [title*="action"][title*="action"], [title*="action"][type="submit"],
+  [role*="button"][title*="action"],
+  [role*="button"][type="submit"],
+  button[title*="action"],
+  button[type="submit"] {
+    background-color: #0366d6;
+    border-color: #02499a;
+    color: #fff; }
+    [title*="action"][title*="action"]:hover, [title*="action"][type="submit"]:hover,
+    [role*="button"][title*="action"]:hover,
+    [role*="button"][type="submit"]:hover,
+    button[title*="action"]:hover,
+    button[type="submit"]:hover {
+      background-color: #024ea4; }
+
 .mx-clip-box {
   overflow: hidden;
   position: relative;

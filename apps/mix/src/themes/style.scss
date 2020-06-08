@@ -1,0 +1,23 @@
+%roboto {
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
+}
+
+nav {
+}
+
+header {
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  @extend %roboto;
+  // font-weight: 700;
+}
+
+[aria-label*="logo"] {
+  @extend %#{roboto};
+}

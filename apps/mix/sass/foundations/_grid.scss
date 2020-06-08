@@ -1,0 +1,34 @@
+@mixin mix-flex-grid {
+  section {
+    > [role="list"] {
+      padding: 3rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: start;
+
+      [role="listitem"] {
+        flex-basis: 100%;
+        padding: 1rem;
+        line-height: 1.6;
+      }
+
+      @media all and (min-width: 580px) {
+        [role="listitem"] {
+          max-width: 50%;
+        }
+      }
+      @media all and (min-width: 980px) {
+        [role="listitem"] {
+          max-width: 25%;
+        }
+      }
+      @media all and (min-width: 580px) and (min-width: 980px) {
+        footer {
+          [role="listitem"] {
+            max-width: auto;
+          }
+        }
+      }
+    }
+  }
+}

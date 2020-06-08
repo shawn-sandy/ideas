@@ -1,7 +1,7 @@
 {
   "name": "@shawnsandy/mix",
-  "version": "0.8.7",
-  "description": "StyleMix--A toolkit for generating utility classes, components and styles-sheets for your design system, style-guide or website from SASS MAPS",
+  "version": "0.8.13",
+  "description": "AtomMix--A toolkit for generating utility classes, components and styles-sheets for your design system, style-guide or website from SASS MAPS",
   "keywords": [
     "SASS",
     "SASS-MAPS",
@@ -23,7 +23,10 @@
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
+    "start": "parcel src/index.html -p 3050 --open",
+    "parcel": "parcel build src/*.js src/themes/*.js --no-content-hash -d builds",
     "tokens": "style-dictionary build --config ./config/config.js && gulp sass",
+    "clean": "rm -rf dist && rm -rf builds",
     "test-tokens": "style-dictionary build --config ./config/config.js && gulp sass",
     "mix-tokens": "style-dictionary build --config ./config/mix-tokens.js && gulp sass",
     "build": "npm run tokens && gulp sass"
@@ -32,14 +35,16 @@
     "url": "https://github.com/shawn-sandy/idea/issues"
   },
   "dependencies": {
-    "style-dictionary": "^2.8.3"
+    "parcel": "^1.12.4",
+    "style-dictionary": "^2.10.0"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-clean-css": "^4.3.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^4.1.0",
     "gulp-sizereport": "^1.2.1",
+    "normalize.css": "^8.0.1",
     "parcel": "^1.12.4"
   },
   "gitHead": "4577741794f126834eade633db5dd9e94cd6ec62"

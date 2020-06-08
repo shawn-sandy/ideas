@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Fri, 24 Apr 2020 19:52:34 GMT
+  Generated on Mon, 04 May 2020 21:31:05 GMT
 */
 
 $mx-button-padding: 0 1.5rem !default;
@@ -25,45 +25,48 @@ $mx-color-orange: #f66a0a !default;
 $mx-color-yellow: #ffd33d !default;
 $mx-color-green: #008000 !default;
 $mx-color-brand-primary: #6495ed !default; // Primary colo
-$mx-font-size-type-default: 1rem !default; // descriptions...
-$mx-font-size-type-1-sm: 0.75rem !default; // descriptions...
-$mx-font-size-type-2-sm: 0.875rem !default; // descriptions...
-$mx-font-size-type-3-sm: 1.3rem !default; // descriptions...
-$mx-font-size-type-4-md: 1.5rem !default; // descriptions...
-$mx-font-size-type-5-md: 1.75rem !default; // descriptions...
-$mx-font-size-type-6-md: 2rem !default; // descriptions...
-$mx-font-size-type-7-lg: 2.5rem !default; // descriptions...
-$mx-font-size-type-8-lg: 3.5rem !default; // descriptions...
-$mx-font-size-type-9-lg: 4rem !default; // descriptions...
-$mx-font-size-type-10-xl: 5.2em !default; // descriptions...
+$mx-font-size-group-default: 1rem !default; // default font size 16px.
+$mx-font-size-group-1-sm: 0.702rem !default; // 11px - used for fine print
+$mx-font-size-group-2-sm: 0.79rem !default; // 12px great for notes small text.
+$mx-font-size-group-3-sm: 0.889rem !default; // 14px sidebar, links, navs, product list
+$mx-font-size-group-4-md: 1.26rem !default; // 18px great for long posts, blogs
+$mx-font-size-group-5-md: 1.424rem !default; // 22px
+$mx-font-size-group-6-md: 1.602rem !default; // 25px
+$mx-font-size-group-7-lg: 1.802rem !default; // 28px descriptions...
+$mx-font-size-group-8-lg: 2.369rem !default; // 37px descriptions...
+$mx-font-size-group-9-lg: 3.157rem !default; // 50px descriptions...
+$mx-font-size-group-10-xl: 4.209rem !default; // 67px descriptions...
+$mx-font-size-group-11-xl: 5.61rem !default; // 90px descriptions...
+$mx-font-size-group-12-xl: 7.478rem !default; // 120px descriptions...
 $mx-font-size-font-size-default: 1rem !default; // descriptions...
-$mx-weight-medium: 500 !default; // descriptions...
-$mx-weight-bold: 700 !default; // descriptions...
-$mx-dimensions-height-ht-5: 5vh !default;
-$mx-dimensions-height-ht-10: 10vh !default;
-$mx-dimensions-height-ht-20: 20vh !default;
-$mx-dimensions-height-ht-30: 30vh !default;
-$mx-dimensions-height-ht-40: 40vh !default;
-$mx-dimensions-height-ht-50: 50vh !default;
-$mx-dimensions-height-ht-60: 60vh !default;
-$mx-dimensions-height-ht-70: 70vh !default;
-$mx-dimensions-height-ht-80: 80vh !default;
-$mx-dimensions-height-ht-90: 90vh !default;
-$mx-dimensions-height-ht-100: 100vh !default;
-$mx-dimensions-width-wd-5: 5vw !default;
-$mx-dimensions-width-wd-10: 10vw !default;
-$mx-dimensions-width-wd-20: 20vw !default;
-$mx-dimensions-width-wd-30: 30vw !default;
-$mx-dimensions-width-wd-40: 40vw !default;
-$mx-dimensions-width-wd-50: 50vw !default;
-$mx-dimensions-width-wd-60: 60vw !default;
-$mx-dimensions-width-wd-70: 70vw !default;
-$mx-dimensions-width-wd-80: 80vw !default;
-$mx-dimensions-width-wd-90: 90vw !default;
-$mx-dimensions-width-wd-100: 100vw !default;
-$mx-dimensions-min-height-ht-40-vmin: 40vh !default; // Layout main section
-$mx-dimensions-min-height-ht-20-vmin: 40vh !default; // Layout main section
-$mx-dimensions-min-height-ht-10-vmin: 10vh !default; // Footer heigt
+$mx-font-weight-medium: 500 !default; // descriptions...
+$mx-font-weight-bold: 700 !default; // descriptions...
+$mx-letter-spacing-group-1-sm: 1rem !default;
+$mx-layout-height-vh-5: 5vh !default;
+$mx-layout-height-vh-10: 10vh !default;
+$mx-layout-height-vh-20: 20vh !default;
+$mx-layout-height-vh-30: 30vh !default;
+$mx-layout-height-vh-40: 40vh !default;
+$mx-layout-height-vh-50: 50vh !default;
+$mx-layout-height-vh-60: 60vh !default;
+$mx-layout-height-vh-70: 70vh !default;
+$mx-layout-height-vh-80: 80vh !default;
+$mx-layout-height-vh-90: 90vh !default;
+$mx-layout-height-vh-100: 100vh !default;
+$mx-layout-width-vw-5: 5vw !default;
+$mx-layout-width-vw-10: 10vw !default;
+$mx-layout-width-vw-20: 20vw !default;
+$mx-layout-width-vw-30: 30vw !default;
+$mx-layout-width-vw-40: 40vw !default;
+$mx-layout-width-vw-50: 50vw !default;
+$mx-layout-width-vw-60: 60vw !default;
+$mx-layout-width-vw-70: 70vw !default;
+$mx-layout-width-vw-80: 80vw !default;
+$mx-layout-width-vw-90: 90vw !default;
+$mx-layout-width-vw-100: 100vw !default;
+$mx-layout-min-height-ht-40-vmin: 40vh !default; // Layout main section
+$mx-layout-min-height-ht-20-vmin: 40vh !default; // Layout main section
+$mx-layout-min-height-ht-10-vmin: 10vh !default; // Footer heigt
 $mx-links-primary-color: #000000 !default;
 $mx-links-primary-hover-color: #010101 !default;
 $mx-nav-nav-bar-display: flex !default;
@@ -136,59 +139,68 @@ $tokens: (
   ),
   'font': (
     'size': (
-      'type': (
-        'default': $mx-font-size-type-default,
-        '1sm': $mx-font-size-type-1-sm,
-        '2sm': $mx-font-size-type-2-sm,
-        '3sm': $mx-font-size-type-3-sm,
-        '4md': $mx-font-size-type-4-md,
-        '5md': $mx-font-size-type-5-md,
-        '6md': $mx-font-size-type-6-md,
-        '7lg': $mx-font-size-type-7-lg,
-        '8lg': $mx-font-size-type-8-lg,
-        '9lg': $mx-font-size-type-9-lg,
-        '10xl': $mx-font-size-type-10-xl
+      'group': (
+        'default': $mx-font-size-group-default,
+        '1sm': $mx-font-size-group-1-sm,
+        '2sm': $mx-font-size-group-2-sm,
+        '3sm': $mx-font-size-group-3-sm,
+        '4md': $mx-font-size-group-4-md,
+        '5md': $mx-font-size-group-5-md,
+        '6md': $mx-font-size-group-6-md,
+        '7lg': $mx-font-size-group-7-lg,
+        '8lg': $mx-font-size-group-8-lg,
+        '9lg': $mx-font-size-group-9-lg,
+        '10xl': $mx-font-size-group-10-xl,
+        '11xl': $mx-font-size-group-11-xl,
+        '12xl': $mx-font-size-group-12-xl
       ),
       'font-size': (
         'default': $mx-font-size-font-size-default
       )
+    ),
+    'weight': (
+      'medium': $mx-font-weight-medium,
+      'bold': $mx-font-weight-bold
     )
   ),
-  'weight': (
-    'medium': $mx-weight-medium,
-    'bold': $mx-weight-bold
+  'letter': (
+    'spacing': (
+      'group': (
+        '1sm': $mx-letter-spacing-group-1-sm
+      )
+    )
   ),
-  'dimensions': (
+  'layout': (
     'height': (
-      'ht-5': $mx-dimensions-height-ht-5,
-      'ht-10': $mx-dimensions-height-ht-10,
-      'ht-20': $mx-dimensions-height-ht-20,
-      'ht-30': $mx-dimensions-height-ht-30,
-      'ht-40': $mx-dimensions-height-ht-40,
-      'ht-50': $mx-dimensions-height-ht-50,
-      'ht-60': $mx-dimensions-height-ht-60,
-      'ht-70': $mx-dimensions-height-ht-70,
-      'ht-80': $mx-dimensions-height-ht-80,
-      'ht-90': $mx-dimensions-height-ht-90,
-      'ht-100': $mx-dimensions-height-ht-100
+      'vh-5': $mx-layout-height-vh-5,
+      'vh-10': $mx-layout-height-vh-10,
+      'vh-20': $mx-layout-height-vh-20,
+      'vh-30': $mx-layout-height-vh-30,
+      'vh-40': $mx-layout-height-vh-40,
+      'vh-50': $mx-layout-height-vh-50,
+      'vh-60': $mx-layout-height-vh-60,
+      'vh-70': $mx-layout-height-vh-70,
+      'vh-80': $mx-layout-height-vh-80,
+      'vh-90': $mx-layout-height-vh-90,
+      'vh-100': $mx-layout-height-vh-100
     ),
     'width': (
-      'wd-5': $mx-dimensions-width-wd-5,
-      'wd-10': $mx-dimensions-width-wd-10,
-      'wd-20': $mx-dimensions-width-wd-20,
-      'wd-30': $mx-dimensions-width-wd-30,
-      'wd-40': $mx-dimensions-width-wd-40,
-      'wd-50': $mx-dimensions-width-wd-50,
-      'wd-60': $mx-dimensions-width-wd-60,
-      'wd-70': $mx-dimensions-width-wd-70,
-      'wd-80': $mx-dimensions-width-wd-80,
-      'wd-90': $mx-dimensions-width-wd-90,
-      'wd-100': $mx-dimensions-width-wd-100
+      'vw5': $mx-layout-width-vw-5,
+      'vw10': $mx-layout-width-vw-10,
+      'vw20': $mx-layout-width-vw-20,
+      'vw30': $mx-layout-width-vw-30,
+      'vw40': $mx-layout-width-vw-40,
+      'vw50': $mx-layout-width-vw-50,
+      'vw60': $mx-layout-width-vw-60,
+      'vw70': $mx-layout-width-vw-70,
+      'vw80': $mx-layout-width-vw-80,
+      'vw90': $mx-layout-width-vw-90,
+      'vw100': $mx-layout-width-vw-100
     ),
     'min-height': (
-      'ht-40vmin': $mx-dimensions-min-height-ht-40-vmin,
-      'ht-20vmin': $mx-dimensions-min-height-ht-20-vmin,
-      'ht-10vmin': $mx-dimensions-min-height-ht-10-vmin
+      'ht-40vmin': $mx-layout-min-height-ht-40-vmin,
+      'ht-20vmin': $mx-layout-min-height-ht-20-vmin,
+      'ht-10vmin': $mx-layout-min-height-ht-10-vmin
     )
   ),
   'links': (

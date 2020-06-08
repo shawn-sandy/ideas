@@ -1,6 +1,6 @@
 {
   "name": "@shawnsandy/vue-services",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -13,6 +13,7 @@
   "license": "MIT",
   "dependencies": {
     "core-js": "^3.6.4",
+    "parcel": "^1.12.4",
     "vue": "^2.6.11"
   },
   "devDependencies": {

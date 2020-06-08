@@ -1,0 +1,29 @@
+@mixin mix-main {
+  main {
+    min-height: $mx-main-vh;
+    // padding: 2rem 0;
+    > section {
+      width: 100%;
+      article {
+        padding: 1rem;
+        width: 100%;
+        font-size: 1;
+      }
+
+      > aside {
+        width: 100%;
+        padding: 1rem;
+        font-size: 0.95rem;
+      }
+      @media all and (min-width: 1280px) {
+        display: flex;
+        align-items: flex-start;
+        > aside {
+          min-width: 25%;
+          max-width: 25%;
+          padding: 1rem;
+        }
+      }
+    }
+  }
+}

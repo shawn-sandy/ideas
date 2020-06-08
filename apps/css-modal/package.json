@@ -1,6 +1,6 @@
 {
   "name": "@shawnsandy/css-modal",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "scripts": {
     "start": "es-dev-server --compatibility all --legacy --app-index index.html --node-resolve --open",
     "serve": "vue-cli-service serve",
@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "core-js": "^3.2.1",
+    "parcel": "^1.12.4",
     "vue": "^2.6.10"
   },
   "eslintConfig": {

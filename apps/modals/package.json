@@ -1,6 +1,6 @@
 {
   "name": "@shawnsandy/modals",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "license": "MIT",
   "author": "shawnsandy <shawnsandy04@gmail.com>",
   "homepage": "https://github.com/shawn-sandy/idea/tree/master/packages/modals",
@@ -92,5 +92,8 @@
   "browserslist": [
     "last 5 version"
   ],
-  "gitHead": "4577741794f126834eade633db5dd9e94cd6ec62"
+  "gitHead": "4577741794f126834eade633db5dd9e94cd6ec62",
+  "dependencies": {
+    "parcel": "^1.12.4"
+  }
 }

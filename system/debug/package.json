@@ -1,6 +1,6 @@
 {
   "name": "@ideas/debug",
-  "version": "1.0.24",
+  "version": "1.0.30",
   "private": true,
   "description": "> TODO: description",
   "author": "Shawn Sandy <38263979+shawn-sandy@users.noreply.github.com>",
@@ -19,8 +19,8 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
-    "@shawnsandy/ideas": "^0.1.13",
-    "@shawnsandy/mix": "^0.8.7",
+    "@shawnsandy/ideas": "^0.1.14",
+    "@shawnsandy/mix": "^0.8.13",
     "auto-changelog": "^1.16.4",
     "flat-cache": "^2.0.1",
     "fs": "0.0.1-security",
@@ -43,6 +43,7 @@
   },
   "gitHead": "d52d29e8fcf09f9a45e7399ad47e0b2f2576c1ba",
   "dependencies": {
-    "html-minifier": "^4.0.0"
+    "html-minifier": "^4.0.0",
+    "parcel": "^1.12.4"
   }
 }

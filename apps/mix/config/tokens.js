@@ -40,6 +40,7 @@ module.exports = function (options = {}) {
   const source = options.source || ["./tokens/**.json"];
   const build_dir = options.build || "./tokens/";
   const name = options.name ? `${options.name}.scss` : "_tokens.scss";
+  const prefix = options.prefix || "mx";
 
   var config = {
     transform: {
@@ -53,7 +54,7 @@ module.exports = function (options = {}) {
         // the underlying transform
         transformGroup: "scss",
         buildPath: build_dir,
-        prefix: "mx",
+        prefix: prefix,
         files: [
           {
             destination: name,

@@ -1,6 +1,7 @@
+@charset "UTF-8";
 /*
   Do not edit directly
-  Generated on Fri, 24 Apr 2020 18:07:03 GMT
+  Generated on Sat, 06 Jun 2020 20:11:06 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 /** generates a series of modifies based a list of attributes  **/
@@ -8,6 +9,252 @@
 
 
 **/
+/**
+ * navbar
+ */
+/**
+ * base navbar
+ */
+/**
+ * Nav links
+ */
+* {
+  box-sizing: border-box; }
+
+[title*="action"],
+[role*="button"],
+button {
+  border: 1px;
+  border-style: solid;
+  font-family: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: lightgray;
+  color: #02428b;
+  border-radius: 2px;
+  border-color: #c6c6c6;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+  transition: background-color 0.95s ease-out;
+  font-size: smaller;
+  padding: 0.8rem 1.2rem;
+  min-height: 44px;
+  text-align: center;
+  line-height: 1.1; }
+  @supports (align-items: center) {
+    [title*="action"],
+    [role*="button"],
+    button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      align-self: start; } }
+  [title*="action"]:hover, [title*="action"]:active,
+  [role*="button"]:hover,
+  [role*="button"]:active,
+  button:hover,
+  button:active {
+    background-color: #545454;
+    color: white; }
+  [title*="action"]:focus,
+  [role*="button"]:focus,
+  button:focus {
+    outline-style: solid;
+    outline-color: transparent;
+    box-shadow: 0 0 0 1px #545454; }
+  [title*="action"][title*="action"], [title*="action"][type="submit"],
+  [role*="button"][title*="action"],
+  [role*="button"][type="submit"],
+  button[title*="action"],
+  button[type="submit"] {
+    background-color: #0366d6;
+    border-color: #02499a;
+    color: #fff; }
+    [title*="action"][title*="action"]:hover, [title*="action"][type="submit"]:hover,
+    [role*="button"][title*="action"]:hover,
+    [role*="button"][type="submit"]:hover,
+    button[title*="action"]:hover,
+    button[type="submit"]:hover {
+      background-color: #024ea4; }
+
+html {
+  font-family: “Roboto”, “Segoe UI”, -apple-system, BlinkMacSystemFont, “Oxygen”, “Ubuntu”, “Cantarell”, “Fira Sans”, “Droid Sans”, “Helvetica Neue”, sans-serif;
+  -webkit-font-smoothing: antialiased !important;
+  height: 100% !important;
+  font-size: 75%;
+  background-color: #fff; }
+  @media all and (min-width: 580px) {
+    html {
+      font-size: 90%; } }
+  @media all and (min-width: 1280px) {
+    html {
+      font-size: 100%; } }
+
+* {
+  transition: width 0.95s ease-in; }
+
+body {
+  padding: 0 !important;
+  background-color: snow;
+  max-width: 1980px;
+  margin: 0 auto; }
+  @media print {
+    body > *:not(main) {
+      display: none; } }
+  body > nav,
+  body > header,
+  body > main,
+  body > section,
+  body > footer {
+    padding: 2rem 0; }
+    body > nav > div,
+    body > nav > section,
+    body > nav > aside,
+    body > nav > article,
+    body > header > div,
+    body > header > section,
+    body > header > aside,
+    body > header > article,
+    body > main > div,
+    body > main > section,
+    body > main > aside,
+    body > main > article,
+    body > section > div,
+    body > section > section,
+    body > section > aside,
+    body > section > article,
+    body > footer > div,
+    body > footer > section,
+    body > footer > aside,
+    body > footer > article {
+      max-width: 90%;
+      margin: 0 auto; }
+      @media screen and (min-width: 1280px) {
+        body > nav > div,
+        body > nav > section,
+        body > nav > aside,
+        body > nav > article,
+        body > header > div,
+        body > header > section,
+        body > header > aside,
+        body > header > article,
+        body > main > div,
+        body > main > section,
+        body > main > aside,
+        body > main > article,
+        body > section > div,
+        body > section > section,
+        body > section > aside,
+        body > section > article,
+        body > footer > div,
+        body > footer > section,
+        body > footer > aside,
+        body > footer > article {
+          max-width: 1600px;
+          width: 80%; } }
+      @media screen and (min-width: 1980px) {
+        body > nav > div,
+        body > nav > section,
+        body > nav > aside,
+        body > nav > article,
+        body > header > div,
+        body > header > section,
+        body > header > aside,
+        body > header > article,
+        body > main > div,
+        body > main > section,
+        body > main > aside,
+        body > main > article,
+        body > section > div,
+        body > section > section,
+        body > section > aside,
+        body > section > article,
+        body > footer > div,
+        body > footer > section,
+        body > footer > aside,
+        body > footer > article {
+          max-width: 1920px; } }
+  body > nav,
+  body > header {
+    padding: 0 0; }
+  body > header {
+    background-color: lightgray;
+    background-image: none; }
+    @media screen and (min-width: 1280px) {
+      body > header {
+        min-height: 50vh; } }
+  body > footer {
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    align-content: stretch;
+    margin: 2rem 0 0;
+    background-color: #e7e7e7; }
+    body > footer p {
+      text-align: center; }
+  body hr {
+    border-top: 1px solid snow;
+    margin: 3rem 0; }
+
+[aria-hidden="true"] {
+  display: none; }
+
+nav {
+  background-color: transparent; }
+  nav > section,
+  nav > div,
+  nav ul {
+    min-height: 10vh;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  nav ul {
+    padding: 0;
+    list-style: none; }
+  nav div {
+    height: 100%; }
+    nav div a {
+      display: inline-flex; }
+  nav a,
+  nav li {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 100% !important;
+    text-decoration: none; }
+    nav a:first-child,
+    nav li:first-child {
+      text-align: center;
+      height: 100% !important; }
+      nav a:first-child:hover, nav a:first-child:focus,
+      nav li:first-child:hover,
+      nav li:first-child:focus {
+        background-color: transparent; }
+    nav a:hover, nav a:focus,
+    nav li:hover,
+    nav li:focus {
+      background-color: #fff;
+      opacity: 0.95; }
+    @media all and (min-width: 980px) {
+      nav a,
+      nav li {
+        padding: 0 2rem; }
+        nav a:first-child,
+        nav li:first-child {
+          padding: 0;
+          padding-right: 2rem; } }
+  nav li a {
+    padding: 0; }
+  nav #navigation:target {
+    display: none; }
+
+header {
+  background-color: lightgray;
+  background-image: none; }
+  @media screen and (min-width: 1280px) {
+    header {
+      min-height: 50vh; } }
+
 /** generate all components in specified map--default component **/
 .mx-btn {
   height: 2.5rem;
@@ -45,58 +292,50 @@
   .mx-btn-rounded {
     border-radius: 0.31rem; }
 
-.mx-nav {
-  display: flex;
-  align-items: center;
-  height: 60px; }
-  .mx-nav-elm {
-    padding: 0 1rem; }
-  .mx-nav-list {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    margin: auto 0; }
-  .mx-nav-sm {
-    height: 20rem !important; }
-  .mx-nav-md {
-    height: 40rem !important; }
-  .mx-nav-lg {
-    height: 80rem !important; }
-  .mx-nav-xl {
-    height: 100rem !important; }
-
 .mx-font-size-default {
   font-size: 1rem; }
 
 .mx-font-size-1sm {
-  font-size: 0.75rem; }
+  font-size: 0.702rem; }
 
 .mx-font-size-2sm {
-  font-size: 0.875rem; }
+  font-size: 0.79rem; }
 
 .mx-font-size-3sm {
-  font-size: 1.3rem; }
+  font-size: 0.889rem; }
 
 .mx-font-size-4md {
-  font-size: 1.5rem; }
+  font-size: 1.26rem; }
 
 .mx-font-size-5md {
-  font-size: 1.75rem; }
+  font-size: 1.424rem; }
 
 .mx-font-size-6md {
-  font-size: 2rem; }
+  font-size: 1.602rem; }
 
 .mx-font-size-7lg {
-  font-size: 2.5rem; }
+  font-size: 1.802rem; }
 
 .mx-font-size-8lg {
-  font-size: 3.5rem; }
+  font-size: 2.369rem; }
 
 .mx-font-size-9lg {
-  font-size: 4rem; }
+  font-size: 3.157rem; }
 
 .mx-font-size-10xl {
-  font-size: 5.2em; }
+  font-size: 4.209rem; }
+
+.mx-font-size-11xl {
+  font-size: 5.61rem; }
+
+.mx-font-size-12xl {
+  font-size: 7.478rem; }
+
+.mx-weight-medium {
+  font-weight: 500; }
+
+.mx-weight-bold {
+  font-weight: 700; }
 
 .mx-black {
   color: #000000; }
@@ -503,68 +742,68 @@
 .mx-border-green-tp {
   border-color: #007100; }
 
-.mx-ht-5 {
+.mx-vh-5 {
   height: 5vh; }
 
-.mx-ht-10 {
+.mx-vh-10 {
   height: 10vh; }
 
-.mx-ht-20 {
+.mx-vh-20 {
   height: 20vh; }
 
-.mx-ht-30 {
+.mx-vh-30 {
   height: 30vh; }
 
-.mx-ht-40 {
+.mx-vh-40 {
   height: 40vh; }
 
-.mx-ht-50 {
+.mx-vh-50 {
   height: 50vh; }
 
-.mx-ht-60 {
+.mx-vh-60 {
   height: 60vh; }
 
-.mx-ht-70 {
+.mx-vh-70 {
   height: 70vh; }
 
-.mx-ht-80 {
+.mx-vh-80 {
   height: 80vh; }
 
-.mx-ht-90 {
+.mx-vh-90 {
   height: 90vh; }
 
-.mx-ht-100 {
+.mx-vh-100 {
   height: 100vh; }
 
-.mx-wd-5 {
+.mx-vw5 {
   width: 5vw; }
 
-.mx-wd-10 {
+.mx-vw10 {
   width: 10vw; }
 
-.mx-wd-20 {
+.mx-vw20 {
   width: 20vw; }
 
-.mx-wd-30 {
+.mx-vw30 {
   width: 30vw; }
 
-.mx-wd-40 {
+.mx-vw40 {
   width: 40vw; }
 
-.mx-wd-50 {
+.mx-vw50 {
   width: 50vw; }
 
-.mx-wd-60 {
+.mx-vw60 {
   width: 60vw; }
 
-.mx-wd-70 {
+.mx-vw70 {
   width: 70vw; }
 
-.mx-wd-80 {
+.mx-vw80 {
   width: 80vw; }
 
-.mx-wd-90 {
+.mx-vw90 {
   width: 90vw; }
 
-.mx-wd-100 {
+.mx-vw100 {
   width: 100vw; }

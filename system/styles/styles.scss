@@ -19,14 +19,8 @@ $mix-color-attrs: "color", "background-color", "border-color";
 /** import stylemix **/
 @import "~@shawnsandy/mix";
 
-html {
-  -webkit-font-smoothing: antialiased !important;
-  height: 100% !important;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-}
+// @include html;
+// @include mix-navbar;
 
 .roboto-slab {
   font-family: "Roboto Slab", sans-serif !important;
@@ -49,11 +43,13 @@ p {
   line-height: 1.5 !important;
 }
 
-/** utility mixin example--create font utility form our tokens **/
+/**
+ * ui layout
+ */
 .ui {
-  @include mix-utility("font", "font");
-  @include mix-utility("dimensions.height", "height");
-  @include mix-utility("dimensions.min-height", "min-height");
-  @include mix-utility("dimensions.width", "width");
+  @include mix-utility("font");
+  @include mix-utility("layout.height", "height");
+  @include mix-utility("layout.min-height", "min-height");
+  @include mix-utility("layout.width", "width");
   @include mix-utility("color");
 }

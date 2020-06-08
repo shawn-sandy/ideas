@@ -7,6 +7,12 @@
 // import mix library
 @import "./index.scss";
 
+// foundation styles
+
+@include html;
+@include mix-navbar;
+@include mix-header;
+
 /** generate all components in specified map--default component **/
 @include mix-components("buttons");
 @include mix-components("links");
@@ -18,12 +24,8 @@
     @include mix-rules("buttons.btn");
   }
 
-  &-nav {
-    @include mix-modifier("nav.nav-bar");
-  }
-
   @include mix-utilities("font");
   @include mix-utilities("color");
-  @include mix-utility("dimensions.height", "height");
-  @include mix-utility("dimensions.width", "width");
+  @include mix-utility("layout.height", "height");
+  @include mix-utility("layout.width", "width");
 }

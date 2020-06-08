@@ -2,10 +2,10 @@
   "name": "ideas",
   "version": "0.0.1",
   "private": true,
-  "description": "A UI toolkit for managing and creating digital products--design systems, pattern libraries, style-guides, etc.",
+  "description": "A UI toolkit for creating and managing digital apps, products, design systems, pattern libraries, style-guides, etc.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx @11ty/eleventy --serve",
+    "start": "npm run clean && npx @11ty/eleventy --serve",
     "build": "npx @11ty/eleventy",
     "parcel": "parcel build main.js --no-content-hash --out-dir build/uikit --no-minify",
     "parcel-css": "parcel build styles.js --no-content-hash --out-dir system/styles/css --no-minify",
@@ -16,7 +16,8 @@
     "lodash": "npm run _collection && npm run _function && npm run _array",
     "_collection": "lodash include=forEach,size,orderBy -o system/js/_collection.js",
     "_array": "lodash include=chunk,size -o system/js/_array.js",
-    "_function": "lodash include=debounce,throttle -o system/js/_function.js"
+    "_function": "lodash include=debounce,throttle -o system/js/_function.js",
+    "clean": "rm -rf www"
   },
   "directories": {
     "lib": "dist",
@@ -37,7 +38,7 @@
   "license": "MIT",
   "dependencies": {
     "@11ty/eleventy": "^0.10.0",
-    "@shawnsandy/bootstrap-lite": "^0.1.6",
+    "@shawnsandy/bootstrap-lite": "^0.1.7",
     "lodash": "^4.17.15"
   },
   "devDependencies": {
@@ -46,7 +47,7 @@
     "@11ty/eleventy-plugin-rss": "^1.0.7",
     "@fortawesome/fontawesome-free": "^5.13.0",
     "@shawnsandy/ideas": "0.1.12",
-    "@shawnsandy/mix": "^0.8.7",
+    "@shawnsandy/mix": "^0.8.12",
     "auto-changelog": "^2.0.0",
     "flat-cache": "^2.0.1",
     "fs": "0.0.1-security",
@@ -60,11 +61,12 @@
     "gulp-sizereport": "^1.2.1",
     "gulp-string-replace": "^1.1.2",
     "html-minifier": "^4.0.0",
-    "lerna": "^3.20.2",
+    "lerna": "^3.21.0",
     "mvp": "git+https://github.com/shawn-sandy/mvp.git",
     "node-fetch": "^2.6.0",
     "parcel": "^1.12.4",
     "require-dir": "^1.2.0",
-    "style-dictionary": "^2.9.0"
+    "sass": "^1.26.5",
+    "style-dictionary": "^2.10.0"
   }
 }
