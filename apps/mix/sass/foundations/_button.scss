@@ -3,7 +3,7 @@
 }
 
 // styles a link as button rel=action="action payment"
-[title*="action"],
+
 [role*="button"],
 button {
   // Display
@@ -29,7 +29,7 @@ button {
   font-size: smaller;
 
   // Size
-  padding: 0.8rem 1.2rem;
+  padding: 0.8rem 1.6rem;
   min-height: 44px;
 
   // Text
@@ -48,7 +48,6 @@ button {
     box-shadow: 0 0 0 1px darken($mx-lightgray, 50);
   }
 
-  &[title*="action"],
   &[type="submit"] {
     background-color: $mx-blue;
     border-color: darken($mx-blue, 12);
