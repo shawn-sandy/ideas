@@ -1,0 +1,56 @@
+// default symbol - asteriks
+@mixin symbol($symbol: "\2715", $size: larger) {
+  &-before {
+    &::before {
+      font-size: #{$size};
+      content: "#{$symbol}";
+      margin-right: 0.3rem;
+      @content;
+    }
+  }
+
+  &-after {
+    &::after {
+      font-size: #{$size};
+      content: "#{$symbol}";
+      margin-left: 0.3rem;
+      @content;
+    }
+  }
+}
+
+.symbol-pointing-left {
+  @include symbol("\276E");
+}
+
+.symbol-pointing-right {
+  @include symbol("\276F");
+}
+
+.symbol-pointing-left-double {
+  @include symbol("\2039");
+}
+
+.symbol-pointing-right-double {
+  @include symbol("\203A");
+}
+
+.symbol-times {
+  @include symbol("\2716");
+}
+
+.symbol-scissor {
+  @include symbol("\2715");
+}
+
+.symbol-pencil {
+  @include symbol("\270E");
+}
+
+.symbol-star {
+  @include symbol("\2605");
+}
+
+.symbol-asterik {
+  @include symbol("\2731");
+}
