@@ -1,5 +1,5 @@
 // default symbol - asteriks
-@mixin symbol($symbol: "\2715", $size: larger) {
+@mixin mix-symbol($symbol: "\2715", $size: larger) {
   &-before {
     &::before {
       font-size: #{$size};
@@ -19,52 +19,52 @@
   }
 }
 
-@mixin mix-symbols {
+@mixin mx-symbols {
   .symbol-pointing-left {
-    @include symbol("\276E");
+    @include mix-symbol("\276E");
   }
 
   .symbol-pointing-right {
-    @include symbol("\276F");
+    @include mix-symbol("\276F");
   }
 
   .symbol-pointing-left-double {
-    @include symbol("\2039");
+    @include mix-symbol("\2039");
   }
 
   .symbol-pointing-right-double {
-    @include symbol("\203A");
+    @include mix-symbol("\203A");
   }
 
   .symbol-times {
-    @include symbol("\2716");
+    @include mix-symbol("\2716");
   }
 
   .symbol-scissor {
-    @include symbol("\2715");
+    @include mix-symbol("\2715");
   }
 
   .symbol-pencil {
-    @include symbol("\270E");
+    @include mix-symbol("\270E");
   }
 
   .symbol-star {
-    @include symbol("\2605");
+    @include mix-symbol("\2605");
   }
 
   .symbol-asterik {
-    @include symbol("\2731");
+    @include mix-symbol("\2731");
   }
 
   .symbol-more-dots {
-    @include symbol("\205D");
+    @include mix-symbol("\205D");
   }
 
   .symbol-more-squares {
-    @include symbol("\205D");
+    @include mix-symbol("\205D");
   }
 
   .symbol-tm {
-    @include symbol("\2122");
+    @include mix-symbol("\2122");
   }
 }
