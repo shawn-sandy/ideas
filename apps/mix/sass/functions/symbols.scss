@@ -54,3 +54,11 @@
 .symbol-asterik {
   @include symbol("\2731");
 }
+
+.symbol-more-dots {
+  @include symbol("\205D");
+}
+
+.symbol-tm {
+  @include symbol("\2122");
+}
