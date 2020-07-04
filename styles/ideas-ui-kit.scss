@@ -48,5 +48,3 @@ $mix-color-attrs: "color", "background-color", "border-color";
 .ui {
   @include mix-utilities("color");
 }
-
-@import "../apps/mix/sass/navbar.scss";

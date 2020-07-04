@@ -7,6 +7,13 @@ nav {
 }
 
 header {
+  section[role="banner"] {
+    @media all and (min-width: 1280px) {
+      max-width: 65vw;
+    }
+    margin: auto;
+    text-transform: capitalize;
+  }
 }
 
 h1,

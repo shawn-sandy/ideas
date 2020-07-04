@@ -2,9 +2,14 @@
   section {
     > [role="list"] {
       padding: 3rem 0;
+      box-sizing: border-box;
       display: flex;
       flex-wrap: wrap;
       justify-content: start;
+
+      // [role="listitem"] + [role="listitem"] {
+      //   border-left: solid 1px silver;
+      // }
 
       [role="listitem"] {
         flex-basis: 100%;
@@ -19,7 +24,7 @@
       }
       @media all and (min-width: 980px) {
         [role="listitem"] {
-          max-width: 25%;
+          max-width: 33%;
         }
       }
       @media all and (min-width: 580px) and (min-width: 980px) {

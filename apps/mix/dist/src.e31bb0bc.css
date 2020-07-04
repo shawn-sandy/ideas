@@ -12,65 +12,18 @@
 /**
  * navbar
  */
-/**
- * base navbar
- */
-/**
- * Nav links
- */
-* {
-  box-sizing: border-box; }
-
-[role*="button"],
-button {
-  border: 1px;
-  border-style: solid;
-  font-family: inherit;
-  cursor: pointer;
-  text-decoration: none;
-  background-color: lightgray;
-  color: #02428b;
-  border-radius: 2px;
-  border-color: #c6c6c6;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
-  transition: background-color 0.95s ease-out;
-  font-size: smaller;
-  padding: 0.8rem 1.6rem;
-  min-height: 44px;
-  text-align: center;
-  line-height: 1.1; }
-  @supports (align-items: center) {
-    [role*="button"],
-    button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      align-self: start; } }
-  [role*="button"]:hover, [role*="button"]:active,
-  button:hover,
-  button:active {
-    background-color: #545454;
-    color: white; }
-  [role*="button"]:focus,
-  button:focus {
-    outline-style: solid;
-    outline-color: transparent;
-    box-shadow: 0 0 0 1px #545454; }
-  [role*="button"][type="submit"],
-  button[type="submit"] {
-    background-color: #0366d6;
-    border-color: #02499a;
-    color: #fff; }
-    [role*="button"][type="submit"]:hover,
-    button[type="submit"]:hover {
-      background-color: #024ea4; }
+[role*="button"][type="submit"], [role*="button"][aria-label],
+button[type="submit"],
+button[aria-label] {
+  font-size: 1.3rem; }
 
 html {
   font-family: “Roboto”, “Segoe UI”, -apple-system, BlinkMacSystemFont, “Oxygen”, “Ubuntu”, “Cantarell”, “Fira Sans”, “Droid Sans”, “Helvetica Neue”, sans-serif;
   -webkit-font-smoothing: antialiased !important;
   height: 100% !important;
   font-size: 85%;
-  background-color: #fff; }
+  background-color: #fff;
+  min-width: 375px; }
   @media all and (min-width: 580px) {
     html {
       font-size: 95%; } }
@@ -79,7 +32,7 @@ html {
       font-size: 100%; } }
 
 * {
-  transition: width 0.95s ease-in; }
+  box-sizing: border-box; }
 
 body {
   padding: 0 !important;
@@ -90,79 +43,73 @@ body {
   @media print {
     body > *:not(main) {
       display: none; } }
-  body > nav,
-  body > header,
-  body > main,
-  body > section,
-  body > footer {
-    padding: 2rem 0; }
-    body > nav > div,
-    body > nav > section,
-    body > nav > aside,
-    body > nav > article,
-    body > header > div,
-    body > header > section,
-    body > header > aside,
-    body > header > article,
-    body > main > div,
-    body > main > section,
-    body > main > aside,
-    body > main > article,
-    body > section > div,
-    body > section > section,
-    body > section > aside,
-    body > section > article,
-    body > footer > div,
-    body > footer > section,
-    body > footer > aside,
-    body > footer > article {
-      max-width: 90%;
-      margin: 0 auto; }
-      @media screen and (min-width: 1280px) {
-        body > nav > div,
-        body > nav > section,
-        body > nav > aside,
-        body > nav > article,
-        body > header > div,
-        body > header > section,
-        body > header > aside,
-        body > header > article,
-        body > main > div,
-        body > main > section,
-        body > main > aside,
-        body > main > article,
-        body > section > div,
-        body > section > section,
-        body > section > aside,
-        body > section > article,
-        body > footer > div,
-        body > footer > section,
-        body > footer > aside,
-        body > footer > article {
-          max-width: 1600px;
-          width: 80%; } }
-      @media screen and (min-width: 1980px) {
-        body > nav > div,
-        body > nav > section,
-        body > nav > aside,
-        body > nav > article,
-        body > header > div,
-        body > header > section,
-        body > header > aside,
-        body > header > article,
-        body > main > div,
-        body > main > section,
-        body > main > aside,
-        body > main > article,
-        body > section > div,
-        body > section > section,
-        body > section > aside,
-        body > section > article,
-        body > footer > div,
-        body > footer > section,
-        body > footer > aside,
-        body > footer > article {
-          max-width: 1920px; } }
+  body > nav > div,
+  body > nav > section,
+  body > nav > aside,
+  body > nav > article,
+  body > header > div,
+  body > header > section,
+  body > header > aside,
+  body > header > article,
+  body > main > div,
+  body > main > section,
+  body > main > aside,
+  body > main > article,
+  body > section > div,
+  body > section > section,
+  body > section > aside,
+  body > section > article,
+  body > footer > div,
+  body > footer > section,
+  body > footer > aside,
+  body > footer > article {
+    max-width: 90%;
+    margin: 0 auto; }
+    @media screen and (min-width: 1280px) {
+      body > nav > div,
+      body > nav > section,
+      body > nav > aside,
+      body > nav > article,
+      body > header > div,
+      body > header > section,
+      body > header > aside,
+      body > header > article,
+      body > main > div,
+      body > main > section,
+      body > main > aside,
+      body > main > article,
+      body > section > div,
+      body > section > section,
+      body > section > aside,
+      body > section > article,
+      body > footer > div,
+      body > footer > section,
+      body > footer > aside,
+      body > footer > article {
+        max-width: 1600px;
+        width: 80%; } }
+    @media screen and (min-width: 1980px) {
+      body > nav > div,
+      body > nav > section,
+      body > nav > aside,
+      body > nav > article,
+      body > header > div,
+      body > header > section,
+      body > header > aside,
+      body > header > article,
+      body > main > div,
+      body > main > section,
+      body > main > aside,
+      body > main > article,
+      body > section > div,
+      body > section > section,
+      body > section > aside,
+      body > section > article,
+      body > footer > div,
+      body > footer > section,
+      body > footer > aside,
+      body > footer > article {
+        max-width: 1920px; } }
   body > nav {
     padding: 0 0; }
   body > header {
@@ -225,10 +172,7 @@ nav[aria-label] {
   nav[aria-label] > section,
   nav[aria-label] > div,
   nav[aria-label] > ul {
-    height: 100%;
-    /**
-     * navigation logo
-     */ }
+    height: 100%; }
     @media all and (min-width: 960px) {
       nav[aria-label] > section,
       nav[aria-label] > div,
@@ -246,13 +190,15 @@ nav[aria-label] {
       margin: 0 1rem 0 0;
       padding: 0 1rem 0 0;
       height: 5rem; }
+      nav[aria-label] > section h1 * + *,
+      nav[aria-label] > div h1 * + *,
+      nav[aria-label] > ul h1 * + * {
+        margin-left: 0.5rem; }
       nav[aria-label] > section h1 img,
       nav[aria-label] > div h1 img,
       nav[aria-label] > ul h1 img {
         max-height: 70%;
-        width: auto;
-        padding: 0.3rem;
-        margin: 0.3rem; }
+        width: auto; }
       nav[aria-label] > section h1 span,
       nav[aria-label] > div h1 span,
       nav[aria-label] > ul h1 span {
@@ -312,6 +258,53 @@ nav[aria-label] {
       min-height: 10vh;
       height: 5rem; } }
 
+[role*="button"],
+button {
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: lightgray;
+  color: #545454;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+  transition: background-color 0.95s ease-out;
+  font-size: smaller;
+  padding: 0.8rem 1.6rem;
+  min-height: 44px;
+  text-align: center;
+  line-height: 1.1; }
+  [role*="button"] span,
+  button span {
+    display: inline-flex; }
+  @supports (align-items: center) {
+    [role*="button"],
+    button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      align-self: start; } }
+  [role*="button"]:hover, [role*="button"]:active,
+  button:hover,
+  button:active {
+    background-color: #adadad;
+    color: white; }
+  [role*="button"]:focus,
+  button:focus {
+    outline-style: solid;
+    outline-color: transparent;
+    box-shadow: 0 0 0 1px #545454; }
+  [role*="button"][type="submit"], [role*="button"][aria-label],
+  button[type="submit"],
+  button[aria-label] {
+    background-color: #0366d6;
+    border-color: transparent;
+    color: #fff; }
+    [role*="button"][type="submit"]:hover, [role*="button"][aria-label]:hover,
+    button[type="submit"]:hover,
+    button[aria-label]:hover {
+      background-color: #024ea4; }
+
 main {
   min-height: 40vh; }
   main > section {
@@ -320,6 +313,8 @@ main {
       padding: 1rem;
       width: 100%;
       font-size: 1; }
+      main > section article > * + * {
+        margin-top: 2rem; }
     main > section > aside {
       width: 100%;
       padding: 1rem;
@@ -334,35 +329,36 @@ main {
           padding: 1rem; } }
 
 header > section,
-[role="banner"] {
+header > [role="banner"] {
   min-height: inherit;
   min-width: inherit;
   font-size: larger;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  flex-direction: column;
+  box-sizing: border-box;
   padding: 3rem 0;
   text-align: center; }
   header > section h1,
   header > section h2,
   header > section h3,
   header > section h4,
-  [role="banner"] h1,
-  [role="banner"] h2,
-  [role="banner"] h3,
-  [role="banner"] h4 {
+  header > [role="banner"] h1,
+  header > [role="banner"] h2,
+  header > [role="banner"] h3,
+  header > [role="banner"] h4 {
     margin-top: 0; }
   header > section p,
-  [role="banner"] p {
+  header > [role="banner"] p {
     font-size: 1.4rem; }
-  header > section a[role="button"],
-  [role="banner"] a[role="button"] {
-    font-size: 1.5rem;
-    font-weight: normal; }
+  header > section > div > * + *,
+  header > [role="banner"] > div > * + * {
+    margin-top: 1rem; }
 
 section > [role="list"] {
   padding: 3rem 0;
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   justify-content: start; }
@@ -375,7 +371,7 @@ section > [role="list"] {
       max-width: 50%; } }
   @media all and (min-width: 980px) {
     section > [role="list"] [role="listitem"] {
-      max-width: 25%; } }
+      max-width: 33%; } }
   @media all and (min-width: 580px) and (min-width: 980px) {
     section > [role="list"] footer [role="listitem"] {
       max-width: auto; } }
