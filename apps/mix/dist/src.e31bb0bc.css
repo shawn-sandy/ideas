@@ -363,7 +363,7 @@ section > [role="list"] {
   flex-wrap: wrap;
   justify-content: flex-start; }
   section > [role="list"] [role="listitem"] {
-    flex: 1 1 150px;
+    flex: 1 1 33%;
     padding: 1rem;
     line-height: 1.6; }
   @media all and (min-width: 580px) {
