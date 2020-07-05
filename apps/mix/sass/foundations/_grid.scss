@@ -5,14 +5,11 @@
       box-sizing: border-box;
       display: flex;
       flex-wrap: wrap;
-      justify-content: start;
-
-      // [role="listitem"] + [role="listitem"] {
-      //   border-left: solid 1px silver;
-      // }
+      justify-content: flex-start;
 
       [role="listitem"] {
-        flex-basis: 100%;
+        // flex-basis: 100%;
+        flex: 1 1 150px;
         padding: 1rem;
         line-height: 1.6;
       }
