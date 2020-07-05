@@ -9,10 +9,12 @@
 
 // foundation styles
 
-@include html;
+@include mix-html;
+// @include mx-symbols;
 @include mix-typography;
 @include mix-navbar;
 @include mix-header;
+@include mix-button;
 @include mix-main;
 @include mix-footer;
 @include mix-banner;

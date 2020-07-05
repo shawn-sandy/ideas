@@ -3,26 +3,58 @@
  */
 
 @mixin mix-navbar {
-  nav {
+  nav[aria-label] {
     background-color: $mx-nav-bg;
     @include mix-nav();
     @include mix-nav-links();
+    &:first-of-type {
+      @media all and (min-width: 980px) {
+        min-height: $mx-layout-height-vh-10;
+        height: $mx-nav-min-height;
+      }
+    }
   }
 }
 
-/**
- * base navbar
- */
+// base navbar
 @mixin mix-nav {
   > section,
   > div,
   > ul {
-    min-height: $mx-layout-height-vh-10;
-    height: $mx-nav-min-height;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    height: 100%;
     @media all and (min-width: 960px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    //  navigation logo
+    h1 {
+      margin: 0;
+      display: inline-flex;
+      height: inherit;
+      word-break: normal;
+      margin: 0 1rem 0 0;
+      padding: 0 1rem 0 0;
+      height: $mx-nav-min-height;
+      * + * {
+        margin-left: 0.5rem;
+      }
+      img {
+        max-height: 70%;
+        width: auto;
+        // padding: 0.3rem;
+        // margin: 0.3rem;
+      }
+      span {
+        font-size: 1.5rem;
+        color: $mx-default-color;
+      }
+    }
+    [aria-hidden] {
+      display: inline-flex;
+      @media all and (min-width: 980px) {
+        display: none;
+      }
     }
   }
   ul {
@@ -39,9 +71,7 @@
   }
 }
 
-/**
- * Nav links
- */
+// Nav links
 @mixin mix-nav-links {
   a,
   li {
@@ -50,6 +80,7 @@
     align-items: center;
     height: 100% !important;
     font-size: smaller;
+    padding: 0.5rem;
 
     &[aria-label*="logo"],
     &[aria-label*="branding"] {
@@ -59,15 +90,6 @@
       &:focus {
         background-color: transparent;
       }
-      img[alt*="logo"] {
-        max-height: 70%;
-        width: auto;
-        padding: 0.3rem;
-        margin: 0.3rem;
-      }
-      span {
-        font-size: larger;
-      }
     }
     text-decoration: none;
     &:hover,
@@ -76,7 +98,7 @@
       opacity: 0.95;
     }
     @media all and (min-width: 980px) {
-      padding: 0 2rem;
+      padding: 0 1.5rem;
     }
   }
 
@@ -84,9 +106,5 @@
     a {
       padding: 0;
     }
-  }
-
-  #navigation:target {
-    display: none;
   }
 }

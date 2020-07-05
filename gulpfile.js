@@ -23,6 +23,7 @@ gulp.task("sass", () =>
       "!./**/node_modules/**/*.scss",
       "!./apps/**/*.scss",
     ])
+    .pipe(print())
     .pipe(sass().on("error", sass.logError))
     .pipe(autoprefixer())
     .pipe(gulp.dest("./www"))

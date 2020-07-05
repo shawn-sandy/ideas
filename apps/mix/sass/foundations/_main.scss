@@ -8,6 +8,9 @@
         padding: 1rem;
         width: 100%;
         font-size: 1;
+        > * + * {
+          margin-top: 2rem;
+        }
       }
 
       > aside {

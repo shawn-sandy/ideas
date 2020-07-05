@@ -1,8 +1,2 @@
-h1,
-h2,
-h3,
-h4 {
-    font-family: Roboto Slab, serif;
-}
-
+[aria-label*=logo],h1,h2,h3,h4,h5{font-family:Roboto Slab,serif;font-weight:500}
 /*# sourceMappingURL=/styles.css.map */

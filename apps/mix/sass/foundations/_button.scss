@@ -1,60 +1,65 @@
-* {
-  box-sizing: border-box;
+// styles a link as button rel=action="action payment"
+%btn-large {
+  font-size: 1.3rem;
 }
 
-// styles a link as button rel=action="action payment"
-[title*="action"],
-[role*="button"],
-button {
-  // Display
-  @supports (align-items: center) {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    align-self: start; // Optional - see "Gotchas"
-  }
-  border: 1px;
-  border-style: solid;
-  font-family: inherit;
-  cursor: pointer;
-  text-decoration: none;
+$button-color: $mx-lightgray;
+@mixin mix-button {
+  [role*="button"],
+  button {
+    span {
+      display: inline-flex;
+    }
+    // Display
+    @supports (align-items: center) {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      align-self: start; // Optional - see "Gotchas"
+    }
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+    text-decoration: none;
 
-  // Visual
-  background-color: $mx-lightgray;
-  color: darken($mx-blue, 15);
-  border-radius: 2px;
-  border-color: darken($mx-lightgray, 5);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
-  transition: background-color 0.95s ease-out;
-  font-size: smaller;
+    // Visual
+    background-color: $mx-lightgray;
+    color: darken($mx-lightgray, 50);
+    border-radius: 2px;
+    // border-color: darken($mx-lightgray, 5);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+    transition: background-color 0.95s ease-out;
+    font-size: smaller;
 
-  // Size
-  padding: 0.8rem 1.2rem;
-  min-height: 44px;
+    // Size
+    padding: 0.8rem 1.6rem;
+    min-height: 44px;
 
-  // Text
-  text-align: center;
-  line-height: 1.1;
+    // Text
+    text-align: center;
+    line-height: 1.1;
 
-  &:hover,
-  &:active {
-    background-color: darken($mx-lightgray, 50%);
-    color: lighten($mx-lightgray, 40);
-  }
+    &:hover,
+    &:active {
+      background-color: darken($button-color, 15%);
+      color: lighten($button-color, 40);
+    }
 
-  &:focus {
-    outline-style: solid;
-    outline-color: transparent;
-    box-shadow: 0 0 0 1px darken($mx-lightgray, 50);
-  }
+    &:focus {
+      outline-style: solid;
+      outline-color: transparent;
+      box-shadow: 0 0 0 1px darken($button-color, 50);
+    }
 
-  &[title*="action"],
-  &[type="submit"] {
-    background-color: $mx-blue;
-    border-color: darken($mx-blue, 12);
-    color: $mx-white;
-    &:hover {
-      background-color: darken($mx-blue, 10);
+    &[type="submit"],
+    &[aria-label] {
+      @extend %btn-large;
+      background-color: $mx-blue;
+      border-color: transparent;
+      color: $mx-white;
+      &:hover {
+        background-color: darken($mx-blue, 10);
+      }
     }
   }
 }

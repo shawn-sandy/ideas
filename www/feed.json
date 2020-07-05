@@ -25,15 +25,21 @@
 },
 
 {
-"title": "AtomMix.",
-"link": "https://proideas.dev/apps/mix/",
-"updated": "2020-05-18T16:23:34.139-04:00"
-},
-
-{
 "title": "Apps",
 "link": "https://proideas.dev/apps/",
 "updated": "2020-04-12T17:34:57.185-04:00"
+},
+
+{
+"title": "",
+"link": "https://proideas.dev/apps/mix/builds/",
+"updated": "2020-06-07T22:52:35.849-04:00"
+},
+
+{
+"title": "AtomMix.",
+"link": "https://proideas.dev/apps/mix/",
+"updated": "2020-06-07T22:52:35.923-04:00"
 }
 ]
 }

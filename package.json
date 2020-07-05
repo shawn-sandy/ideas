@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run clean && npx @11ty/eleventy --serve",
     "build": "npx @11ty/eleventy",
-    "parcel": "parcel build main.js --no-content-hash --out-dir build/uikit --no-minify",
+    "parcel": "parcel build main.js --out-dir build/uikit --no-minify",
     "parcel-css": "parcel build styles.js --no-content-hash --out-dir system/styles/css --no-minify",
     "parcel:watch": "parcel watch main.js --out-dir www/uikit",
     "changelog": "auto-changelog -p --template config/_changelog.hbs",
