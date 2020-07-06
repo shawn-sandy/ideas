@@ -68,12 +68,10 @@
     > header {
       background-color: $mx-header-bg;
       background-image: $mx-header-bg-img;
+      color: $mx-header-color;
+      min-height: $mx-header-vh;
       @media screen and (min-width: 1280px) {
-        min-height: $mx-header-vh;
       }
-    }
-
-    main {
     }
 
     > footer {
@@ -85,6 +83,13 @@
       background-color: $mx-footer-bg;
       p {
         text-align: center;
+      }
+      color: $mx-footer-color;
+    }
+
+    main {
+      aside {
+        padding: 1rem;
       }
     }
 

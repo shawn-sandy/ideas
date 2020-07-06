@@ -14,16 +14,6 @@
         line-height: 1.6;
       }
 
-      @media all and (min-width: 580px) {
-        [role="listitem"] {
-          max-width: 50%;
-        }
-      }
-      @media all and (min-width: 980px) {
-        [role="listitem"] {
-          max-width: 33%;
-        }
-      }
       @media all and (min-width: 580px) and (min-width: 980px) {
         footer {
           [role="listitem"] {
