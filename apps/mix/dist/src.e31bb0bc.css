@@ -127,7 +127,7 @@ body {
     color: #fff; }
     body > footer p {
       text-align: center; }
-  body main aside {
+  body section aside {
     padding: 1rem; }
   body hr {
     border-top: 1px solid snow;
@@ -327,8 +327,7 @@ main {
         align-items: flex-start; }
         main > section > aside {
           min-width: 25%;
-          max-width: 25%;
-          padding: 1rem; } }
+          max-width: 25%; } }
 
 header > section,
 header > [role="banner"] {
