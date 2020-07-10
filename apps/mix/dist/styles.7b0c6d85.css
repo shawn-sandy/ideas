@@ -7,9 +7,6 @@ h5, [aria-label*="logo"] {
 
 header section[role="banner"] {
   margin: auto; }
-  @media all and (min-width: 1280px) {
-    header section[role="banner"] {
-      max-width: 65vw; } }
 
 
 /*# sourceMappingURL=/styles.7b0c6d85.css.map */

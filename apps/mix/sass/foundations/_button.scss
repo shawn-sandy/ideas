@@ -3,7 +3,8 @@
   font-size: 1.3rem;
 }
 
-$button-color: $mx-lightgray;
+$button-color: $mx-button-color;
+$button-bg: $mx-button-bg;
 @mixin mix-button {
   [role*="button"],
   button {
@@ -23,8 +24,8 @@ $button-color: $mx-lightgray;
     text-decoration: none;
 
     // Visual
-    background-color: $mx-lightgray;
-    color: darken($mx-lightgray, 50);
+    background-color: $button-bg;
+    color: $button-color;
     border-radius: 2px;
     // border-color: darken($mx-lightgray, 5);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
@@ -41,8 +42,8 @@ $button-color: $mx-lightgray;
 
     &:hover,
     &:active {
-      background-color: darken($button-color, 15%);
-      color: lighten($button-color, 40);
+      background-color: darken($button-bg, 25%);
+      color: darken($button-color, 10%);
     }
 
     &:focus {

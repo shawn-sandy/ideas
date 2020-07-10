@@ -6,10 +6,11 @@
       min-width: inherit;
       font-size: larger;
       display: flex;
-      align-items: center;
+      // align-items: center;
       justify-content: center;
       flex-direction: column;
       box-sizing: border-box;
+      padding: 1rem;
       h1,
       h2,
       h3,
@@ -21,7 +22,6 @@
         font-size: 1.4rem;
       }
       padding: 3rem 0;
-      text-align: center;
       > div > * + * {
         margin-top: 1rem;
       }

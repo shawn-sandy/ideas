@@ -1,8 +1,6 @@
 @mixin mix-html {
   html {
-    font-family: “Roboto”, “Segoe UI”, -apple-system, BlinkMacSystemFont,
-      “Oxygen”, “Ubuntu”, “Cantarell”, “Fira Sans”, “Droid Sans”,
-      “Helvetica Neue”, sans-serif;
+    font-family: $mx-font-default;
     -webkit-font-smoothing: antialiased !important;
     height: 100% !important;
     font-size: 85%;
@@ -100,5 +98,11 @@
   }
   [aria-hidden] {
     display: none;
+  }
+
+  pre {
+    padding: 1.5rem;
+    background-color: $mx-default-color;
+    color: $mx-whitesmoke;
   }
 }
