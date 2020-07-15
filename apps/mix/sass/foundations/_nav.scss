@@ -97,6 +97,10 @@
       background-color: $mx-nav-bg-hover;
       opacity: 0.95;
     }
+    &:first-of-type {
+      margin-left: 0;
+      padding-left: 0;
+    }
     @media all and (min-width: 980px) {
       padding: 0 1.5rem;
     }

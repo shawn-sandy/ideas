@@ -254,6 +254,10 @@ nav[aria-label] {
     nav[aria-label] li:focus {
       background-color: rgba(0, 0, 0, 0.1);
       opacity: 0.95; }
+    nav[aria-label] a:first-of-type,
+    nav[aria-label] li:first-of-type {
+      margin-left: 0;
+      padding-left: 0; }
     @media all and (min-width: 980px) {
       nav[aria-label] a,
       nav[aria-label] li {
@@ -322,7 +326,8 @@ main {
       font-size: 1; }
       main > section article > * + * {
         margin-top: 2rem; }
-    main > section > aside {
+    main > section article + aside,
+    main > section [role="complementary"] {
       width: 100%;
       padding: 1rem;
       font-size: 0.95rem; }
@@ -330,7 +335,8 @@ main {
       main > section {
         display: flex;
         align-items: flex-start; }
-        main > section > aside {
+        main > section article + aside,
+        main > section [role="complementary"] {
           min-width: 25%;
           max-width: 25%; } }
 
@@ -340,10 +346,12 @@ header > [role="banner"] {
   min-width: inherit;
   font-size: larger;
   display: flex;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   box-sizing: border-box;
   padding: 1rem;
+  text-align: center;
   padding: 3rem 0; }
   header > section h1,
   header > section h2,
@@ -376,6 +384,17 @@ section > [role="list"] {
   @media all and (min-width: 580px) and (min-width: 980px) {
     section > [role="list"] footer [role="listitem"] {
       max-width: auto; } }
+
+[aria-label="components"] aside > textarea {
+  width: 95%;
+  min-height: 300px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: silver;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-family: monospace;
+  border-color: transparent; }
 
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */

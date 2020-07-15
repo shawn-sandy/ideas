@@ -13,7 +13,8 @@
         }
       }
 
-      > aside {
+      article + aside,
+      [role="complementary"] {
         width: 100%;
         padding: 1rem;
         font-size: 0.95rem;
@@ -21,7 +22,8 @@
       @media all and (min-width: 1280px) {
         display: flex;
         align-items: flex-start;
-        > aside {
+        article + aside,
+        [role="complementary"] {
           min-width: 25%;
           max-width: 25%;
         }
