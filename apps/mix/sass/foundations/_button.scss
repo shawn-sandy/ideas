@@ -1,6 +1,6 @@
 // styles a link as button rel=action="action payment"
 %btn-large {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 $button-color: $mx-button-color;
@@ -8,9 +8,7 @@ $button-bg: $mx-button-bg;
 @mixin mix-button {
   [role*="button"],
   button {
-    span {
-      display: inline-flex;
-    }
+   
     // Display
     @supports (align-items: center) {
       display: inline-flex;
@@ -42,7 +40,7 @@ $button-bg: $mx-button-bg;
 
     &:hover,
     &:active {
-      background-color: darken($button-bg, 25%);
+      background-color: lighten($button-bg, 15%);
       color: darken($button-color, 10%);
     }
 
@@ -55,12 +53,15 @@ $button-bg: $mx-button-bg;
     &[type="submit"],
     &[aria-label] {
       @extend %btn-large;
-      background-color: $mx-blue;
+      // background-color: $mx-blue;
       border-color: transparent;
       color: $mx-white;
       &:hover {
-        background-color: darken($mx-blue, 10);
+        // background-color: darken($mx-blue, 10);
       }
+    }
+    span {
+      display: flex;
     }
   }
 }

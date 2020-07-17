@@ -1,17 +1,18 @@
 @mixin mix-code-area {
-  [aria-label*="components"] {
-    aside {
+  
+    code {
       > textarea {
-        width: 98%;
+        width: 100%;
         min-height: 300px;
         background-color: $mx-default-color;
         color: $mx-silver;
         padding: 1.5rem;
+        margin: .5rem;
         font-size: 1.2rem;
         line-height: 1.5;
         font-family: monospace;
         border-color: transparent;
       }
     }
-  }
+
 }
