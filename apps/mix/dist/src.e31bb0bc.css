@@ -9,14 +9,24 @@
 
 
 **/
-/**
- * navbar
- */
+code > textarea::-webkit-scrollbar {
+  width: .6rem; }
+
+code > textarea::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
+
+code > textarea::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey; }
+
 [role*="button"][type="submit"], [role*="button"][aria-label],
 button[type="submit"],
 button[aria-label] {
   font-size: 1.2rem; }
 
+/**
+ * navbar
+ */
 html {
   font-family: “Roboto”, -apple-system, BlinkMacSystemFont, “Segoe UI”, “Oxygen”, “Ubuntu”, “Cantarell”, “Fira Sans”, “Droid Sans”, “Helvetica Neue”, sans-serif;
   -webkit-font-smoothing: antialiased !important;
@@ -375,17 +385,24 @@ section > [role="list"] {
     section > [role="list"] footer [role="listitem"] {
       max-width: auto; } }
 
-code > textarea {
-  width: 100%;
-  min-height: 300px;
+code {
   background-color: rgba(0, 0, 0, 0.8);
   color: silver;
-  padding: 1.5rem;
-  margin: .5rem;
-  font-size: 1.2rem;
-  line-height: 1.5;
-  font-family: monospace;
-  border-color: transparent; }
+  width: 90%;
+  border-radius: 2px;
+  display: flex; }
+  code > textarea {
+    width: 100%;
+    min-height: 300px;
+    background-color: transparent;
+    color: silver;
+    margin: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-family: monospace;
+    border-color: transparent;
+    resize: none;
+    outline: none; }
 
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */
