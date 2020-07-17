@@ -15,7 +15,7 @@
 [role*="button"][type="submit"], [role*="button"][aria-label],
 button[type="submit"],
 button[aria-label] {
-  font-size: 1.3rem; }
+  font-size: 1.2rem; }
 
 html {
   font-family: “Roboto”, -apple-system, BlinkMacSystemFont, “Segoe UI”, “Oxygen”, “Ubuntu”, “Cantarell”, “Fira Sans”, “Droid Sans”, “Helvetica Neue”, sans-serif;
@@ -113,7 +113,7 @@ body {
   body > nav {
     padding: 0 0; }
   body > header {
-    background-color: snow;
+    background-color: transparent;
     background-image: none;
     color: rgba(0, 0, 0, 0.8);
     min-height: 55vh; }
@@ -135,11 +135,6 @@ body {
 
 [aria-hidden] {
   display: none; }
-
-pre {
-  padding: 1.5rem;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: snow; }
 
 h1,
 h2,
@@ -285,9 +280,6 @@ button {
   min-height: 44px;
   text-align: center;
   line-height: 1.1; }
-  [role*="button"] span,
-  button span {
-    display: inline-flex; }
   @supports (align-items: center) {
     [role*="button"],
     button {
@@ -298,7 +290,7 @@ button {
   [role*="button"]:hover, [role*="button"]:active,
   button:hover,
   button:active {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(38, 38, 38, 0.8);
     color: #e6e6e6; }
   [role*="button"]:focus,
   button:focus {
@@ -308,13 +300,11 @@ button {
   [role*="button"][type="submit"], [role*="button"][aria-label],
   button[type="submit"],
   button[aria-label] {
-    background-color: #0366d6;
     border-color: transparent;
     color: #fff; }
-    [role*="button"][type="submit"]:hover, [role*="button"][aria-label]:hover,
-    button[type="submit"]:hover,
-    button[aria-label]:hover {
-      background-color: #024ea4; }
+  [role*="button"] span,
+  button span {
+    display: flex; }
 
 main {
   min-height: 40vh; }
@@ -385,12 +375,13 @@ section > [role="list"] {
     section > [role="list"] footer [role="listitem"] {
       max-width: auto; } }
 
-[aria-label*="components"] aside > textarea {
-  width: 98%;
+code > textarea {
+  width: 100%;
   min-height: 300px;
   background-color: rgba(0, 0, 0, 0.8);
   color: silver;
   padding: 1.5rem;
+  margin: .5rem;
   font-size: 1.2rem;
   line-height: 1.5;
   font-family: monospace;

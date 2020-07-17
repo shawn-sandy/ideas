@@ -45,7 +45,8 @@
     "gulp-sass": "^4.1.0",
     "gulp-sizereport": "^1.2.1",
     "normalize.css": "^8.0.1",
-    "parcel": "^1.12.4"
+    "parcel": "^1.12.4",
+    "posthtml-include": "^1.4.3"
   },
   "gitHead": "4577741794f126834eade633db5dd9e94cd6ec62"
 }
