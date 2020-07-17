@@ -8,11 +8,11 @@
   <meta name="author" content="Shawn Sandy">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <nav class="mx-bg-lightgray border-bottom" role="navigation" aria-label="Main navigation">
+  <nav role="navigation" aria-label="Main navigation">
     <!-- header banner -->
     <section id="navigation">
       <div>
@@ -40,7 +40,7 @@
       <div>
         <h2>Fast, Accessible, Inclusive</h2>
         <!-- <h4>A SASS library for generating stylesheets that allows you build websites with plain semantic HTML elements, no need for class-names.</h4> -->
-        <h4>Lightweight HTML elements &amp; components</h4>
+        <p>Lightweight, easy to use, HTML elements &amp; components, classes optional</p>
         <!-- <p>Build modern websites using semantic HTML/ARIA elements.</p> -->
         <a href="#" role="button" aria-label="Add word, cta action, to your button title">
           <span>Get Started</span></a>
@@ -85,7 +85,7 @@
   </section>
   <hr>
   <main>
-    <section class="articles">
+    <section id="articles">
       <article>
         <h2>Sample Article 1</h2>
         <p>
@@ -120,20 +120,52 @@
     </section>
 
   </main>
-  <section aria-label="get-started">
-    <div>
+  <section>
+
+    <aside aria-label="get-started">
       <h4 id="get-started">Get Started</h4>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque beatae officiis dicta accusantium. Nulla
-        recusandae in exercitationem inventore, minus dignissimos placeat, ratione et minima aspernatur alias, aut ipsum
+        recusandae in exercitationem inventore, minus dignissimos placeat, ratione et minima aspernatur alias, aut
+        ipsum
         quasi nihil?</p>
-    </div>
 
 
+    </aside>
+  </section>
+
+  <section aria-label="components">
+    <aside>
+      <h3>Components</h3>
+      <h5 id="get-started">Navigation component</h5>
+      <textarea>
+      <nav role="navigation" aria-label="Main navigation">
+        <!-- header banner -->
+        <section id="navigation">
+          <div>
+            <h1>
+              <a href="#" aria-label="Site logo">
+                <img src="/img/fp-icon.svg" alt="">
+                <span aria-label="logo text">FirstPaint</span>
+              </a>
+            </h1>
+      
+            <!-- <a href="http://" aria-hidden="true">more</a> -->
+          </div>
+          <div>
+            <a href="#">Blog</a>
+            <a href="#">About</a>
+            <a href="http://">Documentation</a>
+            <a href="http://">Repository</a>
+            <a href="#">Contact Us</a>
+          </div>
+        </section>
+      </nav>
+     </textarea>
+    </aside>
   </section>
 
   <footer>
     <section>
-
       <p>
         <small>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut odit expedita aliquam commodi incidunt nam

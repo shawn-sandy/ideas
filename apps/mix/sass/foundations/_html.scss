@@ -1,8 +1,6 @@
 @mixin mix-html {
   html {
-    font-family: “Roboto”, “Segoe UI”, -apple-system, BlinkMacSystemFont,
-      “Oxygen”, “Ubuntu”, “Cantarell”, “Fira Sans”, “Droid Sans”,
-      “Helvetica Neue”, sans-serif;
+    font-family: $mx-font-default;
     -webkit-font-smoothing: antialiased !important;
     height: 100% !important;
     font-size: 85%;
@@ -68,12 +66,10 @@
     > header {
       background-color: $mx-header-bg;
       background-image: $mx-header-bg-img;
+      color: $mx-header-color;
+      min-height: $mx-header-vh;
       @media screen and (min-width: 1280px) {
-        min-height: $mx-header-vh;
       }
-    }
-
-    main {
     }
 
     > footer {
@@ -86,6 +82,13 @@
       p {
         text-align: center;
       }
+      color: $mx-footer-color;
+    }
+
+    section {
+      aside {
+        padding: 1rem;
+      }
     }
 
     hr {
@@ -95,5 +98,11 @@
   }
   [aria-hidden] {
     display: none;
+  }
+
+  pre {
+    padding: 1.5rem;
+    background-color: $mx-default-color;
+    color: $mx-whitesmoke;
   }
 }

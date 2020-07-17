@@ -3,15 +3,10 @@ h2,
 h3,
 h4,
 h5, [aria-label*="logo"] {
-  font-family: "Roboto Slab", serif;
-  font-weight: 500; }
+  font-family: "Roboto Slab", serif; }
 
 header section[role="banner"] {
-  margin: auto;
-  text-transform: capitalize; }
-  @media all and (min-width: 1280px) {
-    header section[role="banner"] {
-      max-width: 65vw; } }
+  font-family: "Roboto Slab", serif; }
 
 
 /*# sourceMappingURL=/styles.7b0c6d85.css.map */

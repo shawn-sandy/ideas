@@ -1,6 +1,6 @@
 %roboto {
   font-family: "Roboto Slab", serif;
-  font-weight: 500;
+  // font-weight: 500;
 }
 
 nav {
@@ -8,11 +8,12 @@ nav {
 
 header {
   section[role="banner"] {
-    @media all and (min-width: 1280px) {
-      max-width: 65vw;
-    }
-    margin: auto;
-    text-transform: capitalize;
+    font-family: "Roboto Slab", serif;
+    // @media all and (min-width: 1280px) {
+    //   max-width: 65vw;
+    // }
+    // margin: auto;
+    // text-transform: capitalize;
   }
 }
 
