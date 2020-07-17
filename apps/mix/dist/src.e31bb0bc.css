@@ -113,9 +113,9 @@ body {
   body > nav {
     padding: 0 0; }
   body > header {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: snow;
     background-image: none;
-    color: snow;
+    color: rgba(0, 0, 0, 0.8);
     min-height: 55vh; }
   body > footer {
     min-height: 10vh;
@@ -385,8 +385,8 @@ section > [role="list"] {
     section > [role="list"] footer [role="listitem"] {
       max-width: auto; } }
 
-[aria-label="components"] aside > textarea {
-  width: 95%;
+[aria-label*="components"] aside > textarea {
+  width: 98%;
   min-height: 300px;
   background-color: rgba(0, 0, 0, 0.8);
   color: silver;

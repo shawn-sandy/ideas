@@ -1,8 +1,8 @@
 @mixin mix-code-area {
-  [aria-label="components"] {
+  [aria-label*="components"] {
     aside {
       > textarea {
-        width: 95%;
+        width: 98%;
         min-height: 300px;
         background-color: $mx-default-color;
         color: $mx-silver;
