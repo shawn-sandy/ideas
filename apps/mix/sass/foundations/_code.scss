@@ -1,27 +1,24 @@
 @mixin mix-code-area {
-  
-    code {
-      background-color: $mx-default-color;
-      color: $mx-silver;
+  code {
+    background-color: $mx-default-color;
+    color: $mx-silver;
+    width: 99%;
+    border-radius: 2px;
+    display: flex;
+    > textarea {
       width: 99%;
-      border-radius: 2px;
-      display: flex;
-      > textarea {
-        width: 99%;
-        min-height: 300px;
-        background-color: transparent;
-        color: $mx-silver;
-        // padding: 1.5rem;
-        margin: 1rem;
-        font-size: 1.2rem;
-        line-height: 1.5;
-        font-family: monospace;
-        border-color: transparent;
-        resize: none;
-        outline: none;
-        @extend %scrollbars;
-        
-      }
+      min-height: 300px;
+      background-color: transparent;
+      color: $mx-silver;
+      // padding: 1.5rem;
+      margin: 1rem;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      font-family: monospace;
+      border-color: transparent;
+      resize: none;
+      outline: none;
+      @extend %scrollbars;
     }
-
+  }
 }
