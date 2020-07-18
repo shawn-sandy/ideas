@@ -36,23 +36,23 @@
     "url": "https://github.com/shawn-sandy/idea/issues"
   },
   "devDependencies": {
-    "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.0",
+    "gulp-autoprefixer": "^7.0.1",
     "gulp-clean": "^0.4.0",
-    "gulp-clean-css": "^4.2.0",
-    "gulp-dart-sass": "^0.9.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-dart-sass": "^1.0.2",
     "gulp-print": "^5.0.2",
     "gulp-rename": "^2.0.0",
     "gulp-sizereport": "^1.2.1",
     "gulp-sourcemaps": "^2.6.5",
     "parcel": "^1.12.4",
-    "snowpack": "^1.4.0"
+    "snowpack": "^2.6.4"
   },
   "gitHead": "4577741794f126834eade633db5dd9e94cd6ec62",
   "dependencies": {
     "flat-cache": "^2.0.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "node-fetch": "^2.6.0",
     "parcel": "^1.12.4",
     "path": "^0.12.7"
