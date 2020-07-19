@@ -222,8 +222,7 @@ p {
   font-weight: 800; }
 
 p {
-  line-height: 1.5 !important;
-  color: inherit; }
+  line-height: 1.5 !important; }
 
 /**
  * ui layout
