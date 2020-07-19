@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "run-p serve watch:*",
-    "serve": "eleventy --serve",
+    "serve": "eleventy --serve --incremental",
     "eleventy": "run-s eleventy --serve",
     "build": "npx @11ty/eleventy",
     "parcel": "parcel build main.js --out-dir build/uikit --no-minify",
