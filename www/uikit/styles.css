@@ -39,9 +39,7 @@ p {
  * Nav links
  */
 html {
-  font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, “Roboto”,
- “Oxygen”, “Ubuntu”, “Cantarell”, “Fira Sans”, “Droid Sans”,
- “Helvetica Neue”, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, “Roboto”, “Oxygen”, “Ubuntu”, “Cantarell”, “Fira Sans”, “Droid Sans”, “Helvetica Neue”, sans-serif;
   -webkit-font-smoothing: antialiased !important;
   height: 100% !important;
   font-size: 16px; }
@@ -224,8 +222,7 @@ p {
   font-weight: 800; }
 
 p {
-  line-height: 1.5 !important;
-  color: inherit; }
+  line-height: 1.5 !important; }
 
 /**
  * ui layout
