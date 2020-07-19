@@ -44,6 +44,7 @@
   "gitHead": "d52d29e8fcf09f9a45e7399ad47e0b2f2576c1ba",
   "dependencies": {
     "html-minifier": "^4.0.0",
+    "npm-run-all": "^4.1.5",
     "parcel": "^1.12.4"
   }
 }
