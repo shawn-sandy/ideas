@@ -1,5 +1,5 @@
 /*!
- * Font Awesome Free 5.13.0 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.14.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 @font-face {
@@ -25,6 +25,10 @@
 
 
 **/
+p {
+  padding: 0.75rem 0;
+  margin: 0.75 0rem; }
+
 /**
  * navbar
  */
@@ -48,74 +52,86 @@ html {
 
 body {
   padding: 0 !important; }
-  body > nav > div,
-  body > nav > section,
+  body nav > div,
+  body nav section,
+  body nav aside,
+  body nav article,
   body header > div,
-  body header > section,
+  body header section,
+  body header aside,
+  body header article,
   body main > div,
-  body main > section,
+  body main section,
+  body main aside,
+  body main article,
   body footer > div,
-  body footer > section {
-    display: flex;
-    max-width: 80%;
-    width: 80%;
+  body footer section,
+  body footer aside,
+  body footer article {
+    max-width: 90%;
     margin: auto; }
-    @media screen and (max-width: 1280px) {
-      body > nav > div,
-      body > nav > section,
+    @media screen and (min-width: 960px) {
+      body nav > div,
+      body nav section,
+      body nav aside,
+      body nav article,
       body header > div,
-      body header > section,
+      body header section,
+      body header aside,
+      body header article,
       body main > div,
-      body main > section,
+      body main section,
+      body main aside,
+      body main article,
       body footer > div,
-      body footer > section {
-        max-width: 98%; } }
+      body footer section,
+      body footer aside,
+      body footer article {
+        max-width: 80%;
+        width: 80%; } }
     @media screen and (min-width: 1980px) {
-      body > nav > div,
-      body > nav > section,
+      body nav > div,
+      body nav section,
+      body nav aside,
+      body nav article,
       body header > div,
-      body header > section,
+      body header section,
+      body header aside,
+      body header article,
       body main > div,
-      body main > section,
+      body main section,
+      body main aside,
+      body main article,
       body footer > div,
-      body footer > section {
+      body footer section,
+      body footer aside,
+      body footer article {
         max-width: 1920px; } }
-  body p {
-    padding: 0.75rem 0;
-    margin: 0.75 0rem; }
 
 nav {
   background-color: #ffffff; }
   nav > section,
   nav div,
   nav ul {
-    min-height: 10vh;
-    display: flex;
-    align-items: stretch; }
+    display: block; }
+    @media all and (min-width: 960px) {
+      nav > section,
+      nav div,
+      nav ul {
+        display: flex;
+        align-items: center;
+        height: 10vh; } }
     nav > section a,
     nav div a,
     nav ul a {
-      height: inherit !important;
-      display: inline-flex;
       text-align: center;
-      align-items: center;
-      align-content: stretch;
-      padding: 0 2rem;
-      text-decoration: none; }
-      nav > section a:hover, nav > section a:focus,
-      nav div a:hover,
-      nav div a:focus,
-      nav ul a:hover,
-      nav ul a:focus {
-        background-color: #f2f2f2;
-        opacity: 0.95; }
+      padding: 0.5rem;
+      text-decoration: none;
+      display: block; }
       nav > section a:first-child,
       nav div a:first-child,
       nav ul a:first-child {
-        padding: 0;
-        padding-right: 1rem;
         text-align: center;
-        align-items: center;
         height: 100% !important; }
         nav > section a:first-child:hover, nav > section a:first-child:focus,
         nav div a:first-child:hover,
@@ -123,11 +139,26 @@ nav {
         nav ul a:first-child:hover,
         nav ul a:first-child:focus {
           background-color: transparent; }
-      @media all and (max-width: 580px) {
+      nav > section a:hover, nav > section a:focus,
+      nav div a:hover,
+      nav div a:focus,
+      nav ul a:hover,
+      nav ul a:focus {
+        background-color: #f2f2f2;
+        opacity: 0.95; }
+      @media all and (min-width: 980px) {
         nav > section a,
         nav div a,
         nav ul a {
-          display: block; } }
+          height: 100% !important;
+          display: inline-flex;
+          align-items: center;
+          padding: 0 2rem; }
+          nav > section a:first-child,
+          nav div a:first-child,
+          nav ul a:first-child {
+            padding: 0;
+            padding-right: 1rem; } }
 
 header {
   height: 40vh;
@@ -164,6 +195,10 @@ footer {
 
 
 **/
+p {
+  padding: 0.75rem 0;
+  margin: 0.75 0rem; }
+
 /**
  * navbar
  */
@@ -187,7 +222,8 @@ footer {
   font-weight: 800; }
 
 p {
-  line-height: 1.5 !important; }
+  line-height: 1.5 !important;
+  color: inherit; }
 
 /**
  * ui layout
