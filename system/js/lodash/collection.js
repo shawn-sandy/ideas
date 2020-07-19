@@ -1,7 +1,7 @@
 /**
  * @license
  * Lodash (Custom Build) <https://lodash.com/>
- * Build: `lodash include="forEach,size,orderBy" -o system/js/_collection.js -m`
+ * Build: `lodash include="forEach,size,orderBy" -o system/js/lodash/collection.js -m`
  * Copyright JS Foundation and other contributors <https://js.foundation/>
  * Released under MIT license <https://lodash.com/license>
  * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>

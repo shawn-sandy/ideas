@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "run-p serve watch:*",
     "serve": "eleventy --serve",
-    "eleventy": "npm run clean run-s npm eleventy --serve",
+    "eleventy": "run-s eleventy --serve",
     "build": "npx @11ty/eleventy",
     "parcel": "parcel build main.js --out-dir build/uikit --no-minify",
     "parcel-css": "parcel build styles.js --no-content-hash --out-dir system/styles/css --no-minify",
@@ -15,10 +15,10 @@
     "changelog": "auto-changelog -p --template config/_changelog.hbs",
     "debug": "cd system/debug",
     "tokens": "style-dictionary build --config ./tokens.js",
-    "lodash": "npm run _collection && npm run _function && npm run _array",
-    "_collection": "lodash include=forEach,size,orderBy -o system/js/_collection.js",
-    "_array": "lodash include=chunk,size -o system/js/_array.js",
-    "_function": "lodash include=debounce,throttle -o system/js/_function.js",
+    "lodash": "run-s  lodash:*",
+    "lodash:collection": "lodash include=forEach,size,orderBy -o system/js/lodash/collection.js -m",
+    "lodash:array": "lodash include=chunk,size -o system/js/lodash/array.js -m",
+    "lodash:function": "lodash include=debounce,throttle -o system/js/lodash/function.js -m",
     "clean": "rm -rf www"
   },
   "directories": {
