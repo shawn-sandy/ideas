@@ -418,5 +418,10 @@ ol, ul, dl {
   ol > * + *, ul > * + *, dl > * + * {
     margin-top: .7rem; }
 
+span > ol, span ul {
+  list-style: none;
+  margin-left: .0rem;
+  padding-left: 0rem; }
+
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */

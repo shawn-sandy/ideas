@@ -6,4 +6,12 @@
       margin-top: .7rem;
     }
   }
+
+  span  {
+    > ol, ul {
+      list-style: none;
+      margin-left: .0rem;
+      padding-left: 0rem;
+    }
+  }
 }
