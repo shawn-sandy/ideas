@@ -7,7 +7,7 @@ module.exports = async function () {
   // let url = "https://api.npms.io/v2/package/react";
   let url = "https://api.github.com/repos/shawn-sandy/ideas";
   let json = await Cache(url, {
-    duration: "1s",
+    duration: "1w",
     type: "json"
   });
   return json
