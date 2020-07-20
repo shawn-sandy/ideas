@@ -5,13 +5,15 @@
     width: 99%;
     border-radius: 2px;
     display: flex;
-    height: 300px;
+    min-height: 1.5rem;
+
     overflow: hidden;
     overflow-y: auto;
     // display: block;
     @extend %scrollbars;
     > textarea {
       width: 99%;
+      height: 300px;
       background-color: transparent;
       color: $mx-silver;
       // padding: 1.5rem;
