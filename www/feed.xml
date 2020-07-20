@@ -30,13 +30,13 @@
   </entry>
   
   <entry>
-    <title>Getting Started.</title>
+    <title>Getting Started</title>
     <link href="https://example.com/" />
     <updated>2020-07-17T01:09:20.587-04:00</updated>
     <id>https://example.com/</id>
     <content type="html">
 &lt;article class=&quot;container&quot;&gt;
-    &lt;h1 class=&quot; ui-gray ui-font-size-9lg roboto-slab&quot;&gt;Getting Started....&lt;/h1&gt;
+    &lt;h1 class=&quot; ui-gray ui-font-size-9lg roboto-slab&quot;&gt;Getting Started...&lt;/h1&gt;
 
     &lt;p&gt;Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto vero quia omnis eos consectetur, magni saepe
         doloribus alias. Ratione explicabo autem non ab itaque? Architecto vel repellendus quibusdam enim porro?&lt;/p&gt;
