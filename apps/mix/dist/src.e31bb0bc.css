@@ -9,17 +9,17 @@
 
 
 **/
-code::-webkit-scrollbar, code > textarea::-webkit-scrollbar {
+code > textarea::-webkit-scrollbar {
   width: 0.7rem;
   border-radius: 4px; }
-  code::-webkit-scrollbar:hover, code > textarea::-webkit-scrollbar:hover {
+  code > textarea::-webkit-scrollbar:hover {
     cursor: pointer; }
 
-code::-webkit-scrollbar-track, code > textarea::-webkit-scrollbar-track {
+code > textarea::-webkit-scrollbar-track {
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 1rem; }
 
-code::-webkit-scrollbar-thumb, code > textarea::-webkit-scrollbar-thumb {
+code > textarea::-webkit-scrollbar-thumb {
   cursor: pointer;
   background-color: gray;
   border-radius: 1rem; }
@@ -29,11 +29,14 @@ button[type="submit"],
 button[aria-label] {
   font-size: 1.2rem; }
 
+body p span:first-of-type {
+  font-family: "Roboto Slab", serif; }
+
 /**
  * navbar
  */
 html {
-  font-family: “Roboto”, -apple-system, BlinkMacSystemFont, “Segoe UI”, “Oxygen”, “Ubuntu”, “Cantarell”, “Fira Sans”, “Droid Sans”, “Helvetica Neue”, sans-serif;
+  font-family: “Segoe UI”, BlinkMacSystemFont, “Oxygen”, “Ubuntu”, “Cantarell”, “Fira Sans”, “Droid Sans”, “Helvetica Neue”, sans-serif;
   -webkit-font-smoothing: antialiased !important;
   height: 100% !important;
   font-size: 85%;
@@ -142,6 +145,8 @@ body {
     color: #fff; }
     body > footer p {
       text-align: center; }
+  body p span:first-of-type {
+    font-size: 1.3rem; }
   body section aside {
     padding: 1rem; }
   body hr {
@@ -264,10 +269,6 @@ nav[aria-label] {
     nav[aria-label] li:focus {
       background-color: rgba(0, 0, 0, 0.1);
       opacity: 0.95; }
-    nav[aria-label] a:first-of-type,
-    nav[aria-label] li:first-of-type {
-      margin-left: 0;
-      padding-left: 0; }
     @media all and (min-width: 980px) {
       nav[aria-label] a,
       nav[aria-label] li {
@@ -386,9 +387,10 @@ section > [role="list"] {
     flex: 1 1 33%;
     padding: 1rem;
     line-height: 1.6; }
-  @media all and (min-width: 580px) and (min-width: 980px) {
+  @media all and (min-width: 580px) and (mmax-width: 980px) {
     section > [role="list"] footer [role="listitem"] {
-      max-width: auto; } }
+      max-width: auto;
+      flex: 1 1 100%; } }
 
 code {
   background-color: rgba(0, 0, 0, 0.8);
@@ -396,11 +398,17 @@ code {
   width: 99%;
   border-radius: 2px;
   display: flex;
-  height: 300px;
+  min-height: 1.5rem;
   overflow: hidden;
   overflow-y: auto; }
+  code > span {
+    padding: 0 .5rem;
+    display: inline-flex;
+    width: auto;
+    font-size: 0.8rem !important; }
   code > textarea {
     width: 99%;
+    height: 300px;
     background-color: transparent;
     color: silver;
     margin: 1rem;
@@ -410,6 +418,17 @@ code {
     border-color: transparent;
     resize: none;
     outline: none; }
+
+ol, ul, dl {
+  margin-left: .0rem;
+  padding-left: 1.5rem; }
+  ol > * + *, ul > * + *, dl > * + * {
+    margin-top: .7rem; }
+
+span > ol, span ul {
+  list-style: none;
+  margin-left: .0rem;
+  padding-left: 0rem; }
 
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */

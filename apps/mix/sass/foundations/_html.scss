@@ -85,6 +85,13 @@
       color: $mx-footer-color;
     }
 
+  p {
+    span:first-of-type {
+      font-size: 1.3rem;
+      @extend %roboto;
+      }
+  }
+
     section {
       aside {
         padding: 1rem;
