@@ -29,11 +29,14 @@ button[type="submit"],
 button[aria-label] {
   font-size: 1.2rem; }
 
+body p span:first-of-type {
+  font-family: "Roboto Slab", serif; }
+
 /**
  * navbar
  */
 html {
-  font-family: “Roboto”, -apple-system, BlinkMacSystemFont, “Segoe UI”, “Oxygen”, “Ubuntu”, “Cantarell”, “Fira Sans”, “Droid Sans”, “Helvetica Neue”, sans-serif;
+  font-family: “Segoe UI”, BlinkMacSystemFont, “Oxygen”, “Ubuntu”, “Cantarell”, “Fira Sans”, “Droid Sans”, “Helvetica Neue”, sans-serif;
   -webkit-font-smoothing: antialiased !important;
   height: 100% !important;
   font-size: 85%;
@@ -142,6 +145,8 @@ body {
     color: #fff; }
     body > footer p {
       text-align: center; }
+  body p span:first-of-type {
+    font-size: 1.3rem; }
   body section aside {
     padding: 1rem; }
   body hr {
@@ -264,10 +269,6 @@ nav[aria-label] {
     nav[aria-label] li:focus {
       background-color: rgba(0, 0, 0, 0.1);
       opacity: 0.95; }
-    nav[aria-label] a:first-of-type,
-    nav[aria-label] li:first-of-type {
-      margin-left: 0;
-      padding-left: 0; }
     @media all and (min-width: 980px) {
       nav[aria-label] a,
       nav[aria-label] li {
@@ -410,6 +411,12 @@ code {
     border-color: transparent;
     resize: none;
     outline: none; }
+
+ol, ul, dl {
+  margin-left: .0rem;
+  padding-left: 1.5rem; }
+  ol > * + *, ul > * + *, dl > * + * {
+    margin-top: .7rem; }
 
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */
