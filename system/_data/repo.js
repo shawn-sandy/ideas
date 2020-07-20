@@ -1,14 +1,12 @@
 const Cache = require("@11ty/eleventy-cache-assets");
-let Package = require('../js/packages')
 
 module.exports = async function ($repo = "https://registry.npmjs.org/@shawnsandy/ideas") {
-
   try {
     // https://developer.github.com/v3/repos/#get
     // let url = "https://api.npms.io/v2/package/react";
     let url = $repo;
     let json = await Cache(url, {
-      duration: "1s",
+      duration: "1w",
       type: "json"
     });
     return {
