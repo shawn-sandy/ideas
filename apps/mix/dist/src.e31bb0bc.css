@@ -9,17 +9,17 @@
 
 
 **/
-code::-webkit-scrollbar, code > textarea::-webkit-scrollbar {
+code > textarea::-webkit-scrollbar {
   width: 0.7rem;
   border-radius: 4px; }
-  code::-webkit-scrollbar:hover, code > textarea::-webkit-scrollbar:hover {
+  code > textarea::-webkit-scrollbar:hover {
     cursor: pointer; }
 
-code::-webkit-scrollbar-track, code > textarea::-webkit-scrollbar-track {
+code > textarea::-webkit-scrollbar-track {
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 1rem; }
 
-code::-webkit-scrollbar-thumb, code > textarea::-webkit-scrollbar-thumb {
+code > textarea::-webkit-scrollbar-thumb {
   cursor: pointer;
   background-color: gray;
   border-radius: 1rem; }
@@ -387,9 +387,10 @@ section > [role="list"] {
     flex: 1 1 33%;
     padding: 1rem;
     line-height: 1.6; }
-  @media all and (min-width: 580px) and (min-width: 980px) {
+  @media all and (min-width: 580px) and (mmax-width: 980px) {
     section > [role="list"] footer [role="listitem"] {
-      max-width: auto; } }
+      max-width: auto;
+      flex: 1 1 100%; } }
 
 code {
   background-color: rgba(0, 0, 0, 0.8);
@@ -400,6 +401,11 @@ code {
   min-height: 1.5rem;
   overflow: hidden;
   overflow-y: auto; }
+  code > span {
+    padding: 0 .5rem;
+    display: inline-flex;
+    width: auto;
+    font-size: 0.8rem !important; }
   code > textarea {
     width: 99%;
     height: 300px;

@@ -6,11 +6,16 @@
     border-radius: 2px;
     display: flex;
     min-height: 1.5rem;
-
+    > span {
+      padding: 0 .5rem;
+      display: inline-flex;
+      width: auto;
+      font-size: 0.8rem !important;
+    }
     overflow: hidden;
     overflow-y: auto;
     // display: block;
-    @extend %scrollbars;
+    // @extend %scrollbars;
     > textarea {
       width: 99%;
       height: 300px;

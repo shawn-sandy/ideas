@@ -14,10 +14,11 @@
         line-height: 1.6;
       }
 
-      @media all and (min-width: 580px) and (min-width: 980px) {
+      @media all and (min-width: 580px) and (mmax-width: 980px) {
         footer {
           [role="listitem"] {
             max-width: auto;
+            flex: 1 1 100%;
           }
         }
       }
