@@ -2,7 +2,7 @@
   "name": "ideas",
   "version": "0.0.1",
   "private": true,
-  "description": "A UI toolkit for creating and managing digital apps, products, design systems, pattern libraries, style-guides, etc.",
+  "description": "A UI toolkit for creating and managing style-guides,design systems, pattern libraries, apps, digital products, etc.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "run-p serve watch:*",
