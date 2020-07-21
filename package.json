@@ -2,7 +2,7 @@
   "name": "ideas",
   "version": "0.0.1",
   "private": true,
-  "description": "A UI toolkit for creating and managing digital apps, products, design systems, pattern libraries, style-guides, etc.",
+  "description": "A UI toolkit for creating and managing style-guides,design systems, pattern libraries, apps, digital products, etc.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "run-p serve watch:*",
@@ -49,7 +49,7 @@
     "@11ty/eleventy-plugin-rss": "^1.0.7",
     "@fortawesome/fontawesome-free": "^5.14.0",
     "@shawnsandy/ideas": "^0.1.14",
-    "@shawnsandy/mix": "^0.8.13",
+    "@shawnsandy/mix": "^0.9.1",
     "auto-changelog": "^2.2.0",
     "flat-cache": "^2.0.1",
     "fs": "0.0.2",
