@@ -25,12 +25,18 @@
     "test": "echo \"Error: run tests from root\" && exit 1",
     "start": "parcel src/index.html -p 3050 --open",
     "parcel": "parcel build src/*.js src/themes/*.js --no-content-hash -d builds",
+    "dist": "run-s clean:* build:*",
+    "build:paint": "parcel build src/*.js src/themes/*.js --no-content-hash -d builds --out-dir dist/fp",
     "tokens": "style-dictionary build --config ./config/config.js && gulp sass",
     "clean": "rm -rf dist && rm -rf builds",
+    "clean:builds": "rm -rf dist",
     "test-tokens": "style-dictionary build --config ./config/config.js && gulp sass",
     "mix-tokens": "style-dictionary build --config ./config/mix-tokens.js && gulp sass",
     "build": "npm run tokens && gulp sass"
   },
+  "files": [
+    "dist"
+  ],
   "bugs": {
     "url": "https://github.com/shawn-sandy/idea/issues"
   },
