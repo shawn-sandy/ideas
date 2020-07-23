@@ -34,9 +34,6 @@
     "mix-tokens": "style-dictionary build --config ./config/mix-tokens.js && gulp sass",
     "build": "npm run tokens && gulp sass"
   },
-  "files": [
-    "dist"
-  ],
   "bugs": {
     "url": "https://github.com/shawn-sandy/idea/issues"
   },
