@@ -1,0 +1,48 @@
+{
+  "name": "@shawnsandy/first-paint",
+  "version": "0.0.1",
+  "description": "First Paint is an easy to use CSS/SCSS starter library that contains accessibility focused, classless, semantic HTML elements and components for quickly scaffolding/building modern, lightweight mobile friendly websites.",
+  "keywords": [
+    "CSS",
+    "Toolkit",
+    "SCSS",
+    "HTML",
+    "Classless",
+    "SEMANTIC"
+  ],
+  "author": "shawn-sandy <creative@shawnsandy.com>",
+  "homepage": "https://github.com/shawn-sandy/ideas#readme",
+  "license": "MIT",
+  "main": "dist/index.scss",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shawn-sandy/ideas.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "start": "run-s clean parcel",
+    "parcel": "parcel index.html --out-dir www",
+    "build": "run-s clean build:parcel",
+    "build:parcel": "parcel build index.js --no-content-hash --out-dir dist",
+    "clean": "rm -rf www"
+  },
+  "bugs": {
+    "url": "https://github.com/shawn-sandy/ideas/issues"
+  },
+  "devDependencies": {
+    "@shawnsandy/mix": "^0.9.4",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^1.12.4",
+    "posthtml-include": "^1.4.3"
+  }
+}

@@ -4,6 +4,7 @@
     -webkit-font-smoothing: antialiased !important;
     height: 100% !important;
     font-size: 85%;
+    scroll-behavior: smooth;
 
     @media all and (min-width: 580px) {
       font-size: 95%;
@@ -85,12 +86,12 @@
       color: $mx-footer-color;
     }
 
-  p {
-    span:first-of-type {
-      font-size: 1.3rem;
-      @extend %roboto;
+    p {
+      span:first-of-type {
+        font-size: 1.3rem;
+        @extend %roboto;
       }
-  }
+    }
 
     section {
       aside {
@@ -106,5 +107,4 @@
   [aria-hidden] {
     display: none;
   }
-
 }
