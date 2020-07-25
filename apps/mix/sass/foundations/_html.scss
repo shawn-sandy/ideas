@@ -85,12 +85,12 @@
       color: $mx-footer-color;
     }
 
-  p {
-    span:first-of-type {
-      font-size: 1.3rem;
-      @extend %roboto;
+    p {
+      span:first-of-type {
+        font-size: 1.3rem;
+        @extend %roboto;
       }
-  }
+    }
 
     section {
       aside {
@@ -106,5 +106,4 @@
   [aria-hidden] {
     display: none;
   }
-
 }

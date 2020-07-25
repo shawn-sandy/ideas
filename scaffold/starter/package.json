@@ -1,0 +1,34 @@
+{
+  "name": "PLEASE CHANGE",
+  "version": "0.0.1",
+  "description": "Package description here",
+  "keywords": [
+    "add keywords"
+  ],
+  "author": "name <email@domain.com>",
+  "homepage": "https://github.com/repo/name#readme",
+  "license": "MIT",
+  "main": "index",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/repo/name.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/repo/name/issues"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "parcel": "^1.12.4",
+    "posthtml-include": "^1.4.3"
+  }
+}
