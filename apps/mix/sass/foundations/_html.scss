@@ -4,6 +4,7 @@
     -webkit-font-smoothing: antialiased !important;
     height: 100% !important;
     font-size: 85%;
+    scroll-behavior: smooth;
 
     @media all and (min-width: 580px) {
       font-size: 95%;
