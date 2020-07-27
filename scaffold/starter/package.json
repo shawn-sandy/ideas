@@ -1,5 +1,5 @@
 {
-  "name": "PLEASE CHANGE",
+  "name": "package name",
   "version": "0.0.1",
   "description": "Package description here",
   "keywords": [
@@ -21,7 +21,10 @@
     "url": "git+https://github.com/repo/name.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "start": "parcel index.html --open",
+    "parcel:build": "parcel build",
+    "clean": "rm -rf dist"
   },
   "bugs": {
     "url": "https://github.com/repo/name/issues"
