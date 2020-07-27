@@ -4,6 +4,7 @@ README.md
 **/_partials
 **/src
 **/dist
+scaffold
 dist
 www
 **/public
