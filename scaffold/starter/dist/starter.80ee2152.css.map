@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.scss"],"names":[],"mappings":"AAAA,IAAI,CAAC;EACH,SAAS,EAAE,IAAI;EACf,SAAS,EAAE,GAAG;EACd,MAAM,EAAE,IAAI,GACb","file":"starter.80ee2152.css","sourceRoot":"..","sourcesContent":["body {\n  font-size: 1rem;\n  max-width: 90%;\n  margin: auto;\n}\n"]}
