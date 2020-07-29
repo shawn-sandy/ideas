@@ -11,10 +11,10 @@ A simple HTML scaffolding HTML CSS JS app
 ## Usage
 
 - Create a new folder for you app
-- CD into Run `degit shawn-sandy/ideas/scaffold/starter` you can install [degit](https://github.com/Rich-Harris/degit) by installing globally `npm i -g degit`.
+- CD into Run `degit shawn-sandy/ideas/scaffold/starter`, get [degit](https://github.com/Rich-Harris/degit) by installing globally `npm i -g degit`.
 - Install NPM packages `npm i`
 - Open `package.json` and update the values for name and other properties
-- Run `npm start` to develop with HOT RELOADING
+- Run `npm start` to launch a local server and develop with HOT RELOADING
 - Run `npm build` to compile for production
 
 ## Licence (MIT)

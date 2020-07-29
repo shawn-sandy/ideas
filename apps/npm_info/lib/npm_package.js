@@ -1,7 +1,7 @@
-'use strict';
+'use strict'
 
-module.exports = npmPackage;
+module.exports = npmPackage
 
-function npmPackage() {
-    // TODO
+function npmPackage () {
+  // TODO
 }
