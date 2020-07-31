@@ -6,7 +6,7 @@ A simple HTML scaffolding HTML CSS JS app
 - JS
 - SCSS
 - POST-HTML for templating
-- Parcel to compile scss/jss live reloading
+- Parcel to compile scss/js with live reloading
 
 ## Usage
 
