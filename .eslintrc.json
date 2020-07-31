@@ -18,6 +18,5 @@
     "no-console": "warn",
     "no-alert": "error",
     "no-debugger": "error"
-
   }
 }

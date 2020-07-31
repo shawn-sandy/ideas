@@ -32,7 +32,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addWatchTarget("www/**/*.css");
 
-  // // Minify our HTML
+ // Minify our HTML
   eleventyConfig.addTransform("htmlmin", (content, outputPath) => {
     if (outputPath.endsWith(".html")) {
       let minified = htmlmin.minify(content, {

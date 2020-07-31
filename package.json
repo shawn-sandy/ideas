@@ -2,7 +2,7 @@
   "name": "ideas",
   "version": "0.0.1",
   "private": true,
-  "description": "A UI toolkit for creating and managing style-guides,design systems, pattern libraries, apps, digital products, etc.",
+  "description": "A UI toolkit for creating and managing style-guides, design systems, pattern libraries, apps, digital products, etc.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "run-p serve watch:*",
@@ -19,7 +19,8 @@
     "lodash:collection": "lodash include=forEach,size,orderBy -o system/js/lodash/collection.js -m",
     "lodash:array": "lodash include=chunk,size -o system/js/lodash/array.js -m",
     "lodash:function": "lodash include=debounce,throttle -o system/js/lodash/function.js -m",
-    "clean": "rm -rf www"
+    "clean": "rm -rf www",
+    "audit": "lighthouse https://shawnsandy.com/ --output=json --output-path=./audits/report.json --config-path=.lighthouseconfig.js"
   },
   "directories": {
     "lib": "dist",
@@ -71,6 +72,7 @@
     "gulp-string-replace": "^1.1.2",
     "html-minifier": "^4.0.0",
     "lerna": "^3.22.1",
+    "lighthouse": "^6.1.1",
     "mvp": "git+https://github.com/shawn-sandy/mvp.git",
     "node-fetch": "^2.6.0",
     "npm-run-all": "^4.1.5",
