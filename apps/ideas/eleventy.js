@@ -27,4 +27,12 @@ module.exports = (eleventy, options = {}) => {
   eleventy.addCollection('pages', (collection) => {
     return collection.getFilteredByGlob(siteMap)
   })
+
+  eleventy.addPairedShortCode('clip', (content, description) => {
+    return elements.copyElement(content, description)
+  })
+
+  eleventy.addPairedShortCode('cliptext', (content, description) => {
+    return elements.copyString(content, description)
+  })
 }

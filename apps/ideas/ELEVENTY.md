@@ -24,17 +24,17 @@ Structured collections for your design system/methodology--create collections by
 * Install [Clipboard.js](https://clipboardjs.com)
 
 ``` html
-{% CopyElement %}
+{% clip %}
 copy element
-{% endCopyElement %}
+{% endclip %}
 ```
 
 * Copy a string  - generates a button that copied a string
 
 ``` html
-{% CopyString "String to copy here", "button button-md m-2" %}
+{% cliptext "String to copy here", "classnames... button button-md m-2" %}
 copy string
-{% endCopyString %}
+{% endcliptext%}
 ```
 
 **Manual Usage**
@@ -54,4 +54,3 @@ copy string
     copy string <i class="fad fa-copy" aria-hidden="true"></i>
 </button>
 ```
-
