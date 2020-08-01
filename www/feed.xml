@@ -4,7 +4,7 @@
   <subtitle>I am writing about my experiences as a naval navel-gazer.</subtitle>
   <link href="https://example.com/feed.xml" rel="self" />
   <link href="https://example.com/" />
-  <updated>2020-07-25T15:43:25.316-04:00</updated>
+  <updated>2020-07-25T15:43:25-04:00</updated>
   <id>https://example.com/</id>
   <author>
     <name>Boaty McBoatFace</name>
@@ -14,7 +14,7 @@
   <entry>
     <title>shawnsandy.com</title>
     <link href="https://example.com/apps/css-modal/" />
-    <updated>2020-07-17T01:09:20.327-04:00</updated>
+    <updated>2020-07-17T01:09:20-04:00</updated>
     <id>https://example.com/apps/css-modal/</id>
     <content type="html">
 &lt;p&gt;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta quibusdam facere placeat, voluptates laborum
@@ -22,9 +22,240 @@
   </entry>
   
   <entry>
+    <title>Apps</title>
+    <link href="https://example.com/apps/" />
+    <updated>2020-07-17T01:09:20-04:00</updated>
+    <id>https://example.com/apps/</id>
+    <content type="html"></content>
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://example.com/apps/mix/builds/" />
+    <updated>2020-07-17T01:09:20-04:00</updated>
+    <id>https://example.com/apps/mix/builds/</id>
+    <content type="html">&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Atomix&lt;/title&gt;
+  &lt;meta name=&quot;description&quot; content=&quot;Atomix&quot;&gt;
+  &lt;meta name=&quot;author&quot; content=&quot;Shawn Sandy&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;script src=&quot;https://kit.fontawesome.com/e2ffdf4c70.js&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css&quot;&gt;
+  &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://example.com/src.e31bb0bc.css&quot;&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;nav class=&quot;mx-bg-lightgray border-bottom&quot; role=&quot;navigation&quot;&gt;
+    &lt;section id=&quot;navigation&quot;&gt;
+      &lt;div&gt; &lt;a href=&quot;#&quot;&gt;First Paint&lt;/a&gt; &lt;/div&gt;
+      &lt;div&gt; &lt;a href=&quot;#&quot;&gt;Blog&lt;/a&gt; &lt;a href=&quot;#&quot;&gt;About&lt;/a&gt; &lt;a href=&quot;#&quot;&gt;Contact Us&lt;/a&gt; &lt;/div&gt;
+    &lt;/section&gt;
+  &lt;/nav&gt;
+  &lt;header&gt;
+    &lt;section&gt;
+      &lt;div&gt;
+        &lt;h1&gt;FirstPaint&lt;/h1&gt;
+        &lt;h4&gt;A SASS/CSS toolkit designed to promote HTML development using semantic HTML/ARIA elements and attributes,
+          class-names optional.&lt;/h4&gt; &lt;a href=&quot;#&quot; role=&quot;button&quot; title=&quot;Add word, cta action, to your button title&quot;&gt;Read
+          the Docs&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+  &lt;/header&gt;
+  &lt;section aria-label=&quot;feature&quot;&gt;
+    &lt;div role=&quot;list&quot;&gt;
+      &lt;div role=&quot;listitem&quot;&gt;
+        &lt;h4&gt;Feature...&lt;/h4&gt; Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur assumenda,
+        porro repudiandae repellendus placeat iure officia inventore sint voluptas et blanditiis facilis voluptate quas
+        accusamus itaque ea, corporis odio.
+      &lt;/div&gt;
+      &lt;div role=&quot;listitem&quot;&gt;
+        &lt;h4&gt;Feature...&lt;/h4&gt; Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur assumenda,
+        porro repudiandae repellendus placeat iure officia inventore sint voluptas et blanditiis facilis voluptate quas
+        accusamus itaque ea, corporis odio.
+      &lt;/div&gt;
+      &lt;div role=&quot;listitem&quot;&gt;
+        &lt;h4&gt;Feature...&lt;/h4&gt; Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur assumenda,
+        porro repudiandae repellendus placeat iure officia inventore sint voluptas et blanditiis facilis voluptate quas
+        accusamus itaque ea, corporis odio.
+      &lt;/div&gt;
+      &lt;div role=&quot;listitem&quot;&gt;
+        &lt;h4&gt;Feature...&lt;/h4&gt; Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur assumenda,
+        porro repudiandae repellendus placeat iure officia inventore sint voluptas et blanditiis facilis voluptate quas
+        accusamus itaque ea, corporis odio.
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;hr&gt;
+  &lt;main&gt;
+    &lt;section class=&quot;articles&quot;&gt;
+      &lt;article&gt;
+        &lt;h3&gt;Sample Article 1&lt;/h3&gt;
+        &lt;p&gt; Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
+          doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
+          voluptatibus eaque! &lt;/p&gt;
+        &lt;p&gt; Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
+          doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
+          voluptatibus eaque! &lt;/p&gt;
+        &lt;p&gt; Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
+          doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
+          voluptatibus eaque! &lt;/p&gt;
+        &lt;footer&gt;
+          &lt;p&gt; &lt;a href=&quot;https://example.com/apps/mix/builds/&quot; role=&quot;button&quot;&gt;Read more&lt;/a&gt; &lt;/p&gt;
+          &lt;p&gt; &lt;a href=&quot;#&quot;&gt;Read more&lt;/a&gt; &lt;/p&gt;
+        &lt;/footer&gt;
+      &lt;/article&gt;
+      &lt;aside role=&quot;sidebar&quot;&gt;
+        &lt;h5&gt;Sidebar&lt;/h5&gt;
+        &lt;p&gt; Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos error, quas at facilis temporibus optio rem,
+          doloremque, modi numquam commodi illum cumque. Sit eveniet, quod expedita libero obcaecati a laudantium. &lt;/p&gt;
+      &lt;/aside&gt;
+    &lt;/section&gt;
+  &lt;/main&gt;
+  &lt;footer&gt;
+    &lt;section&gt;
+      &lt;p&gt; &lt;small&gt; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut odit expedita aliquam commodi incidunt
+          nam maiores eum sunt minima corrupti dolore, fugiat veritatis sit, nobis harum ducimus repudiandae quos
+          laboriosam? &lt;/small&gt; &lt;/p&gt;
+    &lt;/section&gt;
+  &lt;/footer&gt;
+  &lt;script src=&quot;https://example.com/src.e31bb0bc.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>AtomMix.</title>
+    <link href="https://example.com/apps/mix/" />
+    <updated>2020-07-17T01:09:20-04:00</updated>
+    <id>https://example.com/apps/mix/</id>
+    <content type="html">&lt;nav class=&quot;border-bottom&quot; role=&quot;navigation&quot;&gt;
+    &lt;section&gt;
+        &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
+        &lt;a href=&quot;#&quot;&gt;Blog&lt;/a&gt;
+        &lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;
+        &lt;a href=&quot;#&quot;&gt;Contact Us&lt;/a&gt;
+    &lt;/section&gt;
+&lt;/nav&gt;
+
+&lt;header&gt;
+    &lt;section&gt;
+        &lt;div&gt;
+            &lt;h1&gt;FirstPaint&lt;/h1&gt;
+            &lt;!-- &lt;h4&gt;A SASS library for generating stylesheets that allows you build websites with plain semantic HTML elements, no need for class-names.&lt;/h4&gt; --&gt;
+            &lt;h4&gt;A SASS/CSS library designed to help you learn/build websites with semantic HTML elements&lt;/h4&gt;
+            &lt;a href=&quot;#&quot; role=&quot;button&quot; title=&quot;Add word, cta action, to your button title&quot;&gt;Read the Docs&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+&lt;/header&gt;
+
+&lt;!-- feature section --&gt;
+&lt;section aria-label=&quot;feature grid&quot;&gt;
+    &lt;div role=&quot;list&quot;&gt;
+        &lt;aside role=&quot;listitem&quot;&gt;
+            &lt;h4&gt;Feature...&lt;/h4&gt;
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur assumenda, porro repudiandae
+            repellendus placeat iure officia inventore sint voluptas et blanditiis facilis voluptate quas accusamus
+            itaque ea, corporis odio.
+        &lt;/aside&gt;
+        &lt;aside role=&quot;listitem&quot;&gt;
+            &lt;h4&gt;Feature...&lt;/h4&gt;
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur assumenda, porro repudiandae
+            repellendus placeat iure officia inventore sint voluptas et blanditiis facilis voluptate quas accusamus
+            itaque ea, corporis odio.
+        &lt;/aside&gt;
+        &lt;aside role=&quot;listitem&quot;&gt;
+            &lt;h4&gt;Feature...&lt;/h4&gt;
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur assumenda, porro repudiandae
+            repellendus placeat iure officia inventore sint voluptas et blanditiis facilis voluptate quas accusamus
+            itaque ea, corporis odio.
+        &lt;/aside&gt;
+        &lt;aside role=&quot;listitem&quot;&gt;
+            &lt;h4&gt;Feature...&lt;/h4&gt;
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur assumenda, porro repudiandae
+            repellendus placeat iure officia inventore sint voluptas et blanditiis facilis voluptate quas accusamus
+            itaque ea, corporis odio.
+        &lt;/aside&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+&lt;hr&gt;
+&lt;main&gt;
+    &lt;section class=&quot;articles&quot;&gt;
+        &lt;article&gt;
+            &lt;h3&gt;Sample Article 1&lt;/h3&gt;
+            &lt;p&gt;
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
+                doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
+                voluptatibus eaque!
+            &lt;/p&gt;
+            &lt;p&gt;
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
+                doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
+                voluptatibus eaque!
+            &lt;/p&gt;
+            &lt;p&gt;
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
+                doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
+                voluptatibus eaque!
+            &lt;/p&gt;
+
+            &lt;footer&gt;
+                &lt;p&gt;
+                    &lt;a href=&quot;https://example.com/apps/mix/&quot; role=&quot;button&quot;&gt;Read more&lt;/a&gt;
+                &lt;/p&gt;
+                &lt;p&gt;
+                    &lt;a href=&quot;#&quot;&gt;Read more&lt;/a&gt;
+                &lt;/p&gt;
+            &lt;/footer&gt;
+        &lt;/article&gt;
+        &lt;aside role=&quot;sidebar&quot;&gt;
+            &lt;h5&gt;Sidebar&lt;/h5&gt;
+            &lt;p&gt;
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos error, quas at facilis temporibus optio
+                rem, doloremque, modi numquam commodi illum cumque. Sit eveniet, quod expedita libero obcaecati a
+                laudantium.
+            &lt;/p&gt;
+        &lt;/aside&gt;
+    &lt;/section&gt;
+
+&lt;/main&gt;
+&lt;hr&gt;
+&lt;section&gt;
+    &lt;div&gt;
+        &lt;h4&gt;Documentation&lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;ul&gt;
+        &lt;li&gt;one&lt;/li&gt;
+        &lt;li&gt;two&lt;/li&gt;
+        &lt;li&gt;three&lt;/li&gt;
+    &lt;/ul&gt;
+
+&lt;/section&gt;
+&lt;footer&gt;
+    &lt;section&gt;
+
+        &lt;p&gt;
+            &lt;small&gt;
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut odit expedita aliquam commodi incidunt nam
+                maiores eum sunt minima corrupti dolore, fugiat veritatis sit, nobis harum ducimus repudiandae quos
+                laboriosam?
+            &lt;/small&gt;
+        &lt;/p&gt;
+    &lt;/section&gt;
+&lt;/footer&gt;
+</content>
+  </entry>
+  
+  <entry>
     <title>News and Articles</title>
     <link href="https://example.com/content/" />
-    <updated>2020-07-17T01:09:20.583-04:00</updated>
+    <updated>2020-07-17T01:09:20-04:00</updated>
     <id>https://example.com/content/</id>
     <content type="html"></content>
   </entry>
@@ -32,10 +263,10 @@
   <entry>
     <title>Getting Started</title>
     <link href="https://example.com/" />
-    <updated>2020-07-17T01:09:20.587-04:00</updated>
+    <updated>2020-07-17T01:09:20-04:00</updated>
     <id>https://example.com/</id>
     <content type="html">
-&lt;article class=&quot;container&quot;&gt;
+
     &lt;h1 class=&quot; ui-gray ui-font-size-9lg roboto-slab&quot;&gt;Getting Started...&lt;/h1&gt;
 
     &lt;p&gt;Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto vero quia omnis eos consectetur, magni saepe
@@ -46,44 +277,6 @@
     &lt;p&gt;Ratione culpa libero laboriosam commodi ea totam a, quidem sapiente, fugit dolorem voluptatum expedita, nam
         repudiandae itaque alias quis aliquam ipsa optio. Enim tempore, ratione perferendis voluptatum corrupti quos
         molestiae.&lt;/p&gt;
-&lt;/article&gt;
-</content>
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://example.com/projects/first-paint/" />
-    <updated>2020-07-25T15:43:25.306-04:00</updated>
-    <id>https://example.com/projects/first-paint/</id>
-    <content type="html">&lt;include src=&quot;./partials/header.html&quot;&gt;
-&lt;include src=&quot;./partials/navbar.html&quot;&gt;
-&lt;!-- banner --&gt;
-&lt;include src=&quot;./partials/banner.html&quot;&gt;
-&lt;!-- feature section --&gt;
-&lt;section aria-label=&quot;feature&quot;&gt;
-  &lt;include src=&quot;./partials/grid.html&quot;&gt;
-&lt;/section&gt;
-&lt;hr&gt;
-&lt;main&gt;
-  &lt;include src=&quot;partials/main-content.html&quot;&gt;
-&lt;/main&gt;
-&lt;section&gt;
-  &lt;aside aria-label=&quot;get-started&quot;&gt;
-    &lt;h4 id=&quot;get-started&quot;&gt;Get Started&lt;/h4&gt;
-    &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque beatae officiis dicta accusantium. Nulla
-      recusandae in exercitationem inventore, minus dignissimos placeat, ratione et minima aspernatur alias, aut
-      ipsum
-      quasi nihil?&lt;/p&gt;
-  &lt;/aside&gt;
-&lt;/section&gt;
-
-&lt;include src=&quot;./partials/components.html&quot;&gt;
-&lt;include src=&quot;./partials/list.html&quot;&gt;
-&lt;include src=&quot;./partials/inputs.html&quot;&gt;
-&lt;include src=&quot;./partials/footer.html&quot;&gt;
-
-
-
 
 </content>
   </entry>
@@ -91,7 +284,7 @@
   <entry>
     <title></title>
     <link href="https://example.com/projects/first-paint/index.copy/" />
-    <updated>2020-07-25T15:43:25.305-04:00</updated>
+    <updated>2020-07-25T15:43:25-04:00</updated>
     <id>https://example.com/projects/first-paint/index.copy/</id>
     <content type="html">&lt;!doctype html&gt;
 &lt;html lang=&quot;en&quot;&gt;
@@ -216,17 +409,47 @@
   </entry>
   
   <entry>
-    <title>Apps</title>
-    <link href="https://example.com/apps/" />
-    <updated>2020-07-17T01:09:20.363-04:00</updated>
-    <id>https://example.com/apps/</id>
-    <content type="html"></content>
+    <title></title>
+    <link href="https://example.com/projects/first-paint/" />
+    <updated>2020-07-25T15:43:25-04:00</updated>
+    <id>https://example.com/projects/first-paint/</id>
+    <content type="html">&lt;include src=&quot;./partials/header.html&quot;&gt;&lt;/include&gt;
+&lt;include src=&quot;./partials/navbar.html&quot;&gt;&lt;/include&gt;
+&lt;!-- banner --&gt;
+&lt;include src=&quot;./partials/banner.html&quot;&gt;&lt;/include&gt;
+&lt;!-- feature section --&gt;
+&lt;section aria-label=&quot;feature&quot;&gt;
+  &lt;include src=&quot;./partials/grid.html&quot;&gt;&lt;/include&gt;
+&lt;/section&gt;
+&lt;hr&gt;
+&lt;main&gt;
+  &lt;include src=&quot;partials/main-content.html&quot;&gt;&lt;/include&gt;
+&lt;/main&gt;
+&lt;section&gt;
+  &lt;aside aria-label=&quot;get-started&quot;&gt;
+    &lt;h4 id=&quot;get-started&quot;&gt;Get Started&lt;/h4&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque beatae officiis dicta accusantium. Nulla
+      recusandae in exercitationem inventore, minus dignissimos placeat, ratione et minima aspernatur alias, aut
+      ipsum
+      quasi nihil?&lt;/p&gt;
+  &lt;/aside&gt;
+&lt;/section&gt;
+
+&lt;include src=&quot;./partials/components.html&quot;&gt;&lt;/include&gt;
+&lt;include src=&quot;./partials/list.html&quot;&gt;&lt;/include&gt;
+&lt;include src=&quot;./partials/inputs.html&quot;&gt;&lt;/include&gt;
+&lt;include src=&quot;./partials/footer.html&quot;&gt;&lt;/include&gt;
+
+
+
+
+</content>
   </entry>
   
   <entry>
     <title></title>
     <link href="https://example.com/projects/first-paint/partials/banner/" />
-    <updated>2020-07-25T15:43:25.311-04:00</updated>
+    <updated>2020-07-25T15:43:25-04:00</updated>
     <id>https://example.com/projects/first-paint/partials/banner/</id>
     <content type="html">&lt;header&gt;
   &lt;section role=&quot;banner&quot;&gt;
@@ -245,253 +468,8 @@
   
   <entry>
     <title></title>
-    <link href="https://example.com/projects/first-paint/partials/footer/" />
-    <updated>2020-07-25T15:43:25.312-04:00</updated>
-    <id>https://example.com/projects/first-paint/partials/footer/</id>
-    <content type="html">&lt;footer&gt;
-  &lt;section&gt;
-    &lt;p&gt;
-      &lt;small&gt;
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut odit expedita aliquam commodi incidunt nam
-        maiores eum sunt minima corrupti dolore, fugiat veritatis sit, nobis harum ducimus repudiandae quos
-        laboriosam?
-      &lt;/small&gt;
-    &lt;/p&gt;
-  &lt;/section&gt;
-&lt;/footer&gt;
-
-
-
-</content>
-  </entry>
-  
-  <entry>
-    <title>AtomMix.</title>
-    <link href="https://example.com/apps/mix/" />
-    <updated>2020-07-17T01:09:20.415-04:00</updated>
-    <id>https://example.com/apps/mix/</id>
-    <content type="html">&lt;nav class=&quot;border-bottom&quot; role=&quot;navigation&quot;&gt;
-    &lt;section&gt;
-        &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
-        &lt;a href=&quot;#&quot;&gt;Blog&lt;/a&gt;
-        &lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;
-        &lt;a href=&quot;#&quot;&gt;Contact Us&lt;/a&gt;
-    &lt;/section&gt;
-&lt;/nav&gt;
-
-&lt;header&gt;
-    &lt;section&gt;
-        &lt;div&gt;
-            &lt;h1&gt;FirstPaint&lt;/h1&gt;
-            &lt;!-- &lt;h4&gt;A SASS library for generating stylesheets that allows you build websites with plain semantic HTML elements, no need for class-names.&lt;/h4&gt; --&gt;
-            &lt;h4&gt;A SASS/CSS library designed to help you learn/build websites with semantic HTML elements&lt;/h4&gt;
-            &lt;a href=&quot;#&quot; role=&quot;button&quot; title=&quot;Add word, cta action, to your button title&quot;&gt;Read the Docs&lt;/a&gt;
-        &lt;/div&gt;
-    &lt;/section&gt;
-&lt;/header&gt;
-
-&lt;!-- feature section --&gt;
-&lt;section aria-label=&quot;feature grid&quot;&gt;
-    &lt;div role=&quot;list&quot;&gt;
-        &lt;aside role=&quot;listitem&quot;&gt;
-            &lt;h4&gt;Feature...&lt;/h4&gt;
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur assumenda, porro repudiandae
-            repellendus placeat iure officia inventore sint voluptas et blanditiis facilis voluptate quas accusamus
-            itaque ea, corporis odio.
-        &lt;/aside&gt;
-        &lt;aside role=&quot;listitem&quot;&gt;
-            &lt;h4&gt;Feature...&lt;/h4&gt;
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur assumenda, porro repudiandae
-            repellendus placeat iure officia inventore sint voluptas et blanditiis facilis voluptate quas accusamus
-            itaque ea, corporis odio.
-        &lt;/aside&gt;
-        &lt;aside role=&quot;listitem&quot;&gt;
-            &lt;h4&gt;Feature...&lt;/h4&gt;
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur assumenda, porro repudiandae
-            repellendus placeat iure officia inventore sint voluptas et blanditiis facilis voluptate quas accusamus
-            itaque ea, corporis odio.
-        &lt;/aside&gt;
-        &lt;aside role=&quot;listitem&quot;&gt;
-            &lt;h4&gt;Feature...&lt;/h4&gt;
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur assumenda, porro repudiandae
-            repellendus placeat iure officia inventore sint voluptas et blanditiis facilis voluptate quas accusamus
-            itaque ea, corporis odio.
-        &lt;/aside&gt;
-    &lt;/div&gt;
-&lt;/section&gt;
-&lt;hr&gt;
-&lt;main&gt;
-    &lt;section class=&quot;articles&quot;&gt;
-        &lt;article&gt;
-            &lt;h3&gt;Sample Article 1&lt;/h3&gt;
-            &lt;p&gt;
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
-                doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
-                voluptatibus eaque!
-            &lt;/p&gt;
-            &lt;p&gt;
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
-                doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
-                voluptatibus eaque!
-            &lt;/p&gt;
-            &lt;p&gt;
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
-                doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
-                voluptatibus eaque!
-            &lt;/p&gt;
-
-            &lt;footer&gt;
-                &lt;p&gt;
-                    &lt;a href=&quot;https://example.com/apps/mix/&quot; role=&quot;button&quot;&gt;Read more&lt;/a&gt;
-                &lt;/p&gt;
-                &lt;p&gt;
-                    &lt;a href=&quot;#&quot;&gt;Read more&lt;/a&gt;
-                &lt;/p&gt;
-            &lt;/footer&gt;
-        &lt;/article&gt;
-        &lt;aside role=&quot;sidebar&quot;&gt;
-            &lt;h5&gt;Sidebar&lt;/h5&gt;
-            &lt;p&gt;
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos error, quas at facilis temporibus optio
-                rem, doloremque, modi numquam commodi illum cumque. Sit eveniet, quod expedita libero obcaecati a
-                laudantium.
-            &lt;/p&gt;
-        &lt;/aside&gt;
-    &lt;/section&gt;
-
-&lt;/main&gt;
-&lt;hr&gt;
-&lt;section&gt;
-    &lt;div&gt;
-        &lt;h4&gt;Documentation&lt;/h4&gt;
-    &lt;/div&gt;
-    &lt;ul&gt;
-        &lt;li&gt;one&lt;/li&gt;
-        &lt;li&gt;two&lt;/li&gt;
-        &lt;li&gt;three&lt;/li&gt;
-    &lt;/ul&gt;
-
-&lt;/section&gt;
-&lt;footer&gt;
-    &lt;section&gt;
-
-        &lt;p&gt;
-            &lt;small&gt;
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut odit expedita aliquam commodi incidunt nam
-                maiores eum sunt minima corrupti dolore, fugiat veritatis sit, nobis harum ducimus repudiandae quos
-                laboriosam?
-            &lt;/small&gt;
-        &lt;/p&gt;
-    &lt;/section&gt;
-&lt;/footer&gt;
-</content>
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://example.com/apps/mix/builds/" />
-    <updated>2020-07-17T01:09:20.371-04:00</updated>
-    <id>https://example.com/apps/mix/builds/</id>
-    <content type="html">&lt;!doctype html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-
-&lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot;&gt;
-  &lt;title&gt;Atomix&lt;/title&gt;
-  &lt;meta name=&quot;description&quot; content=&quot;Atomix&quot;&gt;
-  &lt;meta name=&quot;author&quot; content=&quot;Shawn Sandy&quot;&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-  &lt;script src=&quot;https://kit.fontawesome.com/e2ffdf4c70.js&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css&quot;&gt;
-  &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://example.com/src.e31bb0bc.css&quot;&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-  &lt;nav class=&quot;mx-bg-lightgray border-bottom&quot; role=&quot;navigation&quot;&gt;
-    &lt;section id=&quot;navigation&quot;&gt;
-      &lt;div&gt; &lt;a href=&quot;#&quot;&gt;First Paint&lt;/a&gt; &lt;/div&gt;
-      &lt;div&gt; &lt;a href=&quot;#&quot;&gt;Blog&lt;/a&gt; &lt;a href=&quot;#&quot;&gt;About&lt;/a&gt; &lt;a href=&quot;#&quot;&gt;Contact Us&lt;/a&gt; &lt;/div&gt;
-    &lt;/section&gt;
-  &lt;/nav&gt;
-  &lt;header&gt;
-    &lt;section&gt;
-      &lt;div&gt;
-        &lt;h1&gt;FirstPaint&lt;/h1&gt;
-        &lt;h4&gt;A SASS/CSS toolkit designed to promote HTML development using semantic HTML/ARIA elements and attributes,
-          class-names optional.&lt;/h4&gt; &lt;a href=&quot;#&quot; role=&quot;button&quot; title=&quot;Add word, cta action, to your button title&quot;&gt;Read
-          the Docs&lt;/a&gt;
-      &lt;/div&gt;
-    &lt;/section&gt;
-  &lt;/header&gt;
-  &lt;section aria-label=&quot;feature&quot;&gt;
-    &lt;div role=&quot;list&quot;&gt;
-      &lt;div role=&quot;listitem&quot;&gt;
-        &lt;h4&gt;Feature...&lt;/h4&gt; Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur assumenda,
-        porro repudiandae repellendus placeat iure officia inventore sint voluptas et blanditiis facilis voluptate quas
-        accusamus itaque ea, corporis odio.
-      &lt;/div&gt;
-      &lt;div role=&quot;listitem&quot;&gt;
-        &lt;h4&gt;Feature...&lt;/h4&gt; Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur assumenda,
-        porro repudiandae repellendus placeat iure officia inventore sint voluptas et blanditiis facilis voluptate quas
-        accusamus itaque ea, corporis odio.
-      &lt;/div&gt;
-      &lt;div role=&quot;listitem&quot;&gt;
-        &lt;h4&gt;Feature...&lt;/h4&gt; Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur assumenda,
-        porro repudiandae repellendus placeat iure officia inventore sint voluptas et blanditiis facilis voluptate quas
-        accusamus itaque ea, corporis odio.
-      &lt;/div&gt;
-      &lt;div role=&quot;listitem&quot;&gt;
-        &lt;h4&gt;Feature...&lt;/h4&gt; Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur assumenda,
-        porro repudiandae repellendus placeat iure officia inventore sint voluptas et blanditiis facilis voluptate quas
-        accusamus itaque ea, corporis odio.
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-  &lt;hr&gt;
-  &lt;main&gt;
-    &lt;section class=&quot;articles&quot;&gt;
-      &lt;article&gt;
-        &lt;h3&gt;Sample Article 1&lt;/h3&gt;
-        &lt;p&gt; Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
-          doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
-          voluptatibus eaque! &lt;/p&gt;
-        &lt;p&gt; Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
-          doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
-          voluptatibus eaque! &lt;/p&gt;
-        &lt;p&gt; Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
-          doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
-          voluptatibus eaque! &lt;/p&gt;
-        &lt;footer&gt;
-          &lt;p&gt; &lt;a href=&quot;https://example.com/apps/mix/builds/&quot; role=&quot;button&quot;&gt;Read more&lt;/a&gt; &lt;/p&gt;
-          &lt;p&gt; &lt;a href=&quot;#&quot;&gt;Read more&lt;/a&gt; &lt;/p&gt;
-        &lt;/footer&gt;
-      &lt;/article&gt;
-      &lt;aside role=&quot;sidebar&quot;&gt;
-        &lt;h5&gt;Sidebar&lt;/h5&gt;
-        &lt;p&gt; Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos error, quas at facilis temporibus optio rem,
-          doloremque, modi numquam commodi illum cumque. Sit eveniet, quod expedita libero obcaecati a laudantium. &lt;/p&gt;
-      &lt;/aside&gt;
-    &lt;/section&gt;
-  &lt;/main&gt;
-  &lt;footer&gt;
-    &lt;section&gt;
-      &lt;p&gt; &lt;small&gt; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut odit expedita aliquam commodi incidunt
-          nam maiores eum sunt minima corrupti dolore, fugiat veritatis sit, nobis harum ducimus repudiandae quos
-          laboriosam? &lt;/small&gt; &lt;/p&gt;
-    &lt;/section&gt;
-  &lt;/footer&gt;
-  &lt;script src=&quot;https://example.com/src.e31bb0bc.js&quot;&gt;&lt;/script&gt;
-&lt;/body&gt;
-
-&lt;/html&gt;
-</content>
-  </entry>
-  
-  <entry>
-    <title></title>
     <link href="https://example.com/projects/first-paint/partials/components/" />
-    <updated>2020-07-25T15:43:25.311-04:00</updated>
+    <updated>2020-07-25T15:43:25-04:00</updated>
     <id>https://example.com/projects/first-paint/partials/components/</id>
     <content type="html">&lt;section aria-label=&quot;View and copy components&quot;&gt;
   &lt;aside&gt;
@@ -530,8 +508,30 @@
   
   <entry>
     <title></title>
+    <link href="https://example.com/projects/first-paint/partials/footer/" />
+    <updated>2020-07-25T15:43:25-04:00</updated>
+    <id>https://example.com/projects/first-paint/partials/footer/</id>
+    <content type="html">&lt;footer&gt;
+  &lt;section&gt;
+    &lt;p&gt;
+      &lt;small&gt;
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut odit expedita aliquam commodi incidunt nam
+        maiores eum sunt minima corrupti dolore, fugiat veritatis sit, nobis harum ducimus repudiandae quos
+        laboriosam?
+      &lt;/small&gt;
+    &lt;/p&gt;
+  &lt;/section&gt;
+&lt;/footer&gt;
+
+
+
+</content>
+  </entry>
+  
+  <entry>
+    <title></title>
     <link href="https://example.com/projects/first-paint/partials/grid/" />
-    <updated>2020-07-25T15:43:25.313-04:00</updated>
+    <updated>2020-07-25T15:43:25-04:00</updated>
     <id>https://example.com/projects/first-paint/partials/grid/</id>
     <content type="html">&lt;div role=&quot;list&quot;&gt;
   &lt;div role=&quot;listitem&quot;&gt;
@@ -571,7 +571,7 @@
   <entry>
     <title></title>
     <link href="https://example.com/projects/first-paint/partials/header/" />
-    <updated>2020-07-25T15:43:25.314-04:00</updated>
+    <updated>2020-07-25T15:43:25-04:00</updated>
     <id>https://example.com/projects/first-paint/partials/header/</id>
     <content type="html">&lt;!doctype html&gt;
 &lt;html lang=&quot;en&quot;&gt;
@@ -593,49 +593,8 @@
   
   <entry>
     <title></title>
-    <link href="https://example.com/projects/first-paint/partials/main-content/" />
-    <updated>2020-07-25T15:43:25.316-04:00</updated>
-    <id>https://example.com/projects/first-paint/partials/main-content/</id>
-    <content type="html">&lt;section id=&quot;articles&quot;&gt;
-  &lt;article&gt;
-    &lt;h2&gt;Sample Article 1&lt;/h2&gt;
-    &lt;p&gt;
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
-      doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
-      voluptatibus eaque!
-    &lt;/p&gt;
-    &lt;p&gt;
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
-      doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
-      voluptatibus eaque!
-    &lt;/p&gt;
-    &lt;p&gt;
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
-      doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
-      voluptatibus eaque!
-    &lt;/p&gt;
-
-    &lt;footer&gt;
-      &lt;p&gt;
-        &lt;a href=&quot;https://example.com/projects/first-paint/partials/main-content/&quot; role=&quot;button&quot;&gt;Read more&lt;/a&gt;
-      &lt;/p&gt;
-    &lt;/footer&gt;
-  &lt;/article&gt;
-  &lt;aside&gt;
-    &lt;h4&gt;Sidebar&lt;/h4&gt;
-    &lt;p&gt;
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos error, quas at facilis temporibus optio rem,
-      doloremque, modi numquam commodi illum cumque. Sit eveniet, quod expedita libero obcaecati a laudantium.
-    &lt;/p&gt;
-  &lt;/aside&gt;
-&lt;/section&gt;
-</content>
-  </entry>
-  
-  <entry>
-    <title></title>
     <link href="https://example.com/projects/first-paint/partials/inputs/" />
-    <updated>2020-07-25T15:43:25.315-04:00</updated>
+    <updated>2020-07-25T15:43:25-04:00</updated>
     <id>https://example.com/projects/first-paint/partials/inputs/</id>
     <content type="html">&lt;section&gt;
   &lt;div&gt;
@@ -678,7 +637,7 @@
   <entry>
     <title></title>
     <link href="https://example.com/projects/first-paint/partials/list/" />
-    <updated>2020-07-25T15:43:25.315-04:00</updated>
+    <updated>2020-07-25T15:43:25-04:00</updated>
     <id>https://example.com/projects/first-paint/partials/list/</id>
     <content type="html">&lt;section id=&quot;list-component&quot;&gt;
   &lt;div role=&quot;list&quot;&gt;
@@ -752,8 +711,49 @@
   
   <entry>
     <title></title>
+    <link href="https://example.com/projects/first-paint/partials/main-content/" />
+    <updated>2020-07-25T15:43:25-04:00</updated>
+    <id>https://example.com/projects/first-paint/partials/main-content/</id>
+    <content type="html">&lt;section id=&quot;articles&quot;&gt;
+  &lt;article&gt;
+    &lt;h2&gt;Sample Article 1&lt;/h2&gt;
+    &lt;p&gt;
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
+      doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
+      voluptatibus eaque!
+    &lt;/p&gt;
+    &lt;p&gt;
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
+      doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
+      voluptatibus eaque!
+    &lt;/p&gt;
+    &lt;p&gt;
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
+      doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
+      voluptatibus eaque!
+    &lt;/p&gt;
+
+    &lt;footer&gt;
+      &lt;p&gt;
+        &lt;a href=&quot;https://example.com/projects/first-paint/partials/main-content/&quot; role=&quot;button&quot;&gt;Read more&lt;/a&gt;
+      &lt;/p&gt;
+    &lt;/footer&gt;
+  &lt;/article&gt;
+  &lt;aside&gt;
+    &lt;h4&gt;Sidebar&lt;/h4&gt;
+    &lt;p&gt;
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos error, quas at facilis temporibus optio rem,
+      doloremque, modi numquam commodi illum cumque. Sit eveniet, quod expedita libero obcaecati a laudantium.
+    &lt;/p&gt;
+  &lt;/aside&gt;
+&lt;/section&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title></title>
     <link href="https://example.com/projects/first-paint/partials/navbar/" />
-    <updated>2020-07-25T15:43:25.316-04:00</updated>
+    <updated>2020-07-25T15:43:25-04:00</updated>
     <id>https://example.com/projects/first-paint/partials/navbar/</id>
     <content type="html">&lt;nav role=&quot;navigation&quot; aria-label=&quot;Main navigation&quot;&gt;
   &lt;section id=&quot;navigation&quot;&gt;

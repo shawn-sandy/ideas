@@ -53,7 +53,8 @@ module.exports = function (eleventyConfig) {
 
   // eleventyConfig.addPlugin(require("@shawnsandy/ideas", {siteMap: ["**/*.njk", "apps/**/*.html"];})); // siteMap defines directory to include
 
-  eleventyConfig.addPlugin(require("@shawnsandy/ideas"));
+  // eleventyConfig.addPlugin(require("@shawnsandy/ideas"));
+  eleventyConfig.addPlugin(require("./node_modules/@shawnsandy/ideas/lib/markdown"))
 
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(markdown);
