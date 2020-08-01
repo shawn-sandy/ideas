@@ -14,8 +14,7 @@
   },
   "styles": [
     "https://cdn.jsdelivr.net/npm/@shawnsandy/mix@0.9.2/dist/fp/index.css",
-    "https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;800&family=Roboto:ital,wght@0,400;0,500;0,900;1,500&display=swap",
-    "/system/styles/css/styles.css"
+    "https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;800&family=Roboto:ital,wght@0,400;0,500;0,900;1,500&display=swap"
   ],
   "scripts": [
     "/uikit/app.js"
