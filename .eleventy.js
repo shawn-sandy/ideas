@@ -2,6 +2,7 @@ const fs = require("fs");
 
 const htmlmin = require("html-minifier");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const markdown = require("@shawnsandy/ideas/lib/markdown")
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.setBrowserSyncConfig({
@@ -55,6 +56,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(require("@shawnsandy/ideas"));
 
   eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(markdown);
 
   return {
     dir: {
