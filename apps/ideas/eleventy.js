@@ -28,11 +28,11 @@ module.exports = (eleventy, options = {}) => {
     return collection.getFilteredByGlob(siteMap)
   })
 
-  eleventy.addPairedShortCode('clip', (content, description) => {
+  eleventy.addPairedShortcode('clip', (content, description) => {
     return elements.copyElement(content, description)
   })
 
-  eleventy.addPairedShortCode('cliptext', (content, description) => {
+  eleventy.addPairedShortcode('cliptext', (content, description) => {
     return elements.copyString(content, description)
   })
 }
