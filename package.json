@@ -5,7 +5,7 @@
   "description": "A UI toolkit for creating and managing style-guides, design systems, pattern libraries, apps, digital products, etc.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "run-p serve watch:*",
+    "start": "run-s clean && run-p serve watch:*",
     "serve": "eleventy --serve --incremental",
     "eleventy": "run-s eleventy --serve",
     "build": "npx @11ty/eleventy",

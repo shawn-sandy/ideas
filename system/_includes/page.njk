@@ -1,7 +1,9 @@
 {% extends "base.njk" %}
 
 {% block content %}
-
-{{ content | safe }}
-
+<article>
+  <!-- TODO change title to slugs -->
+  <h2 id="{{ title | slug }}">{{ title }}</h2>
+  {{ content | safe }}
+</article>
 {% endblock %}
