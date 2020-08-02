@@ -13,13 +13,14 @@
   "author": "shawn-sandy <creative@shawnsandy.com>",
   "homepage": "https://github.com/shawn-sandy/ideas#readme",
   "license": "MIT",
-  "main": "dist/index.scss",
+  "main": "dist/index.css",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "lib",
+    "dist"
   ],
   "publishConfig": {
     "access": "public"
