@@ -73,24 +73,15 @@ First Paint is an easy to use CSS/SCSS starter library that contains accessibili
   <div role="list">
     <div role="listitem">
       <h4>Feature...</h4>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-      consectetur assumenda, porro repudiandae repellendus placeat iure officia
-      inventore sint voluptas et blanditiis facilis voluptate quas accusamus
-      itaque ea, corporis odio.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit...
     </div>
     <div role="listitem">
       <h4>Feature...</h4>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-      consectetur assumenda, porro repudiandae repellendus placeat iure officia
-      inventore sint voluptas et blanditiis facilis voluptate quas accusamus
-      itaque ea, corporis odio.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit...
     </div>
     <div role="listitem">
       <h4>Feature...</h4>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-      consectetur assumenda, porro repudiandae repellendus placeat iure officia
-      inventore sint voluptas et blanditiis facilis voluptate quas accusamus
-      itaque ea, corporis odio.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit...
     </div>
   </div>
 </section>
@@ -104,10 +95,7 @@ First Paint is an easy to use CSS/SCSS starter library that contains accessibili
     <article>
       <h3>Sample Article 1</h3>
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-        assumenda odio rem maiores ad minima doloribus. Pariatur quibusdam
-        dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo
-        sunt voluptatibus eaque!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit...
       </p>
       <footer>
         <p><a href="" role="button">Read more</a></p>
@@ -117,9 +105,7 @@ First Paint is an easy to use CSS/SCSS starter library that contains accessibili
     <aside role="sidebar">
       <h5>Sidebar</h5>
       <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos error,
-        quas at facilis temporibus optio rem, doloremque, modi numquam commodi
-        illum cumque. Sit eveniet, quod expedita libero obcaecati a laudantium.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit...
       </p>
     </aside>
   </section>
@@ -184,23 +170,27 @@ Orderd unstyled
 
 **Input text, email, password**
 
-````
+```html
+<label for="input">Text Input Component</label>
+<input type="text" placeholder="Text input placeholder" id="input" />
+```
+
 **Select box**
 
 ```html
 <label for="select">Text Input Component</label>
-<select name="select" id="">
+<select name="select" id="select">
   <option value="">Select</option>
   <option value="">Options</option>
   <option value="">Options</option>
 </select>
-````
+```
 
 **Text area**
 
 ```html
 <label for="textarea">Textarea Component</label>
-<textarea name="textarea" id="" cols="30" rows="10"></textarea>
+<textarea id="textarea" id="" cols="30" rows="10"></textarea>
 ```
 
 ---

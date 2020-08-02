@@ -32,7 +32,7 @@ module.exports = (eleventy, options = {}) => {
     return elements.copyElement(content, description)
   })
 
-  eleventy.addPairedShortcode('cliptext', (content, description) => {
+  eleventy.addPairedShortcode('clipbutton', (content, description) => {
     return elements.copyString(content, description)
   })
 }
