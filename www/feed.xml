@@ -4,7 +4,7 @@
   <subtitle>I am writing about my experiences as a naval navel-gazer.</subtitle>
   <link href="https://example.com/feed.xml" rel="self" />
   <link href="https://example.com/" />
-  <updated>2020-08-02T12:21:58-04:00</updated>
+  <updated>2020-08-05T20:50:57-04:00</updated>
   <id>https://example.com/</id>
   <author>
     <name>Boaty McBoatFace</name>
@@ -50,6 +50,128 @@ sapiente nam beatae ullam quas eligendi minus nemo, ducimus impedit quos exceptu
   quaerat et. Maiores hic expedita molestiae, at doloremque placeat, vel enim repellat quo, sequi ad?&lt;/p&gt;
 &lt;footer&gt;
   &lt;p&gt;&lt;a href=&quot;https://example.com/&quot; role=&quot;button&quot;&gt;Read more&lt;/a&gt;&lt;/p&gt;
+&lt;/footer&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>AtomMix.</title>
+    <link href="https://example.com/apps/mix/" />
+    <updated>2020-07-17T01:09:20-04:00</updated>
+    <id>https://example.com/apps/mix/</id>
+    <content type="html">&lt;nav class=&quot;border-bottom&quot; role=&quot;navigation&quot;&gt;
+    &lt;section&gt;
+        &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
+        &lt;a href=&quot;#&quot;&gt;Blog&lt;/a&gt;
+        &lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;
+        &lt;a href=&quot;#&quot;&gt;Contact Us&lt;/a&gt;
+    &lt;/section&gt;
+&lt;/nav&gt;
+
+&lt;header&gt;
+    &lt;section&gt;
+        &lt;div&gt;
+            &lt;h1&gt;FirstPaint&lt;/h1&gt;
+            &lt;!-- &lt;h4&gt;A SASS library for generating stylesheets that allows you build websites with plain semantic HTML elements, no need for class-names.&lt;/h4&gt; --&gt;
+            &lt;h4&gt;A SASS/CSS library designed to help you learn/build websites with semantic HTML elements&lt;/h4&gt;
+            &lt;a href=&quot;#&quot; role=&quot;button&quot; title=&quot;Add word, cta action, to your button title&quot;&gt;Read the Docs&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+&lt;/header&gt;
+
+&lt;!-- feature section --&gt;
+&lt;section aria-label=&quot;feature grid&quot;&gt;
+    &lt;div role=&quot;list&quot;&gt;
+        &lt;aside role=&quot;listitem&quot;&gt;
+            &lt;h4&gt;Feature...&lt;/h4&gt;
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur assumenda, porro repudiandae
+            repellendus placeat iure officia inventore sint voluptas et blanditiis facilis voluptate quas accusamus
+            itaque ea, corporis odio.
+        &lt;/aside&gt;
+        &lt;aside role=&quot;listitem&quot;&gt;
+            &lt;h4&gt;Feature...&lt;/h4&gt;
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur assumenda, porro repudiandae
+            repellendus placeat iure officia inventore sint voluptas et blanditiis facilis voluptate quas accusamus
+            itaque ea, corporis odio.
+        &lt;/aside&gt;
+        &lt;aside role=&quot;listitem&quot;&gt;
+            &lt;h4&gt;Feature...&lt;/h4&gt;
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur assumenda, porro repudiandae
+            repellendus placeat iure officia inventore sint voluptas et blanditiis facilis voluptate quas accusamus
+            itaque ea, corporis odio.
+        &lt;/aside&gt;
+        &lt;aside role=&quot;listitem&quot;&gt;
+            &lt;h4&gt;Feature...&lt;/h4&gt;
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur assumenda, porro repudiandae
+            repellendus placeat iure officia inventore sint voluptas et blanditiis facilis voluptate quas accusamus
+            itaque ea, corporis odio.
+        &lt;/aside&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+&lt;hr&gt;
+&lt;main&gt;
+    &lt;section class=&quot;articles&quot;&gt;
+        &lt;article&gt;
+            &lt;h3&gt;Sample Article 1&lt;/h3&gt;
+            &lt;p&gt;
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
+                doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
+                voluptatibus eaque!
+            &lt;/p&gt;
+            &lt;p&gt;
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
+                doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
+                voluptatibus eaque!
+            &lt;/p&gt;
+            &lt;p&gt;
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
+                doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
+                voluptatibus eaque!
+            &lt;/p&gt;
+
+            &lt;footer&gt;
+                &lt;p&gt;
+                    &lt;a href=&quot;https://example.com/apps/mix/&quot; role=&quot;button&quot;&gt;Read more&lt;/a&gt;
+                &lt;/p&gt;
+                &lt;p&gt;
+                    &lt;a href=&quot;#&quot;&gt;Read more&lt;/a&gt;
+                &lt;/p&gt;
+            &lt;/footer&gt;
+        &lt;/article&gt;
+        &lt;aside role=&quot;sidebar&quot;&gt;
+            &lt;h5&gt;Sidebar&lt;/h5&gt;
+            &lt;p&gt;
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos error, quas at facilis temporibus optio
+                rem, doloremque, modi numquam commodi illum cumque. Sit eveniet, quod expedita libero obcaecati a
+                laudantium.
+            &lt;/p&gt;
+        &lt;/aside&gt;
+    &lt;/section&gt;
+
+&lt;/main&gt;
+&lt;hr&gt;
+&lt;section&gt;
+    &lt;div&gt;
+        &lt;h4&gt;Documentation&lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;ul&gt;
+        &lt;li&gt;one&lt;/li&gt;
+        &lt;li&gt;two&lt;/li&gt;
+        &lt;li&gt;three&lt;/li&gt;
+    &lt;/ul&gt;
+
+&lt;/section&gt;
+&lt;footer&gt;
+    &lt;section&gt;
+
+        &lt;p&gt;
+            &lt;small&gt;
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut odit expedita aliquam commodi incidunt nam
+                maiores eum sunt minima corrupti dolore, fugiat veritatis sit, nobis harum ducimus repudiandae quos
+                laboriosam?
+            &lt;/small&gt;
+        &lt;/p&gt;
+    &lt;/section&gt;
 &lt;/footer&gt;
 </content>
   </entry>
@@ -229,66 +351,6 @@ sapiente nam beatae ullam quas eligendi minus nemo, ducimus impedit quos exceptu
   
   <entry>
     <title></title>
-    <link href="https://example.com/projects/first-paint/partials/banner/" />
-    <updated>2020-07-25T15:43:25-04:00</updated>
-    <id>https://example.com/projects/first-paint/partials/banner/</id>
-    <content type="html">&lt;header&gt;
-  &lt;section role=&quot;banner&quot;&gt;
-    &lt;div&gt;
-      &lt;img src=&quot;https://example.com/projects/first-paint/partials/banner/img/fp.svg&quot; alt=&quot;&quot;&gt;
-      &lt;h2&gt;Lightweight, Fast, Accessible, Inclusive&lt;/h2&gt;
-      &lt;p&gt;&lt;span&gt;First Paint is lightweight easy to use CSS/SCSS starter library for quickly scaffolding/building modern,
-          mobile friendly websites.&lt;/span&gt;&lt;/p&gt;
-      &lt;a href=&quot;#&quot; role=&quot;button&quot; aria-label=&quot;Add word, cta action, to your button title&quot;&gt;
-        &lt;span&gt;Get Started&lt;/span&gt;&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-&lt;/header&gt;
-</content>
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://example.com/projects/first-paint/partials/components/" />
-    <updated>2020-07-25T15:43:25-04:00</updated>
-    <id>https://example.com/projects/first-paint/partials/components/</id>
-    <content type="html">&lt;section aria-label=&quot;View and copy components&quot;&gt;
-  &lt;aside&gt;
-    &lt;h3&gt;Components&lt;/h3&gt;
-    &lt;label&gt;
-      &lt;p&gt;
-        &lt;span&gt;
-          Navigation component
-        &lt;/span&gt;
-        &lt;/p&gt;
-      &lt;code&gt;
-          &lt;textarea&gt;&lt;nav role=&quot;navigation&quot; aria-label=&quot;Main navigation&quot;&gt;
-              &lt;section id=&quot;navigation&quot;&gt;
-                &lt;div&gt;
-                  &lt;h1&gt;
-                    &lt;a href=&quot;#&quot; aria-label=&quot;Site logo&quot;&gt;
-                      &lt;img src=&quot;https://example.com/img/fp-icon.svg&quot; alt=&quot;&quot;&gt;
-                      &lt;span aria-label=&quot;logo text&quot;&gt;FirstPaint&lt;/span&gt;
-                    &lt;/a&gt;
-                  &lt;/h1&gt;
-                &lt;/div&gt;
-                &lt;div&gt;
-                  &lt;a href=&quot;#&quot;&gt;Blog&lt;/a&gt;
-                  &lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;
-                  &lt;a href=&quot;#&quot;&gt;...&lt;/a&gt;
-                &lt;/div&gt;
-              &lt;/section&gt;
-            &lt;/nav&gt;
-          &lt;/textarea&gt;
-        &lt;/code&gt;
-    &lt;/label&gt;
-  &lt;/aside&gt;
-&lt;/section&gt;
-</content>
-  </entry>
-  
-  <entry>
-    <title></title>
     <link href="https://example.com/apps/mix/builds/" />
     <updated>2020-07-17T01:09:20-04:00</updated>
     <id>https://example.com/apps/mix/builds/</id>
@@ -390,6 +452,66 @@ sapiente nam beatae ullam quas eligendi minus nemo, ducimus impedit quos exceptu
   
   <entry>
     <title></title>
+    <link href="https://example.com/projects/first-paint/partials/banner/" />
+    <updated>2020-07-25T15:43:25-04:00</updated>
+    <id>https://example.com/projects/first-paint/partials/banner/</id>
+    <content type="html">&lt;header&gt;
+  &lt;section role=&quot;banner&quot;&gt;
+    &lt;div&gt;
+      &lt;img src=&quot;https://example.com/projects/first-paint/partials/banner/img/fp.svg&quot; alt=&quot;&quot;&gt;
+      &lt;h2&gt;Lightweight, Fast, Accessible, Inclusive&lt;/h2&gt;
+      &lt;p&gt;&lt;span&gt;First Paint is lightweight easy to use CSS/SCSS starter library for quickly scaffolding/building modern,
+          mobile friendly websites.&lt;/span&gt;&lt;/p&gt;
+      &lt;a href=&quot;#&quot; role=&quot;button&quot; aria-label=&quot;Add word, cta action, to your button title&quot;&gt;
+        &lt;span&gt;Get Started&lt;/span&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/header&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://example.com/projects/first-paint/partials/components/" />
+    <updated>2020-07-25T15:43:25-04:00</updated>
+    <id>https://example.com/projects/first-paint/partials/components/</id>
+    <content type="html">&lt;section aria-label=&quot;View and copy components&quot;&gt;
+  &lt;aside&gt;
+    &lt;h3&gt;Components&lt;/h3&gt;
+    &lt;label&gt;
+      &lt;p&gt;
+        &lt;span&gt;
+          Navigation component
+        &lt;/span&gt;
+        &lt;/p&gt;
+      &lt;code&gt;
+          &lt;textarea&gt;&lt;nav role=&quot;navigation&quot; aria-label=&quot;Main navigation&quot;&gt;
+              &lt;section id=&quot;navigation&quot;&gt;
+                &lt;div&gt;
+                  &lt;h1&gt;
+                    &lt;a href=&quot;#&quot; aria-label=&quot;Site logo&quot;&gt;
+                      &lt;img src=&quot;https://example.com/img/fp-icon.svg&quot; alt=&quot;&quot;&gt;
+                      &lt;span aria-label=&quot;logo text&quot;&gt;FirstPaint&lt;/span&gt;
+                    &lt;/a&gt;
+                  &lt;/h1&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                  &lt;a href=&quot;#&quot;&gt;Blog&lt;/a&gt;
+                  &lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;
+                  &lt;a href=&quot;#&quot;&gt;...&lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/section&gt;
+            &lt;/nav&gt;
+          &lt;/textarea&gt;
+        &lt;/code&gt;
+    &lt;/label&gt;
+  &lt;/aside&gt;
+&lt;/section&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title></title>
     <link href="https://example.com/projects/first-paint/partials/footer/" />
     <updated>2020-07-25T15:43:25-04:00</updated>
     <id>https://example.com/projects/first-paint/partials/footer/</id>
@@ -452,29 +574,108 @@ sapiente nam beatae ullam quas eligendi minus nemo, ducimus impedit quos exceptu
   
   <entry>
     <title></title>
-    <link href="https://example.com/projects/first-paint/partials/navbar/" />
+    <link href="https://example.com/projects/first-paint/partials/header/" />
     <updated>2020-07-25T15:43:25-04:00</updated>
-    <id>https://example.com/projects/first-paint/partials/navbar/</id>
-    <content type="html">&lt;nav role=&quot;navigation&quot; aria-label=&quot;Main navigation&quot;&gt;
-  &lt;section id=&quot;navigation&quot;&gt;
-    &lt;div&gt;
-      &lt;h1&gt;
-        &lt;a href=&quot;#&quot; aria-label=&quot;Site logo&quot;&gt;
-          &lt;img src=&quot;https://example.com/img/fp.svg&quot; alt=&quot;&quot;&gt;
-          &lt;span aria-label=&quot;logo text&quot;&gt;FirstPaint&lt;/span&gt;
-        &lt;/a&gt;
-      &lt;/h1&gt;
+    <id>https://example.com/projects/first-paint/partials/header/</id>
+    <content type="html">&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;FirstPaint&lt;/title&gt;
+  &lt;meta name=&quot;description&quot; content=&quot;Atomix&quot;&gt;
+  &lt;meta name=&quot;author&quot; content=&quot;Shawn Sandy&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css&quot;&gt;
+  &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://example.com/projects/first-paint/partials/header/index.scss&quot;&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;/body&gt;&lt;/html&gt;</content>
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://example.com/projects/first-paint/partials/inputs/" />
+    <updated>2020-07-25T15:43:25-04:00</updated>
+    <id>https://example.com/projects/first-paint/partials/inputs/</id>
+    <content type="html">&lt;section&gt;
+  &lt;div&gt;
+    &lt;span&gt;
+      &lt;p&gt;Input components&lt;/p&gt;
+    &lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div role=&quot;list&quot;&gt;
+
+    &lt;div role=&quot;listitem&quot;&gt;
+      &lt;label for=&quot;input&quot;&gt;Text Input Component&lt;/label&gt;
+      &lt;input type=&quot;text&quot; placeholder=&quot;Text input placeholder&quot;&gt;
     &lt;/div&gt;
 
-    &lt;div&gt;
-      &lt;a href=&quot;#&quot;&gt;Blog&lt;/a&gt;
-      &lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;
-      &lt;a href=&quot;http://&quot;&gt;Documentation&lt;/a&gt;
-      &lt;a href=&quot;http://&quot;&gt;Repository&lt;/a&gt;
-      &lt;a href=&quot;#&quot;&gt;Contact Us&lt;/a&gt;
+    &lt;div role=&quot;listitem&quot;&gt;
+      &lt;label for=&quot;email-address&quot;&gt;Text Input Component&lt;/label&gt;
+      &lt;input type=&quot;email&quot; name=&quot;email-address&quot; placeholder=&quot;Text input placeholder&quot;&gt;
     &lt;/div&gt;
-  &lt;/section&gt;
-&lt;/nav&gt;
+
+    &lt;div role=&quot;listitem&quot;&gt;
+      &lt;label for=&quot;select&quot;&gt;Text Input Component&lt;/label&gt;
+      &lt;select name=&quot;select&quot; id=&quot;&quot;&gt;
+        &lt;option value=&quot;&quot;&gt;Select&lt;/option&gt;
+        &lt;option value=&quot;&quot;&gt;Options&lt;/option&gt;
+        &lt;option value=&quot;&quot;&gt;Options&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;div&gt;
+      &lt;label for=&quot;textarea&quot;&gt;Textarea Component&lt;/label&gt;
+      &lt;textarea name=&quot;textarea&quot; id=&quot;&quot; cols=&quot;30&quot; rows=&quot;10&quot;&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://example.com/projects/first-paint/partials/main-content/" />
+    <updated>2020-07-25T15:43:25-04:00</updated>
+    <id>https://example.com/projects/first-paint/partials/main-content/</id>
+    <content type="html">&lt;section id=&quot;articles&quot;&gt;
+  &lt;article&gt;
+    &lt;h2&gt;Sample Article 1&lt;/h2&gt;
+    &lt;p&gt;
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
+      doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
+      voluptatibus eaque!
+    &lt;/p&gt;
+    &lt;p&gt;
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
+      doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
+      voluptatibus eaque!
+    &lt;/p&gt;
+    &lt;p&gt;
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
+      doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
+      voluptatibus eaque!
+    &lt;/p&gt;
+
+    &lt;footer&gt;
+      &lt;p&gt;
+        &lt;a href=&quot;https://example.com/projects/first-paint/partials/main-content/&quot; role=&quot;button&quot;&gt;Read more&lt;/a&gt;
+      &lt;/p&gt;
+    &lt;/footer&gt;
+  &lt;/article&gt;
+  &lt;aside&gt;
+    &lt;h4&gt;Sidebar&lt;/h4&gt;
+    &lt;p&gt;
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos error, quas at facilis temporibus optio rem,
+      doloremque, modi numquam commodi illum cumque. Sit eveniet, quod expedita libero obcaecati a laudantium.
+    &lt;/p&gt;
+  &lt;/aside&gt;
+&lt;/section&gt;
 </content>
   </entry>
   
@@ -555,74 +756,36 @@ sapiente nam beatae ullam quas eligendi minus nemo, ducimus impedit quos exceptu
   
   <entry>
     <title></title>
-    <link href="https://example.com/projects/first-paint/partials/inputs/" />
+    <link href="https://example.com/projects/first-paint/partials/navbar/" />
     <updated>2020-07-25T15:43:25-04:00</updated>
-    <id>https://example.com/projects/first-paint/partials/inputs/</id>
-    <content type="html">&lt;section&gt;
-  &lt;div&gt;
-    &lt;span&gt;
-      &lt;p&gt;Input components&lt;/p&gt;
-    &lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div role=&quot;list&quot;&gt;
-
-    &lt;div role=&quot;listitem&quot;&gt;
-      &lt;label for=&quot;input&quot;&gt;Text Input Component&lt;/label&gt;
-      &lt;input type=&quot;text&quot; placeholder=&quot;Text input placeholder&quot;&gt;
-    &lt;/div&gt;
-
-    &lt;div role=&quot;listitem&quot;&gt;
-      &lt;label for=&quot;email-address&quot;&gt;Text Input Component&lt;/label&gt;
-      &lt;input type=&quot;email&quot; name=&quot;email-address&quot; placeholder=&quot;Text input placeholder&quot;&gt;
-    &lt;/div&gt;
-
-    &lt;div role=&quot;listitem&quot;&gt;
-      &lt;label for=&quot;select&quot;&gt;Text Input Component&lt;/label&gt;
-      &lt;select name=&quot;select&quot; id=&quot;&quot;&gt;
-        &lt;option value=&quot;&quot;&gt;Select&lt;/option&gt;
-        &lt;option value=&quot;&quot;&gt;Options&lt;/option&gt;
-        &lt;option value=&quot;&quot;&gt;Options&lt;/option&gt;
-      &lt;/select&gt;
-    &lt;/div&gt;
-
-  &lt;/div&gt;
-  &lt;div&gt;
+    <id>https://example.com/projects/first-paint/partials/navbar/</id>
+    <content type="html">&lt;nav role=&quot;navigation&quot; aria-label=&quot;Main navigation&quot;&gt;
+  &lt;section id=&quot;navigation&quot;&gt;
     &lt;div&gt;
-      &lt;label for=&quot;textarea&quot;&gt;Textarea Component&lt;/label&gt;
-      &lt;textarea name=&quot;textarea&quot; id=&quot;&quot; cols=&quot;30&quot; rows=&quot;10&quot;&gt;&lt;/textarea&gt;
+      &lt;h1&gt;
+        &lt;a href=&quot;#&quot; aria-label=&quot;Site logo&quot;&gt;
+          &lt;img src=&quot;https://example.com/img/fp.svg&quot; alt=&quot;&quot;&gt;
+          &lt;span aria-label=&quot;logo text&quot;&gt;FirstPaint&lt;/span&gt;
+        &lt;/a&gt;
+      &lt;/h1&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/section&gt;
+
+    &lt;div&gt;
+      &lt;a href=&quot;#&quot;&gt;Blog&lt;/a&gt;
+      &lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;
+      &lt;a href=&quot;http://&quot;&gt;Documentation&lt;/a&gt;
+      &lt;a href=&quot;http://&quot;&gt;Repository&lt;/a&gt;
+      &lt;a href=&quot;#&quot;&gt;Contact Us&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/nav&gt;
 </content>
   </entry>
   
   <entry>
     <title></title>
-    <link href="https://example.com/projects/first-paint/partials/header/" />
-    <updated>2020-07-25T15:43:25-04:00</updated>
-    <id>https://example.com/projects/first-paint/partials/header/</id>
-    <content type="html">&lt;!doctype html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-
-&lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot;&gt;
-  &lt;title&gt;FirstPaint&lt;/title&gt;
-  &lt;meta name=&quot;description&quot; content=&quot;Atomix&quot;&gt;
-  &lt;meta name=&quot;author&quot; content=&quot;Shawn Sandy&quot;&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css&quot;&gt;
-  &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://example.com/projects/first-paint/partials/header/index.scss&quot;&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-&lt;/body&gt;&lt;/html&gt;</content>
-  </entry>
-  
-  <entry>
-    <title></title>
     <link href="https://example.com/projects/first-paint/www/" />
-    <updated>2020-08-02T12:21:58-04:00</updated>
+    <updated>2020-08-05T20:50:57-04:00</updated>
     <id>https://example.com/projects/first-paint/www/</id>
     <content type="html">&lt;!doctype html&gt;
 &lt;html lang=&quot;en&quot;&gt;
@@ -914,169 +1077,6 @@ sapiente nam beatae ullam quas eligendi minus nemo, ducimus impedit quos exceptu
 
 
 
-</content>
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://example.com/projects/first-paint/partials/main-content/" />
-    <updated>2020-07-25T15:43:25-04:00</updated>
-    <id>https://example.com/projects/first-paint/partials/main-content/</id>
-    <content type="html">&lt;section id=&quot;articles&quot;&gt;
-  &lt;article&gt;
-    &lt;h2&gt;Sample Article 1&lt;/h2&gt;
-    &lt;p&gt;
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
-      doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
-      voluptatibus eaque!
-    &lt;/p&gt;
-    &lt;p&gt;
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
-      doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
-      voluptatibus eaque!
-    &lt;/p&gt;
-    &lt;p&gt;
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
-      doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
-      voluptatibus eaque!
-    &lt;/p&gt;
-
-    &lt;footer&gt;
-      &lt;p&gt;
-        &lt;a href=&quot;https://example.com/projects/first-paint/partials/main-content/&quot; role=&quot;button&quot;&gt;Read more&lt;/a&gt;
-      &lt;/p&gt;
-    &lt;/footer&gt;
-  &lt;/article&gt;
-  &lt;aside&gt;
-    &lt;h4&gt;Sidebar&lt;/h4&gt;
-    &lt;p&gt;
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos error, quas at facilis temporibus optio rem,
-      doloremque, modi numquam commodi illum cumque. Sit eveniet, quod expedita libero obcaecati a laudantium.
-    &lt;/p&gt;
-  &lt;/aside&gt;
-&lt;/section&gt;
-</content>
-  </entry>
-  
-  <entry>
-    <title>AtomMix.</title>
-    <link href="https://example.com/apps/mix/" />
-    <updated>2020-07-17T01:09:20-04:00</updated>
-    <id>https://example.com/apps/mix/</id>
-    <content type="html">&lt;nav class=&quot;border-bottom&quot; role=&quot;navigation&quot;&gt;
-    &lt;section&gt;
-        &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
-        &lt;a href=&quot;#&quot;&gt;Blog&lt;/a&gt;
-        &lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;
-        &lt;a href=&quot;#&quot;&gt;Contact Us&lt;/a&gt;
-    &lt;/section&gt;
-&lt;/nav&gt;
-
-&lt;header&gt;
-    &lt;section&gt;
-        &lt;div&gt;
-            &lt;h1&gt;FirstPaint&lt;/h1&gt;
-            &lt;!-- &lt;h4&gt;A SASS library for generating stylesheets that allows you build websites with plain semantic HTML elements, no need for class-names.&lt;/h4&gt; --&gt;
-            &lt;h4&gt;A SASS/CSS library designed to help you learn/build websites with semantic HTML elements&lt;/h4&gt;
-            &lt;a href=&quot;#&quot; role=&quot;button&quot; title=&quot;Add word, cta action, to your button title&quot;&gt;Read the Docs&lt;/a&gt;
-        &lt;/div&gt;
-    &lt;/section&gt;
-&lt;/header&gt;
-
-&lt;!-- feature section --&gt;
-&lt;section aria-label=&quot;feature grid&quot;&gt;
-    &lt;div role=&quot;list&quot;&gt;
-        &lt;aside role=&quot;listitem&quot;&gt;
-            &lt;h4&gt;Feature...&lt;/h4&gt;
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur assumenda, porro repudiandae
-            repellendus placeat iure officia inventore sint voluptas et blanditiis facilis voluptate quas accusamus
-            itaque ea, corporis odio.
-        &lt;/aside&gt;
-        &lt;aside role=&quot;listitem&quot;&gt;
-            &lt;h4&gt;Feature...&lt;/h4&gt;
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur assumenda, porro repudiandae
-            repellendus placeat iure officia inventore sint voluptas et blanditiis facilis voluptate quas accusamus
-            itaque ea, corporis odio.
-        &lt;/aside&gt;
-        &lt;aside role=&quot;listitem&quot;&gt;
-            &lt;h4&gt;Feature...&lt;/h4&gt;
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur assumenda, porro repudiandae
-            repellendus placeat iure officia inventore sint voluptas et blanditiis facilis voluptate quas accusamus
-            itaque ea, corporis odio.
-        &lt;/aside&gt;
-        &lt;aside role=&quot;listitem&quot;&gt;
-            &lt;h4&gt;Feature...&lt;/h4&gt;
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur assumenda, porro repudiandae
-            repellendus placeat iure officia inventore sint voluptas et blanditiis facilis voluptate quas accusamus
-            itaque ea, corporis odio.
-        &lt;/aside&gt;
-    &lt;/div&gt;
-&lt;/section&gt;
-&lt;hr&gt;
-&lt;main&gt;
-    &lt;section class=&quot;articles&quot;&gt;
-        &lt;article&gt;
-            &lt;h3&gt;Sample Article 1&lt;/h3&gt;
-            &lt;p&gt;
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
-                doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
-                voluptatibus eaque!
-            &lt;/p&gt;
-            &lt;p&gt;
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
-                doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
-                voluptatibus eaque!
-            &lt;/p&gt;
-            &lt;p&gt;
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
-                doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
-                voluptatibus eaque!
-            &lt;/p&gt;
-
-            &lt;footer&gt;
-                &lt;p&gt;
-                    &lt;a href=&quot;https://example.com/apps/mix/&quot; role=&quot;button&quot;&gt;Read more&lt;/a&gt;
-                &lt;/p&gt;
-                &lt;p&gt;
-                    &lt;a href=&quot;#&quot;&gt;Read more&lt;/a&gt;
-                &lt;/p&gt;
-            &lt;/footer&gt;
-        &lt;/article&gt;
-        &lt;aside role=&quot;sidebar&quot;&gt;
-            &lt;h5&gt;Sidebar&lt;/h5&gt;
-            &lt;p&gt;
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos error, quas at facilis temporibus optio
-                rem, doloremque, modi numquam commodi illum cumque. Sit eveniet, quod expedita libero obcaecati a
-                laudantium.
-            &lt;/p&gt;
-        &lt;/aside&gt;
-    &lt;/section&gt;
-
-&lt;/main&gt;
-&lt;hr&gt;
-&lt;section&gt;
-    &lt;div&gt;
-        &lt;h4&gt;Documentation&lt;/h4&gt;
-    &lt;/div&gt;
-    &lt;ul&gt;
-        &lt;li&gt;one&lt;/li&gt;
-        &lt;li&gt;two&lt;/li&gt;
-        &lt;li&gt;three&lt;/li&gt;
-    &lt;/ul&gt;
-
-&lt;/section&gt;
-&lt;footer&gt;
-    &lt;section&gt;
-
-        &lt;p&gt;
-            &lt;small&gt;
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut odit expedita aliquam commodi incidunt nam
-                maiores eum sunt minima corrupti dolore, fugiat veritatis sit, nobis harum ducimus repudiandae quos
-                laboriosam?
-            &lt;/small&gt;
-        &lt;/p&gt;
-    &lt;/section&gt;
-&lt;/footer&gt;
 </content>
   </entry>
 </feed>

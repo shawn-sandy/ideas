@@ -13,8 +13,8 @@
     "email": "shawnsandy@proideas.dev"
   },
   "styles": [
-    "https://cdn.jsdelivr.net/npm/@shawnsandy/first-paint@0.0.5/dist/index.min.css",
-    "https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap"
+    "https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap",
+    "https://cdn.jsdelivr.net/npm/@shawnsandy/first-paint@0.0.6/dist/index.min.css"
   ],
   "scripts": [
     "/uikit/app.js"

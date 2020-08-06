@@ -1,3 +1,4 @@
-import "@fortawesome/fontawesome-free/css/regular.css";
-import "@shawnsandy/mix/foundation.scss";
-import "./system/styles/styles.scss";
+import '@fortawesome/fontawesome-free/css/regular.css'
+// import "@shawnsandy/mix/foundation.scss";
+import '@shawnsandy/first-paint/dist/index.css'
+import './system/styles/styles.scss'
