@@ -33,3 +33,5 @@ First Paint is an easy to use CSS/SCSS starter library that contains accessibili
 
 Bootstrap without the Guilt (152kb < 70kb )
 [Readme](./apps/bootstrap-lite/README.md)
+
+#### License MIT
