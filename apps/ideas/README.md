@@ -12,20 +12,20 @@ _Idea is currently in early production beta, feel free to open an issues for fea
 
 ### Core
 
-Core is the engine of Idea, a collection packages and tools behind the system. A Lerna.js powered monorepo that's host to the core site, plugins and tools that can be distributed as independent packages.
+Core is the engine of Idea, a collection Eleventy packages and tools behind the system.
 
 ---
 
 ## Features
 
-* Atomic driven component system / structure
-* Eleventy powered static site generator
-* Markdown / HTML driven content and components
-* Vue.js integration
-* Javascript based template **[Nunjucks](https://mozilla.github.io/nunjucks/)**, Handlebars, Mustache...
-* Modular
-* Webpack / Gulp
-* Customizable
+- Atomic driven component system / structure
+- Eleventy powered static site generator
+- Markdown / HTML driven content and components
+- Vue.js integration
+- Javascript based template **[Nunjucks](https://mozilla.github.io/nunjucks/)**, Handlebars, Mustache...
+- Modular
+- Webpack / Gulp
+- Customizable
 
 ### Install
 
@@ -35,18 +35,18 @@ npm i @shawnsandy/ideas
 
 ### Usage
 
- **Add to eleventy** Add the following to your config file `eleventy.js` inside the `modules.exports` function.
+**Add to eleventy** Add the following to your config file `eleventy.js` inside the `modules.exports` function.
 
 ```
    eleventyConfig.addPlugin(require('@shawnsandy/ideas'))
- ```
+```
 
- [Eleventy Shortcodes](./ELEVENTY.md)
+[Eleventy Shortcodes](./ELEVENTY.md)
 
 ### TODOS
 
-* Complete the docs
-* Add examples
+- Complete the docs
+- Add examples
 
 ## Licence (MIT)
 
@@ -63,4 +63,3 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ## Enjoy
 
 **Wakanda Forever :)**
-

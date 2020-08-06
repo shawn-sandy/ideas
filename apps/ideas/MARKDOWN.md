@@ -1,6 +1,6 @@
 # Eleventy Markdown
 
-An Eleventy markdown plugin for writing MD/parsing syntax in your HTML content.
+An Eleventy markdown plugin for writing/parsing MARKDOWN syntax in your HTML content.
 
 ## Install:
 
