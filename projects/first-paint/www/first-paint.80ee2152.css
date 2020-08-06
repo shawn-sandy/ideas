@@ -246,7 +246,8 @@ nav[aria-label] {
   nav[aria-label] div {
     height: 100%;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    justify-content: center; }
     nav[aria-label] div a {
       display: inline-flex; }
   nav[aria-label] a,
