@@ -9,12 +9,18 @@
 
       [role="listitem"] {
         // flex-basis: 100%;
-        flex: 1 1 33%;
+        flex: 1 1 100%;
         padding: 1rem;
         line-height: 1.6;
+        @media all and (min-width: 780px) {
+          flex: 1 1 50%;
+        }
+        @media all and (min-width: 980px) {
+          flex: 1 1 33%;
+        }
       }
 
-      @media all and (min-width: 580px) and (mmax-width: 980px) {
+      @media all and (min-width: 580px) {
         footer {
           [role="listitem"] {
             max-width: auto;
