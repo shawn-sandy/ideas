@@ -406,10 +406,16 @@ section > [role="list"] {
   flex-wrap: wrap;
   justify-content: flex-start; }
   section > [role="list"] [role="listitem"] {
-    flex: 1 1 33%;
+    flex: 1 1 100%;
     padding: 1rem;
     line-height: 1.6; }
-  @media all and (min-width: 580px) and (mmax-width: 980px) {
+    @media all and (min-width: 780px) {
+      section > [role="list"] [role="listitem"] {
+        flex: 1 1 50%; } }
+    @media all and (min-width: 980px) {
+      section > [role="list"] [role="listitem"] {
+        flex: 1 1 33%; } }
+  @media all and (min-width: 580px) {
     section > [role="list"] footer [role="listitem"] {
       max-width: auto;
       flex: 1 1 100%; } }
