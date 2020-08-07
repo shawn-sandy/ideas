@@ -33,9 +33,10 @@
     "test": "echo \"Error: run tests from root\" && exit 1",
     "start": "run-s clean parcel",
     "parcel": "parcel index.html --out-dir www",
-    "build": "run-s clean build:parcel",
+    "build": "run-s clean:dist build:parcel",
     "build:parcel": "parcel build index.js --no-content-hash --out-dir dist",
-    "clean": "rm -rf www"
+    "clean": "rm -rf www",
+    "clean:dist": "rm -rf dist"
   },
   "bugs": {
     "url": "https://github.com/shawn-sandy/ideas/issues"
