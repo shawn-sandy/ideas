@@ -11,7 +11,7 @@
     "build": "npx @11ty/eleventy",
     "parcel": "parcel build main.js --out-dir build/js --no-minify",
     "parcel-css": "parcel build styles.js --no-content-hash --out-dir styles/css --no-minify",
-    "watch:parcel": "parcel watch main.js styles.js --out-dir www/uikit",
+    "watch:parcel": "parcel watch main.js styles.js --out-dir www/",
     "changelog": "auto-changelog -p --template config/_changelog.hbs",
     "debug": "cd system/debug",
     "tokens": "style-dictionary build --config ./tokens.js",
