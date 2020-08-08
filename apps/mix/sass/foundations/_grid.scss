@@ -15,13 +15,13 @@
         @media all and (min-width: 780px) {
           flex: 1 1 50%;
         }
-        @media all and (min-width: 980px) {
+        @media all and (min-width: 992px) {
           flex: 1 1 33%;
         }
       }
 
-      @media all and (min-width: 580px) {
-        footer {
+      footer {
+        @media all and (min-width: 580px) {
           [role="listitem"] {
             max-width: auto;
             flex: 1 1 100%;
