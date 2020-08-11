@@ -396,13 +396,9 @@ section > [role="list"] {
     @media all and (min-width: 780px) {
       section > [role="list"] [role="listitem"] {
         flex: 1 1 50%; } }
-    @media all and (min-width: 980px) {
+    @media all and (min-width: 992px) {
       section > [role="list"] [role="listitem"] {
         flex: 1 1 33%; } }
-  @media all and (min-width: 580px) {
-    section > [role="list"] footer [role="listitem"] {
-      max-width: auto;
-      flex: 1 1 100%; } }
 
 code {
   background-color: rgba(0, 0, 0, 0.8);

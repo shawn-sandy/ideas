@@ -4,7 +4,7 @@
   <subtitle>I am writing about my experiences as a naval navel-gazer.</subtitle>
   <link href="https://example.com/feed.xml" rel="self" />
   <link href="https://example.com/" />
-  <updated>2020-08-07T19:39:27-04:00</updated>
+  <updated>2020-08-10T21:38:21-04:00</updated>
   <id>https://example.com/</id>
   <author>
     <name>Boaty McBoatFace</name>
@@ -14,7 +14,7 @@
   <entry>
     <title>shawnsandy.com</title>
     <link href="https://example.com/apps/css-modal/" />
-    <updated>2020-07-17T01:09:20-04:00</updated>
+    <updated>2020-08-10T21:38:21-04:00</updated>
     <id>https://example.com/apps/css-modal/</id>
     <content type="html">
 &lt;p&gt;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta quibusdam facere placeat, voluptates laborum
@@ -24,7 +24,7 @@
   <entry>
     <title>News and Articles</title>
     <link href="https://example.com/content/" />
-    <updated>2020-07-17T01:09:20-04:00</updated>
+    <updated>2020-08-10T21:38:21-04:00</updated>
     <id>https://example.com/content/</id>
     <content type="html"></content>
   </entry>
@@ -32,7 +32,7 @@
   <entry>
     <title>Getting Started</title>
     <link href="https://example.com/" />
-    <updated>2020-07-17T01:09:20-04:00</updated>
+    <updated>2020-08-10T21:38:21-04:00</updated>
     <id>https://example.com/</id>
     <content type="html">
 &lt;h3 id=&quot;markdown&quot;&gt;Markdown&lt;/h3&gt;
@@ -57,7 +57,7 @@ sapiente nam beatae ullam quas eligendi minus nemo, ducimus impedit quos exceptu
   <entry>
     <title>AtomMix.</title>
     <link href="https://example.com/apps/mix/" />
-    <updated>2020-07-17T01:09:20-04:00</updated>
+    <updated>2020-08-10T21:38:21-04:00</updated>
     <id>https://example.com/apps/mix/</id>
     <content type="html">&lt;nav class=&quot;border-bottom&quot; role=&quot;navigation&quot;&gt;
     &lt;section&gt;
@@ -179,15 +179,53 @@ sapiente nam beatae ullam quas eligendi minus nemo, ducimus impedit quos exceptu
   <entry>
     <title>Apps</title>
     <link href="https://example.com/apps/" />
-    <updated>2020-07-17T01:09:20-04:00</updated>
+    <updated>2020-08-10T21:38:21-04:00</updated>
     <id>https://example.com/apps/</id>
     <content type="html"></content>
   </entry>
   
   <entry>
     <title></title>
+    <link href="https://example.com/projects/first-paint/" />
+    <updated>2020-08-10T21:38:21-04:00</updated>
+    <id>https://example.com/projects/first-paint/</id>
+    <content type="html">&lt;include src=&quot;./partials/header.html&quot;&gt;&lt;/include&gt;
+&lt;include src=&quot;./partials/navbar.html&quot;&gt;&lt;/include&gt;
+&lt;!-- banner --&gt;
+&lt;include src=&quot;./partials/banner.html&quot;&gt;&lt;/include&gt;
+&lt;!-- feature section --&gt;
+&lt;section aria-label=&quot;feature&quot;&gt;
+  &lt;include src=&quot;./partials/grid.html&quot;&gt;&lt;/include&gt;
+&lt;/section&gt;
+&lt;hr&gt;
+&lt;main&gt;
+  &lt;include src=&quot;partials/main-content.html&quot;&gt;&lt;/include&gt;
+&lt;/main&gt;
+&lt;section&gt;
+  &lt;aside aria-label=&quot;get-started&quot;&gt;
+    &lt;h4 id=&quot;get-started&quot;&gt;Get Started&lt;/h4&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque beatae officiis dicta accusantium. Nulla
+      recusandae in exercitationem inventore, minus dignissimos placeat, ratione et minima aspernatur alias, aut
+      ipsum
+      quasi nihil?&lt;/p&gt;
+  &lt;/aside&gt;
+&lt;/section&gt;
+
+&lt;include src=&quot;./partials/components.html&quot;&gt;&lt;/include&gt;
+&lt;include src=&quot;./partials/list.html&quot;&gt;&lt;/include&gt;
+&lt;include src=&quot;./partials/inputs.html&quot;&gt;&lt;/include&gt;
+&lt;include src=&quot;./partials/footer.html&quot;&gt;&lt;/include&gt;
+
+
+
+
+</content>
+  </entry>
+  
+  <entry>
+    <title></title>
     <link href="https://example.com/projects/first-paint/index.copy/" />
-    <updated>2020-07-25T15:43:25-04:00</updated>
+    <updated>2020-08-10T21:38:21-04:00</updated>
     <id>https://example.com/projects/first-paint/index.copy/</id>
     <content type="html">&lt;!doctype html&gt;
 &lt;html lang=&quot;en&quot;&gt;
@@ -313,46 +351,8 @@ sapiente nam beatae ullam quas eligendi minus nemo, ducimus impedit quos exceptu
   
   <entry>
     <title></title>
-    <link href="https://example.com/projects/first-paint/" />
-    <updated>2020-07-25T15:43:25-04:00</updated>
-    <id>https://example.com/projects/first-paint/</id>
-    <content type="html">&lt;include src=&quot;./partials/header.html&quot;&gt;&lt;/include&gt;
-&lt;include src=&quot;./partials/navbar.html&quot;&gt;&lt;/include&gt;
-&lt;!-- banner --&gt;
-&lt;include src=&quot;./partials/banner.html&quot;&gt;&lt;/include&gt;
-&lt;!-- feature section --&gt;
-&lt;section aria-label=&quot;feature&quot;&gt;
-  &lt;include src=&quot;./partials/grid.html&quot;&gt;&lt;/include&gt;
-&lt;/section&gt;
-&lt;hr&gt;
-&lt;main&gt;
-  &lt;include src=&quot;partials/main-content.html&quot;&gt;&lt;/include&gt;
-&lt;/main&gt;
-&lt;section&gt;
-  &lt;aside aria-label=&quot;get-started&quot;&gt;
-    &lt;h4 id=&quot;get-started&quot;&gt;Get Started&lt;/h4&gt;
-    &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque beatae officiis dicta accusantium. Nulla
-      recusandae in exercitationem inventore, minus dignissimos placeat, ratione et minima aspernatur alias, aut
-      ipsum
-      quasi nihil?&lt;/p&gt;
-  &lt;/aside&gt;
-&lt;/section&gt;
-
-&lt;include src=&quot;./partials/components.html&quot;&gt;&lt;/include&gt;
-&lt;include src=&quot;./partials/list.html&quot;&gt;&lt;/include&gt;
-&lt;include src=&quot;./partials/inputs.html&quot;&gt;&lt;/include&gt;
-&lt;include src=&quot;./partials/footer.html&quot;&gt;&lt;/include&gt;
-
-
-
-
-</content>
-  </entry>
-  
-  <entry>
-    <title></title>
     <link href="https://example.com/apps/mix/builds/" />
-    <updated>2020-07-17T01:09:20-04:00</updated>
+    <updated>2020-08-10T21:38:21-04:00</updated>
     <id>https://example.com/apps/mix/builds/</id>
     <content type="html">&lt;!doctype html&gt;
 &lt;html lang=&quot;en&quot;&gt;
@@ -452,48 +452,8 @@ sapiente nam beatae ullam quas eligendi minus nemo, ducimus impedit quos exceptu
   
   <entry>
     <title></title>
-    <link href="https://example.com/projects/first-paint/partials/components/" />
-    <updated>2020-07-25T15:43:25-04:00</updated>
-    <id>https://example.com/projects/first-paint/partials/components/</id>
-    <content type="html">&lt;section aria-label=&quot;View and copy components&quot;&gt;
-  &lt;aside&gt;
-    &lt;h3&gt;Components&lt;/h3&gt;
-    &lt;label&gt;
-      &lt;p&gt;
-        &lt;span&gt;
-          Navigation component
-        &lt;/span&gt;
-        &lt;/p&gt;
-      &lt;code&gt;
-          &lt;textarea&gt;&lt;nav role=&quot;navigation&quot; aria-label=&quot;Main navigation&quot;&gt;
-              &lt;section id=&quot;navigation&quot;&gt;
-                &lt;div&gt;
-                  &lt;h1&gt;
-                    &lt;a href=&quot;#&quot; aria-label=&quot;Site logo&quot;&gt;
-                      &lt;img src=&quot;https://example.com/img/fp-icon.svg&quot; alt=&quot;&quot;&gt;
-                      &lt;span aria-label=&quot;logo text&quot;&gt;FirstPaint&lt;/span&gt;
-                    &lt;/a&gt;
-                  &lt;/h1&gt;
-                &lt;/div&gt;
-                &lt;div&gt;
-                  &lt;a href=&quot;#&quot;&gt;Blog&lt;/a&gt;
-                  &lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;
-                  &lt;a href=&quot;#&quot;&gt;...&lt;/a&gt;
-                &lt;/div&gt;
-              &lt;/section&gt;
-            &lt;/nav&gt;
-          &lt;/textarea&gt;
-        &lt;/code&gt;
-    &lt;/label&gt;
-  &lt;/aside&gt;
-&lt;/section&gt;
-</content>
-  </entry>
-  
-  <entry>
-    <title></title>
     <link href="https://example.com/projects/first-paint/partials/banner/" />
-    <updated>2020-07-25T15:43:25-04:00</updated>
+    <updated>2020-08-10T21:38:21-04:00</updated>
     <id>https://example.com/projects/first-paint/partials/banner/</id>
     <content type="html">&lt;header&gt;
   &lt;section role=&quot;banner&quot;&gt;
@@ -512,31 +472,8 @@ sapiente nam beatae ullam quas eligendi minus nemo, ducimus impedit quos exceptu
   
   <entry>
     <title></title>
-    <link href="https://example.com/projects/first-paint/partials/header/" />
-    <updated>2020-07-25T15:43:25-04:00</updated>
-    <id>https://example.com/projects/first-paint/partials/header/</id>
-    <content type="html">&lt;!doctype html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-
-&lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot;&gt;
-  &lt;title&gt;FirstPaint&lt;/title&gt;
-  &lt;meta name=&quot;description&quot; content=&quot;Atomix&quot;&gt;
-  &lt;meta name=&quot;author&quot; content=&quot;Shawn Sandy&quot;&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css&quot;&gt;
-  &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://example.com/projects/first-paint/partials/header/index.scss&quot;&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-&lt;/body&gt;&lt;/html&gt;</content>
-  </entry>
-  
-  <entry>
-    <title></title>
     <link href="https://example.com/projects/first-paint/partials/footer/" />
-    <updated>2020-07-25T15:43:25-04:00</updated>
+    <updated>2020-08-10T21:38:21-04:00</updated>
     <id>https://example.com/projects/first-paint/partials/footer/</id>
     <content type="html">&lt;footer&gt;
   &lt;section&gt;
@@ -558,7 +495,7 @@ sapiente nam beatae ullam quas eligendi minus nemo, ducimus impedit quos exceptu
   <entry>
     <title></title>
     <link href="https://example.com/projects/first-paint/partials/grid/" />
-    <updated>2020-07-25T15:43:25-04:00</updated>
+    <updated>2020-08-10T21:38:21-04:00</updated>
     <id>https://example.com/projects/first-paint/partials/grid/</id>
     <content type="html">&lt;div role=&quot;list&quot;&gt;
   &lt;div role=&quot;listitem&quot;&gt;
@@ -597,8 +534,71 @@ sapiente nam beatae ullam quas eligendi minus nemo, ducimus impedit quos exceptu
   
   <entry>
     <title></title>
+    <link href="https://example.com/projects/first-paint/partials/components/" />
+    <updated>2020-08-10T21:38:21-04:00</updated>
+    <id>https://example.com/projects/first-paint/partials/components/</id>
+    <content type="html">&lt;section aria-label=&quot;View and copy components&quot;&gt;
+  &lt;aside&gt;
+    &lt;h3&gt;Components&lt;/h3&gt;
+    &lt;label&gt;
+      &lt;p&gt;
+        &lt;span&gt;
+          Navigation component
+        &lt;/span&gt;
+        &lt;/p&gt;
+      &lt;code&gt;
+          &lt;textarea&gt;&lt;nav role=&quot;navigation&quot; aria-label=&quot;Main navigation&quot;&gt;
+              &lt;section id=&quot;navigation&quot;&gt;
+                &lt;div&gt;
+                  &lt;h1&gt;
+                    &lt;a href=&quot;#&quot; aria-label=&quot;Site logo&quot;&gt;
+                      &lt;img src=&quot;https://example.com/img/fp-icon.svg&quot; alt=&quot;&quot;&gt;
+                      &lt;span aria-label=&quot;logo text&quot;&gt;FirstPaint&lt;/span&gt;
+                    &lt;/a&gt;
+                  &lt;/h1&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                  &lt;a href=&quot;#&quot;&gt;Blog&lt;/a&gt;
+                  &lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;
+                  &lt;a href=&quot;#&quot;&gt;...&lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/section&gt;
+            &lt;/nav&gt;
+          &lt;/textarea&gt;
+        &lt;/code&gt;
+    &lt;/label&gt;
+  &lt;/aside&gt;
+&lt;/section&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://example.com/projects/first-paint/partials/header/" />
+    <updated>2020-08-10T21:38:21-04:00</updated>
+    <id>https://example.com/projects/first-paint/partials/header/</id>
+    <content type="html">&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;FirstPaint&lt;/title&gt;
+  &lt;meta name=&quot;description&quot; content=&quot;Atomix&quot;&gt;
+  &lt;meta name=&quot;author&quot; content=&quot;Shawn Sandy&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css&quot;&gt;
+  &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://example.com/projects/first-paint/partials/header/index.scss&quot;&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;/body&gt;&lt;/html&gt;</content>
+  </entry>
+  
+  <entry>
+    <title></title>
     <link href="https://example.com/projects/first-paint/partials/inputs/" />
-    <updated>2020-07-25T15:43:25-04:00</updated>
+    <updated>2020-08-10T21:38:21-04:00</updated>
     <id>https://example.com/projects/first-paint/partials/inputs/</id>
     <content type="html">&lt;section&gt;
   &lt;div&gt;
@@ -641,7 +641,7 @@ sapiente nam beatae ullam quas eligendi minus nemo, ducimus impedit quos exceptu
   <entry>
     <title></title>
     <link href="https://example.com/projects/first-paint/partials/list/" />
-    <updated>2020-07-25T15:43:25-04:00</updated>
+    <updated>2020-08-10T21:38:21-04:00</updated>
     <id>https://example.com/projects/first-paint/partials/list/</id>
     <content type="html">&lt;section id=&quot;list-component&quot;&gt;
   &lt;div role=&quot;list&quot;&gt;
@@ -715,8 +715,77 @@ sapiente nam beatae ullam quas eligendi minus nemo, ducimus impedit quos exceptu
   
   <entry>
     <title></title>
+    <link href="https://example.com/projects/first-paint/partials/main-content/" />
+    <updated>2020-08-10T21:38:21-04:00</updated>
+    <id>https://example.com/projects/first-paint/partials/main-content/</id>
+    <content type="html">&lt;section id=&quot;articles&quot;&gt;
+  &lt;article&gt;
+    &lt;h2&gt;Sample Article 1&lt;/h2&gt;
+    &lt;p&gt;
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
+      doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
+      voluptatibus eaque!
+    &lt;/p&gt;
+    &lt;p&gt;
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
+      doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
+      voluptatibus eaque!
+    &lt;/p&gt;
+    &lt;p&gt;
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
+      doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
+      voluptatibus eaque!
+    &lt;/p&gt;
+
+    &lt;footer&gt;
+      &lt;p&gt;
+        &lt;a href=&quot;https://example.com/projects/first-paint/partials/main-content/&quot; role=&quot;button&quot;&gt;Read more&lt;/a&gt;
+      &lt;/p&gt;
+    &lt;/footer&gt;
+  &lt;/article&gt;
+  &lt;aside&gt;
+    &lt;h4&gt;Sidebar&lt;/h4&gt;
+    &lt;p&gt;
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos error, quas at facilis temporibus optio rem,
+      doloremque, modi numquam commodi illum cumque. Sit eveniet, quod expedita libero obcaecati a laudantium.
+    &lt;/p&gt;
+  &lt;/aside&gt;
+&lt;/section&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://example.com/projects/first-paint/partials/navbar/" />
+    <updated>2020-08-10T21:38:21-04:00</updated>
+    <id>https://example.com/projects/first-paint/partials/navbar/</id>
+    <content type="html">&lt;nav role=&quot;navigation&quot; aria-label=&quot;Main navigation&quot;&gt;
+  &lt;section id=&quot;navigation&quot;&gt;
+    &lt;div&gt;
+      &lt;h1&gt;
+        &lt;a href=&quot;#&quot; aria-label=&quot;Site logo&quot;&gt;
+          &lt;img src=&quot;https://example.com/img/fp.svg&quot; alt=&quot;&quot;&gt;
+          &lt;span aria-label=&quot;logo text&quot;&gt;FirstPaint&lt;/span&gt;
+        &lt;/a&gt;
+      &lt;/h1&gt;
+    &lt;/div&gt;
+
+    &lt;div&gt;
+      &lt;a href=&quot;#&quot;&gt;Blog&lt;/a&gt;
+      &lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;
+      &lt;a href=&quot;http://&quot;&gt;Documentation&lt;/a&gt;
+      &lt;a href=&quot;http://&quot;&gt;Repository&lt;/a&gt;
+      &lt;a href=&quot;#&quot;&gt;Contact Us&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/nav&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title></title>
     <link href="https://example.com/projects/first-paint/www/" />
-    <updated>2020-08-07T19:39:27-04:00</updated>
+    <updated>2020-08-10T21:38:21-04:00</updated>
     <id>https://example.com/projects/first-paint/www/</id>
     <content type="html">&lt;!doctype html&gt;
 &lt;html lang=&quot;en&quot;&gt;
@@ -1008,75 +1077,6 @@ sapiente nam beatae ullam quas eligendi minus nemo, ducimus impedit quos exceptu
 
 
 
-</content>
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://example.com/projects/first-paint/partials/main-content/" />
-    <updated>2020-07-25T15:43:25-04:00</updated>
-    <id>https://example.com/projects/first-paint/partials/main-content/</id>
-    <content type="html">&lt;section id=&quot;articles&quot;&gt;
-  &lt;article&gt;
-    &lt;h2&gt;Sample Article 1&lt;/h2&gt;
-    &lt;p&gt;
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
-      doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
-      voluptatibus eaque!
-    &lt;/p&gt;
-    &lt;p&gt;
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
-      doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
-      voluptatibus eaque!
-    &lt;/p&gt;
-    &lt;p&gt;
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
-      doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
-      voluptatibus eaque!
-    &lt;/p&gt;
-
-    &lt;footer&gt;
-      &lt;p&gt;
-        &lt;a href=&quot;https://example.com/projects/first-paint/partials/main-content/&quot; role=&quot;button&quot;&gt;Read more&lt;/a&gt;
-      &lt;/p&gt;
-    &lt;/footer&gt;
-  &lt;/article&gt;
-  &lt;aside&gt;
-    &lt;h4&gt;Sidebar&lt;/h4&gt;
-    &lt;p&gt;
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos error, quas at facilis temporibus optio rem,
-      doloremque, modi numquam commodi illum cumque. Sit eveniet, quod expedita libero obcaecati a laudantium.
-    &lt;/p&gt;
-  &lt;/aside&gt;
-&lt;/section&gt;
-</content>
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://example.com/projects/first-paint/partials/navbar/" />
-    <updated>2020-07-25T15:43:25-04:00</updated>
-    <id>https://example.com/projects/first-paint/partials/navbar/</id>
-    <content type="html">&lt;nav role=&quot;navigation&quot; aria-label=&quot;Main navigation&quot;&gt;
-  &lt;section id=&quot;navigation&quot;&gt;
-    &lt;div&gt;
-      &lt;h1&gt;
-        &lt;a href=&quot;#&quot; aria-label=&quot;Site logo&quot;&gt;
-          &lt;img src=&quot;https://example.com/img/fp.svg&quot; alt=&quot;&quot;&gt;
-          &lt;span aria-label=&quot;logo text&quot;&gt;FirstPaint&lt;/span&gt;
-        &lt;/a&gt;
-      &lt;/h1&gt;
-    &lt;/div&gt;
-
-    &lt;div&gt;
-      &lt;a href=&quot;#&quot;&gt;Blog&lt;/a&gt;
-      &lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;
-      &lt;a href=&quot;http://&quot;&gt;Documentation&lt;/a&gt;
-      &lt;a href=&quot;http://&quot;&gt;Repository&lt;/a&gt;
-      &lt;a href=&quot;#&quot;&gt;Contact Us&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-&lt;/nav&gt;
 </content>
   </entry>
 </feed>

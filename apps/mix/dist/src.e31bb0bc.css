@@ -40,6 +40,7 @@ html {
   -webkit-font-smoothing: antialiased !important;
   height: 100% !important;
   font-size: 85%;
+  scroll-behavior: smooth;
   background-color: #fff;
   min-width: 375px; }
   @media all and (min-width: 580px) {
@@ -241,7 +242,8 @@ nav[aria-label] {
   nav[aria-label] div {
     height: 100%;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    justify-content: center; }
     nav[aria-label] div a {
       display: inline-flex; }
   nav[aria-label] a,
@@ -384,13 +386,15 @@ section > [role="list"] {
   flex-wrap: wrap;
   justify-content: flex-start; }
   section > [role="list"] [role="listitem"] {
-    flex: 1 1 33%;
+    flex: 1 1 100%;
     padding: 1rem;
     line-height: 1.6; }
-  @media all and (min-width: 580px) and (mmax-width: 980px) {
-    section > [role="list"] footer [role="listitem"] {
-      max-width: auto;
-      flex: 1 1 100%; } }
+    @media all and (min-width: 780px) {
+      section > [role="list"] [role="listitem"] {
+        flex: 1 1 50%; } }
+    @media all and (min-width: 992px) {
+      section > [role="list"] [role="listitem"] {
+        flex: 1 1 33%; } }
 
 code {
   background-color: rgba(0, 0, 0, 0.8);
