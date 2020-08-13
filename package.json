@@ -19,7 +19,7 @@
     "lodash:collection": "lodash include=forEach,size,orderBy -o system/js/lodash/collection.js -m",
     "lodash:array": "lodash include=chunk,size -o system/js/lodash/array.js -m",
     "lodash:function": "lodash include=debounce,throttle -o system/js/lodash/function.js -m",
-    "clean": "rm -rf www",
+    "clean": "trash www",
     "audit": "lighthouse https://shawnsandy.com/ --output=json --output-path=./audits/report.json --config-path=.lighthouseconfig.js"
   },
   "directories": {
@@ -79,6 +79,7 @@
     "parcel": "^1.12.4",
     "require-dir": "^1.2.0",
     "sass": "^1.26.10",
-    "style-dictionary": "^2.10.1"
+    "style-dictionary": "^2.10.1",
+    "trash-cli": "^3.1.0"
   }
 }

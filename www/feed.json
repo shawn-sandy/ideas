@@ -25,12 +25,6 @@
 },
 
 {
-"title": "AtomMix.",
-"link": "https://proideas.dev/apps/mix/",
-"updated": "2020-08-10T21:38:21-04:00"
-},
-
-{
 "title": "Apps",
 "link": "https://proideas.dev/apps/",
 "updated": "2020-08-10T21:38:21-04:00"
@@ -38,13 +32,13 @@
 
 {
 "title": "",
-"link": "https://proideas.dev/projects/first-paint/",
+"link": "https://proideas.dev/projects/first-paint/index.copy/",
 "updated": "2020-08-10T21:38:21-04:00"
 },
 
 {
 "title": "",
-"link": "https://proideas.dev/projects/first-paint/index.copy/",
+"link": "https://proideas.dev/projects/first-paint/",
 "updated": "2020-08-10T21:38:21-04:00"
 },
 
@@ -62,19 +56,13 @@
 
 {
 "title": "",
-"link": "https://proideas.dev/projects/first-paint/partials/footer/",
-"updated": "2020-08-10T21:38:21-04:00"
-},
-
-{
-"title": "",
-"link": "https://proideas.dev/projects/first-paint/partials/grid/",
-"updated": "2020-08-10T21:38:21-04:00"
-},
-
-{
-"title": "",
 "link": "https://proideas.dev/projects/first-paint/partials/components/",
+"updated": "2020-08-10T21:38:21-04:00"
+},
+
+{
+"title": "AtomMix.",
+"link": "https://proideas.dev/apps/mix/",
 "updated": "2020-08-10T21:38:21-04:00"
 },
 
@@ -86,13 +74,13 @@
 
 {
 "title": "",
-"link": "https://proideas.dev/projects/first-paint/partials/inputs/",
+"link": "https://proideas.dev/projects/first-paint/partials/footer/",
 "updated": "2020-08-10T21:38:21-04:00"
 },
 
 {
 "title": "",
-"link": "https://proideas.dev/projects/first-paint/partials/list/",
+"link": "https://proideas.dev/projects/first-paint/partials/grid/",
 "updated": "2020-08-10T21:38:21-04:00"
 },
 
@@ -110,8 +98,20 @@
 
 {
 "title": "",
-"link": "https://proideas.dev/projects/first-paint/www/",
+"link": "https://proideas.dev/projects/first-paint/partials/inputs/",
 "updated": "2020-08-10T21:38:21-04:00"
+},
+
+{
+"title": "",
+"link": "https://proideas.dev/projects/first-paint/partials/list/",
+"updated": "2020-08-10T21:38:21-04:00"
+},
+
+{
+"title": "",
+"link": "https://proideas.dev/projects/first-paint/www/",
+"updated": "2020-08-10T22:37:24-04:00"
 }
 ]
 }
