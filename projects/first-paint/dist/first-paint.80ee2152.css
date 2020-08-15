@@ -63,8 +63,15 @@ body {
   color: rgba(0, 0, 0, 0.8);
   max-width: 1980px;
   margin: 0 auto; }
+  body:-webkit-full-screen {
+    color: red;
+    background-size: auto; }
+  body:-ms-fullscreen {
+    color: red;
+    background-size: auto; }
   body:fullscreen {
-    color: red; }
+    color: red;
+    background-size: auto; }
   @media print {
     body > *:not(main) {
       display: none; } }
@@ -190,7 +197,7 @@ h5 {
   font-size: 1.4rem; }
 
 small,
-.text_small {
+._text_small_60f80 {
   font-size: 0.75rem; }
 
 p {
@@ -310,7 +317,8 @@ button {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      align-self: start; } }
+      -ms-grid-row-align: start;
+          align-self: start; } }
   [role*="button"]:hover, [role*="button"]:active,
   button:hover,
   button:active {
@@ -443,6 +451,15 @@ label[for] {
     padding: 0.5rem;
     font-size: 0.9rem;
     width: 100%; }
+    label[for] + input::-moz-placeholder, label[for] + textarea::-moz-placeholder, label[for] + select::-moz-placeholder {
+      font-style: italic;
+      color: lightgrey; }
+    label[for] + input:-ms-input-placeholder, label[for] + textarea:-ms-input-placeholder, label[for] + select:-ms-input-placeholder {
+      font-style: italic;
+      color: lightgrey; }
+    label[for] + input::-ms-input-placeholder, label[for] + textarea::-ms-input-placeholder, label[for] + select::-ms-input-placeholder {
+      font-style: italic;
+      color: lightgrey; }
     label[for] + input::placeholder,
     label[for] + textarea::placeholder,
     label[for] + select::placeholder {
