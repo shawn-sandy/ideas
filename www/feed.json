@@ -25,6 +25,12 @@
 },
 
 {
+"title": "AtomMix.",
+"link": "https://proideas.dev/apps/mix/",
+"updated": "2020-08-10T21:38:21-04:00"
+},
+
+{
 "title": "Apps",
 "link": "https://proideas.dev/apps/",
 "updated": "2020-08-10T21:38:21-04:00"
@@ -44,31 +50,19 @@
 
 {
 "title": "",
-"link": "https://proideas.dev/apps/mix/builds/",
-"updated": "2020-08-10T21:38:21-04:00"
-},
-
-{
-"title": "",
 "link": "https://proideas.dev/projects/first-paint/partials/banner/",
 "updated": "2020-08-10T21:38:21-04:00"
 },
 
 {
 "title": "",
-"link": "https://proideas.dev/projects/first-paint/partials/components/",
-"updated": "2020-08-10T21:38:21-04:00"
-},
-
-{
-"title": "AtomMix.",
-"link": "https://proideas.dev/apps/mix/",
+"link": "https://proideas.dev/apps/mix/builds/",
 "updated": "2020-08-10T21:38:21-04:00"
 },
 
 {
 "title": "",
-"link": "https://proideas.dev/projects/first-paint/partials/header/",
+"link": "https://proideas.dev/projects/first-paint/partials/components/",
 "updated": "2020-08-10T21:38:21-04:00"
 },
 
@@ -80,19 +74,13 @@
 
 {
 "title": "",
+"link": "https://proideas.dev/projects/first-paint/partials/header/",
+"updated": "2020-08-10T21:38:21-04:00"
+},
+
+{
+"title": "",
 "link": "https://proideas.dev/projects/first-paint/partials/grid/",
-"updated": "2020-08-10T21:38:21-04:00"
-},
-
-{
-"title": "",
-"link": "https://proideas.dev/projects/first-paint/partials/main-content/",
-"updated": "2020-08-10T21:38:21-04:00"
-},
-
-{
-"title": "",
-"link": "https://proideas.dev/projects/first-paint/partials/navbar/",
 "updated": "2020-08-10T21:38:21-04:00"
 },
 
@@ -110,8 +98,20 @@
 
 {
 "title": "",
+"link": "https://proideas.dev/projects/first-paint/partials/main-content/",
+"updated": "2020-08-10T21:38:21-04:00"
+},
+
+{
+"title": "",
 "link": "https://proideas.dev/projects/first-paint/www/",
 "updated": "2020-08-10T22:37:24-04:00"
+},
+
+{
+"title": "",
+"link": "https://proideas.dev/projects/first-paint/partials/navbar/",
+"updated": "2020-08-10T21:38:21-04:00"
 }
 ]
 }
