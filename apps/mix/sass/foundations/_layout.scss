@@ -1,20 +1,14 @@
 @mixin mix-layout {
   body {
-
-    >nav,
-    >header,
-    >main,
-    >section,
-    >footer {
-
-      // padding: 2rem 0;
-      // > * + * {
-      //   margin-top: 3rem;
-      // }
-      >div,
-      >section,
-      >aside,
-      >article {
+    > nav,
+    > header,
+    > main,
+    > section,
+    > footer {
+      > div,
+      > section,
+      > aside,
+      > article {
         max-width: 90%;
         margin: 0 auto;
 
@@ -30,6 +24,5 @@
 
       @content;
     }
-
   }
 }
