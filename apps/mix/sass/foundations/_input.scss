@@ -3,26 +3,34 @@
     &::before {
       content: "\2911";
     }
+
     font-size: 0.9rem;
     display: block;
-    & + input,
-    & + textarea,
-    & + select {
+
+    &+input,
+    &+textarea,
+    &+select {
       background-color: $mx-whitesmoke;
       display: flex;
       margin: 0.1rem 0 1rem;
       padding: 0.5rem;
       font-size: 0.9rem;
       width: 100%;
+      border: 1px solid gray;
+
+      &:focus,
+      &:focus-within {
+        border: 2px solid gray;
+
+      }
+
       &::placeholder {
         font-style: italic;
         color: lightgrey;
       }
-      &[type="email"] {
-        // margin: 1rem 0 0;
-      }
     }
-    & + select {
+
+    &+select {
       -moz-appearance: none;
       -webkit-appearance: none;
       appearance: none;
@@ -33,10 +41,11 @@
       background-size: 0.65em auto, 100%;
     }
 
-    & + textarea {
+    &+textarea {
       min-height: 150px;
     }
   }
+
   // label[for*="email"]::before {
   //   content: "\0040";
   // }
