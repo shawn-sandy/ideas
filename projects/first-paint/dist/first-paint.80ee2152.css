@@ -450,7 +450,14 @@ label[for] {
     margin: 0.1rem 0 1rem;
     padding: 0.5rem;
     font-size: 0.9rem;
-    width: 100%; }
+    width: 100%;
+    border: 1px solid gray; }
+    label[for] + input:focus, label[for] + input:focus-within,
+    label[for] + textarea:focus,
+    label[for] + textarea:focus-within,
+    label[for] + select:focus,
+    label[for] + select:focus-within {
+      border: 2px solid gray; }
     label[for] + input::-moz-placeholder, label[for] + textarea::-moz-placeholder, label[for] + select::-moz-placeholder {
       font-style: italic;
       color: lightgrey; }
