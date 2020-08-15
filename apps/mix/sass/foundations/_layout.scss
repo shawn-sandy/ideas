@@ -1,0 +1,33 @@
+@mixin mix-layout {
+
+  >nav,
+  >header,
+  >main,
+  >section,
+  >footer {
+
+    // padding: 2rem 0;
+    // > * + * {
+    //   margin-top: 3rem;
+    // }
+    >div,
+    >section,
+    >aside,
+    >article {
+      max-width: 90%;
+      margin: 0 auto;
+
+      @media screen and (min-width: 1280px) {
+        max-width: 1600px;
+        width: 80%;
+      }
+
+      @media screen and (min-width: 1980px) {
+        max-width: 1920px;
+      }
+    }
+
+    @content;
+  }
+
+}

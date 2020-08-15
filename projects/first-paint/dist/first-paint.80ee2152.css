@@ -63,15 +63,6 @@ body {
   color: rgba(0, 0, 0, 0.8);
   max-width: 1980px;
   margin: 0 auto; }
-  body:-webkit-full-screen {
-    color: red;
-    background-size: auto; }
-  body:-ms-fullscreen {
-    color: red;
-    background-size: auto; }
-  body:fullscreen {
-    color: red;
-    background-size: auto; }
   @media print {
     body > *:not(main) {
       display: none; } }
@@ -169,6 +160,74 @@ body {
 
 [aria-hidden] {
   display: none; }
+
+> nav > div,
+> nav > section,
+> nav > aside,
+> nav > article,
+> header > div,
+> header > section,
+> header > aside,
+> header > article,
+> main > div,
+> main > section,
+> main > aside,
+> main > article,
+> section > div,
+> section > section,
+> section > aside,
+> section > article,
+> footer > div,
+> footer > section,
+> footer > aside,
+> footer > article {
+  max-width: 90%;
+  margin: 0 auto; }
+  @media screen and (min-width: 1280px) {
+    > nav > div,
+    > nav > section,
+    > nav > aside,
+    > nav > article,
+    > header > div,
+    > header > section,
+    > header > aside,
+    > header > article,
+    > main > div,
+    > main > section,
+    > main > aside,
+    > main > article,
+    > section > div,
+    > section > section,
+    > section > aside,
+    > section > article,
+    > footer > div,
+    > footer > section,
+    > footer > aside,
+    > footer > article {
+      max-width: 1600px;
+      width: 80%; } }
+  @media screen and (min-width: 1980px) {
+    > nav > div,
+    > nav > section,
+    > nav > aside,
+    > nav > article,
+    > header > div,
+    > header > section,
+    > header > aside,
+    > header > article,
+    > main > div,
+    > main > section,
+    > main > aside,
+    > main > article,
+    > section > div,
+    > section > section,
+    > section > aside,
+    > section > article,
+    > footer > div,
+    > footer > section,
+    > footer > aside,
+    > footer > article {
+      max-width: 1920px; } }
 
 h1,
 h2,

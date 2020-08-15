@@ -24,11 +24,6 @@
   }
 
   body {
-    &:fullscreen {
-      color: red;
-      background-size: auto;
-
-    }
 
     padding: 0 !important;
     background-color: $mx-bg;
