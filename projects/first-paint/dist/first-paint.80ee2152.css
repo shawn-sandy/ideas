@@ -47,6 +47,10 @@ html {
   scroll-behavior: smooth;
   background-color: #fff;
   min-width: 375px; }
+  html *,
+  html *::before,
+  html *::after {
+    box-sizing: border-box; }
   @media all and (min-width: 580px) {
     html {
       font-size: 95%; } }
@@ -63,85 +67,9 @@ body {
   color: rgba(0, 0, 0, 0.8);
   max-width: 1980px;
   margin: 0 auto; }
-  body:-webkit-full-screen {
-    color: red;
-    background-size: auto; }
-  body:-ms-fullscreen {
-    color: red;
-    background-size: auto; }
-  body:fullscreen {
-    color: red;
-    background-size: auto; }
   @media print {
     body > *:not(main) {
       display: none; } }
-  body > nav > div,
-  body > nav > section,
-  body > nav > aside,
-  body > nav > article,
-  body > header > div,
-  body > header > section,
-  body > header > aside,
-  body > header > article,
-  body > main > div,
-  body > main > section,
-  body > main > aside,
-  body > main > article,
-  body > section > div,
-  body > section > section,
-  body > section > aside,
-  body > section > article,
-  body > footer > div,
-  body > footer > section,
-  body > footer > aside,
-  body > footer > article {
-    max-width: 90%;
-    margin: 0 auto; }
-    @media screen and (min-width: 1280px) {
-      body > nav > div,
-      body > nav > section,
-      body > nav > aside,
-      body > nav > article,
-      body > header > div,
-      body > header > section,
-      body > header > aside,
-      body > header > article,
-      body > main > div,
-      body > main > section,
-      body > main > aside,
-      body > main > article,
-      body > section > div,
-      body > section > section,
-      body > section > aside,
-      body > section > article,
-      body > footer > div,
-      body > footer > section,
-      body > footer > aside,
-      body > footer > article {
-        max-width: 1600px;
-        width: 80%; } }
-    @media screen and (min-width: 1980px) {
-      body > nav > div,
-      body > nav > section,
-      body > nav > aside,
-      body > nav > article,
-      body > header > div,
-      body > header > section,
-      body > header > aside,
-      body > header > article,
-      body > main > div,
-      body > main > section,
-      body > main > aside,
-      body > main > article,
-      body > section > div,
-      body > section > section,
-      body > section > aside,
-      body > section > article,
-      body > footer > div,
-      body > footer > section,
-      body > footer > aside,
-      body > footer > article {
-        max-width: 1920px; } }
   body > nav {
     padding: 0 0; }
   body > header {
@@ -169,6 +97,74 @@ body {
 
 [aria-hidden] {
   display: none; }
+
+body > nav > div,
+body > nav > section,
+body > nav > aside,
+body > nav > article,
+body > header > div,
+body > header > section,
+body > header > aside,
+body > header > article,
+body > main > div,
+body > main > section,
+body > main > aside,
+body > main > article,
+body > section > div,
+body > section > section,
+body > section > aside,
+body > section > article,
+body > footer > div,
+body > footer > section,
+body > footer > aside,
+body > footer > article {
+  max-width: 90%;
+  margin: 0 auto; }
+  @media screen and (min-width: 1280px) {
+    body > nav > div,
+    body > nav > section,
+    body > nav > aside,
+    body > nav > article,
+    body > header > div,
+    body > header > section,
+    body > header > aside,
+    body > header > article,
+    body > main > div,
+    body > main > section,
+    body > main > aside,
+    body > main > article,
+    body > section > div,
+    body > section > section,
+    body > section > aside,
+    body > section > article,
+    body > footer > div,
+    body > footer > section,
+    body > footer > aside,
+    body > footer > article {
+      max-width: 1600px;
+      width: 80%; } }
+  @media screen and (min-width: 1980px) {
+    body > nav > div,
+    body > nav > section,
+    body > nav > aside,
+    body > nav > article,
+    body > header > div,
+    body > header > section,
+    body > header > aside,
+    body > header > article,
+    body > main > div,
+    body > main > section,
+    body > main > aside,
+    body > main > article,
+    body > section > div,
+    body > section > section,
+    body > section > aside,
+    body > section > article,
+    body > footer > div,
+    body > footer > section,
+    body > footer > aside,
+    body > footer > article {
+      max-width: 1920px; } }
 
 h1,
 h2,
@@ -440,48 +436,92 @@ code {
 label[for] {
   font-size: 0.9rem;
   display: block; }
-  label[for]::before {
-    content: "\2911"; }
-  label[for] + input,
-  label[for] + textarea,
-  label[for] + select {
+  label[for] em {
+    font-style: normal; }
+    label[for] em::after {
+      content: "\2217";
+      color: red;
+      font-size: larger; }
+  label[for] + input[id],
+  label[for] + textarea[id],
+  label[for] + select[id] {
     background-color: snow;
     display: flex;
     margin: 0.1rem 0 1rem;
     padding: 0.5rem;
     font-size: 0.9rem;
     width: 100%;
-    border: 1px solid gray; }
-    label[for] + input:focus, label[for] + input:focus-within,
-    label[for] + textarea:focus,
-    label[for] + textarea:focus-within,
-    label[for] + select:focus,
-    label[for] + select:focus-within {
-      border: 2px solid gray; }
-    label[for] + input::-moz-placeholder, label[for] + textarea::-moz-placeholder, label[for] + select::-moz-placeholder {
+    border: 1px solid gray;
+    border-radius: 2px; }
+    label[for] + input[id]:focus, label[for] + input[id]:focus-within,
+    label[for] + textarea[id]:focus,
+    label[for] + textarea[id]:focus-within,
+    label[for] + select[id]:focus,
+    label[for] + select[id]:focus-within {
+      border: 1px solid gray;
+      outline-color: gray; }
+    label[for] + input[id]::-moz-placeholder, label[for] + textarea[id]::-moz-placeholder, label[for] + select[id]::-moz-placeholder {
       font-style: italic;
       color: lightgrey; }
-    label[for] + input:-ms-input-placeholder, label[for] + textarea:-ms-input-placeholder, label[for] + select:-ms-input-placeholder {
+    label[for] + input[id]:-ms-input-placeholder, label[for] + textarea[id]:-ms-input-placeholder, label[for] + select[id]:-ms-input-placeholder {
       font-style: italic;
       color: lightgrey; }
-    label[for] + input::-ms-input-placeholder, label[for] + textarea::-ms-input-placeholder, label[for] + select::-ms-input-placeholder {
+    label[for] + input[id]::-ms-input-placeholder, label[for] + textarea[id]::-ms-input-placeholder, label[for] + select[id]::-ms-input-placeholder {
       font-style: italic;
       color: lightgrey; }
-    label[for] + input::placeholder,
-    label[for] + textarea::placeholder,
-    label[for] + select::placeholder {
+    label[for] + input[id]::placeholder,
+    label[for] + textarea[id]::placeholder,
+    label[for] + select[id]::placeholder {
       font-style: italic;
       color: lightgrey; }
   label[for] + select {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
-    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+    background-color: #fff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='512' viewBox='0 0 320 512'%3E%3Ctitle%3Esort%3C/title%3E%3Cg %3E%3Cdefs%3E%3C/defs%3E%3Cpath d='M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z' class='fa-secondary' opacity='.4'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
     background-repeat: no-repeat, repeat;
     background-position: right 0.7em top 50%, 0 0;
     background-size: 0.65em auto, 100%; }
   label[for] + textarea {
     min-height: 150px; }
+
+span > * + * {
+  margin-left: 0.3rem; }
+
+span > label[for] {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0.5rem;
+  cursor: pointer; }
+  span > label[for]::before {
+    content: "";
+    display: inline-flex;
+    width: 1rem;
+    height: 1rem;
+    background-color: transparent;
+    border: solid 2px lightgrey;
+    border-radius: 3px;
+    margin-right: 0.5rem; }
+
+span > [type="checkbox"]:checked + label[for]::before,
+span [type="radio"]:checked + label[for]::before {
+  background-color: gray; }
+
+span > [type="checkbox"],
+span > [type="radio"] {
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  display: inline-flex;
+  margin: 0;
+  padding: 0; }
+
+span > [type="radio"] {
+  display: block; }
+
+span > [type="radio"] + label::before {
+  border-radius: 50%; }
 
 ol, ul, dl {
   margin-left: .0rem;

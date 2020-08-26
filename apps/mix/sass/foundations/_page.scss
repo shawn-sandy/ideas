@@ -1,5 +1,10 @@
-@mixin mix-html {
+@mixin mix-page {
   html {
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
     font-family: $mx-font-default;
     -webkit-font-smoothing: antialiased !important;
     height: 100% !important;
@@ -24,12 +29,6 @@
   }
 
   body {
-    &:fullscreen {
-      color: red;
-      background-size: auto;
-
-    }
-
     padding: 0 !important;
     background-color: $mx-bg;
     color: $mx-default-color;
@@ -37,55 +36,26 @@
     margin: 0 auto;
 
     @media print {
-      >*:not(main) {
+      > *:not(main) {
         display: none;
       }
     }
 
-    >nav,
-    >header,
-    >main,
-    >section,
-    >footer {
-
-      // padding: 2rem 0;
-      // > * + * {
-      //   margin-top: 3rem;
-      // }
-      >div,
-      >section,
-      >aside,
-      >article {
-        max-width: 90%;
-        margin: 0 auto;
-
-        @media screen and (min-width: 1280px) {
-          max-width: 1600px;
-          width: 80%;
-        }
-
-        @media screen and (min-width: 1980px) {
-          max-width: 1920px;
-        }
-      }
-
-      @content;
-    }
-
-    >nav {
+    > nav {
       padding: 0 0;
     }
 
-    >header {
+    > header {
       background-color: $mx-header-bg;
       background-image: $mx-header-bg-img;
       color: $mx-default-color;
       min-height: $mx-header-vh;
 
-      @media screen and (min-width: 1280px) {}
+      @media screen and (min-width: 1280px) {
+      }
     }
 
-    >footer {
+    > footer {
       min-height: $mx-footer-vh;
       display: flex;
       align-items: center;
