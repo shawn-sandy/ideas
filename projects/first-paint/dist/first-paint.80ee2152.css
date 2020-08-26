@@ -47,6 +47,10 @@ html {
   scroll-behavior: smooth;
   background-color: #fff;
   min-width: 375px; }
+  html *,
+  html *::before,
+  html *::after {
+    box-sizing: border-box; }
   @media all and (min-width: 580px) {
     html {
       font-size: 95%; } }
@@ -432,6 +436,12 @@ code {
 label[for] {
   font-size: 0.9rem;
   display: block; }
+  label[for] em {
+    font-style: normal; }
+    label[for] em::after {
+      content: "\2217";
+      color: red;
+      font-size: larger; }
   label[for] + input[id],
   label[for] + textarea[id],
   label[for] + select[id] {
@@ -476,7 +486,41 @@ label[for] {
   label[for] + textarea {
     min-height: 150px; }
 
-input[type="radio"] {
+span > * + * {
+  margin-left: 0.3rem; }
+
+span > label[for] {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0.5rem;
+  cursor: pointer; }
+  span > label[for]::before {
+    content: "";
+    display: inline-flex;
+    width: 1rem;
+    height: 1rem;
+    background-color: transparent;
+    border: solid 2px lightgrey;
+    border-radius: 3px;
+    margin-right: 0.5rem; }
+
+span > [type="checkbox"]:checked + label[for]::before,
+span [type="radio"]:checked + label[for]::before {
+  background-color: gray; }
+
+span > [type="checkbox"],
+span > [type="radio"] {
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  display: inline-flex;
+  margin: 0;
+  padding: 0; }
+
+span > [type="radio"] {
+  display: block; }
+
+span > [type="radio"] + label::before {
   border-radius: 50%; }
 
 ol, ul, dl {
