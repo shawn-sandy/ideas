@@ -15,8 +15,6 @@ First Paint is an easy to use CSS/SCSS starter library that contains accessibili
 - Launch you page in your browser
 - Edit/customize your page `markup and content`
 
-<script src="https://gist.github.com/shawn-sandy/bcc3739439954599280f6acd6432c127.js"></script>
-
 ### Customized Build
 
 - Copy and add the stylesheet below into the `<head></head>` of you HTML page
@@ -24,7 +22,7 @@ First Paint is an easy to use CSS/SCSS starter library that contains accessibili
 ```html
 <link
   rel="stylesheet"
-  src="https://cdn.jsdelivr.net/npm/@shawnsandy/mix@0.9.2/dist/fp/index.css"
+  src="https://cdn.jsdelivr.net/npm/@shawnsandy/first-paint/dist/index.min.css"
 />
 ```
 
