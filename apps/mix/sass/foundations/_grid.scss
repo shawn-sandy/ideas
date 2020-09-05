@@ -1,6 +1,6 @@
 @mixin mix-flex-grid {
   section {
-    > [role="list"] {
+    [role="list"] {
       padding: 3rem 0;
       box-sizing: border-box;
       display: flex;
