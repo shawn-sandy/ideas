@@ -1,16 +1,23 @@
 @mixin mix-list {
-  ol, ul, dl {
-    margin-left: .0rem;
+  ol,
+  ul,
+  dl {
+    margin-left: 0rem;
     padding-left: 1.5rem;
     > * + * {
-      margin-top: .7rem;
+      margin-top: 0.5rem;
+    }
+    > * {
+      line-height: 1.5;
+      font-size: smaller;
     }
   }
 
-  span  {
-    > ol, ul {
+  span {
+    > ol,
+    ul {
       list-style: none;
-      margin-left: .0rem;
+      margin-left: 0rem;
       padding-left: 0rem;
     }
   }
