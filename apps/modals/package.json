@@ -27,7 +27,7 @@
     "gulp-inject-partials": "^1.0.5",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "parcel": "^1.12.4",
     "snowpack": "^1.4.0",
     "webpack": "^4.40.2",
