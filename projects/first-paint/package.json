@@ -34,7 +34,7 @@
     "start": "run-s clean parcel",
     "parcel": "parcel serve index.html --hmr-port --out-dir www --open",
     "build": "run-s clean:dist build:parcel",
-    "build:parcel": "parcel build index.js --no-content-hash --out-dir dist",
+    "build:parcel": "parcel build index.js components/*.js --no-content-hash --out-dir dist",
     "clean": "trash www",
     "clean:dist": "trash dist"
   },

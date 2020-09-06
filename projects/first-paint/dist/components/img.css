@@ -1,0 +1,2 @@
+@charset "UTF-8";picture{justify-content:center;padding:0;text-align:center}picture,picture>img[alt]{display:flex;width:100%;height:auto;align-items:center}picture>img[alt]{position:relative}picture>img[alt]:after{min-height:48px;height:100%;width:100%;content:"✖" " " attr(alt);position:absolute;top:0;left:0;display:inline-flex;align-items:center;justify-content:center;background-color:#d3d3d3;border-radius:.1rem;color:#a9a9a9;background-repeat:no-repeat;text-transform:uppercase;border:2px solid #a9a9a9}
+/*# sourceMappingURL=/img.css.map */
