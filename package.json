@@ -47,7 +47,7 @@
     "@11ty/eleventy-plugin-rss": "^1.0.9",
     "@fortawesome/fontawesome-free": "^5.14.0",
     "@shawnsandy/bootstrap-lite": "^0.1.7",
-    "@shawnsandy/first-paint": "^0.1.0",
+    "@shawnsandy/first-paint": "^0.1.1",
     "@shawnsandy/ideas": "^0.1.19",
     "@shawnsandy/mix": "^0.10.0",
     "auto-changelog": "^2.2.1",
