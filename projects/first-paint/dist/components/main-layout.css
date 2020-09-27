@@ -1,2 +1,0 @@
-main{min-height:40vh}main>section{width:100%}main>section article{padding:1rem;width:100%;font-size:1}main>section article>*+*{margin-top:2rem}main>section [role=complementary],main>section article+aside{width:100%;padding:1rem;font-size:.95rem}@media (min-width:1280px){main>section{display:flex;align-items:flex-start}main>section [role=complementary],main>section article+aside{min-width:25%;max-width:25%}}
-/*# sourceMappingURL=/main-layout.css.map */

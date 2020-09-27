@@ -1,2 +1,0 @@
-section [role=list]{padding:3rem 0;box-sizing:border-box;display:flex;flex-wrap:wrap;justify-content:flex-start}section [role=list] [role=listitem]{flex:1 1 100%;padding:1rem;line-height:1.6}@media (min-width:780px){section [role=list] [role=listitem]{flex:1 1 50%}}@media (min-width:992px){section [role=list] [role=listitem]{flex:1 1 33%}}
-/*# sourceMappingURL=/grid.css.map */

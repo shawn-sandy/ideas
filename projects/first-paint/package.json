@@ -36,7 +36,7 @@
     "watch": "run-s watch:*",
     "parcel": "parcel serve index.html --hmr-port --out-dir www --open",
     "build": "run-s clean:dist build:parcel",
-    "build:parcel": "parcel build index.js components/*.js --no-content-hash --out-dir dist",
+    "build:parcel": "parcel build index.js --no-content-hash --out-dir dist",
     "watch:styles": "parcel watch components/*.js --no-content-hash --out-dir dist",
     "clean": "trash www",
     "clean:dist": "trash dist"
@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "@shawnsandy/mix": "^0.10.0",
-    "autoprefixer": "^9.8.6",
+    "autoprefixer": "9.8.6",
     "npm-run-all": "^4.1.5",
     "parcel": "^1.12.4",
     "postcss-modules": "^3.2.0",
@@ -54,5 +54,9 @@
   },
   "dependencies": {
     "trash-cli": "^3.1.0"
-  }
+  },
+  "browserslist": [
+    "> 0.2%",
+    "not dead"
+  ]
 }
