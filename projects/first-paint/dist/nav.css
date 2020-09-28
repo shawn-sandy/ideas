@@ -1,0 +1,67 @@
+body > div,
+body > section,
+body > ul {
+  height: 100%;
+}
+@media (min-width: 960px) {
+  body > div,
+  body > section,
+  body > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+body > div h1,
+body > section h1,
+body > ul h1 {
+  display: inline-flex;
+  height: inherit;
+  word-break: normal;
+  margin: 0 1rem 0 0;
+  padding: 0 1rem 0 0;
+  height: 5rem;
+}
+body > div h1 * + *,
+body > section h1 * + *,
+body > ul h1 * + * {
+  margin-left: 0.5rem;
+}
+body > div h1 img,
+body > section h1 img,
+body > ul h1 img {
+  max-height: 70%;
+  width: auto;
+}
+body > div h1 span,
+body > section h1 span,
+body > ul h1 span {
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+body > div [aria-hidden],
+body > section [aria-hidden],
+body > ul [aria-hidden] {
+  display: inline-flex;
+}
+@media (min-width: 980px) {
+  body > div [aria-hidden],
+  body > section [aria-hidden],
+  body > ul [aria-hidden] {
+    display: none;
+  }
+}
+body ul {
+  padding: 0;
+  list-style: none;
+}
+body div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body div a {
+  display: inline-flex;
+}
+/*# sourceMappingURL=/nav.css.map */

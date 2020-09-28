@@ -1,3 +1,6 @@
 @import "~@shawnsandy/mix/sass/foundations/_settings.scss";
 @import "@shawnsandy/mix/sass/foundations/_nav.scss";
-@include mix-nav();
+
+body {
+  @include mix-nav();
+}
