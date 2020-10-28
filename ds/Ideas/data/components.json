@@ -1,0 +1,23 @@
+{
+  "dsp_spec_version": "0.0.1",
+  "last_updated_by": "",
+  "last_updated": "2020-10-21T01:43:27.977Z",
+  "entities": [
+    {
+      "id": "bc85c961-bde8-4d43-bf4e-81779e6a6963",
+      "class": "component",
+      "type": "page",
+      "related_entity_ids": [],
+      "snippets": {
+        "trigger": "",
+        "languages": {
+          "html": "<button>Click Here</button>"
+        }
+      },
+      "name": "Button",
+      "tags": [],
+      "last_updated": "2020-10-21T01:46:28.557Z",
+      "last_updated_by": ""
+    }
+  ]
+}
