@@ -1,7 +1,7 @@
 {
   "dsp_spec_version": "0.0.1",
   "last_updated_by": "",
-  "last_updated": "2020-10-21T01:43:27.977Z",
+  "last_updated": "2020-11-02T12:27:29.553Z",
   "entities": [
     {
       "class": "doc",
@@ -14,7 +14,7 @@
     {
       "class": "doc",
       "type": "page",
-      "id": "0d299340-a5d2-487f-9d66-9ab3ee1ebf0f",
+      "id": "2f903a28-7190-4f43-b41d-91aec6df982a",
       "name": "Principles",
       "description": "Edit this with the pencil icon. \n\n[Markdown](https://commonmark.org/help/) is supported to help you create great documentation for your design system.",
       "tags": []

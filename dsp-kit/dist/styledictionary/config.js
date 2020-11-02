@@ -16,6 +16,16 @@ const StyleDictionary = require('style-dictionary').extend({
       "transformGroup": "css",
       "buildPath": "css/"
     },
+    "js": {
+      "files": [
+        {
+          "destination": "tokens.js",
+          "format": "javascript/es6"
+        }
+      ],
+      "transformGroup": "js",
+      "buildPath": "js/"
+    },
     "scss": {
       "files": [
         {
