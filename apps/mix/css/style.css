@@ -1,7 +1,6 @@
-@charset "UTF-8";
 /*
   Do not edit directly
-  Generated on Sat, 06 Jun 2020 20:11:06 GMT
+  Generated on Sat, 07 Nov 2020 19:21:23 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 /** generates a series of modifies based a list of attributes  **/
@@ -12,121 +11,22 @@
 /**
  * navbar
  */
-html {
-  font-family: “Roboto”, “Segoe UI”, -apple-system, BlinkMacSystemFont, “Oxygen”, “Ubuntu”, “Cantarell”, “Fira Sans”, “Droid Sans”, “Helvetica Neue”, sans-serif;
-  -webkit-font-smoothing: antialiased !important;
-  height: 100% !important;
-  font-size: 85%;
-  background-color: #fff; }
-  @media all and (min-width: 580px) {
-    html {
-      font-size: 95%; } }
-  @media all and (min-width: 1380px) {
-    html {
-      font-size: 100%; } }
-
-* {
-  box-sizing: border-box; }
-
-body {
-  padding: 0 !important;
-  background-color: snow;
-  color: rgba(0, 0, 0, 0.7);
-  max-width: 1980px;
+body > * > section,
+body > * > div,
+body > * > article {
+  max-width: 90%;
   margin: 0 auto; }
-  @media print {
-    body > *:not(main) {
-      display: none; } }
-  body > nav > div,
-  body > nav > section,
-  body > nav > aside,
-  body > nav > article,
-  body > header > div,
-  body > header > section,
-  body > header > aside,
-  body > header > article,
-  body > main > div,
-  body > main > section,
-  body > main > aside,
-  body > main > article,
-  body > section > div,
-  body > section > section,
-  body > section > aside,
-  body > section > article,
-  body > footer > div,
-  body > footer > section,
-  body > footer > aside,
-  body > footer > article {
-    max-width: 90%;
-    margin: 0 auto; }
-    @media screen and (min-width: 1280px) {
-      body > nav > div,
-      body > nav > section,
-      body > nav > aside,
-      body > nav > article,
-      body > header > div,
-      body > header > section,
-      body > header > aside,
-      body > header > article,
-      body > main > div,
-      body > main > section,
-      body > main > aside,
-      body > main > article,
-      body > section > div,
-      body > section > section,
-      body > section > aside,
-      body > section > article,
-      body > footer > div,
-      body > footer > section,
-      body > footer > aside,
-      body > footer > article {
-        max-width: 1600px;
-        width: 80%; } }
-    @media screen and (min-width: 1980px) {
-      body > nav > div,
-      body > nav > section,
-      body > nav > aside,
-      body > nav > article,
-      body > header > div,
-      body > header > section,
-      body > header > aside,
-      body > header > article,
-      body > main > div,
-      body > main > section,
-      body > main > aside,
-      body > main > article,
-      body > section > div,
-      body > section > section,
-      body > section > aside,
-      body > section > article,
-      body > footer > div,
-      body > footer > section,
-      body > footer > aside,
-      body > footer > article {
-        max-width: 1920px; } }
-  body > nav {
-    padding: 0 0; }
-  body > header {
-    background-color: rgba(0, 0, 0, 0.1);
-    background-image: none; }
-    @media screen and (min-width: 1280px) {
-      body > header {
-        min-height: 50vh; } }
-  body > footer {
-    min-height: 10vh;
-    display: flex;
-    align-items: center;
-    align-content: stretch;
-    margin: 2rem 0 0;
-    background-color: #e7e7e7; }
-    body > footer p {
-      text-align: center; }
-  body hr {
-    border-top: 1px solid snow;
-    margin: 3rem 0; }
-
-[aria-hidden] {
-  display: none; }
+  @media screen and (min-width: 1280px) {
+    body > * > section,
+    body > * > div,
+    body > * > article {
+      max-width: 1600px;
+      width: 80%; } }
+  @media screen and (min-width: 1980px) {
+    body > * > section,
+    body > * > div,
+    body > * > article {
+      max-width: 1920px; } }
 
 nav[aria-label] {
   background-color: transparent; }
@@ -141,6 +41,12 @@ nav[aria-label] {
         display: flex;
         align-items: center;
         justify-content: space-between; } }
+    @media all {
+      nav[aria-label] > section,
+      nav[aria-label] > div,
+      nav[aria-label] > ul {
+        width: 100% !important;
+        max-width: 100% !important; } }
     nav[aria-label] > section h1,
     nav[aria-label] > div h1,
     nav[aria-label] > ul h1 {
@@ -151,18 +57,20 @@ nav[aria-label] {
       margin: 0 1rem 0 0;
       padding: 0 1rem 0 0;
       height: 5rem; }
+      nav[aria-label] > section h1 * + *,
+      nav[aria-label] > div h1 * + *,
+      nav[aria-label] > ul h1 * + * {
+        margin-left: 0.5rem; }
       nav[aria-label] > section h1 img,
       nav[aria-label] > div h1 img,
       nav[aria-label] > ul h1 img {
         max-height: 70%;
-        width: auto;
-        padding: 0.3rem;
-        margin: 0.3rem; }
+        width: auto; }
       nav[aria-label] > section h1 span,
       nav[aria-label] > div h1 span,
       nav[aria-label] > ul h1 span {
         font-size: 1.5rem;
-        color: rgba(0, 0, 0, 0.7); }
+        color: rgba(0, 0, 0, 0.8); }
     nav[aria-label] > section [aria-hidden],
     nav[aria-label] > div [aria-hidden],
     nav[aria-label] > ul [aria-hidden] {
@@ -178,7 +86,8 @@ nav[aria-label] {
   nav[aria-label] div {
     height: 100%;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    justify-content: center; }
     nav[aria-label] div a {
       display: inline-flex; }
   nav[aria-label] a,
