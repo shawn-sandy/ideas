@@ -3,11 +3,11 @@
     min-height: $mx-main-vh;
     // padding: 2rem 0;
     > section {
-      width: 100%;
+      // width: 100%;
       article {
         padding: 1rem;
         width: 100%;
-        font-size: 1;
+        font-size: 1rem;
         > * + * {
           margin-top: 2rem;
         }
