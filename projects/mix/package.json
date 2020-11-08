@@ -21,6 +21,11 @@
     "type": "git",
     "url": "git+https://github.com/shawn-sandy/idea.git"
   },
+  "files": [
+    "sass",
+    "dist",
+    "css"
+  ],
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
     "start": "parcel src/index.html -p 3050 --open",
