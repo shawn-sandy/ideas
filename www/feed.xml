@@ -13,9 +13,9 @@
   
   <entry>
     <title>shawnsandy.com</title>
-    <link href="https://example.com/apps/css-modal/" />
+    <link href="https://example.com/projects/css-modal/" />
     <updated>2020-08-10T21:38:21-04:00</updated>
-    <id>https://example.com/apps/css-modal/</id>
+    <id>https://example.com/projects/css-modal/</id>
     <content type="html">
 &lt;p&gt;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta quibusdam facere placeat, voluptates laborum
         amet quas hic, rerum minus iure quod corrupti, a autem vel laudantium eos. Cumque, laborum labore.&lt;/p&gt;</content>
@@ -56,9 +56,9 @@ sapiente nam beatae ullam quas eligendi minus nemo, ducimus impedit quos exceptu
   
   <entry>
     <title>AtomMix.</title>
-    <link href="https://example.com/apps/mix/" />
+    <link href="https://example.com/projects/mix/" />
     <updated>2020-08-10T21:38:21-04:00</updated>
-    <id>https://example.com/apps/mix/</id>
+    <id>https://example.com/projects/mix/</id>
     <content type="html">&lt;nav class=&quot;border-bottom&quot; role=&quot;navigation&quot;&gt;
     &lt;section&gt;
         &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
@@ -131,7 +131,7 @@ sapiente nam beatae ullam quas eligendi minus nemo, ducimus impedit quos exceptu
 
             &lt;footer&gt;
                 &lt;p&gt;
-                    &lt;a href=&quot;https://example.com/apps/mix/&quot; role=&quot;button&quot;&gt;Read more&lt;/a&gt;
+                    &lt;a href=&quot;https://example.com/projects/mix/&quot; role=&quot;button&quot;&gt;Read more&lt;/a&gt;
                 &lt;/p&gt;
                 &lt;p&gt;
                     &lt;a href=&quot;#&quot;&gt;Read more&lt;/a&gt;
@@ -352,9 +352,9 @@ sapiente nam beatae ullam quas eligendi minus nemo, ducimus impedit quos exceptu
   
   <entry>
     <title></title>
-    <link href="https://example.com/apps/mix/builds/" />
+    <link href="https://example.com/projects/mix/builds/" />
     <updated>2020-08-10T21:38:21-04:00</updated>
-    <id>https://example.com/apps/mix/builds/</id>
+    <id>https://example.com/projects/mix/builds/</id>
     <content type="html">&lt;!doctype html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 
@@ -426,7 +426,7 @@ sapiente nam beatae ullam quas eligendi minus nemo, ducimus impedit quos exceptu
           doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
           voluptatibus eaque! &lt;/p&gt;
         &lt;footer&gt;
-          &lt;p&gt; &lt;a href=&quot;https://example.com/apps/mix/builds/&quot; role=&quot;button&quot;&gt;Read more&lt;/a&gt; &lt;/p&gt;
+          &lt;p&gt; &lt;a href=&quot;https://example.com/projects/mix/builds/&quot; role=&quot;button&quot;&gt;Read more&lt;/a&gt; &lt;/p&gt;
           &lt;p&gt; &lt;a href=&quot;#&quot;&gt;Read more&lt;/a&gt; &lt;/p&gt;
         &lt;/footer&gt;
       &lt;/article&gt;
