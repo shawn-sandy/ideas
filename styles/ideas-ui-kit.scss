@@ -4,8 +4,8 @@ html {
   height: 100%;
 }
 body {
-  font-family: "Roboto", serif;
-  font-weight: 500;
+  font-family: "Roboto", Arial, serif;
+  font-weight: normal;
 }
 
 .roboto {
@@ -42,7 +42,7 @@ $mix-modifier-states: active focus focus-within hover visited; // define the sta
 $mix-color-attrs: "color", "background-color", "border-color";
 
 /** import stylemix **/
-@import "node_modules/@shawnsandy/mix/index";
+@import "@shawnsandy/mix/index";
 
 /** utility mixin example--create font utility form our tokens **/
 .ui {
