@@ -1,0 +1,62 @@
+{
+  "name": "@shawnsandy/mix",
+  "version": "0.10.1",
+  "description": "AtomMix--A toolkit for generating utility classes, components and styles-sheets for your design system, style-guide or website from SASS MAPS",
+  "keywords": [
+    "SASS",
+    "SASS-MAPS",
+    "CSS",
+    "SASS-Minxins",
+    "Design Systems",
+    "Design Tokens"
+  ],
+  "author": "shawnsandy <shawnsandy04@gmail.com>",
+  "homepage": "https://github.com/shawn-sandy/ideas/blob/master/apps/mix/FIRST_PAINT.md",
+  "license": "MIT",
+  "main": "index.scss",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shawn-sandy/idea.git"
+  },
+  "files": [
+    "sass",
+    "dist",
+    "css"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "start": "parcel src/index.html -p 3050 --open",
+    "parcel": "parcel build src/*.js src/themes/*.js --no-content-hash -d builds",
+    "dist": "run-s clean:* build:*",
+    "build:paint": "parcel build src/*.js src/themes/*.js --no-content-hash -d builds --out-dir dist/fp",
+    "tokens": "style-dictionary build --config ./config/config.js && gulp sass",
+    "clean": "rm -rf dist && rm -rf builds",
+    "clean:builds": "rm -rf dist",
+    "test-tokens": "style-dictionary build --config ./config/config.js && gulp sass",
+    "mix-tokens": "style-dictionary build --config ./config/mix-tokens.js && gulp sass",
+    "build": "npm run tokens && gulp sass"
+  },
+  "bugs": {
+    "url": "https://github.com/shawn-sandy/idea/issues"
+  },
+  "dependencies": {
+    "parcel": "^1.12.4",
+    "style-dictionary": "^2.10.1",
+    "trash-cli": "^3.1.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sizereport": "^1.2.1",
+    "normalize.css": "^8.0.1",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^1.12.4",
+    "posthtml-include": "^1.4.3"
+  },
+  "gitHead": "4577741794f126834eade633db5dd9e94cd6ec62"
+}

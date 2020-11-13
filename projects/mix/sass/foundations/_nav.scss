@@ -1,0 +1,116 @@
+/**
+ * navbar
+ */
+
+@mixin mix-navbar {
+  nav[aria-label] {
+    background-color: $mx-nav-bg;
+    @include mix-nav();
+    @include mix-nav-links();
+    &:first-of-type {
+      @media all and (min-width: 980px) {
+        min-height: $mx-layout-height-vh-10;
+        height: $mx-nav-min-height;
+      }
+    }
+  }
+}
+
+// base navbar
+@mixin mix-nav {
+  > section,
+  > div,
+  > ul {
+    height: 100%;
+    @media all and (min-width: 960px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    @media all {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+
+    //  navigation logo
+    h1 {
+      margin: 0;
+      display: inline-flex;
+      height: inherit;
+      word-break: normal;
+      margin: 0 1rem 0 0;
+      padding: 0 1rem 0 0;
+      height: $mx-nav-min-height;
+      * + * {
+        margin-left: 0.5rem;
+      }
+      img {
+        max-height: 70%;
+        width: auto;
+        // padding: 0.3rem;
+        // margin: 0.3rem;
+      }
+      span {
+        font-size: 1.5rem;
+        color: $mx-default-color;
+      }
+    }
+    [aria-hidden] {
+      display: inline-flex;
+      @media all and (min-width: 980px) {
+        display: none;
+      }
+    }
+  }
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+  div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+      display: inline-flex;
+    }
+  }
+}
+
+// Nav links
+@mixin mix-nav-links {
+  a,
+  li {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 100% !important;
+    font-size: smaller;
+    padding: 0.5rem;
+
+    &[aria-label*="logo"],
+    &[aria-label*="branding"] {
+      text-align: center;
+      height: 100% !important;
+      &:hover,
+      &:focus {
+        background-color: transparent;
+      }
+    }
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      background-color: $mx-nav-bg-hover;
+      opacity: 0.95;
+    }
+
+    @media all and (min-width: 980px) {
+      padding: 0 1.5rem;
+    }
+  }
+  li {
+    a {
+      padding: 0;
+    }
+  }
+}
