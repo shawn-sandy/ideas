@@ -12,16 +12,6 @@
   </author>
   
   <entry>
-    <title>shawnsandy.com</title>
-    <link href="https://example.com/projects/css-modal/" />
-    <updated>2020-08-10T21:38:21-04:00</updated>
-    <id>https://example.com/projects/css-modal/</id>
-    <content type="html">
-&lt;p&gt;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta quibusdam facere placeat, voluptates laborum
-        amet quas hic, rerum minus iure quod corrupti, a autem vel laudantium eos. Cumque, laborum labore.&lt;/p&gt;</content>
-  </entry>
-  
-  <entry>
     <title>News and Articles</title>
     <link href="https://example.com/content/" />
     <updated>2020-08-10T21:38:21-04:00</updated>
@@ -52,136 +42,6 @@ sapiente nam beatae ullam quas eligendi minus nemo, ducimus impedit quos exceptu
   &lt;p&gt;&lt;a href=&quot;https://example.com/&quot; role=&quot;button&quot;&gt;Read more&lt;/a&gt;&lt;/p&gt;
 &lt;/footer&gt;
 </content>
-  </entry>
-  
-  <entry>
-    <title>AtomMix.</title>
-    <link href="https://example.com/projects/mix/" />
-    <updated>2020-08-10T21:38:21-04:00</updated>
-    <id>https://example.com/projects/mix/</id>
-    <content type="html">&lt;nav class=&quot;border-bottom&quot; role=&quot;navigation&quot;&gt;
-    &lt;section&gt;
-        &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
-        &lt;a href=&quot;#&quot;&gt;Blog&lt;/a&gt;
-        &lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;
-        &lt;a href=&quot;#&quot;&gt;Contact Us&lt;/a&gt;
-    &lt;/section&gt;
-&lt;/nav&gt;
-
-&lt;header&gt;
-    &lt;section&gt;
-        &lt;div&gt;
-            &lt;h1&gt;FirstPaint&lt;/h1&gt;
-            &lt;!-- &lt;h4&gt;A SASS library for generating stylesheets that allows you build websites with plain semantic HTML elements, no need for class-names.&lt;/h4&gt; --&gt;
-            &lt;h4&gt;A SASS/CSS library designed to help you learn/build websites with semantic HTML elements&lt;/h4&gt;
-            &lt;a href=&quot;#&quot; role=&quot;button&quot; title=&quot;Add word, cta action, to your button title&quot;&gt;Read the Docs&lt;/a&gt;
-        &lt;/div&gt;
-    &lt;/section&gt;
-&lt;/header&gt;
-
-&lt;!-- feature section --&gt;
-&lt;section aria-label=&quot;feature grid&quot;&gt;
-    &lt;div role=&quot;list&quot;&gt;
-        &lt;aside role=&quot;listitem&quot;&gt;
-            &lt;h4&gt;Feature...&lt;/h4&gt;
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur assumenda, porro repudiandae
-            repellendus placeat iure officia inventore sint voluptas et blanditiis facilis voluptate quas accusamus
-            itaque ea, corporis odio.
-        &lt;/aside&gt;
-        &lt;aside role=&quot;listitem&quot;&gt;
-            &lt;h4&gt;Feature...&lt;/h4&gt;
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur assumenda, porro repudiandae
-            repellendus placeat iure officia inventore sint voluptas et blanditiis facilis voluptate quas accusamus
-            itaque ea, corporis odio.
-        &lt;/aside&gt;
-        &lt;aside role=&quot;listitem&quot;&gt;
-            &lt;h4&gt;Feature...&lt;/h4&gt;
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur assumenda, porro repudiandae
-            repellendus placeat iure officia inventore sint voluptas et blanditiis facilis voluptate quas accusamus
-            itaque ea, corporis odio.
-        &lt;/aside&gt;
-        &lt;aside role=&quot;listitem&quot;&gt;
-            &lt;h4&gt;Feature...&lt;/h4&gt;
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur assumenda, porro repudiandae
-            repellendus placeat iure officia inventore sint voluptas et blanditiis facilis voluptate quas accusamus
-            itaque ea, corporis odio.
-        &lt;/aside&gt;
-    &lt;/div&gt;
-&lt;/section&gt;
-&lt;hr&gt;
-&lt;main&gt;
-    &lt;section class=&quot;articles&quot;&gt;
-        &lt;article&gt;
-            &lt;h3&gt;Sample Article 1&lt;/h3&gt;
-            &lt;p&gt;
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
-                doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
-                voluptatibus eaque!
-            &lt;/p&gt;
-            &lt;p&gt;
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
-                doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
-                voluptatibus eaque!
-            &lt;/p&gt;
-            &lt;p&gt;
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
-                doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
-                voluptatibus eaque!
-            &lt;/p&gt;
-
-            &lt;footer&gt;
-                &lt;p&gt;
-                    &lt;a href=&quot;https://example.com/projects/mix/&quot; role=&quot;button&quot;&gt;Read more&lt;/a&gt;
-                &lt;/p&gt;
-                &lt;p&gt;
-                    &lt;a href=&quot;#&quot;&gt;Read more&lt;/a&gt;
-                &lt;/p&gt;
-            &lt;/footer&gt;
-        &lt;/article&gt;
-        &lt;aside role=&quot;sidebar&quot;&gt;
-            &lt;h5&gt;Sidebar&lt;/h5&gt;
-            &lt;p&gt;
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos error, quas at facilis temporibus optio
-                rem, doloremque, modi numquam commodi illum cumque. Sit eveniet, quod expedita libero obcaecati a
-                laudantium.
-            &lt;/p&gt;
-        &lt;/aside&gt;
-    &lt;/section&gt;
-
-&lt;/main&gt;
-&lt;hr&gt;
-&lt;section&gt;
-    &lt;div&gt;
-        &lt;h4&gt;Documentation&lt;/h4&gt;
-    &lt;/div&gt;
-    &lt;ul&gt;
-        &lt;li&gt;one&lt;/li&gt;
-        &lt;li&gt;two&lt;/li&gt;
-        &lt;li&gt;three&lt;/li&gt;
-    &lt;/ul&gt;
-
-&lt;/section&gt;
-&lt;footer&gt;
-    &lt;section&gt;
-
-        &lt;p&gt;
-            &lt;small&gt;
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut odit expedita aliquam commodi incidunt nam
-                maiores eum sunt minima corrupti dolore, fugiat veritatis sit, nobis harum ducimus repudiandae quos
-                laboriosam?
-            &lt;/small&gt;
-        &lt;/p&gt;
-    &lt;/section&gt;
-&lt;/footer&gt;
-</content>
-  </entry>
-  
-  <entry>
-    <title>Apps</title>
-    <link href="https://example.com/apps/" />
-    <updated>2020-08-10T21:38:21-04:00</updated>
-    <id>https://example.com/apps/</id>
-    <content type="html"></content>
   </entry>
   
   <entry>
@@ -348,6 +208,146 @@ sapiente nam beatae ullam quas eligendi minus nemo, ducimus impedit quos exceptu
 
 
 </content>
+  </entry>
+  
+  <entry>
+    <title>shawnsandy.com</title>
+    <link href="https://example.com/projects/css-modal/" />
+    <updated>2020-08-10T21:38:21-04:00</updated>
+    <id>https://example.com/projects/css-modal/</id>
+    <content type="html">
+&lt;p&gt;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta quibusdam facere placeat, voluptates laborum
+        amet quas hic, rerum minus iure quod corrupti, a autem vel laudantium eos. Cumque, laborum labore.&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>AtomMix.</title>
+    <link href="https://example.com/projects/mix/" />
+    <updated>2020-08-10T21:38:21-04:00</updated>
+    <id>https://example.com/projects/mix/</id>
+    <content type="html">&lt;nav class=&quot;border-bottom&quot; role=&quot;navigation&quot;&gt;
+    &lt;section&gt;
+        &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
+        &lt;a href=&quot;#&quot;&gt;Blog&lt;/a&gt;
+        &lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;
+        &lt;a href=&quot;#&quot;&gt;Contact Us&lt;/a&gt;
+    &lt;/section&gt;
+&lt;/nav&gt;
+
+&lt;header&gt;
+    &lt;section&gt;
+        &lt;div&gt;
+            &lt;h1&gt;FirstPaint&lt;/h1&gt;
+            &lt;!-- &lt;h4&gt;A SASS library for generating stylesheets that allows you build websites with plain semantic HTML elements, no need for class-names.&lt;/h4&gt; --&gt;
+            &lt;h4&gt;A SASS/CSS library designed to help you learn/build websites with semantic HTML elements&lt;/h4&gt;
+            &lt;a href=&quot;#&quot; role=&quot;button&quot; title=&quot;Add word, cta action, to your button title&quot;&gt;Read the Docs&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+&lt;/header&gt;
+
+&lt;!-- feature section --&gt;
+&lt;section aria-label=&quot;feature grid&quot;&gt;
+    &lt;div role=&quot;list&quot;&gt;
+        &lt;aside role=&quot;listitem&quot;&gt;
+            &lt;h4&gt;Feature...&lt;/h4&gt;
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur assumenda, porro repudiandae
+            repellendus placeat iure officia inventore sint voluptas et blanditiis facilis voluptate quas accusamus
+            itaque ea, corporis odio.
+        &lt;/aside&gt;
+        &lt;aside role=&quot;listitem&quot;&gt;
+            &lt;h4&gt;Feature...&lt;/h4&gt;
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur assumenda, porro repudiandae
+            repellendus placeat iure officia inventore sint voluptas et blanditiis facilis voluptate quas accusamus
+            itaque ea, corporis odio.
+        &lt;/aside&gt;
+        &lt;aside role=&quot;listitem&quot;&gt;
+            &lt;h4&gt;Feature...&lt;/h4&gt;
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur assumenda, porro repudiandae
+            repellendus placeat iure officia inventore sint voluptas et blanditiis facilis voluptate quas accusamus
+            itaque ea, corporis odio.
+        &lt;/aside&gt;
+        &lt;aside role=&quot;listitem&quot;&gt;
+            &lt;h4&gt;Feature...&lt;/h4&gt;
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur assumenda, porro repudiandae
+            repellendus placeat iure officia inventore sint voluptas et blanditiis facilis voluptate quas accusamus
+            itaque ea, corporis odio.
+        &lt;/aside&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+&lt;hr&gt;
+&lt;main&gt;
+    &lt;section class=&quot;articles&quot;&gt;
+        &lt;article&gt;
+            &lt;h3&gt;Sample Article 1&lt;/h3&gt;
+            &lt;p&gt;
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
+                doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
+                voluptatibus eaque!
+            &lt;/p&gt;
+            &lt;p&gt;
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
+                doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
+                voluptatibus eaque!
+            &lt;/p&gt;
+            &lt;p&gt;
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
+                doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
+                voluptatibus eaque!
+            &lt;/p&gt;
+
+            &lt;footer&gt;
+                &lt;p&gt;
+                    &lt;a href=&quot;https://example.com/projects/mix/&quot; role=&quot;button&quot;&gt;Read more&lt;/a&gt;
+                &lt;/p&gt;
+                &lt;p&gt;
+                    &lt;a href=&quot;#&quot;&gt;Read more&lt;/a&gt;
+                &lt;/p&gt;
+            &lt;/footer&gt;
+        &lt;/article&gt;
+        &lt;aside role=&quot;sidebar&quot;&gt;
+            &lt;h5&gt;Sidebar&lt;/h5&gt;
+            &lt;p&gt;
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos error, quas at facilis temporibus optio
+                rem, doloremque, modi numquam commodi illum cumque. Sit eveniet, quod expedita libero obcaecati a
+                laudantium.
+            &lt;/p&gt;
+        &lt;/aside&gt;
+    &lt;/section&gt;
+
+&lt;/main&gt;
+&lt;hr&gt;
+&lt;section&gt;
+    &lt;div&gt;
+        &lt;h4&gt;Documentation&lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;ul&gt;
+        &lt;li&gt;one&lt;/li&gt;
+        &lt;li&gt;two&lt;/li&gt;
+        &lt;li&gt;three&lt;/li&gt;
+    &lt;/ul&gt;
+
+&lt;/section&gt;
+&lt;footer&gt;
+    &lt;section&gt;
+
+        &lt;p&gt;
+            &lt;small&gt;
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut odit expedita aliquam commodi incidunt nam
+                maiores eum sunt minima corrupti dolore, fugiat veritatis sit, nobis harum ducimus repudiandae quos
+                laboriosam?
+            &lt;/small&gt;
+        &lt;/p&gt;
+    &lt;/section&gt;
+&lt;/footer&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Apps</title>
+    <link href="https://example.com/apps/" />
+    <updated>2020-08-10T21:38:21-04:00</updated>
+    <id>https://example.com/apps/</id>
+    <content type="html"></content>
   </entry>
   
   <entry>

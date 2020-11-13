@@ -22,7 +22,8 @@
     "lib",
     "components",
     "dist",
-    "/**.scss"
+    "tokens",
+    "/**/*.scss"
   ],
   "publishConfig": {
     "access": "public"
