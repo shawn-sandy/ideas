@@ -7,6 +7,12 @@
 "entries" : [
 
 {
+"title": "shawnsandy.com",
+"link": "https://proideas.dev/projects/css-modal/",
+"updated": "2020-08-10T21:38:21-04:00"
+},
+
+{
 "title": "News and Articles",
 "link": "https://proideas.dev/content/",
 "updated": "2020-08-10T21:38:21-04:00"
@@ -19,8 +25,14 @@
 },
 
 {
-"title": "",
-"link": "https://proideas.dev/projects/first-paint/index.copy/",
+"title": "AtomMix.",
+"link": "https://proideas.dev/projects/mix/",
+"updated": "2020-08-10T21:38:21-04:00"
+},
+
+{
+"title": "Apps",
+"link": "https://proideas.dev/apps/",
 "updated": "2020-08-10T21:38:21-04:00"
 },
 
@@ -31,20 +43,8 @@
 },
 
 {
-"title": "shawnsandy.com",
-"link": "https://proideas.dev/projects/css-modal/",
-"updated": "2020-08-10T21:38:21-04:00"
-},
-
-{
-"title": "AtomMix.",
-"link": "https://proideas.dev/projects/mix/",
-"updated": "2020-08-10T21:38:21-04:00"
-},
-
-{
-"title": "Apps",
-"link": "https://proideas.dev/apps/",
+"title": "",
+"link": "https://proideas.dev/projects/first-paint/index.copy/",
 "updated": "2020-08-10T21:38:21-04:00"
 },
 
