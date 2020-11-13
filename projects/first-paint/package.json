@@ -21,7 +21,8 @@
   "files": [
     "lib",
     "components",
-    "dist"
+    "dist",
+    "/**.scss"
   ],
   "publishConfig": {
     "access": "public"
