@@ -11,7 +11,7 @@
     "Design Tokens"
   ],
   "author": "shawnsandy <shawnsandy04@gmail.com>",
-  "homepage": "https://github.com/shawn-sandy/ideas/blob/master/apps/mix/FIRST_PAINT.md",
+  "homepage": "https://github.com/shawn-sandy/ideas/blob/master/projects/mix/README.md",
   "license": "MIT",
   "main": "index.scss",
   "publishConfig": {
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shawn-sandy/idea.git"
+    "url": "git+https://github.com/shawn-sandy/ideas.git"
   },
   "files": [
     "sass",
@@ -41,7 +41,7 @@
     "build": "npm run tokens && gulp sass"
   },
   "bugs": {
-    "url": "https://github.com/shawn-sandy/idea/issues"
+    "url": "https://github.com/shawn-sandy/ideas/issues"
   },
   "dependencies": {
     "parcel": "^1.12.4",
