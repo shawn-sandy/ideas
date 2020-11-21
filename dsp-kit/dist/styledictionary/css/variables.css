@@ -1,8 +1,60 @@
 /**
  * Do not edit directly
- * Generated on Mon, 02 Nov 2020 12:28:33 GMT
+ * Generated on Sat, 21 Nov 2020 20:13:17 GMT
  */
 
 :root {
   --dark: #000000; /* Darl color */
+  --turf-green: #1ba41f;
+  --transparent: #ffffff;
+  --light-gray: #e6ecef;
+  --dark-blue: #00558c;
+  --lime-green: #ccd814;
+  --sky-blue: #019be5;
+  --midnight-blue: #1f2e48;
+  --red-planet: #bf0000;
+  --sunset-orange: #fdb71a;
+  --td-brand-carbon: #1f2024;
+  --smoke-gray: #53565a;
+  --white: #ffffff;
+  --dark-gray: #707070;
+  --roboto-37-pt-family: Roboto;
+  --roboto-37-pt-weight: Regular;
+  --roboto-14-pt-family: Roboto;
+  --roboto-14-pt-weight: Regular;
+  --roboto-25-pt-family: Roboto;
+  --roboto-25-pt-weight: Regular;
+  --roboto-11-pt-family: Roboto;
+  --roboto-11-pt-weight: Regular;
+  --roboto-28-pt-family: Roboto;
+  --roboto-28-pt-weight: Regular;
+  --roboto-22-pt-family: Roboto;
+  --roboto-22-pt-weight: Regular;
+  --roboto-18-pt-family: Roboto;
+  --roboto-18-pt-weight: Regular;
+  --roboto-16-pt-family: Roboto;
+  --roboto-16-pt-weight: Regular;
+  --roboto-12-pt-family: Roboto;
+  --roboto-12-pt-weight: Regular;
+  --roboto-120-pt-family: Roboto;
+  --roboto-120-pt-weight: Regular;
+  --roboto-50-pt-family: Roboto;
+  --roboto-50-pt-weight: Regular;
+  --roboto-90-pt-family: Roboto;
+  --roboto-90-pt-weight: Regular;
+  --roboto-67-pt-family: Roboto;
+  --roboto-67-pt-weight: Regular;
+  --roboto-37-pt-size: 37rem;
+  --roboto-14-pt-size: 14rem;
+  --roboto-25-pt-size: 25rem;
+  --roboto-11-pt-size: 11rem;
+  --roboto-28-pt-size: 28rem;
+  --roboto-22-pt-size: 22rem;
+  --roboto-18-pt-size: 18rem;
+  --roboto-16-pt-size: 16rem;
+  --roboto-12-pt-size: 12rem;
+  --roboto-120-pt-size: 120rem;
+  --roboto-50-pt-size: 50rem;
+  --roboto-90-pt-size: 90rem;
+  --roboto-67-pt-size: 67rem;
 }

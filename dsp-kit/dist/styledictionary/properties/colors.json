@@ -3,6 +3,45 @@
     "dark": {
       "value": "#000000ff",
       "comment": "Darl color"
+    },
+    "turf-green": {
+      "value": "#1BA41Fff"
+    },
+    "transparent": {
+      "value": "#FFFFFFff"
+    },
+    "light-gray": {
+      "value": "#E6ECEFff"
+    },
+    "dark-blue": {
+      "value": "#00558Cff"
+    },
+    "lime-green": {
+      "value": "#CCD814ff"
+    },
+    "sky-blue": {
+      "value": "#019BE5ff"
+    },
+    "midnight-blue": {
+      "value": "#1F2E48ff"
+    },
+    "red-planet": {
+      "value": "#BF0000ff"
+    },
+    "sunset-orange": {
+      "value": "#FDB71Aff"
+    },
+    "td-brand-carbon": {
+      "value": "#1F2024ff"
+    },
+    "smoke-gray": {
+      "value": "#53565Aff"
+    },
+    "white": {
+      "value": "#FFFFFFff"
+    },
+    "dark-gray": {
+      "value": "#707070ff"
     }
   }
 }

@@ -1,6 +1,151 @@
 {
-  "font": {},
+  "font": {
+    "Roboto — 37pt": {
+      "family": {
+        "value": "Roboto"
+      },
+      "weight": {
+        "value": "Regular"
+      }
+    },
+    "Roboto — 14pt": {
+      "family": {
+        "value": "Roboto"
+      },
+      "weight": {
+        "value": "Regular"
+      }
+    },
+    "Roboto — 25pt": {
+      "family": {
+        "value": "Roboto"
+      },
+      "weight": {
+        "value": "Regular"
+      }
+    },
+    "Roboto — 11pt": {
+      "family": {
+        "value": "Roboto"
+      },
+      "weight": {
+        "value": "Regular"
+      }
+    },
+    "Roboto — 28pt": {
+      "family": {
+        "value": "Roboto"
+      },
+      "weight": {
+        "value": "Regular"
+      }
+    },
+    "Roboto — 22pt": {
+      "family": {
+        "value": "Roboto"
+      },
+      "weight": {
+        "value": "Regular"
+      }
+    },
+    "Roboto — 18pt": {
+      "family": {
+        "value": "Roboto"
+      },
+      "weight": {
+        "value": "Regular"
+      }
+    },
+    "Roboto — 16pt": {
+      "family": {
+        "value": "Roboto"
+      },
+      "weight": {
+        "value": "Regular"
+      }
+    },
+    "Roboto — 12pt": {
+      "family": {
+        "value": "Roboto"
+      },
+      "weight": {
+        "value": "Regular"
+      }
+    },
+    "Roboto — 120pt": {
+      "family": {
+        "value": "Roboto"
+      },
+      "weight": {
+        "value": "Regular"
+      }
+    },
+    "Roboto — 50pt": {
+      "family": {
+        "value": "Roboto"
+      },
+      "weight": {
+        "value": "Regular"
+      }
+    },
+    "Roboto — 90pt": {
+      "family": {
+        "value": "Roboto"
+      },
+      "weight": {
+        "value": "Regular"
+      }
+    },
+    "Roboto — 67pt": {
+      "family": {
+        "value": "Roboto"
+      },
+      "weight": {
+        "value": "Regular"
+      }
+    }
+  },
   "size": {
-    "font": {}
+    "font": {
+      "Roboto — 37pt": {
+        "value": "37"
+      },
+      "Roboto — 14pt": {
+        "value": "14"
+      },
+      "Roboto — 25pt": {
+        "value": "25"
+      },
+      "Roboto — 11pt": {
+        "value": "11"
+      },
+      "Roboto — 28pt": {
+        "value": "28"
+      },
+      "Roboto — 22pt": {
+        "value": "22"
+      },
+      "Roboto — 18pt": {
+        "value": "18"
+      },
+      "Roboto — 16pt": {
+        "value": "16"
+      },
+      "Roboto — 12pt": {
+        "value": "12"
+      },
+      "Roboto — 120pt": {
+        "value": "120"
+      },
+      "Roboto — 50pt": {
+        "value": "50"
+      },
+      "Roboto — 90pt": {
+        "value": "90"
+      },
+      "Roboto — 67pt": {
+        "value": "67"
+      }
+    }
   }
 }

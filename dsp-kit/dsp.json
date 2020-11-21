@@ -6,8 +6,8 @@
     "name": "dsp",
     "package_version": "0.0.1",
     "build_tool": "StyleDictionary",
-    "snippet_trigger_prefix": "xd_",
-    "build_status_label": "dev",
+    "snippet_trigger_prefix": "ids-",
+    "build_status_label": "beta",
     "build_params": "./config.js",
     "languages": [
       {

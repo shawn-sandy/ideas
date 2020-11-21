@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="70" viewBox="0 0 70 70">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="70" height="70" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Component_63" data-name="Component 63" clip-path="url(#clip-path)">
+    <g id="Rectangle_453" data-name="Rectangle 453" fill="none" stroke="#ccc" stroke-width="5">
+      <rect width="70" height="70" rx="5" stroke="none"/>
+      <rect x="2.5" y="2.5" width="65" height="65" rx="2.5" fill="none"/>
+    </g>
+    <path id="Union_45" data-name="Union 45" d="M0,29.333,11.7,14.316l8.338,10.039,11.7-17.979L46.793,29.333ZM7.808,3.212A3.212,3.212,0,1,1,11.02,6.424,3.212,3.212,0,0,1,7.808,3.212Z" transform="translate(11.648 20.176)" fill="#ccc"/>
+  </g>
+</svg>
