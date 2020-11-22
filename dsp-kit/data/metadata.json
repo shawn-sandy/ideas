@@ -1,0 +1,22 @@
+{
+  "title": "idea~.",
+  "url": "https://proideas.dev/",
+  "description": "idea~ (ideas) is a simple and easy to use HTML, CSS and JAVASCRIPT UI Toolkit (framework if you prefer) for creating and managing digital products--style/design systems, pattern libraries, UI Kits, style-guides, prototypes or even JAMSTACK sites.",
+  "feed": {
+    "subtitle": "A UI toolkit for creating and managing design/style systems, pattern libraries, style-guides, etc",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://proideas.dev/"
+  },
+  "author": {
+    "name": "Shawn Sandy",
+    "email": "shawnsandy@proideas.dev"
+  },
+  "styles": [
+    "https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap",
+    "/styles.css"
+  ],
+  "scripts": [
+    "/main.js"
+  ]
+}

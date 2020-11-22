@@ -1,0 +1,13 @@
+{
+  "font": {
+    "size": {
+      "font-size": {
+        "default": {
+          "value": "1rem",
+          "comment": "descriptions...",
+          "group": "typography"
+        }
+      }
+    }
+  }
+}

@@ -65,7 +65,7 @@ module.exports = function (eleventyConfig) {
       output: "./www",
       input: ".",
       includes: "/system/_includes",
-      data: "/system/_data",
+      data: "/dsp-kit/data",
     },
     templateFormats: ["njk", "html"],
     htmlTemplateEngine: "njk",

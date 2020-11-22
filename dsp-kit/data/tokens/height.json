@@ -1,0 +1,18 @@
+{
+    "layout": {
+        "min-height": {
+            "ht-40vmin": {
+                "value": "40vh",
+                "comment": "Layout main section"
+            },
+            "ht-20vmin": {
+                "value": "40vh",
+                "comment": "Layout main section"
+            },
+            "ht-10vmin": {
+                "value": "10vh",
+                "comment": "Footer heigt"
+            }
+        }
+    }
+}
