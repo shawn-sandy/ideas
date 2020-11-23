@@ -31,10 +31,12 @@
   {% block header %}
   <!-- nav -->
   {% include "partials/main-nav.njk" %}
-  {% include "partials/hero.njk" %}
 
   {% endblock %}
 
+  {% block cover %}
+
+  {% include "partials/hero.njk" %}
   <!-- main content -->
 
   <section aria-label="feature">
@@ -62,6 +64,7 @@
       </div>
     </div>
   </section>
+  {% endblock %}
   <main>
     <section class="articles">
       {% block content %}

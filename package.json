@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "run-s clean && run-p serve watch:*",
+    "startup": "run-s clean && run-p eleventy watch:*",
     "serve": "eleventy --serve --incremental",
-    "eleventy": "run-s eleventy --serve",
+    "eleventy": "eleventy --serve",
     "build": "npx @11ty/eleventy",
     "parcel": "parcel build main.js --out-dir build/js --no-minify",
     "parcel-css": "parcel build styles.js --no-content-hash --out-dir styles/css --no-minify",

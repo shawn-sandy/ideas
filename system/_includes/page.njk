@@ -1,9 +1,16 @@
 {% extends "base.njk" %}
 
+
+{% block cover %}
+<section>
+  <div class="py-5">
+    <h2 id="{{ title | slug }}">{{ title }}</h2>
+  </div>
+  <hr class="py-5">
+</section>
+{% endblock %}
 {% block content %}
-<article>
-  <!-- TODO change title to slugs -->
-  <h2 id="{{ title | slug }}">{{ title }}</h2>
+<article class="py-5">
   {{ content | safe }}
 </article>
 {% endblock %}
