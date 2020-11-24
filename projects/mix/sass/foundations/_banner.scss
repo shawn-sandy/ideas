@@ -1,6 +1,10 @@
 @mixin mix-banner {
   header {
     min-height: $mx-header-vh-sm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     > section,
     > [role="banner"] {
       min-height: inherit;
