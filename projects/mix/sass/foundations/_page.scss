@@ -49,7 +49,6 @@
       background-color: $mx-header-bg;
       background-image: $mx-header-bg-img;
       color: $mx-default-color;
-
       @media screen and (min-width: 1280px) {
       }
     }
@@ -61,11 +60,9 @@
       align-content: stretch;
       margin: 2rem 0 0;
       background-color: $mx-footer-bg;
-
       p {
         text-align: center;
       }
-
       color: $mx-footer-color;
     }
 
