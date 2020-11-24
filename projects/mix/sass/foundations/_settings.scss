@@ -8,12 +8,12 @@ $mx-lightgray: lightgray !default;
 $mx-lightblue: lightblue !default;
 $mx-blue: #0366d6 !default;
 $mx-dark-blue: darkblue !default;
-$mx-font-default: “Segoe UI”, BlinkMacSystemFont,
-  “Oxygen”, “Ubuntu”, “Cantarell”, “Fira Sans”, “Droid Sans”, “Helvetica Neue” ,
-  sans-serif !default;
+$mx-font-default: “Segoe UI”, BlinkMacSystemFont, “Oxygen”, “Ubuntu”,
+  “Cantarell”, “Fira Sans”, “Droid Sans”, “Helvetica Neue”, sans-serif !default;
 $mx-bg: $mx-white !default;
 $mx-main-vh: 40vh !default;
 $mx-header-vh: 55vh !default;
+$mx-header-vh-sm: 25vh !default;
 $mx-header-bg: transparent !default;
 $mx-header-bg-img: none !default;
 $mx-header-color: $mx-default-color !default;
