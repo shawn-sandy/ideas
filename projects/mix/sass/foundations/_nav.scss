@@ -3,7 +3,8 @@
  */
 
 @mixin mix-navbar {
-  nav[aria-label] {
+  nav[aria-label],
+  header nav[aria-label] {
     background-color: $mx-nav-bg;
     @include mix-nav();
     @include mix-nav-links();
