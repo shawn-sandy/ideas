@@ -102,7 +102,7 @@
     &:hover,
     &:focus {
       background-color: $mx-nav-bg-hover;
-      opacity: 0.95;
+      // opacity: 0.95;
     }
 
     @media all and (min-width: 980px) {

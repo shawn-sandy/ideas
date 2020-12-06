@@ -1,6 +1,6 @@
 /*
   Do not edit directly
-  Generated on Tue, 24 Nov 2020 23:08:08 GMT
+  Generated on Sun, 06 Dec 2020 22:54:50 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 /** generates a series of modifies based a list of attributes  **/
@@ -11,28 +11,41 @@
 /**
  * navbar
  */
-nav[aria-label] {
+nav[aria-label],
+header nav[aria-label] {
   background-color: transparent; }
   nav[aria-label] > section,
   nav[aria-label] > div,
-  nav[aria-label] > ul {
+  nav[aria-label] > ul,
+  header nav[aria-label] > section,
+  header nav[aria-label] > div,
+  header nav[aria-label] > ul {
     height: 100%; }
     @media all and (min-width: 960px) {
       nav[aria-label] > section,
       nav[aria-label] > div,
-      nav[aria-label] > ul {
+      nav[aria-label] > ul,
+      header nav[aria-label] > section,
+      header nav[aria-label] > div,
+      header nav[aria-label] > ul {
         display: flex;
         align-items: center;
         justify-content: space-between; } }
     @media all {
       nav[aria-label] > section,
       nav[aria-label] > div,
-      nav[aria-label] > ul {
+      nav[aria-label] > ul,
+      header nav[aria-label] > section,
+      header nav[aria-label] > div,
+      header nav[aria-label] > ul {
         width: 100% !important;
         max-width: 100% !important; } }
     nav[aria-label] > section h1,
     nav[aria-label] > div h1,
-    nav[aria-label] > ul h1 {
+    nav[aria-label] > ul h1,
+    header nav[aria-label] > section h1,
+    header nav[aria-label] > div h1,
+    header nav[aria-label] > ul h1 {
       margin: 0;
       display: inline-flex;
       height: inherit;
@@ -42,39 +55,59 @@ nav[aria-label] {
       height: 5rem; }
       nav[aria-label] > section h1 * + *,
       nav[aria-label] > div h1 * + *,
-      nav[aria-label] > ul h1 * + * {
+      nav[aria-label] > ul h1 * + *,
+      header nav[aria-label] > section h1 * + *,
+      header nav[aria-label] > div h1 * + *,
+      header nav[aria-label] > ul h1 * + * {
         margin-left: 0.5rem; }
       nav[aria-label] > section h1 img,
       nav[aria-label] > div h1 img,
-      nav[aria-label] > ul h1 img {
+      nav[aria-label] > ul h1 img,
+      header nav[aria-label] > section h1 img,
+      header nav[aria-label] > div h1 img,
+      header nav[aria-label] > ul h1 img {
         max-height: 70%;
         width: auto; }
       nav[aria-label] > section h1 span,
       nav[aria-label] > div h1 span,
-      nav[aria-label] > ul h1 span {
+      nav[aria-label] > ul h1 span,
+      header nav[aria-label] > section h1 span,
+      header nav[aria-label] > div h1 span,
+      header nav[aria-label] > ul h1 span {
         font-size: 1.5rem;
         color: rgba(0, 0, 0, 0.8); }
     nav[aria-label] > section [aria-hidden],
     nav[aria-label] > div [aria-hidden],
-    nav[aria-label] > ul [aria-hidden] {
+    nav[aria-label] > ul [aria-hidden],
+    header nav[aria-label] > section [aria-hidden],
+    header nav[aria-label] > div [aria-hidden],
+    header nav[aria-label] > ul [aria-hidden] {
       display: inline-flex; }
       @media all and (min-width: 980px) {
         nav[aria-label] > section [aria-hidden],
         nav[aria-label] > div [aria-hidden],
-        nav[aria-label] > ul [aria-hidden] {
+        nav[aria-label] > ul [aria-hidden],
+        header nav[aria-label] > section [aria-hidden],
+        header nav[aria-label] > div [aria-hidden],
+        header nav[aria-label] > ul [aria-hidden] {
           display: none; } }
-  nav[aria-label] ul {
+  nav[aria-label] ul,
+  header nav[aria-label] ul {
     padding: 0;
     list-style: none; }
-  nav[aria-label] div {
+  nav[aria-label] div,
+  header nav[aria-label] div {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center; }
-    nav[aria-label] div a {
+    nav[aria-label] div a,
+    header nav[aria-label] div a {
       display: inline-flex; }
   nav[aria-label] a,
-  nav[aria-label] li {
+  nav[aria-label] li,
+  header nav[aria-label] a,
+  header nav[aria-label] li {
     text-align: center;
     display: flex;
     align-items: center;
@@ -84,27 +117,46 @@ nav[aria-label] {
     text-decoration: none; }
     nav[aria-label] a[aria-label*="logo"], nav[aria-label] a[aria-label*="branding"],
     nav[aria-label] li[aria-label*="logo"],
-    nav[aria-label] li[aria-label*="branding"] {
+    nav[aria-label] li[aria-label*="branding"],
+    header nav[aria-label] a[aria-label*="logo"],
+    header nav[aria-label] a[aria-label*="branding"],
+    header nav[aria-label] li[aria-label*="logo"],
+    header nav[aria-label] li[aria-label*="branding"] {
       text-align: center;
       height: 100% !important; }
       nav[aria-label] a[aria-label*="logo"]:hover, nav[aria-label] a[aria-label*="logo"]:focus, nav[aria-label] a[aria-label*="branding"]:hover, nav[aria-label] a[aria-label*="branding"]:focus,
       nav[aria-label] li[aria-label*="logo"]:hover,
       nav[aria-label] li[aria-label*="logo"]:focus,
       nav[aria-label] li[aria-label*="branding"]:hover,
-      nav[aria-label] li[aria-label*="branding"]:focus {
+      nav[aria-label] li[aria-label*="branding"]:focus,
+      header nav[aria-label] a[aria-label*="logo"]:hover,
+      header nav[aria-label] a[aria-label*="logo"]:focus,
+      header nav[aria-label] a[aria-label*="branding"]:hover,
+      header nav[aria-label] a[aria-label*="branding"]:focus,
+      header nav[aria-label] li[aria-label*="logo"]:hover,
+      header nav[aria-label] li[aria-label*="logo"]:focus,
+      header nav[aria-label] li[aria-label*="branding"]:hover,
+      header nav[aria-label] li[aria-label*="branding"]:focus {
         background-color: transparent; }
     nav[aria-label] a:hover, nav[aria-label] a:focus,
     nav[aria-label] li:hover,
-    nav[aria-label] li:focus {
-      background-color: rgba(0, 0, 0, 0.1);
-      opacity: 0.95; }
+    nav[aria-label] li:focus,
+    header nav[aria-label] a:hover,
+    header nav[aria-label] a:focus,
+    header nav[aria-label] li:hover,
+    header nav[aria-label] li:focus {
+      background-color: rgba(0, 0, 0, 0.1); }
     @media all and (min-width: 980px) {
       nav[aria-label] a,
-      nav[aria-label] li {
+      nav[aria-label] li,
+      header nav[aria-label] a,
+      header nav[aria-label] li {
         padding: 0 1.5rem; } }
-  nav[aria-label] li a {
+  nav[aria-label] li a,
+  header nav[aria-label] li a {
     padding: 0; }
   @media all and (min-width: 980px) {
-    nav[aria-label]:first-of-type {
+    nav[aria-label]:first-of-type,
+    header nav[aria-label]:first-of-type {
       min-height: 10vh;
       height: 5rem; } }

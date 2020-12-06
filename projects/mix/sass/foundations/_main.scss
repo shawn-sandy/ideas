@@ -13,14 +13,17 @@
         }
       }
 
-      article + aside,
-      [role="complementary"] {
+      article + aside {
         width: 100%;
+        // min-width: 25%;
         padding: 1rem;
         font-size: 0.95rem;
       }
       @media all and (min-width: 1280px) {
         display: flex;
+        article {
+          max-width: 75%;
+        }
         align-items: flex-start;
         article + aside,
         [role="complementary"] {

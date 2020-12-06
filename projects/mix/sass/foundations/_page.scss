@@ -39,6 +39,9 @@
       > *:not(main) {
         display: none;
       }
+      html {
+        font-size: 13px;
+      }
     }
 
     > nav {
