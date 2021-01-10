@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "run-s clean && run-p serve watch:*",
-    "serve": "eleventy --serve --incremental",
+    "serve": "eleventy --serve",
     "eleventy": "run-s eleventy --serve",
     "build": "npx @11ty/eleventy",
     "parcel": "parcel build main.js --out-dir build/js --no-minify",
@@ -20,7 +20,7 @@
     "lodash:collection": "lodash include=forEach,size,orderBy -o system/js/lodash/collection.js -m",
     "lodash:array": "lodash include=chunk,size -o system/js/lodash/array.js -m",
     "lodash:function": "lodash include=debounce,throttle -o system/js/lodash/function.js -m",
-    "clean": "trash www",
+    "clean": "trash www/**/*.*",
     "audit": "lighthouse https://shawnsandy.com/ --output=json --output-path=./audits/report.json --config-path=.lighthouseconfig.js"
   },
   "directories": {
