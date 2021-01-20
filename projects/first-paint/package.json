@@ -23,6 +23,7 @@
     "components",
     "dist",
     "tokens",
+    "index.css",
     "/**/*.scss"
   ],
   "publishConfig": {
@@ -34,14 +35,14 @@
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
-    "start": "run-s clean parcel",
+    "start": "run-s clean && run-p parcel watch",
     "watch": "run-s watch:*",
-    "watch:scss": "sass --style compressed components/styles.scss:dist/css/styles.css --load-path=node_modules --watch",
+    "watch:scss": "sass --style compressed index.scss:index.css --load-path=node_modules --watch",
     "parcel": "parcel serve index.html --hmr-port --out-dir www --open",
     "build": "run-s clean:dist build:parcel",
     "build:parcel": "parcel build index.js --no-content-hash --out-dir dist",
     "watch:styles": "parcel watch components/*.js --no-content-hash --out-dir dist",
-    "clean": "trash www",
+    "clean": "trash www/**/*.*",
     "clean:dist": "trash dist"
   },
   "bugs": {
