@@ -1,3 +1,46 @@
+$background-color: #ffffff !default;
+$color: #000000 !default;
+$width: 90% !default;
+$width-md: 80% !default;
+$width-md-max: 1600px !default;
+$width-lg: $width-md !default;
+$width-lg-max: 1920px !default;
+$margin: 0 auto !default;
+$height: 100vh;
+$padding: 1rem !default;
+
+$font-family: "Roboto",
+serif;
+$header-font-family: "Roboto Slab",
+serif;
+
 body {
-  // background-color: blue;
+  background-color: $background-color;
+  font-family: $font-family;
+
+  >section,
+  >div,
+  >article {
+    padding: $padding;
+    max-width: $width;
+    margin: $margin;
+
+    @media screen and (min-width: 1280px) {
+      max-width: $width-md-max;
+      width: $width-md;
+    }
+
+    @media screen and (min-width: 1980px) {
+      max-width: $width-lg-max;
+    }
+  }
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $header-font-family;
 }

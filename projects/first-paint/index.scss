@@ -1,3 +1,2 @@
 @use "@shawnsandy/mix/foundation.scss";
-@use "@shawnsandy/mix/src/themes/style.scss";
-@use './components/page.scss';
+@use './components/page.scss'as pg with($background-color: whitesomke);
