@@ -556,5 +556,8 @@ h5, [aria-label*="logo"] {
 header section[role="banner"] {
   font-family: "Roboto Slab", serif; }
 
+body {
+  background-color: blue; }
+
 
 /*# sourceMappingURL=/first-paint.80ee2152.css.map */
