@@ -6,13 +6,23 @@ $width-md-max: 1600px !default;
 $width-lg: $width-md !default;
 $width-lg-max: 1920px !default;
 $margin: 0 auto !default;
-$height: 100vh;
+$height: 100vh !default;
 $padding: 1rem !default;
 
-$font-family: "Roboto",
-serif;
-$header-font-family: "Roboto Slab",
-serif;
+$font-family: -apple-system,
+BlinkMacSystemFont,
+Roboto,
+"Segoe UI",
+"Helvetica Neue",
+Arial,
+"Noto Sans",
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+"Noto Color Emoji" !default;
+
+$header-font-family: $font-family;
 
 body {
   background-color: $background-color;
@@ -34,13 +44,4 @@ body {
       max-width: $width-lg-max;
     }
   }
-}
-
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: $header-font-family;
 }
