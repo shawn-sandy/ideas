@@ -1,7 +1,3 @@
 @import "~@shawnsandy/mix/sass/foundations/_settings.scss";
 @import "@shawnsandy/mix/sass/foundations/_grid.scss";
 @include mix-flex-grid();
-
-body {
-  background-color: green;
-}
