@@ -8,7 +8,6 @@ $width-lg-max: 1920px !default;
 $margin: 0 auto !default;
 $height: 100vh !default;
 $padding: 1rem !default;
-
 $font-family: -apple-system,
 BlinkMacSystemFont,
 Roboto,
@@ -22,15 +21,14 @@ sans-serif,
 "Segoe UI Symbol",
 "Noto Color Emoji" !default;
 
-$header-font-family: $font-family;
 
 body {
   background-color: $background-color;
   font-family: $font-family;
 
   >section,
-  >div,
-  >article {
+  >main,
+  >footer {
     padding: $padding;
     max-width: $width;
     margin: $margin;
