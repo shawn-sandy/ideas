@@ -23,6 +23,7 @@
     "components",
     "dist",
     "tokens",
+    "index.css",
     "/**/*.scss"
   ],
   "publishConfig": {
@@ -34,13 +35,15 @@
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
-    "start": "run-s clean parcel",
+    "start": "run-s clean && run-p parcel watch",
     "watch": "run-s watch:*",
+    "watch:index": "sass --style compressed index.scss:index.css --load-path=node_modules --watch",
+    "watch:scss": "sass --style compressed components/:dist/css/. --load-path=node_modules --color",
     "parcel": "parcel serve index.html --hmr-port --out-dir www --open",
     "build": "run-s clean:dist build:parcel",
     "build:parcel": "parcel build index.js --no-content-hash --out-dir dist",
     "watch:styles": "parcel watch components/*.js --no-content-hash --out-dir dist",
-    "clean": "trash www",
+    "clean": "trash www/**/*.*",
     "clean:dist": "trash dist"
   },
   "bugs": {
@@ -52,7 +55,8 @@
     "npm-run-all": "^4.1.5",
     "parcel": "^1.12.4",
     "postcss-modules": "^3.2.0",
-    "posthtml-include": "^1.4.3"
+    "posthtml-include": "^1.4.3",
+    "sass": "^1.32.5"
   },
   "dependencies": {
     "trash-cli": "^3.1.0"

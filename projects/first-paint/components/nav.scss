@@ -1,6 +1,12 @@
-@import "~@shawnsandy/mix/sass/foundations/_settings.scss";
-@import "@shawnsandy/mix/sass/foundations/_nav.scss";
+@use "@shawnsandy/mix/sass/foundations/settings.scss";
+@import "@shawnsandy/mix/sass/foundations/nav.scss";
+
+$display: flex;
 
 body {
   @include mix-nav();
+}
+
+nav {
+  // display: $display;
 }

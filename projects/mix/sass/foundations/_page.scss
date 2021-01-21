@@ -1,10 +1,12 @@
 @mixin mix-page {
   html {
+
     *,
     *::before,
     *::after {
       box-sizing: border-box;
     }
+
     font-family: $mx-font-default;
     -webkit-font-smoothing: antialiased !important;
     height: 100% !important;
@@ -36,36 +38,39 @@
     margin: 0 auto;
 
     @media print {
-      > *:not(main) {
+      >*:not(main) {
         display: none;
       }
+
       html {
         font-size: 13px;
       }
     }
 
-    > nav {
+    >nav {
       padding: 0 0;
     }
 
-    > header {
+    >header {
       background-color: $mx-header-bg;
       background-image: $mx-header-bg-img;
       color: $mx-default-color;
-      @media screen and (min-width: 1280px) {
-      }
+
+      @media screen and (min-width: 1280px) {}
     }
 
-    > footer {
+    >footer {
       min-height: $mx-footer-vh;
       display: flex;
       align-items: center;
       align-content: stretch;
       margin: 2rem 0 0;
       background-color: $mx-footer-bg;
+
       p {
         text-align: center;
       }
+
       color: $mx-footer-color;
     }
 

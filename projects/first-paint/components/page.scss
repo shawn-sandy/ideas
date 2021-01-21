@@ -1,0 +1,45 @@
+$background-color: #ffffff !default;
+$color: #000000 !default;
+$width: 90% !default;
+$width-md: 80% !default;
+$width-md-max: 1600px !default;
+$width-lg: $width-md !default;
+$width-lg-max: 1920px !default;
+$margin: 0 auto !default;
+$height: 100vh !default;
+$padding: 1rem !default;
+$font-family: -apple-system,
+BlinkMacSystemFont,
+Roboto,
+"Segoe UI",
+"Helvetica Neue",
+Arial,
+"Noto Sans",
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+"Noto Color Emoji" !default;
+
+
+body {
+  background-color: $background-color;
+  font-family: $font-family;
+
+  >section,
+  >main,
+  >footer {
+    padding: $padding;
+    max-width: $width;
+    margin: $margin;
+
+    @media screen and (min-width: 1280px) {
+      max-width: $width-md-max;
+      width: $width-md;
+    }
+
+    @media screen and (min-width: 1980px) {
+      max-width: $width-lg-max;
+    }
+  }
+}
