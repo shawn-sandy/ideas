@@ -1,6 +1,6 @@
 // StyleMix demo
 
-//import tokens
+// import tokens
 @import "./tokens/tokens";
 // @import "@shawnsandy/mix/tokens/tokens";
 
@@ -8,11 +8,10 @@
 @import "./index.scss";
 
 // foundation styles
-
 // @include mix-page;
 // @include mix-layout;
 @include mix-typography;
-@include mix-navbar;
+// @include mix-navbar;
 @include mix-header;
 @include mix-button;
 @include mix-main;

@@ -1,2 +1,7 @@
 @use "@shawnsandy/mix/foundation.scss";
+
 @use './components/page.scss'as page with($background-color: whitesomke);
+
+@use './components/nav.scss';
+
+@use './components/elements.scss';

@@ -1,12 +1,49 @@
 @use "@shawnsandy/mix/sass/foundations/settings.scss";
-@import "@shawnsandy/mix/sass/foundations/nav.scss";
-
-$display: flex;
-
-body {
-  @include mix-nav();
-}
+//@import "@shawnsandy/mix/sass/foundations/nav.scss";
+$color: null !default;
+$background-color: null !default;
+$min-height: null !default;
+$min-height: 3.5rem !default;
+$padding: 1rem !default;
+$title-font-size: 1.5rem !default;
+$brand-img-height: 3rem !default;
+$align-items: center !default;
+$justify-content: space-between !default;
 
 nav {
-  // display: $display;
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  min-height: $min-height;
+
+  section,
+  div,
+  ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  h1 {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+
+    a {
+      font-size: $title-font-size;
+    }
+  }
+
+  img {
+    vertical-align: middle;
+    height: $brand-img-height;
+  }
+
+  a {
+
+    padding: 0 1rem;
+    font-size: .8rem;
+
+  }
 }
