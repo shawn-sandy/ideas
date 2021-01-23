@@ -382,9 +382,8 @@ a[role=button] {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 2.75rem;
   background-color: transparent;
-  padding: 0 1.5rem;
+  padding: 0.7rem 1.5rem;
   border-radius: 0.2rem;
   border: none;
 }
