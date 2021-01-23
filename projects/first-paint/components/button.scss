@@ -17,10 +17,10 @@ $align-items: center !default;
 $justify-content: center !default;
 
 
-@mixin renderComponent($renderComponent: $render) {
+@mixin renderComponent($renderComponent: $render, $className: null) {
   @if renderComponent {
 
-    button,
+    #{if($className, $className, 'button')},
     a[role=button] {
       display: $display;
       align-items: $align-items;
@@ -39,8 +39,7 @@ $justify-content: center !default;
       }
 
       &[type] {
-        z-index: 99;
-        border: $border-hover;
+        border: $border-default;
       }
 
     }
