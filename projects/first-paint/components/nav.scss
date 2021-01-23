@@ -9,6 +9,7 @@ $title-font-size: 1.5rem !default;
 $brand-img-height: 3rem !default;
 $align-items: center !default;
 $justify-content: space-between !default;
+$brand-name: 'brand name' !default;
 
 nav {
   display: flex;
@@ -24,7 +25,8 @@ nav {
     height: 100%;
   }
 
-  h1 {
+  h1,
+  [aria-label=#{brand-name}] {
     display: flex;
     align-items: center;
     height: 100%;
