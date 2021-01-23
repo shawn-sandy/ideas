@@ -1,4 +1,31 @@
-@import "@shawnsandy/mix/sass/foundations/_settings.scss";
-@import "@shawnsandy/mix/sass/foundations/_button.scss";
-@import "@shawnsandy/mix/sass/foundations/_extensions.scss";
-@include mix-button();
+$render: true !default;
+$color: null !default;
+$background-color: transparent !default;
+$height: 3rem !default;
+$padding: 1rem !default;
+$padding-x: 1.5rem !default;
+$padding-y: 0 !default;
+$radius: .3rem;
+
+
+@mixin renderComponent($renderComponent: $render) {
+  @if renderComponent {
+
+    button,
+    a[role=button] {
+      display: inline-flex;
+      align-items: center;
+      height: $height;
+      background-color: $background-color;
+      padding: $padding-y $padding-x;
+      border-radius: $radius;
+
+      &:hover {
+        background-color: whitesmoke;
+      }
+    }
+
+  }
+}
+
+@include renderComponent()

@@ -9,12 +9,6 @@
 
 
 **/
-[role*=button][type=submit], [role*=button][aria-label],
-button[type=submit],
-button[aria-label] {
-  font-size: 1.2rem;
-}
-
 /**
  * navbar
  */
@@ -57,55 +51,6 @@ small,
 
 p {
   line-height: 1.7;
-}
-
-[role*=button],
-button {
-  border: none;
-  font-family: inherit;
-  cursor: pointer;
-  text-decoration: none;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  border-radius: 2px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
-  transition: background-color 0.95s ease-out;
-  font-size: smaller;
-  padding: 0.8rem 1.6rem;
-  min-height: 44px;
-  text-align: center;
-  line-height: 1.1;
-}
-@supports (align-items: center) {
-  [role*=button],
-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    align-self: start;
-  }
-}
-[role*=button]:hover, [role*=button]:active,
-button:hover,
-button:active {
-  background-color: rgba(38, 38, 38, 0.8);
-  color: #e6e6e6;
-}
-[role*=button]:focus,
-button:focus {
-  outline-style: solid;
-  outline-color: transparent;
-  box-shadow: 0 0 0 1px gray;
-}
-[role*=button][type=submit], [role*=button][aria-label],
-button[type=submit],
-button[aria-label] {
-  border-color: transparent;
-  color: #fff;
-}
-[role*=button] span,
-button span {
-  display: flex;
 }
 
 main {
@@ -429,4 +374,18 @@ nav img {
 nav a {
   padding: 0 1rem;
   font-size: 0.8rem;
+}
+
+button,
+a[role=button] {
+  display: inline-flex;
+  align-items: center;
+  height: 3rem;
+  background-color: transparent;
+  padding: 0 1.5rem;
+  border-radius: 0.3rem;
+}
+button:hover,
+a[role=button]:hover {
+  background-color: whitesmoke;
 }

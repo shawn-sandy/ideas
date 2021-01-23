@@ -1,4 +1,3 @@
-$render: false;
 @use "@shawnsandy/mix/foundation.scss";
 
 @use './components/page.scss'as page with($background-color: whitesomke);
@@ -6,3 +5,5 @@ $render: false;
 @use './elements/elements.scss';
 
 @use './components/nav.scss';
+
+@use './components/button.scss'
