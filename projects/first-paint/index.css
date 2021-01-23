@@ -381,14 +381,17 @@ button,
 a[role=button] {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   height: 2.75rem;
   background-color: transparent;
   padding: 0 1.5rem;
   border-radius: 0.2rem;
   border: none;
 }
-button:hover,
-a[role=button]:hover {
+button:hover, button:active, button:focus,
+a[role=button]:hover,
+a[role=button]:active,
+a[role=button]:focus {
   background-color: #e4e4e4;
 }
 button[type],

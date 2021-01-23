@@ -3,11 +3,17 @@ $color: null !default;
 $background-color: transparent !default;
 $background-color-hover: rgb(228, 228, 228) !default;
 $height: 44rem / 16 !default;
+$width: null !default;
 $padding: 1rem !default;
 $padding-x: 1.5rem !default;
 $padding-y: 0 !default;
-$border: 1px solid $background-color-hover !default;
-$radius: .2rem !default;
+$border: none !default;
+$border-default: 1px solid $background-color-hover !default;
+$border-hover: 1px solid $background-color-hover !default;
+$border-radius: .2rem !default;
+$display: inline-flex !default;
+$align-items: center !default;
+$justify-content: center !default;
 
 
 @mixin renderComponent($renderComponent: $render) {
@@ -15,20 +21,24 @@ $radius: .2rem !default;
 
     button,
     a[role=button] {
-      display: inline-flex;
-      align-items: center;
+      display: $display;
+      align-items: $align-items;
+      justify-content: $justify-content;
       height: $height;
+      width: $width;
       background-color: $background-color;
       padding: $padding-y $padding-x;
-      border-radius: $radius;
-      border: none;
+      border-radius: $border-radius;
+      border: $border;
 
-      &:hover {
+      &:hover,
+      &:active,
+      &:focus {
         background-color: $background-color-hover;
       }
 
       &[type] {
-        border: $border;
+        border: $border-hover;
       }
 
     }
