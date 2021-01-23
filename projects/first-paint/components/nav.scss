@@ -1,12 +1,70 @@
-@use "@shawnsandy/mix/sass/foundations/settings.scss";
-@import "@shawnsandy/mix/sass/foundations/nav.scss";
+// @use "@shawnsandy/mix/sass/foundations/settings.scss";
+//@import "@shawnsandy/mix/sass/foundations/nav.scss";
+$render: true !default;
+$color: null !default;
+$background-color: null !default;
+$min-height: null !default;
+$min-height: 3.5rem !default;
+$padding: 1rem !default;
+$padding-items: 0 1rem;
+$title-font-size: 1.5rem !default;
+$brand-img-height: 3rem !default;
+$align-items: center !default;
+$justify-content: space-between !default;
+$brand-name: 'brand name' !default;
 
-$display: flex;
+@mixin renderComponent($renderComponent: $render) {
+  @if $renderComponent {
 
-body {
-  @include mix-nav();
+    nav {
+      display: flex;
+      align-items: $align-items;
+      justify-content: $justify-content;
+      min-height: $min-height;
+
+      section,
+      div,
+      ul {
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        li {
+          height: inherit;
+          display: flex;
+          align-items: center;
+
+          &+li {
+            margin-top: 0;
+          }
+        }
+      }
+
+      h1,
+      [aria-label="#{$brand-name}"] {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        margin: 0;
+
+        a {
+          font-size: $title-font-size;
+        }
+      }
+
+      img {
+        vertical-align: middle;
+        height: $brand-img-height;
+      }
+
+      a {
+
+        padding: 0 1rem;
+        font-size: .8rem;
+
+      }
+    }
+  }
 }
 
-nav {
-  // display: $display;
-}
+@include renderComponent();
