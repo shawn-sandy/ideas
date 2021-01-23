@@ -395,5 +395,6 @@ a[role=button]:focus {
 }
 button[type],
 a[role=button][type] {
+  z-index: 99;
   border: 1px solid #e4e4e4;
 }
