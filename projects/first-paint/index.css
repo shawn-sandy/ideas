@@ -381,12 +381,17 @@ button,
 a[role=button] {
   display: inline-flex;
   align-items: center;
-  height: 3rem;
+  height: 2.75rem;
   background-color: transparent;
   padding: 0 1.5rem;
-  border-radius: 0.3rem;
+  border-radius: 0.2rem;
+  border: none;
 }
 button:hover,
 a[role=button]:hover {
-  background-color: whitesmoke;
+  background-color: #e4e4e4;
+}
+button[type],
+a[role=button][type] {
+  border: 1px solid #e4e4e4;
 }

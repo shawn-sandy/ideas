@@ -1,11 +1,13 @@
 $render: true !default;
 $color: null !default;
 $background-color: transparent !default;
-$height: 3rem !default;
+$background-color-hover: rgb(228, 228, 228) !default;
+$height: 44rem / 16 !default;
 $padding: 1rem !default;
 $padding-x: 1.5rem !default;
 $padding-y: 0 !default;
-$radius: .3rem;
+$border: 1px solid $background-color-hover !default;
+$radius: .2rem !default;
 
 
 @mixin renderComponent($renderComponent: $render) {
@@ -19,10 +21,16 @@ $radius: .3rem;
       background-color: $background-color;
       padding: $padding-y $padding-x;
       border-radius: $radius;
+      border: none;
 
       &:hover {
-        background-color: whitesmoke;
+        background-color: $background-color-hover;
       }
+
+      &[type] {
+        border: $border;
+      }
+
     }
 
   }
