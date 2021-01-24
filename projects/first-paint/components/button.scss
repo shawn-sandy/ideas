@@ -15,9 +15,11 @@ $border-radius: .2rem !default;
 $display: inline-flex !default;
 $align-items: center !default;
 $justify-content: center !default;
+$cursor: pointer !default;
 
 
 @mixin renderComponent($renderComponent: $render, $className: null) {
+
   @if renderComponent {
 
     #{if($className, $className, 'button')},
