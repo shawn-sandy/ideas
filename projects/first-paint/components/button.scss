@@ -16,7 +16,9 @@ $align-items: center !default;
 $justify-content: center !default;
 $cursor: pointer !default;
 
+// *************************************************
 // ******************** imports ********************
+// *************************************************
 
 @use 'styles.scss';
 
@@ -26,6 +28,7 @@ $cursor: pointer !default;
 
     #{if($className, $className, 'button, a[role=button]')} {
       @include styles.flex-box();
+      flex-direction: row;
       height: $height;
       width: $width;
       background-color: $background-color;
