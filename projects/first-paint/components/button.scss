@@ -2,7 +2,6 @@ $render: true !default;
 $color: null !default;
 $background-color: transparent !default;
 $background-color-hover: rgb(228, 228, 228) !default;
-// $height: 44rem / 16 !default;
 $height: null !default;
 $width: null !default;
 $padding: 1rem !default;
@@ -15,9 +14,11 @@ $border-radius: .2rem !default;
 $display: inline-flex !default;
 $align-items: center !default;
 $justify-content: center !default;
+$cursor: pointer !default;
 
 
 @mixin renderComponent($renderComponent: $render, $className: null) {
+
   @if renderComponent {
 
     #{if($className, $className, 'button')},
@@ -31,6 +32,7 @@ $justify-content: center !default;
       padding: $padding-y $padding-x;
       border-radius: $border-radius;
       border: $border;
+      cursor: $cursor;
 
       &:hover,
       &:active,

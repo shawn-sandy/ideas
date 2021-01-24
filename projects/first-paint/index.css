@@ -355,6 +355,7 @@ a[role=button] {
   padding: 0.7rem 1.5rem;
   border-radius: 0.2rem;
   border: none;
+  cursor: pointer;
 }
 button:hover, button:active, button:focus,
 a[role=button]:hover,
