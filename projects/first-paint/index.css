@@ -84,49 +84,6 @@ main > section [role=complementary] {
   }
 }
 
-header {
-  min-height: 25vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-header > section,
-header > [role=banner] {
-  min-height: inherit;
-  min-width: inherit;
-  font-size: larger;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  box-sizing: border-box;
-  padding: 1rem;
-  text-align: center;
-  min-height: 55vh;
-  padding: 3rem 0;
-}
-header > section h1,
-header > section h2,
-header > section h3,
-header > section h4,
-header > section h5,
-header > [role=banner] h1,
-header > [role=banner] h2,
-header > [role=banner] h3,
-header > [role=banner] h4,
-header > [role=banner] h5 {
-  margin-top: 0;
-}
-header > section p,
-header > [role=banner] p {
-  font-size: 1.4rem;
-}
-header > section > div > * + *,
-header > [role=banner] > div > * + * {
-  margin-top: 1rem;
-}
-
 section [role=list] {
   padding: 3rem 0;
   box-sizing: border-box;
@@ -377,23 +334,33 @@ nav a {
   font-size: 0.8rem;
 }
 
-button,
-a[role=button] {
-  display: inline-flex;
+header {
+  display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
+  height: 25rem;
+}
+header > section,
+header > [role=banner] {
+  text-align: center;
+}
+
+button, a[role=button] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
   background-color: transparent;
   padding: 0.7rem 1.5rem;
   border-radius: 0.2rem;
   border: none;
+  cursor: pointer;
 }
-button:hover, button:active, button:focus,
-a[role=button]:hover,
-a[role=button]:active,
-a[role=button]:focus {
+button:hover, button:active, button:focus, a[role=button]:hover, a[role=button]:active, a[role=button]:focus {
   background-color: #e4e4e4;
+  border: 1px solid #e4e4e4;
 }
-button[type],
-a[role=button][type] {
+button[type], a[role=button][type] {
   border: 1px solid #e4e4e4;
 }

@@ -1,0 +1,30 @@
+$render: true;
+$height: 400rem / 16;
+$display: flex;
+$align-items: center;
+$flex-direction: column;
+$justify-content: center;
+
+// @imports
+
+@use './modules/style.scss';
+
+@mixin renderComponent($renderContent: $render, $className: null) {
+
+  @if($renderContent) {
+
+    #{if($className, $className, 'header')} {
+      @include style.flex-box-left;
+      height: $height;
+
+      >section,
+      >[role=banner] {
+        text-align: center;
+      }
+
+    }
+  }
+
+}
+
+@include renderComponent()

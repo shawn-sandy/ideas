@@ -1,0 +1,19 @@
+// styles
+$display: flex !default;
+$align-items: center !default;
+$justify-content: center !default;
+$direction: row;
+
+@mixin flex-box() {
+
+  display: $display;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  flex-direction: $direction;
+
+}
+
+@mixin flex-box-left() {
+  $align-items: top;
+  @include flex-box();
+}

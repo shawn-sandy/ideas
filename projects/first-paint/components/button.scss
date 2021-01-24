@@ -2,7 +2,6 @@ $render: true !default;
 $color: null !default;
 $background-color: transparent !default;
 $background-color-hover: rgb(228, 228, 228) !default;
-// $height: 44rem / 16 !default;
 $height: null !default;
 $width: null !default;
 $padding: 1rem !default;
@@ -15,31 +14,35 @@ $border-radius: .2rem !default;
 $display: inline-flex !default;
 $align-items: center !default;
 $justify-content: center !default;
+$cursor: pointer !default;
 
+// imports
+@use './modules/style.scss';
 
 @mixin renderComponent($renderComponent: $render, $className: null) {
+
   @if renderComponent {
 
-    #{if($className, $className, 'button')},
-    a[role=button] {
-      display: $display;
-      align-items: $align-items;
-      justify-content: $justify-content;
+    #{if($className, $className, 'button, a[role=button]')} {
+      @include style.flex-box();
       height: $height;
       width: $width;
       background-color: $background-color;
       padding: $padding-y $padding-x;
       border-radius: $border-radius;
       border: $border;
+      cursor: $cursor;
 
       &:hover,
       &:active,
       &:focus {
         background-color: $background-color-hover;
+        border: $border-default;
       }
 
       &[type] {
         border: $border-default;
+        // border: $border-default;
       }
 
     }
