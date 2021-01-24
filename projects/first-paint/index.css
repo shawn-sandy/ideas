@@ -1,17 +1,17 @@
 @charset "UTF-8";
-/*
-  Do not edit directly
-  Generated on Sun, 06 Dec 2020 22:54:50 GMT
-*/
+
+/**
+  * Do not edit directly
+  * Generated on Sun, 06 Dec 2020 22:54:50 GMT
+  */
+
 /** GENERAL PURPOSE SASS-MIXINS **/
 /** generates a series of modifies based a list of attributes  **/
-/**
 
-
-**/
 /**
  * navbar
  */
+
 h1,
 h2,
 h3,
@@ -56,75 +56,38 @@ p {
 main {
   min-height: 40vh;
 }
-main > section article {
+
+main>section article {
   padding: 1rem;
   width: 100%;
   font-size: 1rem;
 }
-main > section article > * + * {
+
+main>section article>*+* {
   margin-top: 2rem;
 }
-main > section article + aside {
+
+main>section article+aside {
   width: 100%;
   padding: 1rem;
   font-size: 0.95rem;
 }
+
 @media all and (min-width: 1280px) {
-  main > section {
+  main>section {
     display: flex;
     align-items: flex-start;
   }
-  main > section article {
+
+  main>section article {
     max-width: 75%;
   }
-  main > section article + aside,
-main > section [role=complementary] {
+
+  main>section article+aside,
+  main>section [role=complementary] {
     min-width: 25%;
     max-width: 25%;
   }
-}
-
-header {
-  min-height: 25vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-header > section,
-header > [role=banner] {
-  min-height: inherit;
-  min-width: inherit;
-  font-size: larger;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  box-sizing: border-box;
-  padding: 1rem;
-  text-align: center;
-  min-height: 55vh;
-  padding: 3rem 0;
-}
-header > section h1,
-header > section h2,
-header > section h3,
-header > section h4,
-header > section h5,
-header > [role=banner] h1,
-header > [role=banner] h2,
-header > [role=banner] h3,
-header > [role=banner] h4,
-header > [role=banner] h5 {
-  margin-top: 0;
-}
-header > section p,
-header > [role=banner] p {
-  font-size: 1.4rem;
-}
-header > section > div > * + *,
-header > [role=banner] > div > * + * {
-  margin-top: 1rem;
 }
 
 section [role=list] {
@@ -134,16 +97,19 @@ section [role=list] {
   flex-wrap: wrap;
   justify-content: flex-start;
 }
+
 section [role=list] [role=listitem] {
   flex: 1 1 100%;
   padding: 1rem;
   line-height: 1.6;
 }
+
 @media all and (min-width: 780px) {
   section [role=list] [role=listitem] {
     flex: 1 1 50%;
   }
 }
+
 @media all and (min-width: 992px) {
   section [role=list] [role=listitem] {
     flex: 1 1 33%;
@@ -154,14 +120,19 @@ label[for] {
   font-size: 0.9rem;
   display: block;
 }
+
 label[for] em {
   font-style: normal;
 }
+
 label[for] em::after {
   content: "∗";
   color: red;
 }
-label[for] + input[id], label[for] + textarea[id], label[for] + select[id] {
+
+label[for]+input[id],
+label[for]+textarea[id],
+label[for]+select[id] {
   background-color: snow;
   display: flex;
   margin: 0.1rem 0 1rem;
@@ -171,15 +142,25 @@ label[for] + input[id], label[for] + textarea[id], label[for] + select[id] {
   border: 1px solid gray;
   border-radius: 2px;
 }
-label[for] + input[id]:focus, label[for] + input[id]:focus-within, label[for] + textarea[id]:focus, label[for] + textarea[id]:focus-within, label[for] + select[id]:focus, label[for] + select[id]:focus-within {
+
+label[for]+input[id]:focus,
+label[for]+input[id]:focus-within,
+label[for]+textarea[id]:focus,
+label[for]+textarea[id]:focus-within,
+label[for]+select[id]:focus,
+label[for]+select[id]:focus-within {
   border: 1px solid gray;
   outline-color: gray;
 }
-label[for] + input[id]::placeholder, label[for] + textarea[id]::placeholder, label[for] + select[id]::placeholder {
+
+label[for]+input[id]::placeholder,
+label[for]+textarea[id]::placeholder,
+label[for]+select[id]::placeholder {
   font-style: italic;
   color: lightgrey;
 }
-label[for] + select {
+
+label[for]+select {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -189,20 +170,23 @@ label[for] + select {
   background-position: right 0.7em top 50%, 0 0;
   background-size: 0.65em auto, 100%;
 }
-label[for] + textarea {
+
+label[for]+textarea {
   min-height: 150px;
 }
 
-span > * + * {
+span>*+* {
   margin-left: 0.3rem;
 }
-span > label[for] {
+
+span>label[for] {
   display: inline-flex;
   align-items: center;
   margin-left: 0.5rem;
   cursor: pointer;
 }
-span > label[for]::before {
+
+span>label[for]::before {
   content: "";
   display: inline-flex;
   width: 1rem;
@@ -212,12 +196,14 @@ span > label[for]::before {
   border-radius: 3px;
   margin-right: 0.5rem;
 }
-span > [type=checkbox]:checked + label[for]::before,
-span [type=radio]:checked + label[for]::before {
+
+span>[type=checkbox]:checked+label[for]::before,
+span [type=radio]:checked+label[for]::before {
   background-color: gray;
 }
-span > [type=checkbox],
-span > [type=radio] {
+
+span>[type=checkbox],
+span>[type=radio] {
   width: 1px;
   height: 1px;
   opacity: 0;
@@ -225,10 +211,12 @@ span > [type=radio] {
   margin: 0;
   padding: 0;
 }
-span > [type=radio] {
+
+span>[type=radio] {
   display: block;
 }
-span > [type=radio] + label::before {
+
+span>[type=radio]+label::before {
   border-radius: 50%;
 }
 
@@ -238,19 +226,21 @@ dl {
   margin-left: 0rem;
   padding-left: 1.5rem;
 }
-ol > * + *,
-ul > * + *,
-dl > * + * {
+
+ol>*+*,
+ul>*+*,
+dl>*+* {
   margin-top: 0.5rem;
 }
-ol > *,
-ul > *,
-dl > * {
+
+ol>*,
+ul>*,
+dl>* {
   line-height: 1.5;
   font-size: smaller;
 }
 
-span > ol,
+span>ol,
 span ul {
   list-style: none;
   margin-left: 0rem;
@@ -266,18 +256,20 @@ picture {
   padding: 0;
   text-align: center;
 }
-picture > img[alt] {
+
+picture>img[alt] {
   width: 100%;
   height: auto;
   display: flex;
   align-items: center;
   position: relative;
 }
-picture > img[alt]::after {
+
+picture>img[alt]::after {
   min-height: 48px;
   height: 100%;
   width: 100%;
-  content: "✖" " " attr(alt);
+  content: "✖"" "attr(alt);
   position: absolute;
   top: 0;
   left: 0;
@@ -296,25 +288,30 @@ body {
   background-color: whitesomke;
   font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-body > section,
-body > main,
-body > footer {
+
+body>section,
+body>main,
+body>footer {
   padding: 1rem;
   max-width: 90%;
   margin: 0 auto;
 }
+
 @media screen and (min-width: 1280px) {
-  body > section,
-body > main,
-body > footer {
+
+  body>section,
+  body>main,
+  body>footer {
     max-width: 1600px;
     width: 80%;
   }
 }
+
 @media screen and (min-width: 1980px) {
-  body > section,
-body > main,
-body > footer {
+
+  body>section,
+  body>main,
+  body>footer {
     max-width: 1920px;
   }
 }
@@ -322,7 +319,8 @@ body > footer {
 p {
   line-height: 1.6;
 }
-p + P {
+
+p+P {
   margin-top: 1rem;
 }
 
@@ -338,6 +336,7 @@ nav {
   min-height: 3.5rem;
   padding: 0.5rem 0.5rem;
 }
+
 nav section,
 nav div,
 nav ul {
@@ -345,6 +344,7 @@ nav ul {
   align-items: center;
   height: 100%;
 }
+
 nav section li,
 nav div li,
 nav ul li {
@@ -352,11 +352,13 @@ nav ul li {
   display: flex;
   align-items: center;
 }
-nav section li + li,
-nav div li + li,
-nav ul li + li {
+
+nav section li+li,
+nav div li+li,
+nav ul li+li {
   margin-top: 0;
 }
+
 nav h1,
 nav [aria-label="brand name"] {
   display: flex;
@@ -364,35 +366,58 @@ nav [aria-label="brand name"] {
   height: 100%;
   margin: 0;
 }
+
 nav h1 a,
 nav [aria-label="brand name"] a {
   font-size: 1.5rem;
 }
+
 nav img {
   vertical-align: middle;
   height: 3rem;
 }
+
 nav a {
   padding: 0 1rem;
   font-size: 0.8rem;
 }
 
-button,
-a[role=button] {
-  display: inline-flex;
+header {
+  display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
+  height: 25rem;
+}
+
+header>section,
+header>[role=banner] {
+  text-align: center;
+}
+
+button,
+a[role=button] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
   background-color: transparent;
   padding: 0.7rem 1.5rem;
   border-radius: 0.2rem;
   border: none;
+  cursor: pointer;
 }
-button:hover, button:active, button:focus,
+
+button:hover,
+button:active,
+button:focus,
 a[role=button]:hover,
 a[role=button]:active,
 a[role=button]:focus {
   background-color: #e4e4e4;
+  border: 1px solid #e4e4e4;
 }
+
 button[type],
 a[role=button][type] {
   border: 1px solid #e4e4e4;
