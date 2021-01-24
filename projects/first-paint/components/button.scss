@@ -16,16 +16,15 @@ $align-items: center !default;
 $justify-content: center !default;
 $cursor: pointer !default;
 
+// imports
+@use './modules/style.scss';
 
 @mixin renderComponent($renderComponent: $render, $className: null) {
 
   @if renderComponent {
 
-    #{if($className, $className, 'button')},
-    a[role=button] {
-      display: $display;
-      align-items: $align-items;
-      justify-content: $justify-content;
+    #{if($className, $className, 'button, a[role=button]')} {
+      @include style.flex-box();
       height: $height;
       width: $width;
       background-color: $background-color;
@@ -38,10 +37,12 @@ $cursor: pointer !default;
       &:active,
       &:focus {
         background-color: $background-color-hover;
+        border: $border-default;
       }
 
       &[type] {
         border: $border-default;
+        // border: $border-default;
       }
 
     }

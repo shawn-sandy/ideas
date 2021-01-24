@@ -335,35 +335,32 @@ nav a {
 }
 
 header {
-  height: 25rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
+  height: 25rem;
 }
 header > section,
 header > [role=banner] {
   text-align: center;
 }
 
-button,
-a[role=button] {
-  display: inline-flex;
+button, a[role=button] {
+  display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
   background-color: transparent;
   padding: 0.7rem 1.5rem;
   border-radius: 0.2rem;
   border: none;
   cursor: pointer;
 }
-button:hover, button:active, button:focus,
-a[role=button]:hover,
-a[role=button]:active,
-a[role=button]:focus {
+button:hover, button:active, button:focus, a[role=button]:hover, a[role=button]:active, a[role=button]:focus {
   background-color: #e4e4e4;
+  border: 1px solid #e4e4e4;
 }
-button[type],
-a[role=button][type] {
+button[type], a[role=button][type] {
   border: 1px solid #e4e4e4;
 }
