@@ -1,0 +1,30 @@
+$render: true;
+$height: 400rem / 16;
+$display: flex;
+$align-items: center;
+$flex-direction: column;
+$justify-content: center;
+
+
+@mixin renderComponent($renderContent: $render, $className: null) {
+
+  @if($renderContent) {
+
+    #{if($className, $className, 'header')} {
+      height: $height;
+      display: $display;
+      align-items: $align-items;
+      justify-content: $justify-content;
+      flex-direction: $flex-direction;
+
+      >section,
+      >[role=banner] {
+        text-align: center;
+      }
+
+    }
+  }
+
+}
+
+@include renderComponent()

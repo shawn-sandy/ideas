@@ -334,6 +334,18 @@ nav a {
   font-size: 0.8rem;
 }
 
+header {
+  height: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+header > section,
+header > [role=banner] {
+  text-align: center;
+}
+
 button,
 a[role=button] {
   display: inline-flex;
