@@ -191,41 +191,6 @@ span ul {
   padding-left: 0rem;
 }
 
-picture {
-  display: flex;
-  width: 100%;
-  height: auto;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  text-align: center;
-}
-picture > img[alt] {
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-picture > img[alt]::after {
-  min-height: 48px;
-  height: 100%;
-  width: 100%;
-  content: "✖" " " attr(alt);
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: lightgrey;
-  border-radius: 0.1rem;
-  color: darkgray;
-  background-repeat: no-repeat;
-  text-transform: uppercase;
-  border: 2px solid darkgray;
-}
-
 body {
   background-color: #ffffff;
   font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";

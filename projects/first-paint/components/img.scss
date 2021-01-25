@@ -1,3 +1,5 @@
-@import "@shawnsandy/mix/sass/foundations/_settings.scss";
-@import "@shawnsandy/mix/sass/foundations/_img.scss";
-@include mix-img();
+// img component
+
+$render: true default ! @mixin img($renderContent: true, $className: null) {
+  @if($renderContent) {}
+}
