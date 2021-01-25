@@ -53,62 +53,6 @@ p {
   line-height: 1.7;
 }
 
-main {
-  min-height: 40vh;
-}
-main > section article {
-  padding: 1rem;
-  width: 100%;
-  font-size: 1rem;
-}
-main > section article > * + * {
-  margin-top: 2rem;
-}
-main > section article + aside {
-  width: 100%;
-  padding: 1rem;
-  font-size: 0.95rem;
-}
-@media all and (min-width: 1280px) {
-  main > section {
-    display: flex;
-    align-items: flex-start;
-  }
-  main > section article {
-    max-width: 75%;
-  }
-  main > section article + aside,
-main > section [role=complementary] {
-    min-width: 25%;
-    max-width: 25%;
-  }
-}
-
-ol,
-ul,
-dl {
-  margin-left: 0rem;
-  padding-left: 1.5rem;
-}
-ol > * + *,
-ul > * + *,
-dl > * + * {
-  margin-top: 0.5rem;
-}
-ol > *,
-ul > *,
-dl > * {
-  line-height: 1.5;
-  font-size: smaller;
-}
-
-span > ol,
-span ul {
-  list-style: none;
-  margin-left: 0rem;
-  padding-left: 0rem;
-}
-
 body {
   background-color: #ffffff;
   font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -204,6 +148,38 @@ header {
 header > section,
 header > [role=banner] {
   text-align: center;
+}
+
+main {
+  min-height: 30rem;
+}
+main > section article {
+  padding: 1rem;
+  width: 100%;
+  font-size: 1rem;
+}
+main > section article > * + * {
+  margin-top: 2rem;
+}
+main > section article + aside {
+  width: 100%;
+  padding: 1rem;
+  font-size: 0.95rem;
+}
+@media all and (min-width: 1280px) {
+  main > section {
+    display: flex;
+    align-items: flex-start;
+  }
+  main > section article {
+    max-width: 75%;
+  }
+  main > section article + aside,
+main > section aside + article,
+main > section [role=complementary] {
+    min-width: 25%;
+    max-width: 25%;
+  }
 }
 
 section [role=list] {
@@ -365,4 +341,28 @@ picture > img[alt]::after {
   background-repeat: no-repeat;
   text-transform: uppercase;
   border: 2px solid darkgray;
+}
+
+ol,
+ul,
+dl {
+  margin-left: 0rem;
+  padding-left: 0rem;
+}
+ol > * + *,
+ul > * + *,
+dl > * + * {
+  margin-top: 0.5rem;
+}
+ol > *,
+ul > *,
+dl > * {
+  line-height: 1.5;
+}
+
+span > ol,
+span ul {
+  list-style: none;
+  margin-left: 0rem;
+  padding-left: 0rem;
 }
