@@ -1,5 +1,5 @@
 $render: true !default;
-
+$background-color: transparent !default;
 
 @mixin form-elements {
   label[for] {
@@ -19,7 +19,7 @@ $render: true !default;
     &+input[id],
     &+textarea[id],
     &+select[id] {
-      background-color: $mx-whitesmoke;
+      background-color: $background-color;
       display: flex;
       margin: 0.1rem 0 1rem;
       padding: 0.5rem;
@@ -114,6 +114,14 @@ $render: true !default;
   }
 }
 
-@mixin img($renderContent: true, $className: null) {
-  @if($renderContent) {}
+@mixin input($renderContent: true, $className: null) {
+  @if($renderContent) {
+
+
+    @include form-elements();
+
+  }
 }
+
+
+@include input()
