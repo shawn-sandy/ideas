@@ -4,7 +4,7 @@ $align-items: center !default;
 $justify-content: center !default;
 $direction: row;
 
-@mixin flex-box() {
+@mixin box() {
 
   display: $display;
   align-items: $align-items;
@@ -13,7 +13,7 @@ $direction: row;
 
 }
 
-@mixin flex-box-left() {
+@mixin box-top() {
   $align-items: top;
-  @include flex-box();
+  @include box();
 }

@@ -84,29 +84,6 @@ main > section [role=complementary] {
   }
 }
 
-section [role=list] {
-  padding: 3rem 0;
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-section [role=list] [role=listitem] {
-  flex: 1 1 100%;
-  padding: 1rem;
-  line-height: 1.6;
-}
-@media all and (min-width: 780px) {
-  section [role=list] [role=listitem] {
-    flex: 1 1 50%;
-  }
-}
-@media all and (min-width: 992px) {
-  section [role=list] [role=listitem] {
-    flex: 1 1 33%;
-  }
-}
-
 label[for] {
   font-size: 0.9rem;
   display: block;
@@ -250,7 +227,7 @@ picture > img[alt]::after {
 }
 
 body {
-  background-color: whitesomke;
+  background-color: #ffffff;
   font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 body > section,
@@ -339,11 +316,34 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  height: 25rem;
+  height: 37.5rem;
 }
 header > section,
 header > [role=banner] {
   text-align: center;
+}
+
+section [role=list] {
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+section [role=list] [role=listitem] {
+  flex: 1 1 100%;
+  padding: 1rem;
+  line-height: 1.6;
+}
+@media all and (min-width: 780px) {
+  section [role=list] [role=listitem] {
+    flex: 1 1 48%;
+  }
+}
+@media all and (min-width: 992px) {
+  section [role=list] [role=listitem] {
+    flex: 1 1 28%;
+  }
 }
 
 button, a[role=button] {
@@ -351,10 +351,12 @@ button, a[role=button] {
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  display: inline-flex;
+  flex-direction: row;
   background-color: transparent;
   padding: 0.7rem 1.5rem;
   border-radius: 0.2rem;
-  border: none;
+  border: 1px solid #e4e4e4;
   cursor: pointer;
 }
 button:hover, button:active, button:focus, a[role=button]:hover, a[role=button]:active, a[role=button]:focus {

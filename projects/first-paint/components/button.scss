@@ -7,7 +7,7 @@ $width: null !default;
 $padding: 1rem !default;
 $padding-x: 1.5rem !default;
 $padding-y: .7rem !default;
-$border: none !default;
+$border-transparent: 1px transparent solid !default;
 $border-default: 1px solid $background-color-hover !default;
 $border-hover: 1px solid $background-color-hover !default;
 $border-radius: .2rem !default;
@@ -16,21 +16,26 @@ $align-items: center !default;
 $justify-content: center !default;
 $cursor: pointer !default;
 
-// imports
-@use './modules/style.scss';
+// *************************************************
+// ******************** imports ********************
+// *************************************************
+
+@use 'styles.scss';
 
 @mixin renderComponent($renderComponent: $render, $className: null) {
 
   @if renderComponent {
 
     #{if($className, $className, 'button, a[role=button]')} {
-      @include style.flex-box();
+      @include styles.flex-box();
+      display: inline-flex;
+      flex-direction: row;
       height: $height;
       width: $width;
       background-color: $background-color;
       padding: $padding-y $padding-x;
       border-radius: $border-radius;
-      border: $border;
+      border: $border-default;
       cursor: $cursor;
 
       &:hover,

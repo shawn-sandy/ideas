@@ -1,5 +1,5 @@
 $render: true;
-$height: 400rem / 16;
+$height: 600rem / 16;
 $display: flex;
 $align-items: center;
 $flex-direction: column;
@@ -7,14 +7,14 @@ $justify-content: center;
 
 // @imports
 
-@use './modules/style.scss';
+@use 'styles.scss';
 
 @mixin renderComponent($renderContent: $render, $className: null) {
 
   @if($renderContent) {
 
     #{if($className, $className, 'header')} {
-      @include style.flex-box-left;
+      @include styles.flex-box-top();
       height: $height;
 
       >section,
