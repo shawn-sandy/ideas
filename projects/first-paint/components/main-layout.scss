@@ -44,7 +44,8 @@ $min-height: 30rem !default;
 
         article+aside,
         aside+article,
-        [role="complementary"] {
+        article+[role="complementary"],
+        [role="complementary"]+article {
           min-width: 25%;
           max-width: 25%;
         }
