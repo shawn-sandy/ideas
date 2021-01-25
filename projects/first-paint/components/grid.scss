@@ -5,7 +5,7 @@ $display: flex !default;
 $wrap: wrap !default;
 $justify-content: flex-start !default;
 $flex-media-780: 1 1 48% !default;
-$flex-media-980: 1 1 38% !default;
+$flex-media-980: 1 1 28% !default;
 
 @mixin renderComponent($renderComponent: $render, $className: null) {
 
@@ -25,7 +25,7 @@ $flex-media-980: 1 1 38% !default;
           line-height: 1.6;
 
           @media all and (min-width: 780px) {
-            flex: $flex-media-780 - 1rem;
+            flex: $flex-media-780;
           }
 
           @media all and (min-width: 992px) {
