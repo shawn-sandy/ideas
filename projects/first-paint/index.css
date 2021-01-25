@@ -1,234 +1,6 @@
 @charset "UTF-8";
-/*
-  Do not edit directly
-  Generated on Sun, 06 Dec 2020 22:54:50 GMT
-*/
-/** GENERAL PURPOSE SASS-MIXINS **/
-/** generates a series of modifies based a list of attributes  **/
-/**
-
-
-**/
-/**
- * navbar
- */
-h1,
-h2,
-h3,
-h4,
-h5 {
-  line-height: 1.5;
-  color: inherit;
-  margin: 0rem 0 1.05rem;
-  font-weight: 500;
-}
-
-h1 {
-  font-size: 5rem;
-  word-break: break-all;
-}
-
-h2 {
-  font-size: 3rem;
-}
-
-h3 {
-  font-size: 2.5rem;
-}
-
-h4 {
-  font-size: 1.777rem;
-}
-
-h5 {
-  font-size: 1.4rem;
-}
-
-small,
-.text_small {
-  font-size: 0.75rem;
-}
-
-p {
-  line-height: 1.7;
-}
-
-main {
-  min-height: 40vh;
-}
-main > section article {
-  padding: 1rem;
-  width: 100%;
-  font-size: 1rem;
-}
-main > section article > * + * {
-  margin-top: 2rem;
-}
-main > section article + aside {
-  width: 100%;
-  padding: 1rem;
-  font-size: 0.95rem;
-}
-@media all and (min-width: 1280px) {
-  main > section {
-    display: flex;
-    align-items: flex-start;
-  }
-  main > section article {
-    max-width: 75%;
-  }
-  main > section article + aside,
-main > section [role=complementary] {
-    min-width: 25%;
-    max-width: 25%;
-  }
-}
-
-label[for] {
-  font-size: 0.9rem;
-  display: block;
-}
-label[for] em {
-  font-style: normal;
-}
-label[for] em::after {
-  content: "∗";
-  color: red;
-}
-label[for] + input[id], label[for] + textarea[id], label[for] + select[id] {
-  background-color: snow;
-  display: flex;
-  margin: 0.1rem 0 1rem;
-  padding: 0.5rem;
-  font-size: 0.9rem;
-  width: 100%;
-  border: 1px solid gray;
-  border-radius: 2px;
-}
-label[for] + input[id]:focus, label[for] + input[id]:focus-within, label[for] + textarea[id]:focus, label[for] + textarea[id]:focus-within, label[for] + select[id]:focus, label[for] + select[id]:focus-within {
-  border: 1px solid gray;
-  outline-color: gray;
-}
-label[for] + input[id]::placeholder, label[for] + textarea[id]::placeholder, label[for] + select[id]::placeholder {
-  font-style: italic;
-  color: lightgrey;
-}
-label[for] + select {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: #fff;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='512' viewBox='0 0 320 512'%3E%3Ctitle%3Esort%3C/title%3E%3Cg %3E%3Cdefs%3E%3C/defs%3E%3Cpath d='M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z' class='fa-secondary' opacity='.4'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
-  background-repeat: no-repeat, repeat;
-  background-position: right 0.7em top 50%, 0 0;
-  background-size: 0.65em auto, 100%;
-}
-label[for] + textarea {
-  min-height: 150px;
-}
-
-span > * + * {
-  margin-left: 0.3rem;
-}
-span > label[for] {
-  display: inline-flex;
-  align-items: center;
-  margin-left: 0.5rem;
-  cursor: pointer;
-}
-span > label[for]::before {
-  content: "";
-  display: inline-flex;
-  width: 1rem;
-  height: 1rem;
-  background-color: transparent;
-  border: solid 2px lightgrey;
-  border-radius: 3px;
-  margin-right: 0.5rem;
-}
-span > [type=checkbox]:checked + label[for]::before,
-span [type=radio]:checked + label[for]::before {
-  background-color: gray;
-}
-span > [type=checkbox],
-span > [type=radio] {
-  width: 1px;
-  height: 1px;
-  opacity: 0;
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-}
-span > [type=radio] {
-  display: block;
-}
-span > [type=radio] + label::before {
-  border-radius: 50%;
-}
-
-ol,
-ul,
-dl {
-  margin-left: 0rem;
-  padding-left: 1.5rem;
-}
-ol > * + *,
-ul > * + *,
-dl > * + * {
-  margin-top: 0.5rem;
-}
-ol > *,
-ul > *,
-dl > * {
-  line-height: 1.5;
-  font-size: smaller;
-}
-
-span > ol,
-span ul {
-  list-style: none;
-  margin-left: 0rem;
-  padding-left: 0rem;
-}
-
-picture {
-  display: flex;
-  width: 100%;
-  height: auto;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  text-align: center;
-}
-picture > img[alt] {
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-picture > img[alt]::after {
-  min-height: 48px;
-  height: 100%;
-  width: 100%;
-  content: "✖" " " attr(alt);
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: lightgrey;
-  border-radius: 0.1rem;
-  color: darkgray;
-  background-repeat: no-repeat;
-  text-transform: uppercase;
-  border: 2px solid darkgray;
-}
-
 body {
   background-color: #ffffff;
-  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 body > section,
 body > main,
@@ -323,6 +95,39 @@ header > [role=banner] {
   text-align: center;
 }
 
+main {
+  min-height: 30rem;
+}
+main > section article {
+  padding: 1rem;
+  width: 100%;
+  font-size: 1rem;
+}
+main > section article > * + * {
+  margin-top: 2rem;
+}
+main > section article + aside {
+  width: 100%;
+  padding: 1rem;
+  font-size: 0.95rem;
+}
+@media all and (min-width: 1280px) {
+  main > section {
+    display: flex;
+    align-items: flex-start;
+  }
+  main > section article {
+    max-width: 75%;
+  }
+  main > section article + aside,
+main > section aside + article,
+main > section article + [role=complementary],
+main > section [role=complementary] + article {
+    min-width: 25%;
+    max-width: 25%;
+  }
+}
+
 section [role=list] {
   padding: 0;
   box-sizing: border-box;
@@ -365,4 +170,191 @@ button:hover, button:active, button:focus, a[role=button]:hover, a[role=button]:
 }
 button[type], a[role=button][type] {
   border: 1px solid #e4e4e4;
+}
+
+label[for] {
+  font-size: 0.9rem;
+  display: block;
+}
+label[for] em {
+  font-style: normal;
+}
+label[for] em::after {
+  content: "∗";
+  color: red;
+}
+label[for] + input[id], label[for] + textarea[id], label[for] + select[id] {
+  background-color: transparent;
+  display: flex;
+  margin: 0.1rem 0 1rem;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 2px;
+}
+label[for] + input[id]:focus, label[for] + input[id]:focus-within, label[for] + textarea[id]:focus, label[for] + textarea[id]:focus-within, label[for] + select[id]:focus, label[for] + select[id]:focus-within {
+  border: 1px solid gray;
+  outline-color: gray;
+}
+label[for] + input[id]::placeholder, label[for] + textarea[id]::placeholder, label[for] + select[id]::placeholder {
+  font-style: italic;
+  color: lightgrey;
+}
+label[for] + select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='512' viewBox='0 0 320 512'%3E%3Ctitle%3Esort%3C/title%3E%3Cg %3E%3Cdefs%3E%3C/defs%3E%3Cpath d='M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z' class='fa-secondary' opacity='.4'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  background-size: 0.65em auto, 100%;
+}
+label[for] + textarea {
+  min-height: 150px;
+}
+
+span > * + * {
+  margin-left: 0.3rem;
+}
+span > label[for] {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+span > label[for]::before {
+  content: "";
+  display: inline-flex;
+  width: 1rem;
+  height: 1rem;
+  background-color: transparent;
+  border: solid 2px lightgrey;
+  border-radius: 3px;
+  margin-right: 0.5rem;
+}
+span > [type=checkbox]:checked + label[for]::before,
+span [type=radio]:checked + label[for]::before {
+  background-color: gray;
+}
+span > [type=checkbox],
+span > [type=radio] {
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+}
+span > [type=radio] {
+  display: block;
+}
+span > [type=radio] + label::before {
+  border-radius: 50%;
+}
+
+picture {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  text-align: center;
+}
+picture > img[alt] {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+picture > img[alt]::after {
+  min-height: 48px;
+  height: 100%;
+  width: 100%;
+  content: "✖" " " attr(alt);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgrey;
+  border-radius: 0.1rem;
+  color: darkgray;
+  background-repeat: no-repeat;
+  text-transform: uppercase;
+  border: 2px solid darkgray;
+}
+
+ol,
+ul,
+dl {
+  margin-left: 0rem;
+  padding-left: 0rem;
+}
+ol > * + *,
+ul > * + *,
+dl > * + * {
+  margin-top: 0.5rem;
+}
+ol > *,
+ul > *,
+dl > * {
+  line-height: 1.5;
+}
+
+span > ol,
+span ul {
+  list-style: none;
+  margin-left: 0rem;
+  padding-left: 0rem;
+}
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.5;
+  color: inherit;
+  margin: 0rem 0 1.05rem;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 5rem;
+  word-break: break-all;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 1.777rem;
+}
+
+h5 {
+  font-size: 1.4rem;
+}
+
+small,
+.text_small {
+  font-size: 0.75rem;
+}
+
+p {
+  line-height: 1.7;
 }

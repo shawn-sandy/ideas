@@ -1,3 +1,39 @@
-@import "@shawnsandy/mix/sass/foundations/_settings.scss";
-@import "@shawnsandy/mix/sass/foundations/_list.scss";
-@include mix-list();
+$render: true !default;
+
+@mixin list($renderContent: true, $className: null) {
+  @if($renderContent) {
+    @include mix-list();
+  }
+}
+
+
+@mixin mix-list {
+
+  ol,
+  ul,
+  dl {
+    margin-left: 0rem;
+    padding-left: 0rem;
+
+    >*+* {
+      margin-top: 0.5rem;
+    }
+
+    >* {
+      line-height: 1.5;
+    }
+  }
+
+  span {
+
+    >ol,
+    ul {
+      list-style: none;
+      margin-left: 0rem;
+      padding-left: 0rem;
+    }
+  }
+}
+
+
+@include list()

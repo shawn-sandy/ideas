@@ -1,3 +1,51 @@
-@import "@shawnsandy/mix/sass/foundations/_settings.scss";
-@import "@shawnsandy/mix/sass/foundations/_img.scss";
-@include mix-img();
+// img component
+
+$render: true !default;
+
+@mixin img($renderContent: true, $className: null) {
+  @if($renderContent) {
+    @include mix-img();
+  }
+}
+
+@mixin mix-img() {
+  picture {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    text-align: center;
+
+    >img[alt] {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      &::after {
+        min-height: 48px;
+        height: 100%;
+        width: 100%;
+        content: "\2716"" "attr(alt);
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: lightgrey;
+        border-radius: 0.1rem;
+        color: darkgray;
+        background-repeat: no-repeat;
+        text-transform: uppercase;
+        border: 2px solid darkgray;
+      }
+    }
+  }
+}
+
+
+@include img();

@@ -1,4 +1,4 @@
-@use "@shawnsandy/mix/foundation.scss";
+// @use "@shawnsandy/mix/foundation.scss";
 
 @use './components/styles';
 
@@ -10,6 +10,16 @@
 
 @use './components/header.scss';
 
+@use './components/main-layout.scss';
+
 @use './components/grid.scss';
 
 @use './components/button.scss';
+
+@use './components/input.scss';
+
+@use './components/img.scss';
+
+@use './components/list.scss';
+
+@use './components/typography.scss';
