@@ -316,7 +316,7 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  height: 25rem;
+  height: 37.5rem;
 }
 header > section,
 header > [role=banner] {
@@ -337,12 +337,12 @@ section [role=list] [role=listitem] {
 }
 @media all and (min-width: 780px) {
   section [role=list] [role=listitem] {
-    flex: 1 1 50%;
+    flex: 1 1 48%-1rem;
   }
 }
 @media all and (min-width: 992px) {
   section [role=list] [role=listitem] {
-    flex: 1 1 30%;
+    flex: 1 1 38%;
   }
 }
 
@@ -351,11 +351,12 @@ button, a[role=button] {
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  display: inline-flex;
   flex-direction: row;
   background-color: transparent;
   padding: 0.7rem 1.5rem;
   border-radius: 0.2rem;
-  border: none;
+  border: 1px solid #e4e4e4;
   cursor: pointer;
 }
 button:hover, button:active, button:focus, a[role=button]:hover, a[role=button]:active, a[role=button]:focus {
