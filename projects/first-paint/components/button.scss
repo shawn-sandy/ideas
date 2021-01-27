@@ -4,6 +4,7 @@ $background-color: transparent !default;
 $background-color-hover: rgb(228, 228, 228) !default;
 $height: null !default;
 $width: null !default;
+$margin: .7rem !default;
 $padding: 1rem !default;
 $padding-x: 1.5rem !default;
 $padding-y: .7rem !default;
@@ -26,7 +27,7 @@ $cursor: pointer !default;
 
   @if renderComponent {
 
-    #{if($className, $className, 'button, a[role=button] .button')} {
+    #{if($className, $className, 'button, a[role=button], .fp-button')} {
       @include button();
     }
 
@@ -45,6 +46,7 @@ $cursor: pointer !default;
   border-radius: $border-radius;
   border: $border-default;
   cursor: $cursor;
+  margin-bottom: $margin;
 
   &:hover,
   &:active,

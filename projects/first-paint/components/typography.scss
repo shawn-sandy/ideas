@@ -39,23 +39,28 @@ sans-serif,
     word-break: break-all;
   }
 
-  h1 {
+  h1,
+  .fp-h1 {
     font-size: 5rem;
   }
 
-  h2 {
+  h2,
+  .fp-h1 {
     font-size: 3rem;
   }
 
-  h3 {
+  h3,
+  .fp-h3 {
     font-size: 2.5rem;
   }
 
-  h4 {
+  h4,
+  .fp-h4 {
     font-size: 1.777rem;
   }
 
-  h5 {
+  h5,
+  .fp-h5 {
     font-size: 1.4rem;
   }
 
@@ -64,7 +69,8 @@ sans-serif,
     font-size: 0.75rem;
   }
 
-  p {
+  p,
+  .fp-p {
     line-height: 1.7;
   }
 

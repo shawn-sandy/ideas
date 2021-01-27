@@ -9,7 +9,8 @@ $min-height: 30rem !default;
 }
 
 @mixin mix-main {
-  main {
+
+  #{if(className, className, 'main, .fp-main')} {
     min-height: $min-height;
 
     // padding: 2rem 0;

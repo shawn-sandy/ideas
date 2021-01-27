@@ -15,9 +15,10 @@ $align-items: center !default;
 $justify-content: space-between !default;
 $brand-name: 'brand name' !default;
 
-@mixin renderComponent($renderComponent: $render) {
+@mixin renderComponent($renderComponent: $render, $className: null) {
   @if $renderComponent {
 
+    #{if($className, $className, '.fp-nav')},
     nav {
       display: flex;
       align-items: $align-items;

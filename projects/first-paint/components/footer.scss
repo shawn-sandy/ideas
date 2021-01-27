@@ -2,7 +2,7 @@ $render: true !default;
 
 @mixin renderComponent($renderContent: true, $className: null) {
   @if($renderContent) {
-    footer {
+    #{if($className, $className, 'footer, .fp-footer')}footer {
       @include footer();
     }
   }

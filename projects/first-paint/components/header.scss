@@ -13,7 +13,7 @@ $justify-content: center;
 
   @if($renderContent) {
 
-    #{if($className, $className, 'header')} {
+    #{if($className, $className, 'header, .fp-header')} {
       @include header()
     }
   }
@@ -21,7 +21,7 @@ $justify-content: center;
 }
 
 @mixin header {
-  @include styles.flex-box-top();
+  @include styles.flex-box();
   height: $height;
 
   >section,
