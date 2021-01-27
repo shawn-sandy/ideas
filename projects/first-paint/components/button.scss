@@ -27,32 +27,37 @@ $cursor: pointer !default;
   @if renderComponent {
 
     #{if($className, $className, 'button, a[role=button] .button')} {
-      @include styles.flex-box();
-      display: inline-flex;
-      flex-direction: row;
-      height: $height;
-      width: $width;
-      background-color: $background-color;
-      padding: $padding-y $padding-x;
-      border-radius: $border-radius;
-      border: $border-default;
-      cursor: $cursor;
-
-      &:hover,
-      &:active,
-      &:focus {
-        background-color: $background-color-hover;
-        border: $border-default;
-      }
-
-      &[type] {
-        border: $border-default;
-        // border: $border-default;
-      }
-
+      @include button();
     }
 
   }
+}
+
+
+@mixin button() {
+  @include styles.flex-box();
+  display: inline-flex;
+  flex-direction: row;
+  height: $height;
+  width: $width;
+  background-color: $background-color;
+  padding: $padding-y $padding-x;
+  border-radius: $border-radius;
+  border: $border-default;
+  cursor: $cursor;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $background-color-hover;
+    border: $border-default;
+  }
+
+  &[type] {
+    border: $border-default;
+    // border: $border-default;
+  }
+
 }
 
 @include renderComponent()

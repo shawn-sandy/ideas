@@ -13,26 +13,31 @@ $flex-media-980: 1 1 28% !default;
 
     #{if($className, $className, 'section')} {
       [role="list"] {
-        padding: $padding;
-        box-sizing: $box-sizing;
-        display: $display;
-        flex-wrap: $wrap;
-        justify-content: $justify-content;
-
-        [role="listitem"] {
-          flex: 1 1 100%;
-          padding: 1rem;
-          line-height: 1.6;
-
-          @media all and (min-width: 780px) {
-            flex: $flex-media-780;
-          }
-
-          @media all and (min-width: 992px) {
-            flex: $flex-media-980;
-          }
-        }
+        @include grid();
       }
+    }
+  }
+}
+
+@mixin grid {
+
+  padding: $padding;
+  box-sizing: $box-sizing;
+  display: $display;
+  flex-wrap: $wrap;
+  justify-content: $justify-content;
+
+  [role="listitem"] {
+    flex: 1 1 100%;
+    padding: 1rem;
+    line-height: 1.6;
+
+    @media all and (min-width: 780px) {
+      flex: $flex-media-780;
+    }
+
+    @media all and (min-width: 992px) {
+      flex: $flex-media-980;
     }
   }
 }
