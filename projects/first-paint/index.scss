@@ -25,3 +25,10 @@
 @use './components/list.scss';
 
 @use './components/typography.scss';
+
+
+.button-red {
+  @extend button,
+  .button;
+  background-color: red;
+}

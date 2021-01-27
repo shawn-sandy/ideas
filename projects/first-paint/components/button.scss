@@ -26,7 +26,7 @@ $cursor: pointer !default;
 
   @if renderComponent {
 
-    #{if($className, $className, 'button, a[role=button]')} {
+    #{if($className, $className, 'button, a[role=button] .button')} {
       @include styles.flex-box();
       display: inline-flex;
       flex-direction: row;

@@ -158,7 +158,7 @@ section [role=list] [role=listitem] {
   }
 }
 
-button, a[role=button] {
+button, .button-red, a[role=button] .button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -171,11 +171,11 @@ button, a[role=button] {
   border: 1px solid #e4e4e4;
   cursor: pointer;
 }
-button:hover, button:active, button:focus, a[role=button]:hover, a[role=button]:active, a[role=button]:focus {
+button:hover, .button-red:hover, button:active, .button-red:active, button:focus, .button-red:focus, a[role=button] .button:hover, a[role=button] .button:active, a[role=button] .button:focus {
   background-color: #e4e4e4;
   border: 1px solid #e4e4e4;
 }
-button[type], a[role=button][type] {
+button[type], [type].button-red, a[role=button] .button[type] {
   border: 1px solid #e4e4e4;
 }
 
@@ -364,4 +364,8 @@ small,
 
 p {
   line-height: 1.7;
+}
+
+.button-red {
+  background-color: red;
 }
