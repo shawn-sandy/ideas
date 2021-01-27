@@ -14,17 +14,20 @@ $justify-content: center;
   @if($renderContent) {
 
     #{if($className, $className, 'header')} {
-      @include styles.flex-box-top();
-      height: $height;
-
-      >section,
-      >[role=banner] {
-        text-align: center;
-      }
-
+      @include header()
     }
   }
 
+}
+
+@mixin header {
+  @include styles.flex-box-top();
+  height: $height;
+
+  >section,
+  >[role=banner] {
+    text-align: center;
+  }
 }
 
 @include renderComponent()

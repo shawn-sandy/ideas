@@ -2,13 +2,14 @@
 
 $render: true !default;
 
-@mixin img($renderContent: true, $className: null) {
+@mixin renderComponent($renderContent: true, $className: null) {
   @if($renderContent) {
-    @include mix-img();
+    @include img();
   }
 }
 
-@mixin mix-img() {
+
+@mixin img() {
   picture {
     display: flex;
     width: 100%;
@@ -19,6 +20,7 @@ $render: true !default;
     text-align: center;
 
     >img[alt] {
+
       width: 100%;
       height: auto;
       display: flex;
@@ -42,10 +44,11 @@ $render: true !default;
         background-repeat: no-repeat;
         text-transform: uppercase;
         border: 2px solid darkgray;
+
       }
     }
   }
+
 }
 
-
-@include img();
+@include renderComponent();
