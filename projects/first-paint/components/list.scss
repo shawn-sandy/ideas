@@ -2,12 +2,22 @@ $render: true !default;
 
 @mixin list($renderContent: true, $className: null) {
   @if($renderContent) {
-    @include mix-list();
+
+    @if($className) {
+      .#{$className} {
+        @include mix-list();
+      }
+
+    }
+
+    @else {
+      @include mix-list();
+    }
   }
 }
 
 
-@mixin mix-list {
+@mixin mix-list() {
 
   ol,
   ul,

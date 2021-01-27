@@ -1,14 +1,23 @@
 $render: true !default;
 $background-color: transparent !default;
 
+@mixin input($renderContent: true, $className: null) {
+  @if($renderContent) {
+    #{if($className, $className,'form, .fp-form')} {
+      @include form-elements();
+    }
+  }
+}
+
 @mixin form-elements {
+
   label[for] {
     em {
       font-style: normal;
 
       &::after {
         content: "\2217";
-        color: red;
+        color: darkred;
         // font-size: larger;
       }
     }
@@ -113,15 +122,5 @@ $background-color: transparent !default;
     }
   }
 }
-
-@mixin input($renderContent: true, $className: null) {
-  @if($renderContent) {
-
-
-    @include form-elements();
-
-  }
-}
-
 
 @include input()

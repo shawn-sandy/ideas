@@ -37,6 +37,7 @@ a {
   text-decoration: none;
 }
 
+.fp-nav,
 nav {
   display: flex;
   align-items: center;
@@ -44,6 +45,9 @@ nav {
   min-height: 3.5rem;
   padding: 0.5rem 0.5rem;
 }
+.fp-nav section,
+.fp-nav div,
+.fp-nav ul,
 nav section,
 nav div,
 nav ul {
@@ -51,6 +55,9 @@ nav ul {
   align-items: center;
   height: 100%;
 }
+.fp-nav section li,
+.fp-nav div li,
+.fp-nav ul li,
 nav section li,
 nav div li,
 nav ul li {
@@ -58,11 +65,16 @@ nav ul li {
   display: flex;
   align-items: center;
 }
+.fp-nav section li + li,
+.fp-nav div li + li,
+.fp-nav ul li + li,
 nav section li + li,
 nav div li + li,
 nav ul li + li {
   margin-top: 0;
 }
+.fp-nav h1,
+.fp-nav [aria-label="brand name"],
 nav h1,
 nav [aria-label="brand name"] {
   display: flex;
@@ -70,20 +82,24 @@ nav [aria-label="brand name"] {
   height: 100%;
   margin: 0;
 }
+.fp-nav h1 a,
+.fp-nav [aria-label="brand name"] a,
 nav h1 a,
 nav [aria-label="brand name"] a {
   font-size: 1.5rem;
 }
+.fp-nav img,
 nav img {
   vertical-align: middle;
   height: 3rem;
 }
+.fp-nav a,
 nav a {
   padding: 0 1rem;
   font-size: 0.8rem;
 }
 
-header {
+header, .fp-header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -91,74 +107,75 @@ header {
   height: 37.5rem;
 }
 header > section,
-header > [role=banner] {
+header > [role=banner], .fp-header > section,
+.fp-header > [role=banner] {
   text-align: center;
 }
 
-main {
+className {
   min-height: 30rem;
 }
-main > section article {
+className > section article {
   padding: 1rem;
   width: 100%;
   font-size: 1rem;
 }
-main > section article > * + * {
+className > section article > * + * {
   margin-top: 2rem;
 }
-main > section article + aside {
+className > section article + aside {
   width: 100%;
   padding: 1rem;
   font-size: 0.95rem;
 }
 @media all and (min-width: 1280px) {
-  main > section {
+  className > section {
     display: flex;
     align-items: flex-start;
   }
-  main > section article {
+  className > section article {
     max-width: 75%;
   }
-  main > section article + aside,
-main > section aside + article,
-main > section article + [role=complementary],
-main > section [role=complementary] + article {
+  className > section article + aside,
+className > section aside + article,
+className > section article + [role=complementary],
+className > section [role=complementary] + article {
     min-width: 25%;
     max-width: 25%;
   }
 }
 
-footer {
+footer, .fp-footerfooter {
   min-height: 200px;
   display: flex;
   align-items: center;
   justify-content: start;
 }
 
-section [role=list] {
+section [role=list], .fp-grid [role=list] {
   padding: 0;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
-section [role=list] [role=listitem] {
+section [role=list] [role=listitem], .fp-grid [role=list] [role=listitem] {
   flex: 1 1 100%;
   padding: 1rem;
   line-height: 1.6;
 }
 @media all and (min-width: 780px) {
-  section [role=list] [role=listitem] {
+  section [role=list] [role=listitem], .fp-grid [role=list] [role=listitem] {
     flex: 1 1 48%;
   }
 }
 @media all and (min-width: 992px) {
-  section [role=list] [role=listitem] {
+  section [role=list] [role=listitem], .fp-grid [role=list] [role=listitem] {
     flex: 1 1 28%;
   }
 }
 
-button, .button-red, a[role=button] .button {
+button, a[role=button], .fp-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -170,27 +187,28 @@ button, .button-red, a[role=button] .button {
   border-radius: 0.2rem;
   border: 1px solid #e4e4e4;
   cursor: pointer;
+  margin-bottom: 0.7rem;
 }
-button:hover, .button-red:hover, button:active, .button-red:active, button:focus, .button-red:focus, a[role=button] .button:hover, a[role=button] .button:active, a[role=button] .button:focus {
+button:hover, button:active, button:focus, a[role=button]:hover, a[role=button]:active, a[role=button]:focus, .fp-button:hover, .fp-button:active, .fp-button:focus {
   background-color: #e4e4e4;
   border: 1px solid #e4e4e4;
 }
-button[type], [type].button-red, a[role=button] .button[type] {
+button[type], a[role=button][type], .fp-button[type] {
   border: 1px solid #e4e4e4;
 }
 
-label[for] {
+form label[for], .fp-form label[for] {
   font-size: 0.9rem;
   display: block;
 }
-label[for] em {
+form label[for] em, .fp-form label[for] em {
   font-style: normal;
 }
-label[for] em::after {
+form label[for] em::after, .fp-form label[for] em::after {
   content: "∗";
-  color: red;
+  color: darkred;
 }
-label[for] + input[id], label[for] + textarea[id], label[for] + select[id] {
+form label[for] + input[id], form label[for] + textarea[id], form label[for] + select[id], .fp-form label[for] + input[id], .fp-form label[for] + textarea[id], .fp-form label[for] + select[id] {
   background-color: transparent;
   display: flex;
   margin: 0.1rem 0 1rem;
@@ -200,15 +218,15 @@ label[for] + input[id], label[for] + textarea[id], label[for] + select[id] {
   border: 1px solid gray;
   border-radius: 2px;
 }
-label[for] + input[id]:focus, label[for] + input[id]:focus-within, label[for] + textarea[id]:focus, label[for] + textarea[id]:focus-within, label[for] + select[id]:focus, label[for] + select[id]:focus-within {
+form label[for] + input[id]:focus, form label[for] + input[id]:focus-within, form label[for] + textarea[id]:focus, form label[for] + textarea[id]:focus-within, form label[for] + select[id]:focus, form label[for] + select[id]:focus-within, .fp-form label[for] + input[id]:focus, .fp-form label[for] + input[id]:focus-within, .fp-form label[for] + textarea[id]:focus, .fp-form label[for] + textarea[id]:focus-within, .fp-form label[for] + select[id]:focus, .fp-form label[for] + select[id]:focus-within {
   border: 1px solid gray;
   outline-color: gray;
 }
-label[for] + input[id]::placeholder, label[for] + textarea[id]::placeholder, label[for] + select[id]::placeholder {
+form label[for] + input[id]::placeholder, form label[for] + textarea[id]::placeholder, form label[for] + select[id]::placeholder, .fp-form label[for] + input[id]::placeholder, .fp-form label[for] + textarea[id]::placeholder, .fp-form label[for] + select[id]::placeholder {
   font-style: italic;
   color: lightgrey;
 }
-label[for] + select {
+form label[for] + select, .fp-form label[for] + select {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -218,20 +236,19 @@ label[for] + select {
   background-position: right 0.7em top 50%, 0 0;
   background-size: 0.65em auto, 100%;
 }
-label[for] + textarea {
+form label[for] + textarea, .fp-form label[for] + textarea {
   min-height: 150px;
 }
-
-span > * + * {
+form span > * + *, .fp-form span > * + * {
   margin-left: 0.3rem;
 }
-span > label[for] {
+form span > label[for], .fp-form span > label[for] {
   display: inline-flex;
   align-items: center;
   margin-left: 0.5rem;
   cursor: pointer;
 }
-span > label[for]::before {
+form span > label[for]::before, .fp-form span > label[for]::before {
   content: "";
   display: inline-flex;
   width: 1rem;
@@ -241,12 +258,14 @@ span > label[for]::before {
   border-radius: 3px;
   margin-right: 0.5rem;
 }
-span > [type=checkbox]:checked + label[for]::before,
-span [type=radio]:checked + label[for]::before {
+form span > [type=checkbox]:checked + label[for]::before,
+form span [type=radio]:checked + label[for]::before, .fp-form span > [type=checkbox]:checked + label[for]::before,
+.fp-form span [type=radio]:checked + label[for]::before {
   background-color: gray;
 }
-span > [type=checkbox],
-span > [type=radio] {
+form span > [type=checkbox],
+form span > [type=radio], .fp-form span > [type=checkbox],
+.fp-form span > [type=radio] {
   width: 1px;
   height: 1px;
   opacity: 0;
@@ -254,14 +273,14 @@ span > [type=radio] {
   margin: 0;
   padding: 0;
 }
-span > [type=radio] {
+form span > [type=radio], .fp-form span > [type=radio] {
   display: block;
 }
-span > [type=radio] + label::before {
+form span > [type=radio] + label::before, .fp-form span > [type=radio] + label::before {
   border-radius: 50%;
 }
 
-picture {
+picture, .fp-picture {
   display: flex;
   width: 100%;
   height: auto;
@@ -270,14 +289,14 @@ picture {
   padding: 0;
   text-align: center;
 }
-picture > img[alt] {
+picture > img[alt], .fp-picture > img[alt] {
   width: 100%;
   height: auto;
   display: flex;
   align-items: center;
   position: relative;
 }
-picture > img[alt]::after {
+picture > img[alt]::after, .fp-picture > img[alt]::after {
   min-height: 48px;
   height: 100%;
   width: 100%;
@@ -337,23 +356,28 @@ h5 {
   word-break: break-all;
 }
 
-h1 {
+h1,
+.fp-h1 {
   font-size: 5rem;
 }
 
-h2 {
+h2,
+.fp-h1 {
   font-size: 3rem;
 }
 
-h3 {
+h3,
+.fp-h3 {
   font-size: 2.5rem;
 }
 
-h4 {
+h4,
+.fp-h4 {
   font-size: 1.777rem;
 }
 
-h5 {
+h5,
+.fp-h5 {
   font-size: 1.4rem;
 }
 
@@ -362,10 +386,7 @@ small,
   font-size: 0.75rem;
 }
 
-p {
+p,
+.fp-p {
   line-height: 1.7;
-}
-
-.button-red {
-  background-color: red;
 }
