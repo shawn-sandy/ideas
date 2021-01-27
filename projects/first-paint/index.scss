@@ -12,6 +12,8 @@
 
 @use './components/main-layout.scss';
 
+@use './components/footer.scss';
+
 @use './components/grid.scss';
 
 @use './components/button.scss';
@@ -23,3 +25,10 @@
 @use './components/list.scss';
 
 @use './components/typography.scss';
+
+
+.button-red {
+  @extend button,
+  .button;
+  background-color: red;
+}

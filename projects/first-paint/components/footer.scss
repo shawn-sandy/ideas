@@ -1,0 +1,18 @@
+$render: true !default;
+
+@mixin footer($renderContent: true, $className: null) {
+  @if($renderContent) {
+    @include mix-footer();
+  }
+}
+
+@mixin mix-footer() {
+  footer {
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+}
+
+@include footer();
