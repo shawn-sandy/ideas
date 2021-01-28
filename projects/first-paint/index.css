@@ -197,6 +197,45 @@ button[type], a[role=button][type], .fp-button[type] {
   border: 1px solid #e4e4e4;
 }
 
+span > * + * {
+  margin-left: 0.3rem;
+}
+span > label[for] {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+span > label[for]::before {
+  content: "";
+  display: inline-flex;
+  width: 1rem;
+  height: 1rem;
+  background-color: transparent;
+  border: solid 2px lightgrey;
+  border-radius: 3px;
+  margin-right: 0.5rem;
+}
+span > [type=checkbox]:checked + label[for]::before,
+span [type=radio]:checked + label[for]::before {
+  background-color: gray;
+}
+span > [type=checkbox],
+span > [type=radio] {
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+}
+span > [type=radio] {
+  display: block;
+}
+span > [type=radio] + label::before {
+  border-radius: 50%;
+}
+
 form label[for], .fp-form label[for] {
   font-size: 0.9rem;
   display: block;
@@ -208,7 +247,11 @@ form label[for] em::after, .fp-form label[for] em::after {
   content: "∗";
   color: darkred;
 }
-form label[for] + input[id], form label[for] + textarea[id], form label[for] + select[id], .fp-form label[for] + input[id], .fp-form label[for] + textarea[id], .fp-form label[for] + select[id] {
+form input[id],
+form textarea[id],
+form select[id], .fp-form input[id],
+.fp-form textarea[id],
+.fp-form select[id] {
   background-color: transparent;
   display: flex;
   margin: 0.1rem 0 1rem;
@@ -218,15 +261,27 @@ form label[for] + input[id], form label[for] + textarea[id], form label[for] + s
   border: 1px solid gray;
   border-radius: 2px;
 }
-form label[for] + input[id]:focus, form label[for] + input[id]:focus-within, form label[for] + textarea[id]:focus, form label[for] + textarea[id]:focus-within, form label[for] + select[id]:focus, form label[for] + select[id]:focus-within, .fp-form label[for] + input[id]:focus, .fp-form label[for] + input[id]:focus-within, .fp-form label[for] + textarea[id]:focus, .fp-form label[for] + textarea[id]:focus-within, .fp-form label[for] + select[id]:focus, .fp-form label[for] + select[id]:focus-within {
+form input[id]:focus, form input[id]:focus-within,
+form textarea[id]:focus,
+form textarea[id]:focus-within,
+form select[id]:focus,
+form select[id]:focus-within, .fp-form input[id]:focus, .fp-form input[id]:focus-within,
+.fp-form textarea[id]:focus,
+.fp-form textarea[id]:focus-within,
+.fp-form select[id]:focus,
+.fp-form select[id]:focus-within {
   border: 1px solid gray;
   outline-color: gray;
 }
-form label[for] + input[id]::placeholder, form label[for] + textarea[id]::placeholder, form label[for] + select[id]::placeholder, .fp-form label[for] + input[id]::placeholder, .fp-form label[for] + textarea[id]::placeholder, .fp-form label[for] + select[id]::placeholder {
+form input[id]::placeholder,
+form textarea[id]::placeholder,
+form select[id]::placeholder, .fp-form input[id]::placeholder,
+.fp-form textarea[id]::placeholder,
+.fp-form select[id]::placeholder {
   font-style: italic;
   color: lightgrey;
 }
-form label[for] + select, .fp-form label[for] + select {
+form + select, .fp-form + select {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -236,48 +291,8 @@ form label[for] + select, .fp-form label[for] + select {
   background-position: right 0.7em top 50%, 0 0;
   background-size: 0.65em auto, 100%;
 }
-form label[for] + textarea, .fp-form label[for] + textarea {
+form + textarea, .fp-form + textarea {
   min-height: 150px;
-}
-form span > * + *, .fp-form span > * + * {
-  margin-left: 0.3rem;
-}
-form span > label[for], .fp-form span > label[for] {
-  display: inline-flex;
-  align-items: center;
-  margin-left: 0.5rem;
-  cursor: pointer;
-}
-form span > label[for]::before, .fp-form span > label[for]::before {
-  content: "";
-  display: inline-flex;
-  width: 1rem;
-  height: 1rem;
-  background-color: transparent;
-  border: solid 2px lightgrey;
-  border-radius: 3px;
-  margin-right: 0.5rem;
-}
-form span > [type=checkbox]:checked + label[for]::before,
-form span [type=radio]:checked + label[for]::before, .fp-form span > [type=checkbox]:checked + label[for]::before,
-.fp-form span [type=radio]:checked + label[for]::before {
-  background-color: gray;
-}
-form span > [type=checkbox],
-form span > [type=radio], .fp-form span > [type=checkbox],
-.fp-form span > [type=radio] {
-  width: 1px;
-  height: 1px;
-  opacity: 0;
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-}
-form span > [type=radio], .fp-form span > [type=radio] {
-  display: block;
-}
-form span > [type=radio] + label::before, .fp-form span > [type=radio] + label::before {
-  border-radius: 50%;
 }
 
 picture, .fp-picture {

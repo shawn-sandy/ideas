@@ -1,11 +1,69 @@
-# First-Paint Components
+# Creating/Customizing an HTML5 page with FisrtPaint
 
-### HTML snippets markup
+- Copy and add the stylesheet below into the `<head></head>` of you HTML page
+
+```html
+<link
+  rel="stylesheet"
+  src="https://cdn.jsdelivr.net/npm/@shawnsandy/first-paint/dist/css/index.css"
+/>
+```
+
+Add Normalize CSS (CDN) copy and insert the snippet below into between the `<head></head>` of your page
+
+> Normalize.css makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing.
+
+### HTML5 Page
+
+Or you can just copy and create your page using the snippet below.
+
+```html
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>title</title>
+    <meta name="description" content="title" />
+    <meta name="author" content="author" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      src="https://cdn.jsdelivr.net/npm/@shawnsandy/first-paint/dist/css/index.css"
+    />
+  </head>
+
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquam quos
+      blanditiis reiciendis facilis eum. Repellendus qui eius debitis, fugit
+      aspernatur a molestiae ducimus nemo deleniti tempora exercitationem esse
+      at.
+    </p>
+    <!-- <script src="index.js"></script> -->
+  </body>
+</html>
+
+
+```
+
+```html
+ <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+  />
+```
+#### HTML snippets markup
 
 Copy and paste these snippets to build custom templates using fist-paint-CSS
 
-
-### Header
+#### Header
 
 ``` html
 <header>
@@ -30,7 +88,7 @@ Copy and paste these snippets to build custom templates using fist-paint-CSS
 
 ```
 
-### Main
+#### Main
 
 ```html
 <section id="articles">
@@ -70,7 +128,7 @@ Copy and paste these snippets to build custom templates using fist-paint-CSS
 ```
 
 
-### Navbar
+#### Navbar
 
 ```html
 
@@ -108,7 +166,7 @@ Copy and paste these snippets to build custom templates using fist-paint-CSS
 
 ```
 
-### Page Footer
+#### Page Footer
 
 ```html
 <footer>
@@ -145,7 +203,7 @@ Copy and paste these snippets to build custom templates using fist-paint-CSS
 
 ```
 
-### Grid
+#### Grid (w/list)
 
 ```html
 <div role="list">
@@ -167,7 +225,7 @@ Copy and paste these snippets to build custom templates using fist-paint-CSS
 
 ```
 
-### Grid Row
+#### Grid Row
 
 ```html
 <div role="listitem">
@@ -180,7 +238,7 @@ Copy and paste these snippets to build custom templates using fist-paint-CSS
 ```
 
 
-### Img
+#### Img
 
 ```html
 <picture>
@@ -189,7 +247,7 @@ Copy and paste these snippets to build custom templates using fist-paint-CSS
 ```
 
 
-### Ordered List
+#### Ordered List
 
 ```html
 <ol>
@@ -204,7 +262,7 @@ Copy and paste these snippets to build custom templates using fist-paint-CSS
 ```
 
 
-### Unordered List
+#### Unordered List
 
 ```html
 <ul>
@@ -219,7 +277,7 @@ Copy and paste these snippets to build custom templates using fist-paint-CSS
 ```
 
 
-### Ordered List (unstyled)
+#### Ordered List (unstyled)
 
 ```html
 <span>
@@ -236,7 +294,7 @@ Copy and paste these snippets to build custom templates using fist-paint-CSS
 ```
 
 
-### Unordered List (unstyled)
+#### Unordered List (unstyled)
 
 ```html
 <span>
@@ -251,7 +309,7 @@ Copy and paste these snippets to build custom templates using fist-paint-CSS
 
 ```
 
-### Input
+#### Input
 
 ```html
 <div role="listitem">
@@ -261,16 +319,16 @@ Copy and paste these snippets to build custom templates using fist-paint-CSS
 
 ```
 
-### Label Required
+#### Label Required
 
 
 ```html
 <label for="input-required">
-<em>Text Required Input Component</em>
+  <em>Text Required Input Component</em>
 </label>
 ```
 
-### Email
+#### Email
 
 ```html
 <label for="email-address">Text Input Component</label>
@@ -282,7 +340,7 @@ Copy and paste these snippets to build custom templates using fist-paint-CSS
 ```
 
 
-### Checkbox
+#### Checkbox
 
 ```html
 <span>
@@ -291,7 +349,7 @@ Copy and paste these snippets to build custom templates using fist-paint-CSS
 </span>
 ```
 
-### Radio
+#### Radio
 
 ```html
 <span>
@@ -305,7 +363,7 @@ Copy and paste these snippets to build custom templates using fist-paint-CSS
 
 ```
 
-### Select
+#### Select
 
 ```html
 <label for="select">Text Input Component</label>
@@ -317,24 +375,9 @@ Copy and paste these snippets to build custom templates using fist-paint-CSS
 
 ```
 
-### Textarea
+#### Textarea
 
 ```html
 <label for="textarea">Textarea Component</label>
 <textarea id="textarea" cols="30" rows="10"></textarea>
-```
-
-
-#### Normalize CSS (CDN)
-
-
- Insert the snippet below into between the `<head></head>` of your page
-
-> Normalize.css makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing.
-
-```html
- <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
-  />
 ```

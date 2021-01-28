@@ -28,7 +28,7 @@ First Paint is an easy to use CSS/SCSS starter library that contains accessibili
 
 ### Add Components
 
-Got to the [Component Documentation](./DOCUMENTS.md) copy and paste the
+Got to the [Component Documentation](./DOCUMENTS.md) view/copy and paste the snippets you need to build your page
 
 <script src="https://gist.github.com/shawn-sandy/bcc3739439954599280f6acd6432c127.js"></script>
 
