@@ -2,7 +2,7 @@
 
 > Lightweight, Fast, Accessible, Inclusive
 
-First Paint is an easy to use CSS/SCSS starter library that contains accessibility focused, classless, semantic HTML elements and components for quickly scaffolding/building modern, lightweight mobile friendly websites.
+First Paint is an easy to use CSS/SCSS starter library that contains accessibility focused, classless, semantic HTML elements and components for quickly scaffolding/building modern, lightweight mobile friendly digital products, websites apps and the likes.
 
 ## Getting started
 
@@ -22,14 +22,13 @@ First Paint is an easy to use CSS/SCSS starter library that contains accessibili
 ```html
 <link
   rel="stylesheet"
-  src="https://cdn.jsdelivr.net/npm/@shawnsandy/first-paint/dist/index.min.css"
+  src="https://cdn.jsdelivr.net/npm/@shawnsandy/first-paint/dist/css/index.css"
 />
 ```
 
-### Components
+### Add Components
 
-- Build your page using FistPaint component markup
-- Add content :)
+Got to the [Component Documentation](./DOCUMENTS.md) copy and paste the
 
 <script src="https://gist.github.com/shawn-sandy/bcc3739439954599280f6acd6432c127.js"></script>
 

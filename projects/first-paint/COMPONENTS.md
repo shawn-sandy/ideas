@@ -127,6 +127,24 @@ Copy and paste these snippets to build custom templates using fist-paint-CSS
 
 ```
 
+#### Button
+
+```html
+<button type="button">Button</button>
+```
+
+#### Link Button
+
+```html
+  <a
+      href="#"
+      role="button"
+      aria-label="Add word, cta action, to your button title"
+    >
+      <span>Get Started</span></a
+
+```
+
 ### Grid
 
 ```html
