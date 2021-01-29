@@ -1,5 +1,5 @@
 // @use "@shawnsandy/mix/sass/foundations/settings.scss";
-//@import "@shawnsandy/mix/sass/foundations/nav.scss";
+// @import "@shawnsandy/mix/sass/foundations/nav.scss";
 $render: true !default;
 $color: null !default;
 $background-color: null !default;
@@ -59,6 +59,7 @@ $brand-name: 'brand name' !default;
       img {
         vertical-align: middle;
         height: $brand-img-height;
+        max-height: $brand-img-height;
       }
 
       a {

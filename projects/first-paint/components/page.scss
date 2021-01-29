@@ -33,7 +33,8 @@ body {
 
   >section,
   >main,
-  >footer {
+  >header>section,
+  >footer>section {
     padding: $padding;
     max-width: $width;
     margin: $margin;

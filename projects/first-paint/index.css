@@ -8,7 +8,8 @@ body {
 }
 body > section,
 body > main,
-body > footer {
+body > header > section,
+body > footer > section {
   padding: 1rem;
   max-width: 90%;
   margin: 0 auto;
@@ -16,7 +17,8 @@ body > footer {
 @media screen and (min-width: 1280px) {
   body > section,
 body > main,
-body > footer {
+body > header > section,
+body > footer > section {
     max-width: 1600px;
     width: 80%;
   }
@@ -24,7 +26,8 @@ body > footer {
 @media screen and (min-width: 1980px) {
   body > section,
 body > main,
-body > footer {
+body > header > section,
+body > footer > section {
     max-width: 1920px;
   }
 }
@@ -96,6 +99,7 @@ nav [aria-label="brand name"] a {
 nav img {
   vertical-align: middle;
   height: 3rem;
+  max-height: 3rem;
 }
 .fp-nav a,
 nav a {
