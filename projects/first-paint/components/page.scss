@@ -21,6 +21,12 @@ sans-serif,
 "Segoe UI Symbol",
 "Noto Color Emoji" !default;
 
+html {
+  &:focus-within {
+    scroll-behavior: smooth;
+  }
+}
+
 
 body {
   background-color: $background-color;
