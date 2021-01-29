@@ -1,6 +1,8 @@
 # Creating/Customizing an HTML5 page with FisrtPaint
 
-- Copy and add the stylesheet below into the `<head></head>` of you HTML page
+ Copy and add the stylesheet below into the `<head></head>` of you HTML page
+
+
 
 ```html
 <link
@@ -9,9 +11,26 @@
 />
 ```
 
+**Minified version**
+
+```html
+<link
+  rel="stylesheet"
+  src="https://cdn.jsdelivr.net/npm/@shawnsandy/first-paint@0.2.1/dist/css/index.css"
+/>
+```
+
 Add Normalize CSS (CDN) copy and insert the snippet below into between the `<head></head>` of your page
 
 > Normalize.css makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing.
+
+```html
+
+ <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+  />
+```
 
 ### HTML5 Page
 

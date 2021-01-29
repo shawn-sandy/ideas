@@ -156,7 +156,7 @@ main > section [role=complementary] + article, .fp-main > section article + asid
   }
 }
 
-footer, .fp-footerfooter {
+footer, .fp-footer {
   min-height: 200px;
   display: flex;
   align-items: center;
