@@ -120,34 +120,37 @@ header > [role=banner], .fp-header > section,
   text-align: center;
 }
 
-className {
+main, .fp-main {
   min-height: 30rem;
 }
-className > section article {
+main > section article, .fp-main > section article {
   padding: 1rem;
   width: 100%;
   font-size: 1rem;
 }
-className > section article > * + * {
+main > section article > * + *, .fp-main > section article > * + * {
   margin-top: 2rem;
 }
-className > section article + aside {
-  width: 100%;
+main > section article + aside, .fp-main > section article + aside {
+  min-width: 25%;
   padding: 1rem;
   font-size: 0.95rem;
 }
 @media all and (min-width: 1280px) {
-  className > section {
+  main > section, .fp-main > section {
     display: flex;
     align-items: flex-start;
   }
-  className > section article {
+  main > section article, .fp-main > section article {
     max-width: 75%;
   }
-  className > section article + aside,
-className > section aside + article,
-className > section article + [role=complementary],
-className > section [role=complementary] + article {
+  main > section article + aside,
+main > section aside + article,
+main > section article + [role=complementary],
+main > section [role=complementary] + article, .fp-main > section article + aside,
+.fp-main > section aside + article,
+.fp-main > section article + [role=complementary],
+.fp-main > section [role=complementary] + article {
     min-width: 25%;
     max-width: 25%;
   }
