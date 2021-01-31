@@ -40,7 +40,6 @@ $cursor: pointer !default;
   display: inline-flex;
   flex-direction: row;
   background-color: $background-color;
-  border-radius: $border-radius;
   border: none;
   cursor: $cursor;
   margin-bottom: $margin;
@@ -60,26 +59,29 @@ $cursor: pointer !default;
 
   &[role=button] {
 
+
     >span,
+    >b,
+    i,
     .fp-btn-span {
       padding: $padding-y $padding-x;
       border: $border-default;
+      font-weight: normal;
+      border: $border-radius;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: gray;
+        border: $border-default;
+      }
     }
 
     >b {
       @extend .fp-btn-span;
       background-color: black;
       color: invert($color: #000000);
-      font-weight: normal;
-      border: $border-default;
 
-
-      &:hover,
-      &:active,
-      &:focus {
-        background-color: black;
-        border: $border-transparent;
-      }
 
     }
 
