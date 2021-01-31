@@ -250,18 +250,45 @@ button, a[role=button], .fp-button {
   display: inline-flex;
   flex-direction: row;
   background-color: transparent;
-  padding: 0.7rem 1.5rem;
   border-radius: 0.2rem;
-  border: 1px solid #e4e4e4;
+  border: none;
   cursor: pointer;
   margin-bottom: 0.7rem;
+  font-weight: normal;
 }
 button:hover, button:active, button:focus, a[role=button]:hover, a[role=button]:active, a[role=button]:focus, .fp-button:hover, .fp-button:active, .fp-button:focus {
-  background-color: #e4e4e4;
-  border: 1px solid #e4e4e4;
+  background-color: transparent;
+  border: none;
 }
 button[type], a[role=button][type], .fp-button[type] {
   border: 1px solid #e4e4e4;
+  border: 1px transparent solid;
+}
+button[role=button] > span,
+button[role=button] .fp-btn-span,
+button[role=button] > b,
+button[role=button] a[role=button][role=button] > b,
+button[role=button] .fp-button[role=button] > b, a[role=button][role=button] > span,
+a[role=button][role=button] .fp-btn-span,
+a[role=button][role=button] button[role=button] > b,
+a[role=button][role=button] > b,
+a[role=button][role=button] .fp-button[role=button] > b, .fp-button[role=button] > span,
+.fp-button[role=button] .fp-btn-span,
+.fp-button[role=button] button[role=button] > b,
+.fp-button[role=button] a[role=button][role=button] > b,
+.fp-button[role=button] > b {
+  padding: 0.7rem 1.5rem;
+  border: 1px solid #e4e4e4;
+}
+button[role=button] > b, a[role=button][role=button] > b, .fp-button[role=button] > b {
+  background-color: black;
+  color: white;
+  font-weight: normal;
+  border: 1px solid #e4e4e4;
+}
+button[role=button] > b:hover, button[role=button] > b:active, button[role=button] > b:focus, a[role=button][role=button] > b:hover, a[role=button][role=button] > b:active, a[role=button][role=button] > b:focus, .fp-button[role=button] > b:hover, .fp-button[role=button] > b:active, .fp-button[role=button] > b:focus {
+  background-color: black;
+  border: 1px transparent solid;
 }
 
 span > * + * {

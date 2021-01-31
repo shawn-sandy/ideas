@@ -39,25 +39,50 @@ $cursor: pointer !default;
   @include styles.flex-box();
   display: inline-flex;
   flex-direction: row;
-  height: $height;
-  width: $width;
   background-color: $background-color;
-  padding: $padding-y $padding-x;
   border-radius: $border-radius;
-  border: $border-default;
+  border: none;
   cursor: $cursor;
   margin-bottom: $margin;
+  font-weight: normal;
 
   &:hover,
   &:active,
   &:focus {
-    background-color: $background-color-hover;
-    border: $border-default;
+    background-color: transparent;
+    border: none;
   }
 
   &[type] {
     border: $border-default;
-    // border: $border-default;
+    border: $border-transparent;
+  }
+
+  &[role=button] {
+
+    >span,
+    .fp-btn-span {
+      padding: $padding-y $padding-x;
+      border: $border-default;
+    }
+
+    >b {
+      @extend .fp-btn-span;
+      background-color: black;
+      color: invert($color: #000000);
+      font-weight: normal;
+      border: $border-default;
+
+
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: black;
+        border: $border-transparent;
+      }
+
+    }
+
   }
 
 }
