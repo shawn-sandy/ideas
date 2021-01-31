@@ -4,6 +4,8 @@
 
 @use './components/page.scss';
 
+@use './components/typography.scss';
+
 @use './elements/elements.scss';
 
 @use './components/nav.scss';
@@ -24,4 +26,4 @@
 
 @use './components/list.scss';
 
-@use './components/typography.scss';
+@use './components/horizontal-rule.scss';

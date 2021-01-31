@@ -52,7 +52,7 @@
     "@shawnsandy/ideas": "^0.1.19",
     "@shawnsandy/mix": "^0.10.11",
     "auto-changelog": "^2.2.1",
-    "eslint": "^7.18.0",
+    "eslint": "^7.19.0",
     "eslint-config-standard": "^16.0.2",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
