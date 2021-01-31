@@ -20,9 +20,10 @@
 @use './components/nav.scss';
 @use './components/header.scss';
 @use './components/main-layout.scss';
+@use './components/footer.scss';
 @use './components/grid.scss';
 @use './components/button.scss';
-@use './components/input.scss';
+@use './components/form.scss';
 @use './components/img.scss';
 @use './components/list.scss';
 @use './components/typography.scss';
