@@ -365,6 +365,12 @@ span ul {
   padding-left: 0rem;
 }
 
+hr, .fp-hr {
+  border: none;
+  background-color: transparent;
+  border-top: 1px solid #8c8b8b;
+}
+
 html,
 body {
   font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
