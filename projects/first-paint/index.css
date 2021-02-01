@@ -88,18 +88,6 @@ p,
   color: blue;
 }
 
-p {
-  line-height: 1.6;
-}
-p + P {
-  margin-top: 1rem;
-}
-
-a {
-  color: #020202;
-  text-decoration: none;
-}
-
 .fp-nav,
 nav {
   display: flex;

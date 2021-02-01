@@ -72,43 +72,47 @@ $cursor: pointer !default;
 
 }
 
-@mixin button-links() {
+@mixin links() {
 
+  a {
 
+    &[role=button] {
+      text-decoration: none;
 
-  &[role=button] {
+      >span,
+      >strong,
+      >em {
 
-    >span,
-    >strong,
-    >em {
-
-      padding: $padding-y $padding-x;
-      border: $border-default;
-      font-weight: normal;
-      border: $border-default;
-    }
-
-    >strong {
-      background-color: black;
-      color: invert($color: #000000);
-    }
-
-    >em {
-      border-radius: $border-radius-rounded;
-
-      &:hover,
-      &:active,
-      &:focus {
-
-        >em {
-          border-radius: $border-radius-rounded;
-        }
+        padding: $padding-y $padding-x;
+        border: $border-default;
+        font-weight: normal;
+        border: $border-default;
       }
 
+      >strong {
+        background-color: black;
+        color: invert($color: #000000);
+      }
+
+      >em {
+        border-radius: $border-radius-rounded;
+
+        &:hover,
+        &:active,
+        &:focus {
+
+          >em {
+            border-radius: $border-radius-rounded;
+
+          }
+        }
+
+      }
+
+
     }
-
-
   }
+
 
 }
 
