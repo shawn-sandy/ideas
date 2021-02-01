@@ -50,37 +50,48 @@ $cursor: pointer !default;
   &:active,
   &:focus {
     background-color: transparent;
-    border: none;
+    border: $border-transparent;
   }
 
-  &[type] {
+  &[type],
+  &[type=button],
+  &[type=submit] {
     border: $border-default;
     border: $border-transparent;
   }
 
+  &[type=button] {}
+
+  &[type=submit] {}
+
   &[role=button] {
 
     >span,
-    .fp-btn-span {
+    >strong,
+    >em {
       padding: $padding-y $padding-x;
+      border: $border-default;
+      font-weight: normal;
       border: $border-default;
     }
 
-    >b {
+    >strong,
+    .fp-btn-span {
       @extend .fp-btn-span;
       background-color: black;
       color: invert($color: #000000);
-      font-weight: normal;
-      border: $border-default;
-
 
       &:hover,
       &:active,
       &:focus {
         background-color: black;
-        border: $border-transparent;
+        border: $border-default;
       }
 
+    }
+
+    >em {
+      border-radius: 99%;
     }
 
   }
