@@ -11,7 +11,8 @@ $padding-y: .7rem !default;
 $border-transparent: 1px transparent solid !default;
 $border-default: 1px solid $background-color-hover !default;
 $border-hover: 1px solid $background-color-hover !default;
-$border-radius: .2rem !default;
+$border-radius: .1rem !default;
+$border-radius-rounded: 99px;
 $display: inline-flex !default;
 $align-items: center !default;
 $justify-content: center !default;
@@ -40,7 +41,8 @@ $cursor: pointer !default;
   display: inline-flex;
   flex-direction: row;
   background-color: $background-color;
-  border: none;
+  border-radius: $border-radius;
+  border: $border-transparent;
   cursor: $cursor;
   margin-bottom: $margin;
   font-weight: normal;
@@ -52,38 +54,59 @@ $cursor: pointer !default;
     border: none;
   }
 
-  &[type] {
+  &[type],
+  &[type=reset],
+  &[type=button],
+  &[type=submit] {
+    padding: $padding;
     border: $border-default;
-    border: $border-transparent;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: transparent;
+      border: $border-transparent;
+    }
   }
+
+
+}
+
+@mixin button-links() {
+
+
 
   &[role=button] {
 
-
     >span,
-    >b,
-    i,
-    .fp-btn-span {
+    >strong,
+    >em {
+
       padding: $padding-y $padding-x;
       border: $border-default;
       font-weight: normal;
-      border: $border-radius;
+      border: $border-default;
+    }
+
+    >strong {
+      background-color: black;
+      color: invert($color: #000000);
+    }
+
+    >em {
+      border-radius: $border-radius-rounded;
 
       &:hover,
       &:active,
       &:focus {
-        background-color: gray;
-        border: $border-default;
+
+        >em {
+          border-radius: $border-radius-rounded;
+        }
       }
-    }
-
-    >b {
-      @extend .fp-btn-span;
-      background-color: black;
-      color: invert($color: #000000);
-
 
     }
+
 
   }
 
