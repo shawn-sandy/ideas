@@ -69,9 +69,12 @@ $cursor: pointer !default;
     }
   }
 
-  &[type=button] {}
 
-  &[type=submit] {}
+}
+
+@mixin button-links() {
+
+
 
   &[role=button] {
 

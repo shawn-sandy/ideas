@@ -268,28 +268,6 @@ button[type]:hover, button[type]:active, button[type]:focus, button[type=reset]:
   background-color: transparent;
   border: 1px transparent solid;
 }
-button[role=button] > span,
-button[role=button] > strong,
-button[role=button] > em, a[role=button][role=button] > span,
-a[role=button][role=button] > strong,
-a[role=button][role=button] > em, .fp-button[role=button] > span,
-.fp-button[role=button] > strong,
-.fp-button[role=button] > em {
-  padding: 0.7rem 1.5rem;
-  border: 1px solid #e4e4e4;
-  font-weight: normal;
-  border: 1px solid #e4e4e4;
-}
-button[role=button] > strong, a[role=button][role=button] > strong, .fp-button[role=button] > strong {
-  background-color: black;
-  color: white;
-}
-button[role=button] > em, a[role=button][role=button] > em, .fp-button[role=button] > em {
-  border-radius: 99px;
-}
-button[role=button] > em:hover > em, button[role=button] > em:active > em, button[role=button] > em:focus > em, a[role=button][role=button] > em:hover > em, a[role=button][role=button] > em:active > em, a[role=button][role=button] > em:focus > em, .fp-button[role=button] > em:hover > em, .fp-button[role=button] > em:active > em, .fp-button[role=button] > em:focus > em {
-  border-radius: 99px;
-}
 
 span > * + * {
   margin-left: 0.3rem;
