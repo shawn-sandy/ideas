@@ -26,9 +26,9 @@ $cursor: pointer !default;
 
 @mixin renderComponent($renderComponent: $render, $className: null) {
 
-  @if renderComponent {
+  @if $renderComponent {
 
-    #{if($className, $className, 'button, a[role=button], .fp-button')} {
+    #{if($className, $className, 'button[type], a[role=button], .fp-button')} {
       @include button();
     }
 
@@ -74,10 +74,14 @@ $cursor: pointer !default;
 
 @mixin links() {
 
+
   a {
+    // @extend .fp-button;
 
     &[role=button] {
       text-decoration: none;
+      border: none;
+      background-color: $background-color;
 
       >span,
       >strong,
@@ -86,7 +90,6 @@ $cursor: pointer !default;
         padding: $padding-y $padding-x;
         border: $border-default;
         font-weight: normal;
-        border: $border-default;
       }
 
       >strong {
