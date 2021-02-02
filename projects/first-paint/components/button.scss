@@ -2,12 +2,11 @@ $render: true !default;
 $color: null !default;
 $background-color: transparent !default;
 $background-color-hover: rgb(228, 228, 228) !default;
-$height: null !default;
-$width: null !default;
 $margin: .7rem !default;
 $padding: 1rem !default;
 $padding-x: 1.5rem !default;
-$padding-y: .7rem !default;
+$padding-y: .6rem !default;
+$button-padding: $padding-y $padding-x;
 $border-transparent: 1px transparent solid !default;
 $border-default: 1px solid $background-color-hover !default;
 $border-hover: 1px solid $background-color-hover !default;
@@ -40,6 +39,7 @@ $cursor: pointer !default;
   @include styles.flex-box();
   display: inline-flex;
   flex-direction: row;
+  justify-content: center;
   background-color: $background-color;
   border-radius: $border-radius;
   border: $border-transparent;
@@ -58,14 +58,14 @@ $cursor: pointer !default;
   &[type=reset],
   &[type=button],
   &[type=submit] {
-    padding: $padding;
+    padding: $button-padding;
     border: $border-default;
 
     &:hover,
     &:active,
     &:focus {
       background-color: transparent;
-      border: $border-transparent;
+      border: $border-default;
     }
   }
 
