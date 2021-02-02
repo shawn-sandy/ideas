@@ -2,8 +2,8 @@
 
 $render: true !default;
 
-@mixin renderComponent($renderContent: true, $className: null) {
-  @if($renderContent) {
+@mixin renderComponent($renderComponent: true, $className: null) {
+  @if($renderComponent) {
     #{$className, $className, 'picture, .fp-picture'} {
       @include img();
     }

@@ -69,14 +69,12 @@ $cursor: pointer !default;
     }
   }
 
-
 }
 
 @mixin links() {
 
-
-  a {
-    // @extend .fp-button;
+  a,
+  .fp-button-link {
 
     &[role=button] {
       text-decoration: none;
@@ -112,10 +110,8 @@ $cursor: pointer !default;
 
       }
 
-
     }
   }
-
 
 }
 
