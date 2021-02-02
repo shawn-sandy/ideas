@@ -1,8 +1,15 @@
 a[role=button],
 .fp-button-link[role=button] {
   text-decoration: none;
-  border: none;
   background-color: transparent;
+  border: none;
+  border-radius: 0.1rem;
+}
+a[role=button]:hover, a[role=button]:active, a[role=button]:focus,
+.fp-button-link[role=button]:hover,
+.fp-button-link[role=button]:active,
+.fp-button-link[role=button]:focus {
+  border: none;
 }
 a[role=button] > span,
 a[role=button] > strong,
@@ -10,6 +17,7 @@ a[role=button] > em,
 .fp-button-link[role=button] > span,
 .fp-button-link[role=button] > strong,
 .fp-button-link[role=button] > em {
+  border: 1px transparent solid;
   padding: 0.7rem 1.5rem;
   border: 1px solid #e4e4e4;
   font-weight: normal;
@@ -21,11 +29,5 @@ a[role=button] > strong,
 }
 a[role=button] > em,
 .fp-button-link[role=button] > em {
-  border-radius: 99px;
-}
-a[role=button] > em:hover > em, a[role=button] > em:active > em, a[role=button] > em:focus > em,
-.fp-button-link[role=button] > em:hover > em,
-.fp-button-link[role=button] > em:active > em,
-.fp-button-link[role=button] > em:focus > em {
   border-radius: 99px;
 }

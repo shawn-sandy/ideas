@@ -246,7 +246,7 @@ button[type], a[role=button], .fp-button {
 }
 button[type]:hover, button[type]:active, button[type]:focus, a[role=button]:hover, a[role=button]:active, a[role=button]:focus, .fp-button:hover, .fp-button:active, .fp-button:focus {
   background-color: transparent;
-  border: none;
+  border: 1px transparent solid;
 }
 button[type][type], button[type][type=reset], button[type][type=button], button[type][type=submit], a[role=button][type], a[role=button][type=reset], a[role=button][type=button], a[role=button][type=submit], .fp-button[type], .fp-button[type=reset], .fp-button[type=button], .fp-button[type=submit] {
   padding: 1rem;

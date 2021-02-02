@@ -51,7 +51,7 @@ $cursor: pointer !default;
   &:active,
   &:focus {
     background-color: transparent;
-    border: none;
+    border: $border-transparent;
   }
 
   &[type],
@@ -78,13 +78,20 @@ $cursor: pointer !default;
 
     &[role=button] {
       text-decoration: none;
-      border: none;
       background-color: $background-color;
+      border: none;
+      border-radius: $border-radius;
+
+      &:hover,
+      &:active,
+      &:focus {
+        border: none;
+      }
 
       >span,
       >strong,
       >em {
-
+        border: $border-transparent;
         padding: $padding-y $padding-x;
         border: $border-default;
         font-weight: normal;
@@ -97,17 +104,6 @@ $cursor: pointer !default;
 
       >em {
         border-radius: $border-radius-rounded;
-
-        &:hover,
-        &:active,
-        &:focus {
-
-          >em {
-            border-radius: $border-radius-rounded;
-
-          }
-        }
-
       }
 
     }
