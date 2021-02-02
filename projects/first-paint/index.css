@@ -156,7 +156,7 @@ header, .fp-header {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  height: 37.5rem;
+  height: 28.125rem;
 }
 header > section,
 header > [role=banner], .fp-header > section,
