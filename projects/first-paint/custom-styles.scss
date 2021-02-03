@@ -1,0 +1,5 @@
+@use './components/button.scss'as btn with($render: false);
+
+// include the buttons
+
+@include btn.links();

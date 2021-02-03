@@ -67,7 +67,13 @@ $brand-name: 'brand name' !default;
         padding: 0 1rem;
         font-size: .8rem;
 
+
       }
+
+      button[type] {
+        margin-bottom: 0;
+      }
+
     }
   }
 }
