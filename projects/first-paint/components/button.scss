@@ -99,12 +99,18 @@ $cursor: pointer !default;
       }
 
       >strong {
-        background-color: black;
-        color: invert($color: #000000);
+        background-color: $background-color-hover;
+        // color: invert($color: #000000);
       }
 
       >em {
+        background-color: $background-color-hover;
         border-radius: $border-radius-rounded;
+
+        &:hover {
+          background-color: darken($background-color-hover, 10);
+
+        }
       }
 
     }
