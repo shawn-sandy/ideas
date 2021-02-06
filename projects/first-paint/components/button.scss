@@ -96,6 +96,11 @@ $cursor: pointer !default;
         border: $border-default;
         font-weight: normal;
         font-style: normal;
+
+        &:hover {
+          background-color: darken($background-color-hover, 10);
+
+        }
       }
 
       >strong {
@@ -107,10 +112,6 @@ $cursor: pointer !default;
         background-color: $background-color-hover;
         border-radius: $border-radius-rounded;
 
-        &:hover {
-          background-color: darken($background-color-hover, 10);
-
-        }
       }
 
     }

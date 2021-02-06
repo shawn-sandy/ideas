@@ -23,6 +23,14 @@ a[role=button] > em,
   font-weight: normal;
   font-style: normal;
 }
+a[role=button] > span:hover,
+a[role=button] > strong:hover,
+a[role=button] > em:hover,
+.fp-button-link[role=button] > span:hover,
+.fp-button-link[role=button] > strong:hover,
+.fp-button-link[role=button] > em:hover {
+  background-color: #cbcbcb;
+}
 a[role=button] > strong,
 .fp-button-link[role=button] > strong {
   background-color: #e4e4e4;
@@ -31,8 +39,4 @@ a[role=button] > em,
 .fp-button-link[role=button] > em {
   background-color: #e4e4e4;
   border-radius: 99px;
-}
-a[role=button] > em:hover,
-.fp-button-link[role=button] > em:hover {
-  background-color: #cbcbcb;
 }
