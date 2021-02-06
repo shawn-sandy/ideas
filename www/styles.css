@@ -16,7 +16,7 @@
 
 @use './components/styles';
 @use './components/page.scss';
-@use './elements/elements.scss';
+@use './components/typography.scss';
 @use './components/nav.scss';
 @use './components/header.scss';
 @use './components/main-layout.scss';
@@ -26,7 +26,7 @@
 @use './components/form.scss';
 @use './components/img.scss';
 @use './components/list.scss';
-@use './components/typography.scss';
+@use './components/horizontal-rule.scss';
 
 
 /*# sourceMappingURL=/styles.css.map */
