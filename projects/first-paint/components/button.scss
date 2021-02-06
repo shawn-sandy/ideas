@@ -50,7 +50,6 @@ $cursor: pointer !default;
   &:hover,
   &:active,
   &:focus {
-    background-color: transparent;
     border: $border-transparent;
   }
 
@@ -65,6 +64,8 @@ $cursor: pointer !default;
     &:active,
     &:focus {
       background-color: transparent;
+      background-color: darken($background-color-hover, 10);
+
       border: $border-default;
     }
   }
@@ -86,6 +87,7 @@ $cursor: pointer !default;
       &:active,
       &:focus {
         border: none;
+
       }
 
       >span,
@@ -96,21 +98,23 @@ $cursor: pointer !default;
         border: $border-default;
         font-weight: normal;
         font-style: normal;
-
-        &:hover {
-          background-color: darken($background-color-hover, 10);
-
-        }
       }
 
       >strong {
         background-color: $background-color-hover;
-        // color: invert($color: #000000);
       }
 
       >em {
         background-color: $background-color-hover;
         border-radius: $border-radius-rounded;
+
+        &:active,
+        &:hover,
+        &:focus {
+          border-radius: $border-radius-rounded !important;
+          background-color: darken($background-color-hover, 10);
+
+        }
 
       }
 

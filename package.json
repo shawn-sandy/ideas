@@ -47,10 +47,10 @@
     "@11ty/eleventy-navigation": "^0.1.6",
     "@11ty/eleventy-plugin-rss": "^1.1.0",
     "@fortawesome/fontawesome-free": "^5.15.2",
-    "@shawnsandy/bootstrap-lite": "^0.1.7",
-    "@shawnsandy/first-paint": "^0.2.3",
-    "@shawnsandy/ideas": "^0.1.19",
-    "@shawnsandy/mix": "^0.10.11",
+    "@shawnsandy/bootstrap-lite": "^0.1.12",
+    "@shawnsandy/first-paint": "^0.2.5",
+    "@shawnsandy/ideas": "^0.1.22",
+    "@shawnsandy/mix": "^0.10.12",
     "auto-changelog": "^2.2.1",
     "eslint": "^7.19.0",
     "eslint-config-standard": "^16.0.2",
@@ -80,7 +80,7 @@
     "npm-run-all": "^4.1.5",
     "parcel": "^1.12.4",
     "require-dir": "^1.2.0",
-    "sass": "^1.32.5",
+    "sass": "^1.32.6",
     "style-dictionary": "^2.10.2",
     "trash-cli": "^4.0.0"
   }
