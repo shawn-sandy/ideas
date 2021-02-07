@@ -59,7 +59,7 @@ h1,
 
 h2,
 .fp-h1 {
-  font-size: 3rem;
+  font-size: 3.6rem;
 }
 
 h3,
@@ -159,7 +159,7 @@ header, .fp-header {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  height: 28.125rem;
+  min-height: 15.625rem;
 }
 header > section,
 header > [role=banner], .fp-header > section,
@@ -397,8 +397,7 @@ picture > img[alt]::after, .fp-picture > img[alt]::after {
 ol,
 ul,
 dl {
-  margin-left: 0rem;
-  padding-left: 0rem;
+  padding-left: 1rem;
 }
 ol > * + *,
 ul > * + *,

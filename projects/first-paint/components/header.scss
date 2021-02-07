@@ -1,5 +1,5 @@
 $render: true;
-$height: 450rem / 16;
+$height: 250rem / 16;
 $display: flex;
 $align-items: center;
 $flex-direction: column;
@@ -22,7 +22,7 @@ $justify-content: center;
 
 @mixin header {
   @include styles.flex-box();
-  height: $height;
+  min-height: $height;
 
   >section,
   >[role=banner] {

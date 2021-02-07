@@ -22,8 +22,8 @@ $render: true !default;
   ol,
   ul,
   dl {
-    margin-left: 0rem;
-    padding-left: 0rem;
+    // margin-left: 0rem;
+    padding-left: 1rem;
 
     >*+* {
       margin-top: 0.5rem;
