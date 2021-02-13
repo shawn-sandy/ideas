@@ -21,7 +21,8 @@
     "lodash:array": "lodash include=chunk,size -o system/js/lodash/array.js -m",
     "lodash:function": "lodash include=debounce,throttle -o system/js/lodash/function.js -m",
     "clean": "trash www/**/*.*",
-    "audit": "lighthouse https://shawnsandy.com/ --output=json --output-path=./audits/report.json --config-path=.lighthouseconfig.js"
+    "audit": "lighthouse https://shawnsandy.com/ --output=json --output-path=./audits/report.json --config-path=.lighthouseconfig.js",
+    "first-paint": "lerna exec npm start --scope=@shawnsandy/first-paint"
   },
   "directories": {
     "lib": "dist",
