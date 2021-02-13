@@ -1,4 +1,4 @@
-# Creating/Customizing an HTML5 page with FisrtPaint
+# Creating/Customizing an HTML5 page with FirstPaint
 
  Copy and add the stylesheet below into the `<head></head>` of you HTML page
 
