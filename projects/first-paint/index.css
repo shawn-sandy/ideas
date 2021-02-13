@@ -421,6 +421,6 @@ hr, .fp-hr {
   display: block;
   border: none;
   background-color: transparent;
-  border-top: 1px solid #8c8b8b;
+  border-top: 1px solid lightgray;
   margin: 2rem 0;
 }
