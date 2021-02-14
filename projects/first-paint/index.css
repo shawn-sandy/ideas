@@ -49,7 +49,7 @@ h5 {
   color: inherit;
   margin: 0rem 0 1.05rem;
   font-weight: 500;
-  word-break: break-all;
+  word-break: normal;
 }
 
 h1,
@@ -89,11 +89,19 @@ p,
 
 .fp-nav,
 nav {
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: space-between;
   min-height: 3.5rem;
   padding: 0.5rem 0.5rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 980px) {
+  .fp-nav,
+nav {
+    display: flex;
+    margin-bottom: 0;
+  }
 }
 .fp-nav section,
 .fp-nav div,
@@ -101,9 +109,42 @@ nav {
 nav section,
 nav div,
 nav ul {
-  display: flex;
-  align-items: center;
+  display: block;
   height: 100%;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.fp-nav section li,
+.fp-nav section a,
+.fp-nav section span,
+.fp-nav div li,
+.fp-nav div a,
+.fp-nav div span,
+.fp-nav ul li,
+.fp-nav ul a,
+.fp-nav ul span,
+nav section li,
+nav section a,
+nav section span,
+nav div li,
+nav div a,
+nav div span,
+nav ul li,
+nav ul a,
+nav ul span {
+  margin-bottom: 0.5rem;
+}
+@media all and (min-width: 960px) {
+  .fp-nav section,
+.fp-nav div,
+.fp-nav ul,
+nav section,
+nav div,
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 .fp-nav section li,
 .fp-nav div li,
@@ -127,10 +168,20 @@ nav ul li + li {
 .fp-nav [aria-label="brand name"],
 nav h1,
 nav [aria-label="brand name"] {
-  display: flex;
-  align-items: center;
+  display: block;
+  text-align: center;
   height: 100%;
   margin: 0;
+  line-height: normal;
+}
+@media (min-width: 980px) {
+  .fp-nav h1,
+.fp-nav [aria-label="brand name"],
+nav h1,
+nav [aria-label="brand name"] {
+    display: flex;
+    align-items: center;
+  }
 }
 .fp-nav h1 a,
 .fp-nav [aria-label="brand name"] a,
@@ -143,6 +194,7 @@ nav img {
   vertical-align: middle;
   height: 3rem;
   max-height: 3rem;
+  margin-right: 1rem;
 }
 .fp-nav a,
 nav a {
