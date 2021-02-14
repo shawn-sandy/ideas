@@ -8,6 +8,8 @@ First Paint is an easy to use CSS/SCSS starter library that contains accessibili
 
 ### Quick Start
 
+- Install `npm i -D @shawn-sandy/first-paint@beta`
+
 **Simple & Easy copy paste option**
 
 - Create an empty html page
