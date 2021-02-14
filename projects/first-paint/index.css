@@ -173,6 +173,7 @@ nav [aria-label="brand name"] {
   height: 100%;
   margin: 0;
   line-height: normal;
+  font-size: 1.5rem;
 }
 @media (min-width: 980px) {
   .fp-nav h1,
@@ -191,6 +192,7 @@ nav [aria-label="brand name"] a {
 }
 .fp-nav img,
 nav img {
+  display: inline-block;
   vertical-align: middle;
   height: 3rem;
   max-height: 3rem;

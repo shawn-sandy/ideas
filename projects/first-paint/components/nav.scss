@@ -73,6 +73,7 @@ $brand-name: 'brand name' !default;
         height: 100%;
         margin: 0;
         line-height: normal;
+        font-size: $title-font-size;
 
         @media (min-width: 980px) {
           display: flex;
@@ -86,6 +87,7 @@ $brand-name: 'brand name' !default;
       }
 
       img {
+        display: inline-block;
         vertical-align: middle;
         height: $brand-img-height;
         max-height: $brand-img-height;
