@@ -21,18 +21,39 @@ $brand-name: 'brand name' !default;
 
     #{if($className, $className, '.fp-nav')},
     nav {
-      display: flex;
+      display: block;
       align-items: $align-items;
       justify-content: $justify-content;
       min-height: $min-height;
       padding: $padding-x $padding-y;
+      margin-bottom: 1rem;
+
+      @media (min-width: 980px) {
+        display: flex;
+        margin-bottom: 0;
+      }
 
       section,
       div,
       ul {
-        display: flex;
-        align-items: center;
+
+        display: block;
         height: 100%;
+        text-align: center;
+
+        li,
+        a,
+        span {
+          margin-bottom: .5rem;
+        }
+
+        margin-bottom: .5rem;
+
+        @media all and (min-width: 960px) {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
 
         li {
           height: inherit;
@@ -47,28 +68,33 @@ $brand-name: 'brand name' !default;
 
       h1,
       [aria-label="#{$brand-name}"] {
-        display: flex;
-        align-items: center;
+        display: block;
+        text-align: center;
         height: 100%;
         margin: 0;
+        line-height: normal;
+
+        @media (min-width: 980px) {
+          display: flex;
+          align-items: center;
+        }
 
         a {
           font-size: $title-font-size;
         }
+
       }
 
       img {
         vertical-align: middle;
         height: $brand-img-height;
         max-height: $brand-img-height;
+        margin-right: 1rem;
       }
 
       a {
-
         padding: 0 1rem;
         font-size: .8rem;
-
-
       }
 
       button[type] {
