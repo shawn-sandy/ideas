@@ -166,6 +166,7 @@ Copy and paste these snippets to build custom templates using fist-paint-CSS
       </p>
     </footer>
   </article>
+</section>
   <aside>
     <h4>Sidebar</h4>
     <p>
@@ -173,7 +174,6 @@ Copy and paste these snippets to build custom templates using fist-paint-CSS
       doloremque, modi numquam commodi illum cumque. Sit eveniet, quod expedita libero obcaecati a laudantium.
     </p>
   </aside>
-</section>
 
 ```
 
