@@ -221,37 +221,52 @@ header > [role=banner], .fp-header > section,
   text-align: center;
 }
 
-main, .fp-main {
+.fp-main,
+main {
   min-height: 30rem;
 }
-main > section article, .fp-main > section article {
+.fp-main > article,
+.fp-main > section,
+main > article,
+main > section {
   padding: 1rem;
   width: 100%;
   font-size: 1rem;
 }
-main > section article > * + *, .fp-main > section article > * + * {
+.fp-main > article > * + *,
+.fp-main > section > * + *,
+main > article > * + *,
+main > section > * + * {
   margin-top: 2rem;
 }
-main > section article + aside, .fp-main > section article + aside {
+.fp-main article + aside,
+.fp-main section + aside,
+main article + aside,
+main section + aside {
   min-width: 25%;
   padding: 1rem;
   font-size: 0.95rem;
 }
 @media all and (min-width: 1280px) {
-  main > section, .fp-main > section {
+  .fp-main,
+main {
     display: flex;
     align-items: flex-start;
   }
-  main > section article, .fp-main > section article {
+  .fp-main > article,
+.fp-main > section,
+main > article,
+main > section {
     max-width: 75%;
   }
-  main > section article + aside,
-main > section aside + article,
-main > section article + [role=complementary],
-main > section [role=complementary] + article, .fp-main > section article + aside,
-.fp-main > section aside + article,
-.fp-main > section article + [role=complementary],
-.fp-main > section [role=complementary] + article {
+  .fp-main section + aside,
+.fp-main aside + section,
+.fp-main section + [role=complementary],
+.fp-main [role=complementary] + section,
+main section + aside,
+main aside + section,
+main section + [role=complementary],
+main [role=complementary] + section {
     min-width: 25%;
     max-width: 25%;
   }
