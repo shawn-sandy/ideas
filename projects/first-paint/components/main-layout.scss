@@ -21,7 +21,7 @@ $min-height: 30rem !default;
 
 
   // width: 100%;
-  >article,
+
   >section {
     padding: 1rem;
     width: 100%;
@@ -43,7 +43,7 @@ $min-height: 30rem !default;
   @media all and (min-width: 1280px) {
     display: flex;
 
-    >article,
+
     >section {
       max-width: 75%;
     }

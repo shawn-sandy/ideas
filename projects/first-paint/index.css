@@ -225,17 +225,13 @@ header > [role=banner], .fp-header > section,
 main {
   min-height: 30rem;
 }
-.fp-main > article,
 .fp-main > section,
-main > article,
 main > section {
   padding: 1rem;
   width: 100%;
   font-size: 1rem;
 }
-.fp-main > article > * + *,
 .fp-main > section > * + *,
-main > article > * + *,
 main > section > * + * {
   margin-top: 2rem;
 }
@@ -253,9 +249,7 @@ main {
     display: flex;
     align-items: flex-start;
   }
-  .fp-main > article,
-.fp-main > section,
-main > article,
+  .fp-main > section,
 main > section {
     max-width: 75%;
   }
