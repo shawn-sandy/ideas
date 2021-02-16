@@ -1,9 +1,15 @@
 @charset "UTF-8";
 html {
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 html * {
   outline: none;
+}
+html *,
+html *:before,
+html *:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -213,6 +219,7 @@ nav [aria-label="brand name"] {
 nav h1 a,
 nav [aria-label="brand name"] a {
   font-size: 1.5rem;
+  padding: 0;
 }
 .fp-nav img,
 nav img {

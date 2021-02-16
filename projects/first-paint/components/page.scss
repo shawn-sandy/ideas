@@ -24,9 +24,16 @@ sans-serif,
 html {
 
   scroll-behavior: smooth;
+  box-sizing: border-box;
 
   * {
     outline: none;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
   }
 
 }
