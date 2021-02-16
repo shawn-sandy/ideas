@@ -135,7 +135,7 @@ nav div span,
 nav ul li,
 nav ul a,
 nav ul span {
-  margin-bottom: 0.5rem;
+  margin-top: 1rem;
 }
 @media all and (min-width: 960px) {
   .fp-nav section,
@@ -147,6 +147,26 @@ nav ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+  .fp-nav section li,
+.fp-nav section a,
+.fp-nav section span,
+.fp-nav div li,
+.fp-nav div a,
+.fp-nav div span,
+.fp-nav ul li,
+.fp-nav ul a,
+.fp-nav ul span,
+nav section li,
+nav section a,
+nav section span,
+nav div li,
+nav div a,
+nav div span,
+nav ul li,
+nav ul a,
+nav ul span {
+    margin-top: 0;
   }
 }
 .fp-nav section li,

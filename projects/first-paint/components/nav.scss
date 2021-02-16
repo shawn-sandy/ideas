@@ -44,7 +44,7 @@ $brand-name: 'brand name' !default;
         li,
         a,
         span {
-          margin-bottom: .5rem;
+          margin-top: 1rem;
         }
 
         margin-bottom: .5rem;
@@ -53,6 +53,12 @@ $brand-name: 'brand name' !default;
           display: flex;
           align-items: center;
           justify-content: space-between;
+
+          li,
+          a,
+          span {
+            margin-top: 0;
+          }
         }
 
         li {
