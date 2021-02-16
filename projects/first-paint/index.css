@@ -34,6 +34,9 @@ body > footer > section {
     max-width: 1920px;
   }
 }
+body > footer {
+  min-height: 200px;
+}
 
 html,
 body {
@@ -204,7 +207,9 @@ nav a {
   font-size: 0.8rem;
 }
 .fp-nav button[type],
-nav button[type] {
+.fp-nav a[role=button],
+nav button[type],
+nav a[role=button] {
   margin-bottom: 0;
 }
 
@@ -227,12 +232,15 @@ main {
 }
 .fp-main > section,
 main > section {
-  padding: 1rem;
   width: 100%;
   font-size: 1rem;
 }
 .fp-main > section > * + *,
 main > section > * + * {
+  margin-top: 2rem;
+}
+.fp-main article + article,
+main article + article {
   margin-top: 2rem;
 }
 .fp-main article + aside,
@@ -267,7 +275,6 @@ main [role=complementary] + section {
 }
 
 footer, .fp-footer {
-  min-height: 200px;
   display: flex;
   align-items: center;
   justify-content: start;

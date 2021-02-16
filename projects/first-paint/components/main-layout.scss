@@ -14,22 +14,19 @@ $min-height: 30rem !default;
 
 @mixin mix-main {
 
-
   min-height: $min-height;
 
-  // padding: 2rem 0;
-
-
-  // width: 100%;
-
   >section {
-    padding: 1rem;
     width: 100%;
     font-size: 1rem;
 
     >*+* {
       margin-top: 2rem;
     }
+  }
+
+  article+article {
+    margin-top: 2rem;
   }
 
   article+aside,
@@ -59,6 +56,5 @@ $min-height: 30rem !default;
     }
   }
 }
-
 
 @include main()

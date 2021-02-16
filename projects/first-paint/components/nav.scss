@@ -99,7 +99,8 @@ $brand-name: 'brand name' !default;
         font-size: .8rem;
       }
 
-      button[type] {
+      button[type],
+      a[role=button] {
         margin-bottom: 0;
       }
 

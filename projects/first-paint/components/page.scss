@@ -52,4 +52,8 @@ body {
       max-width: $width-lg-max;
     }
   }
+
+  >footer {
+    min-height: 200px;
+  }
 }
