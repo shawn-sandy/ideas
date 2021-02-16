@@ -26,6 +26,7 @@ $brand-name: 'brand name' !default;
       justify-content: $justify-content;
       min-height: $min-height;
       padding: $padding-x $padding-y;
+      margin: 0 auto;
       margin-bottom: 1rem;
 
       @media (min-width: 980px) {
@@ -112,6 +113,14 @@ $brand-name: 'brand name' !default;
 
     }
   }
+}
+
+@mixin max-width($max-width: 80%) {
+
+  nav {
+    max-width: $max-width;
+  }
+
 }
 
 @include renderComponent();

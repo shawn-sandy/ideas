@@ -44,12 +44,12 @@ body {
     margin: $margin;
 
     @media screen and (min-width: 1280px) {
-      max-width: $width-md-max;
+      max-width: $width-md;
       width: $width-md;
     }
 
     @media screen and (min-width: 1980px) {
-      max-width: $width-lg-max;
+      max-width: $width-md;
     }
   }
 
