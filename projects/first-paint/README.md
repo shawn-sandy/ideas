@@ -11,9 +11,10 @@ First Paint is an easy to use CSS/SCSS starter library that contains accessibili
 **Simple & Easy copy paste option**
 
 - Create an empty html page
-- Copy and paste the code from [Gist](https://gist.github.com/shawn-sandy/0be9ce998760ec2193e31ac1d7ae2e85) this gist into your new HTML page
-- Launch you page in your browser
+- Copy and paste the code from [Gist](https://gist.githubusercontent.com/shawn-sandy/8460e6e400d3206c8a073367855ae381/raw/5309ceec672aa8a5332f2a8a52ed1efa6d63f63c/sample.html) this gist into your new HTML page
 - Edit/customize your page `markup and content`
+- Launch you page in your browser
+- Edit some more
 - Publish to the web :)
 
 ### Customized Build
