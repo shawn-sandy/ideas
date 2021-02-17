@@ -1,0 +1,27 @@
+// @forward "@shawnsandy/mix/foundation.scss";
+
+@forward './components/styles';
+
+@forward './components/page.scss'as page-* with($render: false);
+
+@forward './components/typography.scss'as type-* with($render: false);
+
+@forward './components/nav.scss'as nav-* with($render: false);
+
+@forward './components/header.scss'as header-* with($render: false);
+
+@forward './components/main-layout.scss'as main-* with($render: false);
+
+@forward './components/footer.scss'as footer-* with($render: false);
+
+@forward './components/grid.scss'as grid-* with($render: false);
+
+@forward './components/button.scss'as button-* with($render: false);
+
+@forward './components/form.scss'as form-* with($render: false);
+
+@forward './components/img.scss'as img-* with($render: false);
+
+@forward './components/list.scss'as lsit-* with($render: false);
+
+@forward './components/horizontal-rule.scss'as hr-* with($render: false);

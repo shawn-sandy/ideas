@@ -2,7 +2,7 @@
 
 $render: true !default;
 
-@mixin renderComponent($renderComponent: true, $className: null) {
+@mixin renderComponent($renderComponent: $render, $className: null) {
   @if($renderComponent) {
 
     #{$className, $className, '.fp-picture'},

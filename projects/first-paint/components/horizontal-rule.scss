@@ -6,7 +6,7 @@ $margin: 2rem 0 !default;
 
 // render component mixin
 
-@mixin renderComponent($renderContent: true, $className: null) {
+@mixin renderComponent($renderContent: $render, $className: null) {
   @if($renderContent) {
 
     #{$className, $className, '.fp-hr'},

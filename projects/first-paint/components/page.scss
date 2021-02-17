@@ -1,3 +1,5 @@
+$render: true !default;
+
 $background-color: #ffffff !default;
 $color: #000000 !default;
 $width: 90% !default;
@@ -21,46 +23,62 @@ sans-serif,
 "Segoe UI Symbol",
 "Noto Color Emoji" !default;
 
-html {
-
-  scroll-behavior: smooth;
-  box-sizing: border-box;
-
-  * {
-    outline: none;
-  }
-
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-
-}
+// set variables
 
 
-body {
-  background-color: $background-color;
+// render component mixin
 
-  >section,
-  >main,
-  >header>section,
-  >footer>section {
-    padding: $padding;
-    max-width: $width;
-    margin: $margin;
+@mixin renderComponent($renderContent: $render, $className: null) {
+  @if($renderContent) {
+    html {
 
-    @media screen and (min-width: 1280px) {
-      max-width: $width-md;
-      width: $width-md;
+      scroll-behavior: smooth;
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+
+      * {
+        outline: none;
+      }
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
     }
 
-    @media screen and (min-width: 1980px) {
-      max-width: $width-md;
+
+    body {
+      background-color: $background-color;
+
+      >section,
+      >main,
+      >header>section,
+      >footer>section {
+        padding: $padding;
+        max-width: $width;
+        margin: $margin;
+
+        @media screen and (min-width: 1280px) {
+          max-width: $width-md;
+          width: $width-md;
+        }
+
+        @media screen and (min-width: 1980px) {
+          max-width: $width-md;
+        }
+      }
+
+      >footer {
+        min-height: 200px;
+      }
     }
   }
-
-  >footer {
-    min-height: 200px;
-  }
 }
+
+// include render component
+
+@include renderComponent();

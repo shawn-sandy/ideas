@@ -1,7 +1,7 @@
 $render: true !default;
 $background-color: transparent !default;
 
-@mixin input($renderContent: true, $className: null) {
+@mixin input($renderContent: $render, $className: null) {
   @if($renderContent) {
 
     #{if($className, $className,'.fp-form')},
@@ -66,64 +66,65 @@ $background-color: transparent !default;
   textarea {
     min-height: 150px;
   }
-}
 
-// label[for*="email"]::before {
-//   content: "\0040";
-// }
+  // label[for*="email"]::before {
+  //   content: "\0040";
+  // }
 
-span {
-  // position: relative;
+  span {
+    // position: relative;
 
-  >*+* {
-    margin-left: 0.3rem;
-  }
+    >*+* {
+      margin-left: 0.3rem;
+    }
 
-  >label[for] {
-    display: inline-flex;
-    align-items: center;
-    margin-left: 0.5rem;
-    cursor: pointer;
-
-    &::before {
-      content: "";
+    >label[for] {
       display: inline-flex;
-      width: 1rem;
-      height: 1rem;
-      background-color: transparent;
-      border: solid 2px lightgrey;
-      border-radius: 3px;
-      margin-right: 0.5rem;
+      align-items: center;
+      margin-left: 0.5rem;
+      cursor: pointer;
+
+      &::before {
+        content: "";
+        display: inline-flex;
+        width: 1rem;
+        height: 1rem;
+        background-color: transparent;
+        border: solid 2px lightgrey;
+        border-radius: 3px;
+        margin-right: 0.5rem;
+      }
     }
-  }
 
-  >[type="checkbox"]:checked+label[for],
-  [type="radio"]:checked+label[for] {
-    &::before {
-      background-color: gray;
+    >[type="checkbox"]:checked+label[for],
+    [type="radio"]:checked+label[for] {
+      &::before {
+        background-color: gray;
+      }
     }
-  }
 
-  >[type="checkbox"],
-  >[type="radio"] {
-    width: 1px;
-    height: 1px;
-    opacity: 0;
-    display: inline-flex;
-    margin: 0;
-    padding: 0;
-  }
+    >[type="checkbox"],
+    >[type="radio"] {
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+      display: inline-flex;
+      margin: 0;
+      padding: 0;
+    }
 
-  >[type="radio"] {
-    display: block;
-  }
+    >[type="radio"] {
+      display: block;
+    }
 
-  >[type="radio"]+label {
-    &::before {
-      border-radius: 50%;
+    >[type="radio"]+label {
+      &::before {
+        border-radius: 50%;
+      }
     }
   }
 }
+
 
 
 @include input()

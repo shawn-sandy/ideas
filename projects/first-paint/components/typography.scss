@@ -14,7 +14,7 @@ sans-serif,
 "Noto Color Emoji" !default;
 
 
-@mixin typography($renderContent: true) {
+@mixin typography($renderContent: $render) {
   @if($renderContent) {
     @include mix-typography();
   }

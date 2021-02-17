@@ -2,7 +2,7 @@ $render: true !default;
 
 $min-height: 30rem !default;
 
-@mixin main($renderContent: true, $className: null) {
+@mixin main($renderContent: $render, $className: null) {
   @if($renderContent) {
 
     #{if($className, $className, '.fp-main')},

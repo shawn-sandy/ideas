@@ -1,6 +1,6 @@
 $render: true !default;
 
-@mixin list($renderContent: true, $className: null) {
+@mixin list($renderContent: $render, $className: null) {
   @if($renderContent) {
 
     #{if($className, $className, '.fp-list')} ol,
