@@ -27,11 +27,12 @@ $background-color: whitesmoke;
       padding: 1rem;
       // background-color: whitesmoke;
 
-      &+aside,
-      &+ul,
-      &+ol {
-        margin-left: .5rem;
-      }
+    }
+
+    aside+aside,
+    ul+ul,
+    ol+ol {
+      margin-left: .5rem;
     }
   }
 
