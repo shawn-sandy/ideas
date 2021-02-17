@@ -14,7 +14,7 @@ sans-serif,
 "Noto Color Emoji" !default;
 
 
-@mixin typography($renderContent: true, $className: null) {
+@mixin typography($renderContent: true) {
   @if($renderContent) {
     @include mix-typography();
   }
@@ -31,7 +31,8 @@ sans-serif,
   h2,
   h3,
   h4,
-  h5 {
+  h5,
+  .fp-title {
     line-height: 1.5;
     color: inherit;
     margin: 0rem 0 1.05rem;

@@ -13,7 +13,8 @@ $justify-content: center;
 
   @if($renderContent) {
 
-    #{if($className, $className, 'header, .fp-header')} {
+    #{if($className, $className, '.fp-header')},
+    header {
       @include header()
     }
   }

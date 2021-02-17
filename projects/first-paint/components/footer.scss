@@ -4,7 +4,9 @@ $background-color: whitesmoke;
 
 @mixin renderComponent($renderContent: true, $className: null) {
   @if($renderContent) {
-    #{if($className, $className, 'footer[role=contentinfo], .fp-footer')} {
+
+    #{if($className, $className, '.fp-footer')},
+    footer[role=contentinfo] {
       @include footer();
     }
   }

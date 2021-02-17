@@ -8,7 +8,9 @@ $margin: 2rem 0 !default;
 
 @mixin renderComponent($renderContent: true, $className: null) {
   @if($renderContent) {
-    #{$className, $className, 'hr, .fp-hr'} {
+
+    #{$className, $className, '.fp-hr'},
+    hr {
       @include hr();
     }
   }

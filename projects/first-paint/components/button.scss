@@ -27,7 +27,9 @@ $cursor: pointer !default;
 
   @if $renderComponent {
 
-    #{if($className, $className, 'button[type], a[role=button], .fp-button')} {
+    #{if($className, $className, '.fp-button')},
+    button[type],
+    a[role=button] {
       @include button();
     }
 

@@ -42,7 +42,7 @@
     "build:scss": "sass --style compressed components:dist/css/. index.scss:dist/css/index.css custom-styles.scss:dist/css/custom-styles.css --load-path=node_modules --color",
     "parcel": "parcel serve index.html index.css --hmr-port --out-dir www --open",
     "build": "run-s clean:dist build:*",
-    "build:parcel": "parcel build index.js --no-content-hash --out-dir dist",
+    "build-parcel": "parcel build index.js --no-content-hash --out-dir dist",
     "clean": "trash www/**/*.*",
     "clean:dist": "trash dist/**/*.*"
   },

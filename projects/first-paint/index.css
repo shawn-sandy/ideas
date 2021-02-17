@@ -53,7 +53,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+.fp-title {
   line-height: 1.5;
   color: inherit;
   margin: 0rem 0 1.05rem;
@@ -241,16 +242,18 @@ nav a[role=button] {
   margin-bottom: 0;
 }
 
-header, .fp-header {
+.fp-header,
+header {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   min-height: 15.625rem;
 }
+.fp-header > section,
+.fp-header > [role=banner],
 header > section,
-header > [role=banner], .fp-header > section,
-.fp-header > [role=banner] {
+header > [role=banner] {
   text-align: center;
 }
 
@@ -302,55 +305,65 @@ main [role=complementary] + section {
   }
 }
 
-footer[role=contentinfo], .fp-footer {
+.fp-footer,
+footer[role=contentinfo] {
   display: block;
   font-size: 0.8rem;
   background-color: whitesmoke;
 }
-footer[role=contentinfo] section, .fp-footer section {
+.fp-footer section,
+footer[role=contentinfo] section {
   display: flex;
   align-items: stretch;
   align-content: stretch;
 }
+.fp-footer section > aside,
+.fp-footer section ul,
+.fp-footer section ol,
 footer[role=contentinfo] section > aside,
 footer[role=contentinfo] section ul,
-footer[role=contentinfo] section ol, .fp-footer section > aside,
-.fp-footer section ul,
-.fp-footer section ol {
+footer[role=contentinfo] section ol {
   padding: 1rem;
 }
+.fp-footer section aside + aside,
+.fp-footer section ul + ul,
+.fp-footer section ol + ol,
 footer[role=contentinfo] section aside + aside,
 footer[role=contentinfo] section ul + ul,
-footer[role=contentinfo] section ol + ol, .fp-footer section aside + aside,
-.fp-footer section ul + ul,
-.fp-footer section ol + ol {
+footer[role=contentinfo] section ol + ol {
   margin-left: 0.5rem;
 }
 
-section [role=list], .fp-grid [role=list] {
+.fp-grid [role=list],
+section [role=list] {
   padding: 0;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
-section [role=list] [role=listitem], .fp-grid [role=list] [role=listitem] {
+.fp-grid [role=list] [role=listitem],
+section [role=list] [role=listitem] {
   flex: 1 1 100%;
   padding: 1rem;
   line-height: 1.6;
 }
 @media all and (min-width: 780px) {
-  section [role=list] [role=listitem], .fp-grid [role=list] [role=listitem] {
+  .fp-grid [role=list] [role=listitem],
+section [role=list] [role=listitem] {
     flex: 1 1 48%;
   }
 }
 @media all and (min-width: 992px) {
-  section [role=list] [role=listitem], .fp-grid [role=list] [role=listitem] {
+  .fp-grid [role=list] [role=listitem],
+section [role=list] [role=listitem] {
     flex: 1 1 28%;
   }
 }
 
-button[type], a[role=button], .fp-button {
+.fp-button,
+button[type],
+a[role=button] {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -365,14 +378,52 @@ button[type], a[role=button], .fp-button {
   margin-bottom: 0.7rem;
   font-weight: normal;
 }
-button[type]:hover, button[type]:active, button[type]:focus, a[role=button]:hover, a[role=button]:active, a[role=button]:focus, .fp-button:hover, .fp-button:active, .fp-button:focus {
+.fp-button:hover, .fp-button:active, .fp-button:focus,
+button[type]:hover,
+button[type]:active,
+button[type]:focus,
+a[role=button]:hover,
+a[role=button]:active,
+a[role=button]:focus {
   border: 1px transparent solid;
 }
-button[type][type], button[type][type=reset], button[type][type=button], button[type][type=submit], a[role=button][type], a[role=button][type=reset], a[role=button][type=button], a[role=button][type=submit], .fp-button[type], .fp-button[type=reset], .fp-button[type=button], .fp-button[type=submit] {
+.fp-button[type], .fp-button[type=reset], .fp-button[type=button], .fp-button[type=submit],
+button[type][type],
+button[type][type=reset],
+button[type][type=button],
+button[type][type=submit],
+a[role=button][type],
+a[role=button][type=reset],
+a[role=button][type=button],
+a[role=button][type=submit] {
   padding: 0.6rem 1.5rem;
   border: 1px solid #e4e4e4;
 }
-button[type][type]:hover, button[type][type]:active, button[type][type]:focus, button[type][type=reset]:hover, button[type][type=reset]:active, button[type][type=reset]:focus, button[type][type=button]:hover, button[type][type=button]:active, button[type][type=button]:focus, button[type][type=submit]:hover, button[type][type=submit]:active, button[type][type=submit]:focus, a[role=button][type]:hover, a[role=button][type]:active, a[role=button][type]:focus, a[role=button][type=reset]:hover, a[role=button][type=reset]:active, a[role=button][type=reset]:focus, a[role=button][type=button]:hover, a[role=button][type=button]:active, a[role=button][type=button]:focus, a[role=button][type=submit]:hover, a[role=button][type=submit]:active, a[role=button][type=submit]:focus, .fp-button[type]:hover, .fp-button[type]:active, .fp-button[type]:focus, .fp-button[type=reset]:hover, .fp-button[type=reset]:active, .fp-button[type=reset]:focus, .fp-button[type=button]:hover, .fp-button[type=button]:active, .fp-button[type=button]:focus, .fp-button[type=submit]:hover, .fp-button[type=submit]:active, .fp-button[type=submit]:focus {
+.fp-button[type]:hover, .fp-button[type]:active, .fp-button[type]:focus, .fp-button[type=reset]:hover, .fp-button[type=reset]:active, .fp-button[type=reset]:focus, .fp-button[type=button]:hover, .fp-button[type=button]:active, .fp-button[type=button]:focus, .fp-button[type=submit]:hover, .fp-button[type=submit]:active, .fp-button[type=submit]:focus,
+button[type][type]:hover,
+button[type][type]:active,
+button[type][type]:focus,
+button[type][type=reset]:hover,
+button[type][type=reset]:active,
+button[type][type=reset]:focus,
+button[type][type=button]:hover,
+button[type][type=button]:active,
+button[type][type=button]:focus,
+button[type][type=submit]:hover,
+button[type][type=submit]:active,
+button[type][type=submit]:focus,
+a[role=button][type]:hover,
+a[role=button][type]:active,
+a[role=button][type]:focus,
+a[role=button][type=reset]:hover,
+a[role=button][type=reset]:active,
+a[role=button][type=reset]:focus,
+a[role=button][type=button]:hover,
+a[role=button][type=button]:active,
+a[role=button][type=button]:focus,
+a[role=button][type=submit]:hover,
+a[role=button][type=submit]:active,
+a[role=button][type=submit]:focus {
   background-color: transparent;
   background-color: #cbcbcb;
   border: 1px solid #e4e4e4;
@@ -417,22 +468,26 @@ span > [type=radio] + label::before {
   border-radius: 50%;
 }
 
-form label[for], .fp-form label[for] {
+.fp-form label[for],
+form label[for] {
   font-size: 0.9rem;
   display: block;
 }
-form label[for] em, .fp-form label[for] em {
+.fp-form label[for] em,
+form label[for] em {
   font-style: normal;
 }
-form label[for] em::after, .fp-form label[for] em::after {
+.fp-form label[for] em::after,
+form label[for] em::after {
   content: "∗";
   color: darkred;
 }
+.fp-form input[id],
+.fp-form textarea[id],
+.fp-form select[id],
 form input[id],
 form textarea[id],
-form select[id], .fp-form input[id],
-.fp-form textarea[id],
-.fp-form select[id] {
+form select[id] {
   background-color: transparent;
   display: flex;
   margin: 0.1rem 0 1rem;
@@ -442,27 +497,31 @@ form select[id], .fp-form input[id],
   border: 1px solid gray;
   border-radius: 2px;
 }
-form input[id]:focus, form input[id]:focus-within,
-form textarea[id]:focus,
-form textarea[id]:focus-within,
-form select[id]:focus,
-form select[id]:focus-within, .fp-form input[id]:focus, .fp-form input[id]:focus-within,
+.fp-form input[id]:focus, .fp-form input[id]:focus-within,
 .fp-form textarea[id]:focus,
 .fp-form textarea[id]:focus-within,
 .fp-form select[id]:focus,
-.fp-form select[id]:focus-within {
+.fp-form select[id]:focus-within,
+form input[id]:focus,
+form input[id]:focus-within,
+form textarea[id]:focus,
+form textarea[id]:focus-within,
+form select[id]:focus,
+form select[id]:focus-within {
   border: 1px solid gray;
   outline-color: gray;
 }
+.fp-form input[id]::placeholder,
+.fp-form textarea[id]::placeholder,
+.fp-form select[id]::placeholder,
 form input[id]::placeholder,
 form textarea[id]::placeholder,
-form select[id]::placeholder, .fp-form input[id]::placeholder,
-.fp-form textarea[id]::placeholder,
-.fp-form select[id]::placeholder {
+form select[id]::placeholder {
   font-style: italic;
   color: lightgrey;
 }
-form select, .fp-form select {
+.fp-form select,
+form select {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -472,11 +531,13 @@ form select, .fp-form select {
   background-position: right 0.7rem top 50%, 0 0;
   background-size: 0.65em auto, 100%;
 }
-form textarea, .fp-form textarea {
+.fp-form textarea,
+form textarea {
   min-height: 150px;
 }
 
-picture, .fp-picture {
+.fp-picture,
+picture {
   display: flex;
   width: 100%;
   height: auto;
@@ -485,14 +546,16 @@ picture, .fp-picture {
   padding: 0;
   text-align: center;
 }
-picture > img[alt], .fp-picture > img[alt] {
+.fp-picture > img[alt],
+picture > img[alt] {
   width: 100%;
   height: auto;
   display: flex;
   align-items: center;
   position: relative;
 }
-picture > img[alt]::after, .fp-picture > img[alt]::after {
+.fp-picture > img[alt]::after,
+picture > img[alt]::after {
   min-height: 48px;
   height: 100%;
   width: 100%;
@@ -511,30 +574,34 @@ picture > img[alt]::after, .fp-picture > img[alt]::after {
   border: 2px solid darkgray;
 }
 
-ol,
+.fp-list ol,
 ul,
 dl {
   padding-left: 1rem;
 }
-ol > * + *,
+.fp-list ol > * + *,
 ul > * + *,
 dl > * + * {
   margin-top: 0.5rem;
 }
-ol > *,
+.fp-list ol > *,
 ul > *,
 dl > * {
   line-height: 1.5;
 }
-
-span > ol,
-span ul {
+.fp-list ol span > ol,
+.fp-list ol span ul,
+ul span > ol,
+ul span ul,
+dl span > ol,
+dl span ul {
   list-style: none;
   margin-left: 0rem;
   padding-left: 0rem;
 }
 
-hr, .fp-hr {
+.fp-hr,
+hr {
   display: block;
   border: none;
   background-color: transparent;

@@ -4,7 +4,9 @@ $render: true !default;
 
 @mixin renderComponent($renderComponent: true, $className: null) {
   @if($renderComponent) {
-    #{$className, $className, 'picture, .fp-picture'} {
+
+    #{$className, $className, '.fp-picture'},
+    picture {
       @include img();
     }
   }

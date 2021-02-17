@@ -3,15 +3,14 @@ $render: true !default;
 @mixin list($renderContent: true, $className: null) {
   @if($renderContent) {
 
-    @if($className) {
-      .#{$className} {
-        @include mix-list();
-      }
+    #{if($className, $className, '.fp-list')} ol,
+    ul,
+    dl {
 
-    }
-
-    @else {
+      padding-left: 1rem;
       @include mix-list();
+
+
     }
   }
 }
@@ -19,20 +18,14 @@ $render: true !default;
 
 @mixin mix-list() {
 
-  ol,
-  ul,
-  dl {
-    // margin-left: 0rem;
-    padding-left: 1rem;
-
-    >*+* {
-      margin-top: 0.5rem;
-    }
-
-    >* {
-      line-height: 1.5;
-    }
+  >*+* {
+    margin-top: 0.5rem;
   }
+
+  >* {
+    line-height: 1.5;
+  }
+
 
   span {
 
