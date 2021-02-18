@@ -110,11 +110,13 @@ nav {
   margin: 0 auto;
   margin-bottom: 1rem;
 }
-@media (min-width: 980px) {
+@media (min-width: 960px) {
   .fp-nav,
 nav {
     display: flex;
     margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 .fp-nav section,
@@ -148,6 +150,24 @@ nav ul a,
 nav ul span {
   margin-top: 1rem;
 }
+.fp-nav section li,
+.fp-nav div li,
+.fp-nav ul li,
+nav section li,
+nav div li,
+nav ul li {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+.fp-nav section li + li,
+.fp-nav div li + li,
+.fp-nav ul li + li,
+nav section li + li,
+nav div li + li,
+nav ul li + li {
+  margin-top: 0;
+}
 @media all and (min-width: 960px) {
   .fp-nav section,
 .fp-nav div,
@@ -158,6 +178,7 @@ nav ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 0;
   }
   .fp-nav section li,
 .fp-nav section a,
@@ -180,24 +201,6 @@ nav ul span {
     margin-top: 0;
   }
 }
-.fp-nav section li,
-.fp-nav div li,
-.fp-nav ul li,
-nav section li,
-nav div li,
-nav ul li {
-  height: inherit;
-  display: flex;
-  align-items: center;
-}
-.fp-nav section li + li,
-.fp-nav div li + li,
-.fp-nav ul li + li,
-nav section li + li,
-nav div li + li,
-nav ul li + li {
-  margin-top: 0;
-}
 .fp-nav h1,
 .fp-nav [aria-label="brand name"],
 nav h1,
@@ -209,7 +212,7 @@ nav [aria-label="brand name"] {
   line-height: normal;
   font-size: 1.5rem;
 }
-@media (min-width: 980px) {
+@media (min-width: 960px) {
   .fp-nav h1,
 .fp-nav [aria-label="brand name"],
 nav h1,
@@ -600,12 +603,9 @@ ul > *,
 dl > * {
   line-height: 1.5;
 }
-.fp-list ol span > ol,
-.fp-list ol span ul,
-ul span > ol,
-ul span ul,
-dl span > ol,
-dl span ul {
+
+span > ol,
+span ul {
   list-style: none;
   margin-left: 0rem;
   padding-left: 0rem;

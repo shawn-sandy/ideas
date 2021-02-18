@@ -8,23 +8,26 @@ $render: true !default;
     dl {
 
       padding-left: 1rem;
-      @include mix-list();
 
+
+      >*+* {
+        margin-top: 0.5rem;
+      }
+
+      >* {
+        line-height: 1.5;
+      }
 
     }
+
+    @include mix-list();
   }
 }
 
 
 @mixin mix-list() {
 
-  >*+* {
-    margin-top: 0.5rem;
-  }
 
-  >* {
-    line-height: 1.5;
-  }
 
 
   span {

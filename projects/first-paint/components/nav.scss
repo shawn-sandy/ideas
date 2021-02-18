@@ -29,9 +29,11 @@ $brand-name: 'brand name' !default;
       margin: 0 auto;
       margin-bottom: 1rem;
 
-      @media (min-width: 980px) {
+      @media (min-width: 960px) {
         display: flex;
         margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
       }
 
       section,
@@ -50,18 +52,6 @@ $brand-name: 'brand name' !default;
 
         margin-bottom: .5rem;
 
-        @media all and (min-width: 960px) {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-
-          li,
-          a,
-          span {
-            margin-top: 0;
-          }
-        }
-
         li {
           height: inherit;
           display: flex;
@@ -71,6 +61,20 @@ $brand-name: 'brand name' !default;
             margin-top: 0;
           }
         }
+
+        @media all and (min-width: 960px) {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 0;
+
+          li,
+          a,
+          span {
+            margin-top: 0;
+          }
+        }
+
       }
 
       h1,
@@ -82,7 +86,7 @@ $brand-name: 'brand name' !default;
         line-height: normal;
         font-size: $title-font-size;
 
-        @media (min-width: 980px) {
+        @media (min-width: 960px) {
           display: flex;
           align-items: center;
         }
