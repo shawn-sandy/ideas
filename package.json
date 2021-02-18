@@ -24,8 +24,7 @@
     "audit": "lighthouse https://shawnsandy.com/ --output=json --output-path=./audits/report.json --config-path=.lighthouseconfig.js",
     "first-paint": "lerna exec npm start --scope=@shawnsandy/first-paint",
     "first-paint-build": "lerna exec npm run build:scss --scope=@shawnsandy/first-paint",
-    "lerna-publish": "lerna publish",
-    "lerna-publish-beta": "lerna publish --dist-tag beta"
+    "publish-beta": "lerna publish --dist-tag beta"
   },
   "directories": {
     "lib": "dist",
