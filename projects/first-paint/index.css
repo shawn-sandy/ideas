@@ -106,7 +106,6 @@ nav {
   align-items: center;
   justify-content: space-between;
   min-height: 3.5rem;
-  padding: 0.5rem 0.5rem;
   margin: 0 auto;
   margin-bottom: 1rem;
 }
@@ -125,9 +124,11 @@ nav {
 nav section,
 nav div,
 nav ul {
-  display: block;
-  height: 100%;
-  text-align: center;
+  display: flex;
+  min-height: 3.5rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 0.5rem;
 }
 .fp-nav section li,
@@ -232,13 +233,13 @@ nav [aria-label="brand name"] a {
 nav img {
   display: inline-block;
   vertical-align: middle;
-  height: 3rem;
-  max-height: 3rem;
+  height: 2.5rem;
+  max-height: 2.5rem;
   margin-right: 1rem;
 }
 .fp-nav a,
 nav a {
-  padding: 0 1rem;
+  padding: 0 0.5rem;
   font-size: 0.8rem;
 }
 .fp-nav button[type],
@@ -319,9 +320,7 @@ footer[role=contentinfo] {
 }
 .fp-footer section,
 footer[role=contentinfo] section {
-  display: flex;
-  align-items: stretch;
-  align-content: stretch;
+  display: block;
 }
 .fp-footer section > aside,
 .fp-footer section ul,
@@ -332,13 +331,21 @@ footer[role=contentinfo] section ol {
   padding: 1rem;
   flex: 1;
 }
-.fp-footer section aside + aside,
+@media (min-width: 980px) {
+  .fp-footer section,
+footer[role=contentinfo] section {
+    display: flex;
+    align-items: stretch;
+    align-content: stretch;
+  }
+  .fp-footer section aside + aside,
 .fp-footer section ul + ul,
 .fp-footer section ol + ol,
 footer[role=contentinfo] section aside + aside,
 footer[role=contentinfo] section ul + ul,
 footer[role=contentinfo] section ol + ol {
-  margin-left: 0.5rem;
+    margin-left: 0.5rem;
+  }
 }
 
 .fp-grid [role=list],

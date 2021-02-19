@@ -11,7 +11,7 @@ $padding-x: .5rem !default;
 $padding-y: .5rem !default;
 $padding-items: 0 1rem;
 $title-font-size: 1.5rem !default;
-$brand-img-height: 3rem !default;
+$brand-img-height: 2.5rem !default;
 $align-items: center !default;
 $justify-content: space-between !default;
 $brand-name: 'brand name' !default;
@@ -25,7 +25,7 @@ $brand-name: 'brand name' !default;
       align-items: $align-items;
       justify-content: $justify-content;
       min-height: $min-height;
-      padding: $padding-x $padding-y;
+      // padding: $padding-x $padding-y;
       margin: 0 auto;
       margin-bottom: 1rem;
 
@@ -40,9 +40,11 @@ $brand-name: 'brand name' !default;
       div,
       ul {
 
-        display: block;
-        height: 100%;
-        text-align: center;
+        display: flex;
+        min-height: $min-height;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
 
         li,
         a,
@@ -107,7 +109,7 @@ $brand-name: 'brand name' !default;
       }
 
       a {
-        padding: 0 1rem;
+        padding: 0 .5rem;
         font-size: .8rem;
       }
 
