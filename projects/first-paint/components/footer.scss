@@ -19,23 +19,26 @@ $background-color: whitesmoke;
   background-color: $background-color;
 
   section {
-    display: flex;
-    align-items: stretch;
-    align-content: stretch;
+    display: block;
 
     >aside,
     ul,
     ol {
       padding: 1rem;
       flex: 1;
-      // background-color: whitesmoke;
-
     }
 
-    aside+aside,
-    ul+ul,
-    ol+ol {
-      margin-left: .5rem;
+
+    @media (min-width: 980px) {
+      display: flex;
+      align-items: stretch;
+      align-content: stretch;
+
+      aside+aside,
+      ul+ul,
+      ol+ol {
+        margin-left: .5rem;
+      }
     }
   }
 
