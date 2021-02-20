@@ -10,7 +10,7 @@
 
 @forward './components/header.scss'as header-* with($render: false);
 
-@forward './components/main-layout.scss'as main-* with($render: false);
+@forward './components/main.scss'as main-* with($render: false);
 
 @forward './components/footer.scss'as footer-* with($render: false);
 
