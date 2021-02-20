@@ -3,6 +3,7 @@
 
 $render: true !default;
 $color: null !default;
+$border: whitesmoke 1px solid !default;
 $background-color: null !default;
 $min-height: 3.5rem !default;
 $padding: .5rem !default;
@@ -27,6 +28,7 @@ $brand-name: 'brand name' !default;
       padding: $padding-x $padding-y;
       margin: 0 auto;
       margin-bottom: 1rem;
+      border-bottom: $border;
 
       @media (min-width: 960px) {
         display: flex;

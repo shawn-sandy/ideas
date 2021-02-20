@@ -109,6 +109,7 @@ nav {
   padding: 0.5rem 0rem;
   margin: 0 auto;
   margin-bottom: 1rem;
+  border-bottom: whitesmoke 1px solid;
 }
 @media (min-width: 960px) {
   .fp-nav,
