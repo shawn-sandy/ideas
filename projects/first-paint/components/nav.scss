@@ -69,6 +69,7 @@ $brand-name: 'brand name' !default;
           align-items: center;
           justify-content: space-between;
           margin-bottom: 0;
+          padding: 0 .5rem;
 
           li,
           a,
@@ -82,7 +83,10 @@ $brand-name: 'brand name' !default;
           vertical-align: middle;
           height: $brand-img-height;
           max-height: $brand-img-height;
-          margin-right: 1rem;
+
+          +* {
+            margin-right: 1rem;
+          }
         }
 
         a {

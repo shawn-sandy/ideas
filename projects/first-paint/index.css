@@ -181,6 +181,7 @@ nav ul {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 0;
+    padding: 0 0.5rem;
   }
   .fp-nav section li,
 .fp-nav section a,
@@ -213,6 +214,13 @@ nav ul img {
   vertical-align: middle;
   height: 2.5rem;
   max-height: 2.5rem;
+}
+.fp-nav section img + *,
+.fp-nav div img + *,
+.fp-nav ul img + *,
+nav section img + *,
+nav div img + *,
+nav ul img + * {
   margin-right: 1rem;
 }
 .fp-nav section a,

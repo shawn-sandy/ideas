@@ -1,32 +1,44 @@
 // @use "@shawnsandy/mix/foundation.scss";
+$render-page: true;
+$render-type: true;
+$render-header: true;
+$render-nav: true;
+$render-main: true;
+$render-footer: true;
+$render-button: true;
+$render-form: true;
+$render-img: true;
+$render-list: true;
+$render-horizontal-rule: true;
+$render-grid: true;
 
 @use './components/styles';
 
-@use './components/page.scss';
+@use './components/page.scss'with($render: $render-page);
 
-@use './components/typography.scss';
+@use './components/typography.scss'with($render: $render-type);
 
 // @use './elements/elements.scss';
 
-@use './components/nav.scss';
+@use './components/nav.scss'with($render: $render-nav);
 
-@use './components/header.scss';
+@use './components/header.scss'with($render: $render-header);
 
-@use './components/main-layout.scss';
+@use './components/main.scss'with($render: $render-main);
 
-@use './components/footer.scss';
+@use './components/footer.scss'with($render: $render-footer);
 
-@use './components/grid.scss';
+@use './components/grid.scss'with($render: $render-grid);
 
-@use './components/button.scss';
+@use './components/button.scss'with($render: $render-button);
 
-@use './components/form.scss';
+@use './components/form.scss'with($render: $render-form);
 
-@use './components/img.scss';
+@use './components/img.scss'with($render: $render-img);
 
-@use './components/list.scss';
+@use './components/list.scss'with($render: $render-list);
 
-@use './components/horizontal-rule.scss';
+@use './components/horizontal-rule.scss'with($render: $render-horizontal-rule);
 
 // set max width on nav
 // @include nav.max-width();
