@@ -212,7 +212,7 @@ nav div img,
 nav ul img {
   display: inline-block;
   vertical-align: middle;
-  height: 2.5rem;
+  height: calc(min-height - 1);
   max-height: 2.5rem;
 }
 .fp-nav section img + *,
@@ -221,7 +221,7 @@ nav ul img {
 nav section img + *,
 nav div img + *,
 nav ul img + * {
-  margin-right: 1rem;
+  margin-left: 1rem;
 }
 .fp-nav section a,
 .fp-nav div a,

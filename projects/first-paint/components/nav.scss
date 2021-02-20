@@ -4,7 +4,6 @@
 $render: true !default;
 $color: null !default;
 $background-color: null !default;
-$min-height: null !default;
 $min-height: 3.5rem !default;
 $padding: .5rem !default;
 $padding-x: .5rem !default;
@@ -81,11 +80,11 @@ $brand-name: 'brand name' !default;
         img {
           display: inline-block;
           vertical-align: middle;
-          height: $brand-img-height;
+          height: calc(min-height - 1);
           max-height: $brand-img-height;
 
           +* {
-            margin-right: 1rem;
+            margin-left: 1rem;
           }
         }
 
