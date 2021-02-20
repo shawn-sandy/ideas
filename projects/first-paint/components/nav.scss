@@ -8,7 +8,7 @@ $min-height: null !default;
 $min-height: 3.5rem !default;
 $padding: .5rem !default;
 $padding-x: .5rem !default;
-$padding-y: .5rem !default;
+$padding-y: 0rem !default;
 $padding-items: 0 1rem;
 $title-font-size: 1.5rem !default;
 $brand-img-height: 2.5rem !default;
@@ -25,7 +25,7 @@ $brand-name: 'brand name' !default;
       align-items: $align-items;
       justify-content: $justify-content;
       min-height: $min-height;
-      // padding: $padding-x $padding-y;
+      padding: $padding-x $padding-y;
       margin: 0 auto;
       margin-bottom: 1rem;
 
@@ -77,6 +77,23 @@ $brand-name: 'brand name' !default;
           }
         }
 
+        img {
+          display: inline-block;
+          vertical-align: middle;
+          height: $brand-img-height;
+          max-height: $brand-img-height;
+          margin-right: 1rem;
+        }
+
+        a {
+          padding: 0 .5rem;
+          font-size: .8rem;
+        }
+
+        button[type],
+        a[role=button] {
+          margin-bottom: 0;
+        }
       }
 
       h1,
@@ -100,23 +117,6 @@ $brand-name: 'brand name' !default;
 
       }
 
-      img {
-        display: inline-block;
-        vertical-align: middle;
-        height: $brand-img-height;
-        max-height: $brand-img-height;
-        margin-right: 1rem;
-      }
-
-      a {
-        padding: 0 .5rem;
-        font-size: .8rem;
-      }
-
-      button[type],
-      a[role=button] {
-        margin-bottom: 0;
-      }
 
     }
   }

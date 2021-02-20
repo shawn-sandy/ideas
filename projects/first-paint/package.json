@@ -24,7 +24,8 @@
     "dist",
     "tokens",
     "index.css",
-    "/**/*.scss"
+    "/**/*.scss",
+    "/**/*.map"
   ],
   "publishConfig": {
     "access": "public"
