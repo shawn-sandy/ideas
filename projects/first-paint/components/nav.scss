@@ -10,7 +10,7 @@ $padding-x: .5rem !default;
 $padding-y: 0rem !default;
 $padding-items: 0 1rem;
 $title-font-size: 1.5rem !default;
-$brand-img-height: calc(min-height - 1) !default;
+$brand-img-height: null !default;
 $align-items: center !default;
 $justify-content: space-between !default;
 $brand-name: 'brand name' !default;
@@ -80,8 +80,9 @@ $brand-name: 'brand name' !default;
         img {
           display: inline-block;
           vertical-align: middle;
-          height: $brand-img-height;
-          max-height: $brand-img-height;
+          height: $brand-img-height or 2rem;
+          max-height: $brand-img-height or 2rem;
+          ;
 
           +* {
             margin-left: 1rem;

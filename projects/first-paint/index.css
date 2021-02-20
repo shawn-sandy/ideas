@@ -212,8 +212,8 @@ nav div img,
 nav ul img {
   display: inline-block;
   vertical-align: middle;
-  height: calc(min-height - 1);
-  max-height: 2.5rem;
+  height: 2rem;
+  max-height: 2rem;
 }
 .fp-nav section img + *,
 .fp-nav div img + *,
@@ -280,7 +280,7 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  min-height: 15.625rem;
+  min-height: 18.75rem;
 }
 .fp-header > section,
 .fp-header > [role=banner],
