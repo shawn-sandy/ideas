@@ -233,6 +233,7 @@ nav div a,
 nav ul a {
   padding: 0 0.5rem;
   font-size: 0.8rem;
+  text-decoration: none;
 }
 .fp-nav section button[type],
 .fp-nav section a[role=button],
