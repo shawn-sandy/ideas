@@ -46,6 +46,7 @@ $brand-name: 'brand name' !default;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+        margin: 0;
 
         li,
         a,
@@ -53,12 +54,14 @@ $brand-name: 'brand name' !default;
           margin-top: 1rem;
         }
 
-        margin-bottom: .5rem;
+        // margin-bottom: .5rem;
 
         li {
           height: inherit;
           display: flex;
           align-items: center;
+          margin-top: 0;
+          // padding: 0 .3rem;
 
           &+li {
             margin-top: 0;
