@@ -10,7 +10,7 @@ First Paint is an easy to use CSS/SCSS starter library that contains accessibili
 
 **Inatall**
 -Install `npm i @shawnsandy/first-paint` stable version
-- Install `npm i @shawnsandy/first-paint@beta` latest version (beta)
+- Install `npm i @shawnsandy/first-paint@next` latest version (next)
 - Yarn install `yarn add @shawnsandy/first-paint`
 
 **Simple & Easy copy paste option**

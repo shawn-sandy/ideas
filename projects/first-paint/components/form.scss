@@ -13,6 +13,13 @@ $background-color: transparent !default;
 
 @mixin form-elements {
 
+  >div {
+    +div {
+      margin-top: 1rem;
+    }
+
+  }
+
   label[for] {
     em {
       font-style: normal;
@@ -34,11 +41,11 @@ $background-color: transparent !default;
     background-color: $background-color;
     display: flex;
     margin: 0.1rem 0 1rem;
-    padding: 0.5rem 0;
-    font-size: 0.9rem;
-    width: 100%;
-    border: 1px solid gray;
-    border-radius: 2px;
+    padding: 0.5rem;
+    // font-size: 0.9rem;
+    width: 98%;
+    border: 1px solid lightgray;
+    border-radius: .1rem;
 
     &:focus,
     &:focus-within {
@@ -96,6 +103,7 @@ $background-color: transparent !default;
       }
     }
 
+
     >[type="checkbox"]:checked+label[for],
     [type="radio"]:checked+label[for] {
       &::before {
@@ -121,6 +129,10 @@ $background-color: transparent !default;
       &::before {
         border-radius: 50%;
       }
+    }
+
+    [type="checkbox"] {
+      display: none;
     }
   }
 }

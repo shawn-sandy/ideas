@@ -109,7 +109,7 @@ nav {
   padding: 0.5rem 0rem;
   margin: 0 auto;
   margin-bottom: 1rem;
-  border-bottom: whitesmoke 1px solid;
+  border-bottom: none;
 }
 @media (min-width: 960px) {
   .fp-nav,
@@ -118,6 +118,11 @@ nav {
     margin-bottom: 0;
     padding-top: 0;
     padding-bottom: 0;
+    max-width: 80%;
+  }
+  section > .fp-nav,
+section > nav {
+    border: whitesmoke 1px solid;
   }
 }
 .fp-nav section,
@@ -206,23 +211,23 @@ nav ul span {
     margin-top: 0;
   }
 }
-.fp-nav section img,
-.fp-nav div img,
-.fp-nav ul img,
-nav section img,
-nav div img,
-nav ul img {
+.fp-nav section img[alt],
+.fp-nav div img[alt],
+.fp-nav ul img[alt],
+nav section img[alt],
+nav div img[alt],
+nav ul img[alt] {
   display: inline-block;
   vertical-align: middle;
   height: 2rem;
   max-height: 2rem;
 }
-.fp-nav section img + *,
-.fp-nav div img + *,
-.fp-nav ul img + *,
-nav section img + *,
-nav div img + *,
-nav ul img + * {
+.fp-nav section img[alt] + *,
+.fp-nav div img[alt] + *,
+.fp-nav ul img[alt] + *,
+nav section img[alt] + *,
+nav div img[alt] + *,
+nav ul img[alt] + * {
   margin-left: 1rem;
 }
 .fp-nav section a,
@@ -471,6 +476,10 @@ a[role=button][type=submit]:focus {
   border: 1px solid #e4e4e4;
 }
 
+.fp-form > div + div,
+form > div + div {
+  margin-top: 1rem;
+}
 .fp-form label[for],
 form label[for] {
   font-size: 0.9rem;
@@ -494,11 +503,10 @@ form select[id] {
   background-color: transparent;
   display: flex;
   margin: 0.1rem 0 1rem;
-  padding: 0.5rem 0;
-  font-size: 0.9rem;
-  width: 100%;
-  border: 1px solid gray;
-  border-radius: 2px;
+  padding: 0.5rem;
+  width: 98%;
+  border: 1px solid lightgray;
+  border-radius: 0.1rem;
 }
 .fp-form input[id]:focus, .fp-form input[id]:focus-within,
 .fp-form textarea[id]:focus,
@@ -584,6 +592,10 @@ form span > [type=radio] {
 .fp-form span > [type=radio] + label::before,
 form span > [type=radio] + label::before {
   border-radius: 50%;
+}
+.fp-form span [type=checkbox],
+form span [type=checkbox] {
+  display: none;
 }
 
 .fp-picture,

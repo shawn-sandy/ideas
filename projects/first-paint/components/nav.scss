@@ -6,6 +6,7 @@ $color: null !default;
 $border: whitesmoke 1px solid !default;
 $background-color: null !default;
 $min-height: 3.5rem !default;
+$max-width: null !default;
 $padding: .5rem !default;
 $padding-x: .5rem !default;
 $padding-y: 0rem !default;
@@ -28,13 +29,18 @@ $brand-name: 'brand name' !default;
       padding: $padding-x $padding-y;
       margin: 0 auto;
       margin-bottom: 1rem;
-      border-bottom: $border;
+      border-bottom: #{if($max-width,  $border,'none')};
 
       @media (min-width: 960px) {
         display: flex;
         margin-bottom: 0;
         padding-top: 0;
         padding-bottom: 0;
+        max-width: $max-width or 80%;
+
+        section>& {
+          border: $border;
+        }
       }
 
       section,
@@ -82,7 +88,7 @@ $brand-name: 'brand name' !default;
           }
         }
 
-        img {
+        img[alt] {
           display: inline-block;
           vertical-align: middle;
           height: $brand-img-height or 2rem;
@@ -132,10 +138,11 @@ $brand-name: 'brand name' !default;
   }
 }
 
-@mixin max-width($max-width: 80%) {
+@mixin max-width($max-width: 100%) {
 
   nav {
     max-width: $max-width;
+    border: $border;
   }
 
 }
