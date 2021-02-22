@@ -28,7 +28,7 @@ $brand-name: 'brand name' !default;
       min-height: $min-height;
       padding: $padding-x $padding-y;
       margin: 0 auto;
-      margin-bottom: 1rem;
+      margin-bottom: 0rem;
       border-bottom: #{if($max-width,  $border,'none')};
 
       @media (min-width: 960px) {

@@ -4,6 +4,7 @@ $display: flex;
 $align-items: center;
 $flex-direction: column;
 $justify-content: center;
+$border: 1px solid whitesmoke;
 
 // @imports
 
@@ -14,7 +15,7 @@ $justify-content: center;
   @if($renderContent) {
 
     #{if($className, $className, '.fp-header')},
-    header {
+    header[role="banner"] {
       @include header()
     }
   }
@@ -24,6 +25,8 @@ $justify-content: center;
 @mixin header {
   @include styles.flex-box();
   min-height: $height;
+  border-top: $border;
+  border-bottom: $border;
 
   >section,
   >[role=banner] {

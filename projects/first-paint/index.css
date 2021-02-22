@@ -108,7 +108,7 @@ nav {
   min-height: 3.5rem;
   padding: 0.5rem 0rem;
   margin: 0 auto;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
   border-bottom: none;
 }
 @media (min-width: 960px) {
@@ -283,17 +283,19 @@ nav [aria-label="brand name"] a {
 }
 
 .fp-header,
-header {
+header[role=banner] {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   min-height: 18.75rem;
+  border-top: 1px solid whitesmoke;
+  border-bottom: 1px solid whitesmoke;
 }
 .fp-header > section,
 .fp-header > [role=banner],
-header > section,
-header > [role=banner] {
+header[role=banner] > section,
+header[role=banner] > [role=banner] {
   text-align: center;
 }
 
@@ -502,7 +504,7 @@ form textarea[id],
 form select[id] {
   background-color: transparent;
   display: flex;
-  margin: 0.1rem 0 1rem;
+  margin: 0.5rem 0 1rem;
   padding: 0.5rem;
   width: 98%;
   border: 1px solid lightgray;
