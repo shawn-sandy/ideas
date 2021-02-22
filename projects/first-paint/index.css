@@ -321,7 +321,7 @@ main article + article {
 main article + aside,
 main section + aside {
   min-width: 25%;
-  padding: 1rem;
+  padding: 0 1rem;
   font-size: 0.95rem;
 }
 @media all and (min-width: 1280px) {
