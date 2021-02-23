@@ -45,7 +45,8 @@
     "build": "run-s clean:dist build:*",
     "build-parcel": "parcel build index.js --no-content-hash --out-dir dist",
     "clean": "trash www/**/*.*",
-    "clean:dist": "trash dist/**/*.*"
+    "clean:dist": "trash dist/**/*.*",
+    "preinstall": "npx npm-force-resolutions"
   },
   "bugs": {
     "url": "https://github.com/shawn-sandy/ideas/issues"
@@ -60,6 +61,9 @@
     "posthtml-include": "^1.6.0",
     "sass": "^1.32.6",
     "trash-cli": "^3.1.0"
+  },
+  "resolutions": {
+    "node-forge": "0.10.0"
   },
   "browserslist": [
     "> 0.2%",

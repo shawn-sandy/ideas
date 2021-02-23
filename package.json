@@ -25,7 +25,8 @@
     "first-paint": "lerna exec npm start --scope=@shawnsandy/first-paint",
     "build:first-paint": "lerna exec npm run build:scss --scope=@shawnsandy/first-paint",
     "publish-beta": "run-s build:* && lerna publish --dist-tag beta",
-    "publish-next": "run-s build:* && lerna publish --dist-tag next"
+    "publish-next": "run-s build:* && lerna publish --dist-tag next",
+    "preinstall": "npx npm-force-resolutions"
   },
   "directories": {
     "lib": "dist",
@@ -52,7 +53,7 @@
     "@11ty/eleventy-plugin-rss": "^1.1.0",
     "@fortawesome/fontawesome-free": "^5.15.2",
     "@shawnsandy/bootstrap-lite": "^0.1.12",
-    "@shawnsandy/first-paint": "^0.2.8",
+    "@shawnsandy/first-paint": "^0.8.1",
     "@shawnsandy/ideas": "^0.1.22",
     "@shawnsandy/mix": "^0.10.12",
     "auto-changelog": "^2.2.1",
@@ -87,5 +88,8 @@
     "sass": "^1.32.7",
     "style-dictionary": "^2.10.2",
     "trash-cli": "^4.0.0"
+  },
+  "resolutions": {
+    "node-forge": "0.10.0"
   }
 }

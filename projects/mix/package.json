@@ -38,7 +38,8 @@
     "clean:builds": "rm -rf dist",
     "test-tokens": "style-dictionary build --config ./config/config.js && gulp sass",
     "mix-tokens": "style-dictionary build --config ./config/mix-tokens.js && gulp sass",
-    "build": "npm run tokens && gulp sass"
+    "build": "npm run tokens && gulp sass",
+    "preinstall": "npx npm-force-resolutions"
   },
   "bugs": {
     "url": "https://github.com/shawn-sandy/ideas/issues"
@@ -59,5 +60,8 @@
     "parcel": "^1.12.4",
     "posthtml-include": "^1.6.0"
   },
-  "gitHead": "4577741794f126834eade633db5dd9e94cd6ec62"
+  "gitHead": "4577741794f126834eade633db5dd9e94cd6ec62",
+  "resolutions": {
+    "node-forge": "0.10.0"
+  }
 }
