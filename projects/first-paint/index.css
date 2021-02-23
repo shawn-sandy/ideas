@@ -601,7 +601,7 @@ form span [type=checkbox] {
 }
 
 img[alt] {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   display: flex;
   align-items: center;
@@ -611,7 +611,7 @@ img[alt] {
 .fp-picture,
 picture {
   display: flex;
-  width: 100%;
+  max-width: 100%;
   height: auto;
   align-items: center;
   justify-content: center;

@@ -6,7 +6,7 @@ $render: true !default;
   @if($renderComponent) {
 
     img[alt] {
-      width: 100%;
+      max-width: 100%;
       height: auto;
       display: flex;
       align-items: center;
@@ -23,7 +23,7 @@ $render: true !default;
 @mixin img() {
 
   display: flex;
-  width: 100%;
+  max-width: 100%;
   height: auto;
   align-items: center;
   justify-content: center;
