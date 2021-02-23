@@ -38,8 +38,7 @@
     "clean:builds": "rm -rf dist",
     "test-tokens": "style-dictionary build --config ./config/config.js && gulp sass",
     "mix-tokens": "style-dictionary build --config ./config/mix-tokens.js && gulp sass",
-    "build": "npm run tokens && gulp sass",
-    "preinstall": "npx npm-force-resolutions"
+    "build": "npm run tokens && gulp sass"
   },
   "bugs": {
     "url": "https://github.com/shawn-sandy/ideas/issues"

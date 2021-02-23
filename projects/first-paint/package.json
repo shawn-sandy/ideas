@@ -45,8 +45,7 @@
     "build": "run-s clean:dist build:*",
     "build-parcel": "parcel build index.js --no-content-hash --out-dir dist",
     "clean": "trash www/**/*.*",
-    "clean:dist": "trash dist/**/*.*",
-    "preinstall": "npx npm-force-resolutions"
+    "clean:dist": "trash dist/**/*.*"
   },
   "bugs": {
     "url": "https://github.com/shawn-sandy/ideas/issues"
