@@ -600,6 +600,14 @@ form span [type=checkbox] {
   display: none;
 }
 
+img[alt] {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
 .fp-picture,
 picture {
   display: flex;

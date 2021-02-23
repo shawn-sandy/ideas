@@ -5,6 +5,14 @@ $render: true !default;
 @mixin renderComponent($renderComponent: $render, $className: null) {
   @if($renderComponent) {
 
+    img[alt] {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
     #{$className, $className, '.fp-picture'},
     picture {
       @include img();
