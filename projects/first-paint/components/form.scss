@@ -6,20 +6,12 @@ $background-color: transparent !default;
 
     #{if($className, $className,'.fp-form')},
     form {
-      @include form-elements();
+      @include input();
     }
   }
 }
 
-@mixin form-elements {
-
-  >div {
-    +div {
-      margin-top: 1rem;
-    }
-
-  }
-
+@mixin input() {
   label[for] {
     em {
       font-style: normal;
@@ -58,6 +50,17 @@ $background-color: transparent !default;
       color: lightgrey;
     }
   }
+}
+
+@mixin elements {
+
+  >div {
+    +div {
+      margin-top: 1rem;
+    }
+
+  }
+
 
   select {
     -moz-appearance: none;

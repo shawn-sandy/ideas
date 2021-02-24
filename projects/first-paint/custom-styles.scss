@@ -4,4 +4,4 @@
 
 @include components.button-links();
 
-@include components.form-renderComponent($renderContent: true)
+@include components.form-elements()
