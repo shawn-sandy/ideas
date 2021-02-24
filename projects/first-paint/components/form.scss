@@ -1,7 +1,7 @@
 $render: true !default;
 $background-color: transparent !default;
 
-@mixin input($renderContent: $render, $className: null) {
+@mixin renderComponent($renderContent: $render, $className: null) {
   @if($renderContent) {
 
     #{if($className, $className,'.fp-form')},
@@ -139,4 +139,4 @@ $background-color: transparent !default;
 
 
 
-@include input()
+@include renderComponent()

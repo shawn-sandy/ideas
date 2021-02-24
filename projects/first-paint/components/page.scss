@@ -1,5 +1,4 @@
 $render: true !default;
-
 $background-color: #ffffff !default;
 $color: #000000 !default;
 $width: 90% !default;
@@ -53,6 +52,7 @@ sans-serif,
 
     body {
       background-color: $background-color;
+      color: lighten($color, 15%);
 
       >section,
       >main,
@@ -74,6 +74,18 @@ sans-serif,
 
       >footer {
         min-height: 200px;
+      }
+    }
+
+    a {
+      color: lighten($color, 15%);
+      text-decoration: none;
+
+      &:hover {
+
+        text-decoration: underline solid;
+        color: lighten($color, 30%);
+
       }
     }
   }

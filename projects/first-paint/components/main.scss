@@ -38,6 +38,12 @@ $min-height: 30rem !default;
     font-size: 0.95rem;
   }
 
+  footer {
+    font-size: .8rem;
+    padding: .7rem 0;
+    // border-top: solid 1px whitesmoke;
+  }
+
   @media all and (min-width: 1280px) {
     display: flex;
 

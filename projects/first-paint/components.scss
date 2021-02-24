@@ -1,4 +1,16 @@
 // @forward "@shawnsandy/mix/foundation.scss";
+$render-page: true;
+$render-type: true;
+$render-header: true;
+$render-nav: true;
+$render-main: true;
+$render-footer: true;
+$render-button: true;
+$render-form: true;
+$render-img: true;
+$render-list: true;
+$render-horizontal-rule: true;
+$render-grid: true;
 
 @forward './components/styles';
 

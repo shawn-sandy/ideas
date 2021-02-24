@@ -1,4 +1,7 @@
+// @use './components/form.scss';
 @use './components.scss';
 
-// @include components.page-renderComponent($renderContent: true)
-@include components.button-links()
+
+@include components.button-links();
+
+@include components.form-renderComponent($renderContent: true)
