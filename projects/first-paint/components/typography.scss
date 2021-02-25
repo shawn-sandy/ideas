@@ -22,16 +22,12 @@ sans-serif,
 
 @mixin mix-typography {
 
-  html,
-  body {
-    font-family: $font-family;
-  }
-
   h1,
   h2,
   h3,
   h4,
   h5,
+  h6,
   .fp-title {
     line-height: 1.5;
     color: inherit;
@@ -65,14 +61,26 @@ sans-serif,
     font-size: 1.4rem;
   }
 
+  h6,
+  .fp-h6 {
+    font-size: 9rem;
+  }
+
   small,
-  .text_small {
+  .fp-text_small {
     font-size: 0.75rem;
   }
 
   p,
   .fp-p {
+    margin: 0;
     line-height: 1.7;
+
+  }
+
+  p+p,
+  .fp-p+.fp-p {
+    margin-top: 2rem
   }
 
   @content;
