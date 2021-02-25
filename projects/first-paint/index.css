@@ -572,6 +572,10 @@ hr {
   margin: 2rem 0;
 }
 
+.fp-form > div + div,
+form > div + div {
+  margin-top: 1rem;
+}
 .fp-form label[for],
 form label[for] {
   font-size: 0.9rem;

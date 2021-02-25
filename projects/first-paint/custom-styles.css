@@ -48,10 +48,6 @@ a[role=button] > em:active, a[role=button] > em:hover, a[role=button] > em:focus
   background-color: #cbcbcb;
 }
 
-> div + div {
-  margin-top: 1rem;
-}
-
 select {
   -moz-appearance: none;
   -webkit-appearance: none;

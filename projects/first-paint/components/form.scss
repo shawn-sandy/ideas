@@ -12,6 +12,13 @@ $background-color: transparent !default;
 }
 
 @mixin input() {
+  >div {
+    +div {
+      margin-top: 1rem;
+    }
+
+  }
+
   label[for] {
     em {
       font-style: normal;
@@ -49,17 +56,12 @@ $background-color: transparent !default;
       font-style: italic;
       color: lightgrey;
     }
+
   }
 }
 
 @mixin elements {
 
-  >div {
-    +div {
-      margin-top: 1rem;
-    }
-
-  }
 
 
   select {
