@@ -34,7 +34,6 @@ $min-height: 30rem !default;
   section+aside {
     // width: 100%;
     min-width: 25%;
-    padding: 0 1rem 0 1.5rem;
     font-size: 0.95rem;
   }
 
@@ -59,6 +58,7 @@ $min-height: 30rem !default;
     aside+section,
     section+[role="complementary"],
     [role="complementary"]+section {
+      padding: 0 1rem 0 1.5rem;
       min-width: 25%;
       max-width: 25%;
     }
