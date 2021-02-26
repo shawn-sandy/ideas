@@ -36,6 +36,15 @@ sans-serif,
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       text-rendering: optimizeLegibility;
+      font-size: 80%;
+
+      @media (min-width: 980px) {
+        font-size: 100%;
+      }
+
+      @media (min-width: 1980px) {
+        font-size: 110%;
+      }
 
       * {
         outline: none;
@@ -63,13 +72,15 @@ sans-serif,
         max-width: $width;
         margin: $margin;
 
-        @media screen and (min-width: 1280px) {
+        @media (min-width: 980px) {
+
           max-width: $width-md;
           width: $width-md;
         }
 
-        @media screen and (min-width: 1980px) {
+        @media (min-width: 1980px) {
           max-width: $width-md;
+          font-size: 110%;
         }
       }
 

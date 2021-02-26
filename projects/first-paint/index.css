@@ -5,6 +5,17 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  font-size: 80%;
+}
+@media (min-width: 980px) {
+  html {
+    font-size: 100%;
+  }
+}
+@media (min-width: 1980px) {
+  html {
+    font-size: 110%;
+  }
 }
 html * {
   outline: none;
@@ -28,7 +39,7 @@ body > footer > section {
   max-width: 90%;
   margin: 0 auto;
 }
-@media screen and (min-width: 1280px) {
+@media (min-width: 980px) {
   body > section,
 body > main,
 body > header > section,
@@ -37,12 +48,13 @@ body > footer > section {
     width: 80%;
   }
 }
-@media screen and (min-width: 1980px) {
+@media (min-width: 1980px) {
   body > section,
 body > main,
 body > header > section,
 body > footer > section {
     max-width: 80%;
+    font-size: 110%;
   }
 }
 body > footer {
