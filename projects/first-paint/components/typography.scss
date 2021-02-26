@@ -67,8 +67,12 @@ sans-serif,
   }
 
   small,
-  .fp-text_small {
+  time {
     font-size: .8rem;
+  }
+
+  time {
+    padding: 0 .5rem;
   }
 
   p {

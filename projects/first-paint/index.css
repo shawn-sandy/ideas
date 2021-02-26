@@ -115,8 +115,12 @@ h6,
 }
 
 small,
-.fp-text_small {
+time {
   font-size: 0.8rem;
+}
+
+time {
+  padding: 0 0.5rem;
 }
 
 p {
