@@ -26,8 +26,11 @@ $min-height: 30rem !default;
     }
   }
 
-  article+article {
-    margin-top: 2rem;
+  article {
+
+    +article {
+      margin-top: 2rem;
+    }
   }
 
   article+aside,
