@@ -347,6 +347,7 @@ main section + aside {
 main footer {
   font-size: 0.8rem;
   padding: 0.7rem 0;
+  margin-top: 1rem;
 }
 @media all and (min-width: 1280px) {
   .fp-main,
@@ -387,7 +388,6 @@ footer[role=contentinfo] section {
 footer[role=contentinfo] section > aside,
 footer[role=contentinfo] section ul,
 footer[role=contentinfo] section ol {
-  padding: 1rem;
   flex: 1;
 }
 @media (min-width: 980px) {
@@ -396,6 +396,7 @@ footer[role=contentinfo] section {
     display: flex;
     align-items: stretch;
     align-content: stretch;
+    padding: 1rem;
   }
   .fp-footer section aside + aside,
 .fp-footer section ul + ul,
@@ -403,7 +404,7 @@ footer[role=contentinfo] section {
 footer[role=contentinfo] section aside + aside,
 footer[role=contentinfo] section ul + ul,
 footer[role=contentinfo] section ol + ol {
-    margin-left: 0.5rem;
+    margin-left: 1rem;
   }
 }
 

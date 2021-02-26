@@ -24,7 +24,7 @@ $background-color: whitesmoke;
     >aside,
     ul,
     ol {
-      padding: 1rem;
+
       flex: 1;
     }
 
@@ -33,11 +33,12 @@ $background-color: whitesmoke;
       display: flex;
       align-items: stretch;
       align-content: stretch;
+      padding: 1rem;
 
       aside+aside,
       ul+ul,
       ol+ol {
-        margin-left: .5rem;
+        margin-left: 1rem;
       }
     }
   }
