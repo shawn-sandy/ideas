@@ -107,14 +107,12 @@ small,
   font-size: 0.75rem;
 }
 
-p,
-.fp-p {
+p {
   margin: 0;
   line-height: 1.7;
 }
 
-p + p,
-.fp-p + .fp-p {
+p + p {
   margin-top: 2rem;
 }
 
@@ -144,10 +142,8 @@ section > nav {
   }
 }
 .fp-nav section,
-.fp-nav div,
 .fp-nav ul,
 nav section,
-nav div,
 nav ul {
   display: flex;
   min-height: 3.5rem;
@@ -158,29 +154,17 @@ nav ul {
 }
 .fp-nav section li,
 .fp-nav section a,
-.fp-nav section span,
-.fp-nav div li,
-.fp-nav div a,
-.fp-nav div span,
 .fp-nav ul li,
 .fp-nav ul a,
-.fp-nav ul span,
 nav section li,
 nav section a,
-nav section span,
-nav div li,
-nav div a,
-nav div span,
 nav ul li,
-nav ul a,
-nav ul span {
+nav ul a {
   margin-top: 1rem;
 }
 .fp-nav section li,
-.fp-nav div li,
 .fp-nav ul li,
 nav section li,
-nav div li,
 nav ul li {
   height: inherit;
   display: flex;
@@ -188,19 +172,15 @@ nav ul li {
   margin-top: 0;
 }
 .fp-nav section li + li,
-.fp-nav div li + li,
 .fp-nav ul li + li,
 nav section li + li,
-nav div li + li,
 nav ul li + li {
   margin-top: 0;
 }
 @media all and (min-width: 960px) {
   .fp-nav section,
-.fp-nav div,
 .fp-nav ul,
 nav section,
-nav div,
 nav ul {
     display: flex;
     align-items: center;
@@ -210,30 +190,18 @@ nav ul {
   }
   .fp-nav section li,
 .fp-nav section a,
-.fp-nav section span,
-.fp-nav div li,
-.fp-nav div a,
-.fp-nav div span,
 .fp-nav ul li,
 .fp-nav ul a,
-.fp-nav ul span,
 nav section li,
 nav section a,
-nav section span,
-nav div li,
-nav div a,
-nav div span,
 nav ul li,
-nav ul a,
-nav ul span {
+nav ul a {
     margin-top: 0;
   }
 }
 .fp-nav section img[alt],
-.fp-nav div img[alt],
 .fp-nav ul img[alt],
 nav section img[alt],
-nav div img[alt],
 nav ul img[alt] {
   display: inline-block;
   vertical-align: middle;
@@ -241,18 +209,14 @@ nav ul img[alt] {
   max-height: 2rem;
 }
 .fp-nav section img[alt] + *,
-.fp-nav div img[alt] + *,
 .fp-nav ul img[alt] + *,
 nav section img[alt] + *,
-nav div img[alt] + *,
 nav ul img[alt] + * {
   margin-left: 1rem;
 }
 .fp-nav section a,
-.fp-nav div a,
 .fp-nav ul a,
 nav section a,
-nav div a,
 nav ul a {
   padding: 0 0.5rem;
   font-size: 0.8rem;
@@ -260,14 +224,10 @@ nav ul a {
 }
 .fp-nav section button[type],
 .fp-nav section a[role=button],
-.fp-nav div button[type],
-.fp-nav div a[role=button],
 .fp-nav ul button[type],
 .fp-nav ul a[role=button],
 nav section button[type],
 nav section a[role=button],
-nav div button[type],
-nav div a[role=button],
 nav ul button[type],
 nav ul a[role=button] {
   margin-bottom: 0;

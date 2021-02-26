@@ -71,15 +71,13 @@ sans-serif,
     font-size: 0.75rem;
   }
 
-  p,
-  .fp-p {
+  p {
     margin: 0;
     line-height: 1.7;
 
   }
 
-  p+p,
-  .fp-p+.fp-p {
+  p+p {
     margin-top: 2rem
   }
 

@@ -44,7 +44,6 @@ $brand-name: 'brand name' !default;
       }
 
       section,
-      div,
       ul {
 
         display: flex;
@@ -55,8 +54,7 @@ $brand-name: 'brand name' !default;
         margin: 0;
 
         li,
-        a,
-        span {
+        a {
           margin-top: 1rem;
         }
 
@@ -82,8 +80,7 @@ $brand-name: 'brand name' !default;
           padding: 0 .5rem;
 
           li,
-          a,
-          span {
+          a {
             margin-top: 0;
           }
         }
