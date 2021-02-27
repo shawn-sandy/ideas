@@ -15,7 +15,7 @@ $border: 1px solid whitesmoke;
   @if($renderContent) {
 
     #{if($className, $className, '.fp-header')},
-    header[role="banner"] {
+    header [role="banner"] {
       @include header()
     }
   }
@@ -29,7 +29,8 @@ $border: 1px solid whitesmoke;
   border-bottom: $border;
 
   >section,
-  >[role=banner] {
+  >div,
+  aside {
     text-align: center;
   }
 }

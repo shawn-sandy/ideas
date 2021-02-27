@@ -33,7 +33,6 @@ body {
 }
 body > section,
 body > main,
-body > header > section,
 body > footer > section {
   padding: 1rem;
   max-width: 90%;
@@ -42,7 +41,6 @@ body > footer > section {
 @media (min-width: 980px) {
   body > section,
 body > main,
-body > header > section,
 body > footer > section {
     max-width: 80%;
     width: 80%;
@@ -51,7 +49,6 @@ body > footer > section {
 @media (min-width: 1980px) {
   body > section,
 body > main,
-body > header > section,
 body > footer > section {
     max-width: 80%;
     font-size: 110%;
@@ -277,7 +274,7 @@ nav [aria-label="brand name"] a {
 }
 
 .fp-header,
-header[role=banner] {
+header [role=banner] {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -287,9 +284,11 @@ header[role=banner] {
   border-bottom: 1px solid whitesmoke;
 }
 .fp-header > section,
-.fp-header > [role=banner],
-header[role=banner] > section,
-header[role=banner] > [role=banner] {
+.fp-header > div,
+.fp-header aside,
+header [role=banner] > section,
+header [role=banner] > div,
+header [role=banner] aside {
   text-align: center;
 }
 
