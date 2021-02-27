@@ -84,6 +84,11 @@ sans-serif,
         }
       }
 
+      >section[role=region] {
+        width: 100%;
+        max-width: 100%;
+      }
+
       >footer {
         min-height: 200px;
       }

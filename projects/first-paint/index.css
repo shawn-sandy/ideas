@@ -57,6 +57,10 @@ body > footer > section {
     font-size: 110%;
   }
 }
+body > section[role=region] {
+  width: 100%;
+  max-width: 100%;
+}
 body > footer {
   min-height: 200px;
 }
