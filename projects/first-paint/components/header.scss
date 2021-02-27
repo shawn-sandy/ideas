@@ -1,9 +1,10 @@
-$render: true;
-$height: 250rem / 16;
+$render: true !default;
+$height: 400rem / 16;
 $display: flex;
 $align-items: center;
 $flex-direction: column;
 $justify-content: center;
+$border: 1px solid whitesmoke;
 
 // @imports
 
@@ -13,7 +14,8 @@ $justify-content: center;
 
   @if($renderContent) {
 
-    #{if($className, $className, 'header, .fp-header')} {
+    #{if($className, $className, '.fp-header')},
+    header [role="banner"] {
       @include header()
     }
   }
@@ -23,9 +25,12 @@ $justify-content: center;
 @mixin header {
   @include styles.flex-box();
   min-height: $height;
+  border-top: $border;
+  border-bottom: $border;
 
   >section,
-  >[role=banner] {
+  >div,
+  aside {
     text-align: center;
   }
 }

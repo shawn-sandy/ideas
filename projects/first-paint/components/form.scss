@@ -1,15 +1,23 @@
 $render: true !default;
 $background-color: transparent !default;
 
-@mixin input($renderContent: true, $className: null) {
+@mixin renderComponent($renderContent: $render, $className: null) {
   @if($renderContent) {
-    #{if($className, $className,'form, .fp-form')} {
-      @include form-elements();
+
+    #{if($className, $className,'.fp-form')},
+    form {
+      @include input();
     }
   }
 }
 
-@mixin form-elements {
+@mixin input() {
+  >div {
+    +div {
+      margin-top: 1rem;
+    }
+
+  }
 
   label[for] {
     em {
@@ -31,12 +39,12 @@ $background-color: transparent !default;
   select[id] {
     background-color: $background-color;
     display: flex;
-    margin: 0.1rem 0 1rem;
-    padding: 0.5rem 0;
-    font-size: 0.9rem;
-    width: 100%;
-    border: 1px solid gray;
-    border-radius: 2px;
+    margin: 0.5rem 0 1rem;
+    padding: 0.5rem;
+    // font-size: 0.9rem;
+    width: 98%;
+    border: 1px solid lightgray;
+    border-radius: .1rem;
 
     &:focus,
     &:focus-within {
@@ -48,7 +56,13 @@ $background-color: transparent !default;
       font-style: italic;
       color: lightgrey;
     }
+
   }
+}
+
+@mixin elements {
+
+
 
   select {
     -moz-appearance: none;
@@ -64,64 +78,70 @@ $background-color: transparent !default;
   textarea {
     min-height: 150px;
   }
-}
 
-// label[for*="email"]::before {
-//   content: "\0040";
-// }
+  // label[for*="email"]::before {
+  //   content: "\0040";
+  // }
 
-span {
-  // position: relative;
+  span {
+    // position: relative;
 
-  >*+* {
-    margin-left: 0.3rem;
-  }
+    >*+* {
+      margin-left: 0.3rem;
+    }
 
-  >label[for] {
-    display: inline-flex;
-    align-items: center;
-    margin-left: 0.5rem;
-    cursor: pointer;
-
-    &::before {
-      content: "";
+    >label[for] {
       display: inline-flex;
-      width: 1rem;
-      height: 1rem;
-      background-color: transparent;
-      border: solid 2px lightgrey;
-      border-radius: 3px;
-      margin-right: 0.5rem;
+      align-items: center;
+      margin-left: 0.5rem;
+      cursor: pointer;
+
+      &::before {
+        content: "";
+        display: inline-flex;
+        width: 1rem;
+        height: 1rem;
+        background-color: transparent;
+        border: solid 2px lightgrey;
+        border-radius: 3px;
+        margin-right: 0.5rem;
+      }
     }
-  }
 
-  >[type="checkbox"]:checked+label[for],
-  [type="radio"]:checked+label[for] {
-    &::before {
-      background-color: gray;
+
+    >[type="checkbox"]:checked+label[for],
+    [type="radio"]:checked+label[for] {
+      &::before {
+        background-color: gray;
+      }
     }
-  }
 
-  >[type="checkbox"],
-  >[type="radio"] {
-    width: 1px;
-    height: 1px;
-    opacity: 0;
-    display: inline-flex;
-    margin: 0;
-    padding: 0;
-  }
+    >[type="checkbox"],
+    >[type="radio"] {
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+      display: inline-flex;
+      margin: 0;
+      padding: 0;
+    }
 
-  >[type="radio"] {
-    display: block;
-  }
+    >[type="radio"] {
+      display: block;
+    }
 
-  >[type="radio"]+label {
-    &::before {
-      border-radius: 50%;
+    >[type="radio"]+label {
+      &::before {
+        border-radius: 50%;
+      }
+    }
+
+    [type="checkbox"] {
+      display: none;
     }
   }
 }
 
 
-@include input()
+
+@include renderComponent()

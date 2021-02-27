@@ -1,38 +1,34 @@
 $render: true !default;
 
-@mixin list($renderContent: true, $className: null) {
+@mixin list($renderContent: $render, $className: null) {
   @if($renderContent) {
 
-    @if($className) {
-      .#{$className} {
-        @include mix-list();
+    #{if($className, $className, '.fp-list')} ol,
+    ul,
+    dl {
+
+      padding-left: 1rem;
+
+
+      >*+* {
+        margin-top: 0.5rem;
+      }
+
+      >* {
+        line-height: 1.5;
       }
 
     }
 
-    @else {
-      @include mix-list();
-    }
+    @include mix-list();
   }
 }
 
 
 @mixin mix-list() {
 
-  ol,
-  ul,
-  dl {
-    // margin-left: 0rem;
-    padding-left: 1rem;
 
-    >*+* {
-      margin-top: 0.5rem;
-    }
 
-    >* {
-      line-height: 1.5;
-    }
-  }
 
   span {
 

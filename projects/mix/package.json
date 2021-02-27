@@ -1,6 +1,6 @@
 {
   "name": "@shawnsandy/mix",
-  "version": "0.10.12",
+  "version": "0.10.14",
   "description": "AtomMix--A toolkit for generating utility classes, components and styles-sheets for your design system, style-guide or website from SASS MAPS",
   "keywords": [
     "SASS",
@@ -59,5 +59,8 @@
     "parcel": "^1.12.4",
     "posthtml-include": "^1.6.0"
   },
-  "gitHead": "4577741794f126834eade633db5dd9e94cd6ec62"
+  "gitHead": "4577741794f126834eade633db5dd9e94cd6ec62",
+  "resolutions": {
+    "node-forge": "0.10.0"
+  }
 }

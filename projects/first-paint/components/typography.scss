@@ -14,7 +14,7 @@ sans-serif,
 "Noto Color Emoji" !default;
 
 
-@mixin typography($renderContent: true, $className: null) {
+@mixin typography($renderContent: $render) {
   @if($renderContent) {
     @include mix-typography();
   }
@@ -22,16 +22,13 @@ sans-serif,
 
 @mixin mix-typography {
 
-  html,
-  body {
-    font-family: $font-family;
-  }
-
   h1,
   h2,
   h3,
   h4,
-  h5 {
+  h5,
+  h6,
+  .fp-title {
     line-height: 1.5;
     color: inherit;
     margin: 0rem 0 1.05rem;
@@ -64,14 +61,28 @@ sans-serif,
     font-size: 1.4rem;
   }
 
-  small,
-  .text_small {
-    font-size: 0.75rem;
+  h6,
+  .fp-h6 {
+    font-size: 9rem;
   }
 
-  p,
-  .fp-p {
+  small,
+  time {
+    font-size: .8rem;
+  }
+
+  time {
+    padding: 0 .5rem;
+  }
+
+  p {
+    margin: 0;
     line-height: 1.7;
+
+  }
+
+  p+p {
+    margin-top: 2rem
   }
 
   @content;

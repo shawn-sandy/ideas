@@ -1,3 +1,4 @@
+$render: true !default;
 $background-color: #ffffff !default;
 $color: #000000 !default;
 $width: 90% !default;
@@ -21,35 +22,87 @@ sans-serif,
 "Segoe UI Symbol",
 "Noto Color Emoji" !default;
 
-html {
-
-  scroll-behavior: smooth;
-
-  * {
-    outline: none;
-  }
-
-}
+// set variables
 
 
-body {
-  background-color: $background-color;
+// render component mixin
 
-  >section,
-  >main,
-  >header>section,
-  >footer>section {
-    padding: $padding;
-    max-width: $width;
-    margin: $margin;
+@mixin renderComponent($renderContent: $render, $className: null) {
+  @if($renderContent) {
+    html {
 
-    @media screen and (min-width: 1280px) {
-      max-width: $width-md-max;
-      width: $width-md;
+      scroll-behavior: smooth;
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+      font-size: 80%;
+
+      @media (min-width: 980px) {
+        font-size: 100%;
+      }
+
+      @media (min-width: 1980px) {
+        font-size: 110%;
+      }
+
+      * {
+        outline: none;
+      }
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
     }
 
-    @media screen and (min-width: 1980px) {
-      max-width: $width-lg-max;
+
+    body {
+      font-family: $font-family;
+      background-color: $background-color;
+      color: lighten($color, 15%);
+
+      >section,
+      >main,
+      >footer>section {
+        padding: $padding;
+        max-width: $width;
+        margin: $margin;
+
+        @media (min-width: 980px) {
+
+          max-width: $width-md;
+          width: $width-md;
+        }
+
+        @media (min-width: 1980px) {
+          max-width: $width-md;
+          font-size: 110%;
+        }
+      }
+
+      >footer {
+        min-height: 200px;
+      }
     }
+
+    a {
+      color: lighten($color, 25%);
+      text-decoration: none;
+
+      &:hover {
+
+        text-decoration: underline solid;
+        color: lighten($color, 30%);
+
+      }
+    }
+
   }
 }
+
+// include render component
+
+@include renderComponent();

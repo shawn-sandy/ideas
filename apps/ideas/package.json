@@ -1,6 +1,6 @@
 {
   "name": "@shawnsandy/ideas",
-  "version": "0.1.22",
+  "version": "0.1.24",
   "description": "Eleventy toolkit",
   "keywords": [
     "design",
@@ -46,6 +46,7 @@
     "gulp-rename": "^2.0.0",
     "gulp-sizereport": "^1.2.1",
     "gulp-sourcemaps": "^2.6.5",
+    "marked": "^2.0.0",
     "parcel": "^1.12.4",
     "snowpack": "^2.18.5"
   },
@@ -53,7 +54,7 @@
   "dependencies": {
     "flat-cache": "^2.0.1",
     "lodash": "^4.17.20",
-    "marked": "^1.2.8",
+    "marked": "^2.0.0",
     "node-fetch": "^2.6.1",
     "npm-run-all": "^4.1.5",
     "parcel": "^1.12.4",

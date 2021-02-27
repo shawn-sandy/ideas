@@ -2,9 +2,19 @@
 
 $render: true !default;
 
-@mixin renderComponent($renderComponent: true, $className: null) {
+@mixin renderComponent($renderComponent: $render, $className: null) {
   @if($renderComponent) {
-    #{$className, $className, 'picture, .fp-picture'} {
+
+    img[alt] {
+      max-width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    #{$className, $className, '.fp-picture'},
+    picture {
       @include img();
     }
   }
@@ -13,7 +23,7 @@ $render: true !default;
 @mixin img() {
 
   display: flex;
-  width: 100%;
+  max-width: 100%;
   height: auto;
   align-items: center;
   justify-content: center;

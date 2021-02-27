@@ -3,15 +3,16 @@
 
 $render: true !default;
 $color: null !default;
+$border: whitesmoke 1px solid !default;
 $background-color: null !default;
-$min-height: null !default;
 $min-height: 3.5rem !default;
+$max-width: null !default;
 $padding: .5rem !default;
 $padding-x: .5rem !default;
-$padding-y: .5rem !default;
+$padding-y: 0rem !default;
 $padding-items: 0 1rem;
 $title-font-size: 1.5rem !default;
-$brand-img-height: 3rem !default;
+$brand-img-height: null !default;
 $align-items: center !default;
 $justify-content: space-between !default;
 $brand-name: 'brand name' !default;
@@ -26,44 +27,87 @@ $brand-name: 'brand name' !default;
       justify-content: $justify-content;
       min-height: $min-height;
       padding: $padding-x $padding-y;
-      margin-bottom: 1rem;
+      margin: 0 auto;
+      margin-bottom: 0rem;
+      border-bottom: #{if($max-width,  $border,'none')};
 
-      @media (min-width: 980px) {
+      @media (min-width: 960px) {
         display: flex;
         margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        max-width: $max-width or 80%;
+
+        section>& {
+          border: $border;
+        }
       }
 
       section,
-      div,
       ul {
 
-        display: block;
-        height: 100%;
-        text-align: center;
+        display: flex;
+        min-height: $min-height;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0;
 
         li,
-        a,
-        span {
-          margin-bottom: .5rem;
+        a {
+          margin-top: 1rem;
         }
 
-        margin-bottom: .5rem;
-
-        @media all and (min-width: 960px) {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-        }
+        // margin-bottom: .5rem;
 
         li {
           height: inherit;
           display: flex;
           align-items: center;
+          margin-top: 0;
+          // padding: 0 .3rem;
 
           &+li {
             margin-top: 0;
           }
         }
+
+        @media all and (min-width: 960px) {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 0;
+          padding: 0 .5rem;
+
+          li,
+          a {
+            margin-top: 0;
+          }
+        }
+
+        img[alt] {
+          display: inline-block;
+          vertical-align: middle;
+          height: $brand-img-height or 2rem;
+          max-height: $brand-img-height or 2rem;
+          ;
+
+          +* {
+            margin-left: 1rem;
+          }
+        }
+
+        a {
+          padding: 0 .5rem;
+          font-size: .8rem;
+          text-decoration: none;
+        }
+
+        button[type],
+        a[role=button] {
+          margin-bottom: 0;
+        }
+
       }
 
       h1,
@@ -75,36 +119,29 @@ $brand-name: 'brand name' !default;
         line-height: normal;
         font-size: $title-font-size;
 
-        @media (min-width: 980px) {
+        @media (min-width: 960px) {
           display: flex;
           align-items: center;
         }
 
         a {
           font-size: $title-font-size;
+          padding: 0;
         }
 
       }
 
-      img {
-        display: inline-block;
-        vertical-align: middle;
-        height: $brand-img-height;
-        max-height: $brand-img-height;
-        margin-right: 1rem;
-      }
-
-      a {
-        padding: 0 1rem;
-        font-size: .8rem;
-      }
-
-      button[type] {
-        margin-bottom: 0;
-      }
-
     }
   }
+}
+
+@mixin max-width($max-width: 100%) {
+
+  nav {
+    max-width: $max-width;
+    border: $border;
+  }
+
 }
 
 @include renderComponent();

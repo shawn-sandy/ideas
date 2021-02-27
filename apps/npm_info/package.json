@@ -1,6 +1,6 @@
 {
   "name": "@shawnsandy/npm_info",
-  "version": "0.5.12",
+  "version": "0.5.13",
   "description": "Eleventy filter that grabs and returns npm package details",
   "keywords": [
     "npm",
@@ -42,7 +42,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "parcel": "^1.12.4",
     "snowpack": "^1.4.0"
   },

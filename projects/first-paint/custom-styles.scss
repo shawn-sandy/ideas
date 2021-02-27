@@ -1,5 +1,7 @@
-@use './components/button.scss'as btn with($render: false);
+// @use './components/form.scss';
+@use './components.scss';
 
-// include the buttons
 
-@include btn.links();
+@include components.button-links();
+
+@include components.form-elements()

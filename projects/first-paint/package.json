@@ -1,6 +1,6 @@
 {
   "name": "@shawnsandy/first-paint",
-  "version": "0.3.1",
+  "version": "0.9.5",
   "description": "First Paint is an easy to use CSS/SCSS starter library that contains accessibility focused, classless, semantic HTML elements and components for quickly scaffolding/building modern, lightweight mobile friendly websites.",
   "keywords": [
     "CSS",
@@ -24,7 +24,8 @@
     "dist",
     "tokens",
     "index.css",
-    "/**/*.scss"
+    "/**/*.scss",
+    "/**/*.map"
   ],
   "publishConfig": {
     "access": "public"
@@ -36,13 +37,14 @@
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
     "start": "run-s clean && run-p parcel watch",
-    "watch": "run-s watch:*",
-    "watch:index": "sass index.scss:index.css custom-styles.scss:custom-styles.css --load-path=node_modules --watch --no-source-map",
+    "watch": "run-p watch:*",
+    "watch:index": "sass index.scss:index.css custom-styles.scss:custom-styles.css custom.scss:custom.css --load-path=node_modules --watch --no-source-map",
     "watch:scss": "sass --style compressed components:dist/css/. index.scss:dist/css/index.css --load-path=node_modules --color",
     "build:scss": "sass --style compressed components:dist/css/. index.scss:dist/css/index.css custom-styles.scss:dist/css/custom-styles.css --load-path=node_modules --color",
     "parcel": "parcel serve index.html index.css --hmr-port --out-dir www --open",
+    "build:css": "postcss ./dist/css/*.css -d ./dist/css/ --ext min.css",
     "build": "run-s clean:dist build:*",
-    "build:parcel": "parcel build index.js --no-content-hash --out-dir dist",
+    "build-parcel": "parcel build index.js --no-content-hash --out-dir dist",
     "clean": "trash www/**/*.*",
     "clean:dist": "trash dist/**/*.*"
   },
@@ -50,15 +52,20 @@
     "url": "https://github.com/shawn-sandy/ideas/issues"
   },
   "devDependencies": {
-    "@shawnsandy/mix": "^0.10.12",
+    "@shawnsandy/mix": "^0.10.14",
     "autoprefixer": "^10.2.4",
+    "cssnano": "^4.1.10",
     "npm-run-all": "^4.1.5",
     "parcel": "^1.12.4",
     "postcss": "^8.2.4",
+    "postcss-cli": "^8.3.1",
     "postcss-modules": "^4.0.0",
     "posthtml-include": "^1.6.0",
     "sass": "^1.32.6",
     "trash-cli": "^3.1.0"
+  },
+  "resolutions": {
+    "node-forge": "0.10.0"
   },
   "browserslist": [
     "> 0.2%",

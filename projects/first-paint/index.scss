@@ -1,5 +1,6 @@
 // @use "@shawnsandy/mix/foundation.scss";
 
+
 @use './components/styles';
 
 @use './components/page.scss';
@@ -12,7 +13,7 @@
 
 @use './components/header.scss';
 
-@use './components/main-layout.scss';
+@use './components/main.scss';
 
 @use './components/footer.scss';
 
@@ -20,10 +21,14 @@
 
 @use './components/button.scss';
 
-@use './components/form.scss';
 
 @use './components/img.scss';
 
 @use './components/list.scss';
 
 @use './components/horizontal-rule.scss';
+
+@use './components/form.scss';
+
+// set max width on nav
+// @include nav.max-width();
