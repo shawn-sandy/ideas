@@ -15,7 +15,7 @@ $border: 1px solid whitesmoke;
   @if($renderContent) {
 
     #{if($className, $className, '.fp-header')},
-    header [role="banner"] {
+    header>[role="banner"] {
       @include header()
     }
   }
@@ -27,6 +27,8 @@ $border: 1px solid whitesmoke;
   min-height: $height;
   border-top: $border;
   border-bottom: $border;
+  width: 100%;
+  max-width: 100%;
 
   >section,
   >div,
