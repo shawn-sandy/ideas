@@ -38,13 +38,9 @@ $brand-name: 'brand name' !default;
         padding-bottom: 0;
         max-width: $max-width or 80%;
 
-        section>& {
-          border: $border;
-        }
       }
 
-      section,
-      ul {
+      section {
 
         display: flex;
         min-height: $min-height;
@@ -106,6 +102,15 @@ $brand-name: 'brand name' !default;
         button[type],
         a[role=button] {
           margin-bottom: 0;
+        }
+
+        ul {
+          display: flex;
+          min-height: $min-height;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+          margin: 0;
         }
 
       }

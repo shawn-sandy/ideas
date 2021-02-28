@@ -55,7 +55,6 @@ $cursor: pointer !default;
     border: $border-transparent;
   }
 
-  &[type],
   &[type=reset],
   &[type=button],
   &[type=submit] {
@@ -103,7 +102,6 @@ $cursor: pointer !default;
 
         &:hover {
           background-color: darken($background-color-hover, 10);
-
         }
       }
 

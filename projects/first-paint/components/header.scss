@@ -25,15 +25,18 @@ $border: 1px solid whitesmoke;
 @mixin header {
   @include styles.flex-box();
   min-height: $height;
-  border-top: $border;
-  border-bottom: $border;
-  width: 100%;
-  max-width: 100%;
 
   >section,
   >div,
   aside {
     text-align: center;
+  }
+}
+
+@mixin addBorders() {
+  header {
+    border-top: $border;
+    border-bottom: $border;
   }
 }
 
