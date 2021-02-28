@@ -1,5 +1,4 @@
 // set variables
-
 $render: true !default; // add component to stylesheet
 $border: 1px solid whitesmoke !default;
 $margin: 2rem 0 !default;
@@ -18,7 +17,6 @@ $margin: 2rem 0 !default;
 
 // include render component
 @mixin hr {
-  display: block;
   border: none;
   background-color: transparent;
   border-top: $border;
