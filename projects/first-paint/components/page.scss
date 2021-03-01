@@ -64,10 +64,10 @@ sans-serif,
       background-color: $background-color;
       color: lighten($color, 15%);
 
-      >section,
-      >main,
-      >header>section,
-      >footer>section {
+      &>section,
+      &>main,
+      &>header>section,
+      &>footer>section {
         padding: $padding;
         max-width: $width;
         margin: $margin;
@@ -89,9 +89,6 @@ sans-serif,
         max-width: 100%;
       }
 
-      >footer {
-        min-height: 200px;
-      }
     }
 
     a {
