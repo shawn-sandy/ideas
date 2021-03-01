@@ -28,8 +28,7 @@ $cursor: pointer !default;
   @if $renderComponent {
 
     #{if($className, $className, '.fp-button')},
-    button[type],
-    a[role=button] {
+    button[type] {
       @include button();
     }
 
@@ -79,6 +78,7 @@ $cursor: pointer !default;
   .fp-button-link {
 
     &[role=button] {
+      display: inline-flex;
       text-decoration: none;
       background-color: $background-color;
       border: none;
@@ -88,7 +88,6 @@ $cursor: pointer !default;
       &:active,
       &:focus {
         border: none;
-
       }
 
       >span,

@@ -389,8 +389,7 @@ section [role=list] [role=listitem] {
 }
 
 .fp-button,
-button[type],
-a[role=button] {
+button[type] {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -408,19 +407,13 @@ a[role=button] {
 .fp-button:hover, .fp-button:active, .fp-button:focus,
 button[type]:hover,
 button[type]:active,
-button[type]:focus,
-a[role=button]:hover,
-a[role=button]:active,
-a[role=button]:focus {
+button[type]:focus {
   border: 1px transparent solid;
 }
 .fp-button[type=reset], .fp-button[type=button], .fp-button[type=submit],
 button[type][type=reset],
 button[type][type=button],
-button[type][type=submit],
-a[role=button][type=reset],
-a[role=button][type=button],
-a[role=button][type=submit] {
+button[type][type=submit] {
   padding: 0.6rem 1.5rem;
   border: 1px solid #e4e4e4;
 }
@@ -433,16 +426,7 @@ button[type][type=button]:active,
 button[type][type=button]:focus,
 button[type][type=submit]:hover,
 button[type][type=submit]:active,
-button[type][type=submit]:focus,
-a[role=button][type=reset]:hover,
-a[role=button][type=reset]:active,
-a[role=button][type=reset]:focus,
-a[role=button][type=button]:hover,
-a[role=button][type=button]:active,
-a[role=button][type=button]:focus,
-a[role=button][type=submit]:hover,
-a[role=button][type=submit]:active,
-a[role=button][type=submit]:focus {
+button[type][type=submit]:focus {
   background-color: transparent;
   background-color: #cbcbcb;
   border: 1px solid #e4e4e4;
@@ -451,9 +435,24 @@ a[role=button][type=submit]:focus {
 img[alt] {
   max-width: 100%;
   height: auto;
-  display: flex;
+}
+img[alt]::after {
+  min-height: 48px;
+  height: 100%;
+  width: 100%;
+  content: "✖" " " attr(alt);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-flex;
   align-items: center;
-  position: relative;
+  justify-content: center;
+  background-color: whitesmoke;
+  border-radius: 0.1rem;
+  color: gray;
+  background-repeat: no-repeat;
+  text-transform: uppercase;
+  border: 1px solid lightgray;
 }
 
 .fp-picture,
@@ -470,28 +469,7 @@ picture {
 picture > img[alt] {
   width: 100%;
   height: auto;
-  display: flex;
-  align-items: center;
   position: relative;
-}
-.fp-picture > img[alt]::after,
-picture > img[alt]::after {
-  min-height: 48px;
-  height: 100%;
-  width: 100%;
-  content: "✖" " " attr(alt);
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: lightgrey;
-  border-radius: 0.1rem;
-  color: darkgray;
-  background-repeat: no-repeat;
-  text-transform: uppercase;
-  border: 2px solid darkgray;
 }
 
 .fp-list ol,
