@@ -1,0 +1,19 @@
+// set variables
+
+$render: true !default;
+
+
+// render component mixin
+
+@mixin renderComponent($renderContent: true, $className: null) {
+  @if($renderContent) {
+    @include elements();
+  }
+}
+
+
+@mixin elements {}
+
+// include render component
+
+@include renderComponent();
