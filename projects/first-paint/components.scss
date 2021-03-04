@@ -34,7 +34,7 @@ $render-grid: false !default;
 
 @forward './components/img.scss'as img-* with($render: $render-img);
 
-@forward './components/list.scss'as lsit-* with($render: $render-list);
+@forward './components/list.scss'as list-* with($render: $render-list);
 
 @forward './components/hr.scss'as hr-* with($render: $render-hr);
 
