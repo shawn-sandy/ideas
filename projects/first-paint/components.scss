@@ -37,3 +37,5 @@ $render-grid: false !default;
 @forward './components/list.scss'as lsit-* with($render: $render-list);
 
 @forward './components/hr.scss'as hr-* with($render: $render-hr);
+
+@forward './components/scrollbar.scss'as scrollbar-*;
