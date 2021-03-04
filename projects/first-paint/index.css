@@ -243,10 +243,6 @@ nav [aria-label="brand name"] a {
   padding: 0;
 }
 
-header {
-  background-color: whitesmoke;
-}
-
 .fp-header,
 header > [role=banner] {
   display: flex;

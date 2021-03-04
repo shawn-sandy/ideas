@@ -16,7 +16,7 @@ $background-color: null !default;
   @if($renderContent) {
 
     header {
-      background-color: whitesmoke;
+      background-color: $background-color;
 
     }
 
@@ -27,6 +27,7 @@ $background-color: null !default;
   }
 
 }
+
 
 @mixin header {
   @include styles.flex-box();
