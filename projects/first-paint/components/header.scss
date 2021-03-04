@@ -1,10 +1,11 @@
 $render: true !default;
-$height: 400rem / 16;
-$display: flex;
-$align-items: center;
-$flex-direction: column;
-$justify-content: center;
-$border: 1px solid whitesmoke;
+$height: 400rem / 16 !default;
+$display: flex !default;
+$align-items: center !default;
+$flex-direction: column !default;
+$justify-content: center !default;
+$border: 1px solid whitesmoke !default;
+$background-color: null !default;
 
 // @imports
 
