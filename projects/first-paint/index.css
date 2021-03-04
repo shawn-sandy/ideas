@@ -48,18 +48,9 @@ body > section, body > main, body > header > section, body > footer > section {
     font-size: 110%;
   }
 }
-body > section[role=region] {
+body > [role=region][aria-label] {
   width: 100%;
   max-width: 100%;
-}
-
-a {
-  color: #404040;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline solid;
-  color: #4d4d4d;
 }
 
 h1,
@@ -115,6 +106,18 @@ p {
 
 p + p {
   margin-top: 2rem;
+}
+
+code {
+  color: #d63384;
+}
+
+a {
+  color: #0d6efd;
+}
+a:hover, a:active, a:visited {
+  text-decoration: none;
+  color: #012e70;
 }
 
 .fp-nav,
@@ -328,11 +331,9 @@ footer[role=contentinfo] section {
   display: block;
 }
 .fp-footer section > aside,
-.fp-footer section ul,
-.fp-footer section ol,
+.fp-footer section > ul,
 footer[role=contentinfo] section > aside,
-footer[role=contentinfo] section ul,
-footer[role=contentinfo] section ol {
+footer[role=contentinfo] section > ul {
   flex: 1;
 }
 @media (min-width: 980px) {
@@ -345,10 +346,8 @@ footer[role=contentinfo] section {
   }
   .fp-footer section aside + aside,
 .fp-footer section ul + ul,
-.fp-footer section ol + ol,
 footer[role=contentinfo] section aside + aside,
-footer[role=contentinfo] section ul + ul,
-footer[role=contentinfo] section ol + ol {
+footer[role=contentinfo] section ul + ul {
     margin-left: 1rem;
   }
 }

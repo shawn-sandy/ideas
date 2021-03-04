@@ -12,7 +12,26 @@ $render: true !default;
 }
 
 
-@mixin elements {}
+@mixin elements {
+  code {
+    color: #d63384;
+  }
+
+  a {
+    // #0d6efd
+    color: #0d6efd;
+
+
+    &:hover,
+    &:active,
+    &:visited {
+
+      text-decoration: none;
+      color: darken(#0d6efd, 30%);
+
+    }
+  }
+}
 
 // include render component
 

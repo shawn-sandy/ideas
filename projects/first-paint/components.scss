@@ -1,39 +1,39 @@
 // @forward "@shawnsandy/mix/foundation.scss";
-$render-page: true;
-$render-type: true;
-$render-header: true;
-$render-nav: true;
-$render-main: true;
-$render-footer: true;
-$render-button: true;
-$render-form: true;
-$render-img: true;
-$render-list: true;
-$render-horizontal-rule: true;
-$render-grid: true;
+$render-page: false !default;
+$render-type: false !default;
+$render-header: false !default;
+$render-nav: false !default;
+$render-main: false !default;
+$render-footer: false !default;
+$render-button: false !default;
+$render-form: false !default;
+$render-img: false !default;
+$render-list: false !default;
+$render-hr: false !default;
+$render-grid: false !default;
 
 @forward './components/styles';
 
-@forward './components/page.scss'as page-* with($render: false);
+@forward './components/page.scss'as page-* with($render: $render-page);
 
-@forward './components/typography.scss'as type-* with($render: false);
+@forward './components/type.scss'as type-* with($render: $render-type);
 
-@forward './components/nav.scss'as nav-* with($render: false);
+@forward './components/nav.scss'as nav-* with($render: $render-nav);
 
-@forward './components/header.scss'as header-* with($render: false);
+@forward './components/header.scss'as header-* with($render: $render-header);
 
-@forward './components/main.scss'as main-* with($render: false);
+@forward './components/main.scss'as main-* with($render: $render-main);
 
-@forward './components/footer.scss'as footer-* with($render: false);
+@forward './components/footer.scss'as footer-* with($render: $render-footer);
 
-@forward './components/grid.scss'as grid-* with($render: false);
+@forward './components/grid.scss'as grid-* with($render: $render-grid);
 
-@forward './components/button.scss'as button-* with($render: false);
+@forward './components/button.scss'as button-* with($render: $render-button);
 
-@forward './components/form.scss'as form-* with($render: false);
+@forward './components/form.scss'as form-* with($render: $render-form);
 
-@forward './components/img.scss'as img-* with($render: false);
+@forward './components/img.scss'as img-* with($render: $render-img);
 
-@forward './components/list.scss'as lsit-* with($render: false);
+@forward './components/list.scss'as lsit-* with($render: $render-list);
 
-@forward './components/horizontal-rule.scss'as hr-* with($render: false);
+@forward './components/hr.scss'as hr-* with($render: $render-hr);

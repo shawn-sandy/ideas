@@ -5,9 +5,9 @@
 
 @use './components/page.scss';
 
-@use './components/typography.scss';
+@use './components/type.scss';
 
-// @use './elements/elements.scss';
+@use './components/elements.scss';
 
 @use './components/nav.scss';
 
@@ -25,12 +25,6 @@
 
 @use './components/list.scss';
 
-@use './components/horizontal-rule.scss';
+@use './components/hr.scss';
 
 @use './components/form.scss';
-
-@use './components/elements.scss';
-
-// set max width on nav
-
-// @include nav.max-width();

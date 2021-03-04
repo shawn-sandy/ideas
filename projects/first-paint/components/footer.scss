@@ -23,8 +23,7 @@ $background-color: whitesmoke;
     display: block;
 
     >aside,
-    ul,
-    ol {
+    >ul {
 
       flex: 1;
     }
@@ -37,8 +36,7 @@ $background-color: whitesmoke;
       padding: 1rem;
 
       aside+aside,
-      ul+ul,
-      ol+ol {
+      ul+ul {
         margin-left: 1rem;
       }
     }

@@ -40,7 +40,7 @@
     "watch": "run-p watch:*",
     "watch:index": "sass index.scss:index.css custom-styles.scss:custom-styles.css custom.scss:custom.css --load-path=node_modules --watch --no-source-map",
     "watch:scss": "sass --style compressed components:dist/css/. index.scss:dist/css/index.css --load-path=node_modules --color",
-    "build:scss": "sass --style compressed components:dist/css/. index.scss:dist/css/index.css custom-styles.scss:dist/css/custom-styles.css --load-path=node_modules --color",
+    "build:scss": "sass components:dist/css/. index.scss:dist/css/index.css custom-styles.scss:dist/css/custom-styles.css --load-path=node_modules --color",
     "parcel": "parcel serve index.html index.css --hmr-port --out-dir www --open",
     "build:css": "postcss ./dist/css/*.css -d ./dist/css/ --ext min.css",
     "build": "run-s clean:dist build:*",

@@ -73,7 +73,6 @@ sans-serif,
         margin: $margin;
 
         @media (min-width: 980px) {
-
           max-width: $width-md;
           width: $width-md;
         }
@@ -84,24 +83,13 @@ sans-serif,
         }
       }
 
-      >section[role=region] {
+      &>[role=region][aria-label] {
         width: 100%;
         max-width: 100%;
       }
 
     }
 
-    a {
-      color: lighten($color, 25%);
-      text-decoration: none;
-
-      &:hover {
-
-        text-decoration: underline solid;
-        color: lighten($color, 30%);
-
-      }
-    }
 
   }
 }
