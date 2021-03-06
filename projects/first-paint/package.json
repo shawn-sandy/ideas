@@ -42,10 +42,8 @@
     "watch:index": "sass src/index.scss:src/index.css src/custom-styles.scss:src/custom-styles.css src/custom.scss:src/custom.css --load-path=node_modules --watch --no-source-map",
     "watch-scss": "sass --style compressed src/components:dist/css/. src/index.scss:dist/css/index.css --load-path=node_modules --color",
     "build:scss": "sass src/index.scss:dist/css/index.css src/custom-styles.scss:dist/css/custom-styles.css src/components:dist/css/components/. --load-path=node_modules --color",
-    "parcel": "parcel serve index.html index.css --hmr-port --out-dir www --open",
     "build:css": "postcss ./dist/css/*.css -d ./dist/css/ --ext min.css",
     "build": "run-s clean:dist build:*",
-    "build-parcel": "parcel build index.js --no-content-hash --out-dir dist",
     "clean": "trash dist/**/",
     "clean:dist": "trash dist/**"
   },
@@ -58,7 +56,6 @@
     "autoprefixer": "^10.2.4",
     "cssnano": "^4.1.10",
     "npm-run-all": "^4.1.5",
-    "parcel": "^1.12.4",
     "postcss": "^8.2.4",
     "postcss-cli": "^8.3.1",
     "postcss-modules": "^4.0.0",
