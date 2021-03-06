@@ -5,7 +5,7 @@ module.exports = function (eleventyConfig) {
     open: true
   })
 
-  eleventyConfig.addPassthroughCopy("src/**/*.css", './dist')
+  eleventyConfig.addPassthroughCopy("src/*.css", './dist')
   eleventyConfig.addPassthroughCopy("src/img", './dist')
 
   return {
