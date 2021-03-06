@@ -568,7 +568,7 @@ img[alt]::after {
   min-height: 48px;
   height: 100%;
   width: 100%;
-  content: "✖" " " attr(alt);
+  content: "•" " " attr(alt);
   position: absolute;
   top: 0;
   left: 0;

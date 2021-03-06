@@ -36,8 +36,9 @@
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
-    "start": "run-s clean && run-p parcel watch",
+    "start": "run-s clean && run-p watch",
     "watch": "run-p watch:*",
+    "11ty": " eleventy --serve",
     "watch:index": "sass index.scss:index.css custom-styles.scss:custom-styles.css custom.scss:custom.css --load-path=node_modules --watch --no-source-map",
     "watch:scss": "sass --style compressed components:dist/css/. index.scss:dist/css/index.css --load-path=node_modules --color",
     "build:scss": "sass components:dist/css/. index.scss:dist/css/index.css custom-styles.scss:dist/css/custom-styles.css --load-path=node_modules --color",
@@ -52,6 +53,7 @@
     "url": "https://github.com/shawn-sandy/ideas/issues"
   },
   "devDependencies": {
+    "@11ty/eleventy": "^0.11.1",
     "@shawnsandy/mix": "^0.10.14",
     "autoprefixer": "^10.2.4",
     "cssnano": "^4.1.10",

@@ -29,6 +29,7 @@
     "Bootstrap-Lite"
   ],
   "devDependencies": {
+    "@babel/cli": "^7.13.0",
     "bootstrap": "^4.6.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
