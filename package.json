@@ -26,7 +26,9 @@
     "build:first-paint": "lerna exec npm run build --scope=@shawnsandy/first-paint",
     "publish-beta": "run-s build:* && lerna publish --dist-tag beta",
     "publish-next": "run-s build:* && lerna publish --dist-tag next",
-    "preinstall": "npx npm-force-resolutions"
+    "preinstall": "npx npm-force-resolutions",
+    "js:labs": "babel labs/js/ -d labs/js/min --minified --out-file-extension .min.js --ignore ./**/min/",
+    "watch:js": "babel labs/js -d labs/js/min --out-file-extension .min.js  --minified  --ignore ./**/min/ --source-maps --watch"
   },
   "directories": {
     "lib": "dist",
