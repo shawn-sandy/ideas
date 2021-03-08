@@ -1,0 +1,160 @@
+---
+layout: _Layout.njk
+title: "Custom dropdowns"
+scripts: ["/labs/js/min/dropdown.min.js"]
+stylesheets:
+  [
+    "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css",
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css",
+    "/labs/css/dropdown.css",
+  ]
+---
+
+<div class="content p-5">
+  <h3>Custom Dropdown</h3>
+  <hr />
+  <div class="d-flex align-items-center" style="height: 80vh">
+    <div class="container">
+      <p>Custom Dropdown</p>
+      <div
+        id="dropdown-component"
+        class="js-dropdown-component wrapper form-group border-1 bg-light"
+      >
+        <div class="d-flex aligh-items-center">
+          <div class="dropdown-arrow js-dropdown-arrow">
+            <i class="fas fa-arrow-down"></i>
+          </div>
+          <input
+            type="text"
+            class="js-dropdown form-control custom-dropdown rounded-0"
+            id="drop-down"
+            placeholder="Search list"
+            autocomplete="off"
+          />
+        </div>
+        <div class="js-dropdown-list dropdown-list d-none bg-light dl-hide">
+          <div class="list-unstyled">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="First checkbox"
+                id="defaultCheck1"
+              />
+              <label class="form-check-label" for="defaultCheck1"> Open </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="Second checkbox"
+                id="defaultCheck2"
+              />
+              <label class="form-check-label" for="defaultCheck2">
+                In progress
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="Third Checkbox"
+                id="defaultCheck2"
+              />
+              <label class="form-check-label" for="defaultCheck3">
+                Reopened
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--   <hr /> -->
+    <div class="container">
+      <p>Custom Dropdown List</p>
+      <div
+        id="dropdown-component"
+        class="js-dropdown-component wrapper form-group border-1 bg-light"
+        data-type="li"
+      >
+        <div class="d-flex aligh-items-center">
+          <div class="dropdown-arrow js-dropdown-arrow">
+            <i class="fas fa-search"></i>
+          </div>
+          <input
+            type="text"
+            class="js-dropdown form-control custom-dropdown rounded-0"
+            id="drop-down"
+            placeholder="Search list"
+            autocomplete="off"
+          />
+        </div>
+        <div class="js-dropdown-list dropdown-list d-none bg-light dl-hide">
+          <div class="list-unstyled">
+            <ul>
+              <li>List item 1</li>
+              <li>List item 2</li>
+              <li>List item 3</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--   -->
+    <div class="container">
+      <p>Custom Dropdown</p>
+      <div
+        id="dropdown-component"
+        class="js-dropdown-component wrapper form-group border-1 bg-light"
+      >
+        <div class="d-flex aligh-items-center">
+          <div class="dropdown-arrow js-dropdown-arrow">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <input
+            type="text"
+            class="js-dropdown form-control custom-dropdown rounded-0"
+            id="drop-down"
+            placeholder="Search list"
+            autocomplete="off"
+          />
+        </div>
+        <div class="js-dropdown-list dropdown-list d-none bg-light dl-hide">
+          <div class="list-unstyled">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="First checkbox"
+                id="defaultCheck1"
+              />
+              <label class="form-check-label" for="defaultCheck1"> Open </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="Second checkbox"
+                id="defaultCheck2"
+              />
+              <label class="form-check-label" for="defaultCheck2">
+                In progress
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="Third Checkbox"
+                id="defaultCheck2"
+              />
+              <label class="form-check-label" for="defaultCheck3">
+                Reopened
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

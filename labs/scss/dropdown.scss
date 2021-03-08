@@ -1,0 +1,88 @@
+@mixin clip-arrow($border-color: #c9c9c9) {
+  &::after {
+    content: "";
+    border-style: solid;
+    border-width: 8px 7px 0 7px;
+    border-color: $border-color transparent transparent transparent;
+  }
+}
+
+.dropdown-list {
+  z-index: 99;
+  position: absolute;
+  padding: 0.3rem 1rem;
+  left: 0;
+  right: 0;
+  border: 1px lightgray solid;
+  border-top: none;
+  opacity: 1;
+  transition: 2s opacity, 1s;
+
+  .form-check {
+    padding: 0.5rem 1rem;
+  }
+
+  li+li {
+    margin-top: .5rem;
+  }
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  cursor: pointer;
+
+  &:hover {
+    filter: opacity(0.8);
+  }
+}
+
+
+.dl-hide {
+  opacity: 0;
+}
+
+.wrapper {
+  position: relative;
+}
+
+// comments
+.custom-dropdown {
+  &::placeholder {
+    font-size: 1rem;
+    color: lightgray;
+  }
+
+  &:focus {
+    border-color: lightgray;
+    box-shadow: none;
+  }
+}
+
+.dropdown-arrow {
+  position: absolute;
+  display: block;
+  align-items: center;
+  right: 0.5rem;
+  top: 0;
+  bottom: 0;
+  color: gray;
+
+  &:hover {
+    cursor: pointer;
+    filter: opacity(0.8);
+  }
+
+  i {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    // @include clip-arrow();
+    &:hover {
+      // @include clip-arrow(darken(#c9c9c9, 20));
+    }
+  }
+}
