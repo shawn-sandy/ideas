@@ -1,3 +1,5 @@
+const markdown = require("@shawnsandy/ideas/lib/markdown")
+
 module.exports = function (eleventyConfig) {
 
   eleventyConfig.setBrowserSyncConfig({
@@ -7,6 +9,8 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("src/*.css", './dist')
   eleventyConfig.addPassthroughCopy("src/img", './dist')
+
+  eleventyConfig.addPlugin(markdown)
 
   return {
     dir: {

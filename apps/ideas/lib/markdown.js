@@ -2,11 +2,18 @@
  * Markdown plugin for eleventy
  */
 const Marked = require('marked')
-module.exports = (eleventy, options = {}) => {
+
+module.exports = (eleventy) => {
   // https://www.11ty.dev/docs/filters/
-  eleventy.addFilter('md', function (value = null) {
-    if (value === null) return
-    return Marked(value)
+
+  eleventy.addFilter('md', (value = null) => {
+    if (value !== null) { return Marked(value) }
+    return null
+  })
+
+  eleventy.addFilter('markdown', (value = null) => {
+    if (value !== null) { return Marked(value) }
+    return null
   })
 
   // https://www.11ty.dev/docs/shortcodes/
