@@ -23,8 +23,7 @@ $background-color: whitesmoke;
     display: block;
 
     >aside,
-    >ul {
-
+    >div {
       flex: 1;
     }
 
@@ -35,10 +34,18 @@ $background-color: whitesmoke;
       align-content: stretch;
       padding: 1rem;
 
-      aside+aside,
-      ul+ul {
+      >aside+aside,
+      >div+div {
         margin-left: 1rem;
       }
+    }
+  }
+
+  div {
+    text-align: center;
+
+    p {
+      text-align: inherit;
     }
   }
 

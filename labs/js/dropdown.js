@@ -14,7 +14,6 @@ dropdownComponent.forEach(elm => {
   dropDown.addEventListener('click', (e) => {
     toggle(list)
     dropDown.addEventListener('blur', e => {
-      // list.classList.add("d-none")
     })
   }, false)
 
@@ -30,19 +29,12 @@ dropdownComponent.forEach(elm => {
       console.log(e.target)
       if (dataType == 'input') {
         dropDown.value = e.target.value
-        // toggle(list);
       } else {
         dropDown.value = e.target.textContent
       }
+      toggle(list)
     })
   })
-
-  //  console.log("selections " + selections)
-  //  console.log("dropdown " + dropDown)
-  //  console.log('arrow ' + arrow)
-  // console.log(dataType)
-  // console.log(listElements.length)
-  // const selections = elm.querySelector('.js-from-check-input')
 })
 
 const toggle = (elm) => {

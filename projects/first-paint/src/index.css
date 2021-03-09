@@ -468,9 +468,9 @@ footer[role=contentinfo] section {
   display: block;
 }
 .fp-footer section > aside,
-.fp-footer section > ul,
+.fp-footer section > div,
 footer[role=contentinfo] section > aside,
-footer[role=contentinfo] section > ul {
+footer[role=contentinfo] section > div {
   flex: 1;
 }
 @media (min-width: 980px) {
@@ -481,12 +481,20 @@ footer[role=contentinfo] section {
     align-content: stretch;
     padding: 1rem;
   }
-  .fp-footer section aside + aside,
-.fp-footer section ul + ul,
-footer[role=contentinfo] section aside + aside,
-footer[role=contentinfo] section ul + ul {
+  .fp-footer section > aside + aside,
+.fp-footer section > div + div,
+footer[role=contentinfo] section > aside + aside,
+footer[role=contentinfo] section > div + div {
     margin-left: 1rem;
   }
+}
+.fp-footer div,
+footer[role=contentinfo] div {
+  text-align: center;
+}
+.fp-footer div p,
+footer[role=contentinfo] div p {
+  text-align: inherit;
 }
 
 .fp-grid [role=list],
