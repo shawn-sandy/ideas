@@ -8,8 +8,8 @@ module.exports = function (eleventyConfig) {
     open: true
   })
 
-  eleventyConfig.addPassthroughCopy("src/*.css", './dist')
-  eleventyConfig.addPassthroughCopy("src/img", './dist')
+  eleventyConfig.addPassthroughCopy("./src/*.css", './dist')
+  eleventyConfig.addPassthroughCopy("./src/img", './dist')
 
   eleventyConfig.addPlugin(markdown)
 
@@ -24,6 +24,6 @@ module.exports = function (eleventyConfig) {
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk",
     passthroughFileCopy: true,
-    pathPrefix: "/"
+    // pathPrefix: "/"
   }
 }
