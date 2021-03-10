@@ -36,7 +36,7 @@
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
-    "start": "run-s clean && run-p watch 11ty",
+    "start": "run-s clean && run-p 11ty watch",
     "watch": "run-p watch:*",
     "11ty": " eleventy --serve",
     "watch:index": "sass src/index.scss:src/index.css src/custom-styles.scss:src/custom-styles.css src/components.scss:src/components.css --load-path=node_modules --watch --no-source-map",

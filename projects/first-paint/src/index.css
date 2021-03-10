@@ -460,7 +460,7 @@ main [role=complementary] + section {
 footer[role=contentinfo] {
   display: block;
   font-size: 0.8rem;
-  background-color: whitesmoke;
+  border-top: solid 1px whitesmoke;
   padding: 2rem 0;
 }
 .fp-footer section,
@@ -612,6 +612,7 @@ picture > img[alt] {
 ul,
 dl {
   padding-left: 1rem;
+  list-style: disc;
 }
 .fp-list ol > * + *,
 ul > * + *,

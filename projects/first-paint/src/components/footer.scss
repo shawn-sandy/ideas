@@ -1,6 +1,6 @@
 $render: true !default;
-$font-size: .8rem;
-$background-color: whitesmoke;
+$font-size: .8rem !default;
+$background-color: null !default;
 
 @mixin renderComponent($renderContent: $render, $className: null) {
   @if($renderContent) {
@@ -17,6 +17,7 @@ $background-color: whitesmoke;
   display: block;
   font-size: $font-size;
   background-color: $background-color;
+  border-top: solid 1px whitesmoke;
   padding: 2rem 0;
 
   section {

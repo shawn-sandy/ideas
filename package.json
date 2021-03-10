@@ -25,7 +25,6 @@
     "build:first-paint": "lerna exec npm run build --scope=@shawnsandy/first-paint",
     "publish-beta": "run-s build:* && lerna publish --dist-tag beta",
     "publish-next": "run-s build:* && lerna publish --dist-tag next",
-    "preinstall": "npx npm-force-resolutions",
     "build:labs": "babel labs/js/ -d labs/js/min --minified --out-file-extension .min.js --ignore ./**/min/",
     "js:main": "babel main.js -d js/min --out-file-extension .min.js  --minified  --ignore ./**/min/ --source-maps --watch",
     "watch:labs": "babel labs/js -d labs/js/min --out-file-extension .min.js  --minified  --ignore ./**/min/ --source-maps --watch",
@@ -59,7 +58,7 @@
     "@fortawesome/fontawesome-free": "^5.15.2",
     "@shawnsandy/bootstrap-lite": "^0.1.12",
     "@shawnsandy/first-paint": "^0.8.3",
-    "@shawnsandy/ideas": "^0.1.24",
+    "@shawnsandy/ideas": "^0.2.0",
     "@shawnsandy/mix": "^0.10.14",
     "auto-changelog": "^2.2.1",
     "eslint": "^7.20.0",
@@ -93,8 +92,5 @@
     "sass": "^1.32.8",
     "style-dictionary": "^2.10.2",
     "trash-cli": "^4.0.0"
-  },
-  "resolutions": {
-    "node-forge": "0.10.0"
   }
 }
