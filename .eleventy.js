@@ -68,9 +68,9 @@ module.exports = function (eleventyConfig) {
   return {
     dir: {
       output: "./www",
-      input: ".",
-      includes: "/system/_includes",
-      data: "/system/_data",
+      input: "./src",
+      includes: "../system/_includes",
+      data: "../system/_data",
     },
     templateFormats: ["njk", "html"],
     htmlTemplateEngine: "njk",
