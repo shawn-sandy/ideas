@@ -1,4 +1,5 @@
-const markdown = require("@shawnsandy/ideas/lib/markdown")
+const markdown = require("@shawnsandy/marked")
+
 
 module.exports = function (eleventyConfig) {
 

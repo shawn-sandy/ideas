@@ -53,6 +53,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
     "@shawnsandy/ideas": "^0.2.0",
+    "@shawnsandy/marked": "^0.2.0",
     "@shawnsandy/mix": "^0.10.16",
     "autoprefixer": "^10.2.4",
     "cssnano": "^4.1.10",
