@@ -2,7 +2,7 @@ const fs = require("fs")
 
 const htmlmin = require("html-minifier")
 const pluginRss = require("@11ty/eleventy-plugin-rss")
-const markdown = require("./apps/ideas/lib/markdown")
+const markdown = require("./projects/marked/lib/marked")
 
 module.exports = function (eleventyConfig) {
 
