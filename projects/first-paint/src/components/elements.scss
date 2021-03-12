@@ -17,6 +17,8 @@ $render: true !default;
     color: #d63384;
   }
 
+
+
   a {
     // #0d6efd
     color: #0d6efd;
@@ -40,5 +42,21 @@ $render: true !default;
 }
 
 // include render component
+
+@mixin pre {
+  pre {
+    padding: 2rem;
+    margin: 2rem 0;
+    background-color: whitesmoke;
+    line-height: 1.8;
+    border-radius: 1rem;
+    font-size: .9rem;
+    overflow-x: auto;
+
+    code {
+      color: rgb(59, 59, 59);
+    }
+  }
+}
 
 @include renderComponent();
