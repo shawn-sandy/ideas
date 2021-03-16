@@ -28,6 +28,7 @@ a[role=button],
   background-color: transparent;
   border: none;
   border-radius: 0.1rem;
+  color: darkblue;
 }
 a[role=button]:hover, a[role=button]:active, a[role=button]:focus,
 .fp-button-link[role=button]:hover,
