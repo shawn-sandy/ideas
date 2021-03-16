@@ -20,6 +20,11 @@ $render: true !default;
   a {
     // #0d6efd
     color: #0d6efd;
+    background-color: transparent;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 1px;
+    text-decoration-line: underline;
 
 
     &:hover,
