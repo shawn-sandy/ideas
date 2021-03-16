@@ -19,14 +19,30 @@ An Eleventy markdown plugin for writing/parsing MARKDOWN syntax in your HTML con
 **Filter**
 
 ```html
-{{ description | md }}
+{{ "### markdown description" | markdown }}
 ```
+
+*deprecated `md` syntax*
+
+```html
+{{ "### markdown description" | md }}
+```
+*Filter output*
+
+### markdown description
+
+----
 
 **Shortcode**
 
 ```html
 {% markdown %} ### Header Paragraph text... {% endmarkdown %}
 ```
+*Shortcode output*
+
+### Header Paragraph text...
+
+----
 
 ### Support
 

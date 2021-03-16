@@ -5,14 +5,13 @@
   "description": "A UI toolkit for creating and managing style-guides, design systems, pattern libraries, apps, digital products, etc.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "run-s clean && run-p serve watch:*",
+    "start": "run-s clean && run-p serve watch:* js:*",
     "serve": "eleventy --serve",
     "eleventy": "run-s eleventy --serve",
     "build": "npx @11ty/eleventy",
-    "parcel": "parcel build main.js --out-dir build/js --no-minify",
-    "parcel-css": "parcel build styles.js --no-content-hash --out-dir styles/css --no-minify",
-    "sass:scss": "sass styles/ideas-ui-kit.scss styles/css/ui-kit.css --load-path=node_modules --watch",
-    "watch:parcel": "parcel watch main.js styles.js --out-dir www/",
+    "watch:root-scss": "sass styles/ideas-ui-kit.scss styles/css/ui-kit.css --load-path=node_modules --watch",
+    "watch:scss": "sass --style compressed labs/scss:labs/css/. --load-path=node_modules --watch",
+    "build:scss": "sass --style compressed labs/scss:labs/css/. --load-path=node_modules",
     "changelog": "auto-changelog -p --template config/_changelog.hbs",
     "debug": "cd system/debug",
     "tokens": "style-dictionary build --config ./tokens.js",
@@ -26,7 +25,10 @@
     "build:first-paint": "lerna exec npm run build --scope=@shawnsandy/first-paint",
     "publish-beta": "run-s build:* && lerna publish --dist-tag beta",
     "publish-next": "run-s build:* && lerna publish --dist-tag next",
-    "preinstall": "npx npm-force-resolutions"
+    "labs": "babel labs/js/ -d labs/js/min --minified --out-file-extension .min.js --ignore ./**/min/",
+    "js:main": "babel main.js -d js/min --out-file-extension .min.js  --minified  --ignore ./**/min/ --source-maps --watch",
+    "js:labs": "babel labs/js -d labs/js/min --out-file-extension .min.js  --minified  --ignore ./**/min/ --source-maps --watch",
+    "watch-js": "run-s js:*"
   },
   "directories": {
     "lib": "dist",
@@ -50,10 +52,13 @@
     "@11ty/eleventy-cache-assets": "^2.1.0",
     "@11ty/eleventy-navigation": "^0.1.6",
     "@11ty/eleventy-plugin-rss": "^1.1.0",
+    "@babel/cli": "^7.13.0",
+    "@babel/core": "^7.13.8",
+    "@babel/preset-env": "^7.13.9",
     "@fortawesome/fontawesome-free": "^5.15.2",
     "@shawnsandy/bootstrap-lite": "^0.1.12",
     "@shawnsandy/first-paint": "^0.8.3",
-    "@shawnsandy/ideas": "^0.1.24",
+    "@shawnsandy/ideas": "^0.2.0",
     "@shawnsandy/mix": "^0.10.14",
     "auto-changelog": "^2.2.1",
     "eslint": "^7.20.0",
@@ -87,8 +92,5 @@
     "sass": "^1.32.8",
     "style-dictionary": "^2.10.2",
     "trash-cli": "^4.0.0"
-  },
-  "resolutions": {
-    "node-forge": "0.10.0"
   }
 }

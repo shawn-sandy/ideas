@@ -1,6 +1,6 @@
 {
   "name": "@shawnsandy/mix",
-  "version": "0.10.14",
+  "version": "0.10.17",
   "description": "AtomMix--A toolkit for generating utility classes, components and styles-sheets for your design system, style-guide or website from SASS MAPS",
   "keywords": [
     "SASS",
@@ -49,6 +49,7 @@
     "trash-cli": "^3.1.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.13.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-clean-css": "^4.3.0",

@@ -1,0 +1,55 @@
+$render: true !default;
+$font-size: .8rem !default;
+$background-color: null !default;
+
+@mixin renderComponent($renderContent: $render, $className: null) {
+  @if($renderContent) {
+
+    #{if($className, $className, '.fp-footer')},
+    footer[role=contentinfo] {
+      @include footer();
+    }
+  }
+}
+
+@mixin footer() {
+  // min-height: 200px;
+  display: block;
+  font-size: $font-size;
+  background-color: $background-color;
+  border-top: solid 1px whitesmoke;
+  padding: 2rem 0;
+
+  section {
+    display: block;
+
+    >aside,
+    >div {
+      flex: 1;
+    }
+
+
+    @media (min-width: 980px) {
+      display: flex;
+      align-items: stretch;
+      align-content: stretch;
+      padding: 1rem;
+
+      >aside+aside,
+      >div+div {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  div {
+    text-align: center;
+
+    p {
+      text-align: inherit;
+    }
+  }
+
+}
+
+@include renderComponent();

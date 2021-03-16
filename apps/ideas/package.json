@@ -1,6 +1,6 @@
 {
   "name": "@shawnsandy/ideas",
-  "version": "0.1.25",
+  "version": "0.2.0",
   "description": "Eleventy toolkit",
   "keywords": [
     "design",
@@ -37,6 +37,7 @@
   },
   "devDependencies": {
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.6",
+    "@babel/cli": "^7.13.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-clean": "^0.4.0",
@@ -47,7 +48,6 @@
     "gulp-sizereport": "^1.2.1",
     "gulp-sourcemaps": "^2.6.5",
     "marked": "^2.0.0",
-    "parcel": "^1.12.4",
     "snowpack": "^2.18.5"
   },
   "gitHead": "4577741794f126834eade633db5dd9e94cd6ec62",
@@ -57,7 +57,6 @@
     "marked": "^2.0.0",
     "node-fetch": "^2.6.1",
     "npm-run-all": "^4.1.5",
-    "parcel": "^1.12.4",
     "path": "^0.12.7",
     "trash-cli": "^3.1.0"
   }
