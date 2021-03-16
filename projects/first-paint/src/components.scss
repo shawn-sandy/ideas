@@ -11,6 +11,7 @@ $render-img: false !default;
 $render-list: false !default;
 $render-hr: false !default;
 $render-grid: false !default;
+$render-elements: false !default;
 
 @forward './components/styles';
 
@@ -39,3 +40,5 @@ $render-grid: false !default;
 @forward './components/hr.scss'as hr-* with($render: $render-hr);
 
 @forward './components/scrollbar.scss'as scrollbar-*;
+
+@forward './components/elements.scss'as elements-*;
