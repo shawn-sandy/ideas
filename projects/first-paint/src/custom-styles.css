@@ -16,6 +16,11 @@ blockquote {
   font-weight: normal;
 }
 
+ul,
+ol {
+  margin-bottom: 1rem;
+}
+
 a[role=button],
 .fp-button-link[role=button] {
   display: inline-flex;

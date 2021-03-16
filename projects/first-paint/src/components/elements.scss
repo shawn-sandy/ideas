@@ -17,8 +17,6 @@ $render: true !default;
     color: #d63384;
   }
 
-
-
   a {
     // #0d6efd
     color: #0d6efd;
@@ -38,6 +36,11 @@ $render: true !default;
     font-size: 1.3rem;
     line-height: 1.5;
     font-weight: normal;
+  }
+
+  ul,
+  ol {
+    margin-bottom: 1rem;
   }
 }
 

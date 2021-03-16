@@ -261,6 +261,11 @@ blockquote {
   font-weight: normal;
 }
 
+ul,
+ol {
+  margin-bottom: 1rem;
+}
+
 .fp-nav,
 nav {
   display: block;
