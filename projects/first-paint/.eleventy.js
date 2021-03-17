@@ -9,9 +9,12 @@ module.exports = function (eleventyConfig) {
   })
 
   eleventyConfig.addPassthroughCopy("./src/*.css", './dist')
+  eleventyConfig.addPassthroughCopy("./src/styles/*.css", './dist')
   eleventyConfig.addPassthroughCopy("./src/img", './dist')
 
   eleventyConfig.addPlugin(markdown)
+
+  eleventyConfig.setQuietMode(true)
 
   return {
     dir: {

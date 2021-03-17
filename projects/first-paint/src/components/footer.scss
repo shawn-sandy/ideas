@@ -1,5 +1,5 @@
 $render: true !default;
-$font-size: .8rem !default;
+$font-size: .9rem !default;
 $background-color: null !default;
 
 @mixin renderComponent($renderContent: $render, $className: null) {
@@ -14,20 +14,20 @@ $background-color: null !default;
 
 @mixin footer() {
   // min-height: 200px;
-  display: block;
+  display: flex;
+  flex-direction: column;
   font-size: $font-size;
   background-color: $background-color;
   border-top: solid 1px whitesmoke;
   padding: 2rem 0;
 
   section {
-    display: block;
+    display: flex;
+    justify-content: center;
 
-    >aside,
     >div {
       flex: 1;
     }
-
 
     @media (min-width: 980px) {
       display: flex;
@@ -42,13 +42,6 @@ $background-color: null !default;
     }
   }
 
-  div {
-    text-align: center;
-
-    p {
-      text-align: inherit;
-    }
-  }
 
 }
 
