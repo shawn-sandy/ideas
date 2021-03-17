@@ -158,7 +158,7 @@ html * {
 html *,
 html *:before,
 html *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body {
@@ -399,10 +399,8 @@ header > [role=banner] {
 }
 .fp-header > section,
 .fp-header > div,
-.fp-header aside,
 header > [role=banner] > section,
-header > [role=banner] > div,
-header > [role=banner] aside {
+header > [role=banner] > div {
   text-align: center;
 }
 
@@ -463,18 +461,18 @@ main [role=complementary] + section {
 
 .fp-footer,
 footer[role=contentinfo] {
-  display: block;
-  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
   border-top: solid 1px whitesmoke;
   padding: 2rem 0;
 }
 .fp-footer section,
 footer[role=contentinfo] section {
-  display: block;
+  display: flex;
+  justify-content: center;
 }
-.fp-footer section > aside,
 .fp-footer section > div,
-footer[role=contentinfo] section > aside,
 footer[role=contentinfo] section > div {
   flex: 1;
 }
@@ -492,14 +490,6 @@ footer[role=contentinfo] section > aside + aside,
 footer[role=contentinfo] section > div + div {
     margin-left: 1rem;
   }
-}
-.fp-footer div,
-footer[role=contentinfo] div {
-  text-align: center;
-}
-.fp-footer div p,
-footer[role=contentinfo] div p {
-  text-align: inherit;
 }
 
 .fp-grid [role=list],

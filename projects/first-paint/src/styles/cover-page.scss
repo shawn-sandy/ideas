@@ -1,27 +1,28 @@
-// reset the browser defaults
 @use '../components/reset.scss';
-// add the page
+
 @use '../components/page.scss';
-// add the type
+
 @use '../components/type.scss';
 
 @use '../components/nav.scss';
 
-@use '../components/header.scss'with($height: null);
+@use '../components/header.scss'with($render: false, $height: null);
+
+@use '../components/footer.scss';
 
 @use '../components/button.scss';
-
 
 @include button.links();
 
 header {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-}
+  height: 85vh;
 
-header>[role="banner"] {
-  flex-grow: 1;
+  &>[role="banner"] {
+    flex-grow: 1;
+    @include header.banner();
+  }
 }
 
 nav {

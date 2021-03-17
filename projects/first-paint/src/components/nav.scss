@@ -1,6 +1,6 @@
 // @use "@shawnsandy/mix/sass/foundations/settings.scss";
 // @import "@shawnsandy/mix/sass/foundations/nav.scss";
-
+// TODO optimize nav component reduce size to 1kb; remove all unnecessary  styles
 $render: true !default;
 $color: null !default;
 $border: whitesmoke 1px solid !default;

@@ -17,25 +17,23 @@ $background-color: null !default;
 
     header {
       background-color: $background-color;
-
     }
 
     #{if($className, $className, '.fp-header')},
     header>[role="banner"] {
-      @include header()
+      @include banner()
     }
   }
 
 }
 
 
-@mixin header {
+@mixin banner {
   @include styles.flex-box();
   min-height: $height;
 
   >section,
-  >div,
-  aside {
+  >div {
     text-align: center;
   }
 }
