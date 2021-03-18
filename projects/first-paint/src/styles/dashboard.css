@@ -169,29 +169,20 @@ body {
   color: #262626;
 }
 
-body > section,
-body > main,
-body > header > section,
-body > footer > section {
+body > section, body > main, body > header > section, body > footer > section {
   padding: 1rem;
   max-width: 90%;
   margin: 0 auto;
 }
 
 @media (min-width: 980px) {
-  body > section,
-body > main,
-body > header > section,
-body > footer > section {
+  body > section, body > main, body > header > section, body > footer > section {
     max-width: 80%;
     width: 80%;
   }
 }
 @media (min-width: 1980px) {
-  body > section,
-body > main,
-body > header > section,
-body > footer > section {
+  body > section, body > main, body > header > section, body > footer > section {
     max-width: 80%;
     font-size: 110%;
   }
@@ -528,18 +519,14 @@ button[type] {
   font-weight: normal;
 }
 
-.fp-button:hover,
-.fp-button:active,
-.fp-button:focus,
+.fp-button:hover, .fp-button:active, .fp-button:focus,
 button[type]:hover,
 button[type]:active,
 button[type]:focus {
   border: 1px transparent solid;
 }
 
-.fp-button[type=reset],
-.fp-button[type=button],
-.fp-button[type=submit],
+.fp-button[type=reset], .fp-button[type=button], .fp-button[type=submit],
 button[type][type=reset],
 button[type][type=button],
 button[type][type=submit] {
@@ -547,15 +534,7 @@ button[type][type=submit] {
   border: 1px solid #e4e4e4;
 }
 
-.fp-button[type=reset]:hover,
-.fp-button[type=reset]:active,
-.fp-button[type=reset]:focus,
-.fp-button[type=button]:hover,
-.fp-button[type=button]:active,
-.fp-button[type=button]:focus,
-.fp-button[type=submit]:hover,
-.fp-button[type=submit]:active,
-.fp-button[type=submit]:focus,
+.fp-button[type=reset]:hover, .fp-button[type=reset]:active, .fp-button[type=reset]:focus, .fp-button[type=button]:hover, .fp-button[type=button]:active, .fp-button[type=button]:focus, .fp-button[type=submit]:hover, .fp-button[type=submit]:active, .fp-button[type=submit]:focus,
 button[type][type=reset]:hover,
 button[type][type=reset]:active,
 button[type][type=reset]:focus,
@@ -607,8 +586,7 @@ form select[id] {
   border-radius: 0.1rem;
 }
 
-.fp-form input[id]:focus,
-.fp-form input[id]:focus-within,
+.fp-form input[id]:focus, .fp-form input[id]:focus-within,
 .fp-form textarea[id]:focus,
 .fp-form textarea[id]:focus-within,
 .fp-form select[id]:focus,
@@ -717,9 +695,7 @@ a {
   color: #0d6efd;
 }
 
-a:hover,
-a:active,
-a:visited {
+a:hover, a:active, a:visited {
   text-decoration: none;
   color: #012e70;
 }

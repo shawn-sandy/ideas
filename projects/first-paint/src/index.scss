@@ -1,4 +1,3 @@
 $render-page: true;
 @use './components/reset.scss';
-@use './components.scss'with($render: true);
-// @use './components/scrollbar.scss';
+@use './components.scss'with($render-all: true);
