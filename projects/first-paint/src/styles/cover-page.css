@@ -1,138 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 html {
   scroll-behavior: smooth;
   box-sizing: border-box;
@@ -246,7 +111,6 @@ p + p {
   margin-top: 2rem;
 }
 
-.fp-nav,
 nav {
   display: block;
   align-items: center;
@@ -259,8 +123,7 @@ nav {
 }
 
 @media (min-width: 960px) {
-  .fp-nav,
-nav {
+  nav {
     display: flex;
     margin-bottom: 0;
     padding-top: 0;
@@ -268,7 +131,6 @@ nav {
     width: 80%;
   }
 }
-.fp-nav section,
 nav section {
   display: flex;
   min-height: 3.5rem;
@@ -278,14 +140,11 @@ nav section {
   margin: 0;
 }
 
-.fp-nav section li,
-.fp-nav section a,
 nav section li,
 nav section a {
   margin-top: 1rem;
 }
 
-.fp-nav section li,
 nav section li {
   height: inherit;
   display: flex;
@@ -293,14 +152,12 @@ nav section li {
   margin-top: 0;
 }
 
-.fp-nav section li + li,
 nav section li + li {
   margin-top: 0;
 }
 
 @media all and (min-width: 960px) {
-  .fp-nav section,
-nav section {
+  nav section {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -308,14 +165,11 @@ nav section {
     padding: 0 0.5rem;
   }
 
-  .fp-nav section li,
-.fp-nav section a,
-nav section li,
+  nav section li,
 nav section a {
     margin-top: 0;
   }
 }
-.fp-nav section img[alt],
 nav section img[alt] {
   display: inline-block;
   vertical-align: middle;
@@ -323,26 +177,21 @@ nav section img[alt] {
   max-height: 2rem;
 }
 
-.fp-nav section img[alt] + *,
 nav section img[alt] + * {
   margin-left: 1rem;
 }
 
-.fp-nav section a,
 nav section a {
   padding: 0 0.5rem;
   font-size: 0.8rem;
   text-decoration: none;
 }
 
-.fp-nav section button[type],
-.fp-nav section a[role=button],
 nav section button[type],
 nav section a[role=button] {
   margin-bottom: 0;
 }
 
-.fp-nav section ul,
 nav section ul {
   display: flex;
   min-height: 3.5rem;
@@ -352,8 +201,6 @@ nav section ul {
   margin: 0;
 }
 
-.fp-nav h1,
-.fp-nav [aria-label="brand name"],
 nav h1,
 nav [aria-label="brand name"] {
   display: block;
@@ -365,16 +212,12 @@ nav [aria-label="brand name"] {
 }
 
 @media (min-width: 960px) {
-  .fp-nav h1,
-.fp-nav [aria-label="brand name"],
-nav h1,
+  nav h1,
 nav [aria-label="brand name"] {
     display: flex;
     align-items: center;
   }
 }
-.fp-nav h1 a,
-.fp-nav [aria-label="brand name"] a,
 nav h1 a,
 nav [aria-label="brand name"] a {
   font-size: 1.5rem;
@@ -417,51 +260,9 @@ footer[role=contentinfo] section > div + div {
     margin-left: 1rem;
   }
 }
-.fp-button,
-button[type] {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: transparent;
-  border-radius: 0.1rem;
-  border: 1px transparent solid;
-  cursor: pointer;
-  margin-bottom: 0.7rem;
-  font-weight: normal;
-}
-
-.fp-button:hover, .fp-button:active, .fp-button:focus,
-button[type]:hover,
-button[type]:active,
-button[type]:focus {
-  border: 1px transparent solid;
-}
-
-.fp-button[type=reset], .fp-button[type=button], .fp-button[type=submit],
-button[type][type=reset],
-button[type][type=button],
-button[type][type=submit] {
-  padding: 0.6rem 1.5rem;
-  border: 1px solid #e4e4e4;
-}
-
-.fp-button[type=reset]:hover, .fp-button[type=reset]:active, .fp-button[type=reset]:focus, .fp-button[type=button]:hover, .fp-button[type=button]:active, .fp-button[type=button]:focus, .fp-button[type=submit]:hover, .fp-button[type=submit]:active, .fp-button[type=submit]:focus,
-button[type][type=reset]:hover,
-button[type][type=reset]:active,
-button[type][type=reset]:focus,
-button[type][type=button]:hover,
-button[type][type=button]:active,
-button[type][type=button]:focus,
-button[type][type=submit]:hover,
-button[type][type=submit]:active,
-button[type][type=submit]:focus {
-  background-color: transparent;
-  background-color: #cbcbcb;
-  border: 1px solid #e4e4e4;
+nav,
+footer {
+  flex-shrink: 0;
 }
 
 header {
@@ -482,11 +283,6 @@ header > [role=banner] {
 header > [role=banner] > section,
 header > [role=banner] > div {
   text-align: center;
-}
-
-nav,
-footer {
-  flex-shrink: 0;
 }
 
 a[role=button],

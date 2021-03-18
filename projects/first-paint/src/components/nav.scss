@@ -20,8 +20,7 @@ $brand-name: 'brand name' !default;
 @mixin renderComponent($renderComponent: $render, $className: null) {
   @if $renderComponent {
 
-    #{if($className, $className, '.fp-nav')},
-    nav {
+    #{if($className, $className ',', '')} nav {
       display: block;
       align-items: $align-items;
       justify-content: $justify-content;
