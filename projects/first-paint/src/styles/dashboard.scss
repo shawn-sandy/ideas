@@ -1,0 +1,2 @@
+$render-page: true;
+@use '../components.scss'with($render-page: true)

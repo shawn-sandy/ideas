@@ -1,18 +1,10 @@
-@use '../components/reset.scss';
+@use '../components.scss'with($render-page: true,
+  $render-type: true,
+  $render-nav: true,
+  $render-button: true,
+  $render-footer: true,
+);
 
-@use '../components/page.scss';
-
-@use '../components/type.scss';
-
-@use '../components/nav.scss';
-
-@use '../components/header.scss'with($render: false, $height: null);
-
-@use '../components/footer.scss';
-
-@use '../components/button.scss';
-
-@include button.links();
 
 header {
   display: flex;
@@ -21,10 +13,13 @@ header {
 
   &>[role="banner"] {
     flex-grow: 1;
-    @include header.banner();
+    @include components.header-banner();
   }
 }
 
-nav {
+nav,
+footer {
   flex-shrink: 0;
 }
+
+@include components.button-links();
