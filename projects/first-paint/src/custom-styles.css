@@ -1,26 +1,3 @@
-code {
-  color: #d63384;
-}
-
-a {
-  color: #0d6efd;
-}
-a:hover, a:active, a:visited {
-  text-decoration: none;
-  color: #012e70;
-}
-
-blockquote {
-  font-size: 1.3rem;
-  line-height: 1.5;
-  font-weight: normal;
-}
-
-ul,
-ol {
-  margin-bottom: 1rem;
-}
-
 a[role=button],
 .fp-button-link[role=button] {
   display: inline-flex;

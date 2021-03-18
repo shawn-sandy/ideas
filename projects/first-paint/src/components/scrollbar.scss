@@ -20,10 +20,6 @@ $thumb-color: lightgray !default;
 
     }
 
-    @else {
-      @include scrollbar();
-
-    }
   }
 }
 

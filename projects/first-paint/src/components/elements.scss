@@ -5,7 +5,7 @@ $render: true !default;
 
 // render component mixin
 
-@mixin renderComponent($renderContent: true, $className: null) {
+@mixin renderComponent($renderContent: $render, $className: null) {
   @if($renderContent) {
     @include elements();
   }

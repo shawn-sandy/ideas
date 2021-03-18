@@ -1,17 +1,19 @@
 // @forward "@shawnsandy/mix/foundation.scss";
-$render-page: false !default;
-$render-type: false !default;
-$render-header: false !default;
-$render-nav: false !default;
-$render-main: false !default;
-$render-footer: false !default;
-$render-button: false !default;
-$render-form: false !default;
-$render-img: false !default;
-$render-list: false !default;
-$render-hr: false !default;
-$render-grid: false !default;
-$render-elements: false !default;
+$render-all: null !default;
+$render-page: $render-all !default;
+$render-type: $render-all !default;
+$render-header: $render-all !default;
+$render-nav: $render-all !default;
+$render-main: $render-all !default;
+$render-footer: $render-all !default;
+$render-button: $render-all !default;
+$render-form: $render-all !default;
+$render-img: $render-all !default;
+$render-list: $render-all !default;
+$render-hr: $render-all !default;
+$render-grid: $render-all !default;
+$render-scrollbar: $render-all !default;
+$render-elements: $render-all !default;
 
 @forward './components/styles';
 
@@ -39,6 +41,6 @@ $render-elements: false !default;
 
 @forward './components/hr.scss'as hr-* with($render: $render-hr);
 
-@forward './components/scrollbar.scss'as scrollbar-*;
+@forward './components/scrollbar.scss'as scrollbar-* with($render: $render-scrollbar);
 
-@forward './components/elements.scss'as elements-*;
+@forward './components/elements.scss'as elements-* with($render: $render-elements);
