@@ -141,6 +141,7 @@ html {
   text-rendering: optimizeLegibility;
   font-size: 80%;
 }
+
 @media (min-width: 980px) {
   html {
     font-size: 100%;
@@ -154,6 +155,7 @@ html {
 html * {
   outline: none;
 }
+
 html *,
 html *:before,
 html *:after {
@@ -165,11 +167,13 @@ body {
   background-color: #ffffff;
   color: #262626;
 }
+
 body > section, body > main, body > header > section, body > footer > section {
   padding: 1rem;
   max-width: 90%;
   margin: 0 auto;
 }
+
 @media (min-width: 980px) {
   body > section, body > main, body > header > section, body > footer > section {
     max-width: 80%;
@@ -188,7 +192,7 @@ body > [role=region][aria-label] {
 }
 
 nav {
-  display: block;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   min-height: 3.5rem;
@@ -197,6 +201,7 @@ nav {
   margin-bottom: 0rem;
   border-bottom: none;
 }
+
 @media (min-width: 960px) {
   nav {
     display: flex;
@@ -214,19 +219,23 @@ nav section {
   flex-wrap: wrap;
   margin: 0;
 }
+
 nav section li,
 nav section a {
   margin-top: 1rem;
 }
+
 nav section li {
   height: inherit;
   display: flex;
   align-items: center;
   margin-top: 0;
 }
+
 nav section li + li {
   margin-top: 0;
 }
+
 @media all and (min-width: 960px) {
   nav section {
     display: flex;
@@ -235,6 +244,7 @@ nav section li + li {
     margin-bottom: 0;
     padding: 0 0.5rem;
   }
+
   nav section li,
 nav section a {
     margin-top: 0;
@@ -246,18 +256,22 @@ nav section img[alt] {
   height: 2rem;
   max-height: 2rem;
 }
+
 nav section img[alt] + * {
   margin-left: 1rem;
 }
+
 nav section a {
   padding: 0 0.5rem;
   font-size: 0.8rem;
   text-decoration: none;
 }
+
 nav section button[type],
 nav section a[role=button] {
   margin-bottom: 0;
 }
+
 nav section ul {
   display: flex;
   min-height: 3.5rem;
@@ -266,6 +280,7 @@ nav section ul {
   flex-wrap: wrap;
   margin: 0;
 }
+
 nav h1,
 nav [aria-label="brand name"] {
   display: block;
@@ -275,6 +290,7 @@ nav [aria-label="brand name"] {
   line-height: normal;
   font-size: 1.5rem;
 }
+
 @media (min-width: 960px) {
   nav h1,
 nav [aria-label="brand name"] {
@@ -296,6 +312,7 @@ header > [role=banner] {
   flex-direction: row;
   min-height: 25rem;
 }
+
 .fp-header > section,
 .fp-header > div,
 header > [role=banner] > section,

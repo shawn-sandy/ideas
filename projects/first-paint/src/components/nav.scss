@@ -21,7 +21,8 @@ $brand-name: 'brand name' !default;
   @if $renderComponent {
 
     #{if($className, $className ',', '')} nav {
-      display: block;
+      display: flex;
+      flex-direction: column;
       align-items: $align-items;
       justify-content: $justify-content;
       min-height: $min-height;
@@ -32,6 +33,7 @@ $brand-name: 'brand name' !default;
 
       @media (min-width: 960px) {
         display: flex;
+        flex-direction: row;
         margin-bottom: 0;
         padding-top: 0;
         padding-bottom: 0;
@@ -94,7 +96,7 @@ $brand-name: 'brand name' !default;
 
         a {
           padding: 0 .5rem;
-          font-size: .8rem;
+          font-size: .9rem;
           text-decoration: none;
         }
 
@@ -147,5 +149,36 @@ $brand-name: 'brand name' !default;
   }
 
 }
+
+@mixin dashboard {
+
+  nav {
+    flex-direction: column;
+    width: 30%;
+    justify-content: flex-start;
+
+    @media (min-width: 980px) {
+      // flex-direction: column;
+    }
+
+    section {
+      max-width: 25rem;
+      min-width: 20rem;
+      align-items: left;
+      justify-content: flex-start;
+
+      ul {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-left: 0;
+      }
+
+      li+li {
+        margin-top: .9rem
+      }
+    }
+  }
+}
+
 
 @include renderComponent();
