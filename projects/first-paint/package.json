@@ -39,7 +39,7 @@
     "start": "run-s clean && run-p 11ty watch:*",
     "watch": "run-p watch:*",
     "11ty": " eleventy --serve",
-    "watch:index": "sass src/index.scss:src/index.css src/custom-styles.scss:src/custom-styles.css src/components.scss:src/components.css  src/styles:src/styles/. --load-path=node_modules --watch --no-source-map",
+    "watch:index": "sass --update src/index.scss:src/index.css src/custom-styles.scss:src/custom-styles.css src/components.scss:src/components.css  src/styles:src/css/. --load-path=node_modules --watch --no-source-map",
     "watch-scss": "sass --style --update compressed src/components:dist/css/. src/index.scss:dist/css/index.css src/styles:src/styles/. --load-path=node_modules --color",
     "build:scss": "sass --style compressed src/index.scss:dist/css/index.css src/custom-styles.scss:dist/css/custom-styles.css src/styles:dist/styles/. src/components:dist/css/components/.  --load-path=node_modules --color",
     "build:css": "postcss ./dist/css/*.css -d ./dist/css/ --ext min.css",
@@ -71,5 +71,8 @@
   "browserslist": [
     "> 0.2%",
     "not dead"
-  ]
+  ],
+  "dependencies": {
+    "clean-css": "^5.1.1"
+  }
 }

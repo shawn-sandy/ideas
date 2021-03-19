@@ -1,7 +1,13 @@
 const markdown = require("@shawnsandy/marked")
 
+const CleanCSS = require('clean-css')
 
 module.exports = function (eleventyConfig) {
+
+  // css-min filter
+  eleventyConfig.addFilter("cssmin", (code) => {
+    return new CleanCSS({}).minify(code).styles
+  })
 
   eleventyConfig.setBrowserSyncConfig({
     notify: true,
@@ -9,7 +15,7 @@ module.exports = function (eleventyConfig) {
   })
 
   eleventyConfig.addPassthroughCopy("./src/*.css", './dist')
-  eleventyConfig.addPassthroughCopy("./src/styles/*.css", './dist')
+  eleventyConfig.addPassthroughCopy("./src/css", './dist')
   eleventyConfig.addPassthroughCopy("./src/img", './dist')
 
   eleventyConfig.addPlugin(markdown)

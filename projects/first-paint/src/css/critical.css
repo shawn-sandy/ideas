@@ -187,6 +187,23 @@ body [role=region][aria-label] {
   max-width: 100%;
 }
 
+[data-show-mobile] {
+  display: inline-flex;
+}
+
+[data-show-desktop] {
+  display: none;
+}
+
+@media (min-width: 980px) {
+  [data-show-mobile] {
+    display: none;
+  }
+
+  [data-show-desktop] {
+    display: inline-flex;
+  }
+}
 nav {
   display: flex;
   flex-direction: column;

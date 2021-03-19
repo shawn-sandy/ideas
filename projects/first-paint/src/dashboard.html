@@ -8,32 +8,57 @@
     <title>title</title>
     <meta name="description" content="title" />
     <meta name="author" content="author" />
+    <!-- load the critical styles inline -->
+    {% set css %} {% include "src/css/critical.css" %} {% endset %}
+    <!-- feed it through our cssmin filter to minify -->
+    <style>
+      {{ css | cssmin | safe }}
+    </style>
 
     <link rel="stylesheet" href="/css/dashboard.css" />
   </head>
 
   <body>
-    <section role="region" aria-label="dashboard">
-      <nav role="navigation" aria-label="Main navigation">
-        <div><a href="">Menu</a></div>
-        <section id="navigation" role="region" aria-label="dashboard-header">
-          <h1>
-            <a href="/" aria-label="Site logo">
-              <img src="/img/fp.svg" alt="" /><span aria-label="logo text"
-                >FirstPaint</span
-              >
-            </a>
-          </h1>
-        </section>
-        <section role="region" aria-label="dashboard-nav">
-          <ul>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-        </section>
-      </nav>
+    <section role="region" aria-label="dashboard" data-dashboard>
+      <section data-sidebar>
+        <div data-show-mobile>
+          <a href="#sidebar" role="button" data-sidebar-button>
+            <em>=</em>
+          </a>
+        </div>
+        <nav
+          id="sidebar"
+          role="navigation"
+          aria-label="Main navigation"
+          data-nav
+        >
+          <section
+            data-show-desktop
+            id="navigation"
+            role="region"
+            aria-label="dashboard-header"
+          >
+            <h1>
+              <a href="/" aria-label="Site logo">
+                <img src="/img/fp.svg" alt="" /><span aria-label="logo text"
+                  >FirstPaint</span
+                >
+              </a>
+            </h1>
+          </section>
+          <section role="region" aria-label="dashboard-nav">
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </section>
+          <section data-show-mobile role="region" aria-label="Close nav">
+            <a href="#" role="button" data-sidebar-button><em>X</em> </a>
+          </section>
+        </nav>
+      </section>
       <main>
         <header>
           <section role="banner-">
@@ -55,20 +80,7 @@
               >
                 <span>Get Started</span></a
               >
-              <a
-                href="#"
-                role="button"
-                aria-label="Add word, cta action, to your button title"
-              >
-                <strong>Get Started</strong></a
-              >
-              <a
-                href="#"
-                role="button"
-                aria-label="Add word, cta action, to your button title"
-              >
-                <em>Get Started</em></a
-              >
+              <hr />
             </div>
           </section>
         </header>

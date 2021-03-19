@@ -1,58 +1,4 @@
 @charset "UTF-8";
-html {
-  scroll-behavior: smooth;
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  font-size: 80%;
-}
-@media (min-width: 980px) {
-  html {
-    font-size: 100%;
-  }
-}
-@media (min-width: 1980px) {
-  html {
-    font-size: 110%;
-  }
-}
-html * {
-  outline: none;
-}
-html *,
-html *:before,
-html *:after {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  background-color: #ffffff;
-  color: #262626;
-}
-body > section, body > main, body > header > section, body > footer > section {
-  padding: 1rem;
-  max-width: 90%;
-  margin: 0 auto;
-}
-@media (min-width: 980px) {
-  body > section, body > main, body > header > section, body > footer > section {
-    max-width: 80%;
-    width: 80%;
-  }
-}
-@media (min-width: 1980px) {
-  body > section, body > main, body > header > section, body > footer > section {
-    max-width: 80%;
-    font-size: 110%;
-  }
-}
-body [role=region][aria-label] {
-  width: 100%;
-  max-width: 100%;
-}
-
 h1,
 h2,
 h3,
@@ -106,124 +52,6 @@ p {
 
 p + p {
   margin-top: 2rem;
-}
-
-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 3.5rem;
-  padding: 0.5rem 0rem;
-  margin: 0 auto;
-  margin-bottom: 0rem;
-  border-bottom: none;
-}
-@media (min-width: 960px) {
-  nav {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    width: 80%;
-  }
-}
-nav section {
-  display: flex;
-  min-height: 3.5rem;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 0;
-}
-nav section li,
-nav section a {
-  margin-top: 1rem;
-}
-nav section li {
-  height: inherit;
-  display: flex;
-  align-items: center;
-  margin-top: 0;
-}
-nav section li + li {
-  margin-top: 0;
-}
-@media all and (min-width: 960px) {
-  nav section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 0;
-    padding: 0 0.5rem;
-  }
-  nav section li,
-nav section a {
-    margin-top: 0;
-  }
-}
-nav section img[alt] {
-  display: inline-block;
-  vertical-align: middle;
-  height: 2rem;
-  max-height: 2rem;
-}
-nav section img[alt] + * {
-  margin-left: 1rem;
-}
-nav section a {
-  padding: 0 0.5rem;
-  font-size: 0.9rem;
-  text-decoration: none;
-}
-nav section button[type],
-nav section a[role=button] {
-  margin-bottom: 0;
-}
-nav section ul {
-  display: flex;
-  min-height: 3.5rem;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 0;
-}
-nav h1,
-nav [aria-label="brand name"] {
-  display: block;
-  text-align: center;
-  height: 100%;
-  margin: 0;
-  line-height: normal;
-  font-size: 1.5rem;
-}
-@media (min-width: 960px) {
-  nav h1,
-nav [aria-label="brand name"] {
-    display: flex;
-    align-items: center;
-  }
-}
-nav h1 a,
-nav [aria-label="brand name"] a {
-  font-size: 1.5rem;
-  padding: 0;
-}
-
-.fp-header,
-header > [role=banner] {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  min-height: 25rem;
-}
-.fp-header > section,
-.fp-header > div,
-header > [role=banner] > section,
-header > [role=banner] > div {
-  text-align: center;
 }
 
 .fp-main,
@@ -539,42 +367,125 @@ ol {
   margin-bottom: 1rem;
 }
 
-nav {
-  flex-direction: column;
-  width: 30%;
-  justify-content: flex-start;
+a[role=button],
+.fp-button-link[role=button] {
+  display: inline-flex;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  border-radius: 0.1rem;
+  color: darkblue;
 }
-nav section {
+a[role=button]:hover, a[role=button]:active, a[role=button]:focus,
+.fp-button-link[role=button]:hover,
+.fp-button-link[role=button]:active,
+.fp-button-link[role=button]:focus {
+  border: none;
+}
+a[role=button] > span,
+a[role=button] > strong,
+a[role=button] > em,
+.fp-button-link[role=button] > span,
+.fp-button-link[role=button] > strong,
+.fp-button-link[role=button] > em {
+  border: 1px transparent solid;
+  padding: 0.6rem 1.5rem;
+  border: 1px solid #e4e4e4;
+  font-weight: normal;
+  font-style: normal;
+}
+a[role=button] > span:hover,
+a[role=button] > strong:hover,
+a[role=button] > em:hover,
+.fp-button-link[role=button] > span:hover,
+.fp-button-link[role=button] > strong:hover,
+.fp-button-link[role=button] > em:hover {
+  background-color: #cbcbcb;
+}
+a[role=button] > strong,
+.fp-button-link[role=button] > strong {
+  background-color: #e4e4e4;
+}
+a[role=button] > em,
+.fp-button-link[role=button] > em {
+  background-color: #e4e4e4;
+  border-radius: 6.1875rem;
+}
+a[role=button] > em:active, a[role=button] > em:hover, a[role=button] > em:focus,
+.fp-button-link[role=button] > em:active,
+.fp-button-link[role=button] > em:hover,
+.fp-button-link[role=button] > em:focus {
+  border-radius: 6.1875rem !important;
+  background-color: #cbcbcb;
+}
+
+[data-dashboard] {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 0;
+}
+[data-dashboard] [data-sidebar] {
+  padding: 1rem 0.5rem;
+}
+@media (min-width: 980px) {
+  [data-dashboard] {
+    flex-direction: row;
+  }
+}
+[data-dashboard] nav {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  visibility: hidden;
+}
+[data-dashboard] nav:target {
+  display: flex;
+  visibility: visible;
+  position: absolute;
+  z-index: 99;
+  right: 0;
+  left: 20%;
+  top: 1rem;
+  padding: 2rem;
+  background-color: rgba(245, 244, 244, 0.98);
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+@media (min-width: 980px) {
+  [data-dashboard] nav {
+    visibility: visible;
+    display: flex;
+  }
+}
+[data-dashboard] nav section {
   max-width: 25rem;
   min-width: 20rem;
   align-items: left;
   justify-content: flex-start;
 }
-nav section ul {
+[data-dashboard] nav section ul {
   flex-direction: column;
   justify-content: flex-start;
   padding-left: 0;
 }
-nav section li + li {
+[data-dashboard] nav section li + li {
   margin-top: 0.9rem;
 }
 
-section[role=region][aria-label=dashboard] {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  min-height: 100vh;
-}
-@media (min-width: 980px) {
-  section[role=region][aria-label=dashboard] {
-    flex-direction: row;
-  }
-  section[role=region][aria-label=dashboard] nav section {
-    display: flex;
-  }
+[data-sidebar-button] {
+  display: block;
 }
 
+@media (min-width: 980px) {
+  [data-sidebar-button] {
+    display: none;
+  }
+}
 main {
   flex-direction: column;
   overflow: auto;
+  padding: 1rem;
 }

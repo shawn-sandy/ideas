@@ -152,13 +152,31 @@ $brand-name: 'brand name' !default;
 
 @mixin dashboard {
 
+
   nav {
+    display: none;
     flex-direction: column;
-    width: 30%;
-    justify-content: flex-start;
+    justify-content: center;
+    visibility: hidden;
+
+    &:target {
+      display: flex;
+      visibility: visible;
+      position: absolute;
+      z-index: 99;
+      right: 0;
+      left: 20%;
+      top: 1rem;
+      padding: 2rem;
+      background-color: rgba(245, 244, 244, 0.98);
+      border-top-left-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+    }
 
     @media (min-width: 980px) {
       // flex-direction: column;
+      visibility: visible;
+      display: flex;
     }
 
     section {
@@ -178,6 +196,7 @@ $brand-name: 'brand name' !default;
       }
     }
   }
+
 }
 
 

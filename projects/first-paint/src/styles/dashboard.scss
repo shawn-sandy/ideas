@@ -1,29 +1,48 @@
 // @use '../components/reset.scss';
 
-@use '../components.scss'with($render-all: true);
+@use '../components.scss'with($render-all: true, $render-page: false,
+  $render-nav: false, $render-header: false);
 
-@include components.nav-dashboard();
+@include components.button-links();
 
-section[role="region"][aria-label="dashboard"] {
+
+[data-dashboard] {
   display: flex;
+  position: relative;
   flex-direction: row;
   justify-content: flex-start;
   min-height: 100vh;
+  padding: 0;
 
-  nav section {
-    // display: none;
+  [data-sidebar] {
+    padding: 1rem .5rem;
   }
 
   @media (min-width: 980px) {
     flex-direction: row;
 
-    nav section {
-      display: flex;
-    }
+    // a[data-sidebar-button] {
+    //   display: none;
+    // }
+
+  }
+
+  @include components.nav-dashboard();
+}
+
+[data-sidebar-button] {
+  display: block;
+}
+
+@media (min-width: 980px) {
+
+  [data-sidebar-button] {
+    display: none;
   }
 }
 
 main {
   flex-direction: column;
   overflow: auto;
+  padding: 1rem;
 }
