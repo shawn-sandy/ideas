@@ -435,13 +435,13 @@ a[role=button] > em:active, a[role=button] > em:hover, a[role=button] > em:focus
     flex-direction: row;
   }
 }
-[data-dashboard] nav {
+[data-dashboard] [data-sidebar] nav {
   display: none;
   flex-direction: column;
   justify-content: center;
   visibility: hidden;
 }
-[data-dashboard] nav:target {
+[data-dashboard] [data-sidebar] nav:target {
   display: flex;
   visibility: visible;
   position: absolute;
@@ -450,42 +450,37 @@ a[role=button] > em:active, a[role=button] > em:hover, a[role=button] > em:focus
   left: 20%;
   top: 1rem;
   padding: 2rem;
-  background-color: rgba(245, 244, 244, 0.98);
+  background-color: rgba(245, 244, 244, 0.95);
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
 }
 @media (min-width: 980px) {
-  [data-dashboard] nav {
+  [data-dashboard] [data-sidebar] nav {
     visibility: visible;
     display: flex;
   }
 }
-[data-dashboard] nav section {
+[data-dashboard] [data-sidebar] nav section {
   max-width: 25rem;
   min-width: 20rem;
   align-items: left;
   justify-content: flex-start;
 }
-[data-dashboard] nav section ul {
+[data-dashboard] [data-sidebar] nav section ul {
   flex-direction: column;
   justify-content: flex-start;
   padding-left: 0;
 }
-[data-dashboard] nav section li + li {
+[data-dashboard] [data-sidebar] nav section li + li {
   margin-top: 0.9rem;
 }
-
-[data-sidebar-button] {
-  display: block;
+[data-dashboard] [data-sidebar] [data-sidebar-button] {
+  font-weight: 500;
 }
 
-@media (min-width: 980px) {
-  [data-sidebar-button] {
-    display: none;
-  }
-}
 main {
   flex-direction: column;
   overflow: auto;
   padding: 1rem;
+  max-width: 70%;
 }

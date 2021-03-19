@@ -4,7 +4,7 @@
   $render-nav: false, $render-header: false);
 
 @include components.button-links();
-
+@include components.nav-max-width();
 
 [data-dashboard] {
   display: flex;
@@ -27,22 +27,19 @@
 
   }
 
-  @include components.nav-dashboard();
-}
+  [data-sidebar] {
+    @include components.nav-dashboard();
 
-[data-sidebar-button] {
-  display: block;
-}
-
-@media (min-width: 980px) {
-
-  [data-sidebar-button] {
-    display: none;
+    [data-sidebar-button] {
+      font-weight: 500;
+    }
   }
 }
+
 
 main {
   flex-direction: column;
   overflow: auto;
   padding: 1rem;
+  max-width: 70%;
 }

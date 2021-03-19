@@ -20,8 +20,21 @@ $brand-name: 'brand name' !default;
 @mixin renderComponent($renderComponent: $render, $className: null) {
   @if $renderComponent {
 
+    img[alt][data-brand] {
+      display: inline-block;
+      vertical-align: middle;
+      height: $brand-img-height or 2rem;
+      max-height: $brand-img-height or 2rem;
+      ;
+
+      +* {
+        margin-left: 1rem;
+      }
+    }
+
     #{if($className, $className ',', '')} nav {
-      display: flex;
+      display: none;
+      visibility: hidden;
       flex-direction: column;
       align-items: $align-items;
       justify-content: $justify-content;
@@ -31,8 +44,21 @@ $brand-name: 'brand name' !default;
       margin-bottom: 0rem;
       border-bottom: #{if($max-width,  $border,'none')};
 
+      &:target {
+        display: flex;
+        visibility: visible;
+        position: fixed;
+        background-color: rgba(255, 255, 255, 0.95);
+
+        @media (min-width: 980px) {
+          background-color: transparent;
+          position: relative;
+        }
+      }
+
       @media (min-width: 960px) {
         display: flex;
+        visibility: visible;
         flex-direction: row;
         margin-bottom: 0;
         padding-top: 0;
@@ -40,6 +66,7 @@ $brand-name: 'brand name' !default;
         width: $max-width or 80%;
 
       }
+
 
       section {
 
@@ -82,17 +109,7 @@ $brand-name: 'brand name' !default;
           }
         }
 
-        img[alt] {
-          display: inline-block;
-          vertical-align: middle;
-          height: $brand-img-height or 2rem;
-          max-height: $brand-img-height or 2rem;
-          ;
 
-          +* {
-            margin-left: 1rem;
-          }
-        }
 
         a {
           padding: 0 .5rem;
@@ -144,8 +161,10 @@ $brand-name: 'brand name' !default;
 @mixin max-width($max-width: 100%) {
 
   nav {
-    max-width: $max-width;
-    border: $border;
+    @media (min-width: 960px) {}
+
+    // max-width: $max-width;
+    // width: $max-width;
   }
 
 }
@@ -168,7 +187,7 @@ $brand-name: 'brand name' !default;
       left: 20%;
       top: 1rem;
       padding: 2rem;
-      background-color: rgba(245, 244, 244, 0.98);
+      background-color: rgba(245, 244, 244, 0.95);
       border-top-left-radius: 1rem;
       border-bottom-left-radius: 1rem;
     }
