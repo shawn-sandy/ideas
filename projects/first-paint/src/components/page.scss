@@ -8,7 +8,8 @@ $width-lg: $width-md !default;
 $width-lg-max: 1920px !default;
 $margin: 0 auto !default;
 $height: null !default;
-$padding: 1rem !default;
+$padding: 0 1rem !default;
+$brand-img-height: 2rem;
 $font-family: -apple-system,
 BlinkMacSystemFont,
 Roboto,
@@ -36,7 +37,11 @@ sans-serif,
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       text-rendering: optimizeLegibility;
-      font-size: 80%;
+      font-size: 90%;
+
+      @media (min-width: 980px) {
+        font-size: 100%;
+      }
 
       @media (min-width: 980px) {
         font-size: 100%;
@@ -109,6 +114,28 @@ sans-serif,
       }
     }
 
+  }
+
+  [data-brand] {
+
+    img[alt] {
+      display: inline-block;
+      vertical-align: middle;
+      height: $brand-img-height or 2rem;
+      max-height: $brand-img-height or 2rem;
+
+      +* {
+        margin-left: 1rem;
+      }
+
+    }
+
+    h1,
+    h2,
+    h3,
+    h5 {
+      font-size: $brand-img-height - .5 or 2rem - .75;
+    }
   }
 }
 

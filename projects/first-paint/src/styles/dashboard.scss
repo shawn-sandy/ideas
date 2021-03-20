@@ -4,7 +4,6 @@
   $render-nav: false, $render-header: false);
 
 @include components.button-links();
-@include components.nav-max-width();
 
 [data-dashboard] {
   display: flex;
@@ -20,11 +19,6 @@
 
   @media (min-width: 980px) {
     flex-direction: row;
-
-    // a[data-sidebar-button] {
-    //   display: none;
-    // }
-
   }
 
   [data-sidebar] {
@@ -34,12 +28,17 @@
       font-weight: 500;
     }
   }
-}
 
+  main {
+    flex-direction: column;
+    overflow: auto;
+    // padding: 1rem;
+    max-width: 70%;
 
-main {
-  flex-direction: column;
-  overflow: auto;
-  padding: 1rem;
-  max-width: 70%;
+    @media (max-width: 979px) {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
 }

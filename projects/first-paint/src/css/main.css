@@ -1,4 +1,20 @@
 @charset "UTF-8";
+[data-brand] img[alt] {
+  display: inline-block;
+  vertical-align: middle;
+  height: 2rem;
+  max-height: 2rem;
+}
+[data-brand] img[alt] + * {
+  margin-left: 1rem;
+}
+[data-brand] h1,
+[data-brand] h2,
+[data-brand] h3,
+[data-brand] h5 {
+  font-size: 1.5rem;
+}
+
 h1,
 h2,
 h3,

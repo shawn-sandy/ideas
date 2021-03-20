@@ -139,7 +139,12 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  font-size: 80%;
+  font-size: 90%;
+}
+@media (min-width: 980px) {
+  html {
+    font-size: 100%;
+  }
 }
 @media (min-width: 980px) {
   html {
@@ -166,7 +171,7 @@ body {
   color: #262626;
 }
 body > section, body > main, body > header > section, body > footer > section {
-  padding: 1rem;
+  padding: 0 1rem;
   max-width: 90%;
   margin: 0 auto;
 }
@@ -204,14 +209,20 @@ body [role=region][aria-label] {
     display: inline-flex;
   }
 }
-img[alt][data-brand] {
+[data-brand] img[alt] {
   display: inline-block;
   vertical-align: middle;
   height: 2rem;
   max-height: 2rem;
 }
-img[alt][data-brand] + * {
+[data-brand] img[alt] + * {
   margin-left: 1rem;
+}
+[data-brand] h1,
+[data-brand] h2,
+[data-brand] h3,
+[data-brand] h5 {
+  font-size: 1.5rem;
 }
 
 nav {
@@ -220,11 +231,16 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  min-height: 3.5rem;
   padding: 0.5rem 0rem;
   margin: 0 auto;
   margin-bottom: 0rem;
   border-bottom: none;
+}
+nav[data-display-nav] {
+  display: flex !important;
+  visibility: visible !important;
+  justify-content: space-between !important;
+  flex-direction: row !important;
 }
 nav:target {
   display: flex;
@@ -246,12 +262,11 @@ nav:target {
     margin-bottom: 0;
     padding-top: 0;
     padding-bottom: 0;
-    width: 80%;
+    width: 100%;
   }
 }
 nav section {
   display: flex;
-  min-height: 3.5rem;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
