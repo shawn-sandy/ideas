@@ -262,6 +262,7 @@ nav[data-display-nav] {
 @media (min-width: 960px) {
   nav {
     display: flex;
+    align-items: center;
     visibility: visible;
     flex-direction: row;
     margin-bottom: 0;
@@ -332,6 +333,7 @@ nav [aria-label="brand name"] {
   margin: 0;
   line-height: normal;
   font-size: 1.5rem;
+  padding: 0.5rem;
 }
 @media (min-width: 960px) {
   nav h1,

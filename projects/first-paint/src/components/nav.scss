@@ -59,6 +59,7 @@ $brand-name: 'brand name' !default;
 
       @media (min-width: 960px) {
         display: flex;
+        align-items: center;
         visibility: visible;
         flex-direction: row;
         margin-bottom: 0;
@@ -153,6 +154,8 @@ $brand-name: 'brand name' !default;
           font-size: $title-font-size;
           padding: 0;
         }
+
+        padding: .5rem;
 
       }
 

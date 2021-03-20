@@ -182,6 +182,7 @@ nav[data-display-nav] {
 @media (min-width: 960px) {
   nav {
     display: flex;
+    align-items: center;
     visibility: visible;
     flex-direction: row;
     margin-bottom: 0;
@@ -252,6 +253,7 @@ nav [aria-label="brand name"] {
   margin: 0;
   line-height: normal;
   font-size: 1.5rem;
+  padding: 0.5rem;
 }
 @media (min-width: 960px) {
   nav h1,
@@ -268,20 +270,21 @@ nav [aria-label="brand name"] a {
 
 .fp-footer,
 footer[role=contentinfo] {
-  display: flex;
+  display: block;
   flex-direction: column;
   font-size: 0.9rem;
   border-top: solid 1px whitesmoke;
-  padding: 2rem 0;
+  margin-top: 1rem;
 }
 .fp-footer section,
 footer[role=contentinfo] section {
-  display: flex;
+  display: block;
   justify-content: center;
 }
 .fp-footer section > div,
 footer[role=contentinfo] section > div {
   flex: 1;
+  margin-bottom: 1rem;
 }
 @media (min-width: 980px) {
   .fp-footer section,
@@ -297,6 +300,14 @@ footer[role=contentinfo] section > aside + aside,
 footer[role=contentinfo] section > div + div {
     margin-left: 1rem;
   }
+}
+.fp-footer > div,
+footer[role=contentinfo] > div {
+  padding: 2rem;
+}
+.fp-footer > div p,
+footer[role=contentinfo] > div p {
+  text-align: center;
 }
 
 nav,
