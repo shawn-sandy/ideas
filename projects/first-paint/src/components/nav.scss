@@ -9,11 +9,11 @@ $min-height: 3.5rem !default;
 $max-width: null !default;
 $padding: .5rem !default;
 $padding-x: .5rem !default;
-$padding-y: 0rem !default;
+$padding-y: .5rem !default;
 $padding-items: 0 1rem;
 $title-font-size: 1.5rem !default;
 $brand-img-height: null !default;
-$align-items: center !default;
+$align-items: flex-start !default;
 $justify-content: space-between !default;
 $brand-name: 'brand name' !default;
 
@@ -21,32 +21,39 @@ $brand-name: 'brand name' !default;
   @if $renderComponent {
 
     #{if($className, $className ',', '')} nav {
-      display: none;
-      visibility: hidden;
+
+      // hide nav by default on mobile
+      @media (max-width: 980px) {
+        display: none;
+        visibility: hidden;
+      }
+
       flex-direction: column;
       align-items: $align-items;
       justify-content: $justify-content;
-      padding: $padding-x $padding-y;
+      padding: $padding-y $padding-x;
       margin: 0 auto;
       margin-bottom: 0rem;
       border-bottom: #{if($max-width,  $border,'none')};
+      width: 100%;
 
       &[data-display-nav] {
         display: flex !important;
         visibility: visible !important;
         justify-content: space-between !important;
         flex-direction: row !important;
+        padding: .5rem;
       }
 
       &:target {
-        display: flex;
-        visibility: visible;
-        position: fixed;
-        background-color: rgba(255, 255, 255, 0.95);
 
-        @media (min-width: 980px) {
-          background-color: transparent;
-          position: relative;
+        @media (max-width: 980px) {
+          display: flex;
+          visibility: visible;
+          position: fixed;
+          background-color: rgba(255, 255, 255, 0.95);
+          width: 100%;
+          top: 0;
         }
       }
 
@@ -55,43 +62,40 @@ $brand-name: 'brand name' !default;
         visibility: visible;
         flex-direction: row;
         margin-bottom: 0;
-        padding-top: 0;
-        padding-bottom: 0;
-        width: $max-width or 100%;
+        padding: .5rem;
+        width: $max-width or 80%;
       }
 
 
       section {
-
-        display: flex;
-        // min-height: $min-height;
+        display: inline-flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         flex-wrap: wrap;
         margin: 0;
 
         li,
         a {
-          margin-top: 1rem;
+          margin-top: 0rem;
         }
 
         // margin-bottom: .5rem;
 
         li {
           height: inherit;
-          display: flex;
-          align-items: center;
+          display: block;
+          align-items: left;
           margin-top: 0;
-          // padding: 0 .3rem;
+          padding: .5rem;
 
           &+li {
             margin-top: 0;
           }
         }
 
-        @media all and (min-width: 960px) {
+        @media (min-width: 960px) {
           display: flex;
-          align-items: center;
+          align-items: flex-start;
           justify-content: space-between;
           margin-bottom: 0;
           padding: 0 .5rem;
@@ -116,12 +120,17 @@ $brand-name: 'brand name' !default;
         }
 
         ul {
-          display: flex;
+
+          @media (min-width: 980px) {
+            display: flex;
+          }
+
           min-height: $min-height;
           align-items: center;
           justify-content: center;
           flex-wrap: wrap;
           margin: 0;
+
         }
 
       }

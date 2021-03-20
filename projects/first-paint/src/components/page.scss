@@ -97,7 +97,8 @@ sans-serif,
     }
 
     [data-show-mobile] {
-      display: inline-flex;
+      display: flex;
+      visibility: visible;
     }
 
     [data-show-desktop] {

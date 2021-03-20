@@ -194,7 +194,8 @@ body [role=region][aria-label] {
 }
 
 [data-show-mobile] {
-  display: inline-flex;
+  display: flex;
+  visibility: visible;
 }
 
 [data-show-desktop] {
@@ -282,32 +283,36 @@ p + p {
 }
 
 nav {
-  display: none;
-  visibility: hidden;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  padding: 0.5rem 0rem;
+  padding: 0.5rem 0.5rem;
   margin: 0 auto;
   margin-bottom: 0rem;
   border-bottom: none;
+  width: 100%;
+}
+@media (max-width: 980px) {
+  nav {
+    display: none;
+    visibility: hidden;
+  }
 }
 nav[data-display-nav] {
   display: flex !important;
   visibility: visible !important;
   justify-content: space-between !important;
   flex-direction: row !important;
+  padding: 0.5rem;
 }
-nav:target {
-  display: flex;
-  visibility: visible;
-  position: fixed;
-  background-color: rgba(255, 255, 255, 0.95);
-}
-@media (min-width: 980px) {
+@media (max-width: 980px) {
   nav:target {
-    background-color: transparent;
-    position: relative;
+    display: flex;
+    visibility: visible;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 100%;
+    top: 0;
   }
 }
 @media (min-width: 960px) {
@@ -316,35 +321,35 @@ nav:target {
     visibility: visible;
     flex-direction: row;
     margin-bottom: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    width: 100%;
+    padding: 0.5rem;
+    width: 80%;
   }
 }
 nav section {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   margin: 0;
 }
 nav section li,
 nav section a {
-  margin-top: 1rem;
+  margin-top: 0rem;
 }
 nav section li {
   height: inherit;
-  display: flex;
-  align-items: center;
+  display: block;
+  align-items: left;
   margin-top: 0;
+  padding: 0.5rem;
 }
 nav section li + li {
   margin-top: 0;
 }
-@media all and (min-width: 960px) {
+@media (min-width: 960px) {
   nav section {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     margin-bottom: 0;
     padding: 0 0.5rem;
@@ -364,12 +369,16 @@ nav section a[role=button] {
   margin-bottom: 0;
 }
 nav section ul {
-  display: flex;
   min-height: 3.5rem;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   margin: 0;
+}
+@media (min-width: 980px) {
+  nav section ul {
+    display: flex;
+  }
 }
 nav h1,
 nav [aria-label="brand name"] {
