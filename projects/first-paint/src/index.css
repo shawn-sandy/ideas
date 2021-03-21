@@ -241,32 +241,32 @@ h6 {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 4.5rem;
 }
 
 h2 {
-  font-size: 3.6rem;
+  font-size: 3.1rem;
 }
 
 h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 h4 {
-  font-size: 1.777rem;
+  font-size: 1.5rem;
 }
 
 h5 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 h6 {
-  font-size: 9rem;
+  font-size: 1rem;
 }
 
 small,
 time {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 }
 
 time {
@@ -298,6 +298,34 @@ nav {
     visibility: hidden;
   }
 }
+@media (min-width: 960px) {
+  nav {
+    display: flex;
+    align-items: center;
+    visibility: visible;
+    flex-direction: row;
+    justify-content: space-between !important;
+    margin-bottom: 0;
+    padding: 0.5rem;
+    width: 80%;
+  }
+}
+@media (max-width: 980px) {
+  nav:target {
+    display: flex;
+    visibility: visible;
+    position: absolute;
+    z-index: 99;
+    right: 0;
+    top: 0rem;
+    padding: 2rem 0.5rem;
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+  nav:target ul {
+    margin-left: 0;
+    padding: 0;
+  }
+}
 nav[data-display-nav] {
   display: flex !important;
   visibility: visible !important;
@@ -305,33 +333,16 @@ nav[data-display-nav] {
   flex-direction: row !important;
   padding: 0.5rem;
 }
-@media (max-width: 980px) {
-  nav:target {
-    display: flex;
-    visibility: visible;
-    position: fixed;
-    background-color: rgba(255, 255, 255, 0.95);
-    width: 100%;
-    top: 0;
-  }
-}
-@media (min-width: 960px) {
-  nav {
-    display: flex;
-    align-items: center;
-    visibility: visible;
-    flex-direction: row;
-    margin-bottom: 0;
-    padding: 0.5rem;
-    width: 80%;
-  }
-}
 nav section {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
   margin: 0;
+}
+nav section[role=region][aria-label] {
+  flex-direction: row;
+  justify-content: space-between;
 }
 nav section li,
 nav section a {
