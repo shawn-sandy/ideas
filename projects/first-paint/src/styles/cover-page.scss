@@ -5,6 +5,12 @@
   // $render-form: true, // the form is optional
 );
 
+[data-cover] {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 nav,
 footer {
   flex-shrink: 0;
@@ -13,7 +19,9 @@ footer {
 header {
   display: flex;
   flex-direction: column;
-  height: 85vh;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
 
   &>[role="banner"] {
     flex-grow: 1;
