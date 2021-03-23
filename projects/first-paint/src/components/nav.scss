@@ -10,7 +10,7 @@ $max-width: null !default;
 $padding: .5rem !default;
 $padding-x: .5rem !default;
 $padding-y: .5rem !default;
-$padding-items: 0 1rem;
+$padding-items: 0 1rem !default;
 $title-font-size: 1.5rem !default;
 $brand-img-height: null !default;
 $align-items: flex-start !default;
@@ -40,14 +40,14 @@ $brand-name: 'brand name' !default;
       border-bottom: #{if($max-width,  $border,'none')};
       width: 100%;
 
-      @media (min-width: 960px) {
+      @media (min-width: 980px) {
         display: flex;
         align-items: center;
         visibility: visible;
         flex-direction: row;
         justify-content: space-between !important;
         margin-bottom: 0;
-        padding: .5rem;
+        padding: .5rem 0;
         width: $max-width or 80%;
       }
 
@@ -72,13 +72,13 @@ $brand-name: 'brand name' !default;
       }
 
       // always display on mobile/desktop
-      &[data-display-nav] {
-        display: flex !important;
-        visibility: visible !important;
-        justify-content: space-between !important;
-        flex-direction: row !important;
-        padding: .5rem;
-      }
+      // &[data-display-nav] {
+      //   display: flex !important;
+      //   visibility: visible !important;
+      //   justify-content: space-between !important;
+      //   flex-direction: row !important;
+      //   padding: .5rem;
+      // }
 
       &[data-mobile]>section {
 
@@ -172,7 +172,6 @@ $brand-name: 'brand name' !default;
           align-items: flex-start;
           justify-content: space-between;
           margin-bottom: 0;
-          padding: 0 .5rem;
 
           li,
           a {
@@ -270,8 +269,7 @@ $brand-name: 'brand name' !default;
     }
 
     section {
-      max-width: 25rem;
-      min-width: 20rem;
+      min-width: 20vw;
       align-items: left;
       justify-content: flex-start;
 

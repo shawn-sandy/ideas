@@ -57,7 +57,7 @@
     "@babel/preset-env": "^7.13.9",
     "@fortawesome/fontawesome-free": "^5.15.2",
     "@shawnsandy/bootstrap-lite": "^0.1.12",
-    "@shawnsandy/first-paint": "^0.8.3",
+    "@shawnsandy/first-paint": "^1.0.0",
     "@shawnsandy/ideas": "^0.2.0",
     "@shawnsandy/mix": "^0.10.14",
     "auto-changelog": "^2.2.1",
