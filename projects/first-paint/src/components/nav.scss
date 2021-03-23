@@ -82,13 +82,14 @@ $brand-name: 'brand name' !default;
 
       &[data-mobile]>section {
 
+        width: auto !important;
+
 
         @media (max-width: 980px) {
 
           &:not(:first-child) {
             display: none;
             visibility: hidden;
-            width: 100%;
           }
 
           &:target {
@@ -130,6 +131,7 @@ $brand-name: 'brand name' !default;
             position: absolute;
             z-index: 99;
             right: 0;
+            left: 0;
             top: 0rem;
             padding: 2rem .5rem;
             background-color: rgba(255, 255, 255, 0.95);
