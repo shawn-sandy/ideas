@@ -480,7 +480,7 @@ a[role=button] > em:active, a[role=button] > em:hover, a[role=button] > em:focus
   }
 }
 [data-dashboard] [data-sidebar] nav[data-sidebar-nav] section {
-  min-width: 20vw;
+  min-width: 15vw;
   align-items: left;
   justify-content: flex-start;
 }
