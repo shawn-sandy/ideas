@@ -10,7 +10,7 @@ $max-width: null !default;
 $padding: .5rem !default;
 $padding-x: .5rem !default;
 $padding-y: .5rem !default;
-$padding-items: 0 1rem;
+$padding-items: 0 1rem !default;
 $title-font-size: 1.5rem !default;
 $brand-img-height: null !default;
 $align-items: flex-start !default;
@@ -25,11 +25,11 @@ $brand-name: 'brand name' !default;
 
       // hide nav by default on mobile
       @media (max-width: 980px) {
-        display: none;
-        visibility: hidden;
+        [data-mobile] {
+          display: none;
+          visibility: hidden;
+        }
       }
-
-
 
       flex-direction: column;
       align-items: $align-items;
@@ -40,14 +40,14 @@ $brand-name: 'brand name' !default;
       border-bottom: #{if($max-width,  $border,'none')};
       width: 100%;
 
-      @media (min-width: 960px) {
+      @media (min-width: 980px) {
         display: flex;
         align-items: center;
         visibility: visible;
         flex-direction: row;
         justify-content: space-between !important;
         margin-bottom: 0;
-        padding: .5rem;
+        padding: .5rem 0;
         width: $max-width or 80%;
       }
 
@@ -72,12 +72,44 @@ $brand-name: 'brand name' !default;
       }
 
       // always display on mobile/desktop
-      &[data-display-nav] {
-        display: flex !important;
-        visibility: visible !important;
-        justify-content: space-between !important;
-        flex-direction: row !important;
-        padding: .5rem;
+      // &[data-display-nav] {
+      //   display: flex !important;
+      //   visibility: visible !important;
+      //   justify-content: space-between !important;
+      //   flex-direction: row !important;
+      //   padding: .5rem;
+      // }
+
+      &[data-mobile]>section {
+
+
+        @media (max-width: 980px) {
+
+          &:not(:first-child) {
+            display: none;
+            visibility: hidden;
+            width: 100%;
+          }
+
+          &:target {
+
+            display: flex;
+            visibility: visible;
+            position: absolute;
+            z-index: 99;
+            right: 0;
+            top: 0rem;
+            padding: 2rem .5rem;
+            background-color: rgba(255, 255, 255, 0.95);
+
+            ul {
+              margin-left: 0;
+              padding: 0;
+            }
+
+          }
+
+        }
       }
 
 
@@ -87,6 +119,28 @@ $brand-name: 'brand name' !default;
         justify-content: flex-start;
         flex-wrap: wrap;
         margin: 0;
+
+
+
+        &:target {
+
+          @media (max-width: 980px) {
+            display: flex;
+            visibility: visible;
+            position: absolute;
+            z-index: 99;
+            right: 0;
+            top: 0rem;
+            padding: 2rem .5rem;
+            background-color: rgba(255, 255, 255, 0.95);
+
+            ul {
+              margin-left: 0;
+              padding: 0;
+            }
+
+          }
+        }
 
         &[role="region"][aria-label] {
           flex-direction: row;
@@ -118,11 +172,15 @@ $brand-name: 'brand name' !default;
           align-items: flex-start;
           justify-content: space-between;
           margin-bottom: 0;
-          padding: 0 .5rem;
 
           li,
           a {
             margin-top: 0;
+          }
+
+          [role=region][aria-label] {
+            width: auto;
+            max-width: auto;
           }
         }
 
@@ -192,7 +250,6 @@ $brand-name: 'brand name' !default;
 
 @mixin dashboard {
 
-
   nav[data-sidebar-nav] {
     display: none;
     flex-direction: column;
@@ -203,12 +260,6 @@ $brand-name: 'brand name' !default;
       &:target {
         display: flex;
         visibility: visible;
-        // position: absolute;
-        // z-index: 99;
-        // right: 0;
-        // top: .5rem;
-        // padding: 2rem;
-        //background-color: rgba(255, 255, 255, 0.98);
       }
     }
 
@@ -218,8 +269,7 @@ $brand-name: 'brand name' !default;
     }
 
     section {
-      max-width: 25rem;
-      min-width: 20rem;
+      min-width: 20vw;
       align-items: left;
       justify-content: flex-start;
 

@@ -73,6 +73,7 @@ p + p {
 .fp-main,
 main {
   min-height: 30rem;
+  padding: 2rem 0;
 }
 .fp-main > section,
 main > section {

@@ -15,6 +15,7 @@ $min-height: 30rem !default;
 @mixin mix-main {
 
   min-height: $min-height;
+  padding: 2rem 0;
 
   >section {
     width: 100%;
