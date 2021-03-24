@@ -403,10 +403,10 @@ a[role=button]:hover, a[role=button]:active, a[role=button]:focus,
   border: none;
 }
 a[role=button] > span,
-a[role=button] > strong,
+a[role=button] > b,
 a[role=button] > em,
 .fp-button-link[role=button] > span,
-.fp-button-link[role=button] > strong,
+.fp-button-link[role=button] > b,
 .fp-button-link[role=button] > em {
   border: 1px transparent solid;
   padding: 0.6rem 1.5rem;
@@ -414,27 +414,47 @@ a[role=button] > em,
   font-weight: normal;
   font-style: normal;
 }
-a[role=button] > span:hover,
-a[role=button] > strong:hover,
+a[role=button] > span:active, a[role=button] > span:hover, a[role=button] > span:focus,
+a[role=button] > b:active,
+a[role=button] > b:hover,
+a[role=button] > b:focus,
+a[role=button] > em:active,
 a[role=button] > em:hover,
+a[role=button] > em:focus,
+.fp-button-link[role=button] > span:active,
 .fp-button-link[role=button] > span:hover,
-.fp-button-link[role=button] > strong:hover,
-.fp-button-link[role=button] > em:hover {
-  background-color: #cbcbcb;
-}
-a[role=button] > strong,
-.fp-button-link[role=button] > strong {
-  background-color: #e4e4e4;
-}
-a[role=button] > em,
-.fp-button-link[role=button] > em {
-  background-color: #e4e4e4;
-  border-radius: 6.1875rem;
-}
-a[role=button] > em:active, a[role=button] > em:hover, a[role=button] > em:focus,
+.fp-button-link[role=button] > span:focus,
+.fp-button-link[role=button] > b:active,
+.fp-button-link[role=button] > b:hover,
+.fp-button-link[role=button] > b:focus,
 .fp-button-link[role=button] > em:active,
 .fp-button-link[role=button] > em:hover,
 .fp-button-link[role=button] > em:focus {
   border-radius: 6.1875rem !important;
   background-color: #cbcbcb;
+}
+a[role=button] > span:hover,
+a[role=button] > b:hover,
+a[role=button] > em:hover,
+.fp-button-link[role=button] > span:hover,
+.fp-button-link[role=button] > b:hover,
+.fp-button-link[role=button] > em:hover {
+  background-color: #cbcbcb;
+}
+a[role=button] > span > b,
+a[role=button] > b > b,
+a[role=button] > em > b,
+.fp-button-link[role=button] > span > b,
+.fp-button-link[role=button] > b > b,
+.fp-button-link[role=button] > em > b {
+  background-color: #e4e4e4;
+}
+a[role=button] > span > em,
+a[role=button] > b > em,
+a[role=button] > em > em,
+.fp-button-link[role=button] > span > em,
+.fp-button-link[role=button] > b > em,
+.fp-button-link[role=button] > em > em {
+  background-color: #e4e4e4;
+  border-radius: 6.1875rem;
 }

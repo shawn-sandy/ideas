@@ -92,7 +92,7 @@ $cursor: pointer !default;
       }
 
       >span,
-      >strong,
+      >b,
       >em {
         border: $border-transparent;
         padding: $padding-y $padding-x;
@@ -100,24 +100,25 @@ $cursor: pointer !default;
         font-weight: normal;
         font-style: normal;
 
-        &:hover {
-          background-color: darken($background-color-hover, 10);
-        }
-      }
-
-      >strong {
-        background-color: $background-color-hover;
-      }
-
-      >em {
-        background-color: $background-color-hover;
-        border-radius: $border-radius-rounded;
-
         &:active,
         &:hover,
         &:focus {
           border-radius: $border-radius-rounded !important;
           background-color: darken($background-color-hover, 10);
+
+        }
+
+        &:hover {
+          background-color: darken($background-color-hover, 10);
+        }
+
+        >b {
+          background-color: $background-color-hover;
+        }
+
+        >em {
+          background-color: $background-color-hover;
+          border-radius: $border-radius-rounded;
 
         }
 

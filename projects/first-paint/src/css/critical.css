@@ -463,6 +463,10 @@ a:hover, a:active, a:visited {
   color: #012e70;
 }
 
+strong {
+  font-weight: 500;
+}
+
 blockquote {
   font-size: 1.3rem;
   line-height: 1.5;

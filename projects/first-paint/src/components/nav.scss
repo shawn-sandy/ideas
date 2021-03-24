@@ -278,12 +278,20 @@ $brand-name: 'brand name' !default;
       ul {
         flex-direction: column;
         justify-content: flex-start;
-        padding-left: 0;
+        padding-left: 1rem;
         width: 100%;
 
         li {
           padding: .31rem;
           width: 100%;
+
+          &+li {
+            margin-top: 0;
+          }
+        }
+
+        a {
+          padding: 0;
         }
       }
 
