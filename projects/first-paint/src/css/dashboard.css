@@ -477,6 +477,9 @@ a[role=button] > em > em,
   min-height: 100vh;
   padding: 0;
 }
+[data-dashboard] hr {
+  margin: 0.5rem 0;
+}
 [data-dashboard] [data-sidebar] {
   padding: 0.5rem 0.5rem;
 }
