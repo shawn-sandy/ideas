@@ -41,6 +41,6 @@ $render-elements: $render-all !default;
 
 @forward './components/hr.scss'as hr-* with($render: $render-hr);
 
-@forward './components/scrollbar.scss'as scrollbar-* with($render: $render-scrollbar);
+// @forward './components/scrollbar.scss'as scrollbar-* with($render: $render-scrollbar);
 
 @forward './components/elements.scss'as elements-* with($render: $render-elements);

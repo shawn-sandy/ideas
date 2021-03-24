@@ -37,18 +37,19 @@ sans-serif,
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       text-rendering: optimizeLegibility;
-      font-size: 90%;
+      font-size: 85%;
 
       @media (min-width: 980px) {
         font-size: 100%;
       }
 
-      @media (min-width: 980px) {
-        font-size: 100%;
+      @media (min-width: 1600px) {
+        font-size: 110%;
       }
+
 
       @media (min-width: 1980px) {
-        font-size: 110%;
+        font-size: 115%;
       }
 
       * {
@@ -73,7 +74,6 @@ sans-serif,
       &>main,
       &>header>section,
       &>footer>section {
-        padding: $padding;
         max-width: $width;
         margin: $margin;
 

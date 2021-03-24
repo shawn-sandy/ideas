@@ -139,21 +139,21 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  font-size: 90%;
+  font-size: 85%;
 }
 @media (min-width: 980px) {
   html {
     font-size: 100%;
   }
 }
-@media (min-width: 980px) {
+@media (min-width: 1600px) {
   html {
-    font-size: 100%;
+    font-size: 110%;
   }
 }
 @media (min-width: 1980px) {
   html {
-    font-size: 110%;
+    font-size: 115%;
   }
 }
 html * {
@@ -171,7 +171,6 @@ body {
   color: #262626;
 }
 body > section, body > main, body > header > section, body > footer > section {
-  padding: 0 1rem;
   max-width: 90%;
   margin: 0 auto;
 }
@@ -407,6 +406,48 @@ header > [role=banner] {
 .fp-header > div,
 header > [role=banner] > section,
 header > [role=banner] > div {
+  text-align: center;
+}
+
+.fp-footer,
+footer[role=contentinfo] {
+  display: block;
+  flex-direction: column;
+  font-size: 0.9rem;
+  border-top: solid 1px whitesmoke;
+  margin-top: 1rem;
+}
+.fp-footer section,
+footer[role=contentinfo] section {
+  display: block;
+  justify-content: center;
+}
+.fp-footer section > div,
+footer[role=contentinfo] section > div {
+  flex: 1;
+  margin-bottom: 1rem;
+}
+@media (min-width: 980px) {
+  .fp-footer section,
+footer[role=contentinfo] section {
+    display: flex;
+    align-items: stretch;
+    align-content: stretch;
+    padding: 1rem;
+  }
+  .fp-footer section > aside + aside,
+.fp-footer section > div + div,
+footer[role=contentinfo] section > aside + aside,
+footer[role=contentinfo] section > div + div {
+    margin-left: 1rem;
+  }
+}
+.fp-footer > div,
+footer[role=contentinfo] > div {
+  padding: 2rem;
+}
+.fp-footer > div p,
+footer[role=contentinfo] > div p {
   text-align: center;
 }
 

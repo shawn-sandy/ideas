@@ -1,6 +1,6 @@
 $render: true !default;
 
-$min-height: 30rem !default;
+$min-height: 30vh !default;
 
 @mixin main($renderContent: $render, $className: null) {
   @if($renderContent) {
