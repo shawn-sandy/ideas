@@ -13,12 +13,26 @@
   min-height: 100vh;
   padding: 0;
 
-  hr {
-    margin: .5rem 0;
-  }
-
   [data-sidebar] {
     padding: .5rem .5rem;
+
+    hr {
+      margin: .5rem 0;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+    }
+
+    width: 100%;
+    padding: 1rem;
+
+    @media (min-width: 1280px) {
+      article {
+        max-width: 75%;
+      }
+    }
+
   }
 
   @media (min-width: 980px) {
@@ -26,6 +40,13 @@
   }
 
   [data-sidebar] {
+    overflow: hidden;
+    overflow-y: auto;
+
+    strong a {
+      font-size: 1.1rem;
+    }
+
     @include components.nav-dashboard();
 
     [data-sidebar-button] {
@@ -41,8 +62,9 @@
   main {
     flex-direction: column;
     overflow: auto;
-    padding: 0 1rem;
+    padding: 0 2rem;
     border-left: .1rem solid whitesmoke;
+    width: 100%;
 
     @media (max-width: 980px) {
       width: 100%;
