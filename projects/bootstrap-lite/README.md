@@ -1,6 +1,6 @@
 # BootstrapLite
 
-### Bootstrap without the Guilt (152kb < 70kb/53kbmin )
+### Bootstrap without the Guilt (152kb < 70kb/53kb-min )
 
 A lightweight build of <a href="https://getbootstrap.com" target="_blank">Bootstrap</a>, created to allow developers access to bootstrap core utilities and functions, allowing you to choose the parts you need giving flexibility and control.
 
