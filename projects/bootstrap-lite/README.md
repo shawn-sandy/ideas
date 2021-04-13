@@ -1,17 +1,17 @@
 # BootstrapLite
 
-### Bootstrap without the Guilt (152kb < 70kb )
+### Bootstrap without the Guilt (152kb < 70kb/53kbmin )
 
 A lightweight build of <a href="https://getbootstrap.com" target="_blank">Bootstrap</a>, created to allow developers access to bootstrap core utilities and functions, allowing you to choose the parts you need giving flexibility and control.
 
 **Inside**
 
-- Function
-- Variables
-- Mixins
-- Reboot
-- Grid
-- Utilities
+* Function
+* Variables
+* Mixins
+* Reboot
+* Grid
+* Utilities
 
 ### Install
 
@@ -19,16 +19,13 @@ To install bootstrap lite follow any one of the options below or you can very we
 
 **Use a CDN (JS Delivr)**
 
-```html
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/shawn-sandy/blacktie/packages/bootstrap-lite/dist/bootstrap-lite.min.css"
-/>
+``` html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shawn-sandy/blacktie/packages/bootstrap-lite/dist/bootstrap-lite.min.css" />
 ```
 
 **Install via npm**
 
-- Not available, sorry!
+* Not available, sorry!
 
 ### Usage
 
@@ -36,70 +33,66 @@ To install bootstrap lite follow any one of the options below or you can very we
 
 Copy and paste the following code below into you favorite editor, read the links below for more information on use
 
-- <a href="https://getbootstrap.com/docs/4.2/getting-started/theming/" target="_blank">Theming bootstarap </a>
-- <a href="https://getbootstrap.com/docs/4.2/layout/grid/" target="_blank">Bootstrap grid documentation </a>
-- <a href="https://getbootstrap.com/docs/4.2/layout/overview/" target="_blank">Bootstrap layout documentation </a>
-- <a href="https://getbootstrap.com/docs/4.2/utilities/" target="_blank">Bootstrap utilities documentation </a>
-- <a href="https://getbootstrap.com/docs/4.2/getting-started/theming/#functions" target="_blank">Bootstrap functions documentation </a>
-- <a href="https://github.com/twbs/bootstrap/tree/v4-dev/scss/mixins" target="_blank">Bootstrap mixins on github</a>
-- <a href="https://github.com/twbs/bootstrap/blob/v4-dev/scss/_functions.scss" target="_blank">Bootstrap functions on github</a>
+* <a href="https://getbootstrap.com/docs/4.2/getting-started/theming/" target="_blank">Theming bootstarap </a>
+* <a href="https://getbootstrap.com/docs/4.2/layout/grid/" target="_blank">Bootstrap grid documentation </a>
+* <a href="https://getbootstrap.com/docs/4.2/layout/overview/" target="_blank">Bootstrap layout documentation </a>
+* <a href="https://getbootstrap.com/docs/4.2/utilities/" target="_blank">Bootstrap utilities documentation </a>
+* <a href="https://getbootstrap.com/docs/4.2/getting-started/theming/#functions" target="_blank">Bootstrap functions documentation </a>
+* <a href="https://github.com/twbs/bootstrap/tree/v4-dev/scss/mixins" target="_blank">Bootstrap mixins on github</a>
+* <a href="https://github.com/twbs/bootstrap/blob/v4-dev/scss/_functions.scss" target="_blank">Bootstrap functions on github</a>
 
-```html
+``` html
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/shawn-sandy/blacktie/packages/bootstrap-lite/dist/bootstrap-lite.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shawn-sandy/blacktie/packages/bootstrap-lite/dist/bootstrap-lite.min.css" />
 
     <title>BootstrapLite</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="container">
-      <h1>Hello, world!</h1>
-      <div class="row">
-        <div class="col-md-8">
-          <h2>Sample Title</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-            repellendus architecto laborum repellat, explicabo soluta in fuga
-            error pariatur facilis quae fugit eius modi quos quas iure incidunt
-            ducimus deleniti.
-          </p>
-          <p>
-            Provident assumenda ab in cumque libero repellat rem dolorem nihil
-            adipisci laboriosam iure, sint dolore, velit id, suscipit temporibus
-            at deleniti deserunt tempore placeat nostrum ipsum ut omnis optio!
-            Quos.
-          </p>
-          <p>
-            Nostrum porro itaque voluptatem ipsam, ratione consectetur mollitia
-            aperiam modi doloremque. Earum, ex, molestias maiores iste laborum
-            possimus dolorum adipisci odio sed cupiditate fugit, sapiente
-            officia corporis sunt nostrum consequuntur.
-          </p>
+        <h1>Hello, world!</h1>
+        <div class="row">
+            <div class="col-md-8">
+                <h2>Sample Title</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+                    repellendus architecto laborum repellat, explicabo soluta in fuga
+                    error pariatur facilis quae fugit eius modi quos quas iure incidunt
+                    ducimus deleniti.
+                </p>
+                <p>
+                    Provident assumenda ab in cumque libero repellat rem dolorem nihil
+                    adipisci laboriosam iure, sint dolore, velit id, suscipit temporibus
+                    at deleniti deserunt tempore placeat nostrum ipsum ut omnis optio!
+                    Quos.
+                </p>
+                <p>
+                    Nostrum porro itaque voluptatem ipsam, ratione consectetur mollitia
+                    aperiam modi doloremque. Earum, ex, molestias maiores iste laborum
+                    possimus dolorum adipisci odio sed cupiditate fugit, sapiente
+                    officia corporis sunt nostrum consequuntur.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h3>Sidebar</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae,
+                    autem? Vel dolorem quasi pariatur eum. Alias minima, fuga a
+                    explicabo vitae molestias itaque, eum cupiditate sunt ratione id
+                    iure nostrum!
+                </p>
+            </div>
         </div>
-        <div class="col-md-4">
-          <h3>Sidebar</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae,
-            autem? Vel dolorem quasi pariatur eum. Alias minima, fuga a
-            explicabo vitae molestias itaque, eum cupiditate sunt ratione id
-            iure nostrum!
-          </p>
-        </div>
-      </div>
     </div>
-  </body>
+</body>
+
 </html>
 ```
 
