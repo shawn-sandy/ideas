@@ -30,8 +30,9 @@ $flex-media-980: 1 1 28% !default;
 
   [role="listitem"] {
     flex: 1 1 100%;
-    padding: 1rem;
     line-height: 1.6;
+    padding: 1rem;
+    margin: 0 1rem 1rem 0;
 
     @media all and (min-width: 780px) {
       flex: $flex-media-780;
