@@ -103,24 +103,24 @@ $cursor: pointer !default;
         &:active,
         &:hover,
         &:focus {
-          border-radius: $border-radius-rounded !important;
+          //border-radius: $border-radius-rounded !important;
           background-color: darken($background-color-hover, 10);
 
         }
 
-        &:hover {
-          background-color: darken($background-color-hover, 10);
-        }
+      }
 
-        >b {
-          background-color: $background-color-hover;
-        }
+      &:hover {
+        // background-color: darken($background-color-hover, 10);
+      }
 
-        >em {
-          background-color: $background-color-hover;
-          border-radius: $border-radius-rounded;
+      >b {
+        background-color: $background-color-hover;
+      }
 
-        }
+      >em {
+        background-color: $background-color-hover;
+        border-radius: $border-radius-rounded !important;
 
       }
 
