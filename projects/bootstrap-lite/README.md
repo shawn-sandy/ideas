@@ -20,12 +20,20 @@ To install bootstrap lite follow any one of the options below or you can very we
 **Use a CDN (JS Delivr)**
 
 ``` html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shawn-sandy/blacktie/packages/bootstrap-lite/dist/bootstrap-lite.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shawnsandy/bootstrap-lite@0.2.1/dist/bootstrap-lite.min.css">
+```
+
+**URL**
+
+```
+https://cdn.jsdelivr.net/npm/@shawnsandy/bootstrap-lite@0.2.1/dist/bootstrap-lite.min.css
 ```
 
 **Install via npm**
 
-* Not available, sorry!
+```
+npm i @shawnsandy/bootstrap-lite -D
+```
 
 ### Usage
 
