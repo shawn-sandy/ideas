@@ -763,6 +763,40 @@ hr {
   margin: 2rem 0;
 }
 
+.fp-table,
+table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  width: 100%;
+  border: thin solid lightgray;
+}
+.fp-table thead tr,
+table thead tr {
+  background-color: lightgray;
+  text-align: left;
+}
+.fp-table th,
+.fp-table td,
+table th,
+table td {
+  padding: 12px 15px;
+}
+.fp-table tbody tr,
+table tbody tr {
+  border-bottom: thin solid lightgray;
+}
+.fp-table tbody tr:nth-of-type(even),
+table tbody tr:nth-of-type(even) {
+  background-color: whitesmoke;
+}
+.fp-table tbody tr:last-of-type,
+table tbody tr:last-of-type {
+  border-bottom: 2px solid lightgray;
+}
+
 code {
   color: #d63384;
 }
