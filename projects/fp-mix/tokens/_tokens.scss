@@ -1,8 +1,8 @@
 
-/*
-  Do not edit directly
-  Generated on Sun, 06 Dec 2020 22:54:50 GMT
-*/
+/**
+ * Do not edit directly
+ * Generated on Fri, 16 Apr 2021 19:27:53 GMT
+ */
 
 $mx-button-padding: 0 1.5rem !default;
 $mx-buttons-btn-height: 2.5rem !default;
@@ -25,21 +25,21 @@ $mx-color-orange: #f66a0a !default;
 $mx-color-yellow: #ffd33d !default;
 $mx-color-green: #008000 !default;
 $mx-font-size-group-default: 1rem !default; // default font size 16px.
-$mx-font-size-group-1-sm: 0.702rem !default; // 11px - used for fine print
-$mx-font-size-group-2-sm: 0.79rem !default; // 12px great for notes small text.
-$mx-font-size-group-3-sm: 0.889rem !default; // 14px sidebar, links, navs, product list
-$mx-font-size-group-4-md: 1.26rem !default; // 18px great for long posts, blogs
-$mx-font-size-group-5-md: 1.424rem !default; // 22px
-$mx-font-size-group-6-md: 1.602rem !default; // 25px
-$mx-font-size-group-7-lg: 1.802rem !default; // 28px descriptions...
-$mx-font-size-group-8-lg: 2.369rem !default; // 37px descriptions...
-$mx-font-size-group-9-lg: 3.157rem !default; // 50px descriptions...
-$mx-font-size-group-10-xl: 4.209rem !default; // 67px descriptions...
-$mx-font-size-group-11-xl: 5.61rem !default; // 90px descriptions...
-$mx-font-size-group-12-xl: 7.478rem !default; // 120px descriptions...
+$mx-font-size-group-1sm: 0.702rem !default; // 11px - used for fine print
+$mx-font-size-group-2sm: 0.79rem !default; // 12px great for notes small text.
+$mx-font-size-group-3sm: 0.889rem !default; // 14px sidebar, links, navs, product list
+$mx-font-size-group-4md: 1.26rem !default; // 18px great for long posts, blogs
+$mx-font-size-group-5md: 1.424rem !default; // 22px
+$mx-font-size-group-6md: 1.602rem !default; // 25px
+$mx-font-size-group-7lg: 1.802rem !default; // 28px descriptions...
+$mx-font-size-group-8lg: 2.369rem !default; // 37px descriptions...
+$mx-font-size-group-9lg: 3.157rem !default; // 50px descriptions...
+$mx-font-size-group-10xl: 4.209rem !default; // 67px descriptions...
+$mx-font-size-group-11xl: 5.61rem !default; // 90px descriptions...
+$mx-font-size-group-12xl: 7.478rem !default; // 120px descriptions...
 $mx-font-weight-medium: 500 !default; // descriptions...
 $mx-font-weight-bold: 700 !default; // descriptions...
-$mx-letter-spacing-group-1-sm: 1rem !default;
+$mx-letter-spacing-group-1sm: 1rem !default;
 $mx-layout-height-vh-5: 5vh !default;
 $mx-layout-height-vh-10: 10vh !default;
 $mx-layout-height-vh-20: 20vh !default;
@@ -51,17 +51,17 @@ $mx-layout-height-vh-70: 70vh !default;
 $mx-layout-height-vh-80: 80vh !default;
 $mx-layout-height-vh-90: 90vh !default;
 $mx-layout-height-vh-100: 100vh !default;
-$mx-layout-width-vw-5: 5vw !default;
-$mx-layout-width-vw-10: 10vw !default;
-$mx-layout-width-vw-20: 20vw !default;
-$mx-layout-width-vw-30: 30vw !default;
-$mx-layout-width-vw-40: 40vw !default;
-$mx-layout-width-vw-50: 50vw !default;
-$mx-layout-width-vw-60: 60vw !default;
-$mx-layout-width-vw-70: 70vw !default;
-$mx-layout-width-vw-80: 80vw !default;
-$mx-layout-width-vw-90: 90vw !default;
-$mx-layout-width-vw-100: 100vw !default;
+$mx-layout-width-vw5: 5vw !default;
+$mx-layout-width-vw10: 10vw !default;
+$mx-layout-width-vw20: 20vw !default;
+$mx-layout-width-vw30: 30vw !default;
+$mx-layout-width-vw40: 40vw !default;
+$mx-layout-width-vw50: 50vw !default;
+$mx-layout-width-vw60: 60vw !default;
+$mx-layout-width-vw70: 70vw !default;
+$mx-layout-width-vw80: 80vw !default;
+$mx-layout-width-vw90: 90vw !default;
+$mx-layout-width-vw100: 100vw !default;
 $mx-links-primary-color: #000000 !default;
 $mx-links-primary-hover-color: #010101 !default;
 $mx-nav-nav-bar-display: flex !default;
@@ -131,18 +131,18 @@ $tokens: (
     'size': (
       'group': (
         'default': $mx-font-size-group-default,
-        '1sm': $mx-font-size-group-1-sm,
-        '2sm': $mx-font-size-group-2-sm,
-        '3sm': $mx-font-size-group-3-sm,
-        '4md': $mx-font-size-group-4-md,
-        '5md': $mx-font-size-group-5-md,
-        '6md': $mx-font-size-group-6-md,
-        '7lg': $mx-font-size-group-7-lg,
-        '8lg': $mx-font-size-group-8-lg,
-        '9lg': $mx-font-size-group-9-lg,
-        '10xl': $mx-font-size-group-10-xl,
-        '11xl': $mx-font-size-group-11-xl,
-        '12xl': $mx-font-size-group-12-xl
+        '1sm': $mx-font-size-group-1sm,
+        '2sm': $mx-font-size-group-2sm,
+        '3sm': $mx-font-size-group-3sm,
+        '4md': $mx-font-size-group-4md,
+        '5md': $mx-font-size-group-5md,
+        '6md': $mx-font-size-group-6md,
+        '7lg': $mx-font-size-group-7lg,
+        '8lg': $mx-font-size-group-8lg,
+        '9lg': $mx-font-size-group-9lg,
+        '10xl': $mx-font-size-group-10xl,
+        '11xl': $mx-font-size-group-11xl,
+        '12xl': $mx-font-size-group-12xl
       )
     ),
     'weight': (
@@ -153,7 +153,7 @@ $tokens: (
   'letter': (
     'spacing': (
       'group': (
-        '1sm': $mx-letter-spacing-group-1-sm
+        '1sm': $mx-letter-spacing-group-1sm
       )
     )
   ),
@@ -172,17 +172,17 @@ $tokens: (
       'vh-100': $mx-layout-height-vh-100
     ),
     'width': (
-      'vw5': $mx-layout-width-vw-5,
-      'vw10': $mx-layout-width-vw-10,
-      'vw20': $mx-layout-width-vw-20,
-      'vw30': $mx-layout-width-vw-30,
-      'vw40': $mx-layout-width-vw-40,
-      'vw50': $mx-layout-width-vw-50,
-      'vw60': $mx-layout-width-vw-60,
-      'vw70': $mx-layout-width-vw-70,
-      'vw80': $mx-layout-width-vw-80,
-      'vw90': $mx-layout-width-vw-90,
-      'vw100': $mx-layout-width-vw-100
+      'vw5': $mx-layout-width-vw5,
+      'vw10': $mx-layout-width-vw10,
+      'vw20': $mx-layout-width-vw20,
+      'vw30': $mx-layout-width-vw30,
+      'vw40': $mx-layout-width-vw40,
+      'vw50': $mx-layout-width-vw50,
+      'vw60': $mx-layout-width-vw60,
+      'vw70': $mx-layout-width-vw70,
+      'vw80': $mx-layout-width-vw80,
+      'vw90': $mx-layout-width-vw90,
+      'vw100': $mx-layout-width-vw100
     )
   ),
   'links': (
