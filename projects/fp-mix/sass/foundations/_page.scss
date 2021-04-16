@@ -1,0 +1,99 @@
+@mixin mix-page {
+  html {
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    font-family: $mx-font-default;
+    -webkit-font-smoothing: antialiased !important;
+    height: 100% !important;
+    font-size: 85%;
+    scroll-behavior: smooth;
+
+    @media all and (min-width: 580px) {
+      font-size: 95%;
+    }
+
+    @media all and (min-width: 1380px) {
+      font-size: 100%;
+    }
+
+    background-color: #fff;
+    min-width: 375px;
+  }
+
+  * {
+    // transition: width 0.95s ease-in;
+    box-sizing: border-box;
+  }
+
+  body {
+    padding: 0 !important;
+    background-color: $mx-bg;
+    color: $mx-default-color;
+    max-width: 1980px;
+    margin: 0 auto;
+
+    @media print {
+      >*:not(main) {
+        display: none;
+      }
+
+      html {
+        font-size: 13px;
+      }
+    }
+
+    >nav {
+      padding: 0 0;
+    }
+
+    >header {
+      background-color: $mx-header-bg;
+      background-image: $mx-header-bg-img;
+      color: $mx-default-color;
+
+      @media screen and (min-width: 1280px) {}
+    }
+
+    >footer {
+      min-height: $mx-footer-vh;
+      display: flex;
+      align-items: center;
+      align-content: stretch;
+      margin: 2rem 0 0;
+      background-color: $mx-footer-bg;
+
+      p {
+        text-align: center;
+      }
+
+      color: $mx-footer-color;
+    }
+
+    p {
+      span:first-of-type {
+        font-size: 1.3rem;
+        @extend %roboto;
+      }
+    }
+
+    section {
+      aside {
+        padding: 1rem;
+      }
+    }
+
+    hr {
+      border-top: 1px solid $mx-whitesmoke;
+      margin: 3rem 0;
+    }
+  }
+
+  [aria-hidden] {
+    display: none;
+  }
+}

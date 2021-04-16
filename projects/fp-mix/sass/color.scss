@@ -1,0 +1,7 @@
+// StyleMix demo
+
+@import "imports";
+/** default colors */
+.mix {
+  @include mix-utilities("color");
+}

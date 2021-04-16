@@ -1,0 +1,61 @@
+{
+  "truncate": {
+    "clip-box": {
+      "overflow": {
+        "value": "hidden"
+      },
+      "position": {
+        "value": "relative"
+      },
+      "line-height": {
+        "value": "1rem"
+      },
+      "max-height": {
+        "value": "3rem"
+      },
+      "text-align": {
+        "value": "null"
+      },
+      "margin-right": {
+        "value": "-1rem"
+      },
+      "padding-right": {
+        "value": "1rem"
+      },
+      "before": {
+        "content": {
+          "value": "\"...\""
+        },
+        "position": {
+          "value": "absolute"
+        },
+        "right": {
+          "value": "0"
+        },
+        "bottom": {
+          "value": "0"
+        }
+      },
+      "after": {
+        "content": {
+          "value": "\"\""
+        },
+        "position": {
+          "value": "absolute"
+        },
+        "right": {
+          "value": "0"
+        },
+        "width": {
+          "value": "{truncate.clip-box.line-height.value}"
+        },
+        "height": {
+          "value": "{truncate.clip-box.line-height.value}"
+        },
+        "background": {
+          "value": "transparent"
+        }
+      }
+    }
+  }
+}

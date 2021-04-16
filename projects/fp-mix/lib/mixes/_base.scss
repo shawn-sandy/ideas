@@ -1,0 +1,48 @@
+// TODO - use/refactor (disabled)
+@mixin mix($key, $attr: null) {
+  @if type-of($key) == null {
+    @error "Error: required params $key is missing, please fix error";
+  } @else {
+    $element: get(#{$key});
+    @if type-of($element) == "map" {
+      @each $modifier, $value in element {
+        #{$modifier}: $value;
+      }
+    } @else {
+      #{$attr}: $element;
+    }
+  }
+}
+
+@mixin mix-color($key, $attr: null) {
+  $type: if(type-of($attr) == null, "color", $attr);
+  @include mix($key, $type);
+}
+
+@mixin mix-bg($key) {
+  @include mix($key, "background-color");
+}
+
+@mixin mix-font($key, $attr: "type") {
+  @include mix($key, "font-#{$attr}");
+}
+
+@mixin mix-padding($key) {
+  @include mix($key, "padding");
+}
+
+@mixin mix-margin($key) {
+  @include mix($key, "margin");
+}
+
+@mixin mix-height($key) {
+  @include mix($key, "height");
+}
+
+@mixin mix-width($key) {
+  @include mix($key, "width");
+}
+
+@function get-type($key: "content") {
+  @return type-of(get($key));
+}

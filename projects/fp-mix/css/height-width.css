@@ -1,0 +1,78 @@
+/*
+  Do not edit directly
+  Generated on Sun, 06 Dec 2020 22:54:50 GMT
+*/
+/** GENERAL PURPOSE SASS-MIXINS **/
+/** generates a series of modifies based a list of attributes  **/
+/**
+
+
+**/
+/**
+ * navbar
+ */
+.mx-vh-5 {
+  height: 5vh; }
+
+.mx-vh-10 {
+  height: 10vh; }
+
+.mx-vh-20 {
+  height: 20vh; }
+
+.mx-vh-30 {
+  height: 30vh; }
+
+.mx-vh-40 {
+  height: 40vh; }
+
+.mx-vh-50 {
+  height: 50vh; }
+
+.mx-vh-60 {
+  height: 60vh; }
+
+.mx-vh-70 {
+  height: 70vh; }
+
+.mx-vh-80 {
+  height: 80vh; }
+
+.mx-vh-90 {
+  height: 90vh; }
+
+.mx-vh-100 {
+  height: 100vh; }
+
+.mx-vw5 {
+  width: 5vw; }
+
+.mx-vw10 {
+  width: 10vw; }
+
+.mx-vw20 {
+  width: 20vw; }
+
+.mx-vw30 {
+  width: 30vw; }
+
+.mx-vw40 {
+  width: 40vw; }
+
+.mx-vw50 {
+  width: 50vw; }
+
+.mx-vw60 {
+  width: 60vw; }
+
+.mx-vw70 {
+  width: 70vw; }
+
+.mx-vw80 {
+  width: 80vw; }
+
+.mx-vw90 {
+  width: 90vw; }
+
+.mx-vw100 {
+  width: 100vw; }
