@@ -1,6 +1,6 @@
 {
   "name": "@ideas/debug",
-  "version": "1.0.68",
+  "version": "1.0.69",
   "private": true,
   "description": "> TODO: description",
   "author": "Shawn Sandy <38263979+shawn-sandy@users.noreply.github.com>",
@@ -19,8 +19,8 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
-    "@shawnsandy/ideas": "^0.2.0",
-    "@shawnsandy/mix": "^0.10.17",
+    "@shawnsandy/ideas": "^0.2.1",
+    "@shawnsandy/mix": "^0.10.18",
     "auto-changelog": "^1.16.4",
     "flat-cache": "^2.0.1",
     "fs": "0.0.1-security",
