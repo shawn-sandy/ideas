@@ -22,32 +22,28 @@ table {
   font-family: sans-serif;
   min-width: 400px;
   width: 100%;
-  border: thin solid lightgray;
+  border: thin solid whitesmoke;
 }
 .fp-table thead tr,
 table thead tr {
-  background-color: lightgray;
+  background-color: whitesmoke;
   text-align: left;
 }
 .fp-table th,
 .fp-table td,
 table th,
 table td {
-  padding: 12px 15px;
-}
-.fp-table td,
-table td {
-  border-right: thin solid lightgray;
+  padding: 0.75rem 1rem;
 }
 .fp-table tbody tr,
 table tbody tr {
-  border-bottom: thin solid lightgray;
+  border-bottom: thin solid whitesmoke;
 }
 .fp-table tbody tr:nth-of-type(even),
 table tbody tr:nth-of-type(even) {
-  background-color: whitesmoke;
+  background-color: ghostwhite;
 }
 .fp-table tbody tr:last-of-type,
 table tbody tr:last-of-type {
-  border-bottom: 2px solid lightgray;
+  border-bottom: 2px solid whitesmoke;
 }

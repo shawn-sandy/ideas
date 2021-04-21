@@ -1,9 +1,9 @@
 // set variables
 // TODO Search and replace name with CSS tag/element name
 $render: true !default;
-$bg-color: lightgray !default;
-$bg-color-row: whitesmoke !default;
-$border-color: $bg-color !default;
+$bg-color: whitesmoke !default;
+$bg-color-row: ghostwhite !default;
+$border-color: lightgray !default;
 
 
 // render component mixin
@@ -34,12 +34,9 @@ $border-color: $bg-color !default;
 
   th,
   td {
-    padding: 12px 15px;
+    padding: .75rem 1rem;
   }
 
-  td {
-    border-right: thin solid $bg-color;
-  }
 
   tbody tr {
     border-bottom: thin solid $bg-color;

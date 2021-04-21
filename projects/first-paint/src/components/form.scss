@@ -42,12 +42,12 @@ $background-color: transparent !default;
     padding: 0.5rem;
     // font-size: 0.9rem;
     width: 98%;
-    border: 1px solid lightgray;
+    border: thin solid lightgray;
     border-radius: .1rem;
 
     &:focus,
     &:focus-within {
-      border: 1px solid gray;
+      border: thin solid gray;
       outline-color: gray;
     }
 
@@ -100,8 +100,8 @@ $background-color: transparent !default;
         display: inline-flex;
         width: 1rem;
         height: 1rem;
-        background-color: transparent;
-        border: solid 2px lightgrey;
+        background-color: ghostwhite;
+        border: solid thin lightgrey;
         border-radius: 3px;
         margin-right: 0.5rem;
       }
