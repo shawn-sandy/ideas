@@ -37,6 +37,10 @@ $border-color: $bg-color !default;
     padding: 12px 15px;
   }
 
+  td {
+    border-right: thin solid $bg-color;
+  }
+
   tbody tr {
     border-bottom: thin solid $bg-color;
   }
