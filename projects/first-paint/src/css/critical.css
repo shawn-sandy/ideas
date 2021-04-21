@@ -485,6 +485,12 @@ table tbody tr:last-of-type {
   border-bottom: 2px solid whitesmoke;
 }
 
+article + article,
+.fp-article + article {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
 code {
   color: #d63384;
 }

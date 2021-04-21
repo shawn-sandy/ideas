@@ -15,6 +15,7 @@ $render-table: $render-all !default;
 $render-grid: $render-all !default;
 $render-scrollbar: $render-all !default;
 $render-elements: $render-all !default;
+$render-article: $render-all !default;
 
 @forward './components/styles';
 
@@ -43,6 +44,8 @@ $render-elements: $render-all !default;
 @forward './components/hr.scss'as hr-* with($render: $render-hr);
 
 @forward './components/table.scss'as table-* with($render: $render-table);
+
+@forward './components/article.scss'as article-* with($render: $render-article);
 
 // @forward './components/scrollbar.scss'as scrollbar-* with($render: $render-scrollbar);
 

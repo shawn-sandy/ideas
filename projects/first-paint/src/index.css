@@ -480,10 +480,6 @@ main > section {
 main > section > * + * {
   margin-top: 2rem;
 }
-.fp-main article + article,
-main article + article {
-  margin-top: 2rem;
-}
 .fp-main article + aside,
 .fp-main section + aside,
 main article + aside,
@@ -781,6 +777,12 @@ table tbody tr:nth-of-type(even) {
 .fp-table tbody tr:last-of-type,
 table tbody tr:last-of-type {
   border-bottom: 2px solid whitesmoke;
+}
+
+article + article,
+.fp-article + article {
+  margin-top: 2rem;
+  font-size: 0.9rem;
 }
 
 code {

@@ -48,6 +48,12 @@ table tbody tr:last-of-type {
   border-bottom: 2px solid whitesmoke;
 }
 
+article + article,
+.fp-article + article {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
 a[role=button],
 .fp-button-link[role=button] {
   display: inline-flex;
