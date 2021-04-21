@@ -4,10 +4,9 @@ $background-color: transparent !default;
 @mixin renderComponent($renderContent: $render, $className: null) {
   @if($renderContent) {
 
-    #{if($className, $className,'.fp-form')},
-    form {
-      @include input();
-    }
+
+    @include input();
+
   }
 }
 

@@ -240,30 +240,25 @@ button[type][type=submit]:focus {
   border: 1px solid #e4e4e4;
 }
 
-.fp-form > div + div,
-form > div + div {
+> div + div {
   margin-top: 1rem;
 }
-.fp-form label[for],
-form label[for] {
+
+label[for] {
   font-size: 0.9rem;
   display: block;
 }
-.fp-form label[for] em,
-form label[for] em {
+label[for] em {
   font-style: normal;
 }
-.fp-form label[for] em::after,
-form label[for] em::after {
+label[for] em::after {
   content: "∗";
   color: darkred;
 }
-.fp-form input[id],
-.fp-form textarea[id],
-.fp-form select[id],
-form input[id],
-form textarea[id],
-form select[id] {
+
+input[id],
+textarea[id],
+select[id] {
   background-color: transparent;
   display: flex;
   margin: 0.5rem 0 1rem;
@@ -272,26 +267,17 @@ form select[id] {
   border: 1px solid lightgray;
   border-radius: 0.1rem;
 }
-.fp-form input[id]:focus, .fp-form input[id]:focus-within,
-.fp-form textarea[id]:focus,
-.fp-form textarea[id]:focus-within,
-.fp-form select[id]:focus,
-.fp-form select[id]:focus-within,
-form input[id]:focus,
-form input[id]:focus-within,
-form textarea[id]:focus,
-form textarea[id]:focus-within,
-form select[id]:focus,
-form select[id]:focus-within {
+input[id]:focus, input[id]:focus-within,
+textarea[id]:focus,
+textarea[id]:focus-within,
+select[id]:focus,
+select[id]:focus-within {
   border: 1px solid gray;
   outline-color: gray;
 }
-.fp-form input[id]::placeholder,
-.fp-form textarea[id]::placeholder,
-.fp-form select[id]::placeholder,
-form input[id]::placeholder,
-form textarea[id]::placeholder,
-form select[id]::placeholder {
+input[id]::placeholder,
+textarea[id]::placeholder,
+select[id]::placeholder {
   font-style: italic;
   color: lightgrey;
 }
