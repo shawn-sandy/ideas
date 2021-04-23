@@ -1,3 +1,4 @@
+// @ts-check
 'use strict'
 
 /**
@@ -6,8 +7,6 @@
 const Marked = require('marked')
 
 module.exports = (eleventy) => {
-
-
   eleventy.addFilter('markdown', (value = null) => {
     if (value !== null) { return Marked(value) }
     return null
