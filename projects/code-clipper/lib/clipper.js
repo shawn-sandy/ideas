@@ -1,6 +1,8 @@
 /* eslint-disable no-undef */
 // <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
-// ClipboardJS = require('')
+
+ClipboardJS = require('clipboard');
+
 (function () {
   'use strict'
   const clipboard = new ClipboardJS('.mix-clipboard')
