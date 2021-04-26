@@ -1,6 +1,6 @@
 # Code-clipper
 
-A [clipboard.js](https://clipboardjs.com/) short code plugin for vs 11ty static site generator
+A [clipboard.js](https://clipboardjs.com/) shortcode plugin for vs 11ty static site generator
 
 > Why? Copying text to the clipboard shouldn't be hard. It shouldn't require dozens of steps to configure or hundreds of KBs to load. But most of all, it shouldn't depend on Flash or any bloated framework.
 
@@ -34,17 +34,28 @@ module.exports = function(eleventyConfig) {
 
 ``` html
 <!-- Params target id, button classes  -->
+
 {% clip  "#mx-clip", '.btn btn-primaty' %}
-Copy Code
+<!-- copy section -->
+<section id=">
+    <img src=" img/fp.svg" alt="" />
+<h2>Lightweight, Fast, Accessible, Inclusive</h2>
+<p>
+    <span>First Paint is lightweight easy to use CSS/SCSS starter library for
+        quickly scaffolding/building modern, mobile friendly websites.</span>
+</p>
+<a href="#" role="button" aria-label="Add word, cta action, to your button title">
+    <span>Get Started</span></a>
+</section>
 {% end clip %}
 ```
 
 * Copy a string using the following shortcode
 
 ``` html
-<!-- params button label, button classes -->
+<!-- params string to copy, button classes -->
 {% clipbutton "Copy Code", ".btn btn-primary" %}
-String to copy
+Copy to clipboard
 {% endclipbutton %}
 ```
 
