@@ -14,7 +14,7 @@ module.exports = (eleventy) => {
     return elements.copyString(content, description)
   })
 
-  eleventy.addShortcode('clipboardscript', (content, description) => {
+  eleventy.addShortcode('clipboardscript', () => {
     // eslint-disable-next-line quotes
     return `<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>`
   })
