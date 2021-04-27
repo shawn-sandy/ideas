@@ -1,6 +1,6 @@
 {
   "name": "@shawnsandy/code-clipper",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A code clipper plugin for vs 11ty",
   "keywords": [
     "code",
