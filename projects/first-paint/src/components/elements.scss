@@ -57,7 +57,9 @@ $render: true !default;
 // include render component
 
 @mixin pre {
-  pre {
+
+  pre,
+  textarea[role="presentation"] {
     padding: 2rem;
     margin: 2rem 0;
     background-color: #2b2b2b;
@@ -66,8 +68,34 @@ $render: true !default;
     font-size: .9rem;
     overflow-x: auto;
 
+
     code {
       color: lightgray;
+    }
+  }
+
+  textarea[role="presentation"] {
+    overflow: auto;
+    color: lightgray;
+    min-height: 250px;
+    border-radius: .3rem;
+    scrollbar-width: .5rem;
+    scrollbar-color: lightgray;
+    padding: .7rem;
+
+    &::-webkit-scrollbar {
+      width: .5rem;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #2b2b2b;
+      ;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: ghostwhite;
+      border-radius: 6px;
+      border: thin solid ghostwhite;
     }
   }
 }
