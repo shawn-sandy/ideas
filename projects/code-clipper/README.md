@@ -30,24 +30,49 @@ module.exports = function(eleventyConfig) {
 {% clipboardscript %}
 ```
 
+* add the following to you `javascript code` of `page` inside a `<script></script>` tag.
+
+``` javascript
+(function() {
+    'use strict'
+    const clipboard = new ClipboardJS('.mix-clipboard')
+
+    clipboard.on('success', e => {
+        var clipText = e.trigger.innerHTML
+        e.trigger.innerHTML = '<span>&#10003;</span>'
+
+        e.clearSelection()
+        setTimeout(function() {
+            e.trigger.innerHTML = clipText
+        }, 1000)
+    })
+
+    clipboard.on('error', e => {
+        console.error('Action:', e.action)
+        console.error('Trigger:', e.trigger)
+    })
+})()
+```
+
 * Copy the code in and html element using the following shortcode
 
 ``` html
-<!-- Params target id, button classes  -->
-
-{% clip  "#mx-clip", '.btn btn-primaty' %}
 <!-- copy section -->
-<section id=">
-    <img src=" img/fp.svg" alt="" />
-<h2>Lightweight, Fast, Accessible, Inclusive</h2>
-<p>
-    <span>First Paint is lightweight easy to use CSS/SCSS starter library for
-        quickly scaffolding/building modern, mobile friendly websites.</span>
-</p>
-<a href="#" role="button" aria-label="Add word, cta action, to your button title">
-    <span>Get Started</span></a>
-</section>
-{% end clip %}
+<textarea id="mx-clip" role="presentation">
+  <img src=" img/fp.svg" alt="" />
+  <h2>Lightweight, Fast, Accessible, Inclusive</h2>
+  <p>
+      <span>First Paint is lightweight easy to use CSS/SCSS starter library for
+          quickly scaffolding/building modern, mobile friendly websites.</span>
+  </p>
+  <a href="#" role="button" aria-label="Add word, cta action, to your button title">
+  <span>Get Started</span></a>
+</textarea>
+
+<!-- Params target id, button classes  -->
+{% clip  "#mx-clip", '.btn btn-primaty' %}
+Copy Code
+{% endclip %}
 ```
 
 * Copy a string using the following shortcode

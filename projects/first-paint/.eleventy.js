@@ -22,6 +22,8 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.setQuietMode(true)
 
+  eleventyConfig.addPlugin(require('@shawnsandy/code-clipper'))
+
   return {
     dir: {
       input: "./src",
