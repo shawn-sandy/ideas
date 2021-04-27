@@ -56,7 +56,7 @@ module.exports = function(eleventyConfig) {
 })()
 ```
 
-* Copy the code in and html element using the following shortcode
+* Copy the code in and html element using the following shortcode. Warning this plugin does not yet work in `*.md` files.
 
 ``` html
 <!-- copy section -->
