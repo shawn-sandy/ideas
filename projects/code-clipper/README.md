@@ -24,13 +24,16 @@ module.exports = function(eleventyConfig) {
 }
 ```
 
-* Add the clipboard.js script to your page above the `</body>` using the following shortcode
+* Add the clipboard.js script link to your page above the `</body>` using the following shortcode; this will link to `https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js`
 
 ``` html
-{% clipboardscript %}
+<body>
+    ....
+    {% clipboardscript %}
+</body>
 ```
 
-* add the following to you `javascript code` or  inside a `page` in between `<script></script>` tag.
+* add the following to you `javascript code` or  inside a `page` in between `<script></script>` tag, make sure this is below the `clipboardscript` tag.
 
 ``` javascript
 (function() {
