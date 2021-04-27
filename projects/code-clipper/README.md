@@ -2,7 +2,7 @@
 
 A [clipboard.js](https://clipboardjs.com/) shortcode plugin for vs 11ty static site generator
 
-> Why? Copying text to the clipboard shouldn't be hard. It shouldn't require dozens of steps to configure or hundreds of KBs to load. But most of all, it shouldn't depend on Flash or any bloated framework.
+> Copying text to the clipboard shouldn't be hard. It shouldn't require dozens of steps to configure or hundreds of KBs to load. But most of all, it shouldn't depend on Flash or any bloated framework.
 
 * [Code-clipper](#code-clipper)
   + [Install](#install)
@@ -30,26 +30,25 @@ module.exports = function(eleventyConfig) {
 {% clipboardscript %}
 ```
 
-* add the following to you `javascript code` of `page` inside a `<script></script>` tag.
+* add the following to you `javascript code` or  inside a `page` in between `<script></script>` tag.
 
 ``` javascript
 (function() {
-    'use strict'
     const clipboard = new ClipboardJS('.mix-clipboard')
 
     clipboard.on('success', e => {
-        var clipText = e.trigger.innerHTML
-        e.trigger.innerHTML = '<span>&#10003;</span>'
+        var clipText = e.trigger.textContent
+        e.trigger.textContent = 'copied'
 
         e.clearSelection()
         setTimeout(function() {
-            e.trigger.innerHTML = clipText
+            e.trigger.textContent = clipText
         }, 1000)
     })
 
     clipboard.on('error', e => {
-        console.error('Action:', e.action)
-        console.error('Trigger:', e.trigger)
+        // console.error('Action:', e.action)
+        // console.error('Trigger:', e.trigger)
     })
 })()
 ```

@@ -36,12 +36,12 @@
   const clipboard = new ClipboardJS('.mix-clipboard')
 
   clipboard.on('success', e => {
-    var clipText = e.trigger.innerHTML
-    e.trigger.innerHTML = '<span>&#10003; copied</span>'
+    var clipText = e.trigger.textContent
+    e.trigger.textContent = 'Copied'
 
     e.clearSelection()
     setTimeout(function () {
-      e.trigger.innerHTML = clipText
+      e.trigger.textContent = clipText
     }, 1000)
   })
 

@@ -8,16 +8,17 @@
   const clipboard = new ClipboardJS('.mix-clipboard')
 
   clipboard.on('success', e => {
-    var clipText = e.trigger.innerHTML
-    e.trigger.innerHTML = '<span>copied</span>'
+    const clipText = e.trigger.textContent
+    e.trigger.textContent = 'Copied'
 
     e.clearSelection()
     setTimeout(function () {
-      e.trigger.innerHTML = clipText
+      e.trigger.textContent = clipText
     }, 1000)
   })
 
   clipboard.on('error', e => {
+    // TODO replace console logs statements
     console.error('Action:', e.action)
     console.error('Trigger:', e.trigger)
   })
