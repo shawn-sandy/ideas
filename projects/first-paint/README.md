@@ -30,6 +30,7 @@ First Paint is an easy to use CSS/SCSS starter library that contains accessibili
     - [Radio](#radio)
     - [Select](#select)
     - [Textarea](#textarea)
+    - [Textarea for code](#textarea-for-code)
     - [Table](#table)
   - [Licence (MIT)](#licence-mit)
   - [Contribute](#contribute)
@@ -405,6 +406,20 @@ Copy and paste these snippets to build custom templates using fist-paint-CSS
 ``` html
 <label for="textarea">Textarea Component</label>
 <textarea id="textarea" cols="30" rows="10"></textarea>
+```
+
+### Textarea for code
+
+``` html
+<textarea role="presentation" name="" id="" cols="30">
+<h3>Subtitle</h3>
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis asperiores
+    doloremque magnam mollitia fugiat alias explicabo eum! Dolorem obcaecati
+    laudantium commodi quis, facere aspernatur sapiente, molestias quidem
+    molestiae repellat adipisci?
+</p>
+  </textarea>
 ```
 
 ### Table
