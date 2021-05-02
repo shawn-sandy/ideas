@@ -552,7 +552,7 @@ footer[role=contentinfo] section > div + div {
 }
 .fp-footer > div,
 footer[role=contentinfo] > div {
-  padding: 2rem;
+  padding: 1rem;
 }
 .fp-footer > div p,
 footer[role=contentinfo] > div p {
