@@ -23,7 +23,10 @@
     {% if stylesheets %} {% for style in stylesheets %}
     <link rel="stylesheet" href="{{ style }}" />
     {% endfor %} {% endif %} {% endblock %}
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shawnsandy/first-paint@0.6.0/index.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@shawnsandy/first-paint@0.6.0/index.css"
+    />
   </head>
 
   <body class="ss-bg-classic-blue min-vh-100">
@@ -61,17 +64,15 @@
       </div>
     </section>
     <main>
-      <section class="articles">
-        {% block content %} {% endblock %}
-      </section>
+      <section class="articles">{% block content %} {% endblock %}</section>
       <aside>
         {% block sidebar %}
         <h5>Sidebar</h5>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
-          error, quas at facilis temporibus optio rem, doloremque, modi
-          numquam commodi illum cumque. Sit eveniet, quod expedita libero
-          obcaecati a laudantium.
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos error,
+          quas at facilis temporibus optio rem, doloremque, modi numquam commodi
+          illum cumque. Sit eveniet, quod expedita libero obcaecati a
+          laudantium.
         </p>
         {% endblock %}
       </aside>

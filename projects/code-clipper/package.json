@@ -27,6 +27,7 @@
     "url": "git+https://github.com/shawn-sandy/ideas.git"
   },
   "scripts": {
+    "build": "esbuild lib/clipper.js --bundle --minify --sourcemap --target=chrome58,firefox57,safari11,edge16 --outfile=lib/clipper.min.js",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
@@ -34,5 +35,8 @@
   },
   "dependencies": {
     "clipboard": "^2.0.8"
+  },
+  "devDependencies": {
+    "esbuild": "^0.11.18"
   }
 }
