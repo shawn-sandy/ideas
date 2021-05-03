@@ -4,10 +4,10 @@ A [clipboard.js](https://clipboardjs.com/) shortcode plugin for vs 11ty static s
 
 > Copying text to the clipboard shouldn't be hard. It shouldn't require dozens of steps to configure or hundreds of KBs to load. But most of all, it shouldn't depend on Flash or any bloated framework.
 
-* [Code-clipper](#code-clipper)
-  + [Install](#install)
-  + [Usage](#usage)
-  + [License MIT](#license-mit)
+- [Code-clipper](#code-clipper)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [License MIT](#license-mit)
 
 ## Install
 
@@ -35,25 +35,8 @@ module.exports = function(eleventyConfig) {
 
 * add the following to you `javascript code` or  inside a `page` in between `<script></script>` tag, make sure this is below the `clipboardscript` tag.
 
-``` javascript
-(function() {
-    const clipboard = new ClipboardJS('.mix-clipboard')
-
-    clipboard.on('success', e => {
-        var clipText = e.trigger.textContent
-        e.trigger.textContent = 'copied'
-
-        e.clearSelection()
-        setTimeout(function() {
-            e.trigger.textContent = clipText
-        }, 1000)
-    })
-
-    clipboard.on('error', e => {
-        // console.error('Action:', e.action)
-        // console.error('Trigger:', e.trigger)
-    })
-})()
+``` html
+<script src="https://cdn.jsdelivr.net/npm/@shawnsandy/code-clipper@0.2.0/lib/clipper.min.js"> </script>
 ```
 
 * Copy the code in and html element using the following shortcode. Warning this plugin does not yet work in `*.md` files.
