@@ -3,7 +3,6 @@
     "*.tag": "html",
     "*.cshtml": "html",
     "*.html": "html",
-    "*.njk": "html",
     "*.mustache": "html",
     "*.html.md": "html"
   },
@@ -44,5 +43,8 @@
   "editor.minimap.maxColumn": 200,
   "editor.minimap.showSlider": "always",
   "xd.lastPackage": "/c:/Users/shawn/devbox/ideas/dsp-kit",
-  "xd.globalEditor": true
+  "xd.globalEditor": true,
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false
 }
