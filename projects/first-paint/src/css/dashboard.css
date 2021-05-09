@@ -218,7 +218,7 @@ button[type]:focus {
 button[type][type=reset],
 button[type][type=button],
 button[type][type=submit] {
-  padding: 0.6rem 1.5rem;
+  padding: 1rem 1.8rem;
   border: 1px solid #e4e4e4;
 }
 .fp-button[type=reset]:hover, .fp-button[type=reset]:active, .fp-button[type=reset]:focus, .fp-button[type=button]:hover, .fp-button[type=button]:active, .fp-button[type=button]:focus, .fp-button[type=submit]:hover, .fp-button[type=submit]:active, .fp-button[type=submit]:focus,
@@ -442,7 +442,7 @@ a[role=button] > em,
 .fp-button-link[role=button] > b,
 .fp-button-link[role=button] > em {
   border: 1px transparent solid;
-  padding: 0.6rem 1.5rem;
+  padding: 1rem 1.8rem;
   border: 1px solid #e4e4e4;
   font-weight: normal;
   font-style: normal;
@@ -501,6 +501,7 @@ a[role=button] > em,
 [data-dashboard] [data-sidebar] {
   overflow: hidden;
   overflow-y: auto;
+  height: 100vh;
 }
 [data-dashboard] [data-sidebar] strong a {
   font-size: 1.1rem;
@@ -562,6 +563,7 @@ a[role=button] > em,
   padding: 0 2rem;
   border-left: 0.1rem solid whitesmoke;
   width: 75vw;
+  height: 100vh;
 }
 @media (max-width: 980px) {
   [data-dashboard] main {

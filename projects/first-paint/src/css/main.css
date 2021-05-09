@@ -176,7 +176,7 @@ button[type]:focus {
 button[type][type=reset],
 button[type][type=button],
 button[type][type=submit] {
-  padding: 0.6rem 1.5rem;
+  padding: 1rem 1.8rem;
   border: 1px solid #e4e4e4;
 }
 .fp-button[type=reset]:hover, .fp-button[type=reset]:active, .fp-button[type=reset]:focus, .fp-button[type=button]:hover, .fp-button[type=button]:active, .fp-button[type=button]:focus, .fp-button[type=submit]:hover, .fp-button[type=submit]:active, .fp-button[type=submit]:focus,
