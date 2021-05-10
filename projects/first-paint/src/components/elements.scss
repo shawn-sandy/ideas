@@ -67,21 +67,8 @@ $render: true !default;
     border-radius: .5rem;
     font-size: .9rem;
     overflow-x: auto;
-
-
-    code {
-      color: lightgray;
-    }
-  }
-
-  textarea[role="presentation"] {
-    overflow: auto;
-    color: lightgray;
     min-height: 250px;
-    border-radius: .3rem;
-    scrollbar-width: .5rem;
-    scrollbar-color: lightgray;
-    padding: .7rem;
+    max-height: 500px;
 
     &::-webkit-scrollbar {
       width: .5rem;
@@ -97,6 +84,21 @@ $render: true !default;
       border-radius: 6px;
       border: thin solid ghostwhite;
     }
+
+
+    code {
+      color: lightgray;
+    }
+  }
+
+  textarea[role="presentation"] {
+    overflow: auto;
+    color: lightgray;
+    border-radius: .3rem;
+    scrollbar-width: .5rem;
+    scrollbar-color: lightgray;
+    padding: .7rem;
+
   }
 }
 

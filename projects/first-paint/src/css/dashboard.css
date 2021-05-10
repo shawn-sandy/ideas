@@ -595,6 +595,22 @@ a[role=button] > em,
   border-radius: 0.5rem;
   font-size: 0.9rem;
   overflow-x: auto;
+  min-height: 250px;
+  max-height: 500px;
+}
+[data-dashboard] main pre::-webkit-scrollbar,
+[data-dashboard] main textarea[role=presentation]::-webkit-scrollbar {
+  width: 0.5rem;
+}
+[data-dashboard] main pre::-webkit-scrollbar-track,
+[data-dashboard] main textarea[role=presentation]::-webkit-scrollbar-track {
+  background: #2b2b2b;
+}
+[data-dashboard] main pre::-webkit-scrollbar-thumb,
+[data-dashboard] main textarea[role=presentation]::-webkit-scrollbar-thumb {
+  background-color: ghostwhite;
+  border-radius: 6px;
+  border: thin solid ghostwhite;
 }
 [data-dashboard] main pre code,
 [data-dashboard] main textarea[role=presentation] code {
@@ -603,20 +619,8 @@ a[role=button] > em,
 [data-dashboard] main textarea[role=presentation] {
   overflow: auto;
   color: lightgray;
-  min-height: 250px;
   border-radius: 0.3rem;
   scrollbar-width: 0.5rem;
   scrollbar-color: lightgray;
   padding: 0.7rem;
-}
-[data-dashboard] main textarea[role=presentation]::-webkit-scrollbar {
-  width: 0.5rem;
-}
-[data-dashboard] main textarea[role=presentation]::-webkit-scrollbar-track {
-  background: #2b2b2b;
-}
-[data-dashboard] main textarea[role=presentation]::-webkit-scrollbar-thumb {
-  background-color: ghostwhite;
-  border-radius: 6px;
-  border: thin solid ghostwhite;
 }
