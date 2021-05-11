@@ -1,0 +1,24 @@
+@mixin mix-flex-grid {
+  section {
+    [role="list"] {
+      padding: 3rem 0;
+      box-sizing: border-box;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+
+      [role="listitem"] {
+        // flex-basis: 100%;
+        flex: 1 1 100%;
+        padding: 1rem;
+        line-height: 1.6;
+        @media all and (min-width: 780px) {
+          flex: 1 1 50%;
+        }
+        @media all and (min-width: 992px) {
+          flex: 1 1 33%;
+        }
+      }
+    }
+  }
+}

@@ -36,35 +36,9 @@
       </p>
     </footer>
   </article>
-  <article>
-    <h3>
-      <a href="#">Sample article 2</a>
-    </h3>
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-      assumenda odio rem maiores ad minima doloribus. Pariatur quibusdam dolorum
-      distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
-      voluptatibus eaque!
-    </p>
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-      assumenda odio rem maiores ad minima doloribus. Pariatur quibusdam dolorum
-      distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
-      voluptatibus eaque!
-    </p>
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-      assumenda odio rem maiores ad minima doloribus. Pariatur quibusdam dolorum
-      distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
-      voluptatibus eaque!
-    </p>
+  <hr />
+  {% include "_partials/article.html" %}
 
-    <footer>
-      <p>
-        <a href="#" role="button"><em>Read more</em></a>
-      </p>
-    </footer>
-  </article>
   <section>
     <div aria-label="get-started">
       <h4 id="get-started">
@@ -78,7 +52,7 @@
       </p>
     </div>
   </section>
-
+  <section>{%- include './heading.html' %}</section>
   <!-- {% include "./components.html" %} -->
   <!--  -->
   {% include "./img.html" %}
@@ -86,6 +60,27 @@
   {% include "./list.html" %}
   <!--  -->
   {% include "./inputs.html" %}
+  <!--  -->
+  {% include "./table.html" %}
+
+<p>
+    {% clipbutton "Copy Code", ".btn btn-primary" %} String to copy {%
+    endclipbutton %}
+    <hr>
+<textarea id="mx-clip" role="presentation">
+  <img src=" img/fp.svg" alt="" />
+  <h2>Lightweight, Fast, Accessible, Inclusive</h2>
+  <p>
+      <span>First Paint is lightweight easy to use CSS/SCSS starter library for
+          quickly scaffolding/building modern, mobile friendly websites.</span>
+  </p>
+  <a href="#" role="button" aria-label="Add word, cta action, to your button title">
+  <span>Get Started</span></a>
+</textarea>
+{% clip  "#mx-clip", '.btn btn-primaty' %}
+Copy Code
+{% endclip %}
+</p>
 </section>
 <aside>
   <h4>Sidebar</h4>

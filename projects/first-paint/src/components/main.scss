@@ -1,6 +1,6 @@
 $render: true !default;
 
-$min-height: 30rem !default;
+$min-height: 30vh !default;
 
 @mixin main($renderContent: $render, $className: null) {
   @if($renderContent) {
@@ -15,6 +15,7 @@ $min-height: 30rem !default;
 @mixin mix-main {
 
   min-height: $min-height;
+  padding: 2rem 0;
 
   >section {
     width: 100%;
@@ -26,12 +27,6 @@ $min-height: 30rem !default;
     }
   }
 
-  article {
-
-    +article {
-      margin-top: 2rem;
-    }
-  }
 
   article+aside,
   section+aside {

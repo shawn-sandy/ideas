@@ -1,8 +1,14 @@
-<nav role="navigation" aria-label="Main navigation">
-  <section id="navigation">
+<section data-show-mobile>
+  <a href="#sidebar" role="button" data-sidebar-button>
+    <em>&xrarr;</em>
+  </a>
+</section>
+<nav id="sidebar" role="navigation" aria-label="Main navigation">
+  <section data-brand="">
     <h1>
-      <a href="#" aria-label="Site logo">
-        <img src="/img/fp.svg" alt="" /><span aria-label="logo text"
+      <a href="/" aria-label="Site logo">
+        <img data-show-desktop data-brand src="/img/fp.svg" alt="" /><span
+          aria-label="logo text"
           >FirstPaint</span
         >
       </a>
@@ -17,11 +23,13 @@
     </ul>
   </section>
   <section>
-    <a href="#">Blog</a>
+    <a href="/cover">CoverPage</a>
     <a href="#">About</a>
-    <a href="http://">Documentation</a>
-    <a href="http://">Repository</a>
+    <a href="/">Documentation</a>
+    <a href="/">Repository</a>
     <a href="#">Contact Us</a>
-    <a href="http://" role="button"><em>Button Link</em></a>
+    <div data-show-mobile>
+      <a href="#" role="button"><em>x</em></a>
+    </div>
   </section>
 </nav>

@@ -1,0 +1,96 @@
+{
+    "layout": {
+        "height": {
+            "vh-5": {
+                "value": "5vh",
+                "description": "Height 10vh"
+            },
+            "vh-10": {
+                "value": "10vh",
+                "description": "Height 10vh"
+            },
+            "vh-20": {
+                "value": "20vh",
+                "description": "Height 10vh"
+            },
+            "vh-30": {
+                "value": "30vh",
+                "description": "Height 10vh"
+            },
+            "vh-40": {
+                "value": "40vh",
+                "description": "Height 10vh"
+            },
+            "vh-50": {
+                "value": "50vh",
+                "description": "Height 10vh"
+            },
+            "vh-60": {
+                "value": "60vh",
+                "description": "Height 10vh"
+            },
+            "vh-70": {
+                "value": "70vh",
+                "description": "Height 10vh"
+            },
+            "vh-80": {
+                "value": "80vh",
+                "description": "Height 10vh"
+            },
+            "vh-90": {
+                "value": "90vh",
+                "description": "Height 10vh"
+            },
+            "vh-100": {
+                "value": "100vh",
+                "description": "Height 10vh"
+            }
+        },
+        "width": {
+            "vw5": {
+                "value": "5vw",
+                "description": "Width 10vw"
+            },
+            "vw10": {
+                "value": "10vw",
+                "description": "Width 10vw"
+            },
+            "vw20": {
+                "value": "20vw",
+                "description": "Width 10vw"
+            },
+            "vw30": {
+                "value": "30vw",
+                "description": "Width 10vw"
+            },
+            "vw40": {
+                "value": "40vw",
+                "description": "Width 10vw"
+            },
+            "vw50": {
+                "value": "50vw",
+                "description": "Width 10vw"
+            },
+            "vw60": {
+                "value": "60vw",
+                "description": "Width 10vw"
+            },
+            "vw70": {
+                "value": "70vw",
+                "description": "Width 10vw"
+            },
+            "vw80": {
+                "value": "80vw",
+                "description": "Width 10vw"
+            },
+            "vw90": {
+                "value": "90vw",
+                "description": "Width 10vw"
+            },
+            "vw100": {
+                "value": "100vw",
+                "description": "Height 10vw"
+            }
+        }
+    }
+}

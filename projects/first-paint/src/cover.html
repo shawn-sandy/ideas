@@ -9,73 +9,44 @@
     <meta name="description" content="title" />
     <meta name="author" content="author" />
 
-    <link rel="stylesheet" href="/styles/cover-page.css" />
+    <link rel="stylesheet" href="/css/cover-page.css" />
   </head>
 
   <body>
-    <header>
-      <nav role="navigation" aria-label="Main navigation">
-        <section id="navigation">
-          <h1>
-            <a href="#" aria-label="Site logo">
-              <img src="/img/fp.svg" alt="" /><span aria-label="logo text"
-                >FirstPaint</span
+    <div data-cover>
+      {% include "_partials/navbar-mobile.html" %}
+      <header>
+        <section role="banner">
+          <div>
+            <!-- <img src="img/fp.svg" alt="" /> -->
+            <h2>Lightweight, Fast, Accessible, Inclusive</h2>
+            <p>
+              <span
+                >First Paint is lightweight easy to use CSS/SCSS starter library
+                for quickly scaffolding/building modern, mobile friendly
+                websites.</span
               >
-            </a>
-          </h1>
+            </p>
+            <p>
+              <a
+                href="/"
+                role="button"
+                aria-label="Add word, cta action, to your button title"
+              >
+                <em>Get Started</em></a
+              >
+            </p>
+          </div>
         </section>
-        <section>
-          <ul>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-        </section>
-        <section>
-          <a href="#">Blog</a>
-          <a href="#">About</a>
-          <a href="http://">Documentation</a>
-          <a href="http://">Repository</a>
-          <a href="#">Contact Us</a>
-          <a href="http://" role="button"><em>Button Link</em></a>
-        </section>
-      </nav>
-      <section role="banner">
-        <div>
-          <!-- <img src="img/fp.svg" alt="" /> -->
-          <h2>Lightweight, Fast, Accessible, Inclusive</h2>
-          <p>
-            <span
-              >First Paint is lightweight easy to use CSS/SCSS starter library
-              for quickly scaffolding/building modern, mobile friendly
-              websites.</span
-            >
-          </p>
-          <p>
-            <a
-              href="#"
-              role="button"
-              aria-label="Add word, cta action, to your button title"
-            >
-              <em>Get Started</em></a
-            >
-          </p>
-        </div>
-      </section>
-    </header>
+      </header>
 
-    <!-- footer -->
-    <footer role="contentinfo">
-      <section>
+      <!-- footer -->
+      <footer role="contentinfo">
         <div>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit?</p>
         </div>
-        <div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit?</p>
-        </div>
-      </section>
-    </footer>
+      </footer>
+    </div>
     <!-- <script src="index.js"></script> -->
   </body>
 </html>

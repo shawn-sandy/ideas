@@ -1,6 +1,6 @@
 {
   "name": "@shawnsandy/first-paint",
-  "version": "0.12.1",
+  "version": "1.1.13",
   "description": "First Paint is an easy to use CSS/SCSS starter library that contains accessibility focused, classless, semantic HTML elements and components for quickly scaffolding/building modern, lightweight mobile friendly websites.",
   "keywords": [
     "CSS",
@@ -39,9 +39,9 @@
     "start": "run-s clean && run-p 11ty watch:*",
     "watch": "run-p watch:*",
     "11ty": " eleventy --serve",
-    "watch:index": "sass src/index.scss:src/index.css src/custom-styles.scss:src/custom-styles.css src/components.scss:src/components.css  src/styles:src/styles/. --load-path=node_modules --watch --no-source-map",
-    "watch-scss": "sass --style compressed src/components:dist/css/. src/index.scss:dist/css/index.css src/styles:src/styles/. --load-path=node_modules --color",
-    "build:scss": "sass --style compressed src/index.scss:dist/css/index.css src/custom-styles.scss:dist/css/custom-styles.css src/styles:dist/styles/. src/components:dist/css/components/. --load-path=node_modules --color",
+    "watch:index": "sass --update src/index.scss:src/index.css src/custom-styles.scss:src/custom-styles.css src/components.scss:src/components.css  src/styles:src/css/. --load-path=node_modules --watch --no-source-map",
+    "watch-scss": "sass --style --update compressed src/components:dist/css/. src/index.scss:dist/css/index.css src/styles:src/styles/. --load-path=node_modules --color",
+    "build:scss": "sass --style compressed src/index.scss:dist/css/index.css src/custom-styles.scss:dist/css/custom-styles.css src/styles:dist/styles/. src/components:dist/css/components/.  --load-path=node_modules --color",
     "build:css": "postcss ./dist/css/*.css -d ./dist/css/ --ext min.css",
     "build": "run-s clean:dist build:*",
     "clean": "trash dist/**/",
@@ -52,9 +52,9 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
-    "@shawnsandy/ideas": "^0.2.0",
-    "@shawnsandy/marked": "^0.2.0",
-    "@shawnsandy/mix": "^0.10.17",
+    "@shawnsandy/ideas": "^0.2.2",
+    "@shawnsandy/marked": "^0.2.1",
+    "@shawnsandy/mix": "^0.10.18",
     "autoprefixer": "^10.2.4",
     "cssnano": "^4.1.10",
     "npm-run-all": "^4.1.5",
@@ -71,5 +71,9 @@
   "browserslist": [
     "> 0.2%",
     "not dead"
-  ]
+  ],
+  "dependencies": {
+    "@shawnsandy/code-clipper": "^0.2.1",
+    "clean-css": "^5.1.1"
+  }
 }

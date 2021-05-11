@@ -1,0 +1,22 @@
+@mixin mix-layout {
+  body {
+    > * {
+      > section,
+      > div,
+      > article {
+        max-width: 90%;
+        margin: 0 auto;
+
+        @media screen and (min-width: 1280px) {
+          max-width: 1600px;
+          width: 80%;
+        }
+
+        @media screen and (min-width: 1980px) {
+          max-width: 1920px;
+        }
+      }
+      @content;
+    }
+  }
+}

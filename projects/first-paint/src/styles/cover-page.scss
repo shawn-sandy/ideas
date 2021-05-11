@@ -1,30 +1,32 @@
-@use '../components/reset.scss';
+@use '../components.scss'with($render-page: true,
+  $render-type: true,
+  $render-nav: true,
+  $render-footer: true,
+  // $render-form: true, // the form is optional
+);
 
-@use '../components/page.scss';
+[data-cover] {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
 
-@use '../components/type.scss';
-
-@use '../components/nav.scss';
-
-@use '../components/header.scss'with($render: false, $height: null);
-
-@use '../components/footer.scss';
-
-@use '../components/button.scss';
-
-@include button.links();
+nav,
+footer {
+  flex-shrink: 0;
+}
 
 header {
   display: flex;
   flex-direction: column;
-  height: 85vh;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
 
   &>[role="banner"] {
     flex-grow: 1;
-    @include header.banner();
+    @include components.header-banner();
   }
 }
 
-nav {
-  flex-shrink: 0;
-}
+@include components.button-links();

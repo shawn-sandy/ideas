@@ -1,29 +1,57 @@
-code {
-  color: #d63384;
+[data-brand] img[alt] {
+  display: inline-block;
+  vertical-align: middle;
+  height: 2rem;
+  max-height: 2rem;
+}
+[data-brand] img[alt] + * {
+  margin-left: 1rem;
+}
+[data-brand] h1,
+[data-brand] h2,
+[data-brand] h3,
+[data-brand] h5 {
+  font-size: 1.5rem;
 }
 
-a {
-  color: #0d6efd;
-  background-color: transparent;
-  text-decoration-skip-ink: auto;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 1px;
-  text-decoration-line: underline;
+.fp-table,
+table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  width: 100%;
+  border: thin solid whitesmoke;
 }
-a:hover, a:active, a:visited {
-  text-decoration: none;
-  color: #012e70;
+.fp-table thead tr,
+table thead tr {
+  background-color: whitesmoke;
+  text-align: left;
+}
+.fp-table th,
+.fp-table td,
+table th,
+table td {
+  padding: 0.75rem 1rem;
+}
+.fp-table tbody tr,
+table tbody tr {
+  border-bottom: thin solid whitesmoke;
+}
+.fp-table tbody tr:nth-of-type(even),
+table tbody tr:nth-of-type(even) {
+  background-color: ghostwhite;
+}
+.fp-table tbody tr:last-of-type,
+table tbody tr:last-of-type {
+  border-bottom: 2px solid whitesmoke;
 }
 
-blockquote {
-  font-size: 1.3rem;
-  line-height: 1.5;
-  font-weight: normal;
-}
-
-ul,
-ol {
-  margin-bottom: 1rem;
+article + article,
+.fp-article + article {
+  margin-top: 2rem;
+  font-size: 0.9rem;
 }
 
 a[role=button],
@@ -42,40 +70,43 @@ a[role=button]:hover, a[role=button]:active, a[role=button]:focus,
   border: none;
 }
 a[role=button] > span,
-a[role=button] > strong,
+a[role=button] > b,
 a[role=button] > em,
 .fp-button-link[role=button] > span,
-.fp-button-link[role=button] > strong,
+.fp-button-link[role=button] > b,
 .fp-button-link[role=button] > em {
   border: 1px transparent solid;
-  padding: 0.6rem 1.5rem;
+  padding: 1rem 1.8rem;
   border: 1px solid #e4e4e4;
   font-weight: normal;
   font-style: normal;
 }
-a[role=button] > span:hover,
-a[role=button] > strong:hover,
+a[role=button] > span:active, a[role=button] > span:hover, a[role=button] > span:focus,
+a[role=button] > b:active,
+a[role=button] > b:hover,
+a[role=button] > b:focus,
+a[role=button] > em:active,
 a[role=button] > em:hover,
+a[role=button] > em:focus,
+.fp-button-link[role=button] > span:active,
 .fp-button-link[role=button] > span:hover,
-.fp-button-link[role=button] > strong:hover,
-.fp-button-link[role=button] > em:hover {
+.fp-button-link[role=button] > span:focus,
+.fp-button-link[role=button] > b:active,
+.fp-button-link[role=button] > b:hover,
+.fp-button-link[role=button] > b:focus,
+.fp-button-link[role=button] > em:active,
+.fp-button-link[role=button] > em:hover,
+.fp-button-link[role=button] > em:focus {
   background-color: #cbcbcb;
 }
-a[role=button] > strong,
-.fp-button-link[role=button] > strong {
+a[role=button] > b,
+.fp-button-link[role=button] > b {
   background-color: #e4e4e4;
 }
 a[role=button] > em,
 .fp-button-link[role=button] > em {
   background-color: #e4e4e4;
-  border-radius: 6.1875rem;
-}
-a[role=button] > em:active, a[role=button] > em:hover, a[role=button] > em:focus,
-.fp-button-link[role=button] > em:active,
-.fp-button-link[role=button] > em:hover,
-.fp-button-link[role=button] > em:focus {
   border-radius: 6.1875rem !important;
-  background-color: #cbcbcb;
 }
 
 select {
@@ -107,8 +138,8 @@ span > label[for]::before {
   display: inline-flex;
   width: 1rem;
   height: 1rem;
-  background-color: transparent;
-  border: solid 2px lightgrey;
+  background-color: ghostwhite;
+  border: solid thin lightgrey;
   border-radius: 3px;
   margin-right: 0.5rem;
 }
@@ -135,7 +166,8 @@ span [type=checkbox] {
   display: none;
 }
 
-pre {
+pre,
+textarea[role=presentation] {
   padding: 2rem;
   margin: 2rem 0;
   background-color: #2b2b2b;
@@ -143,7 +175,33 @@ pre {
   border-radius: 0.5rem;
   font-size: 0.9rem;
   overflow-x: auto;
+  min-height: 250px;
+  max-height: 500px;
 }
-pre code {
+pre::-webkit-scrollbar,
+textarea[role=presentation]::-webkit-scrollbar {
+  width: 0.5rem;
+}
+pre::-webkit-scrollbar-track,
+textarea[role=presentation]::-webkit-scrollbar-track {
+  background: #2b2b2b;
+}
+pre::-webkit-scrollbar-thumb,
+textarea[role=presentation]::-webkit-scrollbar-thumb {
+  background-color: ghostwhite;
+  border-radius: 6px;
+  border: thin solid ghostwhite;
+}
+pre code,
+textarea[role=presentation] code {
   color: lightgray;
+}
+
+textarea[role=presentation] {
+  overflow: auto;
+  color: lightgray;
+  border-radius: 0.3rem;
+  scrollbar-width: 0.5rem;
+  scrollbar-color: lightgray;
+  padding: 0.7rem;
 }
