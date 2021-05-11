@@ -26,30 +26,10 @@
   <div>
     <p>Copyright 2021</p>
   </div>
-  {% clipboardscript %}
+  <!-- {% clipboardscript %} -->
+  <script src="https://cdn.jsdelivr.net/npm/@shawnsandy/code-clipper@0.2.0/lib/clipper.min.js"> </script>
 
 
-  <script>
-    (function () {
-
-  const clipboard = new ClipboardJS('.mix-clipboard')
-
-  clipboard.on('success', e => {
-    var clipText = e.trigger.textContent
-    e.trigger.textContent = 'Copied'
-
-    e.clearSelection()
-    setTimeout(function () {
-      e.trigger.textContent = clipText
-    }, 1000)
-  })
-
-  clipboard.on('error', e => {
-    console.error('Action:', e.action)
-    console.error('Trigger:', e.trigger)
-  })
-})()
-  </script>
 </footer>
 </body>
 </html>

@@ -175,7 +175,7 @@ textarea[role=presentation] {
   border-radius: 0.5rem;
   font-size: 0.9rem;
   overflow-x: auto;
-  min-height: 250px;
+  min-height: 150px;
   max-height: 500px;
 }
 pre::-webkit-scrollbar,

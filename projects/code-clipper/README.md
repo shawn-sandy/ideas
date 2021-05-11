@@ -11,11 +11,11 @@ A [clipboard.js](https://clipboardjs.com/) shortcode plugin for vs 11ty static s
 
 ## Install
 
-* npm `npm i -D @shawnsandy/code-clipper`
+- npm `npm i -D @shawnsandy/code-clipper`
 
 ## Usage
 
-* Add the plugin to your `eleventy.js` config file
+- Add the plugin to your `eleventy.js` config file
 
 ``` javascript
 // eleventy.js
@@ -24,7 +24,7 @@ module.exports = function(eleventyConfig) {
 }
 ```
 
-* Add the clipboard.js script link to your page above the `</body>` using the following shortcode; this will link to `https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js`
+- Add the clipboard.js script link to your page above the `</body>` using the following shortcode; this will link to the CDN
 
 ``` html
 <body>
@@ -33,13 +33,16 @@ module.exports = function(eleventyConfig) {
 </body>
 ```
 
-* add the following to you `javascript code` or  inside a `page` in between `<script></script>` tag, make sure this is below the `clipboardscript` tag.
+- Optionally (don't like shortcodes) you can add the following above the `</body>` instead.
 
 ``` html
-<script src="https://cdn.jsdelivr.net/npm/@shawnsandy/code-clipper@0.2.0/lib/clipper.min.js"> </script>
+<body>
+  ...
+<script src="https://cdn.jsdelivr.net/npm/@shawnsandy/code-clipper@0.2.1/lib/clipper.min.js"> </script>
+<.body>
 ```
 
-* Copy the code in and html element using the following shortcode. Warning this plugin does not yet work in `*.md` files.
+- Copy the code in and html element using the following shortcode. Warning this plugin does not yet work in `*.md` files.
 
 ``` html
 <!-- copy section -->
@@ -60,7 +63,7 @@ Copy Code
 {% endclip %}
 ```
 
-* Copy a string using the following shortcode
+- Copy a string using the following shortcode
 
 ``` html
 <!-- params string to copy, button classes -->
