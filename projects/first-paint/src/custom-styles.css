@@ -76,7 +76,7 @@ a[role=button] > em,
 .fp-button-link[role=button] > b,
 .fp-button-link[role=button] > em {
   border: 1px transparent solid;
-  padding: 1rem 1.8rem;
+  padding: 0.85rem 1.8rem;
   border: 1px solid #e4e4e4;
   font-weight: normal;
   font-style: normal;
