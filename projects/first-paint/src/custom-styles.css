@@ -204,4 +204,5 @@ textarea[role=presentation] {
   scrollbar-width: 0.5rem;
   scrollbar-color: lightgray;
   padding: 0.7rem;
+  min-height: 300px;
 }
