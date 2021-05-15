@@ -31,7 +31,10 @@
     "labs": "babel labs/js/ -d labs/js/min --minified --out-file-extension .min.js --ignore ./**/min/",
     "js:main": "babel main.js -d js/min --out-file-extension .min.js  --minified  --ignore ./**/min/ --source-maps --watch",
     "js:labs": "babel labs/js -d labs/js/min --out-file-extension .min.js  --minified  --ignore ./**/min/ --source-maps --watch",
-    "watch-js": "run-s js:*"
+    "watch-js": "run-s js:*",
+    "git:add": "git add .",
+    "git:cz": "git cz",
+    "commit": "run-s git:*"
   },
   "directories": {
     "lib": "dist",
