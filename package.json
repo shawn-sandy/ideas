@@ -64,6 +64,7 @@
     "@shawnsandy/ideas": "^0.2.0",
     "@shawnsandy/mix": "^0.10.14",
     "auto-changelog": "^2.2.1",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.26.0",
     "eslint-config-standard": "^16.0.2",
     "eslint-plugin-import": "^2.23.1",
@@ -97,5 +98,10 @@
     "standard": "^16.0.3",
     "style-dictionary": "^2.10.2",
     "trash-cli": "^4.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
