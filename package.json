@@ -34,6 +34,7 @@
     "watch-js": "run-s js:*",
     "git:add": "git add .",
     "git:cz": "git cz",
+    "git:push": "git cz",
     "commit": "run-s git:*"
   },
   "directories": {
