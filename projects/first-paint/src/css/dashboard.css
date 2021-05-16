@@ -507,6 +507,7 @@ a[role=button] > em,
   overflow: hidden;
   overflow-y: auto;
   height: 100vh;
+  border-right: 0.1rem solid whitesmoke;
 }
 [data-dashboard] [data-sidebar] strong a {
   font-size: 1.1rem;
@@ -566,9 +567,9 @@ a[role=button] > em,
   flex-direction: column;
   overflow: auto;
   padding: 0 2rem;
-  border-left: 0.1rem solid whitesmoke;
-  width: 75vw;
+  width: 100%;
   height: 100vh;
+  margin: auto;
 }
 @media (max-width: 980px) {
   [data-dashboard] main {
@@ -577,8 +578,11 @@ a[role=button] > em,
   }
 }
 @media (min-width: 1280px) {
+  [data-dashboard] main {
+    max-width: 100%;
+  }
   [data-dashboard] main article {
-    max-width: 75%;
+    max-width: 100%;
   }
 }
 [data-dashboard] main nav {
