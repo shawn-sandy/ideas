@@ -81,10 +81,12 @@
       padding: .5rem 0;
     }
 
-    header,
-    section {
+    >header,
+    >section {
       @media (min-width: 980px) {
-        width: 100% !important;
+        // width: 100% !important;
+        width: 80%;
+        margin: auto;
       }
     }
 

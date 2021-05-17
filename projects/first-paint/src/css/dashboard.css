@@ -590,9 +590,10 @@ a[role=button] > em,
   padding: 0.5rem 0;
 }
 @media (min-width: 980px) {
-  [data-dashboard] main header,
-[data-dashboard] main section {
-    width: 100% !important;
+  [data-dashboard] main > header,
+[data-dashboard] main > section {
+    width: 80%;
+    margin: auto;
   }
 }
 [data-dashboard] main pre,
