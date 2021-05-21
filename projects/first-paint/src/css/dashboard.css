@@ -207,6 +207,7 @@ button[type] {
   cursor: pointer;
   margin-bottom: 0.7rem;
   font-weight: normal;
+  line-height: 1;
 }
 .fp-button:hover, .fp-button:active, .fp-button:focus,
 button[type]:hover,
@@ -433,6 +434,7 @@ a[role=button],
   border: none;
   border-radius: 0.1rem;
   color: darkblue;
+  line-height: 1;
 }
 a[role=button]:hover, a[role=button]:active, a[role=button]:focus,
 .fp-button-link[role=button]:hover,
@@ -451,6 +453,7 @@ a[role=button] > em,
   border: 1px solid #e4e4e4;
   font-weight: normal;
   font-style: normal;
+  line-height: 1;
 }
 a[role=button] > span:active, a[role=button] > span:hover, a[role=button] > span:focus,
 a[role=button] > b:active,
@@ -477,7 +480,7 @@ a[role=button] > b,
 a[role=button] > em,
 .fp-button-link[role=button] > em {
   background-color: #e4e4e4;
-  border-radius: 6.1875rem !important;
+  border-radius: 99rem !important;
 }
 
 [data-dashboard] {

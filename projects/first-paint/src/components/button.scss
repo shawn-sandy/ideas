@@ -2,7 +2,7 @@ $render: true !default;
 $color: darkblue !default;
 $background-color: transparent !default;
 $background-color-hover: rgb(228, 228, 228) !default;
-$margin: .7rem !default;
+$margin: 0.7rem !default;
 $padding: 1rem !default;
 $padding-x: 1.8rem !default;
 $padding-y: 0.85rem !default;
@@ -10,8 +10,8 @@ $button-padding: $padding-y $padding-x;
 $border-transparent: 1px transparent solid !default;
 $border-default: 1px solid $background-color-hover !default;
 $border-hover: 1px solid $background-color-hover !default;
-$border-radius: .1rem !default;
-$border-radius-rounded: 99rem / 16;
+$border-radius: 0.1rem !default;
+$border-radius-rounded: 99rem;
 $display: inline-flex !default;
 $align-items: center !default;
 $justify-content: center !default;
@@ -24,17 +24,13 @@ $cursor: pointer !default;
 @use 'styles.scss';
 
 @mixin renderComponent($renderComponent: $render, $className: null) {
-
   @if $renderComponent {
-
     #{if($className, $className, '.fp-button')},
     button[type] {
       @include button();
     }
-
   }
 }
-
 
 @mixin button() {
   @include styles.flex-box();
@@ -47,6 +43,7 @@ $cursor: pointer !default;
   cursor: $cursor;
   margin-bottom: $margin;
   font-weight: normal;
+  line-height: 1;
 
   &:hover,
   &:active,
@@ -54,9 +51,9 @@ $cursor: pointer !default;
     border: $border-transparent;
   }
 
-  &[type=reset],
-  &[type=button],
-  &[type=submit] {
+  &[type="reset"],
+  &[type="button"],
+  &[type="submit"] {
     padding: $button-padding;
     border: $border-default;
 
@@ -69,21 +66,19 @@ $cursor: pointer !default;
       border: $border-default;
     }
   }
-
 }
 
 @mixin links() {
-
   a,
   .fp-button-link {
-
-    &[role=button] {
+    &[role="button"] {
       display: inline-flex;
       text-decoration: none;
       background-color: $background-color;
       border: none;
       border-radius: $border-radius;
       color: $color;
+      line-height: 1;
 
       &:hover,
       &:active,
@@ -91,42 +86,38 @@ $cursor: pointer !default;
         border: none;
       }
 
-      >span,
-      >b,
-      >em {
+      > span,
+      > b,
+      > em {
         border: $border-transparent;
         padding: $padding-y $padding-x;
         border: $border-default;
         font-weight: normal;
         font-style: normal;
+        line-height: 1;
 
         &:active,
         &:hover,
         &:focus {
           //border-radius: $border-radius-rounded !important;
           background-color: darken($background-color-hover, 10);
-
         }
-
       }
 
       &:hover {
         // background-color: darken($background-color-hover, 10);
       }
 
-      >b {
+      > b {
         background-color: $background-color-hover;
       }
 
-      >em {
+      > em {
         background-color: $background-color-hover;
         border-radius: $border-radius-rounded !important;
-
       }
-
     }
   }
-
 }
 
-@include renderComponent()
+@include renderComponent();

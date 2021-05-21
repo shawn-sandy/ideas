@@ -456,7 +456,7 @@ header > [role=banner] {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  min-height: 25rem;
+  min-height: calc(400rem / 16);
 }
 .fp-header > section,
 .fp-header > div,
@@ -602,6 +602,7 @@ button[type] {
   cursor: pointer;
   margin-bottom: 0.7rem;
   font-weight: normal;
+  line-height: 1;
 }
 .fp-button:hover, .fp-button:active, .fp-button:focus,
 button[type]:hover,

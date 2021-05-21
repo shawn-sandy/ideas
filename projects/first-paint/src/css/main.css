@@ -165,6 +165,7 @@ button[type] {
   cursor: pointer;
   margin-bottom: 0.7rem;
   font-weight: normal;
+  line-height: 1;
 }
 .fp-button:hover, .fp-button:active, .fp-button:focus,
 button[type]:hover,
