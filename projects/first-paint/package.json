@@ -51,19 +51,19 @@
     "url": "https://github.com/shawn-sandy/ideas/issues"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy": "^0.12.1",
     "@shawnsandy/ideas": "^0.2.3",
     "@shawnsandy/marked": "^0.2.2",
     "@shawnsandy/mix": "^0.10.21",
-    "autoprefixer": "^10.2.4",
-    "cssnano": "^4.1.10",
+    "autoprefixer": "^10.2.5",
+    "cssnano": "^5.0.3",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.2.4",
+    "postcss": "^8.3.0",
     "postcss-cli": "^8.3.1",
     "postcss-modules": "^4.0.0",
-    "posthtml-include": "^1.6.0",
-    "sass": "^1.32.6",
-    "trash-cli": "^3.1.0"
+    "posthtml-include": "^1.7.1",
+    "sass": "^1.33.0",
+    "trash-cli": "^4.0.0"
   },
   "resolutions": {
     "node-forge": "0.10.0"
@@ -74,6 +74,6 @@
   ],
   "dependencies": {
     "@shawnsandy/code-clipper": "^0.2.2",
-    "clean-css": "^5.1.1"
+    "clean-css": "^5.1.2"
   }
 }
