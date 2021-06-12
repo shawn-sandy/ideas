@@ -65,6 +65,12 @@ p {
   margin: 0;
   line-height: 1.7;
 }
+p i {
+  font-style: italic;
+}
+p strong {
+  font-weight: 500;
+}
 
 p + p {
   margin-top: 2rem;
@@ -285,8 +291,8 @@ img[alt] {
 }
 img[alt]::after {
   min-height: 48px;
-  height: 100%;
-  width: 100%;
+  height: calc(200rem / 16);
+  width: calc(200rem / 16);
   content: "•" " " attr(alt);
   position: absolute;
   top: 0;
@@ -314,7 +320,7 @@ picture {
 }
 .fp-picture > img[alt],
 picture > img[alt] {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   position: relative;
 }

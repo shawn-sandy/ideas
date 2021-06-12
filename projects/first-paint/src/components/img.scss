@@ -3,17 +3,16 @@
 $render: true !default;
 
 @mixin renderComponent($renderComponent: $render, $className: null) {
-  @if($renderComponent) {
-
+  @if ($renderComponent) {
     img[alt] {
       max-width: 100%;
       height: auto;
 
       &::after {
         min-height: 48px;
-        height: 100%;
-        width: 100%;
-        content: "\2022"" "attr(alt);
+        height: calc(200rem / 16);
+        width: calc(200rem / 16);
+        content: "\2022"" " attr(alt);
         position: absolute;
         top: 0;
         left: 0;
@@ -26,11 +25,12 @@ $render: true !default;
         background-repeat: no-repeat;
         text-transform: uppercase;
         border: 1px solid lightgray;
-
       }
     }
 
-    #{$className, $className, '.fp-picture'},
+    #{$className,
+    $className,
+    ".fp-picture"},
     picture {
       @include img();
     }
@@ -38,7 +38,6 @@ $render: true !default;
 }
 
 @mixin img() {
-
   display: flex;
   max-width: 100%;
   height: auto;
@@ -47,15 +46,11 @@ $render: true !default;
   padding: 0;
   text-align: center;
 
-  >img[alt] {
-
-    width: 100%;
+  > img[alt] {
+    max-width: 100%;
     height: auto;
     position: relative;
-
-
   }
-
 }
 
 @include renderComponent();
