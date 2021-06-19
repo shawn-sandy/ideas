@@ -9,17 +9,17 @@ html {
 }
 @media (min-width: 980px) {
   html {
-    font-size: 100%;
+    font-size: 98%;
   }
 }
 @media (min-width: 1600px) {
   html {
-    font-size: 110%;
+    font-size: 100%;
   }
 }
 @media (min-width: 1980px) {
   html {
-    font-size: 115%;
+    font-size: 110%;
   }
 }
 html * {
@@ -42,13 +42,13 @@ body > section, body > main, body > header > section, body > footer > section {
 }
 @media (min-width: 980px) {
   body > section, body > main, body > header > section, body > footer > section {
-    max-width: 80%;
-    width: 80%;
+    width: 90%;
+    max-width: calc(1500rem / 16);
   }
 }
 @media (min-width: 1980px) {
   body > section, body > main, body > header > section, body > footer > section {
-    max-width: 80%;
+    width: 80%;
     font-size: 110%;
   }
 }
@@ -141,6 +141,12 @@ p {
   margin: 0;
   line-height: 1.7;
 }
+p i {
+  font-style: italic;
+}
+p strong {
+  font-weight: 500;
+}
 
 p + p {
   margin-top: 2rem;
@@ -172,6 +178,7 @@ nav {
     margin-bottom: 0;
     padding: 0.5rem 0;
     width: 80%;
+    max-width: calc(1500rem / 16);
   }
 }
 @media (max-width: 980px) {
@@ -545,8 +552,8 @@ img[alt] {
 }
 img[alt]::after {
   min-height: 48px;
-  height: 100%;
-  width: 100%;
+  height: calc(200rem / 16);
+  width: calc(200rem / 16);
   content: "•" " " attr(alt);
   position: absolute;
   top: 0;
@@ -574,7 +581,7 @@ picture {
 }
 .fp-picture > img[alt],
 picture > img[alt] {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   position: relative;
 }

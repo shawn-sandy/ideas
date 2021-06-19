@@ -10,8 +10,8 @@ $render: true !default;
 
       &::after {
         min-height: 48px;
-        height: auto;
-        max-width: 100%;
+        height: calc(200rem / 16);
+        width: calc(200rem / 16);
         content: "\2022"" " attr(alt);
         position: absolute;
         top: 0;
@@ -47,7 +47,7 @@ $render: true !default;
   text-align: center;
 
   > img[alt] {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     position: relative;
   }
