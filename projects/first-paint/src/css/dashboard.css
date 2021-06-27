@@ -171,15 +171,18 @@ footer[role=contentinfo] > div p {
 }
 
 .fp-grid[role=list],
-section[role=list], div[role=list] {
+section[role=list],
+div[role=list] {
   padding: 0;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  gap: 2rem;
 }
 .fp-grid[role=list] [role=listitem],
-section[role=list] [role=listitem], div[role=list] [role=listitem] {
+section[role=list] [role=listitem],
+div[role=list] [role=listitem] {
   flex: 1 1 100%;
   line-height: 1.6;
   padding: 1rem;
@@ -187,13 +190,15 @@ section[role=list] [role=listitem], div[role=list] [role=listitem] {
 }
 @media all and (min-width: 780px) {
   .fp-grid[role=list] [role=listitem],
-section[role=list] [role=listitem], div[role=list] [role=listitem] {
+section[role=list] [role=listitem],
+div[role=list] [role=listitem] {
     flex: 1 1 48%;
   }
 }
 @media all and (min-width: 992px) {
   .fp-grid[role=list] [role=listitem],
-section[role=list] [role=listitem], div[role=list] [role=listitem] {
+section[role=list] [role=listitem],
+div[role=list] [role=listitem] {
     flex: 1 1 28%;
   }
 }
