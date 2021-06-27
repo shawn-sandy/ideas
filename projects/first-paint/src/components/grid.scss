@@ -12,8 +12,9 @@ $flex-media-980: 1 1 28% !default;
   @if($renderComponent) {
 
     #{if($className, $className, '.fp-grid')},
-    section {
-      [role="list"] {
+
+      section, div {
+        &[role="list"] {
         @include grid();
       }
     }
