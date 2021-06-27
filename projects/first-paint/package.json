@@ -73,7 +73,7 @@
     "not dead"
   ],
   "dependencies": {
-    "@shawnsandy/code-clipper": "^0.2.3",
+    "@shawnsandy/code-clipper": "^0.2.2",
     "clean-css": "^5.1.2"
   }
 }
