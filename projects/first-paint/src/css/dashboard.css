@@ -170,30 +170,30 @@ footer[role=contentinfo] > div p {
   text-align: center;
 }
 
-.fp-grid [role=list],
-section [role=list] {
+.fp-grid[role=list],
+section[role=list], div[role=list] {
   padding: 0;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
-.fp-grid [role=list] [role=listitem],
-section [role=list] [role=listitem] {
+.fp-grid[role=list] [role=listitem],
+section[role=list] [role=listitem], div[role=list] [role=listitem] {
   flex: 1 1 100%;
   line-height: 1.6;
   padding: 1rem;
   margin: 0 1rem 1rem 0;
 }
 @media all and (min-width: 780px) {
-  .fp-grid [role=list] [role=listitem],
-section [role=list] [role=listitem] {
+  .fp-grid[role=list] [role=listitem],
+section[role=list] [role=listitem], div[role=list] [role=listitem] {
     flex: 1 1 48%;
   }
 }
 @media all and (min-width: 992px) {
-  .fp-grid [role=list] [role=listitem],
-section [role=list] [role=listitem] {
+  .fp-grid[role=list] [role=listitem],
+section[role=list] [role=listitem], div[role=list] [role=listitem] {
     flex: 1 1 28%;
   }
 }
