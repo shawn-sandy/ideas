@@ -136,7 +136,7 @@ div[role=list] {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 2rem;
+  gap: 1.2rem;
 }
 .fp-grid[role=list] [role=listitem],
 section[role=list] [role=listitem],
@@ -144,7 +144,6 @@ div[role=list] [role=listitem] {
   flex: 1 1 100%;
   line-height: 1.6;
   padding: 1rem;
-  margin: 0 1rem 1rem 0;
 }
 @media all and (min-width: 780px) {
   .fp-grid[role=list] [role=listitem],
