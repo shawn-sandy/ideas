@@ -76,6 +76,10 @@ p + p {
   margin-top: 2rem;
 }
 
+p + * {
+  margin-top: 1.5rem !important;
+}
+
 .fp-main,
 main {
   min-height: 30vh;
@@ -619,6 +623,8 @@ a[role=button] > em,
   overflow-x: auto;
   min-height: 150px;
   max-height: 500px;
+  display: flex;
+  align-items: center;
 }
 [data-dashboard] main pre::-webkit-scrollbar,
 [data-dashboard] main textarea[role=presentation]::-webkit-scrollbar {

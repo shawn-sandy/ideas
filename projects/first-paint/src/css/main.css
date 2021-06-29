@@ -76,6 +76,10 @@ p + p {
   margin-top: 2rem;
 }
 
+p + * {
+  margin-top: 1.5rem !important;
+}
+
 .fp-main,
 main {
   min-height: 30vh;

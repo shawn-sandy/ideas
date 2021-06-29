@@ -152,6 +152,10 @@ p + p {
   margin-top: 2rem;
 }
 
+p + * {
+  margin-top: 1.5rem !important;
+}
+
 nav {
   flex-direction: column;
   align-items: flex-start;
@@ -822,6 +826,8 @@ textarea[role=presentation] {
   overflow-x: auto;
   min-height: 150px;
   max-height: 500px;
+  display: flex;
+  align-items: center;
 }
 pre::-webkit-scrollbar,
 textarea[role=presentation]::-webkit-scrollbar {

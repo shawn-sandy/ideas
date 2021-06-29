@@ -65,6 +65,8 @@ $render: true !default;
     overflow-x: auto;
     min-height: 150px;
     max-height: 500px;
+    display: flex;
+    align-items: center;
 
     &::-webkit-scrollbar {
       width: 0.5rem;
