@@ -120,4 +120,55 @@ $cursor: pointer !default;
   }
 }
 
+@mixin btn() {
+  a,
+  a[onclick],
+  a[tabindex="0"],
+  a[aria-pressed] {
+    //text-decoration: none;
+    text-decoration: none !important;
+    > span,
+    > b,
+    > em {
+      $background-color: lightgray;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $background-color;
+      border: none;
+      border-radius: $border-radius;
+      color: $color;
+      line-height: 1;
+
+      // min-width: calc(100 / 16 * 1rem);
+      min-height: calc(48 / 16 * 1rem);
+      padding: 0 1.5rem;
+    }
+
+    &:active,
+    &:hover,
+    &:focus {
+      > span,
+      > b,
+      > em {
+        //border-radius: $border-radius-rounded !important;
+        background-color: darken($background-color-hover, 20);
+      }
+    }
+
+    > b {
+      background-color: $background-color-hover;
+    }
+
+    > em {
+      background-color: $background-color-hover;
+      border-radius: $border-radius-rounded !important;
+    }
+  }
+
+  em:where(a) {
+    text-decoration: none !important;
+  }
+}
+
 @include renderComponent();

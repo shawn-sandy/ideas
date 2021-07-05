@@ -240,15 +240,15 @@ h6 {
 }
 
 h1 {
-  font-size: 4.2rem;
+  font-size: 4rem;
 }
 
 h2 {
-  font-size: 3.1rem;
+  font-size: 3rem;
 }
 
 h3 {
-  font-size: 2.4rem;
+  font-size: 2.1rem;
 }
 
 h4 {
@@ -283,7 +283,8 @@ p strong {
   font-weight: 500;
 }
 
-p + p {
+p + p,
+p + * {
   margin-top: 2rem;
 }
 
@@ -800,13 +801,13 @@ code {
 a {
   color: #0d6efd;
   background-color: transparent;
-  text-decoration-skip-ink: auto;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 1px;
-  text-decoration-line: underline;
+  text-decoration: underline;
+  transition: color 0.4s ease;
 }
 a:hover, a:active, a:visited {
   text-decoration: none;
+}
+a:hover {
   color: #012e70;
 }
 
