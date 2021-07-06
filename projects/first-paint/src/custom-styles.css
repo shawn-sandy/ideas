@@ -859,15 +859,11 @@ textarea[role=presentation] {
   min-height: 300px;
 }
 
-a,
 a[onclick],
 a[tabindex="0"],
 a[aria-pressed] {
   text-decoration: none !important;
 }
-a > span,
-a > b,
-a > em,
 a[onclick] > span,
 a[onclick] > b,
 a[onclick] > em,
@@ -888,20 +884,11 @@ a[aria-pressed] > em {
   min-height: calc(48 / 16 * 1rem);
   padding: 0 1.5rem;
 }
-a:active > span,
-a:active > b,
-a:active > em, a:hover > span,
-a:hover > b,
-a:hover > em, a:focus > span,
-a:focus > b,
-a:focus > em,
 a[onclick]:active > span,
 a[onclick]:active > b,
-a[onclick]:active > em,
-a[onclick]:hover > span,
+a[onclick]:active > em, a[onclick]:hover > span,
 a[onclick]:hover > b,
-a[onclick]:hover > em,
-a[onclick]:focus > span,
+a[onclick]:hover > em, a[onclick]:focus > span,
 a[onclick]:focus > b,
 a[onclick]:focus > em,
 a[tabindex="0"]:active > span,
@@ -924,13 +911,11 @@ a[aria-pressed]:focus > b,
 a[aria-pressed]:focus > em {
   background-color: #b1b1b1;
 }
-a > b,
 a[onclick] > b,
 a[tabindex="0"] > b,
 a[aria-pressed] > b {
   background-color: #e4e4e4;
 }
-a > em,
 a[onclick] > em,
 a[tabindex="0"] > em,
 a[aria-pressed] > em {

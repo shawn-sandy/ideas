@@ -121,7 +121,6 @@ $cursor: pointer !default;
 }
 
 @mixin btn() {
-  a,
   a[onclick],
   a[tabindex="0"],
   a[aria-pressed] {
