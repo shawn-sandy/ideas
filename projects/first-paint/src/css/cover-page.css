@@ -674,14 +674,17 @@ code {
 a {
   color: #0d6efd;
   background-color: transparent;
-  text-decoration: underline;
   transition: color 0.4s ease;
+  text-decoration: none;
 }
 a:hover, a:active, a:visited {
   text-decoration: none;
 }
 a:hover {
   color: #012e70;
+}
+a[title] {
+  text-decoration: underline;
 }
 
 strong {
@@ -779,6 +782,10 @@ a[role=button] > em:focus,
 .fp-button-link[role=button] > em:hover,
 .fp-button-link[role=button] > em:focus {
   background-color: #cbcbcb;
+}
+a[role=button] > span,
+.fp-button-link[role=button] > span {
+  background-color: transparent !important;
 }
 a[role=button] > b,
 .fp-button-link[role=button] > b {

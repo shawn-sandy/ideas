@@ -674,14 +674,17 @@ code {
 a {
   color: #0d6efd;
   background-color: transparent;
-  text-decoration: underline;
   transition: color 0.4s ease;
+  text-decoration: none;
 }
 a:hover, a:active, a:visited {
   text-decoration: none;
 }
 a:hover {
   color: #012e70;
+}
+a[title] {
+  text-decoration: underline;
 }
 
 strong {
@@ -748,6 +751,10 @@ a[role=button] > em:focus,
 .fp-button-link[role=button] > em:hover,
 .fp-button-link[role=button] > em:focus {
   background-color: #cbcbcb;
+}
+a[role=button] > span,
+.fp-button-link[role=button] > span {
+  background-color: transparent !important;
 }
 a[role=button] > b,
 .fp-button-link[role=button] > b {
@@ -859,24 +866,26 @@ textarea[role=presentation] {
   min-height: 300px;
 }
 
+a,
 a[onclick],
 a[tabindex="0"],
-a[aria-pressed] {
+a[aria-pressed],
+a[aria-label] {
   text-decoration: none !important;
 }
-a[onclick] > span,
+a > b,
+a > em,
 a[onclick] > b,
 a[onclick] > em,
-a[tabindex="0"] > span,
 a[tabindex="0"] > b,
 a[tabindex="0"] > em,
-a[aria-pressed] > span,
 a[aria-pressed] > b,
-a[aria-pressed] > em {
+a[aria-pressed] > em,
+a[aria-label] > b,
+a[aria-label] > em {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  background-color: lightgray;
   border: none;
   border-radius: 0.1rem;
   color: darkblue;
@@ -884,41 +893,48 @@ a[aria-pressed] > em {
   min-height: calc(48 / 16 * 1rem);
   padding: 0 1.5rem;
 }
-a[onclick]:active > span,
+a:active > b,
+a:active > em, a:hover > b,
+a:hover > em, a:focus > b,
+a:focus > em,
 a[onclick]:active > b,
-a[onclick]:active > em, a[onclick]:hover > span,
+a[onclick]:active > em,
 a[onclick]:hover > b,
-a[onclick]:hover > em, a[onclick]:focus > span,
+a[onclick]:hover > em,
 a[onclick]:focus > b,
 a[onclick]:focus > em,
-a[tabindex="0"]:active > span,
 a[tabindex="0"]:active > b,
 a[tabindex="0"]:active > em,
-a[tabindex="0"]:hover > span,
 a[tabindex="0"]:hover > b,
 a[tabindex="0"]:hover > em,
-a[tabindex="0"]:focus > span,
 a[tabindex="0"]:focus > b,
 a[tabindex="0"]:focus > em,
-a[aria-pressed]:active > span,
 a[aria-pressed]:active > b,
 a[aria-pressed]:active > em,
-a[aria-pressed]:hover > span,
 a[aria-pressed]:hover > b,
 a[aria-pressed]:hover > em,
-a[aria-pressed]:focus > span,
 a[aria-pressed]:focus > b,
-a[aria-pressed]:focus > em {
+a[aria-pressed]:focus > em,
+a[aria-label]:active > b,
+a[aria-label]:active > em,
+a[aria-label]:hover > b,
+a[aria-label]:hover > em,
+a[aria-label]:focus > b,
+a[aria-label]:focus > em {
   background-color: #b1b1b1;
 }
+a > b,
 a[onclick] > b,
 a[tabindex="0"] > b,
-a[aria-pressed] > b {
+a[aria-pressed] > b,
+a[aria-label] > b {
   background-color: #e4e4e4;
 }
+a > em,
 a[onclick] > em,
 a[tabindex="0"] > em,
-a[aria-pressed] > em {
+a[aria-pressed] > em,
+a[aria-label] > em {
   background-color: #e4e4e4;
   border-radius: 99rem !important;
 }

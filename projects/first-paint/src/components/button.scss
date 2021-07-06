@@ -107,6 +107,9 @@ $cursor: pointer !default;
       &:hover {
         // background-color: darken($background-color-hover, 10);
       }
+      > span {
+        background-color: transparent !important;
+      }
 
       > b {
         background-color: $background-color-hover;
@@ -121,19 +124,19 @@ $cursor: pointer !default;
 }
 
 @mixin btn() {
+  a,
   a[onclick],
   a[tabindex="0"],
-  a[aria-pressed] {
+  a[aria-pressed],
+  a[aria-label] {
     //text-decoration: none;
     text-decoration: none !important;
-    > span,
     > b,
     > em {
       $background-color: lightgray;
       display: inline-flex;
       justify-content: center;
       align-items: center;
-      background-color: $background-color;
       border: none;
       border-radius: $border-radius;
       color: $color;
@@ -145,7 +148,6 @@ $cursor: pointer !default;
     &:active,
     &:hover,
     &:focus {
-      > span,
       > b,
       > em {
         //border-radius: $border-radius-rounded !important;

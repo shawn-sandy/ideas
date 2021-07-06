@@ -19,8 +19,8 @@ $render: true !default;
     // #0d6efd
     color: #0d6efd;
     background-color: transparent;
-    text-decoration: underline;
     transition: color 0.4s ease;
+    text-decoration: none;
     &:hover,
     &:active,
     &:visited {
@@ -28,6 +28,9 @@ $render: true !default;
     }
     &:hover {
       color: darken(#0d6efd, 30%);
+    }
+    &[title] {
+      text-decoration: underline;
     }
   }
 
