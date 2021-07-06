@@ -138,8 +138,6 @@ $cursor: pointer !default;
       border-radius: $border-radius;
       color: $color;
       line-height: 1;
-
-      // min-width: calc(100 / 16 * 1rem);
       min-height: calc(48 / 16 * 1rem);
       padding: 0 1.5rem;
     }
