@@ -1,6 +1,6 @@
 {
   "name": "@shawnsandy/npm_info",
-  "version": "0.5.17",
+  "version": "0.5.18",
   "description": "Eleventy filter that grabs and returns npm package details",
   "keywords": [
     "npm",
