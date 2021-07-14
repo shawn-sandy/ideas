@@ -16,6 +16,8 @@ $display: inline-flex !default;
 $align-items: center !default;
 $justify-content: center !default;
 $cursor: pointer !default;
+$transitions: all 200ms ease !default;
+$transform: scale(0.96) !default;
 
 // *************************************************
 // ******************** imports ********************
@@ -44,11 +46,13 @@ $cursor: pointer !default;
   margin-bottom: $margin;
   font-weight: normal;
   line-height: 1;
+  transition: $transitions;
 
   &:hover,
   &:active,
   &:focus {
     border: $border-transparent;
+    transform: $transform;
   }
 
   &[type="reset"],
@@ -95,12 +99,14 @@ $cursor: pointer !default;
         font-weight: normal;
         font-style: normal;
         line-height: 1;
+        transition: $transitions;
 
         &:active,
         &:hover,
         &:focus {
           //border-radius: $border-radius-rounded !important;
           background-color: darken($background-color-hover, 10);
+          transform: $transform;
         }
       }
 
@@ -123,7 +129,7 @@ $cursor: pointer !default;
   }
 }
 
-@mixin btn() {
+@mixin linkBtn() {
   a,
   a[onclick],
   a[tabindex="0"],
@@ -143,6 +149,7 @@ $cursor: pointer !default;
       line-height: 1;
       min-height: calc(48 / 16 * 1rem);
       padding: 0 1.5rem;
+      transition: $transitions;
     }
 
     &:active,
@@ -152,6 +159,7 @@ $cursor: pointer !default;
       > em {
         //border-radius: $border-radius-rounded !important;
         background-color: darken($background-color-hover, 20);
+        transform: $transform;
       }
     }
 

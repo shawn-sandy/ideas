@@ -484,12 +484,14 @@ button[type] {
   margin-bottom: 0.7rem;
   font-weight: normal;
   line-height: 1;
+  transition: all 200ms ease;
 }
 .fp-button:hover, .fp-button:active, .fp-button:focus,
 button[type]:hover,
 button[type]:active,
 button[type]:focus {
   border: 1px transparent solid;
+  transform: scale(0.96);
 }
 .fp-button[type=reset], .fp-button[type=button], .fp-button[type=submit],
 button[type][type=reset],
@@ -764,6 +766,7 @@ a[role=button] > em,
   font-weight: normal;
   font-style: normal;
   line-height: 1;
+  transition: all 200ms ease;
 }
 a[role=button] > span:active, a[role=button] > span:hover, a[role=button] > span:focus,
 a[role=button] > b:active,
@@ -782,6 +785,7 @@ a[role=button] > em:focus,
 .fp-button-link[role=button] > em:hover,
 .fp-button-link[role=button] > em:focus {
   background-color: #cbcbcb;
+  transform: scale(0.96);
 }
 a[role=button] > span,
 .fp-button-link[role=button] > span {
