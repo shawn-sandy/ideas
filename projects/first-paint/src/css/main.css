@@ -165,6 +165,9 @@ div[role=list] [role=listitem] {
   }
 }
 
+/**
+TODO: deprecate this mixin
+**/
 .fp-button,
 button[type] {
   display: flex;

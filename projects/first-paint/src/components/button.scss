@@ -34,6 +34,9 @@ $transform: scale(0.96) !default;
   }
 }
 
+/**
+TODO: deprecate this mixin
+**/
 @mixin button() {
   @include styles.flex-box();
   display: inline-flex;

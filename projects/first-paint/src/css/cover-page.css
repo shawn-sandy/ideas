@@ -420,9 +420,7 @@ footer[role=contentinfo] section {
     align-content: stretch;
     padding: 1rem;
   }
-  .fp-footer section > aside + aside,
-.fp-footer section > div + div,
-footer[role=contentinfo] section > aside + aside,
+  .fp-footer section > div + div,
 footer[role=contentinfo] section > div + div {
     margin-left: 1rem;
   }
@@ -468,6 +466,9 @@ div[role=list] [role=listitem] {
   }
 }
 
+/**
+TODO: deprecate this mixin
+**/
 .fp-button,
 button[type] {
   display: flex;

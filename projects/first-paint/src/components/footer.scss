@@ -1,12 +1,11 @@
 $render: true !default;
-$font-size: .9rem !default;
+$font-size: 0.9rem !default;
 $background-color: null !default;
 
 @mixin renderComponent($renderContent: $render, $className: null) {
-  @if($renderContent) {
-
+  @if ($renderContent) {
     #{if($className, $className, '.fp-footer')},
-    footer[role=contentinfo] {
+    footer[role="contentinfo"] {
       @include footer();
     }
   }
@@ -26,7 +25,7 @@ $background-color: null !default;
     display: block;
     justify-content: center;
 
-    >div {
+    > div {
       flex: 1;
       margin-bottom: 1rem;
     }
@@ -37,21 +36,19 @@ $background-color: null !default;
       align-content: stretch;
       padding: 1rem;
 
-      >aside+aside,
-      >div+div {
+      > div + div {
         margin-left: 1rem;
       }
     }
   }
 
-  >div {
+  > div {
     padding: 1rem;
 
     p {
-      text-align: center
+      text-align: center;
     }
   }
-
 }
 
 @include renderComponent();
