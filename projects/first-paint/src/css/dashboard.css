@@ -217,7 +217,7 @@ button[type] {
   display: inline-flex;
   flex-direction: row;
   justify-content: center;
-  background-color: transparent;
+  background-color: transparent !important;
   border-radius: 0.1rem;
   border: 1px transparent solid;
   cursor: pointer;
@@ -502,11 +502,11 @@ a[role=button] > span,
 }
 a[role=button] > b,
 .fp-button-link[role=button] > b {
-  background-color: #e4e4e4;
+  background-color: gray;
 }
 a[role=button] > em,
 .fp-button-link[role=button] > em {
-  background-color: #e4e4e4;
+  background-color: gray;
   border-radius: 99rem !important;
 }
 

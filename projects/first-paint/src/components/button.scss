@@ -1,6 +1,6 @@
 $render: true !default;
 $color: darkblue !default;
-$background-color: transparent !default;
+$background-color: gray !default;
 $background-color-hover: rgb(228, 228, 228) !default;
 $margin: 0.7rem !default;
 $padding: 1rem !default;
@@ -42,7 +42,7 @@ TODO: deprecate this mixin
   display: inline-flex;
   flex-direction: row;
   justify-content: center;
-  background-color: $background-color;
+  background-color: transparent !important;
   border-radius: $border-radius;
   border: $border-transparent;
   cursor: $cursor;
@@ -82,7 +82,7 @@ TODO: deprecate this mixin
     &[role="button"] {
       display: inline-flex;
       text-decoration: none;
-      background-color: $background-color;
+      background-color: transparent;
       border: none;
       border-radius: $border-radius;
       color: $color;
@@ -122,11 +122,11 @@ TODO: deprecate this mixin
       }
 
       > b {
-        background-color: $background-color-hover;
+        background-color: $background-color;
       }
 
       > em {
-        background-color: $background-color-hover;
+        background-color: $background-color;
         border-radius: $border-radius-rounded !important;
       }
     }
@@ -182,17 +182,13 @@ TODO: deprecate this mixin
   }
 }
 
-@use 'components/button' as button with($rendered: false);
-
-@mixin config($_color: red, $_background_color: black) @include button.button()
-  @mixin
-  config(
-    $_color: $color,
-    $_background-color: $background-color,
-    $_background-color-hover: $background-color-hover,
-    $_border-radius: $border-radius,
-    $_button-padding: $button-padding
-  ) {
+@mixin config(
+  $_color: $color,
+  $_background-color: $background-color,
+  $_background-color-hover: $background-color-hover,
+  $_border-radius: $border-radius,
+  $_button-padding: $button-padding
+) {
   $color: $_color !global;
   $background-color: $_background-color !global;
   $background-color-hover: $_background-color-hover !global;

@@ -3,6 +3,11 @@
   "title": "FirstPaint",
   "steps": [
     {
+      "file": "README.md",
+      "description": "# First Paint\r\n\r\nRun the application\r\n\r\n>> npm run first-paint\r\n\r\n",
+      "line": 26
+    },
+    {
       "file": "projects/first-paint/src/components/button.scss",
       "description": "# Buttons\r\n\r\nStyle for buttons and button links \r\n\r\n## Usage\r\n\r\n- Render the default buttons\r\n\r\n```scss\r\n\r\n@use 'components/buttons' as button;\r\n\r\n```\r\n\r\n### Will output\r\n\r\n```css\r\n.fp-button,\r\nbutton[type] {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  flex-direction: row;\r\n  display: inline-flex;\r\n  flex-direction: row;\r\n  justify-content: center;\r\n  background-color: transparent;\r\n  border-radius: 0.1rem;\r\n  border: 1px transparent solid;\r\n  cursor: pointer;\r\n  margin-bottom: 0.7rem;\r\n  font-weight: normal;\r\n  line-height: 1;\r\n  transition: all 200ms ease;\r\n}\r\n.fp-button:hover, .fp-button:active, .fp-button:focus,\r\nbutton[type]:hover,\r\nbutton[type]:active,\r\nbutton[type]:focus {\r\n  border: 1px transparent solid;\r\n  transform: scale(0.96);\r\n}\r\n.fp-button[type=reset], .fp-button[type=button], .fp-button[type=submit],\r\nbutton[type][type=reset],\r\nbutton[type][type=button],\r\nbutton[type][type=submit] {\r\n  padding: 0.85rem 1.8rem;\r\n  border: 1px solid #e4e4e4;\r\n}\r\n.fp-button[type=reset]:hover, .fp-button[type=reset]:active, .fp-button[type=reset]:focus, .fp-button[type=button]:hover, .fp-button[type=button]:active, .fp-button[type=button]:focus, .fp-button[type=submit]:hover, .fp-button[type=submit]:active, .fp-button[type=submit]:focus,\r\nbutton[type][type=reset]:hover,\r\nbutton[type][type=reset]:active,\r\nbutton[type][type=reset]:focus,\r\nbutton[type][type=button]:hover,\r\nbutton[type][type=button]:active,\r\nbutton[type][type=button]:focus,\r\nbutton[type][type=submit]:hover,\r\nbutton[type][type=submit]:active,\r\nbutton[type][type=submit]:focus {\r\n  background-color: transparent;\r\n  background-color: #cbcbcb;\r\n  border: 1px solid #e4e4e4;\r\n}\r\n\r\n```",
       "line": 40
@@ -20,12 +25,12 @@
     {
       "file": "projects/first-paint/src/components/button.scss",
       "description": "# Button config()\r\n\r\n## Change the color/styles of your buttons\r\n\r\n### Usage\r\n\r\nBy default buttons styles are rendered when you include so you need to turn off  rendered when you include the button class\r\n\r\n\r\n```scss\r\n@use 'components/button' as button with($rendered: false);\r\n\r\n@include button.config($_color: red, $_background_color: black)\r\n\r\n@include button.button()\r\n\r\n```\r\n",
-      "line": 186
+      "line": 222
     },
     {
       "file": "projects/first-paint/src/components/button.scss",
       "description": "# Config Options\r\n\r\n```scss\r\n$_color: #fff,\r\n  $_background-color: #000,\r\n  $_background-color-hover: #010101,\r\n  $_border-radius: calc(5rem / 16),\r\n  $_button-padding: 1rem 2rem\r\n```",
-      "line": 200
+      "line": 187
     }
   ]
 }
