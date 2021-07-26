@@ -14,7 +14,7 @@
     },
     {
       "file": "projects/first-paint/src/components/button.scss",
-      "description": "# Button links\r\n\r\n## Style links to look like a button (DEPRECATED PLEASE USE `linkBtn()` mixin )\r\n\r\n### Usage\r\n\r\n```scss\r\n@use 'components/buttons' as button\r\n\r\n@include button.links()\r\n\r\n```\r\n\r\n### Output\r\n\r\n",
+      "description": "# Button links\r\n\r\n## Style links to look like a button (DEPRECATED PLEASE USE `linkBtn()` mixin )\r\n\r\n> @mixin links() uses [role=button] on href tags; some consider this an accesibility anti-pattern you can use the linkBtn() instead\r\n\r\n### Usage\r\n\r\n```scss\r\n@use 'components/buttons' as button\r\n\r\n@include button.links()\r\n\r\n```\r\n\r\n### Output\r\n\r\n",
       "line": 78
     },
     {

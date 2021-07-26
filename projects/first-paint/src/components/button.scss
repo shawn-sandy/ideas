@@ -76,7 +76,7 @@ TODO: deprecate this mixin
 }
 
 @mixin links() {
-  @warn '@mixin links() is deprecated. Use @mixin linkBtn() instead.';
+  @warn '@mixin links() uses [role=button] on href tags; some consider this an anti-pattern you can use the linkBtn() instead';
   a,
   .fp-button-link {
     &[role="button"] {
