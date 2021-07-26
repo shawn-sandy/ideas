@@ -76,6 +76,7 @@ TODO: deprecate this mixin
 }
 
 @mixin links() {
+  @warn '@mixin links() is deprecated. Use @mixin linkBtn() instead.';
   a,
   .fp-button-link {
     &[role="button"] {
@@ -179,6 +180,24 @@ TODO: deprecate this mixin
   em:where(a) {
     text-decoration: none !important;
   }
+}
+
+@use 'components/button' as button with($rendered: false);
+
+@include button.config($_color: red, $_background_color: black) @include
+  button.button() @mixin
+  config(
+    $_color: $color,
+    $_background-color: $background-color,
+    $_background-color-hover: $background-color-hover,
+    $_border-radius: $border-radius,
+    $_button-padding: $button-padding
+  ) {
+  $color: $_color !global;
+  $background-color: $_background-color !global;
+  $background-color-hover: $_background-color-hover !global;
+  $border-radius: $_border-radius !global;
+  $button-padding: $_button-padding !global;
 }
 
 @include renderComponent();
