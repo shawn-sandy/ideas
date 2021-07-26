@@ -29,8 +29,18 @@
     },
     {
       "file": "projects/first-paint/src/components/button.scss",
-      "description": "# Config Options\r\n\r\n```scss\r\n$_color: #fff,\r\n  $_background-color: #000,\r\n  $_background-color-hover: #010101,\r\n  $_border-radius: calc(5rem / 16),\r\n  $_button-padding: 1rem 2rem\r\n```",
-      "line": 187
+      "description": "# Config Options\r\n\r\n```scss\r\n$_color: #fff,\r\n  $_background-color: #000,\r\n  $_background-color-hover: #010101,\r\n  $_border-radius: calc(5rem / 16),\r\n  $_button-padding: 1rem 2rem\r\n  $_transitions: all 200ms ease !default;\r\n$_transform: scale(0.98) !default;\r\n```",
+      "line": 187,
+      "selection": {
+        "start": {
+          "line": 19,
+          "character": 1
+        },
+        "end": {
+          "line": 20,
+          "character": 34
+        }
+      }
     }
   ]
 }
