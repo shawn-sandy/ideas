@@ -20,12 +20,12 @@
     {
       "file": "projects/first-paint/src/components/button.scss",
       "description": "# Button config()\r\n\r\n## Change the color/styles of your buttons\r\n\r\n### Usage\r\n\r\nBy default buttons styles are rendered when you include so you need to turn off  rendered when you include the button class\r\n\r\n\r\n```scss\r\n@use 'components/button' as button with($rendered: false);\r\n\r\n@include button.config($_color: red, $_background_color: black)\r\n\r\n@include button.button()\r\n\r\n```\r\n",
-      "line": 222
+      "line": 186
     },
     {
       "file": "projects/first-paint/src/components/button.scss",
       "description": "# Config Options\r\n\r\n```scss\r\n$_color: #fff,\r\n  $_background-color: #000,\r\n  $_background-color-hover: #010101,\r\n  $_border-radius: calc(5rem / 16),\r\n  $_button-padding: 1rem 2rem\r\n```",
-      "line": 187
+      "line": 200
     }
   ]
 }
