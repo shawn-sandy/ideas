@@ -478,7 +478,7 @@ button[type] {
   display: inline-flex;
   flex-direction: row;
   justify-content: center;
-  background-color: transparent !important;
+  background-color: gray;
   border-radius: 0.1rem;
   border: 1px transparent solid;
   cursor: pointer;
@@ -492,7 +492,7 @@ button[type]:hover,
 button[type]:active,
 button[type]:focus {
   border: 1px transparent solid;
-  transform: scale(0.96);
+  transform: scale(0.98);
 }
 .fp-button[type=reset], .fp-button[type=button], .fp-button[type=submit],
 button[type][type=reset],
@@ -715,7 +715,7 @@ a[role=button],
   background-color: transparent;
   border: none;
   border-radius: 0.1rem;
-  color: darkblue;
+  color: white;
   line-height: 1;
 }
 a[role=button]:hover, a[role=button]:active, a[role=button]:focus,
@@ -755,11 +755,11 @@ a[role=button] > em:focus,
 .fp-button-link[role=button] > em:hover,
 .fp-button-link[role=button] > em:focus {
   background-color: #cbcbcb;
-  transform: scale(0.96);
+  transform: scale(0.98);
 }
 a[role=button] > span,
 .fp-button-link[role=button] > span {
-  background-color: transparent !important;
+  background-color: black;
 }
 a[role=button] > b,
 .fp-button-link[role=button] > b {
@@ -893,7 +893,7 @@ a[aria-label] > em {
   align-items: center;
   border: none;
   border-radius: 0.1rem;
-  color: darkblue;
+  color: white;
   line-height: 1;
   min-height: calc(48 / 16 * 1rem);
   padding: 0 1.5rem;
@@ -927,22 +927,22 @@ a[aria-label]:hover > b,
 a[aria-label]:hover > em,
 a[aria-label]:focus > b,
 a[aria-label]:focus > em {
-  background-color: #b1b1b1;
-  transform: scale(0.96);
+  background-color: black;
+  transform: scale(0.98);
 }
 a > b,
 a[onclick] > b,
 a[tabindex="0"] > b,
 a[aria-pressed] > b,
 a[aria-label] > b {
-  background-color: #e4e4e4;
+  background-color: black;
 }
 a > em,
 a[onclick] > em,
 a[tabindex="0"] > em,
 a[aria-pressed] > em,
 a[aria-label] > em {
-  background-color: #e4e4e4;
+  background-color: black;
   border-radius: 99rem !important;
 }
 

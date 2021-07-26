@@ -478,7 +478,7 @@ button[type] {
   display: inline-flex;
   flex-direction: row;
   justify-content: center;
-  background-color: transparent !important;
+  background-color: gray;
   border-radius: 0.1rem;
   border: 1px transparent solid;
   cursor: pointer;
@@ -492,7 +492,7 @@ button[type]:hover,
 button[type]:active,
 button[type]:focus {
   border: 1px transparent solid;
-  transform: scale(0.96);
+  transform: scale(0.98);
 }
 .fp-button[type=reset], .fp-button[type=button], .fp-button[type=submit],
 button[type][type=reset],
@@ -786,11 +786,11 @@ a[role=button] > em:focus,
 .fp-button-link[role=button] > em:hover,
 .fp-button-link[role=button] > em:focus {
   background-color: #cbcbcb;
-  transform: scale(0.96);
+  transform: scale(0.98);
 }
 a[role=button] > span,
 .fp-button-link[role=button] > span {
-  background-color: transparent !important;
+  background-color: gray;
 }
 a[role=button] > b,
 .fp-button-link[role=button] > b {

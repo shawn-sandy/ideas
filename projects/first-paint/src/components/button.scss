@@ -17,7 +17,7 @@ $align-items: center !default;
 $justify-content: center !default;
 $cursor: pointer !default;
 $transitions: all 200ms ease !default;
-$transform: scale(0.96) !default;
+$transform: scale(0.98) !default;
 
 // *************************************************
 // ******************** imports ********************
@@ -42,7 +42,7 @@ TODO: deprecate this mixin
   display: inline-flex;
   flex-direction: row;
   justify-content: center;
-  background-color: transparent !important;
+  background-color: $background-color;
   border-radius: $border-radius;
   border: $border-transparent;
   cursor: $cursor;
@@ -104,6 +104,7 @@ TODO: deprecate this mixin
         font-style: normal;
         line-height: 1;
         transition: $transitions;
+        // background-color: $background-color;
 
         &:active,
         &:hover,
@@ -118,7 +119,7 @@ TODO: deprecate this mixin
         // background-color: darken($background-color-hover, 10);
       }
       > span {
-        background-color: transparent !important;
+        background-color: $background-color;
       }
 
       > b {
@@ -143,7 +144,7 @@ TODO: deprecate this mixin
     text-decoration: none !important;
     > b,
     > em {
-      $background-color: lightgray;
+      $background-color: $background-color;
       display: inline-flex;
       justify-content: center;
       align-items: center;
@@ -162,17 +163,17 @@ TODO: deprecate this mixin
       > b,
       > em {
         //border-radius: $border-radius-rounded !important;
-        background-color: darken($background-color-hover, 20);
+        background-color: $background-color;
         transform: $transform;
       }
     }
 
     > b {
-      background-color: $background-color-hover;
+      background-color: $background-color;
     }
 
     > em {
-      background-color: $background-color-hover;
+      background-color: $background-color;
       border-radius: $border-radius-rounded !important;
     }
   }
@@ -187,13 +188,17 @@ TODO: deprecate this mixin
   $_background-color: $background-color,
   $_background-color-hover: $background-color-hover,
   $_border-radius: $border-radius,
-  $_button-padding: $button-padding
+  $_button-padding: $button-padding,
+  $_transitions: $transitions,
+  $_transform: $transform
 ) {
   $color: $_color !global;
   $background-color: $_background-color !global;
   $background-color-hover: $_background-color-hover !global;
   $border-radius: $_border-radius !global;
   $button-padding: $_button-padding !global;
+  $transitions: $_transitions !global;
+  $transform: $_transform !global;
 }
 
 @include renderComponent();
