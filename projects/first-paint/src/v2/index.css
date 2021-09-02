@@ -132,3 +132,53 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-size: 90%;
+}
+@media (min-width: 980px) {
+  html {
+    font-size: 98%;
+  }
+}
+@media (min-width: 1600px) {
+  html {
+    font-size: 100%;
+  }
+}
+@media (min-width: 1980px) {
+  html {
+    font-size: 110%;
+  }
+}
+html * {
+  outline: none;
+}
+html *,
+html *:before,
+html *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: ghostwhite;
+  color: #1b1b1b;
+}
+
+:where(body) > section,
+:where(body) main,
+:where(body) footer {
+  width: 90%;
+  margin: 0 auto;
+}
+:where(body) > section > section,
+:where(body) main > section,
+:where(body) footer > section {
+  width: 100%;
+}

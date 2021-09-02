@@ -1,1 +1,10 @@
 @use '../components/reset.scss';
+
+// don't automatically render the page component
+@use './components/page.scss' with($render-body: false);
+@use './components/buttons.scss';
+
+// config settings
+// here we can change the body color
+@include page.config($color: #1b1b1b);
+@include page.page();
