@@ -1,0 +1,42 @@
+// set variables
+// TODO Search and replace name with CSS tag/element name
+$render: true !default;
+
+// render component mixin
+@mixin renderComponent($renderContent: $render, $className: null) {
+  @if ($renderContent) {
+    #{$className,
+    $className,
+    ".fp-link"},
+    a {
+      @include button();
+    }
+  }
+}
+
+@mixin button {
+}
+
+// configure component mixin
+
+@mixin config(
+  $_color: $color,
+  $_background-color: $background-color,
+  $_background-color-hover: $background-color-hover,
+  $_border-radius: $border-radius,
+  $_button-padding: $button-padding,
+  $_transitions: $transitions,
+  $_transform: $transform
+) {
+  $color: $_color !global;
+  $background-color: $_background-color !global;
+  $background-color-hover: $_background-color-hover !global;
+  $border-radius: $_border-radius !global;
+  $button-padding: $_button-padding !global;
+  $transitions: $_transitions !global;
+  $transform: $_transform !global;
+}
+
+// include render component
+
+@include renderComponent();
