@@ -1,5 +1,5 @@
 // set variables
-// TODO Search and replace name with CSS tag/element name
+// TODO Search and replace NAME with CSS tag/element name
 $render: true !default;
 
 // render component mixin
@@ -9,12 +9,12 @@ $render: true !default;
     $className,
     ".fp-link"},
     a {
-      @include button();
+      @include NAME();
     }
   }
 }
 
-@mixin button {
+@mixin NAME {
 }
 
 // configure component mixin
@@ -28,13 +28,13 @@ $render: true !default;
   $_transitions: $transitions,
   $_transform: $transform
 ) {
-  $color: $_color !global;
-  $background-color: $_background-color !global;
-  $background-color-hover: $_background-color-hover !global;
-  $border-radius: $_border-radius !global;
-  $button-padding: $_button-padding !global;
-  $transitions: $_transitions !global;
-  $transform: $_transform !global;
+  $NAME-color: $_color !global;
+  $NAME-background-color: $_background-color !global;
+  $NAME-background-color-hover: $_background-color-hover !global;
+  $NAME-border-radius: $_border-radius !global;
+  $NAME-button-padding: $_button-padding !global;
+  $NAME-transitions: $_transitions !global;
+  $NAME-transform: $_transform !global;
 }
 
 // include render component
