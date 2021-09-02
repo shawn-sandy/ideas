@@ -10,7 +10,7 @@
 $render-page: true !default;
 $body-background-color: ghostwhite;
 $body-color: #000000;
-$body-width: 90%;
+$body-width: 80%;
 $font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
   "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
   "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
@@ -64,6 +64,7 @@ $font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
   :where(body) {
     & > section,
     main,
+    nav,
     footer {
       width: $body-width;
       @media screen and (max-width: 980px) {

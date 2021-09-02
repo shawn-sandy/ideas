@@ -173,19 +173,22 @@ body {
 
 :where(body) > section,
 :where(body) main,
+:where(body) nav,
 :where(body) footer {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 @media screen and (max-width: 980px) {
   :where(body) > section,
 :where(body) main,
+:where(body) nav,
 :where(body) footer {
     width: 100%;
   }
 }
 :where(body) > section > section,
 :where(body) main > section,
+:where(body) nav > section,
 :where(body) footer > section {
   width: 100%;
 }
