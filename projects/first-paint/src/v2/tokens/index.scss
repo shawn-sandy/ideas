@@ -14,6 +14,18 @@
   --border-md: 3px solid lightgray;
   --border-thick: thick solid lightgray;
 
+  // named colors
+
+  --dark: var(--cl-dark);
+  --off-white: hsl(240, 100%, 96%);
+  --dark: hsl(0, 0%, 9%);
+  --light: lightgray;
+  --alert: yellowgreen;
+  --info: hsl(210, 100%, 41%);
+  --warning: hsl(33, 100%, 50%);
+  --danger: hsl(348, 98%, 38%);
+  --text: var(--dark);
+
   // units
   --reg: 1rem;
   --xs: calc(12rem / 16);
