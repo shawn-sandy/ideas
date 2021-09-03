@@ -196,7 +196,7 @@ table {
   --pd-4xl: var(--4xl);
   --pd-5xl: var(--5xl);
   --pd-6xl: var(--6xl);
-  --breakpoint-lg: min-width: 1200px;
+  --breakpoint-lg: 1200px;
 }
 
 @media (min-width: 980px) {
@@ -242,6 +242,10 @@ nav {
   --nav-height: --var(--xxxl);
   --justify-content: space-between;
 }
+nav h1 {
+  font-size: var(--lg);
+  margin-block-end: 0;
+}
 @media (min-width: 980px) {
   nav {
     display: var(--nav-display);
@@ -265,6 +269,73 @@ nav img[alt] + * {
   margin-left: var(--reg);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+  color: inherit;
+  margin: 0rem 0 1.05rem;
+  font-weight: 500;
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+h1 {
+  font-size: var(--xxxl);
+}
+
+h2 {
+  font-size: var(--xxl);
+}
+
+h3 {
+  font-size: var(--xl);
+}
+
+h4 {
+  font-size: var(--lg);
+}
+
+h5 {
+  font-size: var(--md);
+}
+
+h6 {
+  font-size: var(--reg);
+}
+
+small,
+time {
+  font-size: var(--xs);
+}
+
+time {
+  padding: 0 0 0.5rem;
+}
+
+p {
+  margin: 0;
+  line-height: 1.7;
+}
+p i {
+  font-style: italic;
+}
+p strong {
+  font-weight: 500;
+}
+
+p + p,
+p + * {
+  margin-top: 2rem;
+}
+
+p + * {
+  margin-top: 1.5rem !important;
+}
+
 * {
   outline: none;
   box-sizing: border-box;
@@ -280,6 +351,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   font-size: clamp(86%, 96%, 120%);
+  line-height: 1.5;
 }
 @media (min-width: 980px) {
   html {

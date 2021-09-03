@@ -1,0 +1,66 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+  color: inherit;
+  margin: 0rem 0 1.05rem;
+  font-weight: 500;
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+h1 {
+  font-size: var(--xxxl);
+}
+
+h2 {
+  font-size: var(--xxl);
+}
+
+h3 {
+  font-size: var(--xl);
+}
+
+h4 {
+  font-size: var(--lg);
+}
+
+h5 {
+  font-size: var(--md);
+}
+
+h6 {
+  font-size: var(--reg);
+}
+
+small,
+time {
+  font-size: var(--xs);
+}
+
+time {
+  padding: 0 0 0.5rem;
+}
+
+p {
+  margin: 0;
+  line-height: 1.7;
+}
+p i {
+  font-style: italic;
+}
+p strong {
+  font-weight: 500;
+}
+
+p + p,
+p + * {
+  margin-top: 2rem;
+}
+
+p + * {
+  margin-top: 1.5rem !important;
+}

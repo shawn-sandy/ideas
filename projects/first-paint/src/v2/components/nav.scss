@@ -16,7 +16,11 @@ $render: true !default;
   --nav-align: var(--align-item);
   --nav-height: --var(--xxxl);
   --justify-content: space-between;
-  // TODO add mixin code
+
+  h1 {
+    font-size: var(--lg);
+    margin-block-end: 0;
+  }
 
   @media (min-width: 980px) {
     display: var(--nav-display);
@@ -38,6 +42,11 @@ $render: true !default;
       margin-left: var(--reg);
     }
     max-height: var(--xxl);
+  }
+}
+
+@mixin sidebar {
+  nav {
   }
 }
 

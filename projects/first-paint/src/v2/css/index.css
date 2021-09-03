@@ -61,5 +61,5 @@
   --pd-4xl: var(--4xl);
   --pd-5xl: var(--5xl);
   --pd-6xl: var(--6xl);
-  --breakpoint-lg: min-width: 1200px;
+  --breakpoint-lg: 1200px;
 }

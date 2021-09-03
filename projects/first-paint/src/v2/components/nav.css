@@ -5,6 +5,11 @@ nav {
   --justify-content: space-between;
 }
 
+nav h1 {
+  font-size: var(--lg);
+  margin-block-end: 0;
+}
+
 @media (min-width: 980px) {
   nav {
     display: var(--nav-display);

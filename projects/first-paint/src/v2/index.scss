@@ -3,12 +3,16 @@
 @use 'tokens/index.scss';
 
 // media queries
-
 @use './components/utilities/responsive.scss';
 
-@use './components/header.scss';
-@use './components/nav.scss';
 /// add the header component
+@use './components/header.scss';
+
+/// adds the navigation component
+@use './components/nav.scss';
+
+// addd typography component
+@use './components/type.scss';
 
 // don't automatically render the page component
 @use './components/page.scss' with($render-page: false);

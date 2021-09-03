@@ -36,6 +36,7 @@ $font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     font-size: clamp(86%, 96%, 120%);
+    line-height: 1.5;
     @media (min-width: 980px) {
       font-size: 98%;
     }
