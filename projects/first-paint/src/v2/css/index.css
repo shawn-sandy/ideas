@@ -38,17 +38,5 @@
   --4xl: calc(72rem / 16);
   --5xl: calc(80rem / 16);
   --6xl: calc(120rem / 16);
-  --mg: auto;
-  --mg-reg: var(--reg);
-  --mg-xs: var(--xs);
-  --mg-sm: var(--sm);
-  --mg-md: var(--md);
-  --mg-lg: var(--lg);
-  --mg-xl: var(--xl);
-  --mg-xxl: var(--xxl);
-  --mg-xxxl: var(--xxxl);
-  --mg-4xl: var(--4xl);
-  --mg-5xl: var(--5xl);
-  --mg-6xl: var(--6xl);
   --breakpoint-lg: 1200px;
 }
