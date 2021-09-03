@@ -10,11 +10,12 @@
   --display-b: block;
   --row: row;
   --column: column;
-  --align: center;
+  --align-item: center;
   --justify-content: center;
-  --border-thin: thin solid lightgray;
+  --border: thin solid lightgray;
   --border-md: 3px solid lightgray;
   --border-thick: thick solid lightgray;
+  --bg-image: none;
   --dark: var(--cl-dark);
   --off-white: hsl(240, 100%, 96%);
   --dark: hsl(0, 0%, 9%);

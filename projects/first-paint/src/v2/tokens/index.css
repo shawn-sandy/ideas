@@ -16,8 +16,6 @@
   --border-md: 3px solid lightgray;
   --border-thick: thick solid lightgray;
   --bg-image: none;
-
-  // named colors
   --dark: var(--cl-dark);
   --off-white: hsl(240, 100%, 96%);
   --dark: hsl(0, 0%, 9%);
@@ -28,8 +26,6 @@
   --danger: hsl(348, 98%, 38%);
   --highlight: hsl(54, 100%, 90%);
   --text: var(--dark);
-
-  // units
   --reg: 1rem;
   --xs: calc(12rem / 16);
   --sm: calc(14rem / 16);
@@ -41,8 +37,6 @@
   --4xl: calc(72rem / 16);
   --5xl: calc(80rem / 16);
   --6xl: calc(120rem / 16);
-
-  /// margins --mg
   --mg: auto;
   --mg-reg: var(--reg);
   --mg-xs: var(--xs);
@@ -55,8 +49,6 @@
   --mg-4xl: var(--4xl);
   --mg-5xl: var(--5xl);
   --mg-6xl: var(--6xl);
-
-  /// padding --pd
   --pd-reg: var(--reg);
   --pd-xs: var(--xs);
   --pd-sm: var(--sm);

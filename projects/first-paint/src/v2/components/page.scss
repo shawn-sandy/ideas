@@ -43,13 +43,10 @@ $font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
     }
   }
 
-  body {
+  :where(body) {
     font-family: $font-family;
     background-color: $body-background-color;
     color: $body-color;
-  }
-
-  :where(body) {
     & > section,
     main,
     nav,
@@ -59,6 +56,7 @@ $font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
       }
       width: $body-width;
       margin: 0 auto;
+      padding-block: var(--pd-reg, 1rem);
       margin-inline: var(--mg);
       > section {
         width: 100%;
