@@ -52,6 +52,7 @@
   },
   "gitHead": "4577741794f126834eade633db5dd9e94cd6ec62",
   "dependencies": {
+    "concurrently": "^6.2.1",
     "flat-cache": "^3.0.4",
     "lodash": "^4.17.21",
     "marked": "^2.1.3",
