@@ -44,7 +44,7 @@ body {
 :where(body) footer {
   width: 80%;
   margin: 0 auto;
-  padding-block: var(--pd-reg, 1rem);
+  padding-block: var(--reg, 1rem);
   margin-inline: var(--mg);
 }
 
