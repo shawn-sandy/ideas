@@ -239,9 +239,8 @@ header > [role=banner] {
 nav {
   --nav-display: var(--display);
   --nav-align: var(--align-item);
-  --nav-height: --var(--4xl);
+  --nav-height: --var(--xxxl);
   --justify-content: space-between;
-  --img-height: 80%;
 }
 @media (min-width: 980px) {
   nav {
@@ -260,7 +259,7 @@ nav :where(> section, ul) {
 }
 nav img[alt] {
   vertical-align: middle;
-  max-height: var(--xxxl);
+  max-height: var(--xxl);
 }
 nav img[alt] + * {
   margin-left: var(--reg);
@@ -283,11 +282,12 @@ html {
   font-size: clamp(88%, 96%, 110%);
 }
 
-:where(body) {
+body {
   font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   background-color: white;
   color: #1b1b1b;
 }
+
 :where(body) > section,
 :where(body) main,
 :where(body) nav,

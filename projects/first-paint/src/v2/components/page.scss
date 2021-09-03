@@ -38,10 +38,13 @@ $font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
     font-size: clamp(88%, 96%, 110%);
   }
 
-  :where(body) {
+  body {
     font-family: $font-family;
     background-color: $body-background-color;
     color: $body-color;
+  }
+
+  :where(body) {
     & > section,
     main,
     nav,

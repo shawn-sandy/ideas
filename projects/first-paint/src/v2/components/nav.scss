@@ -14,9 +14,8 @@ $render: true !default;
 @mixin nav {
   --nav-display: var(--display);
   --nav-align: var(--align-item);
-  --nav-height: --var(--4xl);
+  --nav-height: --var(--xxxl);
   --justify-content: space-between;
-  --img-height: 80%;
   // TODO add mixin code
 
   @media (min-width: 980px) {
@@ -38,7 +37,7 @@ $render: true !default;
     + * {
       margin-left: var(--reg);
     }
-    max-height: var(--xxxl);
+    max-height: var(--xxl);
   }
 }
 
