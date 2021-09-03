@@ -30,7 +30,7 @@ $font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    font-size: clamp(90%, 96%, 110%);
+    font-size: clamp(88%, 96%, 110%);
 
     * {
       outline: none;
@@ -54,13 +54,12 @@ $font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
     main,
     nav,
     footer {
-      width: $body-width;
       @media screen and (max-width: 980px) {
         width: 100%;
       }
       width: $body-width;
       margin: 0 auto;
-      margin-inline: auto;
+      margin-inline: var(--mg);
       > section {
         width: 100%;
         padding: var(--reg);
