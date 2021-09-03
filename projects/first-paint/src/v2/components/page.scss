@@ -73,6 +73,7 @@ $font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
       margin: 0 auto;
       > section {
         width: 100%;
+        padding: var(--reg);
       }
     }
   }
