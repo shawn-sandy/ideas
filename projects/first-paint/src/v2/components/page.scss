@@ -7,9 +7,9 @@
 
 /// TODO Search and replace name with CSS tag/element name
 
-$render-page: true !default;
+$render-page: false !default;
 $body-background-color: white;
-$body-color: #292929;
+$body-color: var(--color, #292929);
 $body-width: 80%;
 $font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
   "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
@@ -30,19 +30,7 @@ $font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    font-size: 90%;
-
-    @media (min-width: 980px) {
-      font-size: 98%;
-    }
-
-    @media (min-width: 1600px) {
-      font-size: 100%;
-    }
-
-    @media (min-width: 1980px) {
-      font-size: 110%;
-    }
+    font-size: clamp(88%, 96%, 110%);
 
     * {
       outline: none;
@@ -55,22 +43,21 @@ $font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
     }
   }
 
-  body {
+  :where(body) {
     font-family: $font-family;
     background-color: $body-background-color;
     color: $body-color;
-  }
-
-  :where(body) {
     & > section,
     main,
     nav,
     footer {
-      width: $body-width;
       @media screen and (max-width: 980px) {
         width: 100%;
       }
+      width: $body-width;
       margin: 0 auto;
+      padding-block: var(--pd-reg, 1rem);
+      margin-inline: var(--mg);
       > section {
         width: 100%;
         padding: var(--reg);
