@@ -70,7 +70,9 @@ $font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
       @media screen and (max-width: 980px) {
         width: 100%;
       }
+      width: $body-width;
       margin: 0 auto;
+      margin-inline: auto;
       > section {
         width: 100%;
         padding: var(--reg);
