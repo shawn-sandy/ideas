@@ -13,6 +13,7 @@
   ],
   "dependencies": {
     "@shawnsandy/vue-services": "^0.2.22",
+    "concurrently": "^6.2.1",
     "core-js": "^3.6.4",
     "npm-run-all": "^4.1.5",
     "parcel": "^1.12.4",

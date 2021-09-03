@@ -31,5 +31,8 @@
   },
   "bugs": {
     "url": "https://github.com/shawn-sandy/ideas/issues"
+  },
+  "dependencies": {
+    "concurrently": "^6.2.1"
   }
 }

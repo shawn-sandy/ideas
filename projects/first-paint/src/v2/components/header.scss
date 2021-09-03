@@ -17,7 +17,7 @@ $background-color: null;
 
 @mixin header {
   --hd-bdr: var(--border);
-  --hd-pd: var(--pd-reg);
+  --hd-pd: var(--reg);
   --hd-align: var(--align-items);
   --hd-display: var(--display);
   --hd-align-items: var(--align-item);
@@ -37,7 +37,7 @@ $background-color: null;
     flex-direction: var(--row);
     border-bottom: var(--hd-bdr);
     border-top: var(--hd-bdr);
-    border-inline: var(--hd-bdr);
+    border-block: var(--hd-bdr);
     gap: var(--hd-gap);
     padding-block: var(--hd-pd) 0;
   }

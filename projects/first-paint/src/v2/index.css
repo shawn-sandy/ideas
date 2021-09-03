@@ -143,6 +143,7 @@ table {
   --display: flex;
   --display-inline: inline-flex;
   --display-b: block;
+  --direction: row;
   --row: row;
   --column: column;
   --align-item: center;
@@ -151,6 +152,7 @@ table {
   --border-md: 3px solid lightgray;
   --border-thick: thick solid lightgray;
   --bg-image: none;
+  --mg: auto;
   --dark: var(--cl-dark);
   --off-white: hsl(240, 100%, 96%);
   --dark: hsl(0, 0%, 9%);
@@ -172,35 +174,22 @@ table {
   --4xl: calc(72rem / 16);
   --5xl: calc(80rem / 16);
   --6xl: calc(120rem / 16);
-  --mg: auto;
-  --mg-reg: var(--reg);
-  --mg-xs: var(--xs);
-  --mg-sm: var(--sm);
-  --mg-md: var(--md);
-  --mg-lg: var(--lg);
-  --mg-xl: var(--xl);
-  --mg-xxl: var(--xxl);
-  --mg-xxxl: var(--xxxl);
-  --mg-4xl: var(--4xl);
-  --mg-5xl: var(--5xl);
-  --mg-6xl: var(--6xl);
-  --pd-reg: var(--reg);
-  --pd-xs: var(--xs);
-  --pd-sm: var(--sm);
-  --pd-md: var(--md);
-  --pd-lg: var(--lg);
-  --pd-xl: var(--xl);
-  --pd-xxl: var(--xxl);
-  --pd-xxxl: var(--xxxl);
-  --pd-4xl: var(--4xl);
-  --pd-5xl: var(--5xl);
-  --pd-6xl: var(--6xl);
+  --breakpoint-lg: 1200px;
 }
 
+@media (min-width: 980px) {
+  [data-show-mobile] {
+    display: none;
+  }
+
+  [data-show-desktop] {
+    display: inline-flex;
+  }
+}
 .fp-header,
 header {
   --hd-bdr: var(--border);
-  --hd-pd: var(--pd-reg);
+  --hd-pd: var(--reg);
   --hd-align: var(--align-items);
   --hd-display: var(--display);
   --hd-align-items: var(--align-item);
@@ -220,9 +209,122 @@ header > [role=banner] {
   flex-direction: var(--row);
   border-bottom: var(--hd-bdr);
   border-top: var(--hd-bdr);
-  border-inline: var(--hd-bdr);
+  border-block: var(--hd-bdr);
   gap: var(--hd-gap);
   padding-block: var(--hd-pd) 0;
+}
+
+nav {
+  --nav-display: var(--display);
+  --nav-align: var(--align-item);
+  --nav-height: --var(--xxxl);
+  --justify-content: space-between;
+  --font-size: var(--sm);
+}
+nav h1 {
+  font-size: var(--md);
+  margin-block-end: 0;
+}
+@media (min-width: 980px) {
+  nav {
+    display: var(--nav-display);
+    align-items: var(--nav-align);
+    visibility: visible;
+    justify-content: var(--justify-content);
+    max-height: var(--nav-height);
+  }
+}
+nav :where(> section, ul) {
+  display: var(--nav-display, --display);
+  align-items: var(--nav-align, --align-item);
+  gap: var(--reg);
+  height: 100%;
+  font-size: var(--font-size);
+}
+nav :where(> section, ul) :any-link {
+  font-size: var(--font-size);
+}
+nav img[alt] {
+  vertical-align: middle;
+  max-height: var(--xxl);
+}
+nav img[alt] + * {
+  margin-left: var(--reg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+  color: inherit;
+  margin: 0rem 0 1.05rem;
+  font-weight: 500;
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+h1 {
+  font-size: var(--xxxl);
+}
+
+h2 {
+  font-size: var(--xxl);
+}
+
+h3 {
+  font-size: var(--xl);
+}
+
+h4 {
+  font-size: var(--lg);
+}
+
+h5 {
+  font-size: var(--md);
+}
+
+h6 {
+  font-size: var(--reg);
+}
+
+small,
+time {
+  font-size: var(--xs);
+}
+
+time {
+  padding: 0 0 0.5rem;
+}
+
+p {
+  margin: 0;
+  line-height: 1.7;
+}
+p i {
+  font-style: italic;
+}
+p strong {
+  font-weight: 500;
+}
+
+p + p,
+p + * {
+  margin-top: 2rem;
+}
+
+p + * {
+  margin-top: 1.5rem !important;
+}
+
+* {
+  outline: none;
+  box-sizing: border-box;
+}
+*:before, *:after {
+  box-sizing: border-box;
 }
 
 html {
@@ -231,30 +333,39 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  font-size: clamp(88%, 96%, 110%);
+  font-size: clamp(86%, 96%, 120%);
+  line-height: 1.5;
 }
-html * {
-  outline: none;
+@media (min-width: 980px) {
+  html {
+    font-size: 98%;
+  }
 }
-html *,
-html *:before,
-html *:after {
-  box-sizing: border-box;
+@media (min-width: 1600px) {
+  html {
+    font-size: 100%;
+  }
+}
+@media (min-width: 1980px) {
+  html {
+    font-size: 110%;
+  }
 }
 
-:where(body) {
+body {
   font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   background-color: white;
   color: #1b1b1b;
 }
+
 :where(body) > section,
 :where(body) main,
 :where(body) nav,
 :where(body) footer {
   width: 80%;
   margin: 0 auto;
-  padding-block: var(--pd-reg, 1rem);
-  margin-inline: var(--mg);
+  padding-block: var(--reg, 1rem);
+  margin-block: var(--mg, auto);
 }
 @media screen and (max-width: 980px) {
   :where(body) > section,
@@ -263,11 +374,4 @@ html *:after {
 :where(body) footer {
     width: 100%;
   }
-}
-:where(body) > section > section,
-:where(body) main > section,
-:where(body) nav > section,
-:where(body) footer > section {
-  width: 100%;
-  padding: var(--reg);
 }

@@ -8,6 +8,7 @@
   --display: flex;
   --display-inline: inline-flex;
   --display-b: block;
+  --direction: row;
   --row: row;
   --column: column;
   --align-item: center;
@@ -16,6 +17,9 @@
   --border-md: 3px solid lightgray;
   --border-thick: thick solid lightgray;
   --bg-image: none;
+
+  // margin properties
+  --mg: auto;
 
   // named colors
   --dark: var(--cl-dark);
@@ -42,30 +46,7 @@
   --5xl: calc(80rem / 16);
   --6xl: calc(120rem / 16);
 
-  /// margins --mg
-  --mg: auto;
-  --mg-reg: var(--reg);
-  --mg-xs: var(--xs);
-  --mg-sm: var(--sm);
-  --mg-md: var(--md);
-  --mg-lg: var(--lg);
-  --mg-xl: var(--xl);
-  --mg-xxl: var(--xxl);
-  --mg-xxxl: var(--xxxl);
-  --mg-4xl: var(--4xl);
-  --mg-5xl: var(--5xl);
-  --mg-6xl: var(--6xl);
+  // media queries
 
-  /// padding --pd
-  --pd-reg: var(--reg);
-  --pd-xs: var(--xs);
-  --pd-sm: var(--sm);
-  --pd-md: var(--md);
-  --pd-lg: var(--lg);
-  --pd-xl: var(--xl);
-  --pd-xxl: var(--xxl);
-  --pd-xxxl: var(--xxxl);
-  --pd-4xl: var(--4xl);
-  --pd-5xl: var(--5xl);
-  --pd-6xl: var(--6xl);
+  --breakpoint-lg: 1200px;
 }
