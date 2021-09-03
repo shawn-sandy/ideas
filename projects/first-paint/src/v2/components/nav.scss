@@ -35,6 +35,10 @@ $render: true !default;
     align-items: var(--nav-align, --align-item);
     gap: var(--reg);
     height: 100%;
+    font-size: var(--sm);
+    :any-link {
+      font-size: var(--sm);
+    }
   }
   img[alt] {
     vertical-align: middle;

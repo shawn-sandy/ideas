@@ -37,7 +37,7 @@ $background-color: null;
     flex-direction: var(--row);
     border-bottom: var(--hd-bdr);
     border-top: var(--hd-bdr);
-    border-inline: var(--hd-bdr);
+    border-block: var(--hd-bdr);
     gap: var(--hd-gap);
     padding-block: var(--hd-pd) 0;
   }

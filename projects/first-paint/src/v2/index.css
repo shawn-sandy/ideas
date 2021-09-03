@@ -231,7 +231,7 @@ header > [role=banner] {
   flex-direction: var(--row);
   border-bottom: var(--hd-bdr);
   border-top: var(--hd-bdr);
-  border-inline: var(--hd-bdr);
+  border-block: var(--hd-bdr);
   gap: var(--hd-gap);
   padding-block: var(--hd-pd) 0;
 }
@@ -260,6 +260,10 @@ nav :where(> section, ul) {
   align-items: var(--nav-align, --align-item);
   gap: var(--reg);
   height: 100%;
+  font-size: var(--sm);
+}
+nav :where(> section, ul) :any-link {
+  font-size: var(--sm);
 }
 nav img[alt] {
   vertical-align: middle;
