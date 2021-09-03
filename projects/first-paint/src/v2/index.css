@@ -241,6 +241,7 @@ nav {
   --nav-align: var(--align-item);
   --nav-height: --var(--xxxl);
   --justify-content: space-between;
+  --font-size: var(--sm);
 }
 nav h1 {
   font-size: var(--lg);
@@ -260,10 +261,10 @@ nav :where(> section, ul) {
   align-items: var(--nav-align, --align-item);
   gap: var(--reg);
   height: 100%;
-  font-size: var(--sm);
+  font-size: var(--font-size);
 }
 nav :where(> section, ul) :any-link {
-  font-size: var(--sm);
+  font-size: var(--font-size);
 }
 nav img[alt] {
   vertical-align: middle;

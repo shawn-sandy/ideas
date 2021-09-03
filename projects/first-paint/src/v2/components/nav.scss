@@ -16,6 +16,7 @@ $render: true !default;
   --nav-align: var(--align-item);
   --nav-height: --var(--xxxl);
   --justify-content: space-between;
+  --font-size: var(--sm);
 
   h1 {
     font-size: var(--lg);
@@ -35,9 +36,9 @@ $render: true !default;
     align-items: var(--nav-align, --align-item);
     gap: var(--reg);
     height: 100%;
-    font-size: var(--sm);
+    font-size: var(--font-size);
     :any-link {
-      font-size: var(--sm);
+      font-size: var(--font-size);
     }
   }
   img[alt] {
