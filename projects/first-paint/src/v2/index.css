@@ -279,7 +279,22 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  font-size: clamp(88%, 96%, 110%);
+  font-size: clamp(86%, 96%, 120%);
+}
+@media (min-width: 980px) {
+  html {
+    font-size: 98%;
+  }
+}
+@media (min-width: 1600px) {
+  html {
+    font-size: 100%;
+  }
+}
+@media (min-width: 1980px) {
+  html {
+    font-size: 110%;
+  }
 }
 
 body {
