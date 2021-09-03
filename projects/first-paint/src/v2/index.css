@@ -222,7 +222,7 @@ nav {
   --font-size: var(--sm);
 }
 nav h1 {
-  font-size: var(--lg);
+  font-size: var(--md);
   margin-block-end: 0;
 }
 @media (min-width: 980px) {
