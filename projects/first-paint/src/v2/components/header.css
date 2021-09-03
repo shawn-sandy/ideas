@@ -9,8 +9,9 @@ header {
   --hd-direction: var(--column);
   --hd-bg: var(--bg-color);
   --hd-gap: var(--gap-reg);
-  background-color: var(--hd-bg, );
+  background-color: var(--hd-bg);
 }
+
 .fp-header > [role=banner],
 header > [role=banner] {
   background-color: var(--hd-bg);

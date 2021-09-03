@@ -1,0 +1,46 @@
+// set variables
+// TODO Search and replace name with CSS tag/element name
+$render: true !default;
+
+// render component mixin
+@mixin renderComponent($renderContent: $render, $className: null) {
+  @if ($renderContent) {
+    nav {
+      @include nav();
+    }
+  }
+}
+
+@mixin nav {
+  --nav-display: var(--display);
+  --nav-align: var(--align-item);
+  --nav-height: --var(--4xl);
+  --justify-content: space-between;
+  --img-height: 80%;
+  // TODO add mixin code
+
+  @media (min-width: 980px) {
+    display: var(--nav-display);
+    align-items: var(--nav-align);
+    visibility: visible;
+    justify-content: var(--justify-content);
+    max-height: var(--nav-height);
+  }
+
+  :where(> section, ul) {
+    display: var(--nav-display, --display);
+    align-items: var(--nav-align, --align-item);
+    gap: var(--reg);
+    height: 100%;
+  }
+  img[alt] {
+    vertical-align: middle;
+    + * {
+      margin-left: var(--reg);
+    }
+    max-height: var(--xxxl);
+  }
+}
+
+// include render component
+@include renderComponent();

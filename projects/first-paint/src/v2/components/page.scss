@@ -2,12 +2,9 @@
 /// @name: page
 /// @description: Renders the page component
 /// @author: @shawnsandy
-/// @created: @2021
-/// @version: @1.0.0
-
 /// TODO Search and replace name with CSS tag/element name
 
-$render-page: false !default;
+$render-page: true !default;
 $body-background-color: white;
 $body-color: var(--color, #292929);
 $body-width: 80%;
@@ -24,6 +21,14 @@ $font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
 
 @mixin page {
   // TODO add mixin code
+  * {
+    outline: none;
+    box-sizing: border-box;
+    &:before,
+    &:after {
+      box-sizing: border-box;
+    }
+  }
   html {
     scroll-behavior: smooth;
     box-sizing: border-box;
@@ -31,16 +36,6 @@ $font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     font-size: clamp(88%, 96%, 110%);
-
-    * {
-      outline: none;
-    }
-
-    *,
-    *:before,
-    *:after {
-      box-sizing: border-box;
-    }
   }
 
   :where(body) {
@@ -58,18 +53,10 @@ $font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
       margin: 0 auto;
       padding-block: var(--pd-reg, 1rem);
       margin-inline: var(--mg);
-      > section {
-        width: 100%;
-        padding: var(--reg);
-      }
     }
   }
 }
 
-/// @param {*} $color [null]
-/// @param {*} $bg-color [null]
-/// @param {*} $fonts [null]
-/// @param {*} $width [null]
 @mixin config($color: null, $bg-color: null, $fonts: null, $width: null) {
   $body-color: $color or $body-color !global;
   $body-background-color: $bg-color or $body-background-color !global;

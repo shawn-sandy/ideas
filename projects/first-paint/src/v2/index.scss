@@ -2,13 +2,17 @@
 
 @use 'tokens/index.scss';
 
-// don't automatically render the page component
-@use './components/page.scss' with($render-page: false);
+// media queries
+
+@use './components/utilities/responsive.scss';
+
 @use './components/header.scss';
+@use './components/nav.scss';
 /// add the header component
 
+// don't automatically render the page component
+@use './components/page.scss' with($render-page: false);
 @use './components/buttons.scss';
-// config settings
 // here we can change the body color using the config mixin
 @include page.config($color: #1b1b1b);
 // now we render the body
