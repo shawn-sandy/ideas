@@ -17,6 +17,7 @@
   --border-md: 3px solid lightgray;
   --border-thick: thick solid lightgray;
   --bg-image: none;
+  --mg-auto: auto;
   --dark: var(--cl-dark);
   --off-white: hsl(240, 100%, 96%);
   --dark: hsl(0, 0%, 9%);

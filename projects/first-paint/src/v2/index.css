@@ -152,6 +152,7 @@ table {
   --border-md: 3px solid lightgray;
   --border-thick: thick solid lightgray;
   --bg-image: none;
+  --mg-auto: auto;
   --dark: var(--cl-dark);
   --off-white: hsl(240, 100%, 96%);
   --dark: hsl(0, 0%, 9%);
@@ -364,7 +365,7 @@ body {
   width: 80%;
   margin: 0 auto;
   padding-block: var(--reg, 1rem);
-  margin-inline: var(--reg);
+  margin-block: var(--mg-auto);
 }
 @media screen and (max-width: 980px) {
   :where(body) > section,
