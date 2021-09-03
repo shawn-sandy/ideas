@@ -45,7 +45,7 @@ body {
   width: 80%;
   margin: 0 auto;
   padding-block: var(--reg, 1rem);
-  margin-block: var(--mg-auto);
+  margin-block: var(--mg, auto);
 }
 
 @media screen and (max-width: 980px) {
