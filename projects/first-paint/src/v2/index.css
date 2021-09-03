@@ -1,0 +1,253 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --bg-color: whitesmoke;
+  --color: #333;
+  --cl-dark: var(--color);
+  --cl-light: #fff;
+  --bg-color: transparent;
+  --height: calc(400rem / 16);
+  --display: flex;
+  --row: row;
+  --column: column;
+  --align: center;
+  --justify-content: center;
+  --border-thin: thin solid lightgray;
+  --border-md: 3px solid lightgray;
+  --border-thick: thick solid lightgray;
+  --reg: 1rem;
+  --xs: calc(12rem / 16);
+  --sm: calc(14rem / 16);
+  --md: calc(21rem / 16);
+  --lg: calc(28rem / 16);
+  --xl: calc(36rem / 16);
+  --xxl: calc(48rem / 16);
+  --xxxl: calc(60rem / 16);
+  --4xl: calc(72rem / 16);
+  --5xl: calc(80rem / 16);
+  --6xl: calc(120rem / 16);
+  --pd-reg: var(--reg);
+  --pd-xs: var(--xs);
+  --pd-sm: var(--sm);
+  --pd-md: var(--md);
+  --pd-lg: var(--lg);
+  --pd-xl: var(--xl);
+  --pd-xxl: var(--xxl);
+  --pd-xxxl: var(--xxxl);
+  --pd-4xl: var(--4xl);
+  --pd-5xl: var(--5xl);
+  --pd-6xl: var(--6xl);
+}
+
+.fp-header,
+header {
+  --bdr: var(--border-thin);
+  background-color: var(--bg-color);
+}
+.fp-header > [role=banner],
+header > [role=banner] {
+  background-color: var(--bg-color);
+  min-height: var(--height);
+  display: var(--display);
+  align-items: var(--align);
+  justify-content: var(--justify-content);
+  flex-direction: var(--row);
+  border-bottom: var(--bdr);
+  border-top: var(--bdr);
+  gap: 1rem;
+  padding: var(--pd-reg) 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-size: 90%;
+}
+@media (min-width: 980px) {
+  html {
+    font-size: 98%;
+  }
+}
+@media (min-width: 1600px) {
+  html {
+    font-size: 100%;
+  }
+}
+@media (min-width: 1980px) {
+  html {
+    font-size: 110%;
+  }
+}
+html * {
+  outline: none;
+}
+html *,
+html *:before,
+html *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: white;
+  color: #1b1b1b;
+}
+
+:where(body) > section,
+:where(body) main,
+:where(body) nav,
+:where(body) footer {
+  width: 80%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 980px) {
+  :where(body) > section,
+:where(body) main,
+:where(body) nav,
+:where(body) footer {
+    width: 100%;
+  }
+}
+:where(body) > section > section,
+:where(body) main > section,
+:where(body) nav > section,
+:where(body) footer > section {
+  width: 100%;
+  padding: var(--reg);
+}

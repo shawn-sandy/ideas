@@ -1,0 +1,42 @@
+:root {
+  --bg-color: whitesmoke;
+  --color: #333;
+  --cl-dark: var(--color);
+  --cl-light: #fff;
+  --bg-color: transparent;
+  --height: calc(400rem / 16);
+  --display: flex;
+  --row: row;
+  --column: column;
+  --align: center;
+  --justify-content: center;
+  --border-thin: thin solid lightgray;
+  --border-md: 3px solid lightgray;
+  --border-thick: thick solid lightgray;
+
+  // units
+  --reg: 1rem;
+  --xs: calc(12rem / 16);
+  --sm: calc(14rem / 16);
+  --md: calc(21rem / 16);
+  --lg: calc(28rem / 16);
+  --xl: calc(36rem / 16);
+  --xxl: calc(48rem / 16);
+  --xxxl: calc(60rem / 16);
+  --4xl: calc(72rem / 16);
+  --5xl: calc(80rem / 16);
+  --6xl: calc(120rem / 16);
+
+  //padding
+  --pd-reg: var(--reg);
+  --pd-xs: var(--xs);
+  --pd-sm: var(--sm);
+  --pd-md: var(--md);
+  --pd-lg: var(--lg);
+  --pd-xl: var(--xl);
+  --pd-xxl: var(--xxl);
+  --pd-xxxl: var(--xxxl);
+  --pd-4xl: var(--4xl);
+  --pd-5xl: var(--5xl);
+  --pd-6xl: var(--6xl);
+}
