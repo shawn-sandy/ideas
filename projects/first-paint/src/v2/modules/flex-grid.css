@@ -1,8 +1,6 @@
 .fp-grid,
 section,
 div {
-  --fx-grd-size: 30%;
-  --fx-grd-flex: 1 1 24%;
   --grid-size: 30%;
   --flex: 1 1 24%;
 }

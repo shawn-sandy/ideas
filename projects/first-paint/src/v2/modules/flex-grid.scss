@@ -12,7 +12,7 @@ $tokens: (
     #{if($className, $className, '.fp-grid')},
     section,
     div {
-      @include maps.customProperties($tokens, "fx-grd");
+      // @include maps.customProperties($tokens, "fx-grd");
       --grid-size: 30%;
       --flex: 1 1 24%;
       &[role="list"] {

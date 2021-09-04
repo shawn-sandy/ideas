@@ -48,6 +48,6 @@ $tokens: (
   "breakpoint-lg": "1200px",
 );
 
-root {
+:root {
   @include maps.customProperties($tokens);
 }
