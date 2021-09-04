@@ -1,0 +1,8 @@
+// Module contains maps mixins for generating rules/variables
+
+@mixin variables($map, $key: null) {
+  @if type-of($map) == "map" {
+  } @else {
+    @error "map variable must be a map";
+  }
+}

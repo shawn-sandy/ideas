@@ -2,7 +2,7 @@
 section,
 div {
   --grid-size: 30%;
-  --flex: 1 1 var(--grid-size);
+  --flex: 1 1 24%;
 }
 .fp-grid[role=list],
 section[role=list],
