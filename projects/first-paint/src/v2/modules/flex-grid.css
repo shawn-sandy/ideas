@@ -1,9 +1,12 @@
 .fp-grid,
 section,
 div {
+  --fx-grd-size: 30%;
+  --fx-grd-flex: 1 1 24%;
   --grid-size: 30%;
   --flex: 1 1 24%;
 }
+
 .fp-grid[role=list],
 section[role=list],
 div[role=list] {
@@ -12,6 +15,7 @@ div[role=list] {
   justify-content: flex-start;
   gap: 1rem;
 }
+
 .fp-grid[role=list] [role=listitem],
 section[role=list] [role=listitem],
 div[role=list] [role=listitem] {
@@ -19,6 +23,7 @@ div[role=list] [role=listitem] {
   line-height: 1.6;
   min-width: var(--grid-size);
 }
+
 @media (max-width: 980px) {
   .fp-grid[role=list] [role=listitem],
 section[role=list] [role=listitem],

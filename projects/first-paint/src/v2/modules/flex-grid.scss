@@ -2,13 +2,17 @@
 // TODO Search and replace name with CSS tag/element name
 @use './utilities/maps';
 $render: true !default;
-
+$tokens: (
+  "size": "30%",
+  "flex": "1 1 24%",
+);
 // render component mixin
 @mixin renderComponent($renderContent: $render, $className: null) {
   @if ($renderContent) {
     #{if($className, $className, '.fp-grid')},
     section,
     div {
+      @include maps.customProperties($tokens, "fx-grd");
       --grid-size: 30%;
       --flex: 1 1 24%;
       &[role="list"] {

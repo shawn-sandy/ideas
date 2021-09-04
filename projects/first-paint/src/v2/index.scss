@@ -1,24 +1,26 @@
+// user reset from v1
 @use '../components/reset.scss';
 
 @use 'tokens/index.scss';
 // media queries
-@use './components/utilities/responsive.scss';
+@use './modules/utilities/responsive.scss';
 
 /// add the header component
-@use './components/header.scss';
+@use './modules/header.scss';
 
 /// adds the navigation component
-@use './components/nav.scss';
+@use './modules/nav.scss';
 
 // addd typography component
-@use './components/type.scss';
+@use './modules/type.scss';
 
 /// flex-grid component
-@use './components/flex-grid.scss';
+@use './modules/flex-grid.scss';
 
 // don't automatically render the page component
-@use './components/page.scss' with($render-page: false);
-@use './components/buttons.scss';
+@use './modules/page.scss' with($render-page: false);
+@use './modules/buttons.scss';
+
 // here we can change the body color using the config mixin
 @include page.config($color: #1b1b1b);
 // now we render the body
