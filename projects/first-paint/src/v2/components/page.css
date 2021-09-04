@@ -54,5 +54,6 @@ body {
 :where(body) nav,
 :where(body) footer {
     width: 100%;
+    padding-inline: var(--reg);
   }
 }

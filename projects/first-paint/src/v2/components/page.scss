@@ -63,6 +63,7 @@ $font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
     footer {
       @media screen and (max-width: 980px) {
         width: 100%;
+        padding-inline: var(--reg);
       }
       width: $body-width;
       margin: 0 auto;

@@ -13,6 +13,9 @@
 // addd typography component
 @use './components/type.scss';
 
+/// flex-grid component
+@use './components/flex-grid.scss';
+
 // don't automatically render the page component
 @use './components/page.scss' with($render-page: false);
 @use './components/buttons.scss';

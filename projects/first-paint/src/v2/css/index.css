@@ -5,6 +5,10 @@
   --cl-light: #fff;
   --bg-color: transparent;
   --height: calc(400rem / 16);
+  --border: thin solid lightgray;
+  --border-md: 3px solid lightgray;
+  --border-thick: thick solid lightgray;
+  --bg-image: none;
   --display: flex;
   --display-inline: inline-flex;
   --display-b: block;
@@ -13,12 +17,8 @@
   --column: column;
   --align-item: center;
   --justify-content: center;
-  --border: thin solid lightgray;
-  --border-md: 3px solid lightgray;
-  --border-thick: thick solid lightgray;
-  --bg-image: none;
+  --wrap: wrap;
   --mg: auto;
-  --dark: var(--cl-dark);
   --off-white: hsl(240, 100%, 96%);
   --dark: hsl(0, 0%, 9%);
   --light: lightgray;

@@ -1,0 +1,38 @@
+// set variables
+// TODO Search and replace name with CSS tag/element name
+$render: true !default;
+
+// render component mixin
+@mixin renderComponent($renderContent: $render, $className: null) {
+  @if ($renderContent) {
+    #{if($className, $className, '.fp-grid')},
+    section,
+    div {
+      --grid-size: 30%;
+      --flex: 1 1 var(--grid-size);
+      &[role="list"] {
+        @include flex-grid();
+      }
+    }
+  }
+}
+
+@mixin flex-grid {
+  display: var(--display, flex);
+  flex-wrap: var(--wrap, wrap);
+  justify-content: flex-start;
+  gap: 1rem;
+
+  [role="listitem"] {
+    flex: var(--flex);
+    line-height: 1.6;
+    min-width: var(--grid-size);
+
+    @media (max-width: 980px) {
+      --grid-size: 49%;
+    }
+  }
+}
+
+// include render component
+@include renderComponent();

@@ -140,6 +140,10 @@ table {
   --cl-light: #fff;
   --bg-color: transparent;
   --height: calc(400rem / 16);
+  --border: thin solid lightgray;
+  --border-md: 3px solid lightgray;
+  --border-thick: thick solid lightgray;
+  --bg-image: none;
   --display: flex;
   --display-inline: inline-flex;
   --display-b: block;
@@ -148,12 +152,8 @@ table {
   --column: column;
   --align-item: center;
   --justify-content: center;
-  --border: thin solid lightgray;
-  --border-md: 3px solid lightgray;
-  --border-thick: thick solid lightgray;
-  --bg-image: none;
+  --wrap: wrap;
   --mg: auto;
-  --dark: var(--cl-dark);
   --off-white: hsl(240, 100%, 96%);
   --dark: hsl(0, 0%, 9%);
   --light: lightgray;
@@ -319,6 +319,35 @@ p + * {
   margin-top: 1.5rem !important;
 }
 
+.fp-grid,
+section,
+div {
+  --grid-size: 30%;
+  --flex: 1 1 var(--grid-size);
+}
+.fp-grid[role=list],
+section[role=list],
+div[role=list] {
+  display: var(--display, flex);
+  flex-wrap: var(--wrap, wrap);
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.fp-grid[role=list] [role=listitem],
+section[role=list] [role=listitem],
+div[role=list] [role=listitem] {
+  flex: var(--flex);
+  line-height: 1.6;
+  min-width: var(--grid-size);
+}
+@media (max-width: 980px) {
+  .fp-grid[role=list] [role=listitem],
+section[role=list] [role=listitem],
+div[role=list] [role=listitem] {
+    --grid-size: 49%;
+  }
+}
+
 * {
   outline: none;
   box-sizing: border-box;
@@ -373,5 +402,6 @@ body {
 :where(body) nav,
 :where(body) footer {
     width: 100%;
+    padding-inline: var(--reg);
   }
 }
