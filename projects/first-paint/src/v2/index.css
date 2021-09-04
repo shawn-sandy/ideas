@@ -176,6 +176,64 @@ table {
   border-spacing: 0;
 }
 
+* {
+  outline: none;
+  box-sizing: border-box;
+}
+*:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-size: clamp(86%, 96%, 120%);
+  line-height: 1.5;
+}
+@media (min-width: 980px) {
+  html {
+    font-size: 98%;
+  }
+}
+@media (min-width: 1600px) {
+  html {
+    font-size: 100%;
+  }
+}
+@media (min-width: 1980px) {
+  html {
+    font-size: 110%;
+  }
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: white;
+  color: var(--color, #292929);
+}
+
+:where(body) > section,
+:where(body) main,
+:where(body) nav,
+:where(body) footer {
+  width: 80%;
+  margin: 0 auto;
+  padding-block: var(--reg, 1rem);
+  margin-block: var(--mg, auto);
+}
+@media screen and (max-width: 980px) {
+  :where(body) > section,
+:where(body) main,
+:where(body) nav,
+:where(body) footer {
+    width: 100%;
+    padding-inline: var(--reg);
+  }
+}
+
 @media (min-width: 980px) {
   [data-show-mobile] {
     display: none;
@@ -321,6 +379,8 @@ p + * {
 .fp-grid,
 section,
 div {
+  --grid-w: 30%;
+  --grid-flex: 1 1 30%;
   --grid-size: 30%;
   --flex: 1 1 24%;
 }
@@ -335,9 +395,9 @@ div[role=list] {
 .fp-grid[role=list] [role=listitem],
 section[role=list] [role=listitem],
 div[role=list] [role=listitem] {
-  flex: var(--flex);
+  flex: var(--grid-flex);
   line-height: 1.6;
-  min-width: var(--grid-size);
+  width: var(--grid-w);
 }
 @media (max-width: 980px) {
   .fp-grid[role=list] [role=listitem],
@@ -347,60 +407,15 @@ div[role=list] [role=listitem] {
   }
 }
 
-* {
-  outline: none;
-  box-sizing: border-box;
-}
-*:before, *:after {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  font-size: clamp(86%, 96%, 120%);
-  line-height: 1.5;
-}
-@media (min-width: 980px) {
-  html {
-    font-size: 98%;
-  }
-}
-@media (min-width: 1600px) {
-  html {
-    font-size: 100%;
-  }
-}
-@media (min-width: 1980px) {
-  html {
-    font-size: 110%;
-  }
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  background-color: white;
-  color: #1b1b1b;
-}
-
-:where(body) > section,
-:where(body) main,
-:where(body) nav,
-:where(body) footer {
-  width: 80%;
-  margin: 0 auto;
-  padding-block: var(--reg, 1rem);
-  margin-block: var(--mg, auto);
-}
-@media screen and (max-width: 980px) {
-  :where(body) > section,
-:where(body) main,
-:where(body) nav,
-:where(body) footer {
-    width: 100%;
-    padding-inline: var(--reg);
-  }
-}
+/*
+ ***************************************
+ Author: Shawn Sandy
+ Date: 2021-04-01
+ Email: shawnsandy04@gmail
+ Description: First Paint
+ Project: first-paint
+ Version: 2.0
+ Website: https://shawnsandy.github.io/first-paint/
+ License: MIT
+ ***************************************
+*/

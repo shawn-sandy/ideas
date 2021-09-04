@@ -1,6 +1,8 @@
 .fp-grid,
 section,
 div {
+  --grid-w: 30%;
+  --grid-flex: 1 1 30%;
   --grid-size: 30%;
   --flex: 1 1 24%;
 }
@@ -17,9 +19,9 @@ div[role=list] {
 .fp-grid[role=list] [role=listitem],
 section[role=list] [role=listitem],
 div[role=list] [role=listitem] {
-  flex: var(--flex);
+  flex: var(--grid-flex);
   line-height: 1.6;
-  min-width: var(--grid-size);
+  width: var(--grid-w);
 }
 
 @media (max-width: 980px) {

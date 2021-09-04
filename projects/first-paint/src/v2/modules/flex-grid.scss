@@ -3,8 +3,8 @@
 @use './utilities/maps';
 $render: true !default;
 $tokens: (
-  "size": "30%",
-  "flex": "1 1 24%",
+  "w": "30%",
+  "flex": "1 1 30%",
 );
 // render component mixin
 @mixin renderComponent($renderContent: $render, $className: null) {
@@ -12,7 +12,7 @@ $tokens: (
     #{if($className, $className, '.fp-grid')},
     section,
     div {
-      // @include maps.customProperties($tokens, "fx-grd");
+      @include maps.customProperties($tokens, "grid");
       --grid-size: 30%;
       --flex: 1 1 24%;
       &[role="list"] {
@@ -29,9 +29,9 @@ $tokens: (
   gap: 1rem;
 
   [role="listitem"] {
-    flex: var(--flex);
+    flex: var(--grid-flex);
     line-height: 1.6;
-    min-width: var(--grid-size);
+    width: var(--grid-w);
 
     @media (max-width: 980px) {
       --grid-size: 49%;
