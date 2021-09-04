@@ -7,7 +7,7 @@
       @if $prefix != null {
         @include mapProps($name: #{$prefix}-#{$key}, $value: $val);
       } @else {
-        @include mapProps($name: $key, $value: $value);
+        @include mapProps($name: $key, $value: $val);
       }
     }
   } @else {

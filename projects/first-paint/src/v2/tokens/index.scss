@@ -1,54 +1,53 @@
-:root {
-  --bg-color: hsl(0, 0%, 96%);
-  --color: hsl(0, 0%, 8%);
-  --cl-dark: var(--color);
-  --cl-light: #fff;
-  --bg-color: transparent;
-  --height: calc(400rem / 16);
-  --border: thin solid lightgray;
-  --border-md: 3px solid lightgray;
-  --border-thick: thick solid lightgray;
-  --bg-image: none;
+@use "../modules/utilities/maps";
 
+$tokens: (
+  "bg-color": "hsl(0, 0%, 96%)",
+  "color": "hsl(0, 0%, 8%)",
+  "cl-dark": "var(color)",
+  "cl-light": "#fff",
+  "height": "calc(400rem / 16)",
+  "border": "thin solid lightgray",
+  "border-md": "3px solid lightgray",
+  "border-thick": "thick solid lightgray",
+  "bg-image": "none",
   //flex properties
-  --display: flex;
-  --display-inline: inline-flex;
-  --display-b: block;
-  --direction: row;
-  --row: row;
-  --column: column;
-  --align-item: center;
-  --justify-content: center;
-  --wrap: wrap;
-
+  "display": "flex",
+  "display-inline": "inline-flex",
+  "display-b": "block",
+  "direction": "row",
+  "row": "row",
+  "column": "column",
+  "align-item": "center",
+  "justify-content": "center",
+  "wrap": "wrap",
   // margin properties
-  --mg: auto;
-
+  "mg": "auto",
   // named colors
-  --off-white: hsl(240, 100%, 96%);
-  --dark: hsl(0, 0%, 9%);
-  --light: lightgray;
-  --alert: yellowgreen;
-  --info: hsl(210, 100%, 41%);
-  --warning: hsl(33, 100%, 50%);
-  --danger: hsl(348, 98%, 38%);
-  --highlight: hsl(54, 100%, 90%);
-  --text: var(--dark);
-
+  "off-white": "hsl(240, 100%, 96%)",
+  "dark": "hsl(0, 0%, 9%)",
+  "light": "lightgray",
+  "alert": "yellowgreen",
+  "info": "hsl(210, 100%, 41%)",
+  "warning": "hsl(33, 100%, 50%)",
+  "danger": "hsl(348, 98%, 38%)",
+  "highlight": "hsl(54, 100%, 90%)",
+  "text": "var(dark)",
   // units
-  --reg: 1rem;
-  --xs: calc(12rem / 16);
-  --sm: calc(14rem / 16);
-  --md: calc(21rem / 16);
-  --lg: calc(28rem / 16);
-  --xl: calc(36rem / 16);
-  --xxl: calc(48rem / 16);
-  --xxxl: calc(60rem / 16);
-  --4xl: calc(72rem / 16);
-  --5xl: calc(80rem / 16);
-  --6xl: calc(120rem / 16);
-
+  "reg": "1rem",
+  "xs": "calc(12rem / 16)",
+  "sm": "calc(14rem / 16)",
+  "md": "calc(21rem / 16)",
+  "lg": "calc(28rem / 16)",
+  "xl": "calc(36rem / 16)",
+  "xxl": "calc(48rem / 16)",
+  "xxxl": "calc(60rem / 16)",
+  "4xl": "calc(72rem / 16)",
+  "5xl": "calc(80rem / 16)",
+  "6xl": "calc(120rem / 16)",
   // media queries
+  "breakpoint-lg": "1200px",
+);
 
-  --breakpoint-lg: 1200px;
+root {
+  @include maps.customProperties($tokens);
 }

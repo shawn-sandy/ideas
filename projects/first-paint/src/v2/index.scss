@@ -1,6 +1,7 @@
 // user reset from v1
 @use '../components/reset.scss';
 
+// custom properties--tokens
 @use 'tokens/index.scss';
 // media queries
 @use './modules/utilities/responsive.scss';
