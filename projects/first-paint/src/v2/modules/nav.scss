@@ -1,5 +1,8 @@
 // set variables
 // TODO Search and replace name with CSS tag/element name
+
+@import "../modules/utilities/functions" as fn;
+
 $render: true !default;
 
 // render component mixin
@@ -14,7 +17,7 @@ $render: true !default;
 @mixin nav {
   --nav-display: var(--display);
   --nav-align: var(--align-item);
-  --nav-height: --var(--xxxl);
+  --nav-height: var(--4xl);
   --justify-content: space-between;
   --font-size: var(--sm);
 
@@ -28,7 +31,7 @@ $render: true !default;
     align-items: var(--nav-align);
     visibility: visible;
     justify-content: var(--justify-content);
-    max-height: var(--nav-height);
+    height: var(--nav-height);
   }
 
   :where(> section, ul) {

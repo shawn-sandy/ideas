@@ -1,4 +1,5 @@
 @use "../modules/utilities/maps";
+@use "../modules/utilities/functions" as fn;
 
 $tokens: (
   "bg-color": "hsl(0, 0%, 96%)",
@@ -34,16 +35,16 @@ $tokens: (
   "text": "var(dark)",
   // units
   "reg": "1rem",
-  "xs": "calc(12rem / 16)",
-  "sm": "calc(14rem / 16)",
-  "md": "calc(21rem / 16)",
-  "lg": "calc(28rem / 16)",
-  "xl": "calc(36rem / 16)",
-  "xxl": "calc(48rem / 16)",
-  "xxxl": "calc(60rem / 16)",
-  "4xl": "calc(72rem / 16)",
-  "5xl": "calc(80rem / 16)",
-  "6xl": "calc(120rem / 16)",
+  "xs": fn.rems(12),
+  "sm": fn.rems(14),
+  "md": fn.rems(21),
+  "lg": fn.rems(28),
+  "xl": fn.rems(30),
+  "xxl": fn.rems(48),
+  "xxxl": fn.rems(60),
+  "4xl": fn.rems(72),
+  "5xl": fn.rems(80),
+  "6xl": fn.rems(120),
   // media queries
   "breakpoint-lg": "1200px",
 );

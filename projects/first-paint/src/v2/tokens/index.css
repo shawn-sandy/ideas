@@ -28,15 +28,15 @@
   --highlight: hsl(54, 100%, 90%);
   --text: var(dark);
   --reg: 1rem;
-  --xs: calc(12rem / 16);
-  --sm: calc(14rem / 16);
-  --md: calc(21rem / 16);
-  --lg: calc(28rem / 16);
-  --xl: calc(36rem / 16);
-  --xxl: calc(48rem / 16);
-  --xxxl: calc(60rem / 16);
-  --4xl: calc(72rem / 16);
-  --5xl: calc(80rem / 16);
-  --6xl: calc(120rem / 16);
+  --xs: 0.75rem;
+  --sm: 0.875rem;
+  --md: 1.3125rem;
+  --lg: 1.75rem;
+  --xl: 1.875rem;
+  --xxl: 3rem;
+  --xxxl: 3.75rem;
+  --4xl: 4.5rem;
+  --5xl: 5rem;
+  --6xl: 7.5rem;
   --breakpoint-lg: 1200px;
 }

@@ -1,0 +1,6 @@
+// reusable function
+
+@function rems($value: 16) {
+  $remValue: ($value / 16) + rem;
+  @return $remValue;
+}

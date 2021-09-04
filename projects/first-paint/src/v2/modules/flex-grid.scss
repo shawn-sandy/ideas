@@ -11,15 +11,19 @@ $tokens: (
   @if ($renderContent) {
     #{if($className, $className, '.fp-grid')},
     section,
-    div {
-      @include maps.customProperties($tokens, "grid");
-      --grid-size: 30%;
-      --flex: 1 1 24%;
+    div,
+    ul {
       &[role="list"] {
+        @include maps.customProperties($tokens, "grid");
+        --grid-size: 30%;
+        --flex: 1 1 24%;
         @include flex-grid();
       }
     }
   }
+}
+
+@mixin ariaGrid($className: null) {
 }
 
 @mixin flex-grid {

@@ -1,7 +1,8 @@
+@import "../modules/utilities/functions" as fn;
 nav {
   --nav-display: var(--display);
   --nav-align: var(--align-item);
-  --nav-height: --var(--xxxl);
+  --nav-height: var(--4xl);
   --justify-content: space-between;
   --font-size: var(--sm);
 }
@@ -17,7 +18,7 @@ nav h1 {
     align-items: var(--nav-align);
     visibility: visible;
     justify-content: var(--justify-content);
-    max-height: var(--nav-height);
+    height: var(--nav-height);
   }
 }
 nav :where(> section, ul) {
