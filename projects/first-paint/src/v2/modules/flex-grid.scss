@@ -39,7 +39,8 @@ $tokens: (
     width: var(--grid-w);
 
     @media (max-width: 980px) {
-      --grid-size: 49%;
+      --grid-flex: 1 1 49%;
+      --grid-w: 49%;
     }
   }
 }
