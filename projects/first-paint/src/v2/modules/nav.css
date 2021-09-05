@@ -39,5 +39,5 @@ nav img[alt] {
 }
 
 nav img[alt] + * {
-  margin-left: var(--m1);
+  margin-left: var(--ml);
 }

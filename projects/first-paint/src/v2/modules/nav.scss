@@ -48,7 +48,7 @@ $render: true !default;
   img[alt] {
     vertical-align: middle;
     + * {
-      margin-left: var(--m1);
+      margin-left: var(--ml);
     }
     max-height: var(--xxl);
   }

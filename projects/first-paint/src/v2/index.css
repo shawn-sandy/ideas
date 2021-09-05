@@ -357,7 +357,7 @@ nav img[alt] {
   max-height: var(--xxl);
 }
 nav img[alt] + * {
-  margin-left: var(--m1);
+  margin-left: var(--ml);
 }
 
 h1,
