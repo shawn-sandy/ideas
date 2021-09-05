@@ -1,6 +1,7 @@
 // set variables
 // TODO Search and replace name with CSS tag/element name
 @use './utilities/maps';
+
 $render: true !default;
 $tokens: (
   "w": "30%",
@@ -27,9 +28,9 @@ $tokens: (
 }
 
 @mixin flex-grid {
-  display: var(--display, flex);
+  display: var(--dp, flex);
   flex-wrap: var(--wrap, wrap);
-  justify-content: flex-start;
+  justify-content: var(--jst, center);
   gap: 1rem;
 
   [role="listitem"] {

@@ -38,9 +38,11 @@
 // Button Modules
 @use './modules/buttons.scss';
 
-// // don't automatically render the page Modules
+/// don't automatically render the page Modules
 // @use './modules/page.scss' with($render-page: false);
-// // here we can change the body color using the config mixin
+
+/// here we can change the body color using the config mixin
 // @include page.config($color: #1b1b1b);
-// // now we render the body
+
+/// now we render the body
 // @include page.page();

@@ -1,9 +1,9 @@
 @import "../modules/utilities/functions" as fn;
 nav {
   --nav-dp: var(--dp);
-  --nav-align: var(--aln);
+  --nav-align: var(--al);
   --nav-height: var(--4xl);
-  --justify: var(--jst-between);
+  --justify: var(--jb);
   --font-size: var(--sm);
 }
 
@@ -17,14 +17,14 @@ nav h1 {
     display: var(--nav-dp);
     align-items: var(--nav-align);
     visibility: visible;
-    justify-content: var(--justify);
+    justify-content: var(--jb);
     height: var(--nav-height);
   }
 }
 nav :where(> section, ul) {
   display: var(--nav-dp, --dp);
   align-items: var(--nav-align, --aln);
-  gap: var(--reg);
+  gap: var(--gap);
   height: 100%;
   font-size: var(--font-size);
 }
@@ -39,5 +39,5 @@ nav img[alt] {
 }
 
 nav img[alt] + * {
-  margin-left: var(--reg);
+  margin-left: var(--m1);
 }

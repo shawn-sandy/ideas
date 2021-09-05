@@ -1,28 +1,17 @@
 .fp-header,
 header {
-  --hd-bdr: var(--border);
-  --hd-pd: var(--reg);
-  --hd-align: var(--align-items);
-  --hd-display: var(--display);
-  --hd-align-items: var(--align-item);
-  --hd-justify: var(--justify-content);
-  --hd-direction: var(--column);
-  --hd-bg: var(--bg-color);
-  --hd-gap: var(--gap-reg);
   background-color: var(--hd-bg);
 }
 
 .fp-header > [role=banner],
 header > [role=banner] {
-  background-color: var(--hd-bg);
-  min-height: var(--height);
-  display: var(--hd-display);
-  align-items: var(--hd-align-items);
-  justify-content: var(--hd-justify);
+  background-color: var(--bg);
+  min-height: var(--ban-md);
+  display: var(--dp);
+  align-items: var(--al);
+  justify-content: var(--jc);
   flex-direction: var(--row);
-  border-bottom: var(--hd-bdr);
-  border-top: var(--hd-bdr);
-  border-block: var(--hd-bdr);
-  gap: var(--hd-gap);
-  padding-block: var(--hd-pd) 0;
+  border-block: var(--bd);
+  gap: var(--gap);
+  padding-block: var(--5);
 }
