@@ -35,11 +35,13 @@ $tokens: (
   "grow": "1",
   "basis": "auto",
   "flex": var(--grow) var(--shrink) var(--basis),
+  // flex alignment
   "al": "center",
   "al-start": "flex-start",
   "al-end": "flex-end",
   "al-stretch": "stretch",
   "align-items": var(--al),
+  // flex justify
   "jc": "center",
   "js": "flex-start",
   "je": "flex-end",
