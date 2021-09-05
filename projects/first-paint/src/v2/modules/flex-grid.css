@@ -8,7 +8,7 @@ ul[role=list] {
   --flex: var(--flex);
   display: var(--dp, flex);
   flex-wrap: var(--wrap, wrap);
-  justify-content: var(--jst, center);
+  justify-content: var(--jb, space-between);
   gap: var(--gap, 0);
 }
 
@@ -21,6 +21,15 @@ ul[role=list] [role=listitem] {
   width: var(--grid-w);
 }
 
+@media (min-width: 1680px) {
+  .fp-grid[role=list] [role=listitem],
+section[role=list] [role=listitem],
+div[role=list] [role=listitem],
+ul[role=list] [role=listitem] {
+    --grid-flex: 1 1 24%;
+    --grid-w: 24%;
+  }
+}
 @media (max-width: 980px) {
   .fp-grid[role=list] [role=listitem],
 section[role=list] [role=listitem],

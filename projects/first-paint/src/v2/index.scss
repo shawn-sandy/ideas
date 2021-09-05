@@ -38,6 +38,9 @@
 // Button Modules
 @use './modules/buttons.scss';
 
+// Inputs/Forms Modules
+@use './modules/form.scss';
+
 /// don't automatically render the page Modules
 // @use './modules/page.scss' with($render-page: false);
 

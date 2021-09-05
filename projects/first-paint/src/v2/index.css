@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import "../modules/utilities/functions" as fn;
 :root {
   --bg: hsl(0, 0%, 96%);
@@ -447,7 +448,7 @@ ul[role=list] {
   --flex: var(--flex);
   display: var(--dp, flex);
   flex-wrap: var(--wrap, wrap);
-  justify-content: var(--jst, center);
+  justify-content: var(--jb, space-between);
   gap: var(--gap, 0);
 }
 .fp-grid[role=list] [role=listitem],
@@ -457,6 +458,15 @@ ul[role=list] [role=listitem] {
   flex: var(--grid-flex);
   line-height: 1.6;
   width: var(--grid-w);
+}
+@media (min-width: 1680px) {
+  .fp-grid[role=list] [role=listitem],
+section[role=list] [role=listitem],
+div[role=list] [role=listitem],
+ul[role=list] [role=listitem] {
+    --grid-flex: 1 1 24%;
+    --grid-w: 24%;
+  }
 }
 @media (max-width: 980px) {
   .fp-grid[role=list] [role=listitem],
@@ -475,6 +485,48 @@ ul[role=list] [role=listitem] {
     --grid-flex: 1 1 98%;
     --grid-w: 49%;
   }
+}
+
+> div + div {
+  margin-top: 1rem;
+}
+
+label[for] {
+  font-size: 0.9rem;
+  display: block;
+}
+label[for] em {
+  font-style: normal;
+}
+label[for] em::after {
+  content: "∗";
+  color: var(--danger);
+}
+
+input[id],
+textarea[id],
+select[id] {
+  background-color: transparent;
+  display: flex;
+  margin: 0.5rem 0 1rem;
+  padding: 0.5rem;
+  width: 98%;
+  border: thin solid lightgray;
+  border-radius: 0.1rem;
+}
+input[id]:focus, input[id]:focus-within,
+textarea[id]:focus,
+textarea[id]:focus-within,
+select[id]:focus,
+select[id]:focus-within {
+  border: thin solid gray;
+  outline-color: gray;
+}
+input[id]::placeholder,
+textarea[id]::placeholder,
+select[id]::placeholder {
+  font-style: italic;
+  color: lightgrey;
 }
 
 /*
