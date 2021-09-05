@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  {% include "./_partials/head.html" %}
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>FirstPaint</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap" rel="stylesheet"/>
+    {% block styles %}
+      <link rel="stylesheet" href="/index.css"/>
+      <link rel="stylesheet" href="/custom-styles.css"/>
+    {% endblock %}
+  </head>
   <body>
     <header>
       {% include "./_partials/navbar-mobile.html" %}
@@ -11,7 +21,7 @@
     <section aria-label="feature">
       {% include "./_partials/grid.html" %}
     </section>
-    <hr />
+    <hr/>
     <main>{%- include "_partials/main-content.html" %}</main>
     {% include "./_partials/footer.html" %}
   </body>

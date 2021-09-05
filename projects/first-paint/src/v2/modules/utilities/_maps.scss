@@ -1,0 +1,24 @@
+// Module contains maps mixins for generating rules/variables
+
+@mixin customProperties($map: null, $prefix: null) {
+  // @debug "debuging";
+  @if type-of($map) == "map" or $map != "null" {
+    @each $key, $val in $map {
+      @if $prefix != null {
+        @include mapProps($name: #{$prefix}-#{$key}, $value: $val);
+      } @else {
+        @include mapProps($name: $key, $value: $val);
+      }
+    }
+  } @else {
+    @error "map variable must be a map";
+  }
+}
+
+@mixin cp($map: null, $prefix: null) {
+  @include customProperties($map: $map, $prefix: $prefix);
+}
+
+@mixin mapProps($name: null, $value: null) {
+  --#{$name}: #{$value};
+}

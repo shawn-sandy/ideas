@@ -46,5 +46,8 @@
   "xd.globalEditor": true,
   "css.validate": false,
   "less.validate": false,
-  "scss.validate": false
+  "scss.validate": false,
+  "conventionalCommits.scopes": [
+    "2.0"
+  ]
 }

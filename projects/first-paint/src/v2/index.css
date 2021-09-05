@@ -1,0 +1,543 @@
+@charset "UTF-8";
+@import "../modules/utilities/functions" as fn;
+:root {
+  --bg: hsl(0, 0%, 96%);
+  --bg-image: none;
+  --cl: hsl(0, 0%, 8%);
+  --cl-dark: var(color);
+  --cl-light: #fff;
+  --bd-w: thin;
+  --bd-cl: lightgray;
+  --bd-style: solid;
+  --bd: var(--bd-w) var(--bd-style) var(--bd-cl);
+  --bd-cl-dark: black;
+  --bd-cl-light: white;
+  --v-mid: middle;
+  --v-top: top;
+  --v-base: baseline;
+  --v-bottom: bottom;
+  --v-text-top: text-top;
+  --right: end;
+  --center: center;
+  --justify: justify;
+  --dp: flex;
+  --dp-i: inline-flex;
+  --dp-b: block;
+  --drt: row;
+  --row: row;
+  --col: column;
+  --shrink: 1;
+  --grow: 1;
+  --basis: 30%;
+  --flex: var(--grow) var(--shrink) var(--basis);
+  --al: center;
+  --al-start: flex-start;
+  --al-end: flex-end;
+  --al-stretch: stretch;
+  --align-items: var(--al);
+  --jc: center;
+  --js: flex-start;
+  --je: flex-end;
+  --jb: space-between;
+  --wrap: wrap;
+  --gap: 1rem;
+  --gap-sm: var(--sm);
+  --gap-md: var(--md);
+  --gap-lg: var(--lg);
+  --gap-xl: var(--xl);
+  --off-white: hsl(240, 100%, 96%);
+  --dark: hsl(0, 0%, 9%);
+  --light: lightgray;
+  --alert: yellowgreen;
+  --info: hsl(210, 100%, 41%);
+  --warning: hsl(33, 100%, 50%);
+  --danger: hsl(348, 98%, 38%);
+  --highlight: hsl(54, 100%, 90%);
+  --text: var(dark);
+  --default: 1rem;
+  --0: 0;
+  --1: 0.75rem;
+  --2: 0.875rem;
+  --3: 1.3125rem;
+  --4: 1.75rem;
+  --5: 1.875rem;
+  --6: 3rem;
+  --7: 3.75rem;
+  --8: 4.5rem;
+  --9: 5rem;
+  --10: 7.5rem;
+  --rem: var(--default);
+  --none: 0;
+  --xs: var(--1);
+  --sm: var(--2);
+  --md: var(--3);
+  --lg: var(--4);
+  --xl: var(--5);
+  --xxl: var(--6);
+  --xxxl: var(--7);
+  --4xl: var(--8);
+  --5xl: var(--9);
+  --6xl: var(--10);
+  --d: var(--default);
+  --mt: var(--default);
+  --mb: var(--default);
+  --ml: var(--default);
+  --mr: var(--default);
+  --m: var(--mb) var(--mt) var(--ml) var(--mr);
+  --pt: var(--default);
+  --pb: var(--default);
+  --pl: var(--default);
+  --pr: var(--default);
+  --p: var(--pt) var(--pb) var(--pl) var(--pr);
+  --p-inline: var(--default);
+  --p-block: var(--default);
+  --vh-sm: 10vh;
+  --vh-md: 25vh;
+  --vh-lg: 50vh;
+  --vh-xl: 70vh;
+  --vh-xxl: 90vh;
+  --vw-sm: 10vw;
+  --vw-md: 25vw;
+  --vw-lg: 50vw;
+  --vw-xl: 70vw;
+  --vw-xxl: 90vw;
+  --h: var(--d);
+  --min-h: var(--vh-sm);
+  --max-h: var(--vh-xxl);
+  --breakpoint-lg: 1200px;
+  --ban-xxl: 90vh;
+  --ban-xl: 80vh;
+  --ban-lg: 75vh;
+  --ban-md: 50vh;
+  --ban-sm: 33vh;
+  --ban-xs: 25vh;
+  --ban-leader-board: 5.625rem;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  outline: none;
+  box-sizing: border-box;
+}
+*:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-size: clamp(86%, 96%, 120%);
+  line-height: 1.5;
+}
+@media (min-width: 980px) {
+  html {
+    font-size: 98%;
+  }
+}
+@media (min-width: 1600px) {
+  html {
+    font-size: 100%;
+  }
+}
+@media (min-width: 1980px) {
+  html {
+    font-size: 110%;
+  }
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: white;
+  color: var(--color, #292929);
+}
+
+:where(body) > section,
+:where(body) main,
+:where(body) nav,
+:where(body) footer {
+  padding-block: var(--p-block);
+  width: 80%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 980px) {
+  :where(body) > section,
+:where(body) main,
+:where(body) nav,
+:where(body) footer {
+    width: 100%;
+    padding-inline: var(--p-inline);
+  }
+}
+
+@media (min-width: 980px) {
+  [data-show-mobile] {
+    display: none;
+  }
+
+  [data-show-desktop] {
+    display: inline-flex;
+  }
+}
+.fp-header,
+header {
+  background-color: var(--hd-bg, );
+}
+.fp-header > [role=banner],
+header > [role=banner] {
+  background-color: var(--bg);
+  min-height: var(--ban-md);
+  display: var(--dp);
+  align-items: var(--al);
+  justify-content: var(--jc);
+  flex-direction: var(--row);
+  border-block: var(--bd);
+  gap: var(--gap);
+  padding-block: var(--5);
+}
+
+nav {
+  --nav-dp: var(--dp);
+  --nav-align: var(--al);
+  --nav-height: var(--4xl);
+  --justify: var(--jb);
+  --font-size: var(--sm);
+}
+nav h1 {
+  font-size: var(--md);
+  margin-block-end: 0;
+}
+@media (min-width: 980px) {
+  nav {
+    display: var(--nav-dp);
+    align-items: var(--align-items);
+    justify-content: var(--jb);
+    height: var(--nav-height);
+  }
+}
+nav :where(> section, ul) {
+  display: var(--nav-dp, --dp);
+  align-items: var(--nav-align, --aln);
+  gap: var(--gap);
+  height: 100%;
+  font-size: var(--font-size);
+}
+nav :where(> section, ul) :any-link {
+  font-size: var(--font-size);
+}
+nav img[alt] {
+  vertical-align: var(--vertical-align);
+  --vertical-align: var(--v-mid);
+  --max-h: var(--xxl);
+  max-height: var(--max-h);
+}
+nav img[alt] + * {
+  margin-left: var(--ml);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+  color: inherit;
+  margin: 0rem 0 1.05rem;
+  font-weight: 500;
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+h1 {
+  font-size: var(--xxxl);
+}
+
+h2 {
+  font-size: var(--xxl);
+}
+
+h3 {
+  font-size: var(--xl);
+}
+
+h4 {
+  font-size: var(--lg);
+}
+
+h5 {
+  font-size: var(--md);
+}
+
+h6 {
+  font-size: var(--reg);
+}
+
+small,
+time {
+  font-size: var(--xs);
+}
+
+time {
+  padding: 0 0 0.5rem;
+}
+
+p {
+  margin: 0;
+  line-height: 1.7;
+}
+p i {
+  font-style: italic;
+}
+p strong {
+  font-weight: 500;
+}
+
+p + p,
+p + * {
+  margin-top: 2rem;
+}
+
+p + * {
+  margin-top: 1.5rem !important;
+}
+
+.fp-grid[role=list],
+section[role=list],
+div[role=list],
+ul[role=list] {
+  --grid-w: 30%;
+  --grid-flex: 1 1 30%;
+  --grid-size: 30%;
+  --flex: var(--flex);
+  display: var(--dp, flex);
+  flex-wrap: var(--wrap, wrap);
+  justify-content: var(--jb, space-between);
+  gap: var(--gap, 0);
+}
+.fp-grid[role=list] [role=listitem],
+section[role=list] [role=listitem],
+div[role=list] [role=listitem],
+ul[role=list] [role=listitem] {
+  flex: var(--grid-flex);
+  line-height: 1.6;
+  width: var(--grid-w);
+}
+@media (min-width: 1680px) {
+  .fp-grid[role=list] [role=listitem],
+section[role=list] [role=listitem],
+div[role=list] [role=listitem],
+ul[role=list] [role=listitem] {
+    --grid-flex: 1 1 24%;
+    --grid-w: 24%;
+  }
+}
+@media (max-width: 980px) {
+  .fp-grid[role=list] [role=listitem],
+section[role=list] [role=listitem],
+div[role=list] [role=listitem],
+ul[role=list] [role=listitem] {
+    --grid-flex: 1 1 48%;
+    --grid-w: 48%;
+  }
+}
+@media (max-width: 680px) {
+  .fp-grid[role=list] [role=listitem],
+section[role=list] [role=listitem],
+div[role=list] [role=listitem],
+ul[role=list] [role=listitem] {
+    --grid-flex: 1 1 98%;
+    --grid-w: 49%;
+  }
+}
+
+> div + div {
+  margin-top: 1rem;
+}
+
+label[for] {
+  font-size: 0.9rem;
+  display: block;
+}
+label[for] em {
+  font-style: normal;
+}
+label[for] em::after {
+  content: "∗";
+  color: var(--danger);
+}
+
+input[id],
+textarea[id],
+select[id] {
+  background-color: transparent;
+  display: flex;
+  margin: 0.5rem 0 1rem;
+  padding: 0.5rem;
+  width: 98%;
+  border: thin solid lightgray;
+  border-radius: 0.1rem;
+}
+input[id]:focus, input[id]:focus-within,
+textarea[id]:focus,
+textarea[id]:focus-within,
+select[id]:focus,
+select[id]:focus-within {
+  border: thin solid gray;
+  outline-color: gray;
+}
+input[id]::placeholder,
+textarea[id]::placeholder,
+select[id]::placeholder {
+  font-style: italic;
+  color: lightgrey;
+}
+
+/*
+ ***************************************
+ Author: Shawn Sandy
+ Date: 2021-04-01
+ Email: shawnsandy04@gmail
+ Description: First Paint
+ Project: first-paint
+ Version: 2.0
+ Website: https://shawnsandy.github.io/first-paint/
+ License: MIT
+ ***************************************
+*/

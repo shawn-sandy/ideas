@@ -1,0 +1,52 @@
+// set variables
+// TODO Search and replace name with CSS tag/element name
+$render-header: true;
+$header-color: black;
+$background-color: null;
+$tokens: (
+  "bg": var(--bg),
+  "h": var(--h),
+  "dp": var(--dp),
+  "al": var(--al),
+  "js": var(--js),
+  "row": var(--row),
+);
+// render component mixin
+@mixin renderComponent($renderContent: $render-header, $className: null) {
+  @if ($renderContent) {
+    #{$className,
+    $className,
+    ".fp-header"},
+    header {
+      @include header();
+    }
+  }
+}
+
+@mixin banner {
+  background-color: var(--bg);
+  min-height: var(--ban-md);
+  display: var(--dp);
+  align-items: var(--al);
+  justify-content: var(--jc);
+  flex-direction: var(--row);
+  border-block: var(--bd);
+  gap: var(--gap);
+  padding-block: var(--5);
+}
+
+@mixin header {
+  background-color: var(--hd-bg, $background-color);
+
+  > [role="banner"] {
+    @include banner();
+  }
+}
+
+@mixin config($_color: null, $_background-color: null) {
+  $header-color: $_color !global;
+  $header-background-color: $_background-color !global;
+}
+
+// include render component
+@include renderComponent();
