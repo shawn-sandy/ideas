@@ -15,7 +15,7 @@ nav h1 {
 @media (min-width: 980px) {
   nav {
     display: var(--nav-dp);
-    align-items: var(--nav-align);
+    align-items: var(--align-items);
     justify-content: var(--jb);
     height: var(--nav-height);
   }

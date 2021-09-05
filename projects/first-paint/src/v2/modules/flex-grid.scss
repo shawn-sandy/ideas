@@ -17,7 +17,7 @@ $tokens: (
       &[role="list"] {
         @include maps.customProperties($tokens, "grid");
         --grid-size: 30%;
-        --flex: 1 1 24%;
+        --flex: 1 1 30%;
         @include flex-grid();
       }
     }
@@ -31,7 +31,7 @@ $tokens: (
   display: var(--dp, flex);
   flex-wrap: var(--wrap, wrap);
   justify-content: var(--jst, center);
-  gap: 1rem;
+  gap: var(--gap, 0);
 
   [role="listitem"] {
     flex: var(--grid-flex);
@@ -39,7 +39,12 @@ $tokens: (
     width: var(--grid-w);
 
     @media (max-width: 980px) {
-      --grid-flex: 1 1 49%;
+      --grid-flex: 1 1 48%;
+      --grid-w: 48%;
+    }
+
+    @media (max-width: 680px) {
+      --grid-flex: 1 1 98%;
       --grid-w: 49%;
     }
   }

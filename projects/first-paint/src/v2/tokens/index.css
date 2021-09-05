@@ -24,9 +24,15 @@
   --drt: row;
   --row: row;
   --col: column;
+  --shrink: 1;
+  --grow: 1;
+  --basis: auto;
+  --flex: var(--grow) var(--shrink) var(--basis);
   --al: center;
   --al-start: flex-start;
   --al-end: flex-end;
+  --al-stretch: stretch;
+  --align-items: var(--al);
   --jc: center;
   --js: flex-start;
   --je: flex-end;

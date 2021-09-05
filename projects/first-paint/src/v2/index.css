@@ -25,9 +25,15 @@
   --drt: row;
   --row: row;
   --col: column;
+  --shrink: 1;
+  --grow: 1;
+  --basis: auto;
+  --flex: var(--grow) var(--shrink) var(--basis);
   --al: center;
   --al-start: flex-start;
   --al-end: flex-end;
+  --al-stretch: stretch;
+  --align-items: var(--al);
   --jc: center;
   --js: flex-start;
   --je: flex-end;
@@ -339,7 +345,7 @@ nav h1 {
 @media (min-width: 980px) {
   nav {
     display: var(--nav-dp);
-    align-items: var(--nav-align);
+    align-items: var(--align-items);
     justify-content: var(--jb);
     height: var(--nav-height);
   }
@@ -438,11 +444,11 @@ ul[role=list] {
   --grid-w: 30%;
   --grid-flex: 1 1 30%;
   --grid-size: 30%;
-  --flex: 1 1 24%;
+  --flex: 1 1 30%;
   display: var(--dp, flex);
   flex-wrap: var(--wrap, wrap);
   justify-content: var(--jst, center);
-  gap: 1rem;
+  gap: var(--gap, 0);
 }
 .fp-grid[role=list] [role=listitem],
 section[role=list] [role=listitem],
@@ -457,7 +463,17 @@ ul[role=list] [role=listitem] {
 section[role=list] [role=listitem],
 div[role=list] [role=listitem],
 ul[role=list] [role=listitem] {
-    --grid-size: 49%;
+    --grid-flex: 1 1 48%;
+    --grid-w: 48%;
+  }
+}
+@media (max-width: 680px) {
+  .fp-grid[role=list] [role=listitem],
+section[role=list] [role=listitem],
+div[role=list] [role=listitem],
+ul[role=list] [role=listitem] {
+    --grid-flex: 1 1 98%;
+    --grid-w: 49%;
   }
 }
 
