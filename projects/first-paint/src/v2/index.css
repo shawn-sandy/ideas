@@ -38,7 +38,6 @@
   --gap-md: var(--md);
   --gap-lg: var(--lg);
   --gap-xl: var(--xl);
-  --m: auto;
   --off-white: hsl(240, 100%, 96%);
   --dark: hsl(0, 0%, 9%);
   --light: lightgray;
@@ -72,30 +71,19 @@
   --4xl: var(--8);
   --5xl: var(--9);
   --6xl: var(--10);
-  --m-d: var(--default);
-  --m-0: var(--0);
-  --m-1: var(--1);
-  --m-2: var(--2);
-  --m-3: var(--3);
-  --m-4: var(--4);
-  --m-5: var(--5);
-  --m-6: var(--6);
-  --m-7: var(--7);
-  --m-8: var(--8);
-  --m-9: var(--9);
-  --m-10: var(--10);
-  --p-d: var(--default);
-  --p-0: var(--0);
-  --p-1: var(--1);
-  --p-2: var(--2);
-  --p-3: var(--3);
-  --p-4: var(--4);
-  --p-5: var(--5);
-  --p-6: var(--6);
-  --p-7: var(--7);
-  --p-8: var(--8);
-  --p-9: var(--9);
-  --p-10: var(--10);
+  --d: var(--default);
+  --mt: var(--default);
+  --mb: var(--default);
+  --ml: var(--default);
+  --mr: var(--default);
+  --m: var(--mb) var(--mt) var(--ml) var(--mr);
+  --pt: var(--default);
+  --pb: var(--default);
+  --pl: var(--default);
+  --pr: var(--default);
+  --p: var(--pt) var(--pb) var(--pl) var(--pr);
+  --p-inline: var(--default);
+  --p-block: var(--default);
   --vh-sm: 10vh;
   --vh-md: 25vh;
   --vh-lg: 50vh;
@@ -294,6 +282,7 @@ body {
 :where(body) main,
 :where(body) nav,
 :where(body) footer {
+  padding-block: var(--p-block);
   width: 80%;
   margin: 0 auto;
 }
@@ -303,7 +292,7 @@ body {
 :where(body) nav,
 :where(body) footer {
     width: 100%;
-    padding-inline: var(--reg);
+    padding-inline: var(--p-inline);
   }
 }
 

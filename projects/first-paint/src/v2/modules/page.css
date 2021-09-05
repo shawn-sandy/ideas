@@ -42,6 +42,7 @@ body {
 :where(body) main,
 :where(body) nav,
 :where(body) footer {
+  padding-block: var(--p-block);
   width: 80%;
   margin: 0 auto;
 }
@@ -52,6 +53,6 @@ body {
 :where(body) nav,
 :where(body) footer {
     width: 100%;
-    padding-inline: var(--reg);
+    padding-inline: var(--p-inline);
   }
 }
