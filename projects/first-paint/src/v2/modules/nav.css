@@ -16,7 +16,6 @@ nav h1 {
   nav {
     display: var(--nav-dp);
     align-items: var(--nav-align);
-    visibility: visible;
     justify-content: var(--jb);
     height: var(--nav-height);
   }
@@ -34,8 +33,10 @@ nav :where(> section, ul) :any-link {
 }
 
 nav img[alt] {
-  vertical-align: middle;
-  max-height: var(--xxl);
+  vertical-align: var(--vertical-align);
+  --vertical-align: var(--v-mid);
+  --max-h: var(--xxl);
+  max-height: var(--max-h);
 }
 
 nav img[alt] + * {

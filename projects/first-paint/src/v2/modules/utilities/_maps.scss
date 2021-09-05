@@ -18,6 +18,7 @@
 @mixin cp($map: null, $prefix: null) {
   @include customProperties($map: $map, $prefix: $prefix);
 }
+
 @mixin mapProps($name: null, $value: null) {
   --#{$name}: #{$value};
 }
