@@ -42,10 +42,9 @@ body {
 :where(body) main,
 :where(body) nav,
 :where(body) footer {
+  padding-block: var(--p-block);
   width: 80%;
   margin: 0 auto;
-  padding-block: var(--reg, 1rem);
-  margin-block: var(--mg, auto);
 }
 
 @media screen and (max-width: 980px) {
@@ -54,5 +53,6 @@ body {
 :where(body) nav,
 :where(body) footer {
     width: 100%;
+    padding-inline: var(--p-inline);
   }
 }
