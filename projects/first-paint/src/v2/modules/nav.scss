@@ -15,10 +15,10 @@ $render: true !default;
 }
 
 @mixin nav {
-  --nav-display: var(--display);
-  --nav-align: var(--align-item);
+  --nav-dp: var(--dp);
+  --nav-align: var(--aln);
   --nav-height: var(--4xl);
-  --justify-content: space-between;
+  --justify: var(--jst-between);
   --font-size: var(--sm);
 
   h1 {
@@ -27,16 +27,16 @@ $render: true !default;
   }
 
   @media (min-width: 980px) {
-    display: var(--nav-display);
+    display: var(--nav-dp);
     align-items: var(--nav-align);
     visibility: visible;
-    justify-content: var(--justify-content);
+    justify-content: var(--justify);
     height: var(--nav-height);
   }
 
   :where(> section, ul) {
-    display: var(--nav-display, --display);
-    align-items: var(--nav-align, --align-item);
+    display: var(--nav-dp, --dp);
+    align-items: var(--nav-align, --aln);
     gap: var(--reg);
     height: 100%;
     font-size: var(--font-size);
@@ -44,6 +44,7 @@ $render: true !default;
       font-size: var(--font-size);
     }
   }
+
   img[alt] {
     vertical-align: middle;
     + * {
