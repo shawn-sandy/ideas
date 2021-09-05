@@ -26,7 +26,7 @@
   --col: column;
   --shrink: 1;
   --grow: 1;
-  --basis: auto;
+  --basis: 30%;
   --flex: var(--grow) var(--shrink) var(--basis);
   --al: center;
   --al-start: flex-start;

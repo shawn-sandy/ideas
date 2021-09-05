@@ -31,9 +31,9 @@ $tokens: (
   "row": "row",
   "col": "column",
   // flex properties
-  "shrink": "1",
-  "grow": "1",
-  "basis": "auto",
+  "shrink": 1,
+  "grow": 1,
+  "basis": 30%,
   "flex": var(--grow) var(--shrink) var(--basis),
   // flex alignment
   "al": "center",

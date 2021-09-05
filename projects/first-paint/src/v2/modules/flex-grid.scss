@@ -18,7 +18,7 @@ $tokens: (
       &[role="list"] {
         @include maps.customProperties($tokens, "grid");
         --grid-size: 30%;
-        --flex: 1 1 30%;
+        --flex: var(--flex);
         @include flex-grid();
       }
     }

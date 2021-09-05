@@ -5,7 +5,7 @@ ul[role=list] {
   --grid-w: 30%;
   --grid-flex: 1 1 30%;
   --grid-size: 30%;
-  --flex: 1 1 30%;
+  --flex: var(--flex);
   display: var(--dp, flex);
   flex-wrap: var(--wrap, wrap);
   justify-content: var(--jst, center);
