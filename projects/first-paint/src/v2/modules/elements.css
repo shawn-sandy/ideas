@@ -2,6 +2,7 @@ html * {
   box-shadow: var(--shadow);
   text-shadow: var(--text-shadow);
 }
+
 html * p,
 html * li,
 html * div,
@@ -22,13 +23,17 @@ html * h6 {
   text-shadow: none;
   text-transform: var(--transform);
 }
+
 html :any-link {
   color: var(--cl);
 }
+
 html :any-link + * {
   margin-inline-start: var(--ml);
+  --ml: var(--rem);
 }
-html :any-link :where(span, em, strong, b) {
+
+html :any-link :where(em, strong, b) {
   border-radius: var(--rds);
   justify-content: var(--justify);
   align-items: var(--al);
@@ -45,6 +50,7 @@ html :any-link :where(span, em, strong, b) {
   --bg: whitesmoke;
   --line-height: 0;
 }
+
 html button {
   border-radius: var(--rds);
   justify-content: var(--justify);
