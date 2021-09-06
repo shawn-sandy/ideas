@@ -20,6 +20,27 @@ $tokens: ();
   * {
     box-shadow: var(--shadow);
     text-shadow: var(--text-shadow);
+
+    p,
+    li,
+    div,
+    aside,
+    blockquote,
+    em,
+    strong,
+    small,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: var(--fs);
+      color: var(--cl);
+      text-decoration: var(--text-decor);
+      text-shadow: none;
+      text-transform: var(--transform);
+    }
   }
 }
 
