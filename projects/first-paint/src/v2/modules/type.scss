@@ -17,6 +17,7 @@ $font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI",
   h4,
   h5,
   h6 {
+    --fs-weight: var(--fw-medium);
     line-height: var(--line-height);
     color: var(--cl);
     margin: var(--m);
@@ -26,28 +27,33 @@ $font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI",
   }
 
   h1 {
-    --fs: var(--xxxl);
+    --fs: var(--4xl);
     font-size: var(--fs);
   }
 
   h2 {
-    font-size: var(--xxl);
+    --fs: var(--xxxl);
+    font-size: var(--fs);
   }
 
   h3 {
-    font-size: var(--xl);
+    --fs: var(--xxl);
+    font-size: var(--fs);
   }
 
   h4 {
-    font-size: var(--lg);
+    --fs: var(--xl);
+    font-size: var(--fs);
   }
 
   h5 {
-    font-size: var(--md);
+    --fs: var(--lg);
+    font-size: var(--fs);
   }
 
   h6 {
-    font-size: var(--reg);
+    --fs: var(--md);
+    font-size: var(--fs);
   }
 
   small,

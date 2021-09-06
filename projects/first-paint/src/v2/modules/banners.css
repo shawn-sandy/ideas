@@ -15,3 +15,7 @@ header > [role=banner] {
   gap: var(--gap);
   padding-block: var(--5);
 }
+.fp-header > [role=banner] h1,
+header > [role=banner] h1 {
+  --fs-weight: var(--fw-bold);
+}

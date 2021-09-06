@@ -110,7 +110,10 @@
   --fs: 100%;
   --fs-family: -apple-system, BlinkMacSystemFont, Roboto, Segoe UI, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   --fs-d: var(--d);
-  --fs-weight: regular;
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --fw-regular: 400;
+  --fs-weight: var(--fw-regular);
   --breakpoint-lg: 1200px;
   --txt-decor: none;
   --shadow: none;
@@ -507,6 +510,10 @@ header > [role=banner] {
   gap: var(--gap);
   padding-block: var(--5);
 }
+.fp-header > [role=banner] h1,
+header > [role=banner] h1 {
+  --fs-weight: var(--fw-bold);
+}
 
 nav {
   --nav-dp: var(--dp-f);
@@ -563,6 +570,7 @@ h3,
 h4,
 h5,
 h6 {
+  --fs-weight: var(--fw-medium);
   line-height: var(--line-height);
   color: var(--cl);
   margin: var(--m);
@@ -572,28 +580,33 @@ h6 {
 }
 
 h1 {
-  --fs: var(--xxxl);
+  --fs: var(--4xl);
   font-size: var(--fs);
 }
 
 h2 {
-  font-size: var(--xxl);
+  --fs: var(--xxxl);
+  font-size: var(--fs);
 }
 
 h3 {
-  font-size: var(--xl);
+  --fs: var(--xxl);
+  font-size: var(--fs);
 }
 
 h4 {
-  font-size: var(--lg);
+  --fs: var(--xl);
+  font-size: var(--fs);
 }
 
 h5 {
-  font-size: var(--md);
+  --fs: var(--lg);
+  font-size: var(--fs);
 }
 
 h6 {
-  font-size: var(--reg);
+  --fs: var(--md);
+  font-size: var(--fs);
 }
 
 small,

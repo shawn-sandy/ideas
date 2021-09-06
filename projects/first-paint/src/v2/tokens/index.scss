@@ -128,7 +128,10 @@ $tokens: (
   "fs": 100%,
   "fs-family": $font-family,
   "fs-d": var(--d),
-  "fs-weight": "regular",
+  "fw-medium": 500,
+  "fw-bold": 700,
+  "fw-regular": 400,
+  "fs-weight": var(--fw-regular),
   // breakpoints
   "breakpoint-lg": 1200px,
   //others

@@ -34,6 +34,10 @@ $tokens: (
   border-block: var(--bd);
   gap: var(--gap);
   padding-block: var(--5);
+
+  h1 {
+    --fs-weight: var(--fw-bold);
+  }
 }
 
 @mixin header {
