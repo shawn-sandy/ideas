@@ -116,7 +116,7 @@
   --fw-regular: 400;
   --fs-weight: var(--fw-regular);
   --breakpoint-lg: 1200px;
-  --txt-decor: none;
+  --txt-decoration: none;
   --shadow: none;
   --outline: none;
   --line-height: 1.5;

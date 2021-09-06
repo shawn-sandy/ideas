@@ -112,6 +112,7 @@ $tokens: ();
     shadow: var(--shadow);
     background-color: var(--bg);
     text-align: var(--text-align);
+    text-decoration: var(--text-decoration);
   }
 }
 
@@ -174,9 +175,19 @@ $tokens: ();
   a {
     &:hover,
     &:focus {
-      --decoration: underline;
+      --text-decoration: none;
       outline: var(--outline);
       text-decoration: var(--decoration);
+    }
+  }
+
+  :any-link {
+    &:active {
+      --decoration: none;
+    }
+    &:hover,
+    :focus {
+      --decoration: underline;
     }
   }
 }

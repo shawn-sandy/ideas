@@ -92,6 +92,7 @@ video {
   shadow: var(--shadow);
   background-color: var(--bg);
   text-align: var(--text-align);
+  text-decoration: var(--text-decoration);
 }
 
 nav,
@@ -153,7 +154,16 @@ p {
 * span:focus,
 * a:hover,
 * a:focus {
-  --decoration: underline;
+  --text-decoration: none;
   outline: var(--outline);
   text-decoration: var(--decoration);
+}
+
+* :any-link:active {
+  --decoration: none;
+}
+
+* :any-link:hover,
+* :any-link :focus {
+  --decoration: underline;
 }
