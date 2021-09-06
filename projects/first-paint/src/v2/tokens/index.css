@@ -21,6 +21,8 @@
   --right: end;
   --center: center;
   --justify: justify;
+  --left: start;
+  --text-align: var(--left);
   --dp-f: flex;
   --dp-i: inline-flex;
   --dp-b: block;
@@ -102,9 +104,10 @@
   --vw-lg: 50vw;
   --vw-xl: 70vw;
   --vw-xxl: 90vw;
-  --h: var(--d);
   --min-h: var(--vh-sm);
   --max-h: var(--vh-xxl);
+  --h: var(--d);
+  --w: auto;
   --fs: 100%;
   --fs-family: -apple-system, BlinkMacSystemFont, Roboto, Segoe UI, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   --fs-d: var(--d);

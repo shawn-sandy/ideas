@@ -23,6 +23,8 @@
   --right: end;
   --center: center;
   --justify: justify;
+  --left: start;
+  --text-align: var(--left);
   --dp-f: flex;
   --dp-i: inline-flex;
   --dp-b: block;
@@ -104,9 +106,10 @@
   --vw-lg: 50vw;
   --vw-xl: 70vw;
   --vw-xxl: 90vw;
-  --h: var(--d);
   --min-h: var(--vh-sm);
   --max-h: var(--vh-xxl);
+  --h: var(--d);
+  --w: auto;
   --fs: 100%;
   --fs-family: -apple-system, BlinkMacSystemFont, Roboto, Segoe UI, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   --fs-d: var(--d);
@@ -268,7 +271,6 @@ html,
 body,
 div,
 header,
-span,
 applet,
 object,
 iframe,
@@ -354,11 +356,11 @@ video {
   border: 0;
   font: inherit;
   font-family: var(--fs-family);
-  font-size: var(--fs-size);
   vertical-align: var(--v-align);
   outline: var(--outline);
   shadow: var(--shadow);
   background-color: var(--bg);
+  text-align: var(--text-align);
 }
 
 nav,
@@ -379,6 +381,7 @@ p {
   margin: var(--m);
   display: var(--dp);
   font-size: var(--fs);
+  width: var(--w);
 }
 
 summary,
@@ -390,7 +393,6 @@ p {
 }
 
 * p,
-* a,
 * li,
 * div,
 * aside,
@@ -398,7 +400,6 @@ p {
 * em,
 * strong,
 * small,
-* span,
 * h1,
 * h2,
 * h3,
@@ -514,6 +515,21 @@ header > [role=banner] {
 header > [role=banner] h1 {
   --fs-weight: var(--fw-bold);
 }
+.fp-header > [role=banner] h1 + p,
+header > [role=banner] h1 + p {
+  --fs: var(--xl);
+}
+.fp-header > [role=banner] > div,
+header > [role=banner] > div {
+  --fw: var(--vw-medium);
+  --w: 80%;
+  --text-align: var(--center);
+}
+.fp-header > [role=banner] > div p,
+header > [role=banner] > div p {
+  --w: 100%;
+  --text-align: var(--center);
+}
 
 nav {
   --nav-dp: var(--dp-f);
@@ -577,41 +593,36 @@ h6 {
   font-weight: var(--fs-weight);
   overflow-wrap: break-word;
   word-break: var(--word-break);
+  --fx-weight: var(--fw-medium);
 }
 
 h1 {
   --fs: var(--4xl);
-  font-size: var(--fs);
 }
 
 h2 {
   --fs: var(--xxxl);
-  font-size: var(--fs);
 }
 
 h3 {
   --fs: var(--xxl);
-  font-size: var(--fs);
 }
 
 h4 {
   --fs: var(--xl);
-  font-size: var(--fs);
 }
 
 h5 {
   --fs: var(--lg);
-  font-size: var(--fs);
 }
 
 h6 {
   --fs: var(--md);
-  font-size: var(--fs);
 }
 
 small,
 time {
-  font-size: var(--xs);
+  --fs: var(--fs);
 }
 
 time {
@@ -626,7 +637,7 @@ p i {
   font-style: italic;
 }
 p strong {
-  font-weight: 500;
+  font-weight: var(--fw-medium);
 }
 
 p + p,

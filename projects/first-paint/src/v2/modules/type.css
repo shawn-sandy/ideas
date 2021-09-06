@@ -11,41 +11,36 @@ h6 {
   font-weight: var(--fs-weight);
   overflow-wrap: break-word;
   word-break: var(--word-break);
+  --fx-weight: var(--fw-medium);
 }
 
 h1 {
   --fs: var(--4xl);
-  font-size: var(--fs);
 }
 
 h2 {
   --fs: var(--xxxl);
-  font-size: var(--fs);
 }
 
 h3 {
   --fs: var(--xxl);
-  font-size: var(--fs);
 }
 
 h4 {
   --fs: var(--xl);
-  font-size: var(--fs);
 }
 
 h5 {
   --fs: var(--lg);
-  font-size: var(--fs);
 }
 
 h6 {
   --fs: var(--md);
-  font-size: var(--fs);
 }
 
 small,
 time {
-  font-size: var(--xs);
+  --fs: var(--fs);
 }
 
 time {
@@ -62,7 +57,7 @@ p i {
 }
 
 p strong {
-  font-weight: 500;
+  font-weight: var(--fw-medium);
 }
 
 p + p,

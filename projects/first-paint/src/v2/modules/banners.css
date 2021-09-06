@@ -19,3 +19,18 @@ header > [role=banner] {
 header > [role=banner] h1 {
   --fs-weight: var(--fw-bold);
 }
+.fp-header > [role=banner] h1 + p,
+header > [role=banner] h1 + p {
+  --fs: var(--xl);
+}
+.fp-header > [role=banner] > div,
+header > [role=banner] > div {
+  --fw: var(--vw-medium);
+  --w: 80%;
+  --text-align: var(--center);
+}
+.fp-header > [role=banner] > div p,
+header > [role=banner] > div p {
+  --w: 100%;
+  --text-align: var(--center);
+}

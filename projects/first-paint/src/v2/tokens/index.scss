@@ -28,6 +28,8 @@ $tokens: (
   "right": "end",
   "center": "center",
   "justify": "justify",
+  "left": "start",
+  "text-align": var(--left),
   // display properties
   "dp-f": "flex",
   "dp-i": "inline-flex",
@@ -121,9 +123,11 @@ $tokens: (
   "vw-xl": 70vw,
   "vw-xxl": 90vw,
   // Height
-  "h": var(--d),
   "min-h": var(--vh-sm),
   "max-h": var(--vh-xxl),
+  "h": var(--d),
+  // Width
+  "w": auto,
   // fonts
   "fs": 100%,
   "fs-family": $font-family,

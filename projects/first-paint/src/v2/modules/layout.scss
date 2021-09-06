@@ -22,7 +22,6 @@ $tokens: ();
   body,
   div,
   header,
-  span,
   applet,
   object,
   iframe,
@@ -108,11 +107,11 @@ $tokens: ();
     border: 0;
     font: inherit;
     font-family: var(--fs-family);
-    font-size: var(--fs-size);
     vertical-align: var(--v-align);
     outline: var(--outline);
     shadow: var(--shadow);
     background-color: var(--bg);
+    text-align: var(--text-align);
   }
 }
 
@@ -135,6 +134,7 @@ $tokens: ();
     margin: var(--m);
     display: var(--dp);
     font-size: var(--fs);
+    width: var(--w);
   }
 
   summary,
@@ -148,7 +148,6 @@ $tokens: ();
 
 @mixin layout-content() {
   p,
-  a,
   li,
   div,
   aside,
@@ -156,7 +155,6 @@ $tokens: ();
   em,
   strong,
   small,
-  span,
   h1,
   h2,
   h3,

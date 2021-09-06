@@ -37,6 +37,19 @@ $tokens: (
 
   h1 {
     --fs-weight: var(--fw-bold);
+    + p {
+      --fs: var(--xl);
+    }
+  }
+
+  > div {
+    --fw: var(--vw-medium);
+    --w: 80%;
+    --text-align: var(--center);
+    p {
+      --w: 100%;
+      --text-align: var(--center);
+    }
   }
 }
 
