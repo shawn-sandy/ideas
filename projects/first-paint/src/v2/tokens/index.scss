@@ -24,6 +24,7 @@ $tokens: (
   "v-base": "baseline",
   "v-bottom": "bottom",
   "v-text-top": "text-top",
+  "v-align": var(--v-base),
   "right": "end",
   "center": "center",
   "justify": "justify",
@@ -130,7 +131,7 @@ $tokens: (
   // breakpoints
   "breakpoint-lg": "1200px",
   //others
-  "decoration": "none",
+  "txt-decor": "none",
   "shadow": "none",
   "outline": "none",
 );

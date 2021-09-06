@@ -17,6 +17,7 @@
   --v-base: baseline;
   --v-bottom: bottom;
   --v-text-top: text-top;
+  --v-align: var(--v-base);
   --right: end;
   --center: center;
   --justify: justify;
@@ -108,7 +109,7 @@
   --fs-family: -apple-system, BlinkMacSystemFont, Roboto, Segoe UI, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   --fs-d: var(--d);
   --breakpoint-lg: 1200px;
-  --decoration: none;
+  --txt-decor: none;
   --shadow: none;
   --outline: none;
   --ban-xxl: 90vh;

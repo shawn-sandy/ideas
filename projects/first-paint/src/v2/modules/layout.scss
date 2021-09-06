@@ -7,10 +7,10 @@ $tokens: ();
 // render component mixin
 @mixin renderComponent($renderContent: $render, $className: null) {
   @if ($renderContent) {
+    @include maps.customProperties($tokens, $prefix);
+    @include layout();
+    @include layout-containers();
     * {
-      @include maps.customProperties($tokens, $prefix);
-      @include layout();
-      @include layout-containers();
       @include layout-content();
     }
   }
@@ -107,8 +107,10 @@ $tokens: ();
     padding: var(--p);
     border: 0;
     font: inherit;
-    vertical-align: baseline;
-    outline: none;
+    font-family: var(--fs-family);
+    font-size: var(--fs-size);
+    vertical-align: var(--v-align);
+    outline: var(--outline);
     shadow: var(--shadow);
     background-color: var(--bg);
   }
@@ -128,16 +130,25 @@ $tokens: ();
   figcaption,
   div,
   p {
-    // --fs: var(--rem);
+    --fs: var(--rem);
     padding: var(--p);
     margin: var(--m);
     display: var(--dp);
     font-size: var(--fs);
   }
+
+  summary,
+  details,
+  figcaption,
+  p {
+    --pt: var(--rem);
+    --pb: var(--rem);
+  }
 }
 
 @mixin layout-content() {
   p,
+  a,
   li,
   div,
   aside,
@@ -154,13 +165,21 @@ $tokens: ();
   h6 {
     font-size: var(--fs);
     color: var(--cl);
+    text-decoration: var(--text-decor);
   }
 
-  :where(p, li, div, aside, blockquote, em, strong, small, span, h1, h2, h3, h4, h5, h6)
+  :where(html) aside,
+  em,
+  strong,
+  small,
+  span,
+  a {
     &:hover,
-  &:focus {
-    outline: var(--outline);
-    text-decoration: var(--decoration);
+    &:focus {
+      --decoration: underline;
+      outline: var(--outline);
+      text-decoration: var(--decoration);
+    }
   }
 }
 

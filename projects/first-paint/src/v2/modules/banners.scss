@@ -24,6 +24,7 @@ $tokens: (
 }
 
 @mixin banner {
+  --bg: var(--off-white);
   background-color: var(--bg);
   min-height: var(--ban-md);
   display: var(--dp-f);

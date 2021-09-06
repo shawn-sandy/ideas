@@ -4,6 +4,7 @@ header {
 }
 .fp-header > [role=banner],
 header > [role=banner] {
+  --bg: var(--off-white);
   background-color: var(--bg);
   min-height: var(--ban-md);
   display: var(--dp-f);
