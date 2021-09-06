@@ -4,16 +4,17 @@ h3,
 h4,
 h5,
 h6 {
-  line-height: 1.5;
-  color: inherit;
-  margin: 0rem 0 1.05rem;
-  font-weight: 500;
+  line-height: var(--line-height);
+  color: var(--cl);
+  margin: var(--m);
+  font-weight: var(--fs-weight);
   overflow-wrap: break-word;
-  word-break: normal;
+  word-break: var(--word-break);
 }
 
 h1 {
-  font-size: var(--xxxl);
+  --fs: var(--xxxl);
+  font-size: var(--fs);
 }
 
 h2 {
@@ -58,11 +59,11 @@ p strong {
   font-weight: 500;
 }
 
-p+p,
-p+* {
+p + p,
+p + * {
   margin-top: 2rem;
 }
 
-p+* {
+p + * {
   margin-top: 1.5rem !important;
 }

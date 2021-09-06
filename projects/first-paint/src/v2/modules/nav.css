@@ -4,7 +4,7 @@ nav {
   --nav-align: var(--al);
   --nav-height: var(--4xl);
   --justify: var(--jb);
-  --font-size: var(--sm);
+  --dp: var(--nav-dp);
 }
 
 nav a,
@@ -14,7 +14,10 @@ nav li {
 }
 
 nav h1 {
-  font-size: var(--md);
+  --fs: var(--lg);
+}
+
+nav h1 a {
   margin-block-end: 0;
 }
 

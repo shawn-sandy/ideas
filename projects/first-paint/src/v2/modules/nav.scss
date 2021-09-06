@@ -19,7 +19,7 @@ $render: true !default;
   --nav-align: var(--al);
   --nav-height: var(--4xl);
   --justify: var(--jb);
-  --font-size: var(--sm);
+  --dp: var(--nav-dp);
 
   a,
   li {
@@ -28,8 +28,10 @@ $render: true !default;
   }
 
   h1 {
-    font-size: var(--md);
-    margin-block-end: 0;
+    --fs: var(--lg);
+    a {
+      margin-block-end: 0;
+    }
   }
 
   @media (min-width: 980px) {
