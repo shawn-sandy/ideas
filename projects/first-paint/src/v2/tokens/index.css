@@ -30,6 +30,7 @@
   --row: row;
   --col: column;
   --dp: var(--dp-b);
+  --direction: var("row");
   --shrink: 1;
   --grow: 1;
   --basis: 30%;
@@ -105,8 +106,8 @@
   --vw-lg: 50vw;
   --vw-xl: 70vw;
   --vw-xxl: 90vw;
-  --min-h: ;
-  --max-h: ;
+  --min-h: auto;
+  --max-h: auto;
   --h: var(--d);
   --w: auto;
   --fs: clamp(var(--s1), var(--d), var(--s4));
@@ -129,7 +130,7 @@
   --lowercase: lowercase;
   --capitalize: capitalize;
   --truncate: truncate;
-  --rds: 2.5rem;
+  --rds: 0.25rem;
   --ban-xxl: 90vh;
   --ban-xl: 80vh;
   --ban-lg: 75vh;

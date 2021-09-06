@@ -32,6 +32,7 @@
   --row: row;
   --col: column;
   --dp: var(--dp-b);
+  --direction: var("row");
   --shrink: 1;
   --grow: 1;
   --basis: 30%;
@@ -107,8 +108,8 @@
   --vw-lg: 50vw;
   --vw-xl: 70vw;
   --vw-xxl: 90vw;
-  --min-h: ;
-  --max-h: ;
+  --min-h: auto;
+  --max-h: auto;
   --h: var(--d);
   --w: auto;
   --fs: clamp(var(--s1), var(--d), var(--s4));
@@ -131,7 +132,7 @@
   --lowercase: lowercase;
   --capitalize: capitalize;
   --truncate: truncate;
-  --rds: 2.5rem;
+  --rds: 0.25rem;
   --ban-xxl: 90vh;
   --ban-xl: 80vh;
   --ban-lg: 75vh;
@@ -494,32 +495,35 @@ html * h6 {
 html :any-link {
   color: var(--cl);
 }
-html :any-link :where(span, em, strong, small) {
-  --jfy: "center";
-  --bg: transparent;
-  --dp: var(--dp-i);
-  --min-h: var(--s6);
+html :any-link + * {
+  margin-inline-start: var(--ml);
+}
+html :any-link :where(span, em, strong, b) {
   border-radius: var(--rds);
-  display: var(--dp);
-  justify-content: var(--jfy);
+  justify-content: var(--justify);
   align-items: var(--al);
   min-height: var(--min-h);
   padding: var(--p);
-  padding-inline: var(--s4);
-  --bg: var(--info);
+  display: var(--dp-i);
+  padding-inline: var(--p-inline);
+  background-color: var(--bg);
+  --jfy: "center";
+  --dp: var(--dp-i);
+  --min-h: var(--s6);
+  --p-inline: var(--s4);
+  --pl: var(--rem);
+  --bg: whitesmoke;
+  --line-height: 0;
 }
 html button {
-  --jfy: "center";
-  --bg: transparent;
-  --dp: var(--dp-i);
-  --min-h: var(--s6);
   border-radius: var(--rds);
-  display: var(--dp);
-  justify-content: var(--jfy);
+  justify-content: var(--justify);
   align-items: var(--al);
   min-height: var(--min-h);
   padding: var(--p);
-  padding-inline: var(--s4);
+  display: var(--dp-i);
+  padding-inline: var(--p-inline);
+  background-color: var(--bg);
 }
 
 @media (min-width: 980px) {
@@ -594,6 +598,9 @@ nav a,
 nav li {
   font-size: var(--fs);
   --fs: var(--sm);
+}
+nav span {
+  --bg: transparent;
 }
 nav h1 {
   --line-height: 0;

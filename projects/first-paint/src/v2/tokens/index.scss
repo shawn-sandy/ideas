@@ -38,6 +38,7 @@ $tokens: (
   "row": "row",
   "col": "column",
   "dp": var(--dp-b),
+  "direction": var("row"),
   // flex properties
   "shrink": 1,
   "grow": 1,
@@ -124,8 +125,8 @@ $tokens: (
   "vw-xl": 70vw,
   "vw-xxl": 90vw,
   // Height
-  "min-h": null,
-  "max-h": null,
+  "min-h": auto,
+  "max-h": auto,
   "h": var(--d),
   // Width
   "w": auto,
@@ -153,7 +154,7 @@ $tokens: (
   "lowercase": "lowercase",
   "capitalize": "capitalize",
   "truncate": "truncate",
-  "rds": 2.5rem,
+  "rds": 0.25rem,
 );
 
 :root {

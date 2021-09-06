@@ -25,30 +25,33 @@ html * h6 {
 html :any-link {
   color: var(--cl);
 }
-html :any-link :where(span, em, strong, small) {
-  --jfy: "center";
-  --bg: transparent;
-  --dp: var(--dp-i);
-  --min-h: var(--s6);
+html :any-link + * {
+  margin-inline-start: var(--ml);
+}
+html :any-link :where(span, em, strong, b) {
   border-radius: var(--rds);
-  display: var(--dp);
-  justify-content: var(--jfy);
+  justify-content: var(--justify);
   align-items: var(--al);
   min-height: var(--min-h);
   padding: var(--p);
-  padding-inline: var(--s4);
-  --bg: var(--info);
+  display: var(--dp-i);
+  padding-inline: var(--p-inline);
+  background-color: var(--bg);
+  --jfy: "center";
+  --dp: var(--dp-i);
+  --min-h: var(--s6);
+  --p-inline: var(--s4);
+  --pl: var(--rem);
+  --bg: whitesmoke;
+  --line-height: 0;
 }
 html button {
-  --jfy: "center";
-  --bg: transparent;
-  --dp: var(--dp-i);
-  --min-h: var(--s6);
   border-radius: var(--rds);
-  display: var(--dp);
-  justify-content: var(--jfy);
+  justify-content: var(--justify);
   align-items: var(--al);
   min-height: var(--min-h);
   padding: var(--p);
-  padding-inline: var(--s4);
+  display: var(--dp-i);
+  padding-inline: var(--p-inline);
+  background-color: var(--bg);
 }
