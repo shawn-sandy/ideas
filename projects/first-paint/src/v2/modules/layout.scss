@@ -10,10 +10,6 @@ $tokens: ();
     @include maps.customProperties($tokens, $prefix);
     @include layout();
     @include layout-containers();
-
-    html {
-      @include layout-content();
-    }
   }
 }
 
@@ -147,46 +143,6 @@ $tokens: ();
     --pt: var(--rem);
     --pb: var(--rem);
   }
-}
-
-@mixin layout-content() {
-  p,
-  li,
-  div,
-  aside,
-  blockquote,
-  em,
-  strong,
-  small,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-size: var(--fs);
-    color: var(--cl);
-    text-decoration: var(--text-decor);
-    text-shadow: none;
-    text-transform: var(--transform);
-  }
-
-  // :where(em, strong, small, span, aside, a) &:hover,
-  // &:focus {
-  //   --text-decoration: none;
-  //   outline: var(--outline);
-  //   text-decoration: var(--decoration);
-  // }
-
-  // :any-link {
-  //   &:active {
-  //     --decoration: none;
-  //   }
-  //   &:hover,
-  //   &:focus {
-  //     --decoration: underline;
-  //   }
-  // }
 }
 
 @mixin config($_color: null, $_background-color: null) {

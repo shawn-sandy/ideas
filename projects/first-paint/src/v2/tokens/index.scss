@@ -54,6 +54,7 @@ $tokens: (
   "js": "flex-start",
   "je": "flex-end",
   "jb": "space-between",
+  "jfy": var(--jc),
   "wrap": "wrap",
   "gap": 1rem,
   "gap-sm": var(--sm),
@@ -152,6 +153,7 @@ $tokens: (
   "lowercase": "lowercase",
   "capitalize": "capitalize",
   "truncate": "truncate",
+  "rds": 2.5rem,
 );
 
 :root {

@@ -43,6 +43,7 @@
   --js: flex-start;
   --je: flex-end;
   --jb: space-between;
+  --jfy: var(--jc);
   --wrap: wrap;
   --gap: 1rem;
   --gap-sm: var(--sm);
@@ -128,6 +129,7 @@
   --lowercase: lowercase;
   --capitalize: capitalize;
   --truncate: truncate;
+  --rds: 2.5rem;
   --ban-xxl: 90vh;
   --ban-xl: 80vh;
   --ban-lg: 75vh;

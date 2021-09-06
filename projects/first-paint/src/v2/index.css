@@ -45,6 +45,7 @@
   --js: flex-start;
   --je: flex-end;
   --jb: space-between;
+  --jfy: var(--jc);
   --wrap: wrap;
   --gap: 1rem;
   --gap-sm: var(--sm);
@@ -130,6 +131,7 @@
   --lowercase: lowercase;
   --capitalize: capitalize;
   --truncate: truncate;
+  --rds: 2.5rem;
   --ban-xxl: 90vh;
   --ban-xl: 80vh;
   --ban-lg: 75vh;
@@ -401,27 +403,6 @@ p {
   --pb: var(--rem);
 }
 
-html p,
-html li,
-html div,
-html aside,
-html blockquote,
-html em,
-html strong,
-html small,
-html h1,
-html h2,
-html h3,
-html h4,
-html h5,
-html h6 {
-  font-size: var(--fs);
-  color: var(--cl);
-  text-decoration: var(--text-decor);
-  text-shadow: none;
-  text-transform: var(--transform);
-}
-
 * {
   outline: none;
   box-sizing: border-box;
@@ -471,7 +452,7 @@ body {
 :where(body) > section,
 :where(body) main,
 :where(body) nav,
-:where(body) footer {
+:where(body) footer[role=contentinfo] {
   padding-block: var(--p-block);
   width: 80%;
   margin: 0 auto;
@@ -480,7 +461,7 @@ body {
   :where(body) > section,
 :where(body) main,
 :where(body) nav,
-:where(body) footer {
+:where(body) footer[role=contentinfo] {
     width: 100%;
     padding-inline: var(--p-inline);
   }
@@ -509,6 +490,9 @@ html * h6 {
   text-decoration: var(--text-decor);
   text-shadow: none;
   text-transform: var(--transform);
+}
+html :any-link {
+  color: var(--cl);
 }
 
 @media (min-width: 980px) {

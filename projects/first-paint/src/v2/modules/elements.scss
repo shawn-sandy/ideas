@@ -18,9 +18,6 @@ $tokens: ();
 @mixin elements {
   // TODO add mixin code
   * {
-    box-shadow: var(--shadow);
-    text-shadow: var(--text-shadow);
-
     p,
     li,
     div,
@@ -41,10 +38,22 @@ $tokens: ();
       text-shadow: none;
       text-transform: var(--transform);
     }
+    box-shadow: var(--shadow);
+    text-shadow: var(--text-shadow);
+  }
+
+  :any-link {
+    color: var(--cl);
   }
 }
 
-@mixin elements-element {
+@mixin button-element {
+  --bg: transparent;
+  --dp: var(--dp-i);
+  background-color: var(--bg);
+  border-radius: var(--rds);
+  display: var(--dp);
+  justify-content: var(--jfy);
 }
 
 @mixin config($_color: null, $_background-color: null) {

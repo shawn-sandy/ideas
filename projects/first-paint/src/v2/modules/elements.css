@@ -22,3 +22,6 @@ html * h6 {
   text-shadow: none;
   text-transform: var(--transform);
 }
+html :any-link {
+  color: var(--cl);
+}

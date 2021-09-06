@@ -48,7 +48,7 @@ body {
 :where(body) > section,
 :where(body) main,
 :where(body) nav,
-:where(body) footer {
+:where(body) footer[role=contentinfo] {
   padding-block: var(--p-block);
   width: 80%;
   margin: 0 auto;
@@ -58,7 +58,7 @@ body {
   :where(body) > section,
 :where(body) main,
 :where(body) nav,
-:where(body) footer {
+:where(body) footer[role=contentinfo] {
     width: 100%;
     padding-inline: var(--p-inline);
   }
