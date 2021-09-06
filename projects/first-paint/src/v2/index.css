@@ -538,6 +538,20 @@ nav {
   --justify: var(--jb);
   --dp: var(--nav-dp);
 }
+@media (min-width: 980px) {
+  nav {
+    display: var(--nav-dp);
+    align-items: var(--align-items);
+    justify-content: var(--jb);
+    height: var(--nav-height);
+  }
+}
+@media (max-width: 780px) {
+  nav {
+    flex-direction: var(--col);
+    justify-content: var(--jc);
+  }
+}
 nav a,
 nav li {
   font-size: var(--fs);
@@ -549,14 +563,6 @@ nav h1 {
 nav h1 a {
   --fs: var(--md);
   margin-block-end: 0;
-}
-@media (min-width: 980px) {
-  nav {
-    display: var(--nav-dp);
-    align-items: var(--align-items);
-    justify-content: var(--jb);
-    height: var(--nav-height);
-  }
 }
 nav :where(> section, ul) {
   display: var(--nav-dp, --dp);
