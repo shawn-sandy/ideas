@@ -44,16 +44,29 @@ $tokens: ();
 
   :any-link {
     color: var(--cl);
+    :where(span, em, strong, small) {
+      @include button-element();
+      --bg: var(--info);
+    }
+  }
+
+  button {
+    @include button-element();
   }
 }
 
 @mixin button-element {
+  --jfy: "center";
   --bg: transparent;
   --dp: var(--dp-i);
-  background-color: var(--bg);
+  --min-h: var(--s6);
   border-radius: var(--rds);
   display: var(--dp);
   justify-content: var(--jfy);
+  align-items: var(--al);
+  min-height: var(--min-h);
+  padding: var(--p);
+  padding-inline: var(--s4);
 }
 
 @mixin config($_color: null, $_background-color: null) {

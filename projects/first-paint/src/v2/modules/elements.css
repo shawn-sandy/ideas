@@ -25,3 +25,30 @@ html * h6 {
 html :any-link {
   color: var(--cl);
 }
+html :any-link :where(span, em, strong, small) {
+  --jfy: "center";
+  --bg: transparent;
+  --dp: var(--dp-i);
+  --min-h: var(--s6);
+  border-radius: var(--rds);
+  display: var(--dp);
+  justify-content: var(--jfy);
+  align-items: var(--al);
+  min-height: var(--min-h);
+  padding: var(--p);
+  padding-inline: var(--s4);
+  --bg: var(--info);
+}
+html button {
+  --jfy: "center";
+  --bg: transparent;
+  --dp: var(--dp-i);
+  --min-h: var(--s6);
+  border-radius: var(--rds);
+  display: var(--dp);
+  justify-content: var(--jfy);
+  align-items: var(--al);
+  min-height: var(--min-h);
+  padding: var(--p);
+  padding-inline: var(--s4);
+}

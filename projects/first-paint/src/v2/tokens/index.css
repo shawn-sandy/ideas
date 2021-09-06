@@ -105,8 +105,8 @@
   --vw-lg: 50vw;
   --vw-xl: 70vw;
   --vw-xxl: 90vw;
-  --min-h: var(--vh-sm);
-  --max-h: var(--vh-xxl);
+  --min-h: ;
+  --max-h: ;
   --h: var(--d);
   --w: auto;
   --fs: clamp(var(--s1), var(--d), var(--s4));

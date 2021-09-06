@@ -124,8 +124,8 @@ $tokens: (
   "vw-xl": 70vw,
   "vw-xxl": 90vw,
   // Height
-  "min-h": var(--vh-sm),
-  "max-h": var(--vh-xxl),
+  "min-h": null,
+  "max-h": null,
   "h": var(--d),
   // Width
   "w": auto,
