@@ -30,6 +30,7 @@ html :any-link {
 
 html :any-link + * {
   margin-inline-start: var(--ml);
+  --ml: var(--rem);
 }
 
 html :any-link :where(em, strong, b) {
