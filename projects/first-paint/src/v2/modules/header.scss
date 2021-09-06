@@ -26,7 +26,7 @@ $tokens: (
 @mixin banner {
   background-color: var(--bg);
   min-height: var(--ban-md);
-  display: var(--dp);
+  display: var(--dp-f);
   align-items: var(--al);
   justify-content: var(--jc);
   flex-direction: var(--row);

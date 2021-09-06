@@ -29,7 +29,7 @@ $tokens: (
 }
 
 @mixin flex-grid {
-  display: var(--dp, flex);
+  display: var(--dp-f, flex);
   flex-wrap: var(--wrap, wrap);
   justify-content: var(--jb, space-between);
   gap: var(--gap, 0);

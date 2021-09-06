@@ -15,7 +15,7 @@ $render: true !default;
 }
 
 @mixin nav {
-  --nav-dp: var(--dp);
+  --nav-dp: var(--dp-f);
   --nav-align: var(--al);
   --nav-height: var(--4xl);
   --justify: var(--jb);
@@ -48,6 +48,7 @@ $render: true !default;
     vertical-align: var(--vertical-align);
     --vertical-align: var(--v-mid);
     + * {
+      --ml: var(--s1);
       margin-left: var(--ml);
     }
     --max-h: var(--xxl);

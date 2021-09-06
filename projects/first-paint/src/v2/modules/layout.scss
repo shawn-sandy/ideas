@@ -1,0 +1,145 @@
+// set variables
+// TODO Search and replace name with CSS tag/element name
+@use './utilities/maps';
+$render: true !default;
+$prefix: "layout";
+$tokens: ();
+// render component mixin
+@mixin renderComponent($renderContent: $render, $className: null) {
+  @if ($renderContent) {
+    #{$className,
+    $className,
+    ".fp-layout"},
+    layout {
+      @include maps.customProperties($tokens, $prefix);
+      @include layout();
+    }
+  }
+}
+
+@mixin layout {
+  // TODO add mixin code
+  html,
+  body,
+  div,
+  header,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  embed,
+  figure,
+  figcaption,
+  footer,
+  header,
+  hgroup,
+  menu,
+  main,
+  nav,
+  output,
+  ruby,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video {
+    margin: var(--m);
+    padding: var(--p);
+    border: 0;
+    font-size: var(--fs);
+    font: inherit;
+    vertical-align: baseline;
+    outline: none;
+  }
+}
+
+@mixin layout-containers {
+  nav,
+  header,
+  main,
+  footer,
+  section,
+  article,
+  aside,
+  details,
+  summary,
+  figure,
+  figcaption,
+  div,
+  p {
+    padding: var(--p);
+    margin: var(--m);
+    display: var(--dp);
+    font-size: var(--fs);
+  }
+}
+
+@mixin content() {
+}
+
+@mixin config($_color: null, $_background-color: null) {
+  $layout-color: $_color !global;
+  $layout-background-color: $_background-color !global;
+}
+
+// include render component
+@include renderComponent();

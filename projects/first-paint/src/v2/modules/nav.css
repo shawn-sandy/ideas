@@ -1,6 +1,6 @@
 @import "../modules/utilities/functions" as fn;
 nav {
-  --nav-dp: var(--dp);
+  --nav-dp: var(--dp-f);
   --nav-align: var(--al);
   --nav-height: var(--4xl);
   --justify: var(--jb);
@@ -40,5 +40,6 @@ nav img[alt] {
 }
 
 nav img[alt] + * {
+  --ml: var(--s1);
   margin-left: var(--ml);
 }

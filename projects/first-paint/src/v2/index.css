@@ -6,10 +6,11 @@
   --cl: hsl(0, 0%, 8%);
   --cl-dark: var(color);
   --cl-light: #fff;
-  --bd-w: thin;
-  --bd-cl: lightgray;
-  --bd-style: solid;
-  --bd: var(--bd-w) var(--bd-style) var(--bd-cl);
+  --brd-w: thin;
+  --brd-cl: lightgray;
+  --brd-style: solid;
+  --brd-radius: 0;
+  --brd-1: var(--bd-w) var(--bd-style) var(--bd-cl);
   --bd-cl-dark: black;
   --bd-cl-light: white;
   --v-mid: middle;
@@ -20,12 +21,13 @@
   --right: end;
   --center: center;
   --justify: justify;
-  --dp: flex;
+  --dp-f: flex;
   --dp-i: inline-flex;
   --dp-b: block;
   --drt: row;
   --row: row;
   --col: column;
+  --dp: var(--dp-b);
   --shrink: 1;
   --grow: 1;
   --basis: 30%;
@@ -56,33 +58,33 @@
   --text: var(dark);
   --default: 1rem;
   --0: 0;
-  --1: 0.75rem;
-  --2: 0.875rem;
-  --3: 1.3125rem;
-  --4: 1.75rem;
-  --5: 1.875rem;
-  --6: 3rem;
-  --7: 3.75rem;
-  --8: 4.5rem;
-  --9: 5rem;
-  --10: 7.5rem;
+  --s1: 0.75rem;
+  --s2: 0.875rem;
+  --s3: 1.3125rem;
+  --s4: 1.75rem;
+  --s5: 1.875rem;
+  --s6: 3rem;
+  --s7: 3.75rem;
+  --s8: 4.5rem;
+  --s9: 5rem;
+  --s10: 7.5rem;
   --rem: var(--default);
   --none: 0;
-  --xs: var(--1);
-  --sm: var(--2);
-  --md: var(--3);
-  --lg: var(--4);
-  --xl: var(--5);
-  --xxl: var(--6);
-  --xxxl: var(--7);
-  --4xl: var(--8);
-  --5xl: var(--9);
-  --6xl: var(--10);
+  --xs: var(--s1);
+  --sm: var(--s2);
+  --md: var(--s3);
+  --lg: var(--s4);
+  --xl: var(--s5);
+  --xxl: var(--s6);
+  --xxxl: var(--s7);
+  --4xl: var(--s8);
+  --5xl: var(--s9);
+  --6xl: var(--s10);
   --d: var(--default);
-  --mt: var(--default);
-  --mb: var(--default);
-  --ml: var(--default);
-  --mr: var(--default);
+  --mt: var(--0);
+  --mb: var(--0);
+  --ml: var(--0);
+  --mr: var(--0);
   --m: var(--mb) var(--mt) var(--ml) var(--mr);
   --pt: var(--default);
   --pb: var(--default);
@@ -104,6 +106,7 @@
   --h: var(--d);
   --min-h: var(--vh-sm);
   --max-h: var(--vh-xxl);
+  --fs: 100%;
   --breakpoint-lg: 1200px;
   --ban-xxl: 90vh;
   --ban-xl: 80vh;
@@ -223,7 +226,7 @@ section {
 }
 
 body {
-  line-height: 1;
+  line-height: 1.5;
 }
 
 ol,
@@ -323,7 +326,7 @@ header {
 header > [role=banner] {
   background-color: var(--bg);
   min-height: var(--ban-md);
-  display: var(--dp);
+  display: var(--dp-f);
   align-items: var(--al);
   justify-content: var(--jc);
   flex-direction: var(--row);
@@ -333,7 +336,7 @@ header > [role=banner] {
 }
 
 nav {
-  --nav-dp: var(--dp);
+  --nav-dp: var(--dp-f);
   --nav-align: var(--al);
   --nav-height: var(--4xl);
   --justify: var(--jb);
@@ -368,6 +371,7 @@ nav img[alt] {
   max-height: var(--max-h);
 }
 nav img[alt] + * {
+  --ml: var(--s1);
   margin-left: var(--ml);
 }
 
@@ -446,7 +450,7 @@ ul[role=list] {
   --grid-flex: 1 1 30%;
   --grid-size: 30%;
   --flex: var(--flex);
-  display: var(--dp, flex);
+  display: var(--dp-f, flex);
   flex-wrap: var(--wrap, wrap);
   justify-content: var(--jb, space-between);
   gap: var(--gap, 0);
