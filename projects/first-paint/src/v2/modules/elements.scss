@@ -44,9 +44,18 @@ $tokens: ();
 
   :any-link {
     color: var(--cl);
-    :where(span, em, strong, b) {
+    + * {
+      margin-inline-start: var(--ml);
+    }
+    :where(em, strong, b) {
       @include button-element();
-      --bg: var(--info);
+      --jfy: "center";
+      --dp: var(--dp-i);
+      --min-h: var(--s6);
+      --p-inline: var(--s4);
+      --pl: var(--rem);
+      --bg: whitesmoke;
+      --line-height: 0;
     }
   }
 
@@ -56,17 +65,14 @@ $tokens: ();
 }
 
 @mixin button-element {
-  --jfy: "center";
-  --bg: transparent;
-  --dp: var(--dp-i);
-  --min-h: var(--s6);
   border-radius: var(--rds);
-  display: var(--dp);
-  justify-content: var(--jfy);
+  justify-content: var(--justify);
   align-items: var(--al);
   min-height: var(--min-h);
   padding: var(--p);
-  padding-inline: var(--s4);
+  display: var(--dp-i);
+  padding-inline: var(--p-inline);
+  background-color: var(--bg);
 }
 
 @mixin config($_color: null, $_background-color: null) {

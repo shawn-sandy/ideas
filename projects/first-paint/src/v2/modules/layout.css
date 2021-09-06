@@ -80,7 +80,8 @@ summary,
 time,
 mark,
 audio,
-video {
+video,
+button {
   --bg: transparent;
   margin: var(--m);
   padding: var(--p);

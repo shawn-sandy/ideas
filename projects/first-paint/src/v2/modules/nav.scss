@@ -37,7 +37,9 @@ $render: true !default;
     font-size: var(--fs);
     --fs: var(--sm);
   }
-
+  span {
+    --bg: transparent;
+  }
   h1 {
     --line-height: 0;
     a {
