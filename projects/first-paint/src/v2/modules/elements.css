@@ -1,0 +1,4 @@
+html * {
+  box-shadow: var(--shadow);
+  text-shadow: var(--text-shadow);
+}

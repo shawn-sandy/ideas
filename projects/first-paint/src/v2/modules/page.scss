@@ -34,6 +34,9 @@ $font-family: var(--fs-family) !default;
     font-size: clamp(86%, 96%, 120%);
     font-family: var(--font-family);
     line-height: 1.5;
+    @media (min-width: 680px) {
+      font-size: 95%;
+    }
     @media (min-width: 980px) {
       font-size: 98%;
     }

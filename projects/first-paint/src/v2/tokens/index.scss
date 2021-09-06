@@ -129,7 +129,8 @@ $tokens: (
   // Width
   "w": auto,
   // fonts
-  "fs": 100%,
+  "fs": clamp(var(--s1), var(--d), var(--s4)),
+  // font-size: clamp(1rem, 2.5vw, 2rem);
   "fs-family": $font-family,
   "fs-d": var(--d),
   "fw-medium": 500,
@@ -140,10 +141,17 @@ $tokens: (
   "breakpoint-lg": 1200px,
   //others
   "txt-decoration": "none",
-  "shadow": "none",
   "outline": "none",
   "line-height": 1.5,
   "word-break": normal,
+  "shadow": none,
+  "text-shadow": none,
+  "shadow-sm": 2px 4px 3px rgba(0, 0, 0, 0.2),
+  "transform": none,
+  "uppercase": "uppercase",
+  "lowercase": "lowercase",
+  "capitalize": "capitalize",
+  "truncate": "truncate",
 );
 
 :root {

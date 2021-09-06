@@ -108,7 +108,7 @@
   --max-h: var(--vh-xxl);
   --h: var(--d);
   --w: auto;
-  --fs: 100%;
+  --fs: clamp(var(--s1), var(--d), var(--s4));
   --fs-family: -apple-system, BlinkMacSystemFont, Roboto, Segoe UI, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   --fs-d: var(--d);
   --fw-medium: 500;
@@ -117,10 +117,17 @@
   --fs-weight: var(--fw-regular);
   --breakpoint-lg: 1200px;
   --txt-decoration: none;
-  --shadow: none;
   --outline: none;
   --line-height: 1.5;
   --word-break: normal;
+  --shadow: none;
+  --text-shadow: none;
+  --shadow-sm: 2px 4px 3px rgba(0, 0, 0, 0.2);
+  --transform: none;
+  --uppercase: uppercase;
+  --lowercase: lowercase;
+  --capitalize: capitalize;
+  --truncate: truncate;
   --ban-xxl: 90vh;
   --ban-xl: 80vh;
   --ban-lg: 75vh;

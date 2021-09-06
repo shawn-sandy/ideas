@@ -1,0 +1,35 @@
+// set variables
+// TODO Search and replace name with CSS tag/element name
+@use './utilities/maps';
+$render: true !default;
+$prefix: "layout";
+$tokens: ();
+
+// render component mixin
+@mixin renderComponent($renderContent: $render, $className: null) {
+  @if ($renderContent) {
+    html {
+      @include maps.customProperties($tokens, $prefix);
+      @include elements();
+    }
+  }
+}
+
+@mixin elements {
+  // TODO add mixin code
+  * {
+    box-shadow: var(--shadow);
+    text-shadow: var(--text-shadow);
+  }
+}
+
+@mixin elements-element {
+}
+
+@mixin config($_color: null, $_background-color: null) {
+  $elements-color: $_color !global;
+  $elements-background-color: $_background-color !global;
+}
+
+// include render component
+@include renderComponent();

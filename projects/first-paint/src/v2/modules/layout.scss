@@ -10,7 +10,8 @@ $tokens: ();
     @include maps.customProperties($tokens, $prefix);
     @include layout();
     @include layout-containers();
-    * {
+
+    html {
       @include layout-content();
     }
   }
@@ -109,10 +110,11 @@ $tokens: ();
     font-family: var(--fs-family);
     vertical-align: var(--v-align);
     outline: var(--outline);
-    shadow: var(--shadow);
     background-color: var(--bg);
     text-align: var(--text-align);
     text-decoration: var(--text-decoration);
+    text-shadow: var(--text-shadow);
+    box-shadow: var(--box-shadow);
   }
 }
 
@@ -165,31 +167,26 @@ $tokens: ();
     font-size: var(--fs);
     color: var(--cl);
     text-decoration: var(--text-decor);
+    text-shadow: none;
+    text-transform: var(--transform);
   }
 
-  :where(html) aside,
-  em,
-  strong,
-  small,
-  span,
-  a {
-    &:hover,
-    &:focus {
-      --text-decoration: none;
-      outline: var(--outline);
-      text-decoration: var(--decoration);
-    }
-  }
+  // :where(em, strong, small, span, aside, a) &:hover,
+  // &:focus {
+  //   --text-decoration: none;
+  //   outline: var(--outline);
+  //   text-decoration: var(--decoration);
+  // }
 
-  :any-link {
-    &:active {
-      --decoration: none;
-    }
-    &:hover,
-    :focus {
-      --decoration: underline;
-    }
-  }
+  // :any-link {
+  //   &:active {
+  //     --decoration: none;
+  //   }
+  //   &:hover,
+  //   &:focus {
+  //     --decoration: underline;
+  //   }
+  // }
 }
 
 @mixin config($_color: null, $_background-color: null) {

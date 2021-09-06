@@ -12,6 +12,7 @@ h6 {
   overflow-wrap: break-word;
   word-break: var(--word-break);
   --fx-weight: var(--fw-medium);
+  text-shadow: var(--shadow);
 }
 
 h1 {

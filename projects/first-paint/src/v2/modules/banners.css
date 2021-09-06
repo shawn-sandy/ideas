@@ -18,6 +18,7 @@ header > [role=banner] {
 .fp-header > [role=banner] h1,
 header > [role=banner] h1 {
   --fs-weight: var(--fw-bold);
+  text-shadow: var(--text-shadow-sm);
 }
 .fp-header > [role=banner] h1 + p,
 header > [role=banner] h1 + p {

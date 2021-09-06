@@ -110,7 +110,7 @@
   --max-h: var(--vh-xxl);
   --h: var(--d);
   --w: auto;
-  --fs: 100%;
+  --fs: clamp(var(--s1), var(--d), var(--s4));
   --fs-family: -apple-system, BlinkMacSystemFont, Roboto, Segoe UI, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   --fs-d: var(--d);
   --fw-medium: 500;
@@ -119,10 +119,17 @@
   --fs-weight: var(--fw-regular);
   --breakpoint-lg: 1200px;
   --txt-decoration: none;
-  --shadow: none;
   --outline: none;
   --line-height: 1.5;
   --word-break: normal;
+  --shadow: none;
+  --text-shadow: none;
+  --shadow-sm: 2px 4px 3px rgba(0, 0, 0, 0.2);
+  --transform: none;
+  --uppercase: uppercase;
+  --lowercase: lowercase;
+  --capitalize: capitalize;
+  --truncate: truncate;
   --ban-xxl: 90vh;
   --ban-xl: 80vh;
   --ban-lg: 75vh;
@@ -358,10 +365,11 @@ video {
   font-family: var(--fs-family);
   vertical-align: var(--v-align);
   outline: var(--outline);
-  shadow: var(--shadow);
   background-color: var(--bg);
   text-align: var(--text-align);
   text-decoration: var(--text-decoration);
+  text-shadow: var(--text-shadow);
+  box-shadow: var(--box-shadow);
 }
 
 nav,
@@ -393,45 +401,25 @@ p {
   --pb: var(--rem);
 }
 
-* p,
-* li,
-* div,
-* aside,
-* blockquote,
-* em,
-* strong,
-* small,
-* h1,
-* h2,
-* h3,
-* h4,
-* h5,
-* h6 {
+html p,
+html li,
+html div,
+html aside,
+html blockquote,
+html em,
+html strong,
+html small,
+html h1,
+html h2,
+html h3,
+html h4,
+html h5,
+html h6 {
   font-size: var(--fs);
   color: var(--cl);
   text-decoration: var(--text-decor);
-}
-* :where(html) aside:hover, * :where(html) aside:focus,
-* em:hover,
-* em:focus,
-* strong:hover,
-* strong:focus,
-* small:hover,
-* small:focus,
-* span:hover,
-* span:focus,
-* a:hover,
-* a:focus {
-  --text-decoration: none;
-  outline: var(--outline);
-  text-decoration: var(--decoration);
-}
-* :any-link:active {
-  --decoration: none;
-}
-* :any-link:hover,
-* :any-link :focus {
-  --decoration: underline;
+  text-shadow: none;
+  text-transform: var(--transform);
 }
 
 * {
@@ -452,6 +440,11 @@ html {
   font-size: clamp(86%, 96%, 120%);
   font-family: var(--font-family);
   line-height: 1.5;
+}
+@media (min-width: 680px) {
+  html {
+    font-size: 95%;
+  }
 }
 @media (min-width: 980px) {
   html {
@@ -522,6 +515,7 @@ header > [role=banner] {
 .fp-header > [role=banner] h1,
 header > [role=banner] h1 {
   --fs-weight: var(--fw-bold);
+  text-shadow: var(--text-shadow-sm);
 }
 .fp-header > [role=banner] h1 + p,
 header > [role=banner] h1 + p {
@@ -608,6 +602,7 @@ h6 {
   overflow-wrap: break-word;
   word-break: var(--word-break);
   --fx-weight: var(--fw-medium);
+  text-shadow: var(--shadow);
 }
 
 h1 {
