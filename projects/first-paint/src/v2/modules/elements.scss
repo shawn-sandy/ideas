@@ -46,8 +46,9 @@ $tokens: ();
     color: var(--cl);
     + * {
       margin-inline-start: var(--ml);
+      --ml: var(--s4);
     }
-    :where(em, strong, b) {
+    :where(em, strong, b, span) {
       @include button-element();
       --jfy: "center";
       --dp: var(--dp-i);

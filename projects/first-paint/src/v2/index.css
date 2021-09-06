@@ -497,8 +497,9 @@ html :any-link {
 }
 html :any-link + * {
   margin-inline-start: var(--ml);
+  --ml: var(--s4);
 }
-html :any-link :where(span, em, strong, b) {
+html :any-link :where(em, strong, b, span) {
   border-radius: var(--rds);
   justify-content: var(--justify);
   align-items: var(--al);
