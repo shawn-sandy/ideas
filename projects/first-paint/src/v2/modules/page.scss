@@ -5,9 +5,7 @@ $render-page: true !default;
 $body-background-color: white;
 $body-color: var(--color, #292929);
 $body-width: 80%;
-$font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
-  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family: var(--fs-family) !default;
 
 // render component mixin
 @mixin renderComponent($renderContent: $render-page, $className: null) {
@@ -25,6 +23,7 @@ $font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
     &:after {
       box-sizing: border-box;
     }
+    color: var(--cl);
   }
   html {
     scroll-behavior: smooth;
@@ -33,6 +32,7 @@ $font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     font-size: clamp(86%, 96%, 120%);
+    font-family: var(--font-family);
     line-height: 1.5;
     @media (min-width: 980px) {
       font-size: 98%;

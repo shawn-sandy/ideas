@@ -6,11 +6,12 @@
   --cl: hsl(0, 0%, 8%);
   --cl-dark: var(color);
   --cl-light: #fff;
-  --brd-w: thin;
-  --brd-cl: lightgray;
-  --brd-style: solid;
-  --brd-radius: 0;
-  --brd-1: var(--bd-w) var(--bd-style) var(--bd-cl);
+  --border: 0;
+  --border-w: thin;
+  --border-cl: lightgray;
+  --border-style: solid;
+  --border-radius: 0;
+  --border-1: var(--border-w) var(--border-style) var(--border-cl);
   --bd-cl-dark: black;
   --bd-cl-light: white;
   --v-mid: middle;
@@ -56,7 +57,7 @@
   --danger: hsl(348, 98%, 38%);
   --highlight: hsl(54, 100%, 90%);
   --text: var(dark);
-  --default: 1rem;
+  --rem: 1rem;
   --0: 0;
   --s1: 0.75rem;
   --s2: 0.875rem;
@@ -68,7 +69,6 @@
   --s8: 4.5rem;
   --s9: 5rem;
   --s10: 7.5rem;
-  --rem: var(--default);
   --none: 0;
   --xs: var(--s1);
   --sm: var(--s2);
@@ -80,19 +80,19 @@
   --4xl: var(--s8);
   --5xl: var(--s9);
   --6xl: var(--s10);
-  --d: var(--default);
+  --d: var(--rem);
   --mt: var(--0);
   --mb: var(--0);
   --ml: var(--0);
   --mr: var(--0);
   --m: var(--mb) var(--mt) var(--ml) var(--mr);
-  --pt: var(--default);
-  --pb: var(--default);
-  --pl: var(--default);
-  --pr: var(--default);
+  --pt: var(--0);
+  --pb: var(--0);
+  --pl: var(--0);
+  --pr: var(--0);
   --p: var(--pt) var(--pb) var(--pl) var(--pr);
-  --p-inline: var(--default);
-  --p-block: var(--default);
+  --p-inline: var(--rem);
+  --p-block: var(--rem);
   --vh-sm: 10vh;
   --vh-md: 25vh;
   --vh-lg: 50vh;
@@ -107,7 +107,12 @@
   --min-h: var(--vh-sm);
   --max-h: var(--vh-xxl);
   --fs: 100%;
+  --fs-family: -apple-system, BlinkMacSystemFont, Roboto, Segoe UI, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --fs-d: var(--d);
   --breakpoint-lg: 1200px;
+  --decoration: none;
+  --shadow: none;
+  --outline: none;
   --ban-xxl: 90vh;
   --ban-xl: 80vh;
   --ban-lg: 75vh;
@@ -252,9 +257,145 @@ table {
   border-spacing: 0;
 }
 
+* html,
+* body,
+* div,
+* header,
+* span,
+* applet,
+* object,
+* iframe,
+* h1,
+* h2,
+* h3,
+* h4,
+* h5,
+* h6,
+* p,
+* blockquote,
+* pre,
+* a,
+* abbr,
+* acronym,
+* address,
+* big,
+* cite,
+* code,
+* del,
+* dfn,
+* em,
+* img,
+* ins,
+* kbd,
+* q,
+* s,
+* samp,
+* small,
+* strike,
+* strong,
+* sub,
+* sup,
+* tt,
+* var,
+* b,
+* u,
+* i,
+* center,
+* dl,
+* dt,
+* dd,
+* ol,
+* ul,
+* li,
+* fieldset,
+* form,
+* label,
+* legend,
+* table,
+* caption,
+* tbody,
+* tfoot,
+* thead,
+* tr,
+* th,
+* td,
+* p,
+* article,
+* aside,
+* canvas,
+* details,
+* embed,
+* figure,
+* figcaption,
+* footer,
+* header,
+* hgroup,
+* menu,
+* main,
+* nav,
+* output,
+* ruby,
+* section,
+* summary,
+* time,
+* mark,
+* audio,
+* video {
+  --bg: transparent;
+  margin: var(--m);
+  padding: var(--p);
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+  shadow: var(--shadow);
+  background-color: var(--bg);
+}
+* nav,
+* header,
+* main,
+* footer,
+* section,
+* article,
+* aside,
+* details,
+* summary,
+* figure,
+* figcaption,
+* div,
+* p {
+  padding: var(--p);
+  margin: var(--m);
+  display: var(--dp);
+  font-size: var(--fs);
+}
+* p,
+* li,
+* div,
+* aside,
+* blockquote,
+* em,
+* strong,
+* small,
+* span,
+* h1,
+* h2,
+* h3,
+* h4,
+* h5,
+* h6 {
+  font-size: var(--fs);
+  color: var(--cl);
+}
+:where(p, li, div, aside, blockquote, em, strong, small, span, h1, h2, h3, h4, h5, h6) *:hover, *:focus {
+  outline: var(--outline);
+  text-decoration: var(--decoration);
+}
+
 * {
   outline: none;
   box-sizing: border-box;
+  color: var(--cl);
 }
 *:before, *:after {
   box-sizing: border-box;
@@ -267,6 +408,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   font-size: clamp(86%, 96%, 120%);
+  font-family: var(--font-family);
   line-height: 1.5;
 }
 @media (min-width: 980px) {
@@ -286,7 +428,7 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--fs-family);
   background-color: white;
   color: var(--color, #292929);
 }

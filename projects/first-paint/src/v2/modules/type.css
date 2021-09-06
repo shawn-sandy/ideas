@@ -58,11 +58,11 @@ p strong {
   font-weight: 500;
 }
 
-p + p,
-p + * {
+p+p,
+p+* {
   margin-top: 2rem;
 }
 
-p + * {
+p+* {
   margin-top: 1.5rem !important;
 }

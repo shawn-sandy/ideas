@@ -7,12 +7,11 @@ $tokens: ();
 // render component mixin
 @mixin renderComponent($renderContent: $render, $className: null) {
   @if ($renderContent) {
-    #{$className,
-    $className,
-    ".fp-layout"},
-    layout {
+    * {
       @include maps.customProperties($tokens, $prefix);
       @include layout();
+      @include layout-containers();
+      @include layout-content();
     }
   }
 }
@@ -81,6 +80,7 @@ $tokens: ();
   tr,
   th,
   td,
+  p,
   article,
   aside,
   canvas,
@@ -102,13 +102,15 @@ $tokens: ();
   mark,
   audio,
   video {
+    --bg: transparent;
     margin: var(--m);
     padding: var(--p);
     border: 0;
-    font-size: var(--fs);
     font: inherit;
     vertical-align: baseline;
     outline: none;
+    shadow: var(--shadow);
+    background-color: var(--bg);
   }
 }
 
@@ -126,6 +128,7 @@ $tokens: ();
   figcaption,
   div,
   p {
+    // --fs: var(--rem);
     padding: var(--p);
     margin: var(--m);
     display: var(--dp);
@@ -133,7 +136,32 @@ $tokens: ();
   }
 }
 
-@mixin content() {
+@mixin layout-content() {
+  p,
+  li,
+  div,
+  aside,
+  blockquote,
+  em,
+  strong,
+  small,
+  span,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: var(--fs);
+    color: var(--cl);
+  }
+
+  :where(p, li, div, aside, blockquote, em, strong, small, span, h1, h2, h3, h4, h5, h6)
+    &:hover,
+  &:focus {
+    outline: var(--outline);
+    text-decoration: var(--decoration);
+  }
 }
 
 @mixin config($_color: null, $_background-color: null) {

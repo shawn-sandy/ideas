@@ -1,6 +1,7 @@
 * {
   outline: none;
   box-sizing: border-box;
+  color: var(--cl);
 }
 
 *:before, *:after {
@@ -14,6 +15,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   font-size: clamp(86%, 96%, 120%);
+  font-family: var(--font-family);
   line-height: 1.5;
 }
 
@@ -33,7 +35,7 @@ html {
   }
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--fs-family);
   background-color: white;
   color: var(--color, #292929);
 }

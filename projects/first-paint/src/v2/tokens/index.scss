@@ -1,18 +1,21 @@
 @use "../modules/utilities/maps";
 @use "../modules/utilities/functions" as fn;
 @use "./banner.scss";
-
+$font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
+  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $tokens: (
   "bg": "hsl(0, 0%, 96%)",
   "bg-image": "none",
   "cl": "hsl(0, 0%, 8%)",
   "cl-dark": "var(color)",
   "cl-light": "#fff",
-  "brd-w": "thin",
-  "brd-cl": lightgray,
-  "brd-style": "solid",
-  "brd-radius": 0,
-  "brd-1": var(--bd-w) var(--bd-style) var(--bd-cl),
+  "border": 0,
+  "border-w": "thin",
+  "border-cl": lightgray,
+  "border-style": "solid",
+  "border-radius": 0,
+  "border-1": var(--border-w) var(--border-style) var(--border-cl),
   "bd-cl-dark": black,
   "bd-cl-light": white,
   // alignment
@@ -65,7 +68,7 @@ $tokens: (
   "highlight": "hsl(54, 100%, 90%)",
   "text": "var(dark)",
   // units
-  "default": 1rem,
+  "rem": 1rem,
   "0": "0",
   "s1": fn.rems(12),
   "s2": fn.rems(14),
@@ -78,7 +81,6 @@ $tokens: (
   "s9": fn.rems(80),
   "s10": fn.rems(120),
   // units expressive
-  "rem": var(--default),
   "none": 0,
   "xs": var(--s1),
   "sm": var(--s2),
@@ -90,7 +92,7 @@ $tokens: (
   "4xl": var(--s8),
   "5xl": var(--s9),
   "6xl": var(--s10),
-  "d": var(--default),
+  "d": var(--rem),
   // margins
   "mt": var(--0),
   "mb": var(--0),
@@ -98,13 +100,13 @@ $tokens: (
   "mr": var(--0),
   "m": var(--mb) var(--mt) var(--ml) var(--mr),
   // paddings
-  "pt": var(--default),
-  "pb": var(--default),
-  "pl": var(--default),
-  "pr": var(--default),
+  "pt": var(--0),
+  "pb": var(--0),
+  "pl": var(--0),
+  "pr": var(--0),
   "p": var(--pt) var(--pb) var(--pl) var(--pr),
-  "p-inline": var(--default),
-  "p-block": var(--default),
+  "p-inline": var(--rem),
+  "p-block": var(--rem),
   // vertical widths
   "vh-sm": 10vh,
   "vh-md": 25vh,
@@ -123,8 +125,14 @@ $tokens: (
   "max-h": var(--vh-xxl),
   // fonts
   "fs": 100%,
-  // media queries
+  "fs-family": $font-family,
+  "fs-d": var(--d),
+  // breakpoints
   "breakpoint-lg": "1200px",
+  //others
+  "decoration": "none",
+  "shadow": "none",
+  "outline": "none",
 );
 
 :root {
