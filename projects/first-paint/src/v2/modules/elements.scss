@@ -44,7 +44,7 @@ $tokens: ();
 
   :any-link {
     color: var(--cl);
-    :where(span, em, strong, small) {
+    :where(span, em, strong, b) {
       @include button-element();
       --bg: var(--info);
     }

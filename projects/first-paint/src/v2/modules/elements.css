@@ -2,6 +2,7 @@ html * {
   box-shadow: var(--shadow);
   text-shadow: var(--text-shadow);
 }
+
 html * p,
 html * li,
 html * div,
@@ -22,10 +23,12 @@ html * h6 {
   text-shadow: none;
   text-transform: var(--transform);
 }
+
 html :any-link {
   color: var(--cl);
 }
-html :any-link :where(span, em, strong, small) {
+
+html :any-link :where(span, em, strong, b) {
   --jfy: "center";
   --bg: transparent;
   --dp: var(--dp-i);
@@ -39,6 +42,7 @@ html :any-link :where(span, em, strong, small) {
   padding-inline: var(--s4);
   --bg: var(--info);
 }
+
 html button {
   --jfy: "center";
   --bg: transparent;

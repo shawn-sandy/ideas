@@ -494,7 +494,7 @@ html * h6 {
 html :any-link {
   color: var(--cl);
 }
-html :any-link :where(span, em, strong, small) {
+html :any-link :where(span, em, strong, b) {
   --jfy: "center";
   --bg: transparent;
   --dp: var(--dp-i);
