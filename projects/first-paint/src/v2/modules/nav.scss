@@ -28,8 +28,9 @@ $render: true !default;
   }
 
   h1 {
-    --fs: var(--lg);
+    --line-height: 0;
     a {
+      --fs: var(--md);
       margin-block-end: 0;
     }
   }

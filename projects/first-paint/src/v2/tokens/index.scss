@@ -128,12 +128,15 @@ $tokens: (
   "fs": 100%,
   "fs-family": $font-family,
   "fs-d": var(--d),
+  "fs-weight": "regular",
   // breakpoints
-  "breakpoint-lg": "1200px",
+  "breakpoint-lg": 1200px,
   //others
   "txt-decor": "none",
   "shadow": "none",
   "outline": "none",
+  "line-height": 1.5,
+  "word-break": normal,
 );
 
 :root {

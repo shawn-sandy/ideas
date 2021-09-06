@@ -108,10 +108,13 @@
   --fs: 100%;
   --fs-family: -apple-system, BlinkMacSystemFont, Roboto, Segoe UI, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   --fs-d: var(--d);
+  --fs-weight: regular;
   --breakpoint-lg: 1200px;
   --txt-decor: none;
   --shadow: none;
   --outline: none;
+  --line-height: 1.5;
+  --word-break: normal;
   --ban-xxl: 90vh;
   --ban-xl: 80vh;
   --ban-lg: 75vh;

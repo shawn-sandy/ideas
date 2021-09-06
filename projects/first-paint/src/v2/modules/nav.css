@@ -14,10 +14,11 @@ nav li {
 }
 
 nav h1 {
-  --fs: var(--lg);
+  --line-height: 0;
 }
 
 nav h1 a {
+  --fs: var(--md);
   margin-block-end: 0;
 }
 
