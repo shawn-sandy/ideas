@@ -17,14 +17,23 @@
 // user reset from v1
 @use '../components/reset.scss';
 
+// Layout modules
+@use './modules/layout.scss';
+
 // Page modules
 @use './modules/page.scss';
+
+// Elements modules
+@use './modules/elements.scss';
 
 // Media queries modules
 @use './modules/utilities/responsive.scss';
 
 // Header Modules
 @use './modules/header.scss';
+
+// Banner Modules
+@use './modules/banners.scss';
 
 // adds the navigation Modules
 @use './modules/nav.scss';

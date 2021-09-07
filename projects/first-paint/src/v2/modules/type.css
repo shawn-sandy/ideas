@@ -4,41 +4,44 @@ h3,
 h4,
 h5,
 h6 {
-  line-height: 1.5;
-  color: inherit;
-  margin: 0rem 0 1.05rem;
-  font-weight: 500;
+  --fs-weight: var(--fw-medium);
+  line-height: var(--line-height);
+  color: var(--cl);
+  margin: var(--m);
+  font-weight: var(--fs-weight);
   overflow-wrap: break-word;
-  word-break: normal;
+  word-break: var(--word-break);
+  --fx-weight: var(--fw-medium);
+  text-shadow: var(--shadow);
 }
 
 h1 {
-  font-size: var(--xxxl);
+  --fs: var(--4xl);
 }
 
 h2 {
-  font-size: var(--xxl);
+  --fs: var(--xxxl);
 }
 
 h3 {
-  font-size: var(--xl);
+  --fs: var(--xxl);
 }
 
 h4 {
-  font-size: var(--lg);
+  --fs: var(--xl);
 }
 
 h5 {
-  font-size: var(--md);
+  --fs: var(--lg);
 }
 
 h6 {
-  font-size: var(--reg);
+  --fs: var(--md);
 }
 
 small,
 time {
-  font-size: var(--xs);
+  --fs: var(--fs);
 }
 
 time {
@@ -55,7 +58,7 @@ p i {
 }
 
 p strong {
-  font-weight: 500;
+  font-weight: var(--fw-medium);
 }
 
 p + p,

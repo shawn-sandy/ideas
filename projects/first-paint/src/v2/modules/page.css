@@ -1,6 +1,7 @@
 * {
   outline: none;
   box-sizing: border-box;
+  color: var(--cl);
 }
 
 *:before, *:after {
@@ -14,9 +15,15 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   font-size: clamp(86%, 96%, 120%);
+  font-family: var(--font-family);
   line-height: 1.5;
 }
 
+@media (min-width: 680px) {
+  html {
+    font-size: 95%;
+  }
+}
 @media (min-width: 980px) {
   html {
     font-size: 98%;
@@ -33,7 +40,7 @@ html {
   }
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--fs-family);
   background-color: white;
   color: var(--color, #292929);
 }
@@ -41,7 +48,7 @@ body {
 :where(body) > section,
 :where(body) main,
 :where(body) nav,
-:where(body) footer {
+:where(body) footer[role=contentinfo] {
   padding-block: var(--p-block);
   width: 80%;
   margin: 0 auto;
@@ -51,7 +58,7 @@ body {
   :where(body) > section,
 :where(body) main,
 :where(body) nav,
-:where(body) footer {
+:where(body) footer[role=contentinfo] {
     width: 100%;
     padding-inline: var(--p-inline);
   }
