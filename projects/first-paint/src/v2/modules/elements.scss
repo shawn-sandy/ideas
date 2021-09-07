@@ -79,6 +79,13 @@ $tokens: ();
       --mt: var(--xxl);
     }
   }
+
+  hr {
+    --rem: var(--xxl);
+    margin-block: var(--rem);
+    border: var(--border);
+    border-bottom: var(--border-1);
+  }
 }
 
 @mixin button-element {
