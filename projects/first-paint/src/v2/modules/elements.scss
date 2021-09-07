@@ -48,7 +48,7 @@ $tokens: ();
       margin-inline-start: var(--ml);
       --ml: var(--rem);
     }
-    :where(em, strong, b) {
+    :where(em, strong, b, div) {
       @include button-element();
     }
 
@@ -62,7 +62,10 @@ $tokens: ();
       --border-radius: 99rem;
     }
 
-    strong {
+    strong,
+    div {
+      dp: var(--dp-i);
+      display: inline-flex;
     }
   }
 

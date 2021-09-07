@@ -33,7 +33,7 @@ html :any-link + * {
   --ml: var(--rem);
 }
 
-html :any-link :where(em, strong, b) {
+html :any-link :where(em, strong, b, div) {
   --fs-weight: var(--fs-medium);
   --jfy: "center";
   --dp: var(--dp-i);
@@ -64,6 +64,12 @@ html :any-link b {
 
 html :any-link em {
   --border-radius: 99rem;
+}
+
+html :any-link strong,
+html :any-link div {
+  dp: var(--dp-i);
+  display: inline-flex;
 }
 
 html button {
