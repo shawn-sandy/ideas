@@ -69,6 +69,13 @@ $tokens: ();
   button {
     @include button-element();
   }
+
+  article {
+    + article {
+      margin-block-start: var(--mt);
+      --mt: var(--xxl);
+    }
+  }
 }
 
 @mixin button-element {

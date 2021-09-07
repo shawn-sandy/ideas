@@ -556,6 +556,10 @@ html button {
   border-radius: var(--border-radius);
   font-weight: var(--fs-weight);
 }
+html article + article {
+  margin-block-start: var(--mt);
+  --mt: var(--xxl);
+}
 
 @media (min-width: 980px) {
   [data-show-mobile] {
