@@ -33,7 +33,7 @@ html :any-link + * {
   --ml: var(--rem);
 }
 
-html :any-link :where(em, strong, b) {
+html :any-link :where(em, strong, b, span) {
   border-radius: var(--rds);
   justify-content: var(--justify);
   align-items: var(--al);
