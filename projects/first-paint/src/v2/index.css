@@ -11,6 +11,11 @@
   --border-cl: lightgray;
   --border-style: solid;
   --border-radius: 0;
+  --rds-sm: 0.3rem;
+  --rds-md: 0.5rem;
+  --rds-lg: 1rem;
+  --rds-xl: 2rem;
+  --rds-pill: 99rem;
   --border-1: var(--border-w) var(--border-style) var(--border-cl);
   --bd-cl-dark: black;
   --bd-cl-light: white;
@@ -499,15 +504,8 @@ html :any-link + * {
   margin-inline-start: var(--ml);
   --ml: var(--rem);
 }
-html :any-link :where(em, strong, b, span) {
-  border-radius: var(--rds);
-  justify-content: var(--justify);
-  align-items: var(--al);
-  min-height: var(--min-h);
-  padding: var(--p);
-  display: var(--dp-i);
-  padding-inline: var(--p-inline);
-  background-color: var(--bg);
+html :any-link :where(em, strong, b) {
+  --fs-weight: var(--fs-medium);
   --jfy: "center";
   --dp: var(--dp-i);
   --min-h: var(--s6);
@@ -515,8 +513,7 @@ html :any-link :where(em, strong, b, span) {
   --pl: var(--rem);
   --bg: whitesmoke;
   --line-height: 0;
-}
-html button {
+  --border-radius: var(--rds-sm);
   border-radius: var(--rds);
   justify-content: var(--justify);
   align-items: var(--al);
@@ -525,6 +522,39 @@ html button {
   display: var(--dp-i);
   padding-inline: var(--p-inline);
   background-color: var(--bg);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  font-weight: var(--fs-weight);
+}
+html :any-link b {
+  --bg: transparent;
+  --border: var(--border-1);
+  border-width: 3px;
+}
+html :any-link em {
+  --border-radius: 99rem;
+}
+html button {
+  --fs-weight: var(--fs-medium);
+  --jfy: "center";
+  --dp: var(--dp-i);
+  --min-h: var(--s6);
+  --p-inline: var(--s4);
+  --pl: var(--rem);
+  --bg: whitesmoke;
+  --line-height: 0;
+  --border-radius: var(--rds-sm);
+  border-radius: var(--rds);
+  justify-content: var(--justify);
+  align-items: var(--al);
+  min-height: var(--min-h);
+  padding: var(--p);
+  display: var(--dp-i);
+  padding-inline: var(--p-inline);
+  background-color: var(--bg);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  font-weight: var(--fs-weight);
 }
 
 @media (min-width: 980px) {

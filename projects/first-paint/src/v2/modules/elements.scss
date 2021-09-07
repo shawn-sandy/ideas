@@ -48,24 +48,18 @@ $tokens: ();
       margin-inline-start: var(--ml);
       --ml: var(--rem);
     }
-    :where(em, strong, b, span) {
+    :where(em, strong, b) {
       @include button-element();
-      --jfy: "center";
-      --dp: var(--dp-i);
-      --min-h: var(--s6);
-      --p-inline: var(--s4);
-      --pl: var(--rem);
-      --bg: whitesmoke;
-      --line-height: 0;
-    }
-
-    span {
     }
 
     b {
+      --bg: transparent;
+      --border: var(--border-1);
+      border-width: 3px;
     }
 
     em {
+      --border-radius: 99rem;
     }
 
     strong {
@@ -78,6 +72,15 @@ $tokens: ();
 }
 
 @mixin button-element {
+  --fs-weight: var(--fs-medium);
+  --jfy: "center";
+  --dp: var(--dp-i);
+  --min-h: var(--s6);
+  --p-inline: var(--s4);
+  --pl: var(--rem);
+  --bg: whitesmoke;
+  --line-height: 0;
+  --border-radius: var(--rds-sm);
   border-radius: var(--rds);
   justify-content: var(--justify);
   align-items: var(--al);
@@ -86,6 +89,9 @@ $tokens: ();
   display: var(--dp-i);
   padding-inline: var(--p-inline);
   background-color: var(--bg);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  font-weight: var(--fs-weight);
 }
 
 @mixin config($_color: null, $_background-color: null) {

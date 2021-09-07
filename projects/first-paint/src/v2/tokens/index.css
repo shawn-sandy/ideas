@@ -9,6 +9,11 @@
   --border-cl: lightgray;
   --border-style: solid;
   --border-radius: 0;
+  --rds-sm: 0.3rem;
+  --rds-md: 0.5rem;
+  --rds-lg: 1rem;
+  --rds-xl: 2rem;
+  --rds-pill: 99rem;
   --border-1: var(--border-w) var(--border-style) var(--border-cl);
   --bd-cl-dark: black;
   --bd-cl-light: white;
