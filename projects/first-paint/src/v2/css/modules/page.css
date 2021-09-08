@@ -59,6 +59,18 @@ body {
 :where(body) nav,
 :where(body) footer[role=contentinfo] {
     width: 100%;
-    padding-inline: var(--p-inline);
+    padding-inline: var(--p-in);
+  }
+}
+
+@media (max-width: 680px) {
+  section,
+article,
+aside,
+summary,
+ul,
+ol,
+div {
+    padding: 1rem;
   }
 }

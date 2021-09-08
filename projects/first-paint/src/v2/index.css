@@ -339,14 +339,6 @@ fieldset,
 form,
 label,
 legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
 p,
 article,
 aside,
@@ -487,7 +479,19 @@ body {
 :where(body) nav,
 :where(body) footer[role=contentinfo] {
     width: 100%;
-    padding-inline: var(--p-inline);
+    padding-inline: var(--p-in);
+  }
+}
+
+@media (max-width: 680px) {
+  section,
+article,
+aside,
+summary,
+ul,
+ol,
+div {
+    padding: 1rem;
   }
 }
 
@@ -512,7 +516,7 @@ body {
   --fs-weight: var(--fs-medium);
   --jt: "center";
   --dp: var(--dp-i);
-  --min-h: var(--s6);
+  --min-h: 2.5rem;
   --p-in: var(--s4);
   --pl: var(--rem);
   --line-height: 0;
@@ -529,7 +533,12 @@ body {
   border: var(--border);
   border-radius: var(--border-radius);
   font-weight: var(--fs-weight);
-  box-sizing: border-box;
+  box-sizing: var(--box);
+}
+@media (max-width: 680px) {
+  :any-link :where(em, strong, b, div) {
+    --min-h: var(--s6);
+  }
 }
 :any-link b {
   --bg: transparent;
@@ -559,7 +568,7 @@ button {
   --fs-weight: var(--fs-medium);
   --jt: "center";
   --dp: var(--dp-i);
-  --min-h: var(--s6);
+  --min-h: 2.5rem;
   --p-in: var(--s4);
   --pl: var(--rem);
   --line-height: 0;
@@ -576,7 +585,12 @@ button {
   border: var(--border);
   border-radius: var(--border-radius);
   font-weight: var(--fs-weight);
-  box-sizing: border-box;
+  box-sizing: var(--box);
+}
+@media (max-width: 680px) {
+  button {
+    --min-h: var(--s6);
+  }
 }
 
 article + article {
@@ -838,6 +852,54 @@ ul[role=list] [role=listitem] {
   }
 }
 
+button {
+  --bg: transparent;
+}
+button[type] {
+  --bg: var(--light);
+}
+button[type=submit] {
+  --bg: var(--dark);
+  --cl: var(--light);
+}
+button[type=reset] {
+  --bg: transparent;
+  --border: var(--border-1);
+}
+.fp-table,
+table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  width: 100%;
+  border: thin solid whitesmoke;
+}
+.fp-table thead tr,
+table thead tr {
+  background-color: whitesmoke;
+  text-align: left;
+}
+.fp-table th,
+.fp-table td,
+table th,
+table td {
+  padding: 0.75rem 1rem;
+}
+.fp-table tbody tr,
+table tbody tr {
+  border-bottom: thin solid whitesmoke;
+}
+.fp-table tbody tr:nth-of-type(even),
+table tbody tr:nth-of-type(even) {
+  background-color: ghostwhite;
+}
+.fp-table tbody tr:last-of-type,
+table tbody tr:last-of-type {
+  border-bottom: 2px solid whitesmoke;
+}
+
 > div + div {
   margin-top: 1rem;
 }
@@ -878,6 +940,29 @@ textarea[id]::placeholder,
 select[id]::placeholder {
   font-style: italic;
   color: lightgrey;
+}
+
+.fp-footer[role=contentinfo],
+footer[role=contentinfo] {
+  --fs: var(--s2) !important;
+  --p-bk: var(--xl);
+}
+.fp-footer[role=contentinfo] > section,
+footer[role=contentinfo] > section {
+  display: var(--dp);
+  flex-direction: var(--direction);
+  flex-wrap: var(--wrap);
+  align-items: var(--al);
+  justify-content: var(--jc);
+  gap: var(--gap);
+  --dp: var(--dp-f);
+  --fs: var(--s2);
+  --p: var(--rem);
+}
+.fp-footer[role=contentinfo] > div,
+footer[role=contentinfo] > div {
+  --text-align: center;
+  --p: 1rem;
 }
 
 /*

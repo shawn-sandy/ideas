@@ -1,4 +1,5 @@
 // mixin utilities
+@use './functions' as fn;
 @mixin flexbox() {
   display: var(--dp);
   flex-direction: var(--direction);
@@ -36,7 +37,7 @@
   --fs-weight: var(--fs-medium);
   --jt: "center";
   --dp: var(--dp-i);
-  --min-h: var(--s6);
+  --min-h: 2.5rem;
   --p-in: var(--s4);
   --pl: var(--rem);
   --line-height: 0;
@@ -53,5 +54,9 @@
   border: var(--border);
   border-radius: var(--border-radius);
   font-weight: var(--fs-weight);
-  box-sizing: border-box;
+  box-sizing: var(--box);
+
+  @media (max-width: 680px) {
+    --min-h: var(--s6);
+  }
 }

@@ -1,1 +1,14 @@
-
+button {
+  --bg: transparent;
+}
+button[type] {
+  --bg: var(--light);
+}
+button[type=submit] {
+  --bg: var(--dark);
+  --cl: var(--light);
+}
+button[type=reset] {
+  --bg: transparent;
+  --border: var(--border-1);
+}
