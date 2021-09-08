@@ -49,7 +49,8 @@ body {
 :where(body) main,
 :where(body) nav,
 :where(body) footer[role=contentinfo] {
-  padding-block: var(--p-block);
+  padding-block: var(--p-bk);
+  padding-inline: var(--p-in);
   width: 80%;
   margin: 0 auto;
 }
@@ -62,4 +63,11 @@ body {
     width: 100%;
     padding-inline: var(--p-inline);
   }
+}
+:where(body) footer[role=contentinfo] section {
+  --dp: var(--dp-f, 0);
+}
+
+:where(body) footer[role=contentinfo] div {
+  --p: var(--rem) !important;
 }

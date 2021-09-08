@@ -65,9 +65,19 @@ $font-family: var(--fs-family) !default;
         width: 100%;
         padding-inline: var(--p-inline);
       }
-      padding-block: var(--p-block);
+      padding-block: var(--p-bk);
+      padding-inline: var(--p-in);
       width: $body-width;
       margin: 0 auto;
+    }
+
+    footer[role="contentinfo"] {
+      section {
+        --dp: var(--dp-f, 0);
+      }
+      div {
+        --p: var(--rem) !important;
+      }
     }
   }
 }

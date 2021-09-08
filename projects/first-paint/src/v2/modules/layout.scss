@@ -1,6 +1,8 @@
 // set variables
 // TODO Search and replace name with CSS tag/element name
 @use './utilities/maps';
+@use './utilities/mixins' as mix;
+
 $render: true !default;
 $prefix: "layout";
 $tokens: ();
@@ -85,6 +87,7 @@ $tokens: ();
   figure,
   figcaption,
   footer,
+  footer[role="contentinfo"],
   header,
   hgroup,
   menu,
@@ -99,11 +102,13 @@ $tokens: ();
   audio,
   video {
     --bg: transparent;
-    margin: var(--m);
-    padding: var(--p);
-    border: 0;
+    @include mix.padding();
+    @include mix.margin();
+    display: var(--dp, block);
+    border: var(--border);
     font: inherit;
     font-family: var(--fs-family);
+    font-size: var(--fs);
     vertical-align: var(--v-align);
     outline: var(--outline);
     background-color: var(--bg);
@@ -115,27 +120,6 @@ $tokens: ();
 }
 
 @mixin layout-containers {
-  nav,
-  header,
-  main,
-  footer,
-  section,
-  article,
-  aside,
-  details,
-  summary,
-  figure,
-  figcaption,
-  div,
-  p {
-    --fs: var(--rem);
-    padding: var(--p);
-    margin: var(--m);
-    display: var(--dp);
-    font-size: var(--fs);
-    width: var(--w);
-  }
-
   summary,
   details,
   figcaption,
@@ -144,13 +128,21 @@ $tokens: ();
     --pb: var(--rem);
   }
 
+  div {
+    --p: var(--rem);
+  }
+
   footer[role="contentinfo"] {
-    display: block;
+    --fs: var(--s2) !important;
+    --p-bk: var(--xl);
     > section {
-      --dp: var(--dp-f);
+      @include mix.flexbox();
+      --fs: var(--s2);
+      --p: var(--rem);
     }
     > div {
       --text-align: center;
+      --p: 1rem;
     }
   }
 }

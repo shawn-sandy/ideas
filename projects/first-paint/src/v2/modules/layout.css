@@ -68,6 +68,7 @@ embed,
 figure,
 figcaption,
 footer,
+footer[role=contentinfo],
 header,
 hgroup,
 menu,
@@ -80,14 +81,23 @@ summary,
 time,
 mark,
 audio,
-video,
-button {
+video {
   --bg: transparent;
-  margin: var(--m);
   padding: var(--p);
-  border: 0;
+  padding-block-start: var(--pt);
+  padding-block-end: var(--pb);
+  padding-inline-start: var(--pl);
+  padding-inline-end: var(--pr);
+  margin: var(--m);
+  margin-block-start: var(--mt);
+  margin-block-end: var(--mb);
+  margin-inline-start: var(--ml);
+  margin-inline-end: var(--mr);
+  display: var(--dp, block);
+  border: var(--border);
   font: inherit;
   font-family: var(--fs-family);
+  font-size: var(--fs);
   vertical-align: var(--v-align);
   outline: var(--outline);
   background-color: var(--bg);
@@ -97,31 +107,35 @@ button {
   box-shadow: var(--box-shadow);
 }
 
-nav,
-header,
-main,
-footer,
-section,
-article,
-aside,
-details,
-summary,
-figure,
-figcaption,
-div,
-p {
-  --fs: var(--rem);
-  padding: var(--p);
-  margin: var(--m);
-  display: var(--dp);
-  font-size: var(--fs);
-  width: var(--w);
-}
-
 summary,
 details,
 figcaption,
 p {
   --pt: var(--rem);
   --pb: var(--rem);
+}
+
+div {
+  --p: var(--rem);
+}
+
+footer[role=contentinfo] {
+  --fs: var(--s2) !important;
+  --p-bk: var(--xl);
+}
+
+footer[role=contentinfo] > section {
+  display: var(--dp);
+  flex-direction: var(--direction);
+  flex-wrap: var(--wrap);
+  align-items: var(--al);
+  justify-content: var(--jc);
+  gap: var(--gap);
+  --fs: var(--s2);
+  --p: var(--rem);
+}
+
+footer[role=contentinfo] > div {
+  --text-align: center;
+  --p: 1rem;
 }
