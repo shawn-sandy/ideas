@@ -52,11 +52,9 @@ p {
   margin: 0;
   line-height: 1.7;
 }
-
 p i {
   font-style: italic;
 }
-
 p strong {
   font-weight: var(--fw-medium);
 }

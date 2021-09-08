@@ -3,7 +3,6 @@
   box-sizing: border-box;
   color: var(--cl);
 }
-
 *:before, *:after {
   box-sizing: border-box;
 }
@@ -18,7 +17,6 @@ html {
   font-family: var(--font-family);
   line-height: 1.5;
 }
-
 @media (min-width: 680px) {
   html {
     font-size: 95%;
@@ -39,6 +37,7 @@ html {
     font-size: 110%;
   }
 }
+
 body {
   font-family: var(--fs-family);
   background-color: white;
@@ -49,17 +48,29 @@ body {
 :where(body) main,
 :where(body) nav,
 :where(body) footer[role=contentinfo] {
-  padding-block: var(--p-block);
+  padding-block: var(--p-bk);
+  padding-inline: var(--p-in);
   width: 80%;
   margin: 0 auto;
 }
-
 @media screen and (max-width: 980px) {
   :where(body) > section,
 :where(body) main,
 :where(body) nav,
 :where(body) footer[role=contentinfo] {
     width: 100%;
-    padding-inline: var(--p-inline);
+    padding-inline: var(--p-in);
+  }
+}
+
+@media (max-width: 680px) {
+  section,
+article,
+aside,
+summary,
+ul,
+ol,
+div {
+    padding: 1rem;
   }
 }
