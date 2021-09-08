@@ -113,21 +113,6 @@ hr {
   border-bottom: var(--border-1);
 }
 
-footer[role="contentinfo"] {
-  --fs: var(--s2) !important;
-  --p-bk: var(--xl);
-  > section {
-    @include mix.flexbox();
-    --dp: var(--dp-f);
-    --fs: var(--s2);
-    --p: var(--rem);
-  }
-  > div {
-    --text-align: center;
-    --p: 1rem;
-  }
-}
-
 @mixin config($_color: null, $_background-color: null) {
   $elements-color: $_color !global;
   $elements-background-color: $_background-color !global;

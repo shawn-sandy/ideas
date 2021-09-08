@@ -117,6 +117,25 @@ $tokens: ();
     text-shadow: var(--text-shadow);
     box-shadow: var(--box-shadow);
   }
+
+  a,
+  q,
+  b,
+  strong,
+  i,
+  em,
+  small,
+  big,
+  sub,
+  sup,
+  dfn,
+  ins,
+  mark,
+  time,
+  audio,
+  video {
+    --dp: inline;
+  }
 }
 
 @mixin layout-containers {
