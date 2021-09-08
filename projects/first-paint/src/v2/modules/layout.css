@@ -118,24 +118,3 @@ p {
 div {
   --p: var(--rem);
 }
-
-footer[role=contentinfo] {
-  --fs: var(--s2) !important;
-  --p-bk: var(--xl);
-}
-
-footer[role=contentinfo] > section {
-  display: var(--dp);
-  flex-direction: var(--direction);
-  flex-wrap: var(--wrap);
-  align-items: var(--al);
-  justify-content: var(--jc);
-  gap: var(--gap);
-  --fs: var(--s2);
-  --p: var(--rem);
-}
-
-footer[role=contentinfo] > div {
-  --text-align: center;
-  --p: 1rem;
-}

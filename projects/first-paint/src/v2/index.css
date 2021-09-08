@@ -405,25 +405,6 @@ div {
   --p: var(--rem);
 }
 
-footer[role=contentinfo] {
-  --fs: var(--s2) !important;
-  --p-bk: var(--xl);
-}
-footer[role=contentinfo] > section {
-  display: var(--dp);
-  flex-direction: var(--direction);
-  flex-wrap: var(--wrap);
-  align-items: var(--al);
-  justify-content: var(--jc);
-  gap: var(--gap);
-  --fs: var(--s2);
-  --p: var(--rem);
-}
-footer[role=contentinfo] > div {
-  --text-align: center;
-  --p: 1rem;
-}
-
 * {
   outline: none;
   box-sizing: border-box;
@@ -497,14 +478,24 @@ body {
   --ml: var(--rem);
 }
 :any-link :where(em, strong, b, div) {
+  margin: var(--m);
+  margin-block-start: var(--mt);
+  margin-block-end: var(--mb);
+  margin-inline-start: var(--ml);
+  margin-inline-end: var(--mr);
+  padding: var(--p);
+  padding-block-start: var(--pt);
+  padding-block-end: var(--pb);
+  padding-inline-start: var(--pl);
+  padding-inline-end: var(--pr);
   --fs-weight: var(--fs-medium);
   --jt: "center";
   --dp: var(--dp-i);
-  --min-h: var(--s6);
+  --min-h: var(--md);
   --p-in: var(--s4);
   --pl: var(--rem);
-  --bg: whitesmoke;
   --line-height: 0;
+  --bg: lightgray;
   --border-radius: var(--rds-sm);
   border-radius: var(--rds);
   justify-content: var(--justify);
@@ -533,14 +524,24 @@ body {
 }
 
 button {
+  margin: var(--m);
+  margin-block-start: var(--mt);
+  margin-block-end: var(--mb);
+  margin-inline-start: var(--ml);
+  margin-inline-end: var(--mr);
+  padding: var(--p);
+  padding-block-start: var(--pt);
+  padding-block-end: var(--pb);
+  padding-inline-start: var(--pl);
+  padding-inline-end: var(--pr);
   --fs-weight: var(--fs-medium);
   --jt: "center";
   --dp: var(--dp-i);
-  --min-h: var(--s6);
+  --min-h: var(--md);
   --p-in: var(--s4);
   --pl: var(--rem);
-  --bg: whitesmoke;
   --line-height: 0;
+  --bg: lightgray;
   --border-radius: var(--rds-sm);
   border-radius: var(--rds);
   justify-content: var(--justify);
@@ -557,7 +558,6 @@ button {
 
 article + article {
   margin-block-start: var(--mt);
-  --mt: var(--xxl);
 }
 
 hr {
@@ -565,6 +565,25 @@ hr {
   margin-block: var(--rem);
   border: var(--border);
   border-bottom: var(--border-1);
+}
+
+footer[role=contentinfo] {
+  --fs: var(--s2) !important;
+  --p-bk: var(--xl);
+}
+footer[role=contentinfo] > section {
+  display: var(--dp);
+  flex-direction: var(--direction);
+  flex-wrap: var(--wrap);
+  align-items: var(--al);
+  justify-content: var(--jc);
+  gap: var(--gap);
+  --fs: var(--s2);
+  --p: var(--rem);
+}
+footer[role=contentinfo] > div {
+  --text-align: center;
+  --p: 1rem;
 }
 
 html p,

@@ -131,20 +131,6 @@ $tokens: ();
   div {
     --p: var(--rem);
   }
-
-  footer[role="contentinfo"] {
-    --fs: var(--s2) !important;
-    --p-bk: var(--xl);
-    > section {
-      @include mix.flexbox();
-      --fs: var(--s2);
-      --p: var(--rem);
-    }
-    > div {
-      --text-align: center;
-      --p: 1rem;
-    }
-  }
 }
 
 @mixin config($_color: null, $_background-color: null) {
