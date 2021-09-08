@@ -157,11 +157,13 @@ $tokens: (
   "text-shadow": none,
   "shadow-sm": 2px 4px 3px rgba(0, 0, 0, 0.2),
   "transform": none,
-  "uppercase": "uppercase",
-  "lowercase": "lowercase",
-  "capitalize": "capitalize",
-  "truncate": "truncate",
+  "uppercase": uppercase,
+  "lowercase": lowercase,
+  "capitalize": capitalize,
+  "truncate": truncate,
   "rds": 0.25rem,
+  "box": border-box,
+  "box-ct": content-box,
 );
 
 :root {

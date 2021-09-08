@@ -140,6 +140,8 @@
   --capitalize: capitalize;
   --truncate: truncate;
   --rds: 0.25rem;
+  --box: border-box;
+  --box-ct: content-box;
   --ban-xxl: 90vh;
   --ban-xl: 80vh;
   --ban-lg: 75vh;
@@ -393,6 +395,25 @@ video {
   box-shadow: var(--box-shadow);
 }
 
+a,
+q,
+b,
+strong,
+i,
+em,
+small,
+big,
+sub,
+sup,
+dfn,
+ins,
+mark,
+time,
+audio,
+video {
+  --dp: inline;
+}
+
 summary,
 details,
 figcaption,
@@ -491,7 +512,7 @@ body {
   --fs-weight: var(--fs-medium);
   --jt: "center";
   --dp: var(--dp-i);
-  --min-h: var(--md);
+  --min-h: var(--s6);
   --p-in: var(--s4);
   --pl: var(--rem);
   --line-height: 0;
@@ -508,6 +529,7 @@ body {
   border: var(--border);
   border-radius: var(--border-radius);
   font-weight: var(--fs-weight);
+  box-sizing: border-box;
 }
 :any-link b {
   --bg: transparent;
@@ -537,7 +559,7 @@ button {
   --fs-weight: var(--fs-medium);
   --jt: "center";
   --dp: var(--dp-i);
-  --min-h: var(--md);
+  --min-h: var(--s6);
   --p-in: var(--s4);
   --pl: var(--rem);
   --line-height: 0;
@@ -554,6 +576,7 @@ button {
   border: var(--border);
   border-radius: var(--border-radius);
   font-weight: var(--fs-weight);
+  box-sizing: border-box;
 }
 
 article + article {
@@ -565,25 +588,6 @@ hr {
   margin-block: var(--rem);
   border: var(--border);
   border-bottom: var(--border-1);
-}
-
-footer[role=contentinfo] {
-  --fs: var(--s2) !important;
-  --p-bk: var(--xl);
-}
-footer[role=contentinfo] > section {
-  display: var(--dp);
-  flex-direction: var(--direction);
-  flex-wrap: var(--wrap);
-  align-items: var(--al);
-  justify-content: var(--jc);
-  gap: var(--gap);
-  --fs: var(--s2);
-  --p: var(--rem);
-}
-footer[role=contentinfo] > div {
-  --text-align: center;
-  --p: 1rem;
 }
 
 html p,

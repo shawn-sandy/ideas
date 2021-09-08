@@ -1,3 +1,4 @@
+// mixin utilities
 @mixin flexbox() {
   display: var(--dp);
   flex-direction: var(--direction);
@@ -27,4 +28,30 @@
   margin-block-end: var(--mb);
   margin-inline-start: var(--ml);
   margin-inline-end: var(--mr);
+}
+
+@mixin button() {
+  @include margin();
+  @include padding();
+  --fs-weight: var(--fs-medium);
+  --jt: "center";
+  --dp: var(--dp-i);
+  --min-h: var(--s6);
+  --p-in: var(--s4);
+  --pl: var(--rem);
+  --line-height: 0;
+  --bg: lightgray;
+  --border-radius: var(--rds-sm);
+  border-radius: var(--rds);
+  justify-content: var(--justify);
+  align-items: var(--fb-center);
+  min-height: var(--min-h);
+  padding: var(--p);
+  display: var(--dp-i);
+  padding-inline: var(--p-in);
+  background-color: var(--bg);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  font-weight: var(--fs-weight);
+  box-sizing: border-box;
 }

@@ -76,7 +76,7 @@ $tokens: ();
     --ml: var(--rem);
   }
   :where(em, strong, b, div) {
-    @include button();
+    @include mix.button();
   }
 
   b {
@@ -97,7 +97,7 @@ $tokens: ();
 }
 
 button {
-  @include button();
+  @include mix.button();
 }
 
 article {
