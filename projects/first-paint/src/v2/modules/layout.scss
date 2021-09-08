@@ -143,6 +143,16 @@ $tokens: ();
     --pt: var(--rem);
     --pb: var(--rem);
   }
+
+  footer[role="contentinfo"] {
+    display: block;
+    > section {
+      --dp: var(--dp-f);
+    }
+    > div {
+      --text-align: center;
+    }
+  }
 }
 
 @mixin config($_color: null, $_background-color: null) {
