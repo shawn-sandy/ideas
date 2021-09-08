@@ -64,10 +64,3 @@ body {
     padding-inline: var(--p-inline);
   }
 }
-:where(body) footer[role=contentinfo] section {
-  --dp: var(--dp-f, 0);
-}
-
-:where(body) footer[role=contentinfo] div {
-  --p: var(--rem) !important;
-}
