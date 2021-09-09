@@ -91,7 +91,7 @@ $tokens: ();
 
   strong,
   div {
-    dp: var(--dsp-i);
+    --dp: var(--dsp-i);
     display: inline-flex;
   }
 }

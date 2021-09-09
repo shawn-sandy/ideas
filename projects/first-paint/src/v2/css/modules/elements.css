@@ -20,7 +20,6 @@
   padding-inline-end: var(--pr);
   --fs-weight: var(--fs-medium);
   --jt: "center";
-  --dp: var(--dsp-i);
   --min-h: 2.5rem;
   --p-y: var(--s4);
   --pl: var(--rem);
@@ -32,7 +31,7 @@
   align-items: var(--fb-center);
   min-height: var(--min-h);
   padding: var(--p);
-  display: var(--dp-i);
+  display: var(--dsp-i);
   padding-inline: var(--p-y);
   background-color: var(--bg);
   border: var(--bdr);
@@ -55,7 +54,7 @@
 }
 :any-link strong,
 :any-link div {
-  dp: var(--dsp-i);
+  --dp: var(--dsp-i);
   display: inline-flex;
 }
 
@@ -74,7 +73,6 @@ button {
   padding-inline-end: var(--pr);
   --fs-weight: var(--fs-medium);
   --jt: "center";
-  --dp: var(--dsp-i);
   --min-h: 2.5rem;
   --p-y: var(--s4);
   --pl: var(--rem);
@@ -86,7 +84,7 @@ button {
   align-items: var(--fb-center);
   min-height: var(--min-h);
   padding: var(--p);
-  display: var(--dp-i);
+  display: var(--dsp-i);
   padding-inline: var(--p-y);
   background-color: var(--bg);
   border: var(--bdr);
