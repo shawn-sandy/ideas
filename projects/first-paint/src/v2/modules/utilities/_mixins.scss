@@ -5,7 +5,7 @@
   flex-direction: var(--direction);
   flex-wrap: var(--wrap);
   align-items: var(--al);
-  justify-content: var(--jc);
+  justify-content: var(--jcenter);
   gap: var(--gap);
 }
 
@@ -38,20 +38,19 @@
   @include padding();
   --fs-weight: var(--fs-medium);
   --jt: "center";
-  --dp: var(--dsp-i);
   --min-h: 2.5rem;
-  --p-in: var(--s4);
+  --p-y: var(--s4);
   --pl: var(--rem);
   --line-height: 0;
   --bg: lightgray;
-  --bdr-radius: var(--rds-sm);
+  --bdr-radius: var(--rds);
   border-radius: var(--rds);
   justify-content: var(--justify);
   align-items: var(--fb-center);
   min-height: var(--min-h);
   padding: var(--p);
   display: var(--dsp-i);
-  padding-inline: var(--p-in);
+  padding-inline: var(--p-y);
   background-color: var(--bg);
   border: var(--bdr);
   border-radius: var(--bdr-radius);

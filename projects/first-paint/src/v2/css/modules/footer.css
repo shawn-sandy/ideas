@@ -1,7 +1,7 @@
 .fp-footer[role=contentinfo],
 footer[role=contentinfo] {
   --fs: var(--s2) !important;
-  --p-bk: var(--xl);
+  --px: var(--xl);
 }
 .fp-footer[role=contentinfo] > section,
 footer[role=contentinfo] > section {
@@ -9,7 +9,7 @@ footer[role=contentinfo] > section {
   flex-direction: var(--direction);
   flex-wrap: var(--wrap);
   align-items: var(--al);
-  justify-content: var(--jc);
+  justify-content: var(--jcenter);
   gap: var(--gap);
   --dp: var(--dsp-f);
   --fs: var(--s2);

@@ -2,8 +2,6 @@
   --bg: hsl(0, 0%, 96%);
   --bg-image: none;
   --cl: hsl(0, 0%, 8%);
-  --cl-dark: var(color);
-  --cl-light: #fff;
   --border: 0;
   --border-w: thin;
   --border-cl: lightgray;
@@ -124,7 +122,6 @@
   --fw-bold: 700;
   --fw-regular: 400;
   --fs-weight: var(--fw-regular);
-  --breakpoint-lg: 1200px;
   --txt-decoration: none;
   --outline: none;
   --line-height: 1.5;
@@ -138,6 +135,8 @@
   --capitalize: capitalize;
   --truncate: truncate;
   --rds: 0.25rem;
+  --box: border-box;
+  --box-ct: content-box;
   --ban-xxl: 90vh;
   --ban-xl: 80vh;
   --ban-lg: 75vh;

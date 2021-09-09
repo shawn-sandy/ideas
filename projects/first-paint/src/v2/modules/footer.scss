@@ -22,7 +22,7 @@ $tokens: ();
 @mixin footer {
   &[role="contentinfo"] {
     --fs: var(--s2) !important;
-    --p-bk: var(--xl);
+    --px: var(--xl);
     > section {
       @include mix.flexbox();
       --dp: var(--dsp-f);

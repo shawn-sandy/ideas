@@ -24,18 +24,18 @@ $tokens: ();
   --jt: "center";
   --dp: var(--dsp-i);
   --min-h: var(--md);
-  --p-in: var(--s4);
+  --p-y: var(--s4);
   --pl: var(--rem);
   --line-height: 0;
   --bg: lightgray;
-  --bdr-radius: var(--rds-sm);
+  --bdr-radius: var(--rds);
   border-radius: var(--rds);
   justify-content: var(--justify);
   align-items: var(--fb-center);
   min-height: var(--min-h);
   padding: var(--p);
+  padding-inline: var(--p-y);
   display: var(--dsp-i);
-  padding-inline: var(--p-in);
   background-color: var(--bg);
   border: var(--bdr);
   border-radius: var(--bdr-radius);
@@ -59,7 +59,7 @@ $tokens: ();
   h6 {
     font-size: var(--fs);
     color: var(--cl);
-    text-decoration: var(--text-decor);
+    text-decoration: var(--decoration);
     text-shadow: none;
     text-transform: var(--transform);
   }
@@ -91,7 +91,7 @@ $tokens: ();
 
   strong,
   div {
-    dp: var(--dsp-i);
+    --dp: var(--dsp-i);
     display: inline-flex;
   }
 }

@@ -10,7 +10,7 @@ header > [role=banner] {
   min-height: var(--ban);
   display: var(--dsp-f);
   align-items: var(--fb-center);
-  justify-content: var(--jc);
+  justify-content: var(--jcenter);
   flex-direction: var(--row);
   border-block: var(--bd);
   gap: var(--gap);
