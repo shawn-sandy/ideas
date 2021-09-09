@@ -94,9 +94,10 @@ video {
   outline: var(--outline);
   background-color: var(--bg);
   text-align: var(--text-align);
-  text-decoration: var(--text-decoration);
+  text-decoration: var(--decoration);
   text-shadow: var(--text-shadow);
   box-shadow: var(--box-shadow);
+  line-height: var(--line-height);
 }
 
 a,
@@ -116,10 +117,6 @@ time,
 audio,
 video {
   --dp: inline;
-}
-
-body:not(> section) {
-  --p-x: var(--xl);
 }
 
 section {

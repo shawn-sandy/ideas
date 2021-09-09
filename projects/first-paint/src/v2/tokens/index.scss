@@ -51,6 +51,7 @@ $tokens: (
   "fb-start": "flex-start",
   "fb-end": "flex-end",
   "fb-stretch": "stretch",
+  "fb-center": "center",
   "align-items": var(--fb-center),
   // flex justify
   "jc": "center",
@@ -144,7 +145,7 @@ $tokens: (
   "fw-regular": 400,
   "fs-weight": var(--fw-regular),
   //others
-  "txt-decoration": "none",
+  "decoration": "none",
   "outline": "none",
   "line-height": 1.5,
   "word-break": normal,
