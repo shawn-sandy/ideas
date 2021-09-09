@@ -42,12 +42,12 @@
   --fb-stretch: stretch;
   --fb-center: center;
   --align-items: var(--fb-center);
-  --jc: center;
-  --js: flex-start;
-  --je: flex-end;
-  --jb: space-between;
-  --jt: var(--jc);
-  --fb-wrap: wrap;
+  --jcenter: center;
+  --jstart: flex-start;
+  --jend: flex-end;
+  --jbetween: space-between;
+  --jt: var(--jcenter);
+  --t fb-wrap: wrap;
   --gap: 1rem;
   --gap-sm: var(--sm);
   --gap-md: var(--md);

@@ -44,12 +44,12 @@
   --fb-stretch: stretch;
   --fb-center: center;
   --align-items: var(--fb-center);
-  --jc: center;
-  --js: flex-start;
-  --je: flex-end;
-  --jb: space-between;
-  --jt: var(--jc);
-  --fb-wrap: wrap;
+  --jcenter: center;
+  --jstart: flex-start;
+  --jend: flex-end;
+  --jbetween: space-between;
+  --jt: var(--jcenter);
+  --t fb-wrap: wrap;
   --gap: 1rem;
   --gap-sm: var(--sm);
   --gap-md: var(--md);
@@ -660,7 +660,7 @@ header > [role=banner] {
   min-height: var(--ban);
   display: var(--dsp-f);
   align-items: var(--fb-center);
-  justify-content: var(--jc);
+  justify-content: var(--jcenter);
   flex-direction: var(--row);
   border-block: var(--bd);
   gap: var(--gap);
@@ -692,21 +692,21 @@ nav {
   --nav-dp: var(--dsp-f);
   --nav-align: var(--al);
   --nav-height: var(--4xl);
-  --justify: var(--jb);
+  --justify: var(--jbetween);
   --dp: var(--nav-dp);
 }
 @media (min-width: 980px) {
   nav {
     display: var(--nav-dp);
     align-items: var(--align-items);
-    justify-content: var(--jb);
+    justify-content: var(--jbetween);
     height: var(--nav-height);
   }
 }
 @media (max-width: 780px) {
   nav {
     flex-direction: var(--col);
-    justify-content: var(--jc);
+    justify-content: var(--jcenter);
   }
 }
 nav a,
@@ -826,7 +826,7 @@ ul[role=list] {
   --flex: var(--flex);
   display: var(--dsp-f, flex);
   flex-wrap: var(--wrap, wrap);
-  justify-content: var(--jb, space-between);
+  justify-content: var(--jbetween, space-between);
   gap: var(--gap, 0);
 }
 .fp-grid[role=list] [role=listitem],
@@ -966,7 +966,7 @@ footer[role=contentinfo] > section {
   flex-direction: var(--direction);
   flex-wrap: var(--wrap);
   align-items: var(--al);
-  justify-content: var(--jc);
+  justify-content: var(--jcenter);
   gap: var(--gap);
   --dp: var(--dsp-f);
   --fs: var(--s2);

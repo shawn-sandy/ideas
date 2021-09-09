@@ -8,7 +8,7 @@ ul[role=list] {
   --flex: var(--flex);
   display: var(--dsp-f, flex);
   flex-wrap: var(--wrap, wrap);
-  justify-content: var(--jb, space-between);
+  justify-content: var(--jbetween, space-between);
   gap: var(--gap, 0);
 }
 .fp-grid[role=list] [role=listitem],

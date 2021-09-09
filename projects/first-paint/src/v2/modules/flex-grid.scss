@@ -31,7 +31,7 @@ $tokens: (
 @mixin flex-grid {
   display: var(--dsp-f, flex);
   flex-wrap: var(--wrap, wrap);
-  justify-content: var(--jb, space-between);
+  justify-content: var(--jbetween, space-between);
   gap: var(--gap, 0);
 
   [role="listitem"] {
