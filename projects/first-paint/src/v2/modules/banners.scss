@@ -48,6 +48,7 @@ $tokens: (
     --fw: var(--vw-medium);
     --w: 80%;
     --text-align: var(--center);
+    max-width: var(--w);
     p {
       --w: 100%;
       --text-align: var(--center);

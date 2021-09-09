@@ -668,6 +668,7 @@ header > [role=banner] > div {
   --fw: var(--vw-medium);
   --w: 80%;
   --text-align: var(--center);
+  max-width: var(--w);
 }
 .fp-header > [role=banner] > div p,
 header > [role=banner] > div p {
