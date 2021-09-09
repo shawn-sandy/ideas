@@ -1,7 +1,7 @@
 .fp-footer[role=contentinfo],
 footer[role=contentinfo] {
   --fs: var(--s2) !important;
-  --p-bk: var(--xl);
+  --px: var(--xl);
 }
 .fp-footer[role=contentinfo] > section,
 footer[role=contentinfo] > section {

@@ -119,7 +119,14 @@ video {
 }
 
 body:not(> section) {
-  --p-bk: var(--xl);
+  --p-x: var(--xl);
+}
+
+section {
+  --p-y: var(--xl);
+}
+section:not(body > section) {
+  padding-block: var(--p-y);
 }
 
 summary,
