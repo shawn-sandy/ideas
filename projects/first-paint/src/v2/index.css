@@ -4,13 +4,16 @@
   --bg: hsl(0, 0%, 96%);
   --bg-image: none;
   --cl: hsl(0, 0%, 8%);
-  --cl-dark: var(color);
-  --cl-light: #fff;
   --border: 0;
   --border-w: thin;
   --border-cl: lightgray;
   --border-style: solid;
   --border-radius: 0;
+  --rds-sm: 0.3rem;
+  --rds-md: 0.5rem;
+  --rds-lg: 1rem;
+  --rds-xl: 2rem;
+  --rds-pill: 99rem;
   --border-1: var(--border-w) var(--border-style) var(--border-cl);
   --bd-cl-dark: black;
   --bd-cl-light: white;
@@ -18,7 +21,7 @@
   --v-top: top;
   --v-base: baseline;
   --v-bottom: bottom;
-  --v-text-top: text-top;
+  --v-tx-top: text-top;
   --v-align: var(--v-base);
   --right: end;
   --center: center;
@@ -37,17 +40,17 @@
   --grow: 1;
   --basis: 30%;
   --flex: var(--grow) var(--shrink) var(--basis);
-  --al: center;
-  --al-start: flex-start;
-  --al-end: flex-end;
-  --al-stretch: stretch;
-  --align-items: var(--al);
+  --fb-center: center;
+  --fb-start: flex-start;
+  --fb-end: flex-end;
+  --fb-stretch: stretch;
+  --align-items: var(--fb-center);
   --jc: center;
   --js: flex-start;
   --je: flex-end;
   --jb: space-between;
-  --jfy: var(--jc);
-  --wrap: wrap;
+  --jt: var(--jc);
+  --fb-wrap: wrap;
   --gap: 1rem;
   --gap-sm: var(--sm);
   --gap-md: var(--md);
@@ -90,14 +93,16 @@
   --mb: var(--0);
   --ml: var(--0);
   --mr: var(--0);
+  --m-in: auto;
+  --m-bk: auto;
   --m: var(--mb) var(--mt) var(--ml) var(--mr);
   --pt: var(--0);
   --pb: var(--0);
   --pl: var(--0);
   --pr: var(--0);
   --p: var(--pt) var(--pb) var(--pl) var(--pr);
-  --p-inline: var(--rem);
-  --p-block: var(--rem);
+  --p-in: auto;
+  --p-bk: auto;
   --vh-sm: 10vh;
   --vh-md: 25vh;
   --vh-lg: 50vh;
@@ -119,7 +124,6 @@
   --fw-bold: 700;
   --fw-regular: 400;
   --fs-weight: var(--fw-regular);
-  --breakpoint-lg: 1200px;
   --txt-decoration: none;
   --outline: none;
   --line-height: 1.5;
@@ -133,6 +137,8 @@
   --capitalize: capitalize;
   --truncate: truncate;
   --rds: 0.25rem;
+  --box: border-box;
+  --box-ct: content-box;
   --ban-xxl: 90vh;
   --ban-xl: 80vh;
   --ban-lg: 75vh;
@@ -330,14 +336,6 @@ fieldset,
 form,
 label,
 legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
 p,
 article,
 aside,
@@ -347,6 +345,7 @@ embed,
 figure,
 figcaption,
 footer,
+footer[role=contentinfo],
 header,
 hgroup,
 menu,
@@ -361,11 +360,21 @@ mark,
 audio,
 video {
   --bg: transparent;
-  margin: var(--m);
   padding: var(--p);
-  border: 0;
+  padding-block-start: var(--pt);
+  padding-block-end: var(--pb);
+  padding-inline-start: var(--pl);
+  padding-inline-end: var(--pr);
+  margin: var(--m);
+  margin-block-start: var(--mt);
+  margin-block-end: var(--mb);
+  margin-inline-start: var(--ml);
+  margin-inline-end: var(--mr);
+  display: var(--dp, block);
+  border: var(--border);
   font: inherit;
   font-family: var(--fs-family);
+  font-size: var(--fs);
   vertical-align: var(--v-align);
   outline: var(--outline);
   background-color: var(--bg);
@@ -375,25 +384,23 @@ video {
   box-shadow: var(--box-shadow);
 }
 
-nav,
-header,
-main,
-footer,
-section,
-article,
-aside,
-details,
-summary,
-figure,
-figcaption,
-div,
-p {
-  --fs: var(--rem);
-  padding: var(--p);
-  margin: var(--m);
-  display: var(--dp);
-  font-size: var(--fs);
-  width: var(--w);
+a,
+q,
+b,
+strong,
+i,
+em,
+small,
+big,
+sub,
+sup,
+dfn,
+ins,
+mark,
+time,
+audio,
+video {
+  --dp: inline;
 }
 
 summary,
@@ -402,6 +409,10 @@ figcaption,
 p {
   --pt: var(--rem);
   --pb: var(--rem);
+}
+
+div {
+  --p: var(--rem);
 }
 
 * {
@@ -454,7 +465,8 @@ body {
 :where(body) main,
 :where(body) nav,
 :where(body) footer[role=contentinfo] {
-  padding-block: var(--p-block);
+  padding-block: var(--p-bk);
+  padding-inline: var(--p-in);
   width: 80%;
   margin: 0 auto;
 }
@@ -464,67 +476,153 @@ body {
 :where(body) nav,
 :where(body) footer[role=contentinfo] {
     width: 100%;
-    padding-inline: var(--p-inline);
+    padding-inline: var(--p-in);
   }
 }
 
-html * {
-  box-shadow: var(--shadow);
-  text-shadow: var(--text-shadow);
+@media (max-width: 680px) {
+  section,
+article,
+aside,
+summary,
+ul,
+ol,
+div {
+    padding: 1rem;
+  }
 }
-html * p,
-html * li,
-html * div,
-html * aside,
-html * blockquote,
-html * em,
-html * strong,
-html * small,
-html * h1,
-html * h2,
-html * h3,
-html * h4,
-html * h5,
-html * h6 {
+
+:any-link {
+  color: var(--cl);
+}
+:any-link + * {
+  margin-inline-start: var(--ml);
+  --ml: var(--rem);
+}
+:any-link :where(em, strong, b, div) {
+  margin: var(--m);
+  margin-block-start: var(--mt);
+  margin-block-end: var(--mb);
+  margin-inline-start: var(--ml);
+  margin-inline-end: var(--mr);
+  padding: var(--p);
+  padding-block-start: var(--pt);
+  padding-block-end: var(--pb);
+  padding-inline-start: var(--pl);
+  padding-inline-end: var(--pr);
+  --fs-weight: var(--fs-medium);
+  --jt: "center";
+  --dp: var(--dp-i);
+  --min-h: 2.5rem;
+  --p-in: var(--s4);
+  --pl: var(--rem);
+  --line-height: 0;
+  --bg: lightgray;
+  --border-radius: var(--rds-sm);
+  border-radius: var(--rds);
+  justify-content: var(--justify);
+  align-items: var(--fb-center);
+  min-height: var(--min-h);
+  padding: var(--p);
+  display: var(--dp-i);
+  padding-inline: var(--p-in);
+  background-color: var(--bg);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  font-weight: var(--fs-weight);
+  box-sizing: var(--box);
+}
+@media (max-width: 680px) {
+  :any-link :where(em, strong, b, div) {
+    --min-h: var(--s6);
+  }
+}
+:any-link b {
+  --bg: transparent;
+  --border: var(--border-1);
+  border-width: 3px;
+}
+:any-link em {
+  --border-radius: 99rem;
+}
+:any-link strong,
+:any-link div {
+  dp: var(--dp-i);
+  display: inline-flex;
+}
+
+button {
+  margin: var(--m);
+  margin-block-start: var(--mt);
+  margin-block-end: var(--mb);
+  margin-inline-start: var(--ml);
+  margin-inline-end: var(--mr);
+  padding: var(--p);
+  padding-block-start: var(--pt);
+  padding-block-end: var(--pb);
+  padding-inline-start: var(--pl);
+  padding-inline-end: var(--pr);
+  --fs-weight: var(--fs-medium);
+  --jt: "center";
+  --dp: var(--dp-i);
+  --min-h: 2.5rem;
+  --p-in: var(--s4);
+  --pl: var(--rem);
+  --line-height: 0;
+  --bg: lightgray;
+  --border-radius: var(--rds-sm);
+  border-radius: var(--rds);
+  justify-content: var(--justify);
+  align-items: var(--fb-center);
+  min-height: var(--min-h);
+  padding: var(--p);
+  display: var(--dp-i);
+  padding-inline: var(--p-in);
+  background-color: var(--bg);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  font-weight: var(--fs-weight);
+  box-sizing: var(--box);
+}
+@media (max-width: 680px) {
+  button {
+    --min-h: var(--s6);
+  }
+}
+
+article + article {
+  margin-block-start: var(--mt);
+}
+
+hr {
+  --rem: var(--xxl);
+  margin-block: var(--rem);
+  border: var(--border);
+  border-bottom: var(--border-1);
+}
+
+html p,
+html li,
+html aside,
+html blockquote,
+html em,
+html strong,
+html small,
+html h1,
+html h2,
+html h3,
+html h4,
+html h5,
+html h6 {
   font-size: var(--fs);
   color: var(--cl);
   text-decoration: var(--text-decor);
   text-shadow: none;
   text-transform: var(--transform);
 }
-html :any-link {
-  color: var(--cl);
-}
-html :any-link + * {
-  margin-inline-start: var(--ml);
-  --ml: var(--rem);
-}
-html :any-link :where(em, strong, b, span) {
-  border-radius: var(--rds);
-  justify-content: var(--justify);
-  align-items: var(--al);
-  min-height: var(--min-h);
-  padding: var(--p);
-  display: var(--dp-i);
-  padding-inline: var(--p-inline);
-  background-color: var(--bg);
-  --jfy: "center";
-  --dp: var(--dp-i);
-  --min-h: var(--s6);
-  --p-inline: var(--s4);
-  --pl: var(--rem);
-  --bg: whitesmoke;
-  --line-height: 0;
-}
-html button {
-  border-radius: var(--rds);
-  justify-content: var(--justify);
-  align-items: var(--al);
-  min-height: var(--min-h);
-  padding: var(--p);
-  display: var(--dp-i);
-  padding-inline: var(--p-inline);
-  background-color: var(--bg);
+html * {
+  box-shadow: var(--shadow);
+  text-shadow: var(--text-shadow);
 }
 
 @media (min-width: 980px) {
@@ -543,10 +641,11 @@ header {
 .fp-header > [role=banner],
 header > [role=banner] {
   --bg: var(--off-white);
+  --ban: var(--vh-lg);
   background-color: var(--bg);
-  min-height: var(--ban-md);
+  min-height: var(--ban);
   display: var(--dp-f);
-  align-items: var(--al);
+  align-items: var(--fb-center);
   justify-content: var(--jc);
   flex-direction: var(--row);
   border-block: var(--bd);
@@ -567,6 +666,7 @@ header > [role=banner] > div {
   --fw: var(--vw-medium);
   --w: 80%;
   --text-align: var(--center);
+  max-width: var(--w);
 }
 .fp-header > [role=banner] > div p,
 header > [role=banner] > div p {
@@ -751,6 +851,54 @@ ul[role=list] [role=listitem] {
   }
 }
 
+button {
+  --bg: transparent;
+}
+button[type] {
+  --bg: var(--light);
+}
+button[type=submit] {
+  --bg: var(--dark);
+  --cl: var(--light);
+}
+button[type=reset] {
+  --bg: transparent;
+  --border: var(--border-1);
+}
+.fp-table,
+table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  width: 100%;
+  border: thin solid whitesmoke;
+}
+.fp-table thead tr,
+table thead tr {
+  background-color: whitesmoke;
+  text-align: left;
+}
+.fp-table th,
+.fp-table td,
+table th,
+table td {
+  padding: 0.75rem 1rem;
+}
+.fp-table tbody tr,
+table tbody tr {
+  border-bottom: thin solid whitesmoke;
+}
+.fp-table tbody tr:nth-of-type(even),
+table tbody tr:nth-of-type(even) {
+  background-color: ghostwhite;
+}
+.fp-table tbody tr:last-of-type,
+table tbody tr:last-of-type {
+  border-bottom: 2px solid whitesmoke;
+}
+
 > div + div {
   margin-top: 1rem;
 }
@@ -791,6 +939,29 @@ textarea[id]::placeholder,
 select[id]::placeholder {
   font-style: italic;
   color: lightgrey;
+}
+
+.fp-footer[role=contentinfo],
+footer[role=contentinfo] {
+  --fs: var(--s2) !important;
+  --p-bk: var(--xl);
+}
+.fp-footer[role=contentinfo] > section,
+footer[role=contentinfo] > section {
+  display: var(--dp);
+  flex-direction: var(--direction);
+  flex-wrap: var(--wrap);
+  align-items: var(--al);
+  justify-content: var(--jc);
+  gap: var(--gap);
+  --dp: var(--dp-f);
+  --fs: var(--s2);
+  --p: var(--rem);
+}
+.fp-footer[role=contentinfo] > div,
+footer[role=contentinfo] > div {
+  --text-align: center;
+  --p: 1rem;
 }
 
 /*

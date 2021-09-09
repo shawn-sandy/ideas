@@ -6,7 +6,6 @@ nav {
   --justify: var(--jb);
   --dp: var(--nav-dp);
 }
-
 @media (min-width: 980px) {
   nav {
     display: var(--nav-dp);
@@ -26,20 +25,16 @@ nav li {
   font-size: var(--fs);
   --fs: var(--sm);
 }
-
 nav span {
   --bg: transparent;
 }
-
 nav h1 {
   --line-height: 0;
 }
-
 nav h1 a {
   --fs: var(--md);
   margin-block-end: 0;
 }
-
 nav :where(> section, ul) {
   display: var(--nav-dp, --dp);
   align-items: var(--nav-align, --aln);
@@ -48,18 +43,15 @@ nav :where(> section, ul) {
   height: 100%;
   font-size: var(--font-size);
 }
-
 nav :where(> section, ul) :any-link {
   font-size: var(--font-size);
 }
-
 nav img[alt] {
   vertical-align: var(--vertical-align);
   --vertical-align: var(--v-mid);
   --max-h: var(--xxl);
   max-height: var(--max-h);
 }
-
 nav img[alt] + * {
   --ml: var(--s1);
   margin-left: var(--ml);

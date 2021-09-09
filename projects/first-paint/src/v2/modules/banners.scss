@@ -25,10 +25,11 @@ $tokens: (
 
 @mixin banner {
   --bg: var(--off-white);
+  --ban: var(--vh-lg);
   background-color: var(--bg);
-  min-height: var(--ban-md);
+  min-height: var(--ban);
   display: var(--dp-f);
-  align-items: var(--al);
+  align-items: var(--fb-center);
   justify-content: var(--jc);
   flex-direction: var(--row);
   border-block: var(--bd);
@@ -47,6 +48,7 @@ $tokens: (
     --fw: var(--vw-medium);
     --w: 80%;
     --text-align: var(--center);
+    max-width: var(--w);
     p {
       --w: 100%;
       --text-align: var(--center);

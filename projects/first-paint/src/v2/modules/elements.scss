@@ -1,6 +1,8 @@
 // set variables
 // TODO Search and replace name with CSS tag/element name
 @use './utilities/maps';
+@use './utilities/mixins' as mix;
+@use './utilities/functions' as fn;
 $render: true !default;
 $prefix: "layout";
 $tokens: ();
@@ -15,65 +17,100 @@ $tokens: ();
   }
 }
 
-@mixin elements {
-  // TODO add mixin code
-  * {
-    p,
-    li,
-    div,
-    aside,
-    blockquote,
-    em,
-    strong,
-    small,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-size: var(--fs);
-      color: var(--cl);
-      text-decoration: var(--text-decor);
-      text-shadow: none;
-      text-transform: var(--transform);
-    }
-    box-shadow: var(--shadow);
-    text-shadow: var(--text-shadow);
-  }
-
-  :any-link {
-    color: var(--cl);
-    + * {
-      margin-inline-start: var(--ml);
-      --ml: var(--rem);
-    }
-    :where(em, strong, b, span) {
-      @include button-element();
-      --jfy: "center";
-      --dp: var(--dp-i);
-      --min-h: var(--s6);
-      --p-inline: var(--s4);
-      --pl: var(--rem);
-      --bg: whitesmoke;
-      --line-height: 0;
-    }
-  }
-
-  button {
-    @include button-element();
-  }
-}
-
-@mixin button-element {
+@mixin button() {
+  @include mix.margin();
+  @include mix.padding();
+  --fs-weight: var(--fs-medium);
+  --jt: "center";
+  --dp: var(--dp-i);
+  --min-h: var(--md);
+  --p-in: var(--s4);
+  --pl: var(--rem);
+  --line-height: 0;
+  --bg: lightgray;
+  --border-radius: var(--rds-sm);
   border-radius: var(--rds);
   justify-content: var(--justify);
-  align-items: var(--al);
+  align-items: var(--fb-center);
   min-height: var(--min-h);
   padding: var(--p);
   display: var(--dp-i);
-  padding-inline: var(--p-inline);
+  padding-inline: var(--p-in);
   background-color: var(--bg);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  font-weight: var(--fs-weight);
+}
+
+@mixin elements() {
+  // TODO add mixin code
+  p,
+  li,
+  aside,
+  blockquote,
+  em,
+  strong,
+  small,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: var(--fs);
+    color: var(--cl);
+    text-decoration: var(--text-decor);
+    text-shadow: none;
+    text-transform: var(--transform);
+  }
+  * {
+    box-shadow: var(--shadow);
+    text-shadow: var(--text-shadow);
+  }
+}
+
+:any-link {
+  color: var(--cl);
+  + * {
+    margin-inline-start: var(--ml);
+    --ml: var(--rem);
+  }
+  :where(em, strong, b, div) {
+    @include mix.button();
+  }
+
+  b {
+    --bg: transparent;
+    --border: var(--border-1);
+    border-width: 3px;
+  }
+
+  em {
+    --border-radius: 99rem;
+  }
+
+  strong,
+  div {
+    dp: var(--dp-i);
+    display: inline-flex;
+  }
+}
+
+button {
+  @include mix.button();
+}
+
+article {
+  + article {
+    margin-block-start: var(--mt);
+  }
+}
+
+hr {
+  --rem: var(--xxl);
+  margin-block: var(--rem);
+  border: var(--border);
+  border-bottom: var(--border-1);
 }
 
 @mixin config($_color: null, $_background-color: null) {

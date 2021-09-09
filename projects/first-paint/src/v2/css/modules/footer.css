@@ -1,0 +1,22 @@
+.fp-footer[role=contentinfo],
+footer[role=contentinfo] {
+  --fs: var(--s2) !important;
+  --p-bk: var(--xl);
+}
+.fp-footer[role=contentinfo] > section,
+footer[role=contentinfo] > section {
+  display: var(--dp);
+  flex-direction: var(--direction);
+  flex-wrap: var(--wrap);
+  align-items: var(--al);
+  justify-content: var(--jc);
+  gap: var(--gap);
+  --dp: var(--dp-f);
+  --fs: var(--s2);
+  --p: var(--rem);
+}
+.fp-footer[role=contentinfo] > div,
+footer[role=contentinfo] > div {
+  --text-align: center;
+  --p: 1rem;
+}
