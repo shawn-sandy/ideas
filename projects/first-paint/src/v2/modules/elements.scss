@@ -22,23 +22,23 @@ $tokens: ();
   @include mix.padding();
   --fs-weight: var(--fs-medium);
   --jt: "center";
-  --dp: var(--dp-i);
+  --dp: var(--dsp-i);
   --min-h: var(--md);
   --p-in: var(--s4);
   --pl: var(--rem);
   --line-height: 0;
   --bg: lightgray;
-  --border-radius: var(--rds-sm);
+  --bdr-radius: var(--rds-sm);
   border-radius: var(--rds);
   justify-content: var(--justify);
   align-items: var(--fb-center);
   min-height: var(--min-h);
   padding: var(--p);
-  display: var(--dp-i);
+  display: var(--dsp-i);
   padding-inline: var(--p-in);
   background-color: var(--bg);
-  border: var(--border);
-  border-radius: var(--border-radius);
+  border: var(--bdr);
+  border-radius: var(--bdr-radius);
   font-weight: var(--fs-weight);
 }
 
@@ -81,17 +81,17 @@ $tokens: ();
 
   b {
     --bg: transparent;
-    --border: var(--border-1);
+    --bdr: var(--bdr-1);
     border-width: 3px;
   }
 
   em {
-    --border-radius: 99rem;
+    --bdr-radius: 99rem;
   }
 
   strong,
   div {
-    dp: var(--dp-i);
+    dp: var(--dsp-i);
     display: inline-flex;
   }
 }
@@ -109,8 +109,8 @@ article {
 hr {
   --rem: var(--xxl);
   margin-block: var(--rem);
-  border: var(--border);
-  border-bottom: var(--border-1);
+  border: var(--bdr);
+  border-bottom: var(--bdr-1);
 }
 
 @mixin config($_color: null, $_background-color: null) {

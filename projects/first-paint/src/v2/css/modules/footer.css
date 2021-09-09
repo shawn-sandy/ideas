@@ -11,7 +11,7 @@ footer[role=contentinfo] > section {
   align-items: var(--al);
   justify-content: var(--jc);
   gap: var(--gap);
-  --dp: var(--dp-f);
+  --dp: var(--dsp-f);
   --fs: var(--s2);
   --p: var(--rem);
 }

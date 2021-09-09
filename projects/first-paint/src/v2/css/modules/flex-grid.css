@@ -6,7 +6,7 @@ ul[role=list] {
   --grid-flex: 1 1 30%;
   --grid-size: 30%;
   --flex: var(--flex);
-  display: var(--dp-f, flex);
+  display: var(--dsp-f, flex);
   flex-wrap: var(--wrap, wrap);
   justify-content: var(--jb, space-between);
   gap: var(--gap, 0);

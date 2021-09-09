@@ -76,6 +76,8 @@ audio,
 video {
   --bg: transparent;
   padding: var(--p);
+  padding-line: var(--p);
+  padding-block: var(--p);
   padding-block-start: var(--pt);
   padding-block-end: var(--pb);
   padding-inline-start: var(--pl);
@@ -86,7 +88,7 @@ video {
   margin-inline-start: var(--ml);
   margin-inline-end: var(--mr);
   display: var(--dp, block);
-  border: var(--border);
+  border: var(--bdr);
   font: inherit;
   font-family: var(--fs-family);
   font-size: var(--fs);
@@ -126,6 +128,10 @@ p {
   --pb: var(--rem);
 }
 
-div {
+div,
+summary,
+details,
+figcaption,
+aside {
   --p: var(--rem);
 }

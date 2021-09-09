@@ -97,7 +97,7 @@ $tokens: ();
     @include mix.padding();
     @include mix.margin();
     display: var(--dp, block);
-    border: var(--border);
+    border: var(--bdr);
     font: inherit;
     font-family: var(--fs-family);
     font-size: var(--fs);
@@ -139,7 +139,11 @@ $tokens: ();
     --pb: var(--rem);
   }
 
-  div {
+  div,
+  summary,
+  details,
+  figcaption,
+  aside {
     --p: var(--rem);
   }
 }

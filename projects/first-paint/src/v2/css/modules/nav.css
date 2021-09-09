@@ -1,6 +1,6 @@
 @import "../modules/utilities/functions" as fn;
 nav {
-  --nav-dp: var(--dp-f);
+  --nav-dp: var(--dsp-f);
   --nav-align: var(--al);
   --nav-height: var(--4xl);
   --justify: var(--jb);
@@ -48,7 +48,7 @@ nav :where(> section, ul) :any-link {
 }
 nav img[alt] {
   vertical-align: var(--vertical-align);
-  --vertical-align: var(--v-mid);
+  --vertical-align: var(--mid);
   --max-h: var(--xxl);
   max-height: var(--max-h);
 }
