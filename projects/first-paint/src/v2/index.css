@@ -10,13 +10,12 @@
   --bdr: 0;
   --bdr-radius: 0;
   --bdr-1: var(--bdr-w) var(--bdr-style) var(--bdr-cl);
-  --rds-sm: 0.3rem;
-  --rds-md: 0.5rem;
+  --rds-sm: 0.7rem;
+  --rds-md: 0.7 0.5rem;
   --rds-lg: 1rem;
   --rds-xl: 2rem;
   --rds-pill: 99rem;
-  --bd-cl-dark: black;
-  --bd-cl-light: white;
+  --rds: 0.25rem;
   --mid: middle;
   --top: top;
   --base: baseline;
@@ -136,7 +135,6 @@
   --lowercase: lowercase;
   --capitalize: capitalize;
   --truncate: truncate;
-  --rds: 0.25rem;
   --box: border-box;
   --box-ct: content-box;
   --ban-xxl: 90vh;
@@ -533,7 +531,7 @@ div {
   --pl: var(--rem);
   --line-height: 0;
   --bg: lightgray;
-  --bdr-radius: var(--rds-sm);
+  --bdr-radius: var(--rds);
   border-radius: var(--rds);
   justify-content: var(--justify);
   align-items: var(--fb-center);
@@ -586,7 +584,7 @@ button {
   --pl: var(--rem);
   --line-height: 0;
   --bg: lightgray;
-  --bdr-radius: var(--rds-sm);
+  --bdr-radius: var(--rds);
   border-radius: var(--rds);
   justify-content: var(--justify);
   align-items: var(--fb-center);
