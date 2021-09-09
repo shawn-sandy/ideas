@@ -10,5 +10,5 @@ button[type=submit] {
 }
 button[type=reset] {
   --bg: transparent;
-  --border: var(--border-1);
+  --bdr: var(--bdr-1);
 }

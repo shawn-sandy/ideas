@@ -25,7 +25,7 @@ $tokens: ();
     --px: var(--xl);
     > section {
       @include mix.flexbox();
-      --dp: var(--dp-f);
+      --dp: var(--dsp-f);
       --fs: var(--s2);
       --p: var(--rem);
     }

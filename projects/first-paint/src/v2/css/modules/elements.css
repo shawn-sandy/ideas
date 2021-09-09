@@ -12,19 +12,21 @@
   margin-inline-start: var(--ml);
   margin-inline-end: var(--mr);
   padding: var(--p);
+  padding-line: var(--p);
+  padding-block: var(--p);
   padding-block-start: var(--pt);
   padding-block-end: var(--pb);
   padding-inline-start: var(--pl);
   padding-inline-end: var(--pr);
   --fs-weight: var(--fs-medium);
   --jt: "center";
-  --dp: var(--dp-i);
+  --dp: var(--dsp-i);
   --min-h: 2.5rem;
   --p-y: var(--s4);
   --pl: var(--rem);
   --line-height: 0;
   --bg: lightgray;
-  --border-radius: var(--rds-sm);
+  --bdr-radius: var(--rds-sm);
   border-radius: var(--rds);
   justify-content: var(--justify);
   align-items: var(--fb-center);
@@ -33,8 +35,8 @@
   display: var(--dp-i);
   padding-inline: var(--p-y);
   background-color: var(--bg);
-  border: var(--border);
-  border-radius: var(--border-radius);
+  border: var(--bdr);
+  border-radius: var(--bdr-radius);
   font-weight: var(--fs-weight);
   box-sizing: var(--box);
 }
@@ -45,15 +47,15 @@
 }
 :any-link b {
   --bg: transparent;
-  --border: var(--border-1);
+  --bdr: var(--bdr-1);
   border-width: 3px;
 }
 :any-link em {
-  --border-radius: 99rem;
+  --bdr-radius: 99rem;
 }
 :any-link strong,
 :any-link div {
-  dp: var(--dp-i);
+  dp: var(--dsp-i);
   display: inline-flex;
 }
 
@@ -64,19 +66,21 @@ button {
   margin-inline-start: var(--ml);
   margin-inline-end: var(--mr);
   padding: var(--p);
+  padding-line: var(--p);
+  padding-block: var(--p);
   padding-block-start: var(--pt);
   padding-block-end: var(--pb);
   padding-inline-start: var(--pl);
   padding-inline-end: var(--pr);
   --fs-weight: var(--fs-medium);
   --jt: "center";
-  --dp: var(--dp-i);
+  --dp: var(--dsp-i);
   --min-h: 2.5rem;
   --p-y: var(--s4);
   --pl: var(--rem);
   --line-height: 0;
   --bg: lightgray;
-  --border-radius: var(--rds-sm);
+  --bdr-radius: var(--rds-sm);
   border-radius: var(--rds);
   justify-content: var(--justify);
   align-items: var(--fb-center);
@@ -85,8 +89,8 @@ button {
   display: var(--dp-i);
   padding-inline: var(--p-y);
   background-color: var(--bg);
-  border: var(--border);
-  border-radius: var(--border-radius);
+  border: var(--bdr);
+  border-radius: var(--bdr-radius);
   font-weight: var(--fs-weight);
   box-sizing: var(--box);
 }
@@ -103,8 +107,8 @@ article + article {
 hr {
   --rem: var(--xxl);
   margin-block: var(--rem);
-  border: var(--border);
-  border-bottom: var(--border-1);
+  border: var(--bdr);
+  border-bottom: var(--bdr-1);
 }
 
 html p,
