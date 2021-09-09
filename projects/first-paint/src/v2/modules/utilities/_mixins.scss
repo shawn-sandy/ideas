@@ -38,7 +38,7 @@
   --jt: "center";
   --dp: var(--dp-i);
   --min-h: 2.5rem;
-  --p-in: var(--s4);
+  --p-y: var(--s4);
   --pl: var(--rem);
   --line-height: 0;
   --bg: lightgray;
@@ -49,7 +49,7 @@
   min-height: var(--min-h);
   padding: var(--p);
   display: var(--dp-i);
-  padding-inline: var(--p-in);
+  padding-inline: var(--p-y);
   background-color: var(--bg);
   border: var(--border);
   border-radius: var(--border-radius);

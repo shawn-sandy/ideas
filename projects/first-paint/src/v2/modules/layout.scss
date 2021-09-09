@@ -128,6 +128,12 @@ $tokens: ();
   video {
     --dp: inline;
   }
+
+  body {
+    &:not(> section) {
+      --p-bk: var(--xl);
+    }
+  }
 }
 
 @mixin layout-containers {

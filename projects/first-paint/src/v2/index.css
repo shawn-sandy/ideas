@@ -40,7 +40,6 @@
   --grow: 1;
   --basis: 30%;
   --flex: var(--grow) var(--shrink) var(--basis);
-  --fb-center: center;
   --fb-start: flex-start;
   --fb-end: flex-end;
   --fb-stretch: stretch;
@@ -93,8 +92,8 @@
   --mb: var(--0);
   --ml: var(--0);
   --mr: var(--0);
-  --m-in: auto;
-  --m-bk: auto;
+  --m-x: auto;
+  --m-y: auto;
   --m: var(--mb) var(--mt) var(--ml) var(--mr);
   --pt: var(--0);
   --pb: var(--0);
@@ -403,6 +402,10 @@ video {
   --dp: inline;
 }
 
+body:not(> section) {
+  --p-bk: var(--xl);
+}
+
 summary,
 details,
 figcaption,
@@ -466,7 +469,7 @@ body {
 :where(body) nav,
 :where(body) footer[role=contentinfo] {
   padding-block: var(--p-bk);
-  padding-inline: var(--p-in);
+  padding-inline: var(--p-y);
   width: 80%;
   margin: 0 auto;
 }
@@ -476,7 +479,7 @@ body {
 :where(body) nav,
 :where(body) footer[role=contentinfo] {
     width: 100%;
-    padding-inline: var(--p-in);
+    padding-inline: var(--p-y);
   }
 }
 
@@ -514,7 +517,7 @@ div {
   --jt: "center";
   --dp: var(--dp-i);
   --min-h: 2.5rem;
-  --p-in: var(--s4);
+  --p-y: var(--s4);
   --pl: var(--rem);
   --line-height: 0;
   --bg: lightgray;
@@ -525,7 +528,7 @@ div {
   min-height: var(--min-h);
   padding: var(--p);
   display: var(--dp-i);
-  padding-inline: var(--p-in);
+  padding-inline: var(--p-y);
   background-color: var(--bg);
   border: var(--border);
   border-radius: var(--border-radius);
@@ -566,7 +569,7 @@ button {
   --jt: "center";
   --dp: var(--dp-i);
   --min-h: 2.5rem;
-  --p-in: var(--s4);
+  --p-y: var(--s4);
   --pl: var(--rem);
   --line-height: 0;
   --bg: lightgray;
@@ -577,7 +580,7 @@ button {
   min-height: var(--min-h);
   padding: var(--p);
   display: var(--dp-i);
-  padding-inline: var(--p-in);
+  padding-inline: var(--p-y);
   background-color: var(--bg);
   border: var(--border);
   border-radius: var(--border-radius);

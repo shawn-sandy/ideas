@@ -38,7 +38,6 @@
   --grow: 1;
   --basis: 30%;
   --flex: var(--grow) var(--shrink) var(--basis);
-  --fb-center: center;
   --fb-start: flex-start;
   --fb-end: flex-end;
   --fb-stretch: stretch;
@@ -91,8 +90,8 @@
   --mb: var(--0);
   --ml: var(--0);
   --mr: var(--0);
-  --m-in: auto;
-  --m-bk: auto;
+  --m-x: auto;
+  --m-y: auto;
   --m: var(--mb) var(--mt) var(--ml) var(--mr);
   --pt: var(--0);
   --pb: var(--0);
