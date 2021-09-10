@@ -10,6 +10,7 @@ button[type=submit] {
 }
 button[type=reset] {
   --bg: transparent;
+  --fs-weight: var(--fw-medium);
   --border: var(--border-1);
-  border-width: 2px;
+  --border-w: 2px;
 }

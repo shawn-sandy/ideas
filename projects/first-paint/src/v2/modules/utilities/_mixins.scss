@@ -36,7 +36,6 @@
 @mixin button() {
   @include margin();
   @include padding();
-  --fs-weight: var(--fw-medium);
   --justify: "center";
   --min-h: 2.5rem;
   --py: var(--s4);

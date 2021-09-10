@@ -532,7 +532,6 @@ div {
   padding-block-end: var(--pb);
   padding-inline-start: var(--pl);
   padding-inline-end: var(--pr);
-  --fs-weight: var(--fw-medium);
   --justify: "center";
   --min-h: 2.5rem;
   --py: var(--s4);
@@ -583,7 +582,6 @@ button {
   padding-block-end: var(--pb);
   padding-inline-start: var(--pl);
   padding-inline-end: var(--pr);
-  --fs-weight: var(--fw-medium);
   --justify: "center";
   --min-h: 2.5rem;
   --py: var(--s4);
@@ -942,8 +940,9 @@ button[type=submit] {
 }
 button[type=reset] {
   --bg: transparent;
+  --fs-weight: var(--fw-medium);
   --border: var(--border-1);
-  border-width: 2px;
+  --border-w: 2px;
 }
 .fp-table,
 table {
