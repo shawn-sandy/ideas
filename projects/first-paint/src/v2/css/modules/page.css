@@ -49,7 +49,7 @@ body {
 :where(body) nav,
 :where(body) footer[role=contentinfo] {
   padding-block: var(--px);
-  padding-inline: var(--p-y);
+  padding-inline: var(--py);
   width: 80%;
   margin: 0 auto;
 }
@@ -59,7 +59,7 @@ body {
 :where(body) nav,
 :where(body) footer[role=contentinfo] {
     width: 100%;
-    padding-inline: var(--p-y);
+    padding-inline: var(--py);
   }
 }
 

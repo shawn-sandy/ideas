@@ -39,7 +39,7 @@
   --fs-weight: var(--fs-medium);
   --justify: "center";
   --min-h: 2.5rem;
-  --p-y: var(--s4);
+  --py: var(--s4);
   --pl: var(--rem);
   --line-height: 0;
   --bg: lightgray;
@@ -50,7 +50,7 @@
   min-height: var(--min-h);
   padding: var(--p);
   display: var(--dsp-i);
-  padding-inline: var(--p-y);
+  padding-inline: var(--py);
   background-color: var(--bg);
   border: var(--border);
   border-radius: var(--border-radius);
