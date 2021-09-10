@@ -5,9 +5,9 @@ table {
   --tb-border-radius: 0;
   --tb-bg: whitesmoke;
   --tb-bg-alt: lightgray;
-  --tb-border-width: var(--bdr-w);
-  --tb-border-style: var(--bdr-style);
-  --tb-border-color: var(--bdr-cl);
+  --tb-border-width: var(--border-w);
+  --tb-border-style: var(--border-style);
+  --tb-border-color: var(--border-cl);
   --tb-border: var(--tb-border-width) var(--tb-border-style) var(--tb-border-color);
   --m-x: var(--sm-x);
   --m-y: 0;
@@ -41,7 +41,7 @@ table tbody tr {
 }
 .fp-table tbody tr:nth-of-type(even),
 table tbody tr:nth-of-type(even) {
-  background-color: var(--td-bg-alt);
+  background-color: var(--tb-bg-alt);
 }
 .fp-table tbody tr:last-of-type,
 table tbody tr:last-of-type {

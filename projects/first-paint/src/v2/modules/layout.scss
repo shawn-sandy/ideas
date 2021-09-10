@@ -97,7 +97,7 @@ $tokens: ();
     @include mix.padding();
     @include mix.margin();
     display: var(--dp, block);
-    border: var(--bdr);
+    border: var(--border);
     font: inherit;
     font-family: var(--fs-family);
     font-size: var(--fs);

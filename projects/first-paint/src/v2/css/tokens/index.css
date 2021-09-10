@@ -2,12 +2,12 @@
   --bg: hsl(0, 0%, 96%);
   --bg-image: none;
   --cl: hsl(0, 0%, 8%);
-  --bdr-w: thin;
-  --bdr-cl: lightgray;
-  --bdr-style: solid;
-  --bdr: 0;
-  --bdr-radius: 0;
-  --bdr-1: var(--bdr-w) var(--bdr-style) var(--bdr-cl);
+  --border-w: thin;
+  --border-cl: lightgray;
+  --border-style: solid;
+  --border: 0;
+  --border-radius: 0;
+  --border-1: var(--border-w) var(--border-style) var(--border-cl);
   --rds-sm: 0.7rem;
   --rds-md: 0.7 0.5rem;
   --rds-lg: 1rem;

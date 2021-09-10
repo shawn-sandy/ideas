@@ -4,12 +4,12 @@
   --bg: hsl(0, 0%, 96%);
   --bg-image: none;
   --cl: hsl(0, 0%, 8%);
-  --bdr-w: thin;
-  --bdr-cl: lightgray;
-  --bdr-style: solid;
-  --bdr: 0;
-  --bdr-radius: 0;
-  --bdr-1: var(--bdr-w) var(--bdr-style) var(--bdr-cl);
+  --border-w: thin;
+  --border-cl: lightgray;
+  --border-style: solid;
+  --border: 0;
+  --border-radius: 0;
+  --border-1: var(--border-w) var(--border-style) var(--border-cl);
   --rds-sm: 0.7rem;
   --rds-md: 0.7 0.5rem;
   --rds-lg: 1rem;
@@ -379,7 +379,7 @@ video {
   margin-inline-start: var(--ml);
   margin-inline-end: var(--mr);
   display: var(--dp, block);
-  border: var(--bdr);
+  border: var(--border);
   font: inherit;
   font-family: var(--fs-family);
   font-size: var(--fs);
@@ -539,7 +539,7 @@ div {
   --pl: var(--rem);
   --line-height: 0;
   --bg: lightgray;
-  --bdr-radius: var(--rds);
+  --border-radius: var(--rds);
   border-radius: var(--rds);
   justify-content: var(--justify);
   align-items: var(--fb-center);
@@ -548,8 +548,8 @@ div {
   display: var(--dsp-i);
   padding-inline: var(--p-y);
   background-color: var(--bg);
-  border: var(--bdr);
-  border-radius: var(--bdr-radius);
+  border: var(--border);
+  border-radius: var(--border-radius);
   font-weight: var(--fs-weight);
   box-sizing: var(--box);
 }
@@ -560,11 +560,11 @@ div {
 }
 :any-link b {
   --bg: transparent;
-  --bdr: var(--bdr-1);
+  --border: var(--border-1);
   border-width: 3px;
 }
 :any-link em {
-  --bdr-radius: 99rem;
+  --border-radius: 99rem;
 }
 :any-link strong,
 :any-link div {
@@ -592,7 +592,7 @@ button {
   --pl: var(--rem);
   --line-height: 0;
   --bg: lightgray;
-  --bdr-radius: var(--rds);
+  --border-radius: var(--rds);
   border-radius: var(--rds);
   justify-content: var(--justify);
   align-items: var(--fb-center);
@@ -601,8 +601,8 @@ button {
   display: var(--dsp-i);
   padding-inline: var(--p-y);
   background-color: var(--bg);
-  border: var(--bdr);
-  border-radius: var(--bdr-radius);
+  border: var(--border);
+  border-radius: var(--border-radius);
   font-weight: var(--fs-weight);
   box-sizing: var(--box);
 }
@@ -619,8 +619,8 @@ article + article {
 hr {
   --rem: var(--2xl);
   margin-block: var(--rem);
-  border: var(--bdr);
-  border-bottom: var(--bdr-1);
+  border: var(--border);
+  border-bottom: var(--border-1);
 }
 
 html p,
@@ -885,7 +885,7 @@ button[type=submit] {
 }
 button[type=reset] {
   --bg: transparent;
-  --bdr: var(--bdr-1);
+  --border: var(--border-1);
 }
 .fp-table,
 table {
@@ -894,9 +894,9 @@ table {
   --tb-border-radius: 0;
   --tb-bg: whitesmoke;
   --tb-bg-alt: lightgray;
-  --tb-border-width: var(--bdr-w);
-  --tb-border-style: var(--bdr-style);
-  --tb-border-color: var(--bdr-cl);
+  --tb-border-width: var(--border-w);
+  --tb-border-style: var(--border-style);
+  --tb-border-color: var(--border-cl);
   --tb-border: var(--tb-border-width) var(--tb-border-style) var(--tb-border-color);
   --m-x: var(--sm-x);
   --m-y: 0;
@@ -930,7 +930,7 @@ table tbody tr {
 }
 .fp-table tbody tr:nth-of-type(even),
 table tbody tr:nth-of-type(even) {
-  background-color: var(--td-bg-alt);
+  background-color: var(--tb-bg-alt);
 }
 .fp-table tbody tr:last-of-type,
 table tbody tr:last-of-type {

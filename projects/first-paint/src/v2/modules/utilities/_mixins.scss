@@ -43,7 +43,7 @@
   --pl: var(--rem);
   --line-height: 0;
   --bg: lightgray;
-  --bdr-radius: var(--rds);
+  --border-radius: var(--rds);
   border-radius: var(--rds);
   justify-content: var(--justify);
   align-items: var(--fb-center);
@@ -52,8 +52,8 @@
   display: var(--dsp-i);
   padding-inline: var(--p-y);
   background-color: var(--bg);
-  border: var(--bdr);
-  border-radius: var(--bdr-radius);
+  border: var(--border);
+  border-radius: var(--border-radius);
   font-weight: var(--fs-weight);
   box-sizing: var(--box);
 

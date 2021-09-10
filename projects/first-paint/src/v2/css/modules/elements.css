@@ -25,7 +25,7 @@
   --pl: var(--rem);
   --line-height: 0;
   --bg: lightgray;
-  --bdr-radius: var(--rds);
+  --border-radius: var(--rds);
   border-radius: var(--rds);
   justify-content: var(--justify);
   align-items: var(--fb-center);
@@ -34,8 +34,8 @@
   display: var(--dsp-i);
   padding-inline: var(--p-y);
   background-color: var(--bg);
-  border: var(--bdr);
-  border-radius: var(--bdr-radius);
+  border: var(--border);
+  border-radius: var(--border-radius);
   font-weight: var(--fs-weight);
   box-sizing: var(--box);
 }
@@ -46,11 +46,11 @@
 }
 :any-link b {
   --bg: transparent;
-  --bdr: var(--bdr-1);
+  --border: var(--border-1);
   border-width: 3px;
 }
 :any-link em {
-  --bdr-radius: 99rem;
+  --border-radius: 99rem;
 }
 :any-link strong,
 :any-link div {
@@ -78,7 +78,7 @@ button {
   --pl: var(--rem);
   --line-height: 0;
   --bg: lightgray;
-  --bdr-radius: var(--rds);
+  --border-radius: var(--rds);
   border-radius: var(--rds);
   justify-content: var(--justify);
   align-items: var(--fb-center);
@@ -87,8 +87,8 @@ button {
   display: var(--dsp-i);
   padding-inline: var(--p-y);
   background-color: var(--bg);
-  border: var(--bdr);
-  border-radius: var(--bdr-radius);
+  border: var(--border);
+  border-radius: var(--border-radius);
   font-weight: var(--fs-weight);
   box-sizing: var(--box);
 }
@@ -105,8 +105,8 @@ article + article {
 hr {
   --rem: var(--2xl);
   margin-block: var(--rem);
-  border: var(--bdr);
-  border-bottom: var(--bdr-1);
+  border: var(--border);
+  border-bottom: var(--border-1);
 }
 
 html p,

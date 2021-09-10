@@ -28,7 +28,7 @@ $tokens: ();
   --pl: var(--rem);
   --line-height: 0;
   --bg: lightgray;
-  --bdr-radius: var(--rds);
+  --border-radius: var(--rds);
   border-radius: var(--rds);
   justify-content: var(--justify);
   align-items: var(--fb-center);
@@ -37,8 +37,8 @@ $tokens: ();
   padding-inline: var(--p-y);
   display: var(--dsp-i);
   background-color: var(--bg);
-  border: var(--bdr);
-  border-radius: var(--bdr-radius);
+  border: var(--border);
+  border-radius: var(--border-radius);
   font-weight: var(--fs-weight);
 }
 
@@ -81,12 +81,12 @@ $tokens: ();
 
   b {
     --bg: transparent;
-    --bdr: var(--bdr-1);
+    --border: var(--border-1);
     border-width: 3px;
   }
 
   em {
-    --bdr-radius: 99rem;
+    --border-radius: 99rem;
   }
 
   strong,
@@ -109,8 +109,8 @@ article {
 hr {
   --rem: var(--2xl);
   margin-block: var(--rem);
-  border: var(--bdr);
-  border-bottom: var(--bdr-1);
+  border: var(--border);
+  border-bottom: var(--border-1);
 }
 
 @mixin config($_color: null, $_background-color: null) {
