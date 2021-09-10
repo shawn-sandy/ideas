@@ -914,7 +914,7 @@ table thead tr {
   --text-align: left;
   background-color: var(--tb-bg);
   text-align: var(--text-align);
-  border-top: var(--tb-border);
+  border-bottom: var(--tb-border);
 }
 .fp-table th,
 .fp-table td,
@@ -924,10 +924,6 @@ table td {
   --p-x: 0.75rem;
   padding-inline: var(--p-y);
   padding-block: var(--p-x);
-}
-.fp-table tbody tr,
-table tbody tr {
-  border-bottom: thin solid whitesmoke;
 }
 .fp-table tbody tr:nth-of-type(even),
 table tbody tr:nth-of-type(even) {

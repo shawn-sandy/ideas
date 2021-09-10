@@ -49,7 +49,7 @@ $tokens: (
     --text-align: left;
     background-color: var(--tb-bg);
     text-align: var(--text-align);
-    border-top: var(--tb-border);
+    border-bottom: var(--tb-border);
   }
 
   th,
@@ -62,7 +62,6 @@ $tokens: (
   }
 
   tbody tr {
-    border-bottom: thin solid $bg-color;
   }
 
   tbody tr:nth-of-type(even) {
