@@ -21,6 +21,7 @@ $render: true !default;
       &[type="reset"] {
         --bg: transparent;
         --border: var(--border-1);
+        border-width: 2px;
       }
       &[type="button"] {
       }

@@ -25,12 +25,10 @@
   --pl: var(--rem);
   --line-height: 0;
   --bg: lightgray;
-  --border-radius: var(--rds);
   border-radius: var(--rds);
   justify-content: var(--justify);
   align-items: var(--fb-center);
   min-height: var(--min-h);
-  padding: var(--p);
   display: var(--dsp-i);
   padding-inline: var(--py);
   background-color: var(--bg);
@@ -47,7 +45,7 @@
 :any-link b {
   --bg: transparent;
   --border: var(--border-1);
-  border-width: 3px;
+  border-width: 2px;
 }
 :any-link em {
   --border-radius: 99rem;
@@ -78,12 +76,10 @@ button {
   --pl: var(--rem);
   --line-height: 0;
   --bg: lightgray;
-  --border-radius: var(--rds);
   border-radius: var(--rds);
   justify-content: var(--justify);
   align-items: var(--fb-center);
   min-height: var(--min-h);
-  padding: var(--p);
   display: var(--dsp-i);
   padding-inline: var(--py);
   background-color: var(--bg);
