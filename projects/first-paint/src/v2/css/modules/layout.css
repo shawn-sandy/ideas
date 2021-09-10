@@ -88,7 +88,7 @@ video {
   margin-inline-start: var(--ml);
   margin-inline-end: var(--mr);
   display: var(--dp, block);
-  border: var(--bdr);
+  border: var(--border);
   font: inherit;
   font-family: var(--fs-family);
   font-size: var(--fs);

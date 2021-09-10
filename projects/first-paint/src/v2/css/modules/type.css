@@ -20,11 +20,11 @@ h1 {
 }
 
 h2 {
-  --fs: var(--xxxl);
+  --fs: var(--3xl);
 }
 
 h3 {
-  --fs: var(--xxl);
+  --fs: var(--2xl);
 }
 
 h4 {

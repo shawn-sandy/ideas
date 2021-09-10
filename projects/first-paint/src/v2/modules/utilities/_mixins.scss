@@ -5,7 +5,7 @@
   flex-direction: var(--direction);
   flex-wrap: var(--wrap);
   align-items: var(--al);
-  justify-content: var(--jcenter);
+  justify-content: var(--justify-c);
   gap: var(--gap);
 }
 
@@ -37,13 +37,13 @@
   @include margin();
   @include padding();
   --fs-weight: var(--fs-medium);
-  --jt: "center";
+  --justify: "center";
   --min-h: 2.5rem;
   --p-y: var(--s4);
   --pl: var(--rem);
   --line-height: 0;
   --bg: lightgray;
-  --bdr-radius: var(--rds);
+  --border-radius: var(--rds);
   border-radius: var(--rds);
   justify-content: var(--justify);
   align-items: var(--fb-center);
@@ -52,8 +52,8 @@
   display: var(--dsp-i);
   padding-inline: var(--p-y);
   background-color: var(--bg);
-  border: var(--bdr);
-  border-radius: var(--bdr-radius);
+  border: var(--border);
+  border-radius: var(--border-radius);
   font-weight: var(--fs-weight);
   box-sizing: var(--box);
 

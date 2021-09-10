@@ -8,7 +8,7 @@ $tokens: (
   "h": var(--h),
   "dp": var(--dp),
   "al": var(--al),
-  "js": var(jstart),
+  "js": var(justify-s),
   "row": var(--row),
 );
 // render component mixin
@@ -30,7 +30,7 @@ $tokens: (
   min-height: var(--ban);
   display: var(--dsp-f);
   align-items: var(--fb-center);
-  justify-content: var(--jcenter);
+  justify-content: var(--justify-c);
   flex-direction: var(--row);
   border-block: var(--bd);
   gap: var(--gap);

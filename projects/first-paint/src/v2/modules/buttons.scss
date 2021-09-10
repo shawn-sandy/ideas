@@ -20,7 +20,7 @@ $render: true !default;
       }
       &[type="reset"] {
         --bg: transparent;
-        --bdr: var(--bdr-1);
+        --border: var(--border-1);
       }
       &[type="button"] {
       }
