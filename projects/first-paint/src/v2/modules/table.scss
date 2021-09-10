@@ -12,7 +12,7 @@ $tokens: (
   height: 100%,
   border-radius: 0,
   bg: whitesmoke,
-  bg-alt: lightgray,
+  bg-alt: rgb(240, 240, 240),
   border-width: var(--border-w),
   border-style: var(--border-style),
   border-color: var(--border-cl),
@@ -42,19 +42,20 @@ $tokens: (
   font-family: sans-serif;
   min-width: 400px;
   width: var(--tb-width);
-  border: var(--td-border);
+  border: var(--tb-border);
   // box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.15);
 
   thead tr {
     --text-align: left;
-    background-color: var(--bg);
+    background-color: var(--tb-bg);
     text-align: var(--text-align);
+    border-top: var(--tb-border);
   }
 
   th,
   td {
     --p-y: 0.75rem;
-    --p-x: 1rem;
+    --p-x: 0.75rem;
     // padding: 0.75rem 1rem;
     padding-inline: var(--p-y);
     padding-block: var(--p-x);
@@ -65,11 +66,11 @@ $tokens: (
   }
 
   tbody tr:nth-of-type(even) {
-    background-color: var(--tb-bg-alt);
+    background-color: var(--tb-bg);
   }
 
   tbody tr:last-of-type {
-    --tb-border-width: 10px;
+    --tb-border: thick solid var(--tb-border-color);
     border-bottom: var(--tb-border);
   }
 }

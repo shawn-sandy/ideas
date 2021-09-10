@@ -893,7 +893,7 @@ table {
   --tb-height: 100%;
   --tb-border-radius: 0;
   --tb-bg: whitesmoke;
-  --tb-bg-alt: lightgray;
+  --tb-bg-alt: #f0f0f0;
   --tb-border-width: var(--border-w);
   --tb-border-style: var(--border-style);
   --tb-border-color: var(--border-cl);
@@ -907,20 +907,21 @@ table {
   font-family: sans-serif;
   min-width: 400px;
   width: var(--tb-width);
-  border: var(--td-border);
+  border: var(--tb-border);
 }
 .fp-table thead tr,
 table thead tr {
   --text-align: left;
-  background-color: var(--bg);
+  background-color: var(--tb-bg);
   text-align: var(--text-align);
+  border-top: var(--tb-border);
 }
 .fp-table th,
 .fp-table td,
 table th,
 table td {
   --p-y: 0.75rem;
-  --p-x: 1rem;
+  --p-x: 0.75rem;
   padding-inline: var(--p-y);
   padding-block: var(--p-x);
 }
@@ -930,11 +931,11 @@ table tbody tr {
 }
 .fp-table tbody tr:nth-of-type(even),
 table tbody tr:nth-of-type(even) {
-  background-color: var(--tb-bg-alt);
+  background-color: var(--tb-bg);
 }
 .fp-table tbody tr:last-of-type,
 table tbody tr:last-of-type {
-  --tb-border-width: 10px;
+  --tb-border: thick solid var(--tb-border-color);
   border-bottom: var(--tb-border);
 }
 
