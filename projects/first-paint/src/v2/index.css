@@ -827,18 +827,25 @@ nav img[alt] + * {
 
 .fp-main,
 main {
+  padding-block: 0;
   min-height: var(--min-height);
-  padding: 2rem 0;
+  padding-block: var(--md);
 }
 .fp-main > section,
 main > section {
+  --px: 0;
   width: 100%;
   font-size: 1rem;
+  padding-top: 0;
   padding-bottom: 2rem;
 }
 .fp-main > section > * + *,
 main > section > * + * {
   margin-top: 2rem;
+}
+.fp-main > section section,
+main > section section {
+  padding-top: 0;
 }
 .fp-main article + aside,
 .fp-main section + aside,

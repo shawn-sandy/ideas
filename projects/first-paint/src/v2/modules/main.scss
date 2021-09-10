@@ -10,6 +10,7 @@ $tokens: (
   @if ($renderContent) {
     #{if($className, $className, '.fp-main')},
     main {
+      padding-block: 0;
       @include mix-main();
     }
   }
@@ -17,15 +18,20 @@ $tokens: (
 
 @mixin mix-main {
   min-height: var(--min-height);
-  padding: 2rem 0;
-
+  padding-block: var(--md);
   > section {
+    --px: 0;
     width: 100%;
     font-size: 1rem;
+    padding-top: 0;
     padding-bottom: 2rem;
 
     > * + * {
       margin-top: 2rem;
+    }
+
+    section {
+      padding-top: 0;
     }
   }
 
