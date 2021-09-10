@@ -49,7 +49,7 @@ nav :where(> section, ul) :any-link {
 nav img[alt] {
   vertical-align: var(--vertical-align);
   --vertical-align: var(--mid);
-  --max-h: var(--xxl);
+  --max-h: var(--2xl);
   max-height: var(--max-h);
 }
 nav img[alt] + * {

@@ -103,7 +103,7 @@ article + article {
 }
 
 hr {
-  --rem: var(--xxl);
+  --rem: var(--2xl);
   margin-block: var(--rem);
   border: var(--bdr);
   border-bottom: var(--bdr-1);
