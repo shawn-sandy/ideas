@@ -889,24 +889,40 @@ button[type=reset] {
 }
 .fp-table,
 table {
-  border-collapse: collapse;
+  --tb-width: 100%;
+  --tb-height: 100%;
+  --tb-border-radius: 0;
+  --tb-bg: whitesmoke;
+  --tb-bg-alt: lightgray;
+  --tb-border-width: var(--bdr-w);
+  --tb-border-style: var(--bdr-style);
+  --tb-border-color: var(--bdr-cl);
+  --tb-border: var(--tb-border-width) var(--tb-border-style) var(--tb-border-color);
+  --m-x: var(--sm-x);
+  --m-y: 0;
+  --collapse: collapse;
+  border-collapse: var(--collapse);
   margin: 25px 0;
   font-size: 0.9em;
   font-family: sans-serif;
   min-width: 400px;
-  width: 100%;
-  border: thin solid whitesmoke;
+  width: var(--tb-width);
+  border: var(--td-border);
 }
 .fp-table thead tr,
 table thead tr {
-  background-color: whitesmoke;
-  text-align: left;
+  --text-align: left;
+  background-color: var(--bg);
+  text-align: var(--text-align);
 }
 .fp-table th,
 .fp-table td,
 table th,
 table td {
-  padding: 0.75rem 1rem;
+  --p-y: 0.75rem;
+  --p-x: 1rem;
+  padding-inline: var(--p-y);
+  padding-block: var(--p-x);
 }
 .fp-table tbody tr,
 table tbody tr {
@@ -914,11 +930,12 @@ table tbody tr {
 }
 .fp-table tbody tr:nth-of-type(even),
 table tbody tr:nth-of-type(even) {
-  background-color: ghostwhite;
+  background-color: var(--td-bg-alt);
 }
 .fp-table tbody tr:last-of-type,
 table tbody tr:last-of-type {
-  border-bottom: 2px solid whitesmoke;
+  --tb-border-width: 10px;
+  border-bottom: var(--tb-border);
 }
 
 > div + div {
