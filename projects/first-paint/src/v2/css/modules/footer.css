@@ -9,7 +9,7 @@ footer[role=contentinfo] > section {
   flex-direction: var(--direction);
   flex-wrap: var(--wrap);
   align-items: var(--al);
-  justify-content: var(--jcenter);
+  justify-content: var(--justify-c);
   gap: var(--gap);
   --dp: var(--dsp-f);
   --fs: var(--s2);

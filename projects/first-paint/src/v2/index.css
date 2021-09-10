@@ -24,7 +24,7 @@
   --v-align: var(--base);
   --right: end;
   --center: center;
-  --justify: justify;
+  --justify-txt: justify;
   --left: start;
   --text-align: var(--left);
   --dsp-f: flex;
@@ -44,11 +44,11 @@
   --fb-stretch: stretch;
   --fb-center: center;
   --align-items: var(--fb-center);
-  --jcenter: center;
-  --jstart: flex-start;
-  --jend: flex-end;
-  --jbetween: space-between;
-  --jt: var(--jcenter);
+  --justify-c: center;
+  --justify-s: flex-start;
+  --justify-e: flex-end;
+  --justify-b: space-between;
+  --justify: var(--justify-c);
   --t fb-wrap: wrap;
   --gap: 1rem;
   --gap-sm: var(--sm);
@@ -525,7 +525,7 @@ div {
   padding-inline-start: var(--pl);
   padding-inline-end: var(--pr);
   --fs-weight: var(--fs-medium);
-  --jt: "center";
+  --justify: "center";
   --min-h: 2.5rem;
   --p-y: var(--s4);
   --pl: var(--rem);
@@ -578,7 +578,7 @@ button {
   padding-inline-start: var(--pl);
   padding-inline-end: var(--pr);
   --fs-weight: var(--fs-medium);
-  --jt: "center";
+  --justify: "center";
   --min-h: 2.5rem;
   --p-y: var(--s4);
   --pl: var(--rem);
@@ -660,7 +660,7 @@ header > [role=banner] {
   min-height: var(--ban);
   display: var(--dsp-f);
   align-items: var(--fb-center);
-  justify-content: var(--jcenter);
+  justify-content: var(--justify-c);
   flex-direction: var(--row);
   border-block: var(--bd);
   gap: var(--gap);
@@ -692,21 +692,21 @@ nav {
   --nav-dp: var(--dsp-f);
   --nav-align: var(--al);
   --nav-height: var(--4xl);
-  --justify: var(--jbetween);
+  --justify: var(--justify-b);
   --dp: var(--nav-dp);
 }
 @media (min-width: 980px) {
   nav {
     display: var(--nav-dp);
     align-items: var(--align-items);
-    justify-content: var(--jbetween);
+    justify-content: var(--justify-b);
     height: var(--nav-height);
   }
 }
 @media (max-width: 780px) {
   nav {
     flex-direction: var(--col);
-    justify-content: var(--jcenter);
+    justify-content: var(--justify-c);
   }
 }
 nav a,
@@ -826,7 +826,7 @@ ul[role=list] {
   --flex: var(--flex);
   display: var(--dsp-f, flex);
   flex-wrap: var(--wrap, wrap);
-  justify-content: var(--jbetween, space-between);
+  justify-content: var(--justify-b, space-between);
   gap: var(--gap, 0);
 }
 .fp-grid[role=list] [role=listitem],
@@ -966,7 +966,7 @@ footer[role=contentinfo] > section {
   flex-direction: var(--direction);
   flex-wrap: var(--wrap);
   align-items: var(--al);
-  justify-content: var(--jcenter);
+  justify-content: var(--justify-c);
   gap: var(--gap);
   --dp: var(--dsp-f);
   --fs: var(--s2);

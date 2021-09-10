@@ -22,7 +22,7 @@
   --v-align: var(--base);
   --right: end;
   --center: center;
-  --justify: justify;
+  --justify-txt: justify;
   --left: start;
   --text-align: var(--left);
   --dsp-f: flex;
@@ -42,11 +42,11 @@
   --fb-stretch: stretch;
   --fb-center: center;
   --align-items: var(--fb-center);
-  --jcenter: center;
-  --jstart: flex-start;
-  --jend: flex-end;
-  --jbetween: space-between;
-  --jt: var(--jcenter);
+  --justify-c: center;
+  --justify-s: flex-start;
+  --justify-e: flex-end;
+  --justify-b: space-between;
+  --justify: var(--justify-c);
   --t fb-wrap: wrap;
   --gap: 1rem;
   --gap-sm: var(--sm);

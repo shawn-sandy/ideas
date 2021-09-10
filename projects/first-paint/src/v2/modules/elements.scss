@@ -21,7 +21,7 @@ $tokens: ();
   @include mix.margin();
   @include mix.padding();
   --fs-weight: var(--fs-medium);
-  --jt: "center";
+  --justify: "center";
   --dp: var(--dsp-i);
   --min-h: var(--md);
   --p-y: var(--s4);

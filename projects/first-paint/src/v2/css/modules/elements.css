@@ -19,7 +19,7 @@
   padding-inline-start: var(--pl);
   padding-inline-end: var(--pr);
   --fs-weight: var(--fs-medium);
-  --jt: "center";
+  --justify: "center";
   --min-h: 2.5rem;
   --p-y: var(--s4);
   --pl: var(--rem);
@@ -72,7 +72,7 @@ button {
   padding-inline-start: var(--pl);
   padding-inline-end: var(--pr);
   --fs-weight: var(--fs-medium);
-  --jt: "center";
+  --justify: "center";
   --min-h: 2.5rem;
   --p-y: var(--s4);
   --pl: var(--rem);

@@ -18,19 +18,19 @@ $render: true !default;
   --nav-dp: var(--dsp-f);
   --nav-align: var(--al);
   --nav-height: var(--4xl);
-  --justify: var(--jbetween);
+  --justify: var(--justify-b);
   --dp: var(--nav-dp);
 
   @media (min-width: 980px) {
     display: var(--nav-dp);
     align-items: var(--align-items);
-    justify-content: var(--jbetween);
+    justify-content: var(--justify-b);
     height: var(--nav-height);
   }
 
   @media (max-width: 780px) {
     flex-direction: var(--col);
-    justify-content: var(--jcenter);
+    justify-content: var(--justify-c);
   }
   a,
   li {
