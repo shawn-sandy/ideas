@@ -2,10 +2,7 @@
 // TODO Search and replace name with CSS tag/element name
 @use './utilities/maps' as map;
 
-$render: true !default;
-$bg-color: whitesmoke !default;
-$bg-color-row: ghostwhite !default;
-$border-color: lightgray !default;
+$renderTable: true !default;
 
 $tokens: (
   width: 100%,
@@ -20,7 +17,7 @@ $tokens: (
 );
 
 // render component mixin
-@mixin renderComponent($renderContent: true, $className: null) {
+@mixin renderComponent($renderContent: $renderTable, $className: null) {
   @if ($renderContent) {
     #{$className,
     $className,
