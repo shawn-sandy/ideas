@@ -748,7 +748,7 @@ header > [role=banner] h1 {
 }
 .fp-header > [role=banner] h1 + p,
 header > [role=banner] h1 + p {
-  --fs: var(--xl);
+  --fs: var(--md);
 }
 .fp-header > [role=banner] > div,
 header > [role=banner] > div {
