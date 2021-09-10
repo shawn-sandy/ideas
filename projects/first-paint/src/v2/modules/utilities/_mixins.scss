@@ -36,14 +36,14 @@
 @mixin button() {
   @include margin();
   @include padding();
-  --fs-weight: var(--fs-medium);
+  --fs-weight: var(--fw-medium);
   --justify: "center";
   --min-h: 2.5rem;
   --py: var(--s4);
   --pl: var(--rem);
   --line-height: 0;
   --bg: lightgray;
-  border-radius: var(--rds);
+  --border-rds: 0.3rem;
   justify-content: var(--justify);
   align-items: var(--fb-center);
   min-height: var(--min-h);
@@ -51,7 +51,7 @@
   padding-inline: var(--py);
   background-color: var(--bg);
   border: var(--border);
-  border-radius: var(--border-radius);
+  border-radius: var(--border-rds);
   font-weight: var(--fs-weight);
   box-sizing: var(--box);
 
