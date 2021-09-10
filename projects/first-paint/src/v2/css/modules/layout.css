@@ -1,0 +1,126 @@
+html,
+body,
+div,
+header,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+p,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+main,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  --bg: transparent;
+  margin: var(--m);
+  padding: var(--p);
+  border: 0;
+  font: inherit;
+  font-family: var(--fs-family);
+  vertical-align: var(--v-align);
+  outline: var(--outline);
+  background-color: var(--bg);
+  text-align: var(--text-align);
+  text-decoration: var(--text-decoration);
+  text-shadow: var(--text-shadow);
+  box-shadow: var(--box-shadow);
+}
+
+nav,
+header,
+main,
+footer,
+section,
+article,
+aside,
+details,
+summary,
+figure,
+figcaption,
+div,
+p {
+  --fs: var(--rem);
+  padding: var(--p);
+  margin: var(--m);
+  display: var(--dp);
+  font-size: var(--fs);
+  width: var(--w);
+}
+
+summary,
+details,
+figcaption,
+p {
+  --pt: var(--rem);
+  --pb: var(--rem);
+}
