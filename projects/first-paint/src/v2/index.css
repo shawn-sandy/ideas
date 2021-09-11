@@ -1020,8 +1020,9 @@ img[alt] {
 .fp-picture,
 picture {
   --dp: flex;
-  max-width: 100%;
-  width: 100%;
+  --size: var(--pct-10);
+  max-width: var(--size);
+  width: var(--size);
   height: auto;
   align-items: center;
   justify-content: center;
@@ -1029,6 +1030,7 @@ picture {
   text-align: center;
   --cl: var(--light, white);
   background-color: var(--cl);
+  color: var(--dark, black);
   display: var(--dp);
   align-items: center;
   justify-content: center;
@@ -1043,7 +1045,7 @@ picture img[alt]::after {
   --fs: 0.8rem;
   width: 100%;
   height: 100%;
-  content: " " attr(alt);
+  content: "" " " attr(alt);
   position: absolute;
   font-size: var(--fs);
   top: 0;
@@ -1057,6 +1059,10 @@ picture img[alt]::after {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-overflow: ellipsis;
+  /* Needed to make it work */
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 > div + div {
