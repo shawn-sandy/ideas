@@ -67,8 +67,8 @@ $render: true !default;
       --ml: var(--s1);
       margin-left: var(--ml);
     }
-    --max-h: var(--2xl);
-    max-height: var(--max-h);
+    --max: var(--2xl);
+    max-height: var(--max);
   }
 }
 

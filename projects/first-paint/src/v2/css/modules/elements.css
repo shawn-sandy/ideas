@@ -19,7 +19,7 @@
   padding-inline-start: var(--pl);
   padding-inline-end: var(--pr);
   --justify: "center";
-  --min-h: 2.5rem;
+  --min: 2.5rem;
   --py: var(--s4);
   --pl: var(--rem);
   --line-height: 0;
@@ -27,7 +27,7 @@
   --border-rds: 0.3rem;
   justify-content: var(--justify);
   align-items: var(--fb-center);
-  min-height: var(--min-h);
+  min-height: var(--min);
   display: var(--dsp-i);
   padding-inline: var(--py);
   background-color: var(--bg);
@@ -35,10 +35,11 @@
   border-radius: var(--border-rds);
   font-weight: var(--fs-weight);
   box-sizing: var(--box);
+  cursor: pointer;
 }
 @media (max-width: 680px) {
   :any-link :where(em, strong, b, div) {
-    --min-h: var(--s6);
+    --min: var(--s6);
   }
 }
 :any-link b {
@@ -69,7 +70,7 @@ button {
   padding-inline-start: var(--pl);
   padding-inline-end: var(--pr);
   --justify: "center";
-  --min-h: 2.5rem;
+  --min: 2.5rem;
   --py: var(--s4);
   --pl: var(--rem);
   --line-height: 0;
@@ -77,7 +78,7 @@ button {
   --border-rds: 0.3rem;
   justify-content: var(--justify);
   align-items: var(--fb-center);
-  min-height: var(--min-h);
+  min-height: var(--min);
   display: var(--dsp-i);
   padding-inline: var(--py);
   background-color: var(--bg);
@@ -85,10 +86,11 @@ button {
   border-radius: var(--border-rds);
   font-weight: var(--fs-weight);
   box-sizing: var(--box);
+  cursor: pointer;
 }
 @media (max-width: 680px) {
   button {
-    --min-h: var(--s6);
+    --min: var(--s6);
   }
 }
 

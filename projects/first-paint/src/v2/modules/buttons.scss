@@ -25,6 +25,7 @@ $render: true !default;
         --border-w: 2px;
       }
       &[type="button"] {
+        --bg: var(--light);
       }
     }
   }

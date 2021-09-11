@@ -118,7 +118,7 @@
   --vw-lg: 50vw;
   --vw-xl: 70vw;
   --vw-2xl: 90vw;
-  --min-h: auto;
+  --min: auto;
   --max-h: auto;
   --h: var(--d);
   --w: auto;

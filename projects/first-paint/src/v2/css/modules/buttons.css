@@ -14,3 +14,6 @@ button[type=reset] {
   --border: var(--border-1);
   --border-w: 2px;
 }
+button[type=button] {
+  --bg: var(--light);
+}
