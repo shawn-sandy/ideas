@@ -1,0 +1,77 @@
+// img component
+
+$renderImg: true !default;
+
+@mixin renderComponent($renderComponent: $renderImg, $className: null) {
+  @if ($renderComponent) {
+    img[alt] {
+      max-width: 100%;
+      height: auto;
+      position: relative;
+    }
+
+    #{$className,
+    $className,
+    ".fp-picture"},
+    picture {
+      // display: flex;
+      --dp: flex;
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      text-align: center;
+
+      --cl: var(--light, white);
+      background-color: var(--cl);
+      display: var(--dp);
+      align-items: center;
+      justify-content: center;
+
+      img[alt] {
+        max-width: 100%;
+        height: 100%;
+
+        &::after {
+          --fs: 0.8rem;
+          width: 100%;
+          height: 100%;
+          content: " " attr(alt);
+          position: absolute;
+          font-size: var(--fs);
+          top: 0;
+          left: 0;
+          background-color: lightgray;
+          border-radius: 0.1rem;
+          border: none;
+          color: gray;
+          background-repeat: no-repeat;
+          text-transform: capitalize;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+@mixin img() {
+  display: flex;
+  max-width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  text-align: center;
+
+  > img[alt] {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+  }
+}
+
+@include renderComponent();

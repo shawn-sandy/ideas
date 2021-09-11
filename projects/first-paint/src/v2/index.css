@@ -2,7 +2,7 @@
 @import "../modules/utilities/functions" as fn;
 :root {
   --bg: hsl(0, 0%, 96%);
-  --bg-image: none;
+  --bg-img: none;
   --cl: hsl(0, 0%, 8%);
   --border-w: thin;
   --border-cl: lightgray;
@@ -97,15 +97,12 @@
   --10xl: var(--s14);
   --d: var(--rem);
   --pct-1: 10%;
-  --pct-15: 15%;
   --pct-2: 20%;
-  --pct-25: 25%;
   --pct-3: 30%;
   --pct-4: 40%;
   --pct-5: 50%;
   --pct-6: 60%;
   --pct-7: 70%;
-  --pct-75: 75%;
   --pct-8: 80%;
   --pct-9: 90%;
   --pct-10: 100%;
@@ -1012,6 +1009,54 @@ table tbody tr:nth-of-type(even) {
 table tbody tr:last-of-type {
   --tb-border: thick solid var(--tb-border-color);
   border-bottom: var(--tb-border);
+}
+
+img[alt] {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.fp-picture,
+picture {
+  --dp: flex;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  text-align: center;
+  --cl: var(--light, white);
+  background-color: var(--cl);
+  display: var(--dp);
+  align-items: center;
+  justify-content: center;
+}
+.fp-picture img[alt],
+picture img[alt] {
+  max-width: 100%;
+  height: 100%;
+}
+.fp-picture img[alt]::after,
+picture img[alt]::after {
+  --fs: 0.8rem;
+  width: 100%;
+  height: 100%;
+  content: " " attr(alt);
+  position: absolute;
+  font-size: var(--fs);
+  top: 0;
+  left: 0;
+  background-color: lightgray;
+  border-radius: 0.1rem;
+  border: none;
+  color: gray;
+  background-repeat: no-repeat;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 > div + div {
