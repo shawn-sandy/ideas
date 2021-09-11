@@ -32,11 +32,11 @@
   --row: row;
   --col: column;
   --dp: var(--dsp-b);
-  --direction: var("row");
-  --shrink: 1;
-  --grow: 1;
-  --basis: 30%;
-  --flex: var(--grow) var(--shrink) var(--basis);
+  --fb-direction: var("row");
+  --fb-shrink: 1;
+  --fb-grow: 1;
+  --fb-basis: 30%;
+  --flex: var(--fb-grow) var(--fb-shrink) var(--fb-basis);
   --fb-start: flex-start;
   --fb-end: flex-end;
   --fb-stretch: stretch;

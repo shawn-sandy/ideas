@@ -6,7 +6,7 @@ footer[role=contentinfo] {
 .fp-footer[role=contentinfo] > section,
 footer[role=contentinfo] > section {
   display: var(--dp);
-  flex-direction: var(--direction);
+  flex-direction: var(--fb-direction);
   flex-wrap: var(--wrap);
   align-items: var(--al);
   justify-content: var(--justify-c);

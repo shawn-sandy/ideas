@@ -2,7 +2,7 @@
 @use './functions' as fn;
 @mixin flexbox() {
   display: var(--dp);
-  flex-direction: var(--direction);
+  flex-direction: var(--fb-direction);
   flex-wrap: var(--wrap);
   align-items: var(--al);
   justify-content: var(--justify-c);
@@ -11,7 +11,7 @@
 
 @mixin flex-items() {
   flex: var(--flex, 1);
-  flex-basis: var(--basis, auto);
+  flex-basis: var(--fb-basis, auto);
   align-items: var(--al);
 }
 
