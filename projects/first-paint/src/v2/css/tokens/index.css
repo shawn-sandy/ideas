@@ -141,7 +141,7 @@
   --fw-medium: 500;
   --fw-bold: 700;
   --fw-regular: 400;
-  --fs-weight: var(--fw-regular);
+  --fw: var(--fw-regular);
   --decoration: none;
   --outline: none;
   --line-height: 1.5;

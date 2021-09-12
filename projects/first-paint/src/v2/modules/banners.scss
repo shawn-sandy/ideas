@@ -38,7 +38,7 @@ $tokens: (
   padding-block: var(--s5);
 
   h1 {
-    --fs-weight: var(--fw-bold);
+    --fw: var(--fw-bold);
     text-shadow: var(--text-shadow-sm);
     + p {
       --fs: var(--md);

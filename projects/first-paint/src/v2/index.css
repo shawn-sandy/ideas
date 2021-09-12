@@ -143,7 +143,7 @@
   --fw-medium: 500;
   --fw-bold: 700;
   --fw-regular: 400;
-  --fs-weight: var(--fw-regular);
+  --fw: var(--fw-regular);
   --decoration: none;
   --outline: none;
   --line-height: 1.5;
@@ -560,7 +560,7 @@ div {
   background-color: var(--bg);
   border: var(--border);
   border-radius: var(--border-rad);
-  font-weight: var(--fs-weight);
+  font-weight: var(--fw);
   box-sizing: var(--box);
   cursor: pointer;
 }
@@ -611,7 +611,7 @@ button {
   background-color: var(--bg);
   border: var(--border);
   border-radius: var(--border-rad);
-  font-weight: var(--fs-weight);
+  font-weight: var(--fw);
   box-sizing: var(--box);
   cursor: pointer;
 }
@@ -671,11 +671,11 @@ h3,
 h4,
 h5,
 h6 {
-  --fs-weight: var(--fw-medium);
+  --fw: var(--fw-medium);
   line-height: var(--line-height);
   color: var(--cl);
   margin: var(--m);
-  font-weight: var(--fs-weight);
+  font-weight: var(--fw);
   overflow-wrap: break-word;
   word-break: var(--word-break);
   --fx-weight: var(--fw-medium);
@@ -756,7 +756,7 @@ header > [role=banner] {
 }
 .fp-header > [role=banner] h1,
 header > [role=banner] h1 {
-  --fs-weight: var(--fw-bold);
+  --fw: var(--fw-bold);
   text-shadow: var(--text-shadow-sm);
 }
 .fp-header > [role=banner] h1 + p,
@@ -955,7 +955,7 @@ button[type=submit] {
 }
 button[type=reset] {
   --bg: transparent;
-  --fs-weight: var(--fw-medium);
+  --fw: var(--fw-medium);
   --border: var(--border-1);
   --border-w: 2px;
 }
