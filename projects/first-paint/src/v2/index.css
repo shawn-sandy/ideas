@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import "../modules/utilities/functions" as fn;
 :root {
-  --bg: hsl(0, 0%, 96%);
+  --bg: whitesmoke;
   --bg-img: none;
   --cl: hsl(0, 0%, 8%);
   --border-w: thin;

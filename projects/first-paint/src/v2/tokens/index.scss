@@ -5,10 +5,10 @@ $font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
   "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
   "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $tokens: (
-  "bg": "hsl(0, 0%, 96%)",
-  "bg-img": "none",
+  "bg": hsl(0, 0%, 96%),
+  "bg-img": none,
   "cl": "hsl(0, 0%, 8%)",
-  "border-w": "thin",
+  "border-w": thin,
   "border-cl": lightgray,
   "border-style": "solid",
   "border": 0,
