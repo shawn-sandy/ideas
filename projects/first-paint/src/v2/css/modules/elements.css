@@ -24,7 +24,7 @@
   --pl: var(--rem);
   --line-height: 0;
   --bg: lightgray;
-  --border-rds: 0.3rem;
+  --border-rad: 0.3rem;
   justify-content: var(--justify);
   align-items: var(--fb-center);
   min-height: var(--min);
@@ -32,7 +32,7 @@
   padding-inline: var(--py);
   background-color: var(--bg);
   border: var(--border);
-  border-radius: var(--border-rds);
+  border-radius: var(--border-rad);
   font-weight: var(--fs-weight);
   box-sizing: var(--box);
   cursor: pointer;
@@ -48,7 +48,7 @@
   border-width: 2px;
 }
 :any-link em {
-  --border-rds: 99rem;
+  --border-rad: 99rem;
 }
 :any-link strong,
 :any-link div {
@@ -75,7 +75,7 @@ button {
   --pl: var(--rem);
   --line-height: 0;
   --bg: lightgray;
-  --border-rds: 0.3rem;
+  --border-rad: 0.3rem;
   justify-content: var(--justify);
   align-items: var(--fb-center);
   min-height: var(--min);
@@ -83,7 +83,7 @@ button {
   padding-inline: var(--py);
   background-color: var(--bg);
   border: var(--border);
-  border-radius: var(--border-rds);
+  border-radius: var(--border-rad);
   font-weight: var(--fs-weight);
   box-sizing: var(--box);
   cursor: pointer;

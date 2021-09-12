@@ -8,14 +8,14 @@
   --border-cl: lightgray;
   --border-style: solid;
   --border: 0;
-  --border-rds: 0;
+  --border-rad: 0;
   --border-1: var(--border-w) var(--border-style) var(--border-cl);
-  --rds-sm: 0.7rem;
-  --rds-md: 0.7 0.5rem;
-  --rds-lg: 1rem;
-  --rds-xl: 2rem;
-  --rds-pill: 99rem;
-  --rds: 0.25rem;
+  --rad-sm: 0.7rem;
+  --rad-md: 0.7 0.5rem;
+  --rad-lg: 1rem;
+  --rad-xl: 2rem;
+  --rad-pill: 99rem;
+  --rad: 0.25rem;
   --mid: middle;
   --top: top;
   --base: baseline;
@@ -551,7 +551,7 @@ div {
   --pl: var(--rem);
   --line-height: 0;
   --bg: lightgray;
-  --border-rds: 0.3rem;
+  --border-rad: 0.3rem;
   justify-content: var(--justify);
   align-items: var(--fb-center);
   min-height: var(--min);
@@ -559,7 +559,7 @@ div {
   padding-inline: var(--py);
   background-color: var(--bg);
   border: var(--border);
-  border-radius: var(--border-rds);
+  border-radius: var(--border-rad);
   font-weight: var(--fs-weight);
   box-sizing: var(--box);
   cursor: pointer;
@@ -575,7 +575,7 @@ div {
   border-width: 2px;
 }
 :any-link em {
-  --border-rds: 99rem;
+  --border-rad: 99rem;
 }
 :any-link strong,
 :any-link div {
@@ -602,7 +602,7 @@ button {
   --pl: var(--rem);
   --line-height: 0;
   --bg: lightgray;
-  --border-rds: 0.3rem;
+  --border-rad: 0.3rem;
   justify-content: var(--justify);
   align-items: var(--fb-center);
   min-height: var(--min);
@@ -610,7 +610,7 @@ button {
   padding-inline: var(--py);
   background-color: var(--bg);
   border: var(--border);
-  border-radius: var(--border-rds);
+  border-radius: var(--border-rad);
   font-weight: var(--fs-weight);
   box-sizing: var(--box);
   cursor: pointer;
@@ -1093,8 +1093,8 @@ select[id] {
   width: var(--w);
   --border: var(--border-1);
   border: var(--border);
-  --border-rds: 0.2rem;
-  border-radius: var(--border-rds);
+  --border-rad: 0.2rem;
+  border-radius: var(--border-rad);
 }
 input[id]:focus, input[id]:focus-within,
 textarea[id]:focus,

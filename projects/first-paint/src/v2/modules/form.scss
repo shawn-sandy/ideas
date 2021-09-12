@@ -42,8 +42,8 @@ $background-color: transparent !default;
     width: var(--w);
     --border: var(--border-1);
     border: var(--border);
-    --border-rds: 0.2rem;
-    border-radius: var(--border-rds);
+    --border-rad: 0.2rem;
+    border-radius: var(--border-rad);
 
     &:focus,
     &:focus-within {
