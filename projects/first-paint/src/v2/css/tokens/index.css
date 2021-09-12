@@ -109,8 +109,8 @@
   --mb: var(--0);
   --ml: var(--0);
   --mr: var(--0);
-  --m-x: auto;
-  --m-y: auto;
+  --mx: auto;
+  --my: auto;
   --m: var(--mb) var(--mt) var(--ml) var(--mr);
   --pt: var(--0);
   --pb: var(--0);

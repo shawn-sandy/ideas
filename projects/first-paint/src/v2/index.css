@@ -111,8 +111,8 @@
   --mb: var(--0);
   --ml: var(--0);
   --mr: var(--0);
-  --m-x: auto;
-  --m-y: auto;
+  --mx: auto;
+  --my: auto;
   --m: var(--mb) var(--mt) var(--ml) var(--mr);
   --pt: var(--0);
   --pb: var(--0);
@@ -404,6 +404,7 @@ video {
   text-shadow: var(--text-shadow);
   box-shadow: var(--box-shadow);
   line-height: var(--line-height);
+  box-sizing: var(--box);
 }
 
 a,
@@ -979,8 +980,8 @@ table {
   --tb-border-style: var(--border-style);
   --tb-border-color: var(--border-cl);
   --tb-border: var(--tb-border-width) var(--tb-border-style) var(--tb-border-color);
-  --m-x: var(--sm-x);
-  --m-y: 0;
+  --mx: var(--sm-x);
+  --my: 0;
   --collapse: collapse;
   border-collapse: var(--collapse);
   margin: 25px 0;
