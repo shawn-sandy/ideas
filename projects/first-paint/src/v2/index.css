@@ -632,26 +632,27 @@ hr {
   border-bottom: var(--border-1);
 }
 
-html p,
-html li,
-html aside,
-html blockquote,
-html em,
-html strong,
-html small,
-html h1,
-html h2,
-html h3,
-html h4,
-html h5,
-html h6 {
+p,
+li,
+aside,
+blockquote,
+em,
+strong,
+small,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: var(--fs);
   color: var(--cl);
   text-decoration: var(--decoration);
   text-shadow: none;
   text-transform: var(--transform);
 }
-html * {
+
+* {
   box-shadow: var(--shadow);
   text-shadow: var(--text-shadow);
 }

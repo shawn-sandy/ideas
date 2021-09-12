@@ -12,8 +12,8 @@ $tokens: ();
   @if ($renderContent) {
     html {
       @include maps.customProperties($tokens, $prefix);
-      @include elements();
     }
+    @include elements();
   }
 }
 
@@ -93,5 +93,4 @@ hr {
   $elements-background-color: $_background-color !global;
 }
 
-// include render component
 @include renderComponent();
