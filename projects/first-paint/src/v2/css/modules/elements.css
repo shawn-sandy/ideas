@@ -94,6 +94,15 @@ button {
   }
 }
 
+blockquote {
+  --m: var(--xl);
+  --p: var(--md);
+  padding: var(--p);
+  margin: var(--m);
+  --border-w: 5rem;
+  border-left: var(--border-1);
+}
+
 article + article {
   margin-block-start: var(--mt);
 }

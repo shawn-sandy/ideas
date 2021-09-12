@@ -130,8 +130,7 @@ section:not(body > section) {
 
 summary,
 details,
-figcaption,
-p {
+figcaption {
   --pt: var(--rem);
   --pb: var(--rem);
 }

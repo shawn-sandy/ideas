@@ -12,10 +12,6 @@ main > section {
   padding-top: 0;
   padding-bottom: 2rem;
 }
-.fp-main > section > * + *,
-main > section > * + * {
-  margin-top: 2rem;
-}
 .fp-main > section section,
 main > section section {
   padding-top: 0;
