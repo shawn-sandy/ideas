@@ -1,12 +1,10 @@
 :any-link {
   color: var(--cl);
 }
-
-:any-link+* {
+:any-link + * {
   margin-inline-start: var(--ml);
   --ml: var(--rem);
 }
-
 :any-link :where(em, strong, b, div) {
   margin: var(--m);
   margin-block-start: var(--mt);
@@ -39,31 +37,38 @@
   box-sizing: var(--box);
   cursor: pointer;
 }
-
 @media (max-width: 680px) {
   :any-link :where(em, strong, b, div) {
     --min: var(--s6);
   }
 }
-
 :any-link b {
   --bg: transparent;
   --border: var(--border-1);
   border-width: 2px;
 }
-
 :any-link em {
   --border-rad: 99rem;
 }
-
 :any-link strong,
 :any-link div {
-  --dp: var(--dsp-i);
+  --dsp: var(--dsp-i);
   display: inline-flex;
 }
 
 button {
-
+  margin: var(--m);
+  margin-block-start: var(--mt);
+  margin-block-end: var(--mb);
+  margin-inline-start: var(--ml);
+  margin-inline-end: var(--mr);
+  padding: var(--p);
+  padding-line: var(--p);
+  padding-block: var(--p);
+  padding-block-start: var(--pt);
+  padding-block-end: var(--pb);
+  padding-inline-start: var(--pl);
+  padding-inline-end: var(--pr);
   --justify: "center";
   --min: 2.5rem;
   --py: var(--s4);
@@ -83,14 +88,13 @@ button {
   box-sizing: var(--box);
   cursor: pointer;
 }
-
 @media (max-width: 680px) {
   button {
     --min: var(--s6);
   }
 }
 
-article+article {
+article + article {
   margin-block-start: var(--mt);
 }
 

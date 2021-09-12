@@ -15,7 +15,7 @@ $renderImg: true !default;
     ".fp-picture"},
     picture {
       // display: flex;
-      --dp: flex;
+      --dsp: flex;
       --size: var(--pct-10);
       max-width: var(--size);
       width: var(--size);
@@ -27,7 +27,7 @@ $renderImg: true !default;
       --cl: var(--light, white);
       background-color: var(--cl);
       color: var(--dark, black);
-      display: var(--dp);
+      display: var(--dsp);
       align-items: center;
       justify-content: center;
 

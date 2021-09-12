@@ -6,7 +6,7 @@ img[alt] {
 
 .fp-picture,
 picture {
-  --dp: flex;
+  --dsp: flex;
   --size: var(--pct-10);
   max-width: var(--size);
   width: var(--size);
@@ -18,7 +18,7 @@ picture {
   --cl: var(--light, white);
   background-color: var(--cl);
   color: var(--dark, black);
-  display: var(--dp);
+  display: var(--dsp);
   align-items: center;
   justify-content: center;
 }

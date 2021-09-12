@@ -87,7 +87,7 @@ video {
   margin-block-end: var(--mb);
   margin-inline-start: var(--ml);
   margin-inline-end: var(--mr);
-  display: var(--dp, block);
+  display: var(--dsp, block);
   border: var(--border);
   font: inherit;
   font-family: var(--fs-family);
@@ -118,7 +118,7 @@ mark,
 time,
 audio,
 video {
-  --dp: inline;
+  --dsp: inline;
 }
 
 section {

@@ -5,13 +5,13 @@ footer[role=contentinfo] {
 }
 .fp-footer[role=contentinfo] > section,
 footer[role=contentinfo] > section {
-  display: var(--dp);
+  display: var(--dsp);
   flex-direction: var(--fb-direction);
   flex-wrap: var(--wrap);
   align-items: var(--al);
   justify-content: var(--justify-c);
   gap: var(--gap);
-  --dp: var(--dsp-f);
+  --dsp: var(--dsp-f);
   --fs: var(--s2);
   --p: var(--rem);
 }

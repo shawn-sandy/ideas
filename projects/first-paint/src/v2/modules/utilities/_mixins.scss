@@ -1,7 +1,7 @@
 // mixin utilities
 @use './functions' as fn;
 @mixin flexbox() {
-  display: var(--dp);
+  display: var(--dsp);
   flex-direction: var(--fb-direction);
   flex-wrap: var(--wrap);
   align-items: var(--al);

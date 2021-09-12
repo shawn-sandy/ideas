@@ -31,7 +31,7 @@
   --drt: row;
   --row: row;
   --col: column;
-  --dp: var(--dsp-b);
+  --dsp: var(--dsp-b);
   --fb-direction: var("row");
   --fb-shrink: 1;
   --fb-grow: 1;

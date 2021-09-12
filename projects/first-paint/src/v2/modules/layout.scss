@@ -96,7 +96,7 @@ $tokens: ();
     --bg: transparent;
     @include mix.padding();
     @include mix.margin();
-    display: var(--dp, block);
+    display: var(--dsp, block);
     border: var(--border);
     font: inherit;
     font-family: var(--fs-family);
@@ -127,7 +127,7 @@ $tokens: ();
   time,
   audio,
   video {
-    --dp: inline;
+    --dsp: inline;
   }
 
   body {

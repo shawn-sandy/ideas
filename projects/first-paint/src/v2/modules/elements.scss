@@ -66,7 +66,7 @@ $tokens: ();
 
   strong,
   div {
-    --dp: var(--dsp-i);
+    --dsp: var(--dsp-i);
     display: inline-flex;
   }
 }
