@@ -4,11 +4,11 @@ h3,
 h4,
 h5,
 h6 {
-  --fs-weight: var(--fw-medium);
+  --fw: var(--fw-medium);
   line-height: var(--line-height);
   color: var(--cl);
   margin: var(--m);
-  font-weight: var(--fs-weight);
+  font-weight: var(--fw);
   overflow-wrap: break-word;
   word-break: var(--word-break);
   --fx-weight: var(--fw-medium);

@@ -29,6 +29,9 @@
 // Media queries modules
 @use './modules/utilities/responsive.scss';
 
+// add typography Modules
+@use './modules/type.scss';
+
 // Header Modules
 @use './modules/header.scss';
 
@@ -38,8 +41,8 @@
 // adds the navigation Modules
 @use './modules/nav.scss';
 
-// add typography Modules
-@use './modules/type.scss';
+// add Main Modules
+@use './modules/main.scss';
 
 // flex-grid Modules
 @use './modules/flex-grid.scss';
@@ -49,6 +52,9 @@
 
 //Table Modules
 @use './modules/table.scss';
+
+// Img Modules
+@use './modules/img.scss';
 
 // Inputs/Forms Modules
 @use './modules/form.scss';
@@ -64,3 +70,5 @@
 
 /// now we render the body
 // @include page.page();
+
+@include form.elements();

@@ -18,39 +18,37 @@
   padding-block-end: var(--pb);
   padding-inline-start: var(--pl);
   padding-inline-end: var(--pr);
-  --fs-weight: var(--fs-medium);
   --justify: "center";
-  --min-h: 2.5rem;
-  --p-y: var(--s4);
+  --min: 2.5rem;
+  --py: var(--s4);
   --pl: var(--rem);
   --line-height: 0;
   --bg: lightgray;
-  --border-radius: var(--rds);
-  border-radius: var(--rds);
+  --border-rad: 0.3rem;
   justify-content: var(--justify);
   align-items: var(--fb-center);
-  min-height: var(--min-h);
-  padding: var(--p);
+  min-height: var(--min);
   display: var(--dsp-i);
-  padding-inline: var(--p-y);
+  padding-inline: var(--py);
   background-color: var(--bg);
   border: var(--border);
-  border-radius: var(--border-radius);
-  font-weight: var(--fs-weight);
+  border-radius: var(--border-rad);
+  font-weight: var(--fw);
   box-sizing: var(--box);
+  cursor: pointer;
 }
 @media (max-width: 680px) {
   :any-link :where(em, strong, b, div) {
-    --min-h: var(--s6);
+    --min: var(--s6);
   }
 }
 :any-link b {
   --bg: transparent;
   --border: var(--border-1);
-  border-width: 3px;
+  border-width: 2px;
 }
 :any-link em {
-  --border-radius: 99rem;
+  --border-rad: 99rem;
 }
 :any-link strong,
 :any-link div {
@@ -71,30 +69,28 @@ button {
   padding-block-end: var(--pb);
   padding-inline-start: var(--pl);
   padding-inline-end: var(--pr);
-  --fs-weight: var(--fs-medium);
   --justify: "center";
-  --min-h: 2.5rem;
-  --p-y: var(--s4);
+  --min: 2.5rem;
+  --py: var(--s4);
   --pl: var(--rem);
   --line-height: 0;
   --bg: lightgray;
-  --border-radius: var(--rds);
-  border-radius: var(--rds);
+  --border-rad: 0.3rem;
   justify-content: var(--justify);
   align-items: var(--fb-center);
-  min-height: var(--min-h);
-  padding: var(--p);
+  min-height: var(--min);
   display: var(--dsp-i);
-  padding-inline: var(--p-y);
+  padding-inline: var(--py);
   background-color: var(--bg);
   border: var(--border);
-  border-radius: var(--border-radius);
-  font-weight: var(--fs-weight);
+  border-radius: var(--border-rad);
+  font-weight: var(--fw);
   box-sizing: var(--box);
+  cursor: pointer;
 }
 @media (max-width: 680px) {
   button {
-    --min-h: var(--s6);
+    --min: var(--s6);
   }
 }
 

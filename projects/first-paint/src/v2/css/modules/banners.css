@@ -6,6 +6,7 @@ header {
 header > [role=banner] {
   --bg: var(--off-white);
   --ban: var(--vh-lg);
+  --bd: var(--lg);
   background-color: var(--bg);
   min-height: var(--ban);
   display: var(--dsp-f);
@@ -18,12 +19,12 @@ header > [role=banner] {
 }
 .fp-header > [role=banner] h1,
 header > [role=banner] h1 {
-  --fs-weight: var(--fw-bold);
+  --fw: var(--fw-bold);
   text-shadow: var(--text-shadow-sm);
 }
 .fp-header > [role=banner] h1 + p,
 header > [role=banner] h1 + p {
-  --fs: var(--xl);
+  --fs: var(--md);
 }
 .fp-header > [role=banner] > div,
 header > [role=banner] > div {

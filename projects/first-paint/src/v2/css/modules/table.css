@@ -31,10 +31,10 @@ table thead tr {
 .fp-table td,
 table th,
 table td {
-  --p-y: 0.75rem;
-  --p-x: 0.75rem;
-  padding-inline: var(--p-y);
-  padding-block: var(--p-x);
+  --py: 0.75rem;
+  --px: 0.75rem;
+  padding-inline: var(--py);
+  padding-block: var(--px);
 }
 .fp-table tbody tr:nth-of-type(even),
 table tbody tr:nth-of-type(even) {

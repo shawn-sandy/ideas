@@ -134,9 +134,9 @@ $tokens: ();
   }
 
   section {
-    --p-y: var(--xl);
+    --px: var(--xl);
     &:not(body > section) {
-      padding-block: var(--p-y);
+      padding-block: var(--px);
     }
   }
 }

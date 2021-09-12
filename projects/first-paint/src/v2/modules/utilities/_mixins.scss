@@ -2,7 +2,7 @@
 @use './functions' as fn;
 @mixin flexbox() {
   display: var(--dp);
-  flex-direction: var(--direction);
+  flex-direction: var(--fb-direction);
   flex-wrap: var(--wrap);
   align-items: var(--al);
   justify-content: var(--justify-c);
@@ -11,7 +11,7 @@
 
 @mixin flex-items() {
   flex: var(--flex, 1);
-  flex-basis: var(--basis, auto);
+  flex-basis: var(--fb-basis, auto);
   align-items: var(--al);
 }
 
@@ -36,28 +36,26 @@
 @mixin button() {
   @include margin();
   @include padding();
-  --fs-weight: var(--fs-medium);
   --justify: "center";
-  --min-h: 2.5rem;
-  --p-y: var(--s4);
+  --min: 2.5rem;
+  --py: var(--s4);
   --pl: var(--rem);
   --line-height: 0;
   --bg: lightgray;
-  --border-radius: var(--rds);
-  border-radius: var(--rds);
+  --border-rad: 0.3rem;
   justify-content: var(--justify);
   align-items: var(--fb-center);
-  min-height: var(--min-h);
-  padding: var(--p);
+  min-height: var(--min);
   display: var(--dsp-i);
-  padding-inline: var(--p-y);
+  padding-inline: var(--py);
   background-color: var(--bg);
   border: var(--border);
-  border-radius: var(--border-radius);
-  font-weight: var(--fs-weight);
+  border-radius: var(--border-rad);
+  font-weight: var(--fw);
   box-sizing: var(--box);
+  cursor: pointer;
 
   @media (max-width: 680px) {
-    --min-h: var(--s6);
+    --min: var(--s6);
   }
 }

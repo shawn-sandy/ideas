@@ -20,9 +20,12 @@ $render: true !default;
       }
       &[type="reset"] {
         --bg: transparent;
+        --fw: var(--fw-medium);
         --border: var(--border-1);
+        --border-w: 2px;
       }
       &[type="button"] {
+        --bg: var(--light);
       }
     }
   }
