@@ -5,10 +5,10 @@ $font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
   "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
   "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $tokens: (
-  "bg": "hsl(0, 0%, 96%)",
-  "bg-img": "none",
+  "bg": hsl(0, 0%, 96%),
+  "bg-img": none,
   "cl": "hsl(0, 0%, 8%)",
-  "border-w": "thin",
+  "border-w": thin,
   "border-cl": lightgray,
   "border-style": "solid",
   "border": 0,
@@ -39,7 +39,7 @@ $tokens: (
   "drt": "row",
   "row": "row",
   "col": "column",
-  "dp": var(--dsp-b),
+  "dsp": var(--dsp-b),
   // flex properties
   "fb-direction": var("row"),
   "fb-shrink": 1,
@@ -125,8 +125,8 @@ $tokens: (
   "mb": var(--0),
   "ml": var(--0),
   "mr": var(--0),
-  "m-x": auto,
-  "m-y": auto,
+  "mx": auto,
+  "my": auto,
   "m": var(--mb) var(--mt) var(--ml) var(--mr),
   // paddings
   "pt": var(--0),

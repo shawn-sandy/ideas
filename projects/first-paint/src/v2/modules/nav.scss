@@ -1,7 +1,7 @@
 // set variables
 // TODO Search and replace name with CSS tag/element name
 
-@import "../modules/utilities/functions" as fn;
+@use "../modules/utilities/functions" as fn;
 
 $render: true !default;
 
@@ -19,7 +19,7 @@ $render: true !default;
   --nav-align: var(--al);
   --nav-height: var(--4xl);
   --justify: var(--justify-b);
-  --dp: var(--nav-dp);
+  --dsp: var(--nav-dp);
 
   @media (min-width: 980px) {
     display: var(--nav-dp);
@@ -49,7 +49,7 @@ $render: true !default;
   }
 
   :where(> section, ul) {
-    display: var(--nav-dp, --dp);
+    display: var(--nav-dp, --dsp);
     align-items: var(--nav-align, --aln);
     gap: var(--gap);
     --gap: var(--lg);

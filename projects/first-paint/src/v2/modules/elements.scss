@@ -12,8 +12,8 @@ $tokens: ();
   @if ($renderContent) {
     html {
       @include maps.customProperties($tokens, $prefix);
-      @include elements();
     }
+    @include elements();
   }
 }
 
@@ -66,13 +66,22 @@ $tokens: ();
 
   strong,
   div {
-    --dp: var(--dsp-i);
+    --dsp: var(--dsp-i);
     display: inline-flex;
   }
 }
 
 button {
   @include mix.button();
+}
+
+blockquote {
+  --m: var(--xl);
+  --p: var(--md);
+  padding: var(--p);
+  margin: var(--m);
+  --border-w: 5rem;
+  border-left: var(--border-1);
 }
 
 article {
@@ -93,5 +102,4 @@ hr {
   $elements-background-color: $_background-color !global;
 }
 
-// include render component
 @include renderComponent();

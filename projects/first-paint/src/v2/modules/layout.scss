@@ -96,7 +96,7 @@ $tokens: ();
     --bg: transparent;
     @include mix.padding();
     @include mix.margin();
-    display: var(--dp, block);
+    display: var(--dsp, block);
     border: var(--border);
     font: inherit;
     font-family: var(--fs-family);
@@ -109,6 +109,7 @@ $tokens: ();
     text-shadow: var(--text-shadow);
     box-shadow: var(--box-shadow);
     line-height: var(--line-height);
+    box-sizing: var(--box);
   }
 
   a,
@@ -127,7 +128,7 @@ $tokens: ();
   time,
   audio,
   video {
-    --dp: inline;
+    --dsp: inline;
   }
 
   body {
@@ -144,8 +145,7 @@ $tokens: ();
 @mixin layout-containers {
   summary,
   details,
-  figcaption,
-  p {
+  figcaption {
     --pt: var(--rem);
     --pb: var(--rem);
   }

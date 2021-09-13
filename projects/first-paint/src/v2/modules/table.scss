@@ -30,8 +30,8 @@ $tokens: (
 }
 
 @mixin table {
-  --m-x: var(--sm-x);
-  --m-y: 0;
+  --mx: var(--sm-x);
+  --my: 0;
   --collapse: collapse;
   border-collapse: var(--collapse);
   margin: 25px 0;
