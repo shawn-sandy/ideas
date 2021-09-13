@@ -1,0 +1,154 @@
+html,
+body,
+div,
+header,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+p,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+footer[role=contentinfo],
+header,
+hgroup,
+menu,
+main,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  --bg: transparent;
+  padding: var(--p);
+  padding-line: var(--p);
+  padding-block: var(--p);
+  -webkit-padding-before: var(--pt);
+          padding-block-start: var(--pt);
+  -webkit-padding-after: var(--pb);
+          padding-block-end: var(--pb);
+  -webkit-padding-start: var(--pl);
+          padding-inline-start: var(--pl);
+  -webkit-padding-end: var(--pr);
+          padding-inline-end: var(--pr);
+  margin: var(--m);
+  -webkit-margin-before: var(--mt);
+          margin-block-start: var(--mt);
+  -webkit-margin-after: var(--mb);
+          margin-block-end: var(--mb);
+  -webkit-margin-start: var(--ml);
+          margin-inline-start: var(--ml);
+  -webkit-margin-end: var(--mr);
+          margin-inline-end: var(--mr);
+  display: var(--dsp, block);
+  border: var(--border);
+  font: inherit;
+  font-family: var(--fs-family);
+  font-size: var(--fs);
+  vertical-align: var(--v-align);
+  outline: var(--outline);
+  background-color: var(--bg);
+  text-align: var(--text-align);
+  -webkit-text-decoration: var(--decoration);
+          text-decoration: var(--decoration);
+  text-shadow: var(--text-shadow);
+  box-shadow: var(--box-shadow);
+  line-height: var(--line-height);
+  box-sizing: var(--box);
+}
+
+a,
+q,
+b,
+strong,
+i,
+em,
+small,
+big,
+sub,
+sup,
+dfn,
+ins,
+mark,
+time,
+audio,
+video {
+  --dsp: inline;
+}
+
+section {
+  --px: var(--xl);
+}
+section:not(body > section) {
+  padding-block: var(--px);
+}
+
+summary,
+details,
+figcaption {
+  --pt: var(--rem);
+  --pb: var(--rem);
+}
+
+div,
+summary,
+details,
+figcaption,
+aside {
+  --p: var(--rem);
+}
