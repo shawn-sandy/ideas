@@ -1,7 +1,7 @@
 // set variables
 // TODO Search and replace name with CSS tag/element name
 
-@import "../modules/utilities/functions" as fn;
+@use "../modules/utilities/functions" as fn;
 
 $render: true !default;
 

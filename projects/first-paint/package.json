@@ -43,9 +43,10 @@
     "watch:v2": "sass --watch src/v2/index.scss:src/v2/index.css src/v2/tokens:src/v2/css/tokens/.  src/v2/modules:src/v2/css/modules/. --load-path=node_modules --no-source-map",
     "watch-scss": "sass --style --update compressed src/components:dist/css/. src/index.scss:dist/css/index.css src/styles:src/styles/. --load-path=node_modules --color",
     "build:scss": "sass --style compressed src/index.scss:dist/css/index.css src/custom-styles.scss:dist/css/custom-styles.css src/styles:dist/styles/. src/components:dist/css/components/.  --load-path=node_modules --color",
-    "build:v2": "sass --update src/v2/index.scss:build/v2/index.css src/v2/modules.scss:build/v2/modules.css  src/v2/tokens:build/v2/tokens/.  src/v2/modules:build/v2/modules/. --load-path=node_modules --no-source-map",
+    "build-v2": "sass --update src/v2/index.scss:src/dist/v2/index.css src/v2/tokens:src/dist/v2/css/tokens/.  src/v2/modules:src/dist/v2/css/modules/. --load-path=node_modules --style compressed",
     "build:css": "postcss ./dist/css/*.css -d ./dist/css/ --ext min.css",
-    "build": "run-s clean:dist build:*",
+    "build:v2": "postcss ./src/v2/**/*.css -d ./dist/v2/ --ext min.css",
+    "build": "run-s build:*",
     "clean": "trash dist/**/",
     "clean:dist": "trash dist/**"
   },

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import "../modules/utilities/functions" as fn;
 :root {
   --bg: whitesmoke;
   --bg-img: none;
