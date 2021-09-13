@@ -1,17 +1,16 @@
 @charset "UTF-8";
 > div + div {
-  margin-top: 1rem;
+  --mt: var(rem, 1rem);
+  margin-top: var(--mt);
 }
 
 label[for] {
   font-size: 0.9rem;
   display: block;
 }
-
 label[for] em {
   font-style: normal;
 }
-
 label[for] em::after {
   content: "∗";
   color: var(--danger);
@@ -24,11 +23,13 @@ select[id] {
   display: flex;
   margin: 0.5rem 0 1rem;
   padding: 0.5rem;
-  width: 98%;
-  border: thin solid lightgray;
-  border-radius: 0.1rem;
+  --w: 90%;
+  width: var(--w);
+  --border: var(--border-1);
+  border: var(--border);
+  --border-rad: 0.2rem;
+  border-radius: var(--border-rad);
 }
-
 input[id]:focus, input[id]:focus-within,
 textarea[id]:focus,
 textarea[id]:focus-within,
@@ -37,10 +38,20 @@ select[id]:focus-within {
   border: thin solid gray;
   outline-color: gray;
 }
-
+input[id]::-webkit-input-placeholder, textarea[id]::-webkit-input-placeholder, select[id]::-webkit-input-placeholder {
+  font-style: italic;
+  --cl: var(--light);
+  color: var(--cl);
+}
+input[id]:-ms-input-placeholder, textarea[id]:-ms-input-placeholder, select[id]:-ms-input-placeholder {
+  font-style: italic;
+  --cl: var(--light);
+  color: var(--cl);
+}
 input[id]::placeholder,
 textarea[id]::placeholder,
 select[id]::placeholder {
   font-style: italic;
-  color: lightgrey;
+  --cl: var(--light);
+  color: var(--cl);
 }

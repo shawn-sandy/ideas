@@ -1,6 +1,8 @@
 // set variables
 // TODO Search and replace name with CSS tag/element name
 @use './utilities/maps';
+@use './utilities/mixins' as mix;
+@use './utilities/functions' as fn;
 $render: true !default;
 $prefix: "layout";
 $tokens: ();
@@ -10,105 +12,89 @@ $tokens: ();
   @if ($renderContent) {
     html {
       @include maps.customProperties($tokens, $prefix);
-      @include elements();
     }
+    @include elements();
   }
 }
 
-@mixin elements {
+@mixin elements() {
   // TODO add mixin code
+  p,
+  li,
+  aside,
+  blockquote,
+  em,
+  strong,
+  small,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: var(--fs);
+    color: var(--cl);
+    text-decoration: var(--decoration);
+    text-shadow: none;
+    text-transform: var(--transform);
+  }
   * {
-    p,
-    li,
-    div,
-    aside,
-    blockquote,
-    em,
-    strong,
-    small,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-size: var(--fs);
-      color: var(--cl);
-      text-decoration: var(--text-decor);
-      text-shadow: none;
-      text-transform: var(--transform);
-    }
     box-shadow: var(--shadow);
     text-shadow: var(--text-shadow);
   }
+}
 
-  :any-link {
-    color: var(--cl);
-    + * {
-      margin-inline-start: var(--ml);
-      --ml: var(--rem);
-    }
-    :where(em, strong, b, div) {
-      @include button-element();
-    }
-
-    b {
-      --bg: transparent;
-      --border: var(--border-1);
-      border-width: 3px;
-    }
-
-    em {
-      --border-radius: 99rem;
-    }
-
-    strong,
-    div {
-      dp: var(--dp-i);
-      display: inline-flex;
-    }
+:any-link {
+  color: var(--cl);
+  + * {
+    margin-inline-start: var(--ml);
+    --ml: var(--rem);
+  }
+  :where(em, strong, b, div) {
+    @include mix.button();
   }
 
-  button {
-    @include button-element();
+  b {
+    --bg: transparent;
+    --border: var(--border-1);
+    border-width: 2px;
   }
 
-  article {
-    + article {
-      margin-block-start: var(--mt);
-      --mt: var(--xxl);
-    }
+  em {
+    --border-rad: 99rem;
   }
 
-  hr {
-    --rem: var(--xxl);
-    margin-block: var(--rem);
-    border: var(--border);
-    border-bottom: var(--border-1);
+  strong,
+  div {
+    --dsp: var(--dsp-i);
+    display: inline-flex;
   }
 }
 
-@mixin button-element {
-  --fs-weight: var(--fs-medium);
-  --jfy: "center";
-  --dp: var(--dp-i);
-  --min-h: var(--s6);
-  --p-inline: var(--s4);
-  --pl: var(--rem);
-  --bg: whitesmoke;
-  --line-height: 0;
-  --border-radius: var(--rds-sm);
-  border-radius: var(--rds);
-  justify-content: var(--justify);
-  align-items: var(--al);
-  min-height: var(--min-h);
+button {
+  @include mix.button();
+}
+
+blockquote {
+  --m: var(--xl);
+  --p: var(--md);
   padding: var(--p);
-  display: var(--dp-i);
-  padding-inline: var(--p-inline);
-  background-color: var(--bg);
+  margin: var(--m);
+  --border-w: 5rem;
+  border-left: var(--border-1);
+}
+
+article {
+  + article {
+    margin-block-start: var(--mt);
+  }
+}
+
+hr {
+  --rem: var(--2xl);
+  margin-block: var(--rem);
   border: var(--border);
-  border-radius: var(--border-radius);
-  font-weight: var(--fs-weight);
+  border-bottom: var(--border-1);
 }
 
 @mixin config($_color: null, $_background-color: null) {
@@ -116,5 +102,4 @@ $tokens: ();
   $elements-background-color: $_background-color !global;
 }
 
-// include render component
 @include renderComponent();

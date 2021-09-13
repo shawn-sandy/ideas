@@ -12,7 +12,7 @@
 */
 
 // custom properties--tokens
-@use 'tokens/index.scss';
+@use 'tokens/tokens.scss';
 
 // user reset from v1
 @use '../components/reset.scss';
@@ -29,6 +29,9 @@
 // Media queries modules
 @use './modules/utilities/responsive.scss';
 
+// add typography Modules
+@use './modules/type.scss';
+
 // Header Modules
 @use './modules/header.scss';
 
@@ -38,8 +41,8 @@
 // adds the navigation Modules
 @use './modules/nav.scss';
 
-// add typography Modules
-@use './modules/type.scss';
+// add Main Modules
+@use './modules/main.scss';
 
 // flex-grid Modules
 @use './modules/flex-grid.scss';
@@ -47,8 +50,17 @@
 // Button Modules
 @use './modules/buttons.scss';
 
+//Table Modules
+@use './modules/table.scss';
+
+// Img Modules
+@use './modules/img.scss';
+
 // Inputs/Forms Modules
 @use './modules/form.scss';
+
+// Footer modules
+@use './modules/footer.scss';
 
 /// don't automatically render the page Modules
 // @use './modules/page.scss' with($render-page: false);
@@ -58,3 +70,5 @@
 
 /// now we render the body
 // @include page.page();
+
+@include form.elements();

@@ -7,6 +7,7 @@
     "naumovs.color-highlight",
     "vivaxy.vscode-conventional-commits",
     "dzhavat.css-flexbox-cheatsheet",
-    "mikestead.dotenv"
+    "mikestead.dotenv",
+    "vunguyentuan.vscode-css-variables"
   ]
 }

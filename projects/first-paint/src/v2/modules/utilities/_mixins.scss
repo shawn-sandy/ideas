@@ -1,0 +1,61 @@
+// mixin utilities
+@use './functions' as fn;
+@mixin flexbox() {
+  display: var(--dsp);
+  flex-direction: var(--fb-direction);
+  flex-wrap: var(--wrap);
+  align-items: var(--al);
+  justify-content: var(--justify-c);
+  gap: var(--gap);
+}
+
+@mixin flex-items() {
+  flex: var(--flex, 1);
+  flex-basis: var(--fb-basis, auto);
+  align-items: var(--al);
+}
+
+@mixin padding() {
+  padding: var(--p);
+  padding-line: var(--p);
+  padding-block: var(--p);
+  padding-block-start: var(--pt);
+  padding-block-end: var(--pb);
+  padding-inline-start: var(--pl);
+  padding-inline-end: var(--pr);
+}
+
+@mixin margin() {
+  margin: var(--m);
+  margin-block-start: var(--mt);
+  margin-block-end: var(--mb);
+  margin-inline-start: var(--ml);
+  margin-inline-end: var(--mr);
+}
+
+@mixin button() {
+  @include margin();
+  @include padding();
+  --justify: "center";
+  --min: 2.5rem;
+  --py: var(--s4);
+  --pl: var(--rem);
+  --line-height: 0;
+  --bg: lightgray;
+  --border-rad: 0.3rem;
+  justify-content: var(--justify);
+  align-items: var(--fb-center);
+  min-height: var(--min);
+  display: var(--dsp-i);
+  padding-inline: var(--py);
+  background-color: var(--bg);
+  border: var(--border);
+  border-radius: var(--border-rad);
+  font-weight: var(--fw);
+  box-sizing: var(--box);
+  cursor: pointer;
+
+  @media (max-width: 680px) {
+    --min: var(--s6);
+  }
+}

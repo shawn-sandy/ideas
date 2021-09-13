@@ -4,11 +4,11 @@ h3,
 h4,
 h5,
 h6 {
-  --fs-weight: var(--fw-medium);
+  --fw: var(--fw-medium);
   line-height: var(--line-height);
   color: var(--cl);
   margin: var(--m);
-  font-weight: var(--fs-weight);
+  font-weight: var(--fw);
   overflow-wrap: break-word;
   word-break: var(--word-break);
   --fx-weight: var(--fw-medium);
@@ -20,11 +20,11 @@ h1 {
 }
 
 h2 {
-  --fs: var(--xxxl);
+  --fs: var(--3xl);
 }
 
 h3 {
-  --fs: var(--xxl);
+  --fs: var(--2xl);
 }
 
 h4 {
@@ -52,11 +52,9 @@ p {
   margin: 0;
   line-height: 1.7;
 }
-
 p i {
   font-style: italic;
 }
-
 p strong {
   font-weight: var(--fw-medium);
 }

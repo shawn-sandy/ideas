@@ -19,11 +19,11 @@ footer {
 header {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  flex-fb-grow: 1;
   align-items: center;
   justify-content: center;
 
-  &>[role="banner"] {
+  & > [role="banner"] {
     flex-grow: 1;
     @include components.header-banner();
   }

@@ -1,40 +1,37 @@
 // set variables
-// TODO Search and replace NAME with CSS tag/element name
+// TODO Search and replace button with CSS tag/element name
 $render: true !default;
 
 // render component mixin
 @mixin renderComponent($renderContent: $render, $className: null) {
   @if ($renderContent) {
-    #{$className,
-    $className,
-    ".fp-link"},
-    a {
-      @include NAME();
+    // #{$className,
+    // $className,
+    // ".fp-link"},
+    button {
+      --bg: transparent;
+      &[type] {
+        --bg: var(--light);
+        @include button();
+      }
+      &[type="submit"] {
+        --bg: var(--dark);
+        --cl: var(--light);
+      }
+      &[type="reset"] {
+        --bg: transparent;
+        --fw: var(--fw-medium);
+        --border: var(--border-1);
+        --border-w: 2px;
+      }
+      &[type="button"] {
+        --bg: var(--light);
+      }
     }
   }
 }
 
-@mixin NAME {
-}
-
-// configure component mixin
-
-@mixin config(
-  $_color: $color,
-  $_background-color: $background-color,
-  $_background-color-hover: $background-color-hover,
-  $_border-radius: $border-radius,
-  $_button-padding: $button-padding,
-  $_transitions: $transitions,
-  $_transform: $transform
-) {
-  $NAME-color: $_color !global;
-  $NAME-background-color: $_background-color !global;
-  $NAME-background-color-hover: $_background-color-hover !global;
-  $NAME-border-radius: $_border-radius !global;
-  $NAME-button-padding: $_button-padding !global;
-  $NAME-transitions: $_transitions !global;
-  $NAME-transform: $_transform !global;
+@mixin button {
 }
 
 // include render component

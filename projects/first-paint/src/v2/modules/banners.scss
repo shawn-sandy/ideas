@@ -6,9 +6,9 @@ $background-color: null;
 $tokens: (
   "bg": var(--bg),
   "h": var(--h),
-  "dp": var(--dp),
+  "dp": var(--dsp),
   "al": var(--al),
-  "js": var(--js),
+  "js": var(justify-s),
   "row": var(--row),
 );
 // render component mixin
@@ -25,21 +25,23 @@ $tokens: (
 
 @mixin banner {
   --bg: var(--off-white);
+  --ban: var(--vh-lg);
+  --bd: var(--lg);
   background-color: var(--bg);
-  min-height: var(--ban-md);
-  display: var(--dp-f);
-  align-items: var(--al);
-  justify-content: var(--jc);
+  min-height: var(--ban);
+  display: var(--dsp-f);
+  align-items: var(--fb-center);
+  justify-content: var(--justify-c);
   flex-direction: var(--row);
   border-block: var(--bd);
   gap: var(--gap);
   padding-block: var(--s5);
 
   h1 {
-    --fs-weight: var(--fw-bold);
+    --fw: var(--fw-bold);
     text-shadow: var(--text-shadow-sm);
     + p {
-      --fs: var(--xl);
+      --fs: var(--md);
     }
   }
 
@@ -47,6 +49,7 @@ $tokens: (
     --fw: var(--vw-medium);
     --w: 80%;
     --text-align: var(--center);
+    max-width: var(--w);
     p {
       --w: 100%;
       --text-align: var(--center);

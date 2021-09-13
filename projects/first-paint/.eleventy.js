@@ -14,7 +14,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addPassthroughCopy("./src/*.css", "./dist");
-  eleventyConfig.addPassthroughCopy("./src/v2/**/*.css", "./dist");
+  eleventyConfig.addPassthroughCopy("./src/v2/css/**/*.css", "./dist");
   eleventyConfig.addPassthroughCopy("./src/css", "./dist");
   eleventyConfig.addPassthroughCopy("./src/img", "./dist");
 
