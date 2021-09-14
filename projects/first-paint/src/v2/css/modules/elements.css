@@ -1,4 +1,6 @@
-header {
+header,
+footer,
+section {
   min-height: var(--h);
   min-width: var(--w);
 }
