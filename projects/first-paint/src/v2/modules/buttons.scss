@@ -21,7 +21,8 @@ $render: true !default;
       &[type="reset"] {
         --bg: transparent;
         --fw: var(--fw-medium);
-        --border: var(--border-1);
+        --border-s: solid;
+        --border-cl: var(--light);
         --border-w: 2px;
       }
       &[type="button"] {
