@@ -5,14 +5,9 @@
   --cl: hsl(0, 0%, 8%);
   --border-w: thin;
   --border-cl: lightgray;
-  --border-style: solid;
-  --border: 0;
+  --border-s: 0;
+  --border: var(--border-w) var(--border-cl) var(--border-s);
   --border-rad: 0;
-  --border-1: var(--border-w) var(--border-style) var(--border-cl);
-  --rad-sm: 0.7rem;
-  --rad-md: 0.7 0.5rem;
-  --rad-lg: 1rem;
-  --rad-xl: 2rem;
   --rad-pill: 99rem;
   --rad: 0.25rem;
   --mid: middle;
@@ -113,13 +108,13 @@
   --mx: auto;
   --my: auto;
   --m: var(--mb) var(--mt) var(--ml) var(--mr);
+  --py: auto;
+  --px: auto;
   --pt: var(--0);
   --pb: var(--0);
   --pl: var(--0);
   --pr: var(--0);
   --p: var(--pt) var(--pb) var(--pl) var(--pr);
-  --py: auto;
-  --px: auto;
   --vh-sm: 10vh;
   --vh-md: 25vh;
   --vh-lg: 50vh;
@@ -435,16 +430,8 @@ section:not(body > section) {
 summary,
 details,
 figcaption {
-  --pt: var(--rem);
-  --pb: var(--rem);
-}
-
-div,
-summary,
-details,
-figcaption,
-aside {
-  --p: var(--rem);
+  padding-block: var(--py);
+  padding-inline: var(--px);
 }
 
 * {
@@ -557,7 +544,7 @@ div {
   display: var(--dsp-i);
   padding-inline: var(--py);
   background-color: var(--bg);
-  border: var(--border);
+  border: var(--border-w) var(--border-s) var(--border-cl);
   border-radius: var(--border-rad);
   font-weight: var(--fw);
   box-sizing: var(--box);
@@ -608,7 +595,7 @@ button {
   display: var(--dsp-i);
   padding-inline: var(--py);
   background-color: var(--bg);
-  border: var(--border);
+  border: var(--border-w) var(--border-s) var(--border-cl);
   border-radius: var(--border-rad);
   font-weight: var(--fw);
   box-sizing: var(--box);
@@ -636,8 +623,8 @@ article + article {
 hr {
   --rem: var(--2xl);
   margin-block: var(--rem);
-  border: var(--border);
-  border-bottom: var(--border-1);
+  border: none;
+  border-bottom: var(--border-w) var(--border-s) var(--border-cl);
 }
 
 p,
@@ -976,7 +963,7 @@ table {
   --tb-bg: whitesmoke;
   --tb-bg-alt: #f0f0f0;
   --tb-border-width: var(--border-w);
-  --tb-border-style: var(--border-style);
+  --tb-border-style: var(--border-s);
   --tb-border-color: var(--border-cl);
   --tb-border: var(--tb-border-width) var(--tb-border-style) var(--tb-border-color);
   --mx: var(--sm-x);
@@ -1031,7 +1018,8 @@ picture {
   height: auto;
   align-items: center;
   justify-content: center;
-  padding: 0;
+  padding-block: var(--py);
+  padding: var(--p);
   text-align: center;
   --cl: var(--light, white);
   background-color: var(--cl);
@@ -1097,8 +1085,10 @@ select[id] {
   --w: 90%;
   width: var(--w);
   --border: var(--border-1);
-  border: var(--border);
-  --border-rad: 0.2rem;
+  --border-w: thin;
+  --border-s: solid;
+  --border-cl: var(--light);
+  border: var(--border-w) var(--border-s) var(--border-cl);
   border-radius: var(--border-rad);
 }
 input[id]:focus, input[id]:focus-within,
@@ -1106,7 +1096,8 @@ textarea[id]:focus,
 textarea[id]:focus-within,
 select[id]:focus,
 select[id]:focus-within {
-  border: thin solid gray;
+  border-color: var(--primary);
+  border: var(--border-w) var(--border-s) var(--border-cl);
   outline-color: gray;
 }
 input[id]::placeholder,
