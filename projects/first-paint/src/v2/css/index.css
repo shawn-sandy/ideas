@@ -511,6 +511,11 @@ div {
   }
 }
 
+header {
+  min-height: var(--h);
+  min-width: var(--w);
+}
+
 :any-link {
   color: var(--cl);
 }
