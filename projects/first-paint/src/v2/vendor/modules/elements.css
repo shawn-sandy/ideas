@@ -48,7 +48,7 @@
   display: var(--dsp-i);
   padding-inline: var(--py);
   background-color: var(--bg);
-  border: var(--border);
+  border: var(--border-w) var(--border-s) var(--border-cl);
   border-radius: var(--border-rad);
   font-weight: var(--fw);
   box-sizing: var(--box);
@@ -88,7 +88,7 @@
   display: var(--dsp-i);
   padding-inline: var(--py);
   background-color: var(--bg);
-  border: var(--border);
+  border: var(--border-w) var(--border-s) var(--border-cl);
   border-radius: var(--border-rad);
   font-weight: var(--fw);
   box-sizing: var(--box);
@@ -162,7 +162,7 @@ button {
   display: var(--dsp-i);
   padding-inline: var(--py);
   background-color: var(--bg);
-  border: var(--border);
+  border: var(--border-w) var(--border-s) var(--border-cl);
   border-radius: var(--border-rad);
   font-weight: var(--fw);
   box-sizing: var(--box);
@@ -191,8 +191,8 @@ article + article {
 hr {
   --rem: var(--2xl);
   margin-block: var(--rem);
-  border: var(--border);
-  border-bottom: var(--border-1);
+  border: none;
+  border-bottom: var(--border-w) var(--border-s) var(--border-cl);
 }
 
 p,
