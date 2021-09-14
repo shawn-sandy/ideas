@@ -664,6 +664,126 @@ h6 {
   text-shadow: var(--text-shadow);
 }
 
+.fp-header,
+header {
+  background-color: var(--hd-bg, );
+}
+.fp-header > [role=banner],
+header > [role=banner] {
+  --bg: var(--off-white);
+  --ban: var(--vh-lg);
+  --bd: var(--lg);
+  background-color: var(--bg);
+  min-height: var(--ban);
+  display: var(--dsp-f);
+  align-items: var(--fb-center);
+  justify-content: var(--justify-c);
+  flex-direction: var(--row);
+  border-block: var(--bd);
+  gap: var(--gap);
+  padding-block: var(--s5);
+}
+.fp-header > [role=banner] h1,
+header > [role=banner] h1 {
+  --fw: var(--fw-bold);
+  text-shadow: var(--text-shadow-sm);
+}
+.fp-header > [role=banner] h1 + p,
+header > [role=banner] h1 + p {
+  --fs: var(--md);
+}
+.fp-header > [role=banner] > div,
+header > [role=banner] > div {
+  --fw: var(--vw-medium);
+  --w: 80%;
+  --text-align: var(--center);
+  max-width: var(--w);
+}
+.fp-header > [role=banner] > div p,
+header > [role=banner] > div p {
+  --w: 100%;
+  --text-align: var(--center);
+}
+
+nav {
+  --nav-dp: var(--dsp-f);
+  --nav-align: var(--al);
+  --nav-height: var(--4xl);
+  --justify: var(--justify-b);
+  --dsp: var(--nav-dp);
+}
+@media (min-width: 980px) {
+  nav {
+    display: var(--nav-dp);
+    align-items: var(--align-items);
+    justify-content: var(--justify-b);
+    height: var(--nav-height);
+  }
+}
+@media (max-width: 780px) {
+  nav {
+    flex-direction: var(--col);
+    justify-content: var(--justify-c);
+  }
+}
+nav a,
+nav li {
+  font-size: var(--fs);
+  --fs: var(--sm);
+}
+nav span {
+  --bg: transparent;
+}
+nav h1 {
+  --line-height: 0;
+}
+nav h1 a {
+  --fs: var(--md);
+  margin-block-end: 0;
+}
+nav :where(> section, ul) {
+  display: var(--nav-dp, --dsp);
+  align-items: var(--nav-align, --aln);
+  gap: var(--gap);
+  --gap: var(--lg);
+  height: 100%;
+  font-size: var(--font-size);
+}
+nav :where(> section, ul) :any-link {
+  font-size: var(--font-size);
+}
+nav img[alt] {
+  vertical-align: var(--vertical-align);
+  --vertical-align: var(--mid);
+  --max: var(--2xl);
+  max-height: var(--max);
+}
+nav img[alt] + * {
+  --ml: var(--s1);
+  margin-left: var(--ml);
+}
+
+button {
+  --bg: transparent;
+}
+button[type] {
+  --bg: var(--light);
+}
+button[type=submit] {
+  --bg: var(--dark);
+  --cl: var(--light);
+}
+button[type=reset] {
+  --bg: transparent;
+  --fw: var(--fw-medium);
+  --border-s: solid;
+  --border-cl: var(--light);
+  --border-w: 2px;
+}
+button[type=button] {
+  --bg: var(--light);
+}
+
 @media (min-width: 980px) {
   [data-show-mobile] {
     display: none;

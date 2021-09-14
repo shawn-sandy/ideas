@@ -26,6 +26,18 @@
 // Elements modules
 @use '../../modules/elements.scss';
 
+// Header Modules
+@use '../../modules/header.scss';
+
+// Banner Modules
+@use '../../modules/banners.scss';
+
+// adds the navigation Modules
+@use '../../modules/nav.scss';
+
+// Button Modules
+@use '../../modules/buttons.scss';
+
 // Media queries modules
 @use '../../modules/utilities/responsive.scss';
 
