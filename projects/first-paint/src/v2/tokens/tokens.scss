@@ -183,6 +183,11 @@ $radius: (
   "rad-lg": 1rem,
   "rad-xl": 2rem,
 );
+
+$borders: (
+  "border-sm": 0.5rem,
+);
+
 :root {
   @include maps.customProperties($tokens);
   @include maps.cp(banner.$tokens, banner.$prefix);

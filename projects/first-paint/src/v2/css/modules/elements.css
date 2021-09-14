@@ -108,9 +108,12 @@ article + article {
 }
 
 hr {
-  --rem: var(--2xl);
-  margin-block: var(--rem);
+  --py: var(--2xl);
+  margin-block: var(--py);
   border: none;
+  --border-w: thin;
+  --border-s: solid;
+  --border-cl: var(--light);
   border-bottom: var(--border-w) var(--border-s) var(--border-cl);
 }
 
