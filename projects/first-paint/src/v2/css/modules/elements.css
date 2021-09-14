@@ -31,7 +31,7 @@
   display: var(--dsp-i);
   padding-inline: var(--py);
   background-color: var(--bg);
-  border: var(--border);
+  border: var(--border-w) var(--border-s) var(--border-cl);
   border-radius: var(--border-rad);
   font-weight: var(--fw);
   box-sizing: var(--box);
@@ -82,7 +82,7 @@ button {
   display: var(--dsp-i);
   padding-inline: var(--py);
   background-color: var(--bg);
-  border: var(--border);
+  border: var(--border-w) var(--border-s) var(--border-cl);
   border-radius: var(--border-rad);
   font-weight: var(--fw);
   box-sizing: var(--box);
