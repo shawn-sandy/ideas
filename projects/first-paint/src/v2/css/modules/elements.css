@@ -100,8 +100,10 @@ blockquote {
   --p: var(--md);
   padding: var(--p);
   margin: var(--m);
-  --border-w: 5rem;
-  border-left: var(--border-1);
+  --border-w: thick;
+  --border-s: solid;
+  --border-cl: var(--light);
+  border-left: var(--border-w) var(--border-s) var(--border-cl);
 }
 
 article + article {
