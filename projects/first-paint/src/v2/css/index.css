@@ -557,8 +557,9 @@ div {
 }
 :any-link b {
   --bg: transparent;
-  --border: var(--border-1);
-  border-width: 2px;
+  --border-s: solid;
+  --border-cl: var(--light);
+  --border-w: 2px;
 }
 :any-link em {
   --border-rad: 99rem;
@@ -951,7 +952,8 @@ button[type=submit] {
 button[type=reset] {
   --bg: transparent;
   --fw: var(--fw-medium);
-  --border: var(--border-1);
+  --border-s: solid;
+  --border-cl: var(--light);
   --border-w: 2px;
 }
 button[type=button] {

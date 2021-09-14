@@ -44,8 +44,9 @@
 }
 :any-link b {
   --bg: transparent;
-  --border: var(--border-1);
-  border-width: 2px;
+  --border-s: solid;
+  --border-cl: var(--light);
+  --border-w: 2px;
 }
 :any-link em {
   --border-rad: 99rem;

@@ -375,15 +375,23 @@ video {
   padding: var(--p);
   padding-line: var(--p);
   padding-block: var(--p);
-  padding-block-start: var(--pt);
-  padding-block-end: var(--pb);
-  padding-inline-start: var(--pl);
-  padding-inline-end: var(--pr);
+  -webkit-padding-before: var(--pt);
+          padding-block-start: var(--pt);
+  -webkit-padding-after: var(--pb);
+          padding-block-end: var(--pb);
+  -webkit-padding-start: var(--pl);
+          padding-inline-start: var(--pl);
+  -webkit-padding-end: var(--pr);
+          padding-inline-end: var(--pr);
   margin: var(--m);
-  margin-block-start: var(--mt);
-  margin-block-end: var(--mb);
-  margin-inline-start: var(--ml);
-  margin-inline-end: var(--mr);
+  -webkit-margin-before: var(--mt);
+          margin-block-start: var(--mt);
+  -webkit-margin-after: var(--mb);
+          margin-block-end: var(--mb);
+  -webkit-margin-start: var(--ml);
+          margin-inline-start: var(--ml);
+  -webkit-margin-end: var(--mr);
+          margin-inline-end: var(--mr);
   display: var(--dsp, block);
   border: var(--border);
   font: inherit;
@@ -393,7 +401,8 @@ video {
   outline: var(--outline);
   background-color: var(--bg);
   text-align: var(--text-align);
-  text-decoration: var(--decoration);
+  -webkit-text-decoration: var(--decoration);
+          text-decoration: var(--decoration);
   text-shadow: var(--text-shadow);
   box-shadow: var(--box-shadow);
   line-height: var(--line-height);
@@ -510,26 +519,84 @@ div {
   }
 }
 
+:-webkit-any-link {
+  color: var(--cl);
+}
+
 :any-link {
   color: var(--cl);
 }
-:any-link + * {
-  margin-inline-start: var(--ml);
+:-webkit-any-link + * {
+  -webkit-margin-start: var(--ml);
+          margin-inline-start: var(--ml);
   --ml: var(--rem);
 }
-:any-link :where(em, strong, b, div) {
+:any-link + * {
+  -webkit-margin-start: var(--ml);
+          margin-inline-start: var(--ml);
+  --ml: var(--rem);
+}
+:-webkit-any-link :where(em, strong, b, div) {
   margin: var(--m);
-  margin-block-start: var(--mt);
-  margin-block-end: var(--mb);
-  margin-inline-start: var(--ml);
-  margin-inline-end: var(--mr);
+  -webkit-margin-before: var(--mt);
+          margin-block-start: var(--mt);
+  -webkit-margin-after: var(--mb);
+          margin-block-end: var(--mb);
+  -webkit-margin-start: var(--ml);
+          margin-inline-start: var(--ml);
+  -webkit-margin-end: var(--mr);
+          margin-inline-end: var(--mr);
   padding: var(--p);
   padding-line: var(--p);
   padding-block: var(--p);
-  padding-block-start: var(--pt);
-  padding-block-end: var(--pb);
-  padding-inline-start: var(--pl);
-  padding-inline-end: var(--pr);
+  -webkit-padding-before: var(--pt);
+          padding-block-start: var(--pt);
+  -webkit-padding-after: var(--pb);
+          padding-block-end: var(--pb);
+  -webkit-padding-start: var(--pl);
+          padding-inline-start: var(--pl);
+  -webkit-padding-end: var(--pr);
+          padding-inline-end: var(--pr);
+  --justify: "center";
+  --min: 2.5rem;
+  --py: var(--s4);
+  --pl: var(--rem);
+  --line-height: 0;
+  --bg: lightgray;
+  --border-rad: 0.3rem;
+  justify-content: var(--justify);
+  align-items: var(--fb-center);
+  min-height: var(--min);
+  display: var(--dsp-i);
+  padding-inline: var(--py);
+  background-color: var(--bg);
+  border: var(--border-w) var(--border-s) var(--border-cl);
+  border-radius: var(--border-rad);
+  font-weight: var(--fw);
+  box-sizing: var(--box);
+  cursor: pointer;
+}
+:any-link :where(em, strong, b, div) {
+  margin: var(--m);
+  -webkit-margin-before: var(--mt);
+          margin-block-start: var(--mt);
+  -webkit-margin-after: var(--mb);
+          margin-block-end: var(--mb);
+  -webkit-margin-start: var(--ml);
+          margin-inline-start: var(--ml);
+  -webkit-margin-end: var(--mr);
+          margin-inline-end: var(--mr);
+  padding: var(--p);
+  padding-line: var(--p);
+  padding-block: var(--p);
+  -webkit-padding-before: var(--pt);
+          padding-block-start: var(--pt);
+  -webkit-padding-after: var(--pb);
+          padding-block-end: var(--pb);
+  -webkit-padding-start: var(--pl);
+          padding-inline-start: var(--pl);
+  -webkit-padding-end: var(--pr);
+          padding-inline-end: var(--pr);
   --justify: "center";
   --min: 2.5rem;
   --py: var(--s4);
@@ -550,18 +617,32 @@ div {
   cursor: pointer;
 }
 @media (max-width: 680px) {
+  :-webkit-any-link :where(em, strong, b, div) {
+    --min: var(--s6);
+  }
   :any-link :where(em, strong, b, div) {
     --min: var(--s6);
   }
 }
+:-webkit-any-link b {
+  --bg: transparent;
+  --border: var(--border-1);
+  border-width: 2px;
+}
 :any-link b {
   --bg: transparent;
-  --border-s: solid;
-  --border-cl: var(--light);
-  --border-w: 2px;
+  --border: var(--border-1);
+  border-width: 2px;
+}
+:-webkit-any-link em {
+  --border-rad: 99rem;
 }
 :any-link em {
   --border-rad: 99rem;
+}
+:-webkit-any-link strong, :-webkit-any-link div {
+  --dsp: var(--dsp-i);
+  display: inline-flex;
 }
 :any-link strong,
 :any-link div {
@@ -571,17 +652,25 @@ div {
 
 button {
   margin: var(--m);
-  margin-block-start: var(--mt);
-  margin-block-end: var(--mb);
-  margin-inline-start: var(--ml);
-  margin-inline-end: var(--mr);
+  -webkit-margin-before: var(--mt);
+          margin-block-start: var(--mt);
+  -webkit-margin-after: var(--mb);
+          margin-block-end: var(--mb);
+  -webkit-margin-start: var(--ml);
+          margin-inline-start: var(--ml);
+  -webkit-margin-end: var(--mr);
+          margin-inline-end: var(--mr);
   padding: var(--p);
   padding-line: var(--p);
   padding-block: var(--p);
-  padding-block-start: var(--pt);
-  padding-block-end: var(--pb);
-  padding-inline-start: var(--pl);
-  padding-inline-end: var(--pr);
+  -webkit-padding-before: var(--pt);
+          padding-block-start: var(--pt);
+  -webkit-padding-after: var(--pb);
+          padding-block-end: var(--pb);
+  -webkit-padding-start: var(--pl);
+          padding-inline-start: var(--pl);
+  -webkit-padding-end: var(--pr);
+          padding-inline-end: var(--pr);
   --justify: "center";
   --min: 2.5rem;
   --py: var(--s4);
@@ -617,7 +706,8 @@ blockquote {
 }
 
 article + article {
-  margin-block-start: var(--mt);
+  -webkit-margin-before: var(--mt);
+          margin-block-start: var(--mt);
 }
 
 hr {
@@ -645,7 +735,8 @@ h5,
 h6 {
   font-size: var(--fs);
   color: var(--cl);
-  text-decoration: var(--decoration);
+  -webkit-text-decoration: var(--decoration);
+          text-decoration: var(--decoration);
   text-shadow: none;
   text-transform: var(--transform);
 }
