@@ -33,6 +33,13 @@
   margin-inline-end: var(--mr);
 }
 
+@mixin border() {
+  --border-w: thin,
+  --border-s: solid,
+  --border-c: black,
+  --border: var(--border-w) var(--border-s) var(--border-c);
+}
+
 @mixin button() {
   @include margin();
   @include padding();

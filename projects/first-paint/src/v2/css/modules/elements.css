@@ -110,8 +110,8 @@ article + article {
 hr {
   --rem: var(--2xl);
   margin-block: var(--rem);
-  border: var(--border);
-  border-bottom: var(--border-1);
+  border: none;
+  border-bottom: var(--border-w) var(--border-s) var(--border-cl);
 }
 
 p,

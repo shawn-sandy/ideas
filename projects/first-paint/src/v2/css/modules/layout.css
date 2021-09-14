@@ -132,14 +132,6 @@ section:not(body > section) {
 summary,
 details,
 figcaption {
-  --pt: var(--rem);
-  --pb: var(--rem);
-}
-
-div,
-summary,
-details,
-figcaption,
-aside {
-  --p: var(--rem);
+  padding-block: var(--py);
+  padding-inline: var(--px);
 }
