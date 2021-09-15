@@ -1,3 +1,10 @@
+header,
+footer,
+section {
+  min-height: var(--h);
+  min-width: var(--w);
+}
+
 :any-link {
   color: var(--cl);
 }
@@ -31,7 +38,7 @@
   display: var(--dsp-i);
   padding-inline: var(--py);
   background-color: var(--bg);
-  border: var(--border);
+  border: var(--border-w) var(--border-s) var(--border-cl);
   border-radius: var(--border-rad);
   font-weight: var(--fw);
   box-sizing: var(--box);
@@ -44,8 +51,9 @@
 }
 :any-link b {
   --bg: transparent;
-  --border: var(--border-1);
-  border-width: 2px;
+  --border-s: solid;
+  --border-cl: var(--light);
+  --border-w: 2px;
 }
 :any-link em {
   --border-rad: 99rem;
@@ -82,7 +90,7 @@ button {
   display: var(--dsp-i);
   padding-inline: var(--py);
   background-color: var(--bg);
-  border: var(--border);
+  border: var(--border-w) var(--border-s) var(--border-cl);
   border-radius: var(--border-rad);
   font-weight: var(--fw);
   box-sizing: var(--box);
@@ -99,8 +107,10 @@ blockquote {
   --p: var(--md);
   padding: var(--p);
   margin: var(--m);
-  --border-w: 5rem;
-  border-left: var(--border-1);
+  --border-w: thick;
+  --border-s: solid;
+  --border-cl: var(--light);
+  border-left: var(--border-w) var(--border-s) var(--border-cl);
 }
 
 article + article {
@@ -108,10 +118,13 @@ article + article {
 }
 
 hr {
-  --rem: var(--2xl);
-  margin-block: var(--rem);
-  border: var(--border);
-  border-bottom: var(--border-1);
+  --py: var(--2xl);
+  margin-block: var(--py);
+  border: none;
+  --border-w: thin;
+  --border-s: solid;
+  --border-cl: var(--light);
+  border-bottom: var(--border-w) var(--border-s) var(--border-cl);
 }
 
 p,

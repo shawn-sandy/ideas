@@ -6,7 +6,7 @@ table {
   --tb-bg: whitesmoke;
   --tb-bg-alt: #f0f0f0;
   --tb-border-width: var(--border-w);
-  --tb-border-style: var(--border-style);
+  --tb-border-style: var(--border-s);
   --tb-border-color: var(--border-cl);
   --tb-border: var(--tb-border-width) var(--tb-border-style) var(--tb-border-color);
   --mx: var(--sm-x);

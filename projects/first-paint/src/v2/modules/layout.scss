@@ -131,9 +131,6 @@ $tokens: ();
     --dsp: inline;
   }
 
-  body {
-  }
-
   section {
     --px: var(--xl);
     &:not(body > section) {
@@ -146,16 +143,8 @@ $tokens: ();
   summary,
   details,
   figcaption {
-    --pt: var(--rem);
-    --pb: var(--rem);
-  }
-
-  div,
-  summary,
-  details,
-  figcaption,
-  aside {
-    --p: var(--rem);
+    padding-block: var(--py);
+    padding-inline: var(--px);
   }
 }
 

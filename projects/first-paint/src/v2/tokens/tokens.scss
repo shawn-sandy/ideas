@@ -10,14 +10,9 @@ $tokens: (
   "cl": "hsl(0, 0%, 8%)",
   "border-w": thin,
   "border-cl": lightgray,
-  "border-style": "solid",
-  "border": 0,
+  "border-s": 0,
+  "border": var(--border-w) var(--border-cl) var(--border-s),
   "border-rad": 0,
-  "border-1": var(--border-w) var(--border-style) var(--border-cl),
-  "rad-sm": 0.7rem,
-  "rad-md": 0.7.5rem,
-  "rad-lg": 1rem,
-  "rad-xl": 2rem,
   "rad-pill": 99rem,
   "rad": 0.25rem,
   // alignment
@@ -129,13 +124,13 @@ $tokens: (
   "my": auto,
   "m": var(--mb) var(--mt) var(--ml) var(--mr),
   // paddings
+  "py": auto,
+  "px": auto,
   "pt": var(--0),
   "pb": var(--0),
   "pl": var(--0),
   "pr": var(--0),
   "p": var(--pt) var(--pb) var(--pl) var(--pr),
-  "py": auto,
-  "px": auto,
   // vertical widths
   "vh-sm": 10vh,
   "vh-md": 25vh,
@@ -180,6 +175,17 @@ $tokens: (
   "truncate": truncate,
   "box": border-box,
   "box-ct": content-box,
+);
+
+$radius: (
+  "rad-sm": 0.7rem,
+  "rad-md": 0.7.5rem,
+  "rad-lg": 1rem,
+  "rad-xl": 2rem,
+);
+
+$borders: (
+  "border-sm": 0.5rem,
 );
 
 :root {

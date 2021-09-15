@@ -41,13 +41,16 @@ $background-color: transparent !default;
     --w: 90%;
     width: var(--w);
     --border: var(--border-1);
-    border: var(--border);
-    --border-rad: 0.2rem;
+    --border-w: thin;
+    --border-s: solid;
+    --border-cl: var(--light);
+    border: var(--border-w) var(--border-s) var(--border-cl);
     border-radius: var(--border-rad);
 
     &:focus,
     &:focus-within {
-      border: thin solid gray;
+      border-color: var(--primary);
+      border: var(--border-w) var(--border-s) var(--border-cl);
       outline-color: gray;
     }
 
