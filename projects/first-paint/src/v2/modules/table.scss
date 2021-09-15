@@ -37,8 +37,7 @@ $tokens: (
   margin: 25px 0;
   font-size: 0.9em;
   font-family: sans-serif;
-  min-width: 400px;
-  width: var(--tb-width);
+  min-width: var(--tb-width);
   border: var(--tb-border);
   // box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.15);
 
