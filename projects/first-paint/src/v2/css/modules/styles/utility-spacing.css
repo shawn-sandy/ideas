@@ -1,0 +1,71 @@
+*,
+[style*="--border"],
+[style*="--bd"] {
+  border: var(--border)
+}
+
+[style*="--border"] {
+  border: var(--border-w) var(--border-s) var(--border-cl)
+}
+
+[style*="--border-l"] {
+  border-left: var(--border-lw) var(--border-ls)
+}
+
+[style*="--border-r"] {
+  border-right: var(--border-rw) var(--border-rs) var(--border-rcl)
+}
+
+[style*="--border-t"] {
+  border-top: var(--border-tw) var(--border-ts) var(--border-tcl)
+}
+
+[style*="--border-b"] {
+  border-bottom: var(--border-bw) var(--border-bs) var(--border-bcl)
+}
+
+[style*="--p"] {
+  padding: var(--p)
+}
+
+[style*="--pl"] {
+  padding-left: var(--pl);
+  padding-inline-start: var(--pl)
+}
+
+[style*="--pr"] {
+  padding-right: var(--pr);
+  padding-inline-end: var(--pr)
+}
+
+[style*="--pt"] {
+  padding-top: var(--pt);
+  padding-block-start: var(--pt)
+}
+
+[style*="--pb"] {
+  padding-bottom: var(--pb);
+  padding-block-end: var(--pb)
+}
+
+[style*="--m"] {
+  margin: var(--ml) var(--mr) var(--mt) var(--mb)
+}
+
+[style*="--ml"] {
+  margin-left: var(--ml)
+}
+
+[style*="--mr"] {
+  margin-right: var(--mr)
+}
+
+[style*="--mt"] {
+  margin-top: var(--mt)
+}
+
+[style*="--mb"] {
+  margin-bottom: var(--mb)
+}
+
+/*# sourceMappingURL=utility-spacing.css.map */
