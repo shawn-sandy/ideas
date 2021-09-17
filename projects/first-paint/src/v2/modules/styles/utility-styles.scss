@@ -67,3 +67,25 @@
 [style="--pb"] {
   padding-bottom: var(--pb) !important;
 }
+
+// Utility styles for margin
+
+// set the margin properties for left margin
+[style="--ml"] {
+  margin-left: var(--ml) !important;
+}
+
+// set the margin properties for right margin
+[style="--mr"] {
+  margin-right: var(--mr) !important;
+}
+
+//set the margin properties for top margin
+[style="--mt"] {
+  margin-top: var(--mt) !important;
+}
+
+// set the margin properties for bottom margin
+[style="--mb"] {
+  margin-bottom: var(--mb) !important;
+}
