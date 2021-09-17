@@ -20,9 +20,6 @@
 // layout modules
 @use './modules/layout.scss';
 
-// utility styles
-@use "./modules/styles/utility-styles.scss";
-
 // Page modules
 @use './modules/page.scss';
 
@@ -64,6 +61,15 @@
 
 // Footer modules
 @use './modules/footer.scss';
+
+// utility styles
+@use "./modules/styles/utility-styles.scss";
+
+// utility spacing
+@use "./modules/styles/utility-spacing.scss";
+
+// utility layout
+@use "./modules/styles/utility-layout.scss";
 
 /// don't automatically render the page Modules
 // @use './modules/page.scss' with($render-page: false);

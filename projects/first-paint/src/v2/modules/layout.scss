@@ -94,8 +94,6 @@ $tokens: ();
   audio,
   video {
     --bg: transparent;
-    @include mix.padding();
-    @include mix.margin();
     display: var(--dsp, block);
     font: inherit;
     font-family: var(--fs-family);
