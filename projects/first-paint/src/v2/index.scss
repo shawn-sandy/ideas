@@ -17,8 +17,11 @@
 // user reset from v1
 @use '../components/reset.scss';
 
-// Layout modules
+// layout modules
 @use './modules/layout.scss';
+
+// utility styles
+@use "./modules/styles/utility-styles.scss";
 
 // Page modules
 @use './modules/page.scss';

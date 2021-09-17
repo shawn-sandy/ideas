@@ -109,6 +109,7 @@ $tokens: ();
     box-shadow: var(--box-shadow);
     line-height: var(--line-height);
     box-sizing: var(--box);
+    border: var(--border-w) var(--border-s) var(--border-cl);
   }
 
   q,

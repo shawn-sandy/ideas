@@ -88,6 +88,7 @@ blockquote {
   --p: var(--md);
   padding: var(--p);
   margin: var(--m);
+  border: none;
   --border-w: thick;
   --border-s: solid;
   --border-cl: var(--light);
