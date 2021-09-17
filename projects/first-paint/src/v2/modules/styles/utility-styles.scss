@@ -21,38 +21,49 @@
   border: none;
 }
 
+//set all the border properties
+[style*="--border"] {
+  border: var(--border-w) var(--border-s) var(--border-cl);
+}
+
 // set the border properties for left border
-[style*="--border-l"],
-[style*="--bd-l"] {
-  border-left: var(--border-lw, thin) var(--border-ls, solid);
+[style*="--border-l"] {
+  border-left: var(--border-lw) var(--border-ls);
 }
 
 // set the border properties for right border
-[style*="--border-r"],
-[style*="--bd-r"] {
-  border-right: var(--border-rw, thin) var(--border-rs, solid)
-    var(--border-rcl, currentColor);
+[style*="--border-r"] {
+  border-right: var(--border-rw) var(--border-rs) var(--border-rcl);
 }
 
 //set the border properties for top border
-[style*="--border-t"],
-[style*="--bd-t"] {
-  border-top: var(--border-tw, thin) var(--border-ts, solid)
-    var(--border-tcl, currentColor);
+[style*="--border-t"] {
+  border-top: var(--border-tw) var(--border-ts) var(--border-tcl);
 }
 
 // set the border properties for bottom border
-[style*="--border-b"],
-[style*="--bd-b"] {
-  border-bottom: var(--border-bw, thin) var(--border-bs, solid)
-    var(--border-bcl, currentColor);
-}
-
-//set all the border properties
-[style*="--border"],
-[style*="--bd"] {
-  border: var(--border-w, thin) var(--border-s, solid)
-    var(--border-cl, currentColor);
+[style*="--border-b"] {
+  border-bottom: var(--border-bw) var(--border-bs) var(--border-bcl);
 }
 
 // Utility styles for padding
+
+// set the padding properties for left padding
+[style="--pl"] {
+  padding-left: var(--pl) !important;
+}
+
+// set the padding properties for right padding
+[style="--pr"] {
+  padding-right: var(--pr) !important;
+}
+
+// set the padding properties for top padding
+[style="--pt"] {
+  padding-top: var(--pt) !important;
+}
+
+// set the padding properties for bottom padding
+[style="--pb"] {
+  padding-bottom: var(--pb) !important;
+}
