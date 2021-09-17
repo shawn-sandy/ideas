@@ -9,8 +9,8 @@ $tokens: (
   "bg-img": none,
   "cl": "hsl(0, 0%, 8%)",
   "border-w": thin,
-  "border-cl": lightgray,
-  "border-s": 0,
+  "border-cl": currentcolor,
+  "border-s": none,
   "border": var(--border-w) var(--border-cl) var(--border-s),
   "border-rad": 0,
   "rad-pill": 99rem,
@@ -148,7 +148,7 @@ $tokens: (
   // Height
   "min": auto,
   "max-h": auto,
-  "h": var(--d),
+  "h": auto,
   // Width
   "w": auto,
   // fonts

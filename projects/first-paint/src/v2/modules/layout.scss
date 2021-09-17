@@ -97,7 +97,6 @@ $tokens: ();
     @include mix.padding();
     @include mix.margin();
     display: var(--dsp, block);
-    border: var(--border);
     font: inherit;
     font-family: var(--fs-family);
     font-size: var(--fs);
@@ -112,13 +111,44 @@ $tokens: ();
     box-sizing: var(--box);
   }
 
-  a,
   q,
   b,
   strong,
   i,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
   em,
+  img,
+  ins,
+  kbd,
+  s,
+  samp,
   small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  em,
   big,
   sub,
   sup,
@@ -151,6 +181,12 @@ $tokens: ();
 @mixin config($_color: null, $_background-color: null) {
   $layout-color: $_color !global;
   $layout-background-color: $_background-color !global;
+}
+
+div {
+  border: var(--border-w) var(--border-s) var(--border-cl);
+  min-height: var(--h);
+  min-width: var(--w);
 }
 
 // include render component
