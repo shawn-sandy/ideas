@@ -10,9 +10,9 @@ $tokens: (
   border-radius: 0,
   bg: whitesmoke,
   bg-alt: rgb(240, 240, 240),
-  border-width: var(--border-w),
-  border-style: var(--border-s),
-  border-color: var(--border-cl),
+  border-width: var(--border-w, thin),
+  border-style: var(--border-s, solid),
+  border-color: var(--border-cl, currentColor),
   border: var(--tb-border-width) var(--tb-border-style) var(--tb-border-color),
 );
 
@@ -33,6 +33,9 @@ $tokens: (
   --mx: var(--sm-x);
   --my: 0;
   --collapse: collapse;
+  --border-w: thin;
+  --border-s: solid;
+  --border-cl: var(--light);
   border-collapse: var(--collapse);
   margin: 25px 0;
   font-size: 0.9em;
@@ -65,7 +68,7 @@ $tokens: (
   }
 
   tbody tr:last-of-type {
-    --tb-border: thick solid var(--tb-border-color);
+    --tb-border: medium solid var(--tb-border-color);
     border-bottom: var(--tb-border);
   }
 }
