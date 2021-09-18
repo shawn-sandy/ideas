@@ -23,12 +23,13 @@
 
 //set all the border properties
 [style*="--border"] {
-  border: var(--border-w) var(--border-s) var(--border-cl);
+  border: var(--border-w, thin) var(--border-s, solid)
+    var(--border-cl, currentcolor);
 }
 
 // set the border properties for left border
 [style*="--border-l"] {
-  border-left: var(--border-lw) var(--border-ls);
+  border-left: var(--border-lw) var(--border-ls) var(--border-lcl, currentcolor);
 }
 
 // set the border properties for right border
