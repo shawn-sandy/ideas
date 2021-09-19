@@ -6,48 +6,6 @@
  ***************************************
 */
 
-// create a mixin generate border properties
-// for all border types
-@mixin create-border($key: "border", $width: "w", $style: "s", $color: "c") {
-  [style*="--#{$key}"] {
-    border-width: --var(#{$key}-#{$width});
-    border-style: --var(#{$key}-#{$style});
-    border-color: --var(#{$key}-#{$color});
-  }
-}
-
-@include create-border("border");
-@include create-border("bor");
-
-[style*="--border"] {
-  border: var(--border-w) var(--border-s) var(--border-cl);
-}
-
-//set all the border properties
-[style*="--border"] {
-  border: var(--border-w) var(--border-s) var(--border-cl);
-}
-
-// set the border properties for left border
-[style*="--border-l"] {
-  border-left: var(--border-lw) var(--border-ls) var(--border-lcl);
-}
-
-// set the border properties for right border
-[style*="--border-r"] {
-  border-right: var(--border-rw) var(--border-rs) var(--border-rcl);
-}
-
-//set the border properties for top border
-[style*="--border-t"] {
-  border-top: var(--border-tw) var(--border-ts) var(--border-tcl);
-}
-
-// set the border properties for bottom border
-[style*="--border-b"] {
-  border-bottom: var(--border-bw) var(--border-bs) var(--border-bcl);
-}
-
 // Utility styles for padding
 
 // set the padding properties for all padding
@@ -56,25 +14,25 @@
 }
 
 // set the padding properties for left padding
-[style*="--pl"] {
+[style*="--p"] {
   padding-left: var(--pl);
   padding-inline-start: var(--pl);
 }
 
 // set the padding properties for right padding
-[style*="--pr"] {
+[style*="--p"] {
   padding-right: var(--pr);
   padding-inline-end: var(--pr);
 }
 
 // set the padding properties for top padding
-[style*="--pt"] {
+[style*="--p"] {
   padding-top: var(--pt);
   padding-block-start: var(--pt);
 }
 
 // set the padding properties for bottom padding
-[style*="--pb"] {
+[style*="--p"] {
   padding-bottom: var(--pb);
   padding-block-end: var(--pb);
 }

@@ -21,20 +21,14 @@
   border: var(--border);
 }
 
+@function border($w: thin, $s: none, $c: currentcolor) {
+  @return var(--border-bw) var(--border-bs) var(--border-bcl);
+}
+
 //set all the border properties
 [style*="--border"] {
-  border: var(--border-w, thin) var(--border-s, solid)
+  border: var(--border-w, thin) var(--border-s, none)
     var(--border-cl, currentcolor);
-}
-
-// set the border properties for left border
-[style*="--border-l"] {
-  border-left: var(--border-lw) var(--border-ls) var(--border-lcl, currentcolor);
-}
-
-// set the border properties for right border
-[style*="--border-r"] {
-  border-right: var(--border-rw) var(--border-rs) var(--border-rcl);
 }
 
 //set the border properties for top border
@@ -42,7 +36,17 @@
   border-top: var(--border-tw) var(--border-ts) var(--border-tcl);
 }
 
+// set the border properties for right border
+[style*="--border-r"] {
+  border-right: var(--border-rw) var(--border-rs) var(--border-rcl);
+}
+
 // set the border properties for bottom border
 [style*="--border-b"] {
   border-bottom: var(--border-bw) var(--border-bs) var(--border-bcl);
+}
+
+// set the border properties for left border
+[style*="--border-l"] {
+  border-left: var(--border-lw) var(--border-ls) var(--border-lcl, currentcolor);
 }
