@@ -23,11 +23,12 @@
   --#{$name}: #{$value};
 }
 
+// Generate utility styles from maps or list
 @mixin styleUtilities($key: null, $prop: null, $list: null) {
   [style*="--#{$key}"] {
     #{$prop}: var(--#{$key});
   }
-
+  $completed: false;
   @if type-of($list) == "list" or $list == "null" {
     @each $item in $list {
       [style*="--#{$key}-#{$item}"] {
@@ -35,6 +36,7 @@
         #{$prop}: var(#{$val});
       }
     }
+    $completed: true;
   }
 
   @if type-of($list) == "map" or $list == "null" {
@@ -44,6 +46,10 @@
         #{$prop}: var(#{$val}, #{$index});
       }
     }
+    $completed: true;
+  }
+  @if ($completed == false) {
+    @error "styleUtilities: map parameter list must be a list or map";
   }
 }
 

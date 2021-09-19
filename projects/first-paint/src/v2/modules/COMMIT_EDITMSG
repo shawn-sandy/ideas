@@ -1,0 +1,3 @@
+refactor(2.0): remode conditional error
+
+ - replace with `$completed` variable check
