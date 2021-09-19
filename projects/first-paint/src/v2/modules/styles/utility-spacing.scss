@@ -6,14 +6,21 @@
  ***************************************
 */
 
-// Utility styles for borders
+// create a mixin generate border properties
+// for all border types
+@mixin create-border($key: "border", $width: "w", $style: "s", $color: "c") {
+  [style*="--#{$key}"] {
+    border-width: --var(#{$key}-#{$width});
+    border-style: --var(#{$key}-#{$style});
+    border-color: --var(#{$key}-#{$color});
+  }
+}
 
-// find style attribute with a border value
-// set the border to none
-*,
-[style*="--border"],
-[style*="--bd"] {
-  border: var(--border);
+@include create-border("border");
+@include create-border("bor");
+
+[style*="--border"] {
+  border: var(--border-w) var(--border-s) var(--border-cl);
 }
 
 //set all the border properties
@@ -23,7 +30,7 @@
 
 // set the border properties for left border
 [style*="--border-l"] {
-  border-left: var(--border-lw) var(--border-ls);
+  border-left: var(--border-lw) var(--border-ls) var(--border-lcl);
 }
 
 // set the border properties for right border
