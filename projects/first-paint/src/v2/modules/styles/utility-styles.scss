@@ -1,25 +1,15 @@
 /*
  ***************************************
+ FirsPaint
  Author: Shawn Sandy
  Date: 2021-04-01
- Email: shawnsandy04@gmail
- Description: First Paint
- Project: first-paint
- Version: 2.0
- Website: https://shawnsandy.dev/
- License: MIT
  ***************************************
 */
 
-// Utility styles for borders
+// Uility styles for borders
 
 // find style attribute with a border value
 // set the border to none
-*,
-[style*="--border"],
-[style*="--bd"] {
-  border: var(--border);
-}
 
 @function border($w: thin, $s: none, $c: currentcolor) {
   @return var(--border-bw) var(--border-bs) var(--border-bcl);
@@ -27,8 +17,22 @@
 
 //set all the border properties
 [style*="--border"] {
-  border: var(--border-w, thin) var(--border-s, none)
-    var(--border-cl, currentcolor);
+  border-width: var(--border-w);
+  border-style: var(--border-s);
+  border-color: var(--border-cl);
+}
+
+[style*="--border-thin"] {
+  --border-thin: var(--border-thin, thin);
+  --border-w: var(--border-thin);
+}
+
+[style*="--border-w"] {
+  --border-w: var(--border-thin, thin);
+}
+
+[style*="--border-w"] {
+  --border-w: var(--border-thin, thin);
 }
 
 //set the border properties for top border

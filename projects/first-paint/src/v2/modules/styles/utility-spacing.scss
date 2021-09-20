@@ -10,29 +10,40 @@
 
 // set the padding properties for all padding
 [style*="--p"] {
-  padding: var(--p);
+  padding-top: var(--pt);
+  padding-right: var(--pr);
+  padding-bottom: var(--pb);
+  padding-left: var(--pl);
+}
+
+[style*="--py"] {
+  padding-block: var(--py);
+}
+
+[style*="--px"] {
+  padding-inline: var(--px);
 }
 
 // set the padding properties for left padding
-[style*="--p"] {
+[style*="--pl"] {
   padding-left: var(--pl);
   padding-inline-start: var(--pl);
 }
 
 // set the padding properties for right padding
-[style*="--p"] {
+[style*="--pr"] {
   padding-right: var(--pr);
   padding-inline-end: var(--pr);
 }
 
 // set the padding properties for top padding
-[style*="--p"] {
+[style*="--pt"] {
   padding-top: var(--pt);
   padding-block-start: var(--pt);
 }
 
 // set the padding properties for bottom padding
-[style*="--p"] {
+[style*="--pb"] {
   padding-bottom: var(--pb);
   padding-block-end: var(--pb);
 }
