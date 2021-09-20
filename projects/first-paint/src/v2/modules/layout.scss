@@ -93,18 +93,6 @@ $tokens: ();
   mark,
   audio,
   video {
-    --bg: transparent;
-    display: var(--dsp, block);
-    font: inherit;
-    font-family: var(--fs-family);
-    font-size: var(--fs);
-    vertical-align: var(--v-align);
-    outline: var(--outline);
-    background-color: var(--bg);
-    text-align: var(--text-align);
-    text-decoration: var(--decoration);
-    text-shadow: var(--text-shadow);
-    box-shadow: var(--box-shadow);
     line-height: var(--line-height);
     box-sizing: var(--box);
     border: var(--border-w) var(--border-s) var(--border-cl);

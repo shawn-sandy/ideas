@@ -33,14 +33,7 @@ $tokens: ();
   h5,
   h6 {
     font-size: var(--fs);
-    color: var(--cl);
     text-decoration: var(--decoration);
-    text-shadow: none;
-    text-transform: var(--transform);
-  }
-  * {
-    box-shadow: var(--shadow);
-    text-shadow: var(--text-shadow);
   }
 }
 
