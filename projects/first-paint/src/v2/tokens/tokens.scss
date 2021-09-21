@@ -23,6 +23,7 @@ $tokens: (
   "center": "center",
   "justify-txt": "justify",
   "left": "start",
+  "middle": "middle",
   "text-align": var(--left),
   // display properties
   "dsp-f": "flex",
@@ -160,7 +161,6 @@ $tokens: (
   //others
   "decoration": "none",
   "outline": "none",
-  "line-height": 1.5,
   "word-break": normal,
   "shadow": none,
   "text-shadow": none,
@@ -184,6 +184,75 @@ $radius: (
 $borders: (
   "border-sm": 0.5rem,
 );
+
+$globals: (
+  // color
+  "cl": initial,
+  // background-color
+  "bg": initial,
+  // border-color
+  "border-c": initial,
+  // border-style
+  "border-s": initial,
+  // border-width
+  "border-w": initial,
+  // border
+  "border": var(--border-s) var(--border-w) var(--border-c),
+  // padding
+  "p": initial,
+  // margin
+  "m": initial,
+  // height
+  "h": initial,
+  // width
+  "w": initial,
+  // font-size
+  "fs": initial,
+  // font-weight
+  "fw": initial,
+  // font-family
+  "family": initial,
+  // text-decoration
+  "decoration": initial,
+  // text-transform
+  "tts": initial,
+  // shadow
+  "shadow": initial,
+  // text-shadow
+  "text-shadow": initial,
+  // text-align
+  "text-align": initial,
+  // box-size
+  "box": initial,
+  // box-sizing
+  "box-sizing": initial,
+  // border-radius
+  "border-rd": initial,
+  // outline
+  "outline": initial,
+  //display
+  "dsp": initial,
+  // visibility
+  "vis": initial,
+  // opacity
+  "op": initial,
+  // flexbox
+  "flex": initial,
+  // flex-direction
+  "flex-dir": initial,
+  // flex-wrap
+  "flex-wrap": initial,
+  // flex-flow
+  "flex-flow": initial,
+  // justify-content
+  "justify": initial,
+  // align-items
+  "align": initial
+);
+
+* {
+  @include maps.cp($globals);
+}
 
 :root {
   @include maps.customProperties($tokens);
