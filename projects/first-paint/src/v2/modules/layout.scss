@@ -17,6 +17,7 @@ $tokens: ();
 
 @mixin layout {
   // TODO add mixin code
+
   html,
   body,
   div,
@@ -93,9 +94,15 @@ $tokens: ();
   mark,
   audio,
   video {
-    line-height: var(--line-height);
+    line-height: var(--line-height, var(--lh));
     box-sizing: var(--box);
     border: var(--border-w) var(--border-s) var(--border-cl);
+    display: var(--dsp, var(--display));
+    width: var(--w, var(--width));
+    padding-block: var(--px);
+    padding-inline: var(--py);
+    color: var(--cl, var(--color));
+    padding: var(--p, var(--padding));
   }
 
   q,
@@ -145,10 +152,32 @@ $tokens: ();
   audio,
   video {
     --dsp: inline;
+    font-size: var(--fs);
+  }
+
+  // style section elements
+  section,
+  article,
+  aside,
+  header,
+  footer,
+  nav,
+  main,
+  hgroup,
+  figure,
+  figcaption,
+  details,
+  menu,
+  ul,
+  div,
+  summary {
+    --dsp: block;
+    align-items: var(--align-items);
+    font-size: var(--fs);
   }
 
   section {
-    --px: var(--xl);
+    --px: var(--rem);
     &:not(body > section) {
       padding-block: var(--px);
     }
@@ -173,6 +202,7 @@ div {
   border: var(--border-w) var(--border-s) var(--border-cl);
   min-height: var(--h);
   min-width: var(--w);
+  font-size: var(--fs);
 }
 
 // include render component

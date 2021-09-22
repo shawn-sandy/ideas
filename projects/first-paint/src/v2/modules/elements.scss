@@ -23,15 +23,13 @@ $tokens: ();
   li,
   aside,
   blockquote,
-  em,
-  strong,
-  small,
   h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
+    --dsp: block;
     font-size: var(--fs);
     text-decoration: var(--decoration);
   }
@@ -45,8 +43,9 @@ section {
 }
 
 :any-link {
-  color: var(--cl);
+  color: var(--cl, var(--color));
   text-decoration: var(--decoration);
+  font-size: var(--fs);
   + * {
     margin-inline-start: var(--ml);
     --ml: var(--rem);

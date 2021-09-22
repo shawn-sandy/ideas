@@ -65,9 +65,10 @@ $font-family: var(--fs-family) !default;
         width: 100%;
         padding-inline: var(--py);
       }
-      padding-block: var(--px);
-      padding-inline: var(--py);
-      width: $body-width;
+
+      // width: $body-width;
+      --w: 80%;
+      --dsp: block;
       margin: 0 auto;
     }
   }
