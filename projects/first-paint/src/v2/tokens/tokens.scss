@@ -198,14 +198,46 @@ $globals: (
   "border-w": initial,
   // border
   "border": var(--border-s) var(--border-w) var(--border-c),
+  // padding top
+  "pt": initial,
+  // padding right
+  "pr": initial,
+  // padding bottom
+  "pb": initial,
+  // padding left
+  "pl": initial,
+  // padding block
+  "py": var(--pt) var(--pb),
+  // padding inline
+  "px": var(--pl) var(--pr),
   // padding
-  "p": initial,
+  "p": var(--pt) var(--pb) var(--pl) var(--pr),
+  // margin top
+  "mt": initial,
+  // margin right
+  "mr": initial,
+  // margin bottom
+  "mb": initial,
+  // margin left
+  "ml": initial,
+  // margin block
+  "my": var(--mt, var(--start)) var(--mb, var(--end)),
+  // margin inline
+  "mx": var(--ml, var(--start)) var(--mr, var(--end)),
   // margin
-  "m": initial,
+  "m": var(--mt) var(--mb) var(--ml) var(--mr),
   // height
   "h": initial,
+  // min-height
+  "min-h": initial,
+  // max-height
+  "max-h": initial,
   // width
   "w": initial,
+  // min-width
+  "min-w": initial,
+  // max-width
+  "max-w": initial,
   // font-size
   "fs": initial,
   // font-weight

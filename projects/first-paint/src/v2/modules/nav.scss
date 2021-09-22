@@ -20,6 +20,7 @@ $render: true !default;
   @media (min-width: 980px) {
     --dsp: flex;
     --align: center;
+    --min-h: 80px;
     align-items: var(--align);
     justify-content: var(--justify-b);
     height: var(--nav-height);
@@ -50,7 +51,7 @@ $render: true !default;
 
   :where(> section, ul) {
     --dsp: flex;
-    display: var(--dsp);
+    --px: 0;
     align-items: var(--nav-align, --aln);
     gap: var(--gap);
     --gap: var(--lg);

@@ -1,7 +1,7 @@
 // set variables
 // TODO Search and replace name with CSS tag/element name
-@use './utilities/maps';
-@use './utilities/mixins' as mix;
+@use "./utilities/maps";
+@use "./utilities/mixins" as mix;
 
 $render: true !default;
 $prefix: "layout";
@@ -174,10 +174,11 @@ $tokens: ();
     --dsp: block;
     align-items: var(--align-items);
     font-size: var(--fs);
+    min-height: var(--min-h, var(--h));
+    min-width: var(--min-w, var(--w));
   }
 
   section {
-    --px: var(--rem);
     &:not(body > section) {
       padding-block: var(--px);
     }
@@ -198,11 +199,13 @@ $tokens: ();
   $layout-background-color: $_background-color !global;
 }
 
-div {
+div,
+aside {
   border: var(--border-w) var(--border-s) var(--border-cl);
   min-height: var(--h);
   min-width: var(--w);
   font-size: var(--fs);
+  padding: var(--pt, var(--start)) var(--pr) var(--pb) var(--pl);
 }
 
 // include render component
