@@ -107,6 +107,17 @@ hr {
   border-bottom: var(--border-w) var(--border-s) var(--border-cl);
 }
 
+[role="banner"] {
+  background: var(--bg, var(--bg-cl));
+  background-image: var(--bg-img);
+  min-height: var(--h, var(--height));
+  display: var(--dsp, flex);
+  flex-direction: var(--direction);
+  justify-content: var(--justify);
+  align-items: var(--align, center);
+  padding: var(--p);
+}
+
 @mixin config($_color: null, $_background-color: null) {
   $elements-color: $_color !global;
   $elements-background-color: $_background-color !global;

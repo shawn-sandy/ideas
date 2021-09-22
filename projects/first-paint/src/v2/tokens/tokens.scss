@@ -190,6 +190,8 @@ $globals: (
   "cl": initial,
   // background-color
   "bg": initial,
+  // background-image
+  "bg-img": initial,
   // border-color
   "border-c": initial,
   // border-style
@@ -271,11 +273,11 @@ $globals: (
   // flexbox
   "flex": initial,
   // flex-direction
-  "flex-dir": initial,
+  "direction": initial,
   // flex-wrap
-  "flex-wrap": initial,
+  "wrap": initial,
   // flex-flow
-  "flex-flow": initial,
+  "flow": initial,
   // justify-content
   "justify": initial,
   // align-items
