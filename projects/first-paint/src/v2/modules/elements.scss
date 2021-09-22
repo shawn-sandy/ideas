@@ -118,6 +118,13 @@ hr {
   padding: var(--p);
 }
 
+img[alt] {
+  vertical-align: var(--valign, middle);
+  width: var(--w);
+  max-height: var(--h);
+  padding: var(--p);
+}
+
 @mixin config($_color: null, $_background-color: null) {
   $elements-color: $_color !global;
   $elements-background-color: $_background-color !global;

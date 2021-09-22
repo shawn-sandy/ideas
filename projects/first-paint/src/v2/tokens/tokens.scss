@@ -114,21 +114,21 @@ $tokens: (
   "pct-10": 100%,
   "pct": var(pct-10),
   // margins
-  "mt": var(--0),
-  "mb": var(--0),
-  "ml": var(--0),
-  "mr": var(--0),
-  "mx": auto,
-  "my": auto,
-  "m": var(--mb) var(--mt) var(--ml) var(--mr),
+  // "mt": var(--0),
+  // "mb": var(--0),
+  // "ml": var(--0),
+  // "mr": var(--0),
+  // "mx": auto,
+  // "my": auto,
+  // "m": var(--mb) var(--mt) var(--ml) var(--mr),
   // paddings
-  "py": auto,
-  "px": auto,
-  "pt": var(--0),
-  "pb": var(--0),
-  "pl": var(--0),
-  "pr": var(--0),
-  "p": var(--pt) var(--pb) var(--pl) var(--pr),
+  // "py": auto,
+  // "px": auto,
+  // "pt": var(--0),
+  // "pb": var(--0),
+  // "pl": var(--0),
+  // "pr": var(--0),
+  // "p": var(--pt) var(--pb) var(--pl) var(--pr),
   // vertical widths
   "vh-sm": 10vh,
   "vh-md": 25vh,
@@ -213,7 +213,7 @@ $globals: (
   // padding inline
   "px": var(--pl) var(--pr),
   // padding
-  "p": var(--pt) var(--pb) var(--pl) var(--pr),
+  "p": var(--pt) var(--pr) var(--pb) var(--pl),
   // margin top
   "mt": initial,
   // margin right
@@ -227,7 +227,7 @@ $globals: (
   // margin inline
   "mx": var(--ml, var(--start)) var(--mr, var(--end)),
   // margin
-  "m": var(--mt) var(--mb) var(--ml) var(--mr),
+  "m": var(--mt) var(--mr) var(--mb) var(--ml),
   // height
   "h": initial,
   // min-height
@@ -281,7 +281,9 @@ $globals: (
   // justify-content
   "justify": initial,
   // align-items
-  "align": initial
+  "align": initial,
+  // vertical-align
+  "valign": initial
 );
 
 * {

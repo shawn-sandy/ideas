@@ -63,11 +63,10 @@ $render: true !default;
   }
 
   img[alt] {
-    vertical-align: var(--vertical-align);
-    --vertical-align: var(--mid);
+    --pl: 1rem;
     + * {
+      --dsp: inline-block;
       --ml: var(--s1);
-      margin-left: var(--ml);
     }
     --max: var(--2xl);
     max-height: var(--max);
