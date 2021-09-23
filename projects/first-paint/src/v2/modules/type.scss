@@ -16,7 +16,8 @@ $font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI",
   h3,
   h4,
   h5,
-  h6 {
+  h6,
+  p {
     --fw: var(--fw-medium);
     line-height: var(--line-height);
     color: var(--cl);
