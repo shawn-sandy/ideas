@@ -1,8 +1,8 @@
 // set variables
 // TODO Search and replace name with CSS tag/element name
-@use './utilities/maps';
-@use './utilities/mixins' as mix;
-@use './utilities/functions' as fn;
+@use "./utilities/maps";
+@use "./utilities/mixins" as mix;
+@use "./utilities/functions" as fn;
 $render: true !default;
 $prefix: "layout";
 $tokens: ();
@@ -21,19 +21,13 @@ $tokens: ();
   // TODO add mixin code
   p,
   li,
-  aside,
-  blockquote,
-  em,
-  strong,
-  small,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  blockquote {
+    --dsp: block;
     font-size: var(--fs);
     text-decoration: var(--decoration);
+    border: var(--border);
+    padding: var(--p);
+    margin: var(--m);
   }
 }
 
@@ -45,7 +39,9 @@ section {
 }
 
 :any-link {
-  color: var(--cl);
+  color: var(--cl, var(--color));
+  text-decoration: var(--decoration);
+  font-size: var(--fs);
   + * {
     margin-inline-start: var(--ml);
     --ml: var(--rem);
@@ -70,6 +66,10 @@ section {
     --dsp: var(--dsp-i);
     display: inline-flex;
   }
+
+  &:hover {
+    --decoration: underline;
+  }
 }
 
 button {
@@ -79,9 +79,7 @@ button {
 blockquote {
   --m: var(--xl);
   --p: var(--md);
-  padding: var(--p);
-  margin: var(--m);
-  border: none;
+  --border: none;
   --border-w: thick;
   --border-s: solid;
   --border-cl: var(--light);
@@ -102,6 +100,25 @@ hr {
   --border-s: solid;
   --border-cl: var(--light);
   border-bottom: var(--border-w) var(--border-s) var(--border-cl);
+}
+
+[role="banner"] {
+  background: var(--bg, var(--bg-cl));
+  background-image: var(--bg-img);
+  min-height: var(--h, var(--height));
+  display: var(--dsp, flex);
+  flex-direction: var(--direction);
+  justify-content: var(--justify);
+  align-items: var(--align, center);
+  padding-block: var(--py, var(--p));
+  padding-inline: var(--px, var(--p));
+}
+
+img[alt] {
+  vertical-align: var(--valign, middle);
+  width: var(--w);
+  height: var(--h);
+  padding: var(--p);
 }
 
 @mixin config($_color: null, $_background-color: null) {

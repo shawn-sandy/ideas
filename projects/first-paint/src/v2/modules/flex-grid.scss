@@ -1,7 +1,7 @@
 // set variables
 // TODO Search and replace name with CSS tag/element name
 
-@use './utilities/maps';
+@use "./utilities/maps";
 
 $render: true !default;
 $tokens: (
@@ -32,7 +32,7 @@ $tokens: (
   display: var(--dsp-f, flex);
   flex-wrap: var(--wrap, wrap);
   justify-content: var(--justify-b, space-between);
-  gap: var(--gap, 0);
+  gap: var(--gap, 1rem);
 
   [role="listitem"] {
     flex: var(--grid-flex);

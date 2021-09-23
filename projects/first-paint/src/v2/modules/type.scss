@@ -16,16 +16,20 @@ $font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI",
   h3,
   h4,
   h5,
-  h6 {
+  h6,
+  p {
     --fw: var(--fw-medium);
     line-height: var(--line-height);
     color: var(--cl);
     margin: var(--m);
     font-weight: var(--fw);
-    overflow-wrap: break-word;
+    overflow-wrap: var(--overflow, var(--break));
     word-break: var(--word-break);
     --fx-weight: var(--fw-medium);
     text-shadow: var(--shadow);
+    padding-block: var(--py, var(--p));
+    padding-inline: var(--px, var(--p));
+    display: var(--dsp, block);
   }
 
   h1 {
@@ -76,12 +80,6 @@ $font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI",
   p + * {
     margin-top: 2rem;
   }
-
-  p + * {
-    margin-top: 1.5rem !important;
-  }
-
-  @content;
 }
 
 @include typography();

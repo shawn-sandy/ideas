@@ -48,9 +48,11 @@
   "less.validate": false,
   "scss.validate": false,
   "conventionalCommits.scopes": [
-    "2.0"
+    "2.0",
+    "wip"
   ],
   "cssVariables.lookupFiles": [
     "projects/first-paint/src/v2"
-  ]
+  ],
+  "conventionalCommits.lineBreak": "\\"
 }

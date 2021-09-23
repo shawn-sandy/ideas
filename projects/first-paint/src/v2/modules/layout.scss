@@ -1,7 +1,7 @@
 // set variables
 // TODO Search and replace name with CSS tag/element name
-@use './utilities/maps';
-@use './utilities/mixins' as mix;
+@use "./utilities/maps";
+@use "./utilities/mixins" as mix;
 
 $render: true !default;
 $prefix: "layout";
@@ -17,6 +17,7 @@ $tokens: ();
 
 @mixin layout {
   // TODO add mixin code
+
   html,
   body,
   div,
@@ -93,9 +94,16 @@ $tokens: ();
   mark,
   audio,
   video {
-    line-height: var(--line-height);
+    line-height: var(--line-height, var(--lh));
     box-sizing: var(--box);
     border: var(--border-w) var(--border-s) var(--border-cl);
+    display: var(--dsp, var(--display));
+    width: var(--w, var(--width));
+    padding-block: var(--px);
+    padding-inline: var(--py);
+    color: var(--cl, var(--color));
+    padding: var(--p, var(--padding));
+    font-size: var(--fs, var(--font-size));
   }
 
   q,
@@ -145,12 +153,39 @@ $tokens: ();
   audio,
   video {
     --dsp: inline;
+    font-size: var(--fs);
+  }
+
+  // style section elements
+  section,
+  article,
+  aside,
+  header,
+  footer,
+  nav,
+  main,
+  hgroup,
+  figure,
+  figcaption,
+  details,
+  menu,
+  ul,
+  div,
+  summary {
+    --dsp: block;
+    align-items: var(--align-items);
+    font-size: var(--fs);
+    min-height: var(--min-h, var(--h));
+    min-width: var(--min-w, var(--w));
+    padding-block: var(--py);
+    padding-inline: var(--px);
   }
 
   section {
-    --px: var(--xl);
+    gap: var(--gap);
     &:not(body > section) {
-      padding-block: var(--px);
+      padding-block: var(--px, initial);
+      padding-inline: var(--py);
     }
   }
 }
@@ -169,10 +204,13 @@ $tokens: ();
   $layout-background-color: $_background-color !global;
 }
 
-div {
+div,
+aside {
   border: var(--border-w) var(--border-s) var(--border-cl);
   min-height: var(--h);
   min-width: var(--w);
+  font-size: var(--fs);
+  padding: var(--pt) var(--pr) var(--pb) var(--pl);
 }
 
 // include render component
