@@ -53,5 +53,6 @@
   ],
   "cssVariables.lookupFiles": [
     "projects/first-paint/src/v2"
-  ]
+  ],
+  "conventionalCommits.lineBreak": "\\"
 }

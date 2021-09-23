@@ -1,8 +1,8 @@
 // set variables
 // TODO Search and replace name with CSS tag/element name
-@use './utilities/maps';
-@use './utilities/mixins' as mix;
-@use './utilities/functions' as fn;
+@use "./utilities/maps";
+@use "./utilities/mixins" as mix;
+@use "./utilities/functions" as fn;
 $render: true !default;
 $prefix: "layout";
 $tokens: ();
@@ -121,7 +121,7 @@ hr {
 img[alt] {
   vertical-align: var(--valign, middle);
   width: var(--w);
-  max-height: var(--h);
+  height: var(--h);
   padding: var(--p);
 }
 
