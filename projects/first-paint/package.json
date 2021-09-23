@@ -48,7 +48,7 @@
     "build-v2-prefix": "postcss ./src/v2/css/**/*.css --base src/v2/css --use autoprefixer -d ./src/v2/vendor --no-map",
     "build-v2": "postcss ./src/v2/**/*.css --base src/v2 -d ./dist/v2/ --ext min.css --map",
     "build": "run-s build:*",
-    "production": "run-s build:* 11ty-prod",
+    "production": "11ty-prod",
     "clean": "trash dist/**/",
     "clean:dist": "trash dist/**"
   },
