@@ -22,10 +22,13 @@ $font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI",
     color: var(--cl);
     margin: var(--m);
     font-weight: var(--fw);
-    overflow-wrap: break-word;
+    overflow-wrap: var(--overflow, var(--break));
     word-break: var(--word-break);
     --fx-weight: var(--fw-medium);
     text-shadow: var(--shadow);
+    font-size: var(--fs);
+    padding-block: var(--py, var(--p));
+    padding-inline: var(--px, var(--p));
   }
 
   h1 {

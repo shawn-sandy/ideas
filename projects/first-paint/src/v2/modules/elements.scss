@@ -21,16 +21,13 @@ $tokens: ();
   // TODO add mixin code
   p,
   li,
-  blockquote,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  blockquote {
     --dsp: block;
     font-size: var(--fs);
     text-decoration: var(--decoration);
+    border: var(--border);
+    padding: var(--p);
+    margin: var(--m);
   }
 }
 
@@ -82,9 +79,7 @@ button {
 blockquote {
   --m: var(--xl);
   --p: var(--md);
-  padding: var(--p);
-  margin: var(--m);
-  border: none;
+  --border: none;
   --border-w: thick;
   --border-s: solid;
   --border-cl: var(--light);
