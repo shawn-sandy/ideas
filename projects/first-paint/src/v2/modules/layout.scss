@@ -182,7 +182,7 @@ $tokens: ();
 
   section {
     &:not(body > section) {
-      padding-block: var(--px);
+      padding-block: var(--px, var(--s6));
       padding-inline: var(--py);
     }
   }
