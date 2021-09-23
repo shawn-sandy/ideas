@@ -21,7 +21,6 @@ $render: true !default;
     --dsp: flex;
     --align: center;
     --min-h: 80px;
-    align-items: var(--align);
     justify-content: var(--justify-b);
     height: var(--nav-height);
   }
@@ -40,12 +39,19 @@ $render: true !default;
   }
   h1 {
     --line-height: 0;
+    --dsp: flex;
+    --align: center;
+    --gap: var(--rem);
     :any-link {
       --fs: var(--md);
       margin-block-end: 0;
       &:hover {
         --decoration: none;
       }
+    }
+    span {
+      --dsp: inline-block;
+      padding: var(--sm);
     }
   }
 

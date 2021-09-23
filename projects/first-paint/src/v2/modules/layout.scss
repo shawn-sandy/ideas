@@ -181,6 +181,7 @@ $tokens: ();
   }
 
   section {
+    gap: var(--gap);
     &:not(body > section) {
       padding-block: var(--px, initial);
       padding-inline: var(--py);
