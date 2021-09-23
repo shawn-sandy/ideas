@@ -115,7 +115,8 @@ hr {
   flex-direction: var(--direction);
   justify-content: var(--justify);
   align-items: var(--align, center);
-  padding: var(--p);
+  padding-block: var(--py, var(--p));
+  padding-inline: var(--px, var(--p));
 }
 
 img[alt] {

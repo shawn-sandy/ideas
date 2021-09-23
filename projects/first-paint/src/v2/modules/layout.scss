@@ -176,11 +176,14 @@ $tokens: ();
     font-size: var(--fs);
     min-height: var(--min-h, var(--h));
     min-width: var(--min-w, var(--w));
+    padding-block: var(--py);
+    padding-inline: var(--px);
   }
 
   section {
     &:not(body > section) {
       padding-block: var(--px);
+      padding-inline: var(--py);
     }
   }
 }

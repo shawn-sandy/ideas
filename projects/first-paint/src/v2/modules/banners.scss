@@ -24,7 +24,7 @@ $tokens: (
   --h: var(--vh-lg);
   --dsp: flex;
   --justify: center;
-  --py: var(--lg);
+  --py: var(--s6, var(--s));
 
   h1 {
     --fw: var(--fw-bold);
