@@ -103,6 +103,7 @@ $tokens: ();
     padding-inline: var(--py);
     color: var(--cl, var(--color));
     padding: var(--p, var(--padding));
+    font-size: var(--fs, var(--font-size));
   }
 
   q,
@@ -209,7 +210,7 @@ aside {
   min-height: var(--h);
   min-width: var(--w);
   font-size: var(--fs);
-  padding: var(--pt, var(--start)) var(--pr) var(--pb) var(--pl);
+  padding: var(--pt) var(--pr) var(--pb) var(--pl);
 }
 
 // include render component
