@@ -5,9 +5,10 @@ $renderImg: true !default;
 @mixin renderComponent($renderComponent: $renderImg, $className: null) {
   @if ($renderComponent) {
     img[alt] {
-      max-width: 100%;
-      height: auto;
+      max-width: var(--w, 100%);
+      height: var(--h, auto);
       position: relative;
+      --valign: baseline;
     }
 
     #{$className,
