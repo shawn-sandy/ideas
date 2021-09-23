@@ -80,12 +80,6 @@ $font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI",
   p + * {
     margin-top: 2rem;
   }
-
-  p + * {
-    margin-top: 1.5rem !important;
-  }
-
-  @content;
 }
 
 @include typography();
