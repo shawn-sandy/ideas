@@ -44,7 +44,6 @@ $render: true !default;
     --gap: var(--rem);
     :any-link {
       --fs: var(--md);
-      margin-block-end: 0;
       &:hover {
         --decoration: none;
       }
