@@ -1,6 +1,6 @@
 $render: true !default;
 $color: darkblue !default;
-$background-color: gray !default;
+$background-color: lightgray !default;
 $background-color-hover: rgb(228, 228, 228) !default;
 $margin: 0.7rem !default;
 $padding: 1rem !default;
@@ -23,7 +23,7 @@ $transform: scale(0.98) !default;
 // ******************** imports ********************
 // *************************************************
 
-@use 'styles.scss';
+@use "styles.scss";
 
 @mixin renderComponent($renderComponent: $render, $className: null) {
   @if $renderComponent {
