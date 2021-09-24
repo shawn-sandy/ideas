@@ -1,7 +1,7 @@
 // set variables
 // TODO Search and replace name with CSS tag/element name
-@use './utilities/maps';
-@use './utilities/mixins' as mix;
+@use "./utilities/maps";
+@use "./utilities/mixins" as mix;
 $render: true !default;
 $prefix: "layout";
 $tokens: ();
@@ -28,10 +28,13 @@ $tokens: ();
       --dsp: var(--dsp-f);
       --fs: var(--s2);
       --p: var(--rem);
+      --py: var(--xl);
+      --gap: var(--rem);
     }
     > div {
-      --text-align: center;
+      --align: center;
       --p: 1rem;
+      --py: var(--xl);
     }
   }
 }
