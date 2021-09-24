@@ -27,7 +27,6 @@ $tokens: (
   --py: var(--s6, var(--s));
 
   h1 {
-    --fw: var(--fw-bold);
     text-shadow: var(--text-shadow-sm);
     + p {
       --fs: var(--lg);
