@@ -722,7 +722,7 @@ footer {
 header {
   display: flex;
   flex-direction: column;
-  flex-fb-grow: 1;
+  flex-grow: 1;
   align-items: center;
   justify-content: center;
 }
