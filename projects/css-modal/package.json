@@ -1,6 +1,6 @@
 {
   "name": "@shawnsandy/css-modal",
-  "version": "0.3.18",
+  "version": "0.3.19",
   "scripts": {
     "start": "es-dev-server --compatibility all --legacy --app-index index.html --node-resolve --open",
     "serve": "vue-cli-service serve",

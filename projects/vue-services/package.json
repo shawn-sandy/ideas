@@ -1,6 +1,6 @@
 {
   "name": "@shawnsandy/vue-services",
-  "version": "0.2.24",
+  "version": "0.2.25",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
