@@ -36,7 +36,7 @@
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
-    "start": "run-p watch:v2 11ty",
+    "start": "run-p watch:* 11ty",
     "watch": "run-p watch:*",
     "11ty": "eleventy --serve",
     "11ty-prod": "eleventy",

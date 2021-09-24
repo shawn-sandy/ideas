@@ -478,7 +478,7 @@ button[type] {
   display: inline-flex;
   flex-direction: row;
   justify-content: center;
-  background-color: gray;
+  background-color: lightgray;
   border-radius: 0.1rem;
   border: 1px transparent solid;
   cursor: pointer;
@@ -722,7 +722,7 @@ footer {
 header {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  flex-fb-grow: 1;
   align-items: center;
   justify-content: center;
 }
@@ -790,14 +790,14 @@ a[role=button] > em:focus,
 }
 a[role=button] > span,
 .fp-button-link[role=button] > span {
-  background-color: gray;
+  background-color: lightgray;
 }
 a[role=button] > b,
 .fp-button-link[role=button] > b {
-  background-color: gray;
+  background-color: lightgray;
 }
 a[role=button] > em,
 .fp-button-link[role=button] > em {
-  background-color: gray;
+  background-color: lightgray;
   border-radius: 99rem !important;
 }

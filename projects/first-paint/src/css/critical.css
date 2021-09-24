@@ -108,7 +108,7 @@ section {
 }
 
 body {
-  line-height: 1;
+  line-height: 1.5;
 }
 
 ol,
@@ -613,7 +613,7 @@ button[type] {
   display: inline-flex;
   flex-direction: row;
   justify-content: center;
-  background-color: gray;
+  background-color: lightgray;
   border-radius: 0.1rem;
   border: 1px transparent solid;
   cursor: pointer;

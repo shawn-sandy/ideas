@@ -144,7 +144,7 @@ TODO: deprecate this mixin
     text-decoration: none !important;
     > b,
     > em {
-      $background-color: $background-color;
+      background-color: $background-color;
       display: inline-flex;
       justify-content: center;
       align-items: center;
