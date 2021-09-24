@@ -36,11 +36,11 @@
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
-    "start": "run-p watch:v2 11ty",
+    "start": "run-p watch:* 11ty",
     "watch": "run-p watch:*",
     "11ty": "eleventy --serve",
     "11ty-prod": "eleventy",
-    "watch:index": "sass --update src/index.scss:src/index.css src/custom-styles.scss:src/custom-styles.css src/components.scss:src/components.css  src/styles:src/css/. --load-path=node_modules --no-source-map",
+    "watch:index": "sass --watch src/index.scss:src/index.css src/custom-styles.scss:src/custom-styles.css src/components.scss:src/components.css  src/styles:src/css/. --load-path=node_modules --no-source-map",
     "watch:v2": "sass --watch --style compressed src/v2/index.scss:src/v2/css/index.css src/v2/tokens:src/v2/css/tokens/.  src/v2/modules:src/v2/css/modules/. --load-path=node_modules --source-map",
     "watch-scss": "sass --style --update compressed src/components:dist/css/. src/index.scss:dist/css/index.css src/styles:src/styles/. --load-path=node_modules --color",
     "build:css": "postcss ./dist/css/*.css --dir ./dist/css/ --ext min.css",

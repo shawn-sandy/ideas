@@ -179,6 +179,7 @@ $tokens: ();
     min-width: var(--min-w, var(--w));
     padding-block: var(--py);
     padding-inline: var(--px);
+    text-align: var(--align, var(--text-align));
   }
 
   section {

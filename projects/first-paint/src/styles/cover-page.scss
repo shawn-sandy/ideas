@@ -1,9 +1,11 @@
-@use '../components.scss'with($render-page: true,
-  $render-type: true,
-  $render-nav: true,
-  $render-footer: true,
-  // $render-form: true, // the form is optional
-);
+@use "../components.scss"
+  with(
+    $render-page: true,
+    $render-type: true,
+    $render-nav: true,
+    $render-footer: true,
+    // $render-form: true, // the form is optional
+  );
 
 [data-cover] {
   display: flex;
@@ -19,7 +21,7 @@ footer {
 header {
   display: flex;
   flex-direction: column;
-  flex-fb-grow: 1;
+  flex-grow: 1;
   align-items: center;
   justify-content: center;
 
