@@ -40,7 +40,7 @@ section {
 
 :any-link {
   color: var(--cl, var(--color));
-  text-decoration: var(--decoration);
+  text-decoration: var(--decoration, none);
   font-size: var(--fs);
   + * {
     margin-inline-start: var(--ml);
@@ -65,10 +65,6 @@ section {
   div {
     --dsp: var(--dsp-i);
     display: inline-flex;
-  }
-
-  &:hover {
-    --decoration: underline;
   }
 }
 

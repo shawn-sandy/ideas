@@ -21,7 +21,7 @@ $render: true !default;
     --dsp: flex;
     --align: center;
     --min-h: 80px;
-    justify-content: var(--justify-b);
+    justify-content: var(--justify, space-between);
     height: var(--nav-height);
   }
 
@@ -33,6 +33,11 @@ $render: true !default;
   li {
     font-size: var(--fs);
     --fs: var(--sm);
+  }
+  :any-link {
+    &:hover {
+      --decoration: underline;
+    }
   }
   span {
     --bg: transparent;
