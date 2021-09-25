@@ -43,7 +43,7 @@ body > section, body > main, body > header > section, body > footer > section {
 @media (min-width: 980px) {
   body > section, body > main, body > header > section, body > footer > section {
     width: 90%;
-    max-width: calc(1500rem / 16);
+    max-width: 93.75rem;
   }
 }
 @media (min-width: 1980px) {
@@ -183,7 +183,7 @@ nav {
     margin-bottom: 0;
     padding: 0.5rem 0;
     width: 80%;
-    max-width: calc(1500rem / 16);
+    max-width: 93.75rem;
   }
 }
 @media (max-width: 980px) {
@@ -333,7 +333,7 @@ header > [role=banner] {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  min-height: calc(400rem / 16);
+  min-height: 25rem;
 }
 .fp-header > section,
 .fp-header > div,
@@ -564,8 +564,8 @@ img[alt] {
 }
 img[alt]::after {
   min-height: 48px;
-  height: calc(200rem / 16);
-  width: calc(200rem / 16);
+  height: 12.5rem;
+  width: 12.5rem;
   content: "•" " " attr(alt);
   position: absolute;
   top: 0;
@@ -732,7 +732,7 @@ header > [role=banner] {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  min-height: calc(400rem / 16);
+  min-height: 25rem;
 }
 header > [role=banner] > section,
 header > [role=banner] > div {
