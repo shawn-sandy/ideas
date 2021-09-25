@@ -2,7 +2,7 @@
 @use "../modules/utilities/functions" as fn;
 @use "./banner.scss";
 @use "./globals.scss";
-@use "./custom-tokens.scss";
+@use "./custom-props.scss";
 
 $borders: (
   "border-sm": 0.5rem,
