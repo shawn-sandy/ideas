@@ -24,9 +24,16 @@ $render: true !default;
         --border-s: solid;
         --border-cl: var(--light);
         --border-w: 2px;
+        &:hover {
+          --bg: var(--cl);
+          --cl: var(--bg);
+        }
       }
       &[type="button"] {
         --bg: var(--light);
+        &:hover {
+          //--bg: lighten(var(--bg), 10%);
+        }
       }
     }
   }

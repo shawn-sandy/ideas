@@ -116,8 +116,8 @@ hr {
 
 img[alt] {
   vertical-align: var(--valign, middle);
-  width: var(--w);
-  height: var(--h);
+  width: var(--w, auto);
+  height: var(--h, auto);
   padding: var(--p);
 }
 

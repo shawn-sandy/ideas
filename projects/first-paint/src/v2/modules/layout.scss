@@ -104,6 +104,7 @@ $tokens: ();
     color: var(--cl, var(--color));
     padding: var(--p, var(--padding));
     font-size: var(--fs, var(--font-size));
+    z-index: var(--z, var(--layer));
   }
 
   q,
@@ -172,7 +173,7 @@ $tokens: ();
   ul,
   div,
   summary {
-    --dsp: block;
+    display: var(--dsp, block);
     align-items: var(--align-items);
     font-size: var(--fs);
     min-height: var(--min-h, var(--h));
@@ -180,6 +181,7 @@ $tokens: ();
     padding-block: var(--py);
     padding-inline: var(--px);
     text-align: var(--align, var(--text-align));
+    z-index: var(--z, var(--layer));
   }
 
   section {

@@ -41,6 +41,7 @@
 }
 
 @mixin button() {
+
   @include margin();
   @include padding();
   --justify: "center";
@@ -62,6 +63,13 @@
   font-weight: var(--fw);
   box-sizing: var(--box);
   cursor: pointer;
+  transition: all .2s ease!important;
+
+    &:hover {
+      transform: scale(.95);
+      text-decoration: none;
+    }
+
 
   @media (max-width: 680px) {
     --min: var(--s6);
