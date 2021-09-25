@@ -13,6 +13,6 @@ $borders: (
 }
 
 :root {
-  @include maps.customProperties(custom-tokens.$tokens);
+  @include maps.customProperties(custom-props.$tokens);
   @include maps.cp(banner.$tokens, banner.$prefix);
 }
