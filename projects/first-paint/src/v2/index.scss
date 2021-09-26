@@ -11,14 +11,8 @@
  ***************************************
 */
 
-// custom properties--tokens
-@use "tokens/tokens.scss";
-
-// user reset from v1
-// @use "../components/reset.scss";
-
-// utility responsive
-@use "./modules/styles/utility-responsive.scss";
+// page core styles
+@use "./modules/core.scss";
 
 // layout modules
 @use "./modules/layout.scss";
@@ -61,15 +55,6 @@
 
 // Footer modules
 @use "./modules/footer.scss";
-
-// utility styles
-@use "./modules/styles/utility-styles.scss";
-
-// utility spacing
-@use "./modules/styles/utility-spacing.scss";
-
-// utility layout
-@use "./modules/styles/utility-layout.scss";
 
 // Inputs/Forms Modules
 @use "./modules/form.scss";
