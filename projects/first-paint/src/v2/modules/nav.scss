@@ -85,6 +85,7 @@ $render: true !default;
     @media (max-width: 780px) {
       --direction: column;
       --align: left;
+      --w: 100%;
     }
   }
 
