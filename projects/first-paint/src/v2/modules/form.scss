@@ -8,16 +8,25 @@ $background-color: transparent !default;
 }
 
 @mixin input() {
-  > div {
-    + div {
-      --mt: var(rem, 1rem);
+  form {
+    > div {
+      --mt: var(--rem, 1rem);
       margin-top: var(--mt);
+      @media (max-width: 980px) {
+        margin: 0;
+        --mt: var(--rem, 1rem);
+        --pt: 0;
+        --pb: 0;
+      }
     }
   }
 
   label[for] {
+    --mb: 1rem;
+    --dsp: block;
+    --fs: 1rem;
     em {
-      font-style: normal;
+      font-style: var(--fs-style);
 
       &::after {
         content: "\2217";
@@ -25,8 +34,6 @@ $background-color: transparent !default;
         // font-size: larger;
       }
     }
-
-    font-size: 0.9rem;
     display: block;
   }
 
@@ -35,7 +42,7 @@ $background-color: transparent !default;
   select[id] {
     --bg: var(--white);
     --dsp: flex;
-    --pt: 1rem;
+    --p: 0.5rem;
     // font-size: 0.9rem;
     --w: 90%;
     --border-w: thin;
@@ -43,10 +50,11 @@ $background-color: transparent !default;
     --border-cl: var(--light);
     --border-rad: 0.2rem;
     --mb: 1rem;
+    --mt: 1rem;
 
     &:focus,
     &:focus-within {
-      --border-cl: var(--primary);
+      --border-cl: var(--primary, var(--dark));
     }
 
     &::placeholder {
