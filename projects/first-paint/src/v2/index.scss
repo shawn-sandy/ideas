@@ -14,11 +14,11 @@
 // custom properties--tokens
 @use "tokens/tokens.scss";
 
+// user reset from v1
+// @use "../components/reset.scss";
+
 // utility responsive
 @use "./modules/styles/utility-responsive.scss";
-
-// user reset from v1
-@use "../components/reset.scss";
 
 // layout modules
 @use "./modules/layout.scss";

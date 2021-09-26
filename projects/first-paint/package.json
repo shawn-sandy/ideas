@@ -80,6 +80,7 @@
     "not dead"
   ],
   "dependencies": {
-    "concurrently": "^6.2.1"
+    "concurrently": "^6.2.1",
+    "modern-css-reset": "^1.4.0"
   }
 }
