@@ -68,7 +68,7 @@ $font-family: var(--fs-family) !default;
       // width: $body-width;
       --w: 80%;
       --dsp: block;
-      margin: 0 auto;
+      --mx: auto;
     }
   }
 
@@ -83,7 +83,7 @@ $font-family: var(--fs-family) !default;
     @media (max-width: 980px) {
       --px: 1rem;
       padding-block: var(--py);
-      padding-inline: var(--px);
+      --px: auto;
     }
   }
 }

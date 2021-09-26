@@ -16,11 +16,12 @@ $render: true !default;
 
 @mixin nav {
   display: var(--dsp);
-
+  --py: 1rem;
   @media (min-width: 980px) {
     --dsp: flex;
     --align: center;
     --min-h: 80px;
+    --py: 0;
     justify-content: var(--justify, space-between);
     height: var(--nav-height);
   }
@@ -51,6 +52,9 @@ $render: true !default;
       --fs: var(--md);
       &:hover {
         --decoration: none;
+      }
+      @media (max-width: 780px) {
+        --fs: var(--sm) !important;
       }
     }
     span {

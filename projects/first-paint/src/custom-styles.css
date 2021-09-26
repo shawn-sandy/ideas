@@ -888,6 +888,7 @@ a[aria-pressed] > b,
 a[aria-pressed] > em,
 a[aria-label] > b,
 a[aria-label] > em {
+  background-color: black;
   display: inline-flex;
   justify-content: center;
   align-items: center;
