@@ -64,6 +64,7 @@ $font-family: var(--fs-family) !default;
       @media screen and (max-width: 980px) {
         width: 100%;
         padding-inline: var(--py);
+        --mx: 1rem;
       }
       // width: $body-width;
       --w: 80%;
@@ -81,7 +82,6 @@ $font-family: var(--fs-family) !default;
   div,
   main {
     @media (max-width: 980px) {
-      --px: 1rem;
       padding-block: var(--py);
       --px: auto;
     }

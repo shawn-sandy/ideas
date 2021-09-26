@@ -30,6 +30,7 @@ $tokens: ();
       --p: var(--rem);
       --py: var(--xl);
       --gap: var(--rem);
+      --px: 0;
     }
     > div {
       --align: center;

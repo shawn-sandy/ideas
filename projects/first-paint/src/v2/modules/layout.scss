@@ -189,8 +189,8 @@ $tokens: ();
   section {
     gap: var(--gap);
     &:not(body > section) {
-      padding-block: var(--px, initial);
-      padding-inline: var(--py);
+      padding-block: var(--py, initial);
+      padding-inline: var(--px);
     }
   }
 }
