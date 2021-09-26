@@ -196,6 +196,7 @@ $tokens: ();
 @mixin layout-containers {
   summary,
   details,
+  blockquote,
   figcaption {
     padding-block: var(--py);
     padding-inline: var(--px);

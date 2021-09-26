@@ -12,55 +12,52 @@
 */
 
 // custom properties--tokens
-@use 'tokens/tokens.scss';
+@use "tokens/tokens.scss";
 
 // user reset from v1
-@use '../components/reset.scss';
+@use "../components/reset.scss";
 
 // layout modules
-@use './modules/layout.scss';
+@use "./modules/layout.scss";
 
 // Page modules
-@use './modules/page.scss';
+@use "./modules/page.scss";
 
 // Elements modules
-@use './modules/elements.scss';
+@use "./modules/elements.scss";
 
 // Media queries modules
-@use './modules/utilities/responsive.scss';
+@use "./modules/utilities/responsive.scss";
 
 // add typography Modules
-@use './modules/type.scss';
+@use "./modules/type.scss";
 
 // Header Modules
-@use './modules/header.scss';
+@use "./modules/header.scss";
 
 // Banner Modules
-@use './modules/banners.scss';
+@use "./modules/banners.scss";
 
 // adds the navigation Modules
-@use './modules/nav.scss';
+@use "./modules/nav.scss";
 
 // add Main Modules
-@use './modules/main.scss';
+@use "./modules/main.scss";
 
 // flex-grid Modules
-@use './modules/flex-grid.scss';
+@use "./modules/flex-grid.scss";
 
 // Button Modules
-@use './modules/buttons.scss';
+@use "./modules/buttons.scss";
 
 //Table Modules
-@use './modules/table.scss';
+@use "./modules/table.scss";
 
 // Img Modules
-@use './modules/img.scss';
-
-// Inputs/Forms Modules
-@use './modules/form.scss';
+@use "./modules/img.scss";
 
 // Footer modules
-@use './modules/footer.scss';
+@use "./modules/footer.scss";
 
 // utility styles
 @use "./modules/styles/utility-styles.scss";
@@ -70,6 +67,9 @@
 
 // utility layout
 @use "./modules/styles/utility-layout.scss";
+
+// Inputs/Forms Modules
+@use "./modules/form.scss";
 
 /// don't automatically render the page Modules
 // @use './modules/page.scss' with($render-page: false);
