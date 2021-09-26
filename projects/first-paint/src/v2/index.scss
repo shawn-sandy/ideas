@@ -14,6 +14,9 @@
 // custom properties--tokens
 @use "tokens/tokens.scss";
 
+// utility responsive
+@use "./modules/styles/utility-responsive.scss";
+
 // user reset from v1
 @use "../components/reset.scss";
 
@@ -67,9 +70,6 @@
 
 // utility layout
 @use "./modules/styles/utility-layout.scss";
-
-// utility responsive
-@use "./modules/styles/utility-responsive.scss";
 
 // Inputs/Forms Modules
 @use "./modules/form.scss";
