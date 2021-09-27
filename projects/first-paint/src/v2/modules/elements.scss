@@ -170,7 +170,11 @@ li,
 ol,
 dl,
 div,
-aside {
+aside,
+blockquote,
+summary,
+details,
+figcaption {
   font-size: var(--fs, var(--fs-p));
   font-weight: var(--fw, var(--fw-p));
   font-style: var(--style, var(--fs-style));
