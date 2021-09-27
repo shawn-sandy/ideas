@@ -14,9 +14,35 @@ $tokens: ();
   }
 }
 
+*,
+*::before,
+*::after,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--cl);
+  min-height: var(--min-h, 100vh);
+}
+
+// page sections
+main,
+header,
+footer,
+section {
+  background-color: var(--bg);
+  color: var(--cl);
+  width: var(--w);
+  height: var(--h);
+  margin-inline: var(--mx);
+  margin-block: var(--my);
+  padding-inline: var(--px);
+  padding-block: var(--py);
+}
+
 // TODO add mixin code
-p,
-li,
+
 blockquote {
   --dsp: block;
   font-size: var(--fs);
@@ -26,6 +52,7 @@ blockquote {
   margin: var(--m);
 }
 
+// layout containers
 header,
 footer,
 section {
@@ -116,7 +143,7 @@ img[alt] {
   $elements-color: $_color !global;
   $elements-background-color: $_background-color !global;
 }
-
+// label element
 label[for] {
   em {
     font-style: var(--fs-style);
@@ -131,6 +158,47 @@ label[for] {
   display: var(--dsp, block);
   margin-bottom: var(--mb, 0.5rem);
 }
+
+:any-link:where(em strong b),
+button {
+  font-style: var(--fs-style, normal);
+}
+
+// text containers
+p,
+li,
+ol,
+dl,
+div,
+aside {
+  font-size: var(--fs, var(--fs-p));
+  font-weight: var(--fw, var(--fw-p));
+  font-style: var(--style, var(--fs-style));
+  line-height: var(--lh, var(--lh-p));
+  letter-spacing: var(--ls, var(--ls-p));
+  text-align: var(--t-align);
+  text-transform: var(--tt, var(--tt-p));
+}
+
+// elements containers
+div,
+[role="list"],
+[role="listitem"],
+aside {
+  display: var(--dsp);
+  justify-content: var(--justify);
+  align-items: var(--align);
+  flex-direction: var(--direction);
+  flex-wrap: var(--wrap);
+  margin-block: var(--my);
+  margin-inline: var(--mx);
+  padding-block: var(--py);
+  padding-inline: var(--px);
+  margin: var(--m);
+  padding: var(--p);
+}
+
+// input elements
 
 input[id],
 textarea[id],
