@@ -14,17 +14,8 @@
 // page core styles
 @use "./modules/core.scss";
 
-// layout modules
-@use "./modules/layout.scss";
-
 // Page modules
 @use "./modules/page.scss";
-
-// Elements modules
-@use "./modules/elements.scss";
-
-// Media queries modules
-@use "./modules/utilities/responsive.scss";
 
 // add typography Modules
 @use "./modules/type.scss";
