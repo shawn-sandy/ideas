@@ -192,6 +192,7 @@ div {
   font-size: var(--fs);
   padding: var(--pt) var(--pr) var(--pb) var(--pl);
   margin: var(--m);
+  display: var(--dsp, block);
 } // input elements
 
 input[id],
@@ -204,4 +205,19 @@ select[id] {
   width: var(--w);
   border: var(--border-w) var(--border-s) var(--border-cl);
   border-radius: var(--border-rad, 0.2rem);
+  margin-bottom: var(--mb);
+  margin-top: var(--mt);
+  margin-left: var(--ml);
+  margin-right: var(--mr);
+
+  &:focus,
+  &:focus-within {
+    outline: none;
+    border: var(--border-w) var(--border-s) var(--border-cl);
+  }
+
+  &::placeholder {
+    font-style: var(--fs-style);
+    color: var(--cl);
+  }
 }
