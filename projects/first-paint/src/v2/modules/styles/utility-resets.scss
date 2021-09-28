@@ -315,3 +315,7 @@ img[alt] {
   padding-block: var(--py, var(--p));
   padding-inline: var(--px, var(--p));
 }
+
+button {
+  @include mix.button();
+}
