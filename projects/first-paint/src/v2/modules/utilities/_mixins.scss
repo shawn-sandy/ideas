@@ -59,7 +59,7 @@
   transition: all .2s ease!important;
 
     &:hover {
-      transform: scale(.95);
+      transform: scale(var(--transform, .98));
       text-decoration: none;
     }
 
