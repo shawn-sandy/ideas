@@ -30,7 +30,7 @@ body {
 main,
 header,
 footer,
-section {
+body > section {
   background-color: var(--bg);
   color: var(--cl);
   width: var(--w);
@@ -186,6 +186,7 @@ figcaption {
 
 // elements containers
 div,
+section,
 [role="list"],
 [role="listitem"],
 aside {
