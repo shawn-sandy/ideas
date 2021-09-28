@@ -1,4 +1,14 @@
-// set variables
+/*
+ ***************************************
+ FirsPaint
+ Author: Shawn Sandy
+ Date: 2021-04-01
+ ***************************************
+*/
+
+@use "./utilities/maps";
+@use "./utilities/mixins" as mix;
+@use "./utilities/functions" as fn; // set variables
 // TODO Search and replace button with CSS tag/element name
 $render: true !default;
 
@@ -12,7 +22,7 @@ $render: true !default;
       --bg: transparent;
       --justify: "center";
       --min: 2.5rem;
-      --py: var(--s4);
+      --px: var(--s4);
       --pl: var(--rem);
       --line-height: 0;
       --border-rad: 0.3rem;
@@ -40,6 +50,35 @@ $render: true !default;
         &:hover {
           //--bg: lighten(var(--bg), 10%);
         }
+      }
+    }
+
+    :any-link {
+      + * {
+        margin-inline-start: var(--ml);
+        --ml: var(--rem);
+      }
+      :where(em, strong, b, div) {
+        --px: var(--s4);
+        --min: var(--xl);
+        --bg: var(--light);
+        --dsp: inline-flex;
+      }
+
+      b {
+        --bg: transparent;
+        --border-s: solid;
+        --border-cl: var(--light);
+        --border-w: 2px;
+      }
+
+      em {
+        --border-rad: 99rem;
+      }
+
+      strong,
+      div {
+        --dsp: block;
       }
     }
   }

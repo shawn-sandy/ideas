@@ -1,3 +1,11 @@
+/*
+ ***************************************
+ FirsPaint
+ Author: Shawn Sandy
+ Date: 2021-04-01
+ ***************************************
+*/
+
 // set variables
 // TODO Search and replace name with CSS tag/element name
 @use "./utilities/maps";
@@ -44,6 +52,12 @@ section {
   color: var(--cl, var(--color));
   text-decoration: var(--decoration, none);
   font-size: var(--fs);
+  border-width: var(--border-w);
+  border-style: var(--border-s);
+  border-color: var(--border-cl);
+  padding-inline: var(--x);
+  padding-block: var(--y);
+  border-radius: var(--border-rad);
   + * {
     margin-inline-start: var(--ml);
     --ml: var(--rem);

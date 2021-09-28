@@ -319,3 +319,7 @@ img[alt] {
 button {
   @include mix.button();
 }
+
+:any-link {
+  @include mix.button();
+}
