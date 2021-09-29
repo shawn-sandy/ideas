@@ -235,6 +235,7 @@ aside {
   min-height: var(--h);
   min-width: var(--w);
   font-size: var(--fs);
+  border-radius: var(--border-rad, var(--radius));
 }
 
 // input elements
