@@ -7,6 +7,10 @@ Description: setup custom props defaults
  ***************************************
 */
 
+@use "../utilities/maps";
+@use "../utilities/mixins" as mix;
+@use "../utilities/functions" as fn;
+
 // global elements
 html,
 body,
@@ -94,7 +98,6 @@ video {
   margin-block: var(--my);
   margin-inline: var(--mx);
   color: var(--cl, var(--color));
-  padding: var(--p, var(--padding));
   font-size: var(--fs, var(--font-size));
   z-index: var(--z, var(--layer));
 }
@@ -108,7 +111,6 @@ pre,
 a,
 abbr,
 acronym,
-address,
 big,
 cite,
 code,
@@ -147,10 +149,11 @@ time,
 audio,
 video {
   --dsp: inline;
+  display: var(--dsp);
 }
 
 // section elements
-section,
+body > section,
 article,
 aside,
 header,
@@ -164,16 +167,24 @@ details,
 menu,
 ul,
 div,
+address,
+form,
 summary {
   display: var(--dsp, block);
   align-items: var(--align-items);
   font-size: var(--fs);
+  width: var(--w);
+  height: var(--h);
   min-height: var(--min-h, var(--h));
   min-width: var(--min-w, var(--w));
-  padding-block: var(--py);
-  padding-inline: var(--px);
   text-align: var(--align, var(--text-align));
   z-index: var(--z, var(--layer));
+  background-color: var(--bg);
+  color: var(--cl);
+  margin-inline: var(--mx);
+  margin-block: var(--my);
+  padding-inline: var(--px);
+  padding-block: var(--py);
 }
 
 section {
@@ -184,16 +195,49 @@ section {
   }
 }
 
-// components container
-div {
+// text containers
+p,
+li,
+ol,
+dl,
+div,
+aside,
+blockquote,
+summary,
+details,
+figcaption {
+  font-size: var(--fs, var(--fs-p));
+  font-weight: var(--fw, var(--fw-p));
+  font-style: var(--style, var(--fs-style));
+  line-height: var(--lh, var(--lh-p));
+  letter-spacing: var(--ls, var(--ls-p));
+  text-align: var(--t-align);
+  text-transform: var(--tt, var(--tt-p));
+}
+
+// elements containers
+div,
+section,
+[role="list"],
+[role="listitem"],
+aside {
+  display: var(--dsp);
+  justify-content: var(--justify);
+  align-items: var(--align);
+  flex-direction: var(--direction);
+  flex-wrap: var(--wrap);
+  margin-block: var(--my);
+  margin-inline: var(--mx);
+  padding-block: var(--py);
+  padding-inline: var(--px);
+  margin: var(--m);
   border: var(--border-w) var(--border-s) var(--border-cl);
   min-height: var(--h);
   min-width: var(--w);
   font-size: var(--fs);
-  padding: var(--pt) var(--pr) var(--pb) var(--pl);
-  margin: var(--m);
-} // input elements
+}
 
+// input elements
 input[id],
 textarea[id],
 select[id] {
@@ -204,4 +248,78 @@ select[id] {
   width: var(--w);
   border: var(--border-w) var(--border-s) var(--border-cl);
   border-radius: var(--border-rad, 0.2rem);
+  margin-bottom: var(--mb);
+  margin-top: var(--mt);
+  margin-left: var(--ml);
+  margin-right: var(--mr);
+
+  &:focus,
+  &:focus-within {
+    outline: none;
+    border: var(--border-w) var(--border-s) var(--border-cl);
+  }
+
+  &::placeholder {
+    font-style: var(--fs-style);
+    color: var(--cl);
+  }
+}
+
+:any-link {
+  color: var(--cl);
+  text-decoration: var(--decoration);
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--cl);
+    text-decoration: var(--decoration);
+  }
+}
+
+blockquote {
+  display: var(--dsp, block);
+  font-size: var(--fs);
+  text-decoration: var(--decoration);
+  border: var(--border);
+  border-w: var(--border-w);
+  border-s: var(--border-s);
+  border-cl: var(--border-cl);
+  padding: var(--p);
+  margin: var(--m);
+}
+
+hr {
+  padding-block: var(--py);
+  padding-inline: var(--px);
+  margin-block: var(--py);
+  margin-inline: var(--px);
+  border: none;
+  border-bottom: var(--border-w) var(--border-s) var(--border-cl);
+}
+
+img[alt] {
+  vertical-align: var(--valign, middle);
+  width: var(--w, auto);
+  height: var(--h, auto);
+  padding: var(--p);
+}
+
+[role="banner"] {
+  background: var(--bg, var(--bg-cl));
+  background-image: var(--bg-img);
+  min-height: var(--h, var(--height));
+  display: var(--dsp, flex);
+  flex-direction: var(--direction);
+  justify-content: var(--justify);
+  align-items: var(--align, center);
+  padding-block: var(--py, var(--p));
+  padding-inline: var(--px, var(--p));
+}
+
+button {
+  @include mix.button();
+}
+
+:any-link {
+  @include mix.button();
 }

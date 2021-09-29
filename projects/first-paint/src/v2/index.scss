@@ -14,6 +14,9 @@
 // page core styles
 @use "./modules/core.scss";
 
+// Elements modules
+@use "./modules/elements.scss";
+
 // Page modules
 @use "./modules/page.scss";
 
@@ -49,14 +52,5 @@
 
 // Inputs/Forms Modules
 @use "./modules/form.scss";
-
-/// don't automatically render the page Modules
-// @use './modules/page.scss' with($render-page: false);
-
-/// here we can change the body color using the config mixin
-// @include page.config($color: #1b1b1b);
-
-/// now we render the body
-// @include page.page();
 
 @include form.elements();

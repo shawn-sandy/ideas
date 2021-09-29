@@ -47,8 +47,7 @@
 
 // set the border properties for bottom border
 [style*="--border-b"],
-[style*="--divider"],
-hr {
+[style*="--divider"] {
   border: none;
   border-bottom: var(--bw, var(--bw, thin)) var(--bs, var(--bs))
     var(--bcl, var(--bcl, var(--light)));

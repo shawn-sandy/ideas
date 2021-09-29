@@ -44,18 +44,11 @@
 
   @include margin();
   @include padding();
-  --justify: "center";
-  --min: 2.5rem;
-  --py: var(--s4);
-  --pl: var(--rem);
-  --line-height: 0;
-  --bg: lightgray;
-  --border-rad: 0.3rem;
   justify-content: var(--justify);
   align-items: var(--fb-center);
   min-height: var(--min);
   display: var(--dsp-i);
-  padding-inline: var(--py);
+  padding-inline: var(--px);
   background-color: var(--bg);
   border: var(--border-w) var(--border-s) var(--border-cl);
   border-radius: var(--border-rad);
@@ -66,7 +59,7 @@
   transition: all .2s ease!important;
 
     &:hover {
-      transform: scale(.95);
+      transform: scale(var(--transform, .96));
       text-decoration: none;
     }
 
