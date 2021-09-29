@@ -107,8 +107,14 @@ $globals: (
   "gap": initial,
   // text-align
   "t-align": initial,
+  "align-t": initial,
   // vertical-align
   "valign": initial,
   // z-index
   "z": initial
 );
+
+// custom properties mixin
+
+@mixin custom-properties {
+}

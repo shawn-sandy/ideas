@@ -11,6 +11,31 @@ Description: setup custom props defaults
 @use "../utilities/mixins" as mix;
 @use "../utilities/functions" as fn;
 
+// custom props defaults
+:root {
+  background-color: var(--bg, var(--background-color, initial));
+  background-image: var(--bg-img, var(--background-image, initial));
+  align-items: var(--align, var(--aligin-items, initial));
+  text-align: var(--align-txt, var(--text-align, initial));
+  transform: var(--trasfrom);
+  text-transform: var(--transform-txt, var(--text-transform, initial));
+  z-index: var(--z, var(--z-index, initial));
+  display: var(--dsp, var(--display, initial));
+  margin: var(--m, var(--margin, initial));
+  padding: var(--p, var(--padding, initial));
+  margin-block: var(--my, var(--margin-block, initial));
+  margin-inline: var(--mx, var(--margin-inline, initial));
+  padding-block: var(--py, var(--padding-block, initial));
+  padding-inline: var(--px, var(--padding-inline, initial));
+  height: var(--h, var(--height, initial));
+  width: var(--w, var(--width, initial));
+  min-height: var(--min-h, var(--min-height, initial));
+  min-width: var(--min-w, var(--min-width, initial));
+  max-height: var(--max-h, var(--max-height, initial));
+  max-width: var(--max-w, var(--max-width, initial));
+  font-size: var(--fs, var(--font-size, initial));
+}
+
 // global elements
 html,
 body,
