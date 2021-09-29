@@ -236,6 +236,7 @@ aside {
   min-width: var(--w);
   font-size: var(--fs);
   border-radius: var(--border-rad, var(--radius));
+  text-align: var(--align-txt, var(--t-align));
 }
 
 // input elements

@@ -33,9 +33,10 @@ $tokens: ();
       --px: 0;
     }
     > div {
+      --dsp: block;
       --align-txt: center;
       --p: 1rem;
-      --py: var(--xl);
+      --py: 1rem;
     }
   }
 }
