@@ -24,7 +24,8 @@ $font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI",
     margin: var(--m);
     font-weight: var(--fw);
     overflow-wrap: var(--overflow, var(--break));
-    word-break: var(--word-break);
+    word-break: var(--word-break, break-all);
+    hyphens: var(--hyphens, auto);
     --fx-weight: var(--fw-medium);
     text-shadow: var(--shadow);
     padding-block: var(--py, var(--p));
