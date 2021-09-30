@@ -21,7 +21,7 @@ $tokens: (
 @mixin banner {
   --bg: var(--off-white);
   --bd: var(--lg);
-  --h: var(--vh-lg);
+  --min-h: var(--vh-lg);
   --dsp: flex;
   --justify: center;
   --py: var(--s6, var(--s));

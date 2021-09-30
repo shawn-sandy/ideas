@@ -260,8 +260,8 @@ aside {
   padding-inline: var(--px);
   margin: var(--m);
   border: var(--border-w) var(--border-s) var(--border-cl);
-  min-height: var(--h);
-  min-width: var(--w);
+  min-height: var(--min-h);
+  min-width: var(--min-w);
   font-size: var(--fs);
   border-radius: var(--border-rad, var(--radius));
   text-align: var(--align-txt, var(--t-align));
