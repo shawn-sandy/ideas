@@ -32,7 +32,6 @@ Description: setup custom props defaults
   padding-block: var(--py, var(--padding-block, initial));
   padding-inline: var(--px, var(--padding-inline, initial));
   height: var(--h, var(--height, initial));
-  width: var(--w, var(--width, initial));
   min-height: var(--min-h, var(--min-height, initial));
   min-width: var(--min-w, var(--min-width, initial));
   max-height: var(--max-h, var(--max-height, initial));
@@ -181,6 +180,7 @@ video {
 }
 
 // section elements
+body,
 body > section,
 article,
 aside,
@@ -203,8 +203,8 @@ summary {
   font-size: var(--fs);
   width: var(--w);
   height: var(--h);
-  min-height: var(--min-h, var(--h));
-  min-width: var(--min-w, var(--w));
+  min-height: var(--min-h);
+  min-width: var(--min-w);
   text-align: var(--align, var(--text-align));
   z-index: var(--z, var(--layer));
   background-color: var(--bg);

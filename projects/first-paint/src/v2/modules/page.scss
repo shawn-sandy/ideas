@@ -70,6 +70,9 @@ $font-family: var(--fs-family) !default;
       --w: 80%;
       --dsp: block;
       --mx: auto;
+      @media (max-width: 980px) {
+        --w: 100%;
+      }
     }
   }
 
