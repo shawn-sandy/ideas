@@ -45,7 +45,7 @@
     "watch-scss": "sass --style --update compressed src/components:dist/css/. src/index.scss:dist/css/index.css src/styles:src/styles/. --load-path=node_modules --color",
     "build:css": "postcss ./dist/css/*.css --dir ./dist/css/ --ext min.css",
     "build:v2": "run-s build-v2-prefix build-v2",
-    "build-v2-prefix": "postcss ./src/v2/css/**/*.css --base src/v2/css --use autoprefixer -d ./src/v2/vendor --no-map",
+    "build-v2-prefix": "postcss ./src/v2/css/**/*.css --base src/v2/css --use autoprefixer -d ./src/vendor --no-map",
     "build-v2": "postcss ./src/v2/**/*.css --base src/v2 -d ./dist/v2/ --ext min.css --map",
     "build": "run-s build:*",
     "production": "11ty-prod",
