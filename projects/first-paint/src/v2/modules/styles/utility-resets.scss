@@ -11,16 +11,20 @@ Description: setup custom props defaults
 @use "../utilities/mixins" as mix;
 @use "../utilities/functions" as fn;
 
+* {
+  font-size: var(--fs, var(--font-size, initial));
+}
+
 // custom props defaults
-:root {
+* {
   background-color: var(--bg, var(--background-color, initial));
   background-image: var(--bg-img, var(--background-image, initial));
   align-items: var(--align, var(--aligin-items, initial));
   text-align: var(--align-txt, var(--text-align, initial));
   transform: var(--trasfrom);
-  text-transform: var(--transform-txt, var(--text-transform, initial));
+  text-transform: var(--case, var(--txt-transform, initial));
   z-index: var(--z, var(--z-index, initial));
-  display: var(--dsp, var(--display, initial));
+  // display: var(--dsp, var(--display, initial));
   margin: var(--m, var(--margin, initial));
   padding: var(--p, var(--padding, initial));
   margin-block: var(--my, var(--margin-block, initial));
@@ -33,7 +37,6 @@ Description: setup custom props defaults
   min-width: var(--min-w, var(--min-width, initial));
   max-height: var(--max-h, var(--max-height, initial));
   max-width: var(--max-w, var(--max-width, initial));
-  font-size: var(--fs, var(--font-size, initial));
 }
 
 // global elements
@@ -318,8 +321,8 @@ blockquote {
 hr {
   padding-block: var(--py);
   padding-inline: var(--px);
-  margin-block: var(--py);
-  margin-inline: var(--px);
+  margin-block: var(--my);
+  margin-inline: var(--mx);
   border: none;
   border-bottom: var(--border-w) var(--border-s) var(--border-cl);
 }
