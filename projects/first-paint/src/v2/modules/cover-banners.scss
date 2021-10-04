@@ -23,7 +23,7 @@ $tokens: (
   --ban: var(--vh-lg);
   --bd: var(--lg);
   // background-color: var(--bg);
-  min-height: var(--ban);
+  min-height: var(--ban, var(--min-h));
   display: var(--dsp-f);
   align-items: var(--fb-center);
   justify-content: var(--justify-c);

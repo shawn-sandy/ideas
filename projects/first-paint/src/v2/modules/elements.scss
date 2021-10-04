@@ -44,7 +44,7 @@ blockquote {
 header,
 footer,
 section {
-  min-height: var(--h);
+  min-height: var(--min-h);
   min-width: var(--w);
 }
 

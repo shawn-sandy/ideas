@@ -337,7 +337,7 @@ img[alt] {
 [role="banner"] {
   background: var(--bg, var(--bg-cl));
   background-image: var(--bg-img);
-  min-height: var(--h, var(--height));
+  min-height: var(--min-h, var(--h));
   display: var(--dsp, flex);
   flex-direction: var(--direction);
   justify-content: var(--justify);
@@ -357,7 +357,7 @@ button {
 footer[role="contentinfo"] {
   background: var(--bg, var(--bg-cl));
   background-image: var(--bg-img);
-  min-height: var(--h, var(--height));
+  min-height: var(--min-h, var(--h));
   display: var(--dsp, flex);
   flex-direction: var(--direction);
   justify-content: var(--justify);
