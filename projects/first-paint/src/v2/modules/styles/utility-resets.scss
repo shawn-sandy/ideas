@@ -21,7 +21,7 @@ Description: setup custom props defaults
   background-image: var(--bg-img, var(--background-image, initial));
   align-items: var(--align, var(--aligin-items, initial));
   text-align: var(--align-txt, var(--text-align, initial));
-  transform: var(--trasfrom);
+  transform: var(--transform);
   text-transform: var(--case, var(--txt-transform, initial));
   z-index: var(--z, var(--z-index, initial));
   // display: var(--dsp, var(--display, initial));
