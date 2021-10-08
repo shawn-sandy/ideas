@@ -34,8 +34,9 @@ $tokens: (
   justify-content: var(--justify-b, space-between);
   gap: var(--gap, 1rem);
 
-  [role="listitem"] {
-    --direction: column;
+  [role="listitem"],
+  [style*="--card"] {
+    flex-direction: var(--card-direction, column);
     --dsp: flex;
     flex: var(--grid-flex);
     line-height: 1.6;
