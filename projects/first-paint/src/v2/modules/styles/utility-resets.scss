@@ -36,6 +36,7 @@ Description: setup custom props defaults
   min-width: var(--min-w, var(--min-width, initial));
   max-height: var(--max-h, var(--max-height, initial));
   max-width: var(--max-w, var(--max-width, initial));
+  flex: var(--flex);
 }
 
 // global elements
@@ -253,6 +254,7 @@ aside {
   justify-content: var(--justify);
   align-items: var(--align);
   flex-direction: var(--direction);
+  flex-grow: var(--grow);
   flex-wrap: var(--wrap);
   margin-block: var(--my);
   margin-inline: var(--mx);
