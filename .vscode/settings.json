@@ -54,5 +54,8 @@
   "cssVariables.lookupFiles": [
     "projects/first-paint/src/v2"
   ],
-  "conventionalCommits.lineBreak": "\\"
+  "conventionalCommits.lineBreak": "\\",
+  "prettier.semi": false,
+  "javascript.format.semicolons": "remove",
+  "typescript.format.semicolons": "remove"
 }

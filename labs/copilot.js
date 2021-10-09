@@ -12,13 +12,18 @@ const fetchCommits = async (repo, branch = "main") => {
     `https://api.github.com/repos/${repo}/commits?sha=${branch}`
   )
     .then((res) => res.json())
-    .then((res) => console.log(res))
     .catch((err) => console.log(err));
   return commits;
 };
 
 fetchCommits("shawn-sandy/ideas")
   .then((commits) => {
-    console.log(commits);
+    // console.log(commits);
+    // commits.map((commit) => {
+    //   console.log(commit.commit.message);
+    // });
+    commits.forEach((element) => {
+      console.log(element.commit.message);
+    });
   })
   .catch((err) => console.log(err));
