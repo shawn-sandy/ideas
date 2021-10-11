@@ -62,7 +62,7 @@ $font-family: var(--fs-family) !default;
     nav,
     footer[role="contentinfo"] {
       @media screen and (max-width: 980px) {
-        width: auto;
+        --w: auto;
         padding-inline: var(--px);
         --mx: 1rem;
       }
