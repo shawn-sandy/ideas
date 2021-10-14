@@ -32,7 +32,7 @@ $font-family: var(--fs-family) !default;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     font-size: clamp(86%, 96%, 120%);
-    font-family: var(--font-family);
+    font-family: var(--ff);
     line-height: 1.5;
     @media (min-width: 680px) {
       font-size: 95%;

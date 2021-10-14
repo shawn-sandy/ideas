@@ -57,13 +57,10 @@
   font-style: var(--fs-style, normal);
   cursor: pointer;
   transition: all .2s ease!important;
-
     &:hover {
-      transform: scale(var(--transform, .96));
+      transform: scale(var(--transform, .98));
       text-decoration: none;
     }
-
-
   @media (max-width: 680px) {
     --min: var(--s6);
   }

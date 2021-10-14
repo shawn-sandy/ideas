@@ -137,6 +137,7 @@ $tokens: (
   "fs": clamp(var(--s1), var(--d), var(--s4)),
   // font-size: clamp(1rem, 2.5vw, 2rem);
   "fs-family": $font-family,
+  "ff": var(--fs-family),
   "fs-d": var(--d),
   "fw-medium": 500,
   "fw-bold": 700,
