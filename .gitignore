@@ -108,3 +108,4 @@ www
 /history
 projects/fp-mix/builds/
 /projects/fp-mix/.parcel-cache
+.dccache
