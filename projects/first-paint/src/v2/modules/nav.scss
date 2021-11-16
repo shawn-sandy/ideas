@@ -15,14 +15,14 @@ $render: true !default;
 }
 
 @mixin nav {
-  display: var(--dsp);
-  --py: 1rem;
+  display: var(--nav-dsp, var(--dsp));
+  --py: var(--nav-py, 1rem);
   background: var(--bg, #fff);
-  --mx: 0rem;
-  --px: 1rem;
+  --mx: var(--nav-py, 0rem);
+  --px: var(--nav-py, 1rem);
   @media (min-width: 980px) {
-    --dsp: flex;
-    --align: center;
+    --dsp: var(--nav-dsp, flex);
+    --align: var(--nav-align, center);
     --min-h: 80px;
     --py: 0;
     --px: 0;
