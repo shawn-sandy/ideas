@@ -116,5 +116,10 @@ $globals: (
 
 // custom properties mixin
 
+$styles: (
+  // colors
+  "cl": var(--color, initial)
+);
+
 @mixin custom-properties {
 }

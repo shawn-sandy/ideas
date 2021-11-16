@@ -1,9 +1,34 @@
 /*
  ***************************************
  FirsPaint
+ Name: tokens.scss
  Author: Shawn Sandy
  Date: 2021-04-01
  ***************************************
 */
 
-@use "../tokens/tokens.scss";
+// @use "../tokens/tokens.scss";
+
+@use "../modules/utilities/maps";
+
+@use "../tokens/globals.scss";
+
+$font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
+  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+$styles: (
+  "cl": var(--color, black),
+  "fs": var(--font-size, 1rem),
+  "fst": var(--font-style, normal),
+  "fw": var(--font-weight, normal),
+  "fv": var(--font-variant, normal),
+  "fk": var(--font-kerning, normal),
+  "ff": var(--font-family, normal),
+  "lts": var(--letter-spacing, normal),
+  "lh": var(--line-height, 1.2),
+);
+
+:root {
+  @include maps.cp($styles);
+}
