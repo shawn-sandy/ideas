@@ -10,24 +10,7 @@ License: MIT
 ****************************************/
 
 @use "./tokens.scss";
-// sections components
 
-//header
-@use "./sections/header.scss";
-// footer
-@use "./sections/footer.scss";
-// nav
-@use "./sections/nav.scss";
-// main
-@use "./sections/main.scss";
-// section
-@use "./sections/section.scss";
-// aside
-@use "./sections/aside.scss";
+@use "./layout.scss";
 
-// elements components
-
-// button
-@use "./elements/button.scss";
-// links
-@use "./elements/links.scss";
+@use "./elements.scss";
