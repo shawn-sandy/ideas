@@ -1,1 +1,33 @@
-@use '../tokens/tokens.scss'
+/***************************************
+Author: Shawn Sandy
+Date: 2021-11-01
+Email: shawnsandy04@gmail.com
+Description: First Paint Components
+Project: first-paint
+Version: 2.0
+Website: https://shawnsandy.github.io/first-paint/
+License: MIT
+****************************************/
+
+@use "./tokens.scss";
+// sections components
+
+//header
+@use "./sections/header.scss";
+// footer
+@use "./sections/footer.scss";
+// nav
+@use "./sections/nav.scss";
+// main
+@use "./sections/main.scss";
+// section
+@use "./sections/section.scss";
+// aside
+@use "./sections/aside.scss";
+
+// elements components
+
+// button
+@use "./elements/button.scss";
+// links
+@use "./elements/links.scss";
