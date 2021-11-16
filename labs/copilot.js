@@ -5,25 +5,21 @@
 // if commit is a commit, add to array
 // return array
 
-const fetch = require("node-fetch");
+const fetch = require('node-fetch')
 
-const fetchCommits = async (repo, branch = "main") => {
+const fetchCommits = async (repo, branch = 'main') => {
   const commits = await fetch(
     `https://api.github.com/repos/${repo}/commits?sha=${branch}`
   )
     .then((res) => res.json())
-    .catch((err) => console.log(err));
-  return commits;
+    .catch((err) => console.log(err))
+  return commits
 };
 
-fetchCommits("shawn-sandy/ideas")
+fetchCommits('shawn-sandy/ideas')
   .then((commits) => {
-    // console.log(commits);
-    // commits.map((commit) => {
-    //   console.log(commit.commit.message);
-    // });
     commits.forEach((element) => {
-      console.log(element.commit.message);
-    });
+      console.log(element.commit.message)
+    })
   })
-  .catch((err) => console.log(err));
+  .catch((err) => console.log(err))
