@@ -110,8 +110,8 @@ label[for] {
   em {
     font-style: var(--fs-style);
 
-    &::after {
-      content: "\2217";
+    &::before {
+      content: var(--content, "\2217");
       color: var(--danger, var(--border-cl));
     }
   }
