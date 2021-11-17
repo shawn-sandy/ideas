@@ -2,45 +2,6 @@
  ***************************************
  FirsPaint
  Author: Shawn Sandy
- Date: 2021-04-01
- ***************************************
-*/
-/*
- ***************************************
- FirsPaint
- Name: tokens.scss
- Author: Shawn Sandy
- Date: 2021-04-01
- ***************************************
-*/
-:root {
-  --cl: var(--color, initial);
-  --fs: var(--font-size, 1rem);
-  --fst: var(--font-style, normal);
-  --fw: var(--font-weight, normal);
-  --ff: var(--font-family, normal);
-  --lh: var(--line-height, 1.2);
-  --txa: var(--text-align, left);
-  --txd: var(--text-decoration, none);
-  --txt: var(--text-transform, none);
-  --li-style: var(--list-style, disc);
-  --visible: var(--visibility, visible);
-  --w: var(--width, auto);
-  --h: var(--height, auto);
-  --p: var(--padding, initial);
-  --m: var(--margin, initial);
-  --px: var(--padding-inline, initial);
-  --py: var(--padding-block, initial);
-  --mx: var(--margin-inline, initial);
-  --my: var(--margin-block, initial);
-  --dsp: var(--display, initial);
-  --pos: var(--position, initial);
-}
-
-/*
- ***************************************
- FirsPaint
- Author: Shawn Sandy
  Component: elements.scss
  Date: 2021-04-01
  ***************************************
@@ -168,41 +129,4 @@ blockquote {
   --h: auto;
 }
 
-/*
- ***************************************
- FirsPaint
- Author: Shawn Sandy
- component: button.scss
- Date: 2021-11-01
- ***************************************
-*/
-/*
- ***************************************
- FirsPaint
- Author: Shawn Sandy
- Component: div.scss
- Date: 2021-04-01
- ***************************************
-*/
-/*
- ***************************************
- FirsPaint
- Author: Shawn Sandy
- Component: elements.scss
- Date: 2021-04-01
- ***************************************
-*/
-/*
-**************************************
-Author: Shawn Sandy
-Date: 2021-11-01
-Email: shawnsandy04@gmail.com
-Description: First Paint Components
-Project: first-paint
-Version: 2.0
-Website: https://shawnsandy.github.io/first-paint/
-License: MIT
-***************************************
-*/
-
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=foundation.css.map */

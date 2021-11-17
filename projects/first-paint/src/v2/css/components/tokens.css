@@ -18,41 +18,23 @@
   --fs: var(--font-size, 1rem);
   --fst: var(--font-style, normal);
   --fw: var(--font-weight, normal);
-  --fv: var(--font-variant, normal);
-  --fk: var(--font-kerning, normal);
   --ff: var(--font-family, normal);
-  --lts: var(--letter-spacing, normal);
   --lh: var(--line-height, 1.2);
-  --ws: var(--white-space, normal);
-  --ta: var(--text-align, left);
-  --wsp: var(--word-spacing, normal);
+  --txa: var(--text-align, left);
+  --txd: var(--text-decoration, none);
+  --txt: var(--text-transform, none);
   --li-style: var(--list-style, disc);
-  --li-type: var(--list-style-type, disc);
-  --li-pos: var(--list-style-position, outside);
-  --li-image: var(--list-style-image, none);
   --visible: var(--visibility, visible);
-}
-
-* {
-  /* inherited properties variables */
-  color: var(--cl);
-  font-size: var(--fs);
-  font-style: var(--fst);
-  font-weight: var(--fw);
-  font-variant: var(--fv);
-  font-kerning: var(--fk);
-  font-family: var(--ff);
-  letter-spacing: var(--lts);
-  line-height: var(--lh);
-  list-style: var(--li-style);
-  list-style-type: var(--li-type);
-  list-style-position: var(--li-pos);
-  list-style-image: var(--li-image);
-  visibility: var(--visible);
-  white-space: var(--ws);
-  text-align: var(--ta);
-  word-spacing: var(--wsp);
-  /* initialized properties variables */
+  --w: var(--width, auto);
+  --h: var(--height, auto);
+  --p: var(--padding, initial);
+  --m: var(--margin, initial);
+  --px: var(--padding-inline, initial);
+  --py: var(--padding-block, initial);
+  --mx: var(--margin-inline, initial);
+  --my: var(--margin-block, initial);
+  --dsp: var(--display, initial);
+  --pos: var(--position, initial);
 }
 
 /*# sourceMappingURL=tokens.css.map */

@@ -1,0 +1,97 @@
+/*
+ ***************************************
+ FirsPaint
+ Author: Shawn Sandy
+ Component: foundation.scss
+ Date: 2021-04-01
+ ***************************************
+*/
+
+//header
+@use "./sections/header.scss";
+// footer
+@use "./sections/footer.scss";
+// nav
+@use "./sections/nav.scss";
+// main
+@use "./sections/main.scss";
+// section
+@use "./sections/section.scss";
+// aside
+@use "./sections/aside.scss";
+
+* {
+  /* inherited properties variables */
+  color: var(--cl);
+  font-size: var(--fs);
+  font-style: var(--fst);
+  font-weight: var(--fw);
+  font-family: var(--ff);
+  line-height: var(--lh);
+  list-style: var(--li-style);
+  visibility: var(--visible);
+  text-align: var(--txa);
+  text-decoration: var(--txd);
+  text-transform: var(--txt);
+  /* initialized properties variables */
+  width: var(--w);
+  height: var(--h);
+  min-width: var(--min-w);
+  min-height: var(--min-h);
+  max-width: var(--max-w);
+  max-height: var(--max-h);
+  padding: var(--p);
+  margin: var(--m);
+  padding-inline: var(--px);
+  padding-block: var(--py);
+  margin-inline: var(--mx);
+  margin-block: var(--my);
+}
+
+aside,
+footer,
+header,
+main,
+nav,
+section,
+hr,
+table {
+  display: var(--dsp);
+  padding-inline: var(--px);
+  padding-block: var(--py);
+  margin-inline: var(--mx);
+  margin-block: var(--my);
+  height: var(--h);
+  width: var(--w);
+  min-width: var(--min-w);
+  min-height: var(--min-h);
+  max-width: var(--max-w);
+  max-height: var(--max-h);
+  --dsp: block;
+  --h: auto;
+  --w: 100%;
+  --px: 0;
+  --py: 0;
+  --mx: 0;
+  --my: 0;
+}
+
+// elements
+div,
+article,
+button,
+link,
+ul,
+li,
+p,
+form,
+blockquote {
+  width: var(--elm-w, --w);
+  height: var(--elm-h, --h);
+  px: var(--elm-px, --px);
+  py: var(--elm-py, --py);
+  mx: var(--elm-mx, --mx);
+  my: var(--elm-my, --my);
+  --w: auto;
+  --h: auto;
+}
