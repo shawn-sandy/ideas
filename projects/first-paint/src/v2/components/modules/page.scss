@@ -1,0 +1,9 @@
+body {
+  main,
+  header,
+  footer,
+  > nav, > section {
+    --dsp: block;
+    --px: 1rem;
+  }
+}

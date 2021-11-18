@@ -1,0 +1,8 @@
+{
+  "layout": "components.njk",
+  "title": "Components",
+  "tags": "components",
+  "category": "components",
+  "showDate": true,
+  "scripts": []
+}
