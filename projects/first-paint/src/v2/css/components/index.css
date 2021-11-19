@@ -7,18 +7,20 @@
 */
 /*
  ***************************************
- FirsPaint
  Name: tokens.scss
- Author: Shawn Sandy
- Date: 2021-04-01
  ***************************************
 */
-:root {
+/*
+ ***************************************
+  Name: core.scss
+ ***************************************
+*/
+* {
   --cl: var(--color, initial);
   --fs: var(--font-size, 1rem);
   --fst: var(--font-style, normal);
   --fw: var(--font-weight, normal);
-  --ff: var(--font-family, normal);
+  --ff: var(--font-family, -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
   --lh: var(--line-height, 1.2);
   --txa: var(--text-align, left);
   --txd: var(--text-decoration, none);
@@ -35,6 +37,15 @@
   --my: var(--margin-block, initial);
   --dsp: var(--display, initial);
   --pos: var(--position, initial);
+  font-family: var(--ff);
+  padding-inline: var(--px);
+  padding-block: var(--py);
+  margin-inline: var(--my);
+  margin-block: var(--my);
+}
+
+html {
+  display: var(--dsp);
 }
 
 /*
@@ -93,48 +104,23 @@
  Date: 2021-04-01
  ***************************************
 */
-* {
-  /* inherited properties variables */
-  color: var(--cl);
-  font-size: var(--fs);
-  font-style: var(--fst);
-  font-weight: var(--fw);
-  font-family: var(--ff);
-  line-height: var(--lh);
-  list-style: var(--li-style);
-  visibility: var(--visible);
-  text-align: var(--txa);
-  text-decoration: var(--txd);
-  text-transform: var(--txt);
-  /* initialized properties variables */
-}
-
-footer,
+footer[role=contentinfo],
 header,
 main,
-nav,
-hr,
-section,
-aside,
-article,
-table {
-  display: var(--dsp);
-  padding-inline: var(--px);
-  padding-block: var(--py);
-  margin-inline: var(--mx);
-  margin-block: var(--my);
-  height: var(--h);
-  width: var(--w);
-  min-width: var(--min-w);
-  min-height: var(--min-h);
-  max-width: var(--max-w);
-  max-height: var(--max-h);
+ul,
+ol,
+> nav,
+> section {
+  --dsp: block;
+  --px: 1rem;
+}
+
+section {
   --dsp: block;
 }
 
-section,
-aside,
-article {
+ul {
+  --dsp: block;
   --px: 1rem;
 }
 
@@ -143,14 +129,13 @@ article,
 button,
 link,
 ul,
-li,
 p,
 form,
 blockquote {
   width: var(--elm-w, --w);
   height: var(--elm-h, --h);
-  px: var(--elm-px, --px);
-  py: var(--elm-py, --py);
+  px: 1rem;
+  py: 1rem;
   mx: var(--elm-mx, --mx);
   my: var(--elm-my, --my);
   --w: auto;
@@ -183,8 +168,9 @@ blockquote {
 */
 body main,
 body header,
-body footer,
-body > nav, body > section {
+body footer[role=contentinfo],
+body > nav,
+body > section {
   --dsp: block;
   --px: 1rem;
 }

@@ -11,7 +11,9 @@ License: MIT
 ***************************************
 */
 
-@use "./tokens.scss";
+// @use "./modules/reset.scss";
+
+@use "./core.scss";
 
 @use "./foundation.scss";
 

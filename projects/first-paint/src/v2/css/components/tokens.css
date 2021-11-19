@@ -7,34 +7,8 @@
 */
 /*
  ***************************************
- FirsPaint
  Name: tokens.scss
- Author: Shawn Sandy
- Date: 2021-04-01
  ***************************************
 */
-:root {
-  --cl: var(--color, initial);
-  --fs: var(--font-size, 1rem);
-  --fst: var(--font-style, normal);
-  --fw: var(--font-weight, normal);
-  --ff: var(--font-family, normal);
-  --lh: var(--line-height, 1.2);
-  --txa: var(--text-align, left);
-  --txd: var(--text-decoration, none);
-  --txt: var(--text-transform, none);
-  --li-style: var(--list-style, disc);
-  --visible: var(--visibility, visible);
-  --w: var(--width, auto);
-  --h: var(--height, auto);
-  --p: var(--padding, initial);
-  --m: var(--margin, initial);
-  --px: var(--padding-inline, initial);
-  --py: var(--padding-block, initial);
-  --mx: var(--margin-inline, initial);
-  --my: var(--margin-block, initial);
-  --dsp: var(--display, initial);
-  --pos: var(--position, initial);
-}
 
 /*# sourceMappingURL=tokens.css.map */

@@ -1,0 +1,23 @@
+/*
+ ***************************************
+  Name: core.scss
+ ***************************************
+*/
+@use "../modules/utilities/maps";
+
+@use "./tokens.scss";
+
+* {
+  @include maps.cp(tokens.$styles);
+  @include maps.cp(tokens.$layout);
+  font-family: var(--ff);
+  padding-inline: var(--px);
+  padding-block: var(--py);
+  margin-inline: var(--my);
+  //display: block;
+  margin-block: var(--my);
+}
+
+html {
+  display: var(--dsp);
+}

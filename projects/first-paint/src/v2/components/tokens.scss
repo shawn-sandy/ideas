@@ -1,15 +1,10 @@
 /*
  ***************************************
- FirsPaint
  Name: tokens.scss
- Author: Shawn Sandy
- Date: 2021-04-01
  ***************************************
 */
 
 // @use "../tokens/tokens.scss";
-
-@use "../modules/utilities/maps";
 
 @use "../tokens/globals.scss";
 
@@ -22,7 +17,7 @@ $styles: (
   "fs": var(--font-size, 1rem),
   "fst": var(--font-style, normal),
   "fw": var(--font-weight, normal),
-  "ff": var(--font-family, normal),
+  "ff": var(--font-family, $font-family),
   "lh": var(--line-height, 1.2),
   "txa": var(--text-align, left),
   "txd": var(--text-decoration, none),
@@ -55,8 +50,3 @@ $modifiers: (
   "ws": var(--white-space, normal),
   "wsp": var(--word-spacing, normal),
 );
-
-:root {
-  @include maps.cp($styles);
-  @include maps.cp($layout);
-}

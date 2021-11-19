@@ -17,11 +17,20 @@
       {% include "./_partials/header.html" %}
     </header>
     <!-- feature section -->
-    <section aria-label="feature">
-      {% include "./_partials/grid.html" %}
-    </section>
+    {% block feature %}
+      <section aria-label="feature">
+        {% include "./_partials/grid.html" %}
+      </section>
+    {% endblock %}
     <hr/>
-    <main>{%- include "_partials/main-content.html" %}</main>
-    {% include "./_partials/footer.html" %}
+    <main>
+      {% block main %}
+        {%- include "_partials/main-content.html" %}
+      {% endblock %}
+    </main>
+    {% block footer %}
+      {% include "./_partials/footer.html" %}
+    {% endblock %}
+    <script src="https://cdn.jsdelivr.net/npm/@shawnsandy/code-clipper@0.2.0/lib/clipper.min.js"></script>
   </body>
 </html>
