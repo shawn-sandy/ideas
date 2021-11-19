@@ -45,6 +45,7 @@
   width: var(--w);
   height: var(--h);
   list-style: var(--li-style);
+  color: var(--cl, black);
 }
 
 :root {
