@@ -25,7 +25,7 @@
   --txa: var(--text-align, left);
   --txd: var(--text-decoration, none);
   --txt: var(--text-transform, none);
-  --li-style: var(--list-style, disc);
+  --li-style: var(--list-style, none);
   --visible: var(--visibility, visible);
   --w: var(--width, auto);
   --h: var(--height, auto);
@@ -40,11 +40,14 @@
   font-family: var(--ff);
   padding-inline: var(--px);
   padding-block: var(--py);
-  margin-inline: var(--my);
+  margin-inline: var(--mx);
   margin-block: var(--my);
+  width: var(--w);
+  height: var(--h);
+  list-style: var(--li-style);
 }
 
-html {
+:root {
   display: var(--dsp);
 }
 

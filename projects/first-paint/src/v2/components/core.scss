@@ -13,11 +13,13 @@
   font-family: var(--ff);
   padding-inline: var(--px);
   padding-block: var(--py);
-  margin-inline: var(--my);
-  //display: block;
+  margin-inline: var(--mx);
   margin-block: var(--my);
+  width: var(--w);
+  height: var(--h);
+  list-style: var(--li-style);
 }
 
-html {
+:root {
   display: var(--dsp);
 }
