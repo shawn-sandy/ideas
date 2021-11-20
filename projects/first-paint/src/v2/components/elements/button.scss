@@ -8,3 +8,9 @@
 */
 
 @use "../../modules/utilities/maps";
+
+button,
+[style*="--btn"] {
+  --bg: darkgray;
+  --dsp: flex;
+}

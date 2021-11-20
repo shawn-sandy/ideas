@@ -6,7 +6,7 @@
 
 // @use "../tokens/tokens.scss";
 
-@use "../tokens/globals.scss";
+// @use "../tokens/globals.scss";
 
 $font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
   "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
@@ -35,7 +35,7 @@ $layout: (
   "py": var(--padding-block, initial),
   "mx": var(--margin-inline, initial),
   "my": var(--margin-block, initial),
-  "dsp": var(--display, initial),
+  "dsp": initial,
   "pos": var(--position, initial),
 );
 

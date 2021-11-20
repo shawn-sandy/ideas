@@ -1,11 +1,78 @@
-/*
- ***************************************
- FirsPaint
- Author: Shawn Sandy
- Tokens: Globals
- Date: 2021-04-01
- ***************************************
-*/
+html,
+body,
+div,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+img,
+ins,
+kbd,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+audio,
+video {
+  --dsp: block;
+  display: var(--dsp);
+}
+
 /* Name: core.scss */
 * {
   --cl: var(--color, initial);
@@ -27,7 +94,7 @@
   --py: var(--padding-block, initial);
   --mx: var(--margin-inline, initial);
   --my: var(--margin-block, initial);
-  --dsp: var(--display, initial);
+  --dsp: initial;
   --pos: var(--position, initial);
   font-family: var(--ff);
   padding-inline: var(--px);
@@ -38,10 +105,7 @@
   height: var(--h);
   list-style: var(--li-style);
   color: var(--cl, black);
-}
-
-:root {
-  display: var(--dsp);
+  background-color: var(--bg, white);
 }
 
 footer[role=contentinfo],
@@ -175,6 +239,12 @@ blockquote {
  Date: 2021-11-01
  ***************************************
 */
+button,
+[style*="--btn"] {
+  --bg: darkgray;
+  --dsp: flex;
+}
+
 /*
  ***************************************
  FirsPaint

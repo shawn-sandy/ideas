@@ -4,6 +4,15 @@
 
 @use "./tokens.scss";
 
+@mixin display {
+  display: var(--dsp, block);
+}
+
+script,
+title {
+  // display: none !important;
+}
+
 * {
   @include maps.cp(tokens.$styles);
   @include maps.cp(tokens.$layout);
@@ -16,10 +25,8 @@
   height: var(--h);
   list-style: var(--li-style);
   color: var(--cl, black);
-}
-
-:root {
-  display: var(--dsp);
+  background-color: var(--bg, white);
+  // display: var(--dsp);
 }
 
 footer[role="contentinfo"],
