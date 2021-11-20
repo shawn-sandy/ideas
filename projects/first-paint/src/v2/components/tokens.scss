@@ -24,6 +24,16 @@ $styles: (
   "txt": var(--text-transform, none),
   "li-style": var(--list-style, none),
   "visible": var(--visibility, visible),
+  "border": var(--brd, initial),
+  "min-w": var(--min-width, auto),
+  "min-h": var(--min-height, auto),
+  "max-w": var(--max-width, auto),
+  "max-h": var(--max-height, auto),
+  "fv": var(--font-variant, normal),
+  "fk": var(--font-kerning, normal),
+  "lts": var(--letter-spacing, normal),
+  "ws": var(--white-space, normal),
+  "wsp": var(--word-spacing, normal),
 );
 
 $layout: (
@@ -40,13 +50,5 @@ $layout: (
 );
 
 $modifiers: (
-  "min-w": var(--min-width, auto),
-  "min-h": var(--min-height, auto),
-  "max-w": var(--max-width, auto),
-  "max-h": var(--max-height, auto),
-  "fv": var(--font-variant, normal),
-  "fk": var(--font-kerning, normal),
-  "lts": var(--letter-spacing, normal),
-  "ws": var(--white-space, normal),
-  "wsp": var(--word-spacing, normal),
+  "line": thin solid grey,
 );

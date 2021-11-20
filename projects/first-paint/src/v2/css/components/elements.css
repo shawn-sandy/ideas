@@ -9,7 +9,11 @@
 button,
 [style*="--btn"] {
   --bg: darkgray;
-  --dsp: flex;
+  --dsp: inline-flex;
+  --align: center;
+  --h: calc(40rem / 16);
+  --px: 1.5rem;
+  border: var(--line);
 }
 
 /*

@@ -11,6 +11,16 @@
   --txt: var(--text-transform, none);
   --li-style: var(--list-style, none);
   --visible: var(--visibility, visible);
+  --border: var(--brd, initial);
+  --min-w: var(--min-width, auto);
+  --min-h: var(--min-height, auto);
+  --max-w: var(--max-width, auto);
+  --max-h: var(--max-height, auto);
+  --fv: var(--font-variant, normal);
+  --fk: var(--font-kerning, normal);
+  --lts: var(--letter-spacing, normal);
+  --ws: var(--white-space, normal);
+  --wsp: var(--word-spacing, normal);
   --w: var(--width, auto);
   --h: var(--height, auto);
   --p: var(--padding, initial);
@@ -30,7 +40,13 @@
   height: var(--h);
   list-style: var(--li-style);
   color: var(--cl, black);
+  align-items: var(--align);
   background-color: var(--bg, white);
+  border: var(--border, 0);
+}
+
+:root {
+  --line: thin solid grey;
 }
 
 footer[role=contentinfo],
@@ -82,8 +98,8 @@ ul,
 p,
 form,
 blockquote {
-  width: var(--elm-w, --w);
-  height: var(--elm-h, --h);
+  width: var(--w);
+  height: var(--h);
   px: 1rem;
   py: 1rem;
   mx: var(--elm-mx, --mx);
@@ -98,6 +114,10 @@ blockquote {
 :any-link:visited,
 :any-link :active {
   --cl: navy;
+}
+
+p + p {
+  --py: 0 1rem;
 }
 
 /*# sourceMappingURL=core.css.map */

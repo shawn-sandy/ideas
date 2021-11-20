@@ -73,4 +73,16 @@ video {
   display: var(--dsp);
 }
 
+button,
+a,
+input,
+select,
+textarea,
+em,
+s,
+i {
+  --dsp: inline-block;
+  display: var(--dsp);
+}
+
 /*# sourceMappingURL=reset.css.map */

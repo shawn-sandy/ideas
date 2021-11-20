@@ -16,6 +16,7 @@ title {
 * {
   @include maps.cp(tokens.$styles);
   @include maps.cp(tokens.$layout);
+
   font-family: var(--ff);
   padding-inline: var(--px);
   padding-block: var(--py);
@@ -25,8 +26,14 @@ title {
   height: var(--h);
   list-style: var(--li-style);
   color: var(--cl, black);
+  align-items: var(--align);
   background-color: var(--bg, white);
+  border: var(--border, 0);
   // display: var(--dsp);
+}
+
+:root {
+  @include maps.cp(tokens.$modifiers);
 }
 
 footer[role="contentinfo"],
@@ -81,8 +88,8 @@ ul,
 p,
 form,
 blockquote {
-  width: var(--elm-w, --w);
-  height: var(--elm-h, --h);
+  width: var(--w);
+  height: var(--h);
   px: 1rem;
   py: 1rem;
   mx: var(--elm-mx, --mx);
@@ -96,5 +103,11 @@ blockquote {
   &:visited,
   :active {
     --cl: navy;
+  }
+}
+
+p {
+  + p {
+    --py: 0 1rem;
   }
 }
