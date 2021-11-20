@@ -1,8 +1,5 @@
-/*
- ***************************************
-  Name: core.scss
- ***************************************
-*/
+/* Name: core.scss */
+
 @use "../modules/utilities/maps";
 
 @use "./tokens.scss";
@@ -23,4 +20,74 @@
 
 :root {
   display: var(--dsp);
+}
+
+footer[role="contentinfo"],
+header,
+main,
+ul,
+ol,
+> nav,
+> section {
+  --dsp: block;
+  --px: 1.2rem;
+}
+
+main,
+body > section,
+footer {
+  --px: 1rem;
+}
+
+header,
+nav {
+  --px: 0;
+}
+
+> * + * {
+  --py: 1rem;
+}
+
+header {
+  > section {
+    --px: 1rem;
+  }
+}
+
+ul {
+  --dsp: block;
+  --mx: 1rem;
+}
+
+section + section,
+div + div {
+  --dsp: block;
+  --py: 1rem 0;
+}
+
+// elements
+div,
+article,
+button,
+link,
+ul,
+p,
+form,
+blockquote {
+  width: var(--elm-w, --w);
+  height: var(--elm-h, --h);
+  px: 1rem;
+  py: 1rem;
+  mx: var(--elm-mx, --mx);
+  my: var(--elm-my, --my);
+  --w: auto;
+  --h: auto;
+}
+
+:any-link {
+  --cl: blue;
+  &:visited,
+  :active {
+    --cl: navy;
+  }
 }
