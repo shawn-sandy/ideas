@@ -1,3 +1,8 @@
+/*
+ ***************************************
+ Name: tokens.scss
+ ***************************************
+*/
 /* Name: core.scss */
 *,
 [style] {
@@ -32,6 +37,75 @@
   --my: var(--margin-block, initial);
   --dsp: initial;
   --pos: var(--position, initial);
+  --gap: 1rem;
+  --gap-sm: var(--sm);
+  --gap-md: var(--md);
+  --gap-lg: var(--lg);
+  --gap-xl: var(--xl);
+  --rem: 1rem;
+  --0: 0;
+  --s1: 0.75rem;
+  --s2: 0.875rem;
+  --s3: 1.3125rem;
+  --s4: 1.75rem;
+  --s5: 2.25rem;
+  --s6: 3rem;
+  --s7: 3.75rem;
+  --s8: 4.5rem;
+  --s9: 5rem;
+  --s10: 7.5rem;
+  --s11: 9rem;
+  --s12: 12rem;
+  --s13: 15rem;
+  --s14: 18rem;
+  --none: 0;
+  --xs: var(--s1);
+  --sm: var(--s2);
+  --md: var(--s3);
+  --lg: var(--s4);
+  --xl: var(--s5);
+  --2xl: var(--s6);
+  --3xl: var(--s7);
+  --4xl: var(--s8);
+  --5xl: var(--s9);
+  --6xl: var(--s10);
+  --7xl: var(--s11);
+  --8xl: var(--s12);
+  --9xl: var(--s13);
+  --10xl: var(--s14);
+  --d: var(--rem);
+  --pct-1: 10%;
+  --pct-2: 20%;
+  --pct-3: 30%;
+  --pct-4: 40%;
+  --pct-5: 50%;
+  --pct-6: 60%;
+  --pct-7: 70%;
+  --pct-8: 80%;
+  --pct-9: 90%;
+  --pct-10: 100%;
+  --pct: var(pct-10);
+  --vh-sm: 10vh;
+  --vh-md: 25vh;
+  --vh-lg: 50vh;
+  --vh-xl: 70vh;
+  --vh-2xl: 90vh;
+  --vmin: 1%;
+  --vmax: 1%;
+  --vw-sm: 10vw;
+  --vw-md: 25vw;
+  --vw-lg: 50vw;
+  --vw-xl: 70vw;
+  --vw-2xl: 90vw;
+  --off-white: hsl(240, 100%, 96%);
+  --dark: hsl(0, 0%, 9%);
+  --light: lightgray;
+  --alert: yellowgreen;
+  --info: hsl(210, 100%, 41%);
+  --warning: hsl(33, 100%, 50%);
+  --danger: hsl(348, 98%, 38%);
+  --highlight: hsl(54, 100%, 90%);
+  --text: var(dark);
   box-sizing: border-box;
   font-family: var(--ff);
   font-size: var(--fs);
@@ -50,6 +124,11 @@
   cursor: var(--cursor);
   width: var(--w);
   min-height: var(--min-h);
+  max-height: var(--max-h);
+  min-width: var(--min-w);
+  max-width: var(--max-w);
+  justify-content: var(--justify, initial);
+  text-align: var(--txa);
 }
 
 :root {

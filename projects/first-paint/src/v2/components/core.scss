@@ -17,7 +17,8 @@ title {
 [style] {
   @include maps.cp(tokens.$styles);
   @include maps.cp(tokens.$layout);
-
+  @include maps.cp(tokens.$units);
+  @include maps.cp(tokens.$colors);
   box-sizing: border-box;
   font-family: var(--ff);
   font-size: var(--fs);
@@ -36,6 +37,11 @@ title {
   cursor: var(--cursor);
   width: var(--w);
   min-height: var(--min-h);
+  max-height: var(--max-h);
+  min-width: var(--min-w);
+  max-width: var(--max-w);
+  justify-content: var(--justify, initial);
+  text-align: var(--txa);
 }
 
 :root {
