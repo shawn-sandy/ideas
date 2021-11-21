@@ -117,6 +117,7 @@ blockquote {
 a {
   --cl: blue;
   --txd: none;
+  --cursor: pointer;
   &:visited,
   :active {
     --cl: navy;

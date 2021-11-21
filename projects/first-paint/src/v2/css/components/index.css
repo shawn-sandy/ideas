@@ -229,7 +229,7 @@ i {
 
 :root {
   --line: thin solid grey;
-  --cursor: initial;
+  --cursor: auto;
 }
 
 footer[role=contentinfo],
@@ -297,6 +297,7 @@ blockquote {
 a {
   --cl: blue;
   --txd: none;
+  --cursor: pointer;
 }
 :any-link:visited,
 :any-link :active,
