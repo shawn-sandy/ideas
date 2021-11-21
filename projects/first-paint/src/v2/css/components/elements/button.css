@@ -11,9 +11,17 @@ button,
   --bg: darkgray;
   --dsp: inline-flex;
   --align: center;
-  --h: calc(40rem / 16);
+  --h: calc(36rem / 16);
   --px: 1.5rem;
-  border: var(--line);
+  --border: var(--line);
+}
+button > :any-link,
+[style*="--btn"] > :any-link {
+  --txd: none;
+}
+button:hover,
+[style*="--btn"]:hover {
+  --cursor: pointer;
 }
 
 /*# sourceMappingURL=button.css.map */

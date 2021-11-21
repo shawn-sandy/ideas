@@ -11,11 +11,18 @@ button,
   --bg: darkgray;
   --dsp: inline-flex;
   --align: center;
-  --h: calc(40rem / 16);
+  --h: calc(36rem / 16);
   --px: 1.5rem;
-  border: var(--line);
+  --border: var(--line);
 }
-
+button > :any-link,
+[style*="--btn"] > :any-link {
+  --txd: none;
+}
+button:hover,
+[style*="--btn"]:hover {
+  --cursor: pointer;
+}
 /*
  ***************************************
  FirsPaint
@@ -24,13 +31,6 @@ button,
  Date: 2021-04-01
  ***************************************
 */
-/*
- ***************************************
- FirsPaint
- Author: Shawn Sandy
- Component: elements.scss
- Date: 2021-04-01
- ***************************************
-*/
+/*  Component: elements.scss */
 
 /*# sourceMappingURL=elements.css.map */

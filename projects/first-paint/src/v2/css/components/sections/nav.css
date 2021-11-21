@@ -6,5 +6,15 @@
  Date: 2021-04-01
  ***************************************
 */
+nav {
+  --dsp: flex;
+  --w: 100%;
+  --align: center;
+  --justify: space-between;
+}
+nav section {
+  --dsp: flex;
+  --align: center;
+}
 
 /*# sourceMappingURL=nav.css.map */

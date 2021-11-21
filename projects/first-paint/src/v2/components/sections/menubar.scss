@@ -1,0 +1,12 @@
+/* menubar */
+
+ul[role="menubar"] {
+  --dsp: flex;
+  --gap: 1rem;
+  --fs: 0.8rem;
+  --py: 1rem;
+  li,
+  :any-link {
+    --fs: 0.9rem;
+  }
+}

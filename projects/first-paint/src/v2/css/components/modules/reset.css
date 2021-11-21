@@ -1,5 +1,6 @@
 html,
 body,
+main,
 div,
 applet,
 object,
@@ -68,9 +69,17 @@ ruby,
 section,
 summary,
 audio,
-video {
+video,
+[style] {
+  display: var(--dsp, initial);
+  flex-direction: var(--direction, initial);
+  justify-content: var(--justify, initial);
+  align-items: var(--align, initial);
+  gap: var(--gap, initial);
+  wrap: var(--wrap, initial);
+  grow: var(--grow, initial);
+  shrink: var(--shrink, initial);
   --dsp: block;
-  display: var(--dsp);
 }
 
 button,
@@ -81,8 +90,8 @@ textarea,
 em,
 s,
 i {
-  --dsp: inline-block;
   display: var(--dsp);
+  --dsp: inline-block;
 }
 
 /*# sourceMappingURL=reset.css.map */

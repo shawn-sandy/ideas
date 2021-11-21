@@ -1,5 +1,6 @@
 /* Name: core.scss */
-* {
+*,
+[style] {
   --cl: var(--color, initial);
   --fs: var(--font-size, 1rem);
   --fst: var(--font-style, normal);
@@ -31,7 +32,9 @@
   --my: var(--margin-block, initial);
   --dsp: initial;
   --pos: var(--position, initial);
+  box-sizing: border-box;
   font-family: var(--ff);
+  font-size: var(--fs);
   padding-inline: var(--px);
   padding-block: var(--py);
   margin-inline: var(--mx);
@@ -43,10 +46,15 @@
   align-items: var(--align);
   background-color: var(--bg, white);
   border: var(--border, 0);
+  text-decoration: var(--txd);
+  cursor: var(--cursor);
+  width: var(--w);
+  min-height: var(--min-h);
 }
 
 :root {
   --line: thin solid grey;
+  --cursor: initial;
 }
 
 footer[role=contentinfo],
@@ -54,21 +62,23 @@ header,
 main,
 ul,
 ol,
+div,
 > nav,
 > section {
-  --dsp: block;
   --px: 1.2rem;
 }
 
 main,
 body > section,
 footer {
+  --dsp: block;
   --px: 1rem;
 }
 
 header,
 nav {
   --px: 0;
+  --w: 100%;
 }
 
 > * + * {
@@ -108,16 +118,20 @@ blockquote {
   --h: auto;
 }
 
-:any-link {
+:any-link,
+a {
   --cl: blue;
+  --txd: none;
 }
 :any-link:visited,
-:any-link :active {
+:any-link :active,
+a:visited,
+a :active {
   --cl: navy;
 }
 
 p + p {
-  --py: 0 1rem;
+  --py: 1rem 0;
 }
 
 /*# sourceMappingURL=core.css.map */

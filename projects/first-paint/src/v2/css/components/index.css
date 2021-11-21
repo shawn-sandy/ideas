@@ -1,5 +1,6 @@
 html,
 body,
+main,
 div,
 applet,
 object,
@@ -68,9 +69,17 @@ ruby,
 section,
 summary,
 audio,
-video {
+video,
+[style] {
+  display: var(--dsp, initial);
+  flex-direction: var(--direction, initial);
+  justify-content: var(--justify, initial);
+  align-items: var(--align, initial);
+  gap: var(--gap, initial);
+  wrap: var(--wrap, initial);
+  grow: var(--grow, initial);
+  shrink: var(--shrink, initial);
   --dsp: block;
-  display: var(--dsp);
 }
 
 button,
@@ -81,12 +90,13 @@ textarea,
 em,
 s,
 i {
-  --dsp: inline-block;
   display: var(--dsp);
+  --dsp: inline-block;
 }
 
 /* Name: core.scss */
-* {
+*,
+[style] {
   --cl: var(--color, initial);
   --fs: var(--font-size, 1rem);
   --fst: var(--font-style, normal);
@@ -118,7 +128,9 @@ i {
   --my: var(--margin-block, initial);
   --dsp: initial;
   --pos: var(--position, initial);
+  box-sizing: border-box;
   font-family: var(--ff);
+  font-size: var(--fs);
   padding-inline: var(--px);
   padding-block: var(--py);
   margin-inline: var(--mx);
@@ -130,10 +142,15 @@ i {
   align-items: var(--align);
   background-color: var(--bg, white);
   border: var(--border, 0);
+  text-decoration: var(--txd);
+  cursor: var(--cursor);
+  width: var(--w);
+  min-height: var(--min-h);
 }
 
 :root {
   --line: thin solid grey;
+  --cursor: initial;
 }
 
 footer[role=contentinfo],
@@ -141,21 +158,23 @@ header,
 main,
 ul,
 ol,
+div,
 > nav,
 > section {
-  --dsp: block;
   --px: 1.2rem;
 }
 
 main,
 body > section,
 footer {
+  --dsp: block;
   --px: 1rem;
 }
 
 header,
 nav {
   --px: 0;
+  --w: 100%;
 }
 
 > * + * {
@@ -195,16 +214,20 @@ blockquote {
   --h: auto;
 }
 
-:any-link {
+:any-link,
+a {
   --cl: blue;
+  --txd: none;
 }
 :any-link:visited,
-:any-link :active {
+:any-link :active,
+a:visited,
+a :active {
   --cl: navy;
 }
 
 p + p {
-  --py: 0 1rem;
+  --py: 1rem 0;
 }
 
 /*
@@ -231,6 +254,29 @@ p + p {
  Date: 2021-04-01
  ***************************************
 */
+nav {
+  --dsp: flex;
+  --w: 100%;
+  --align: center;
+  --justify: space-between;
+}
+nav section {
+  --dsp: flex;
+  --align: center;
+}
+
+/* menubar */
+ul[role=menubar] {
+  --dsp: flex;
+  --gap: 1rem;
+  --fs: 0.8rem;
+  --py: 1rem;
+}
+ul[role=menubar] li,
+ul[role=menubar] :any-link {
+  --fs: 0.9rem;
+}
+
 /*
  ***************************************
  FirsPaint
@@ -239,6 +285,14 @@ p + p {
  Date: 2021-04-01
  ***************************************
 */
+/** banner.scss */
+[role=banner] {
+  --dsp: flex;
+  --align: center;
+  --min-h: 40vh;
+  --justify: center;
+}
+
 /*
  ***************************************
  FirsPaint
@@ -255,14 +309,7 @@ p + p {
  Date: 2021-04-01
  ***************************************
 */
-/*
- ***************************************
- FirsPaint
- Author: Shawn Sandy
- Component: foundation.scss
- Date: 2021-04-01
- ***************************************
-*/
+/* Component: foundation.scss */
 /*
  ***************************************
  FirsPaint
@@ -276,11 +323,18 @@ button,
   --bg: darkgray;
   --dsp: inline-flex;
   --align: center;
-  --h: calc(40rem / 16);
+  --h: calc(36rem / 16);
   --px: 1.5rem;
-  border: var(--line);
+  --border: var(--line);
 }
-
+button > :any-link,
+[style*="--btn"] > :any-link {
+  --txd: none;
+}
+button:hover,
+[style*="--btn"]:hover {
+  --cursor: pointer;
+}
 /*
  ***************************************
  FirsPaint
@@ -289,14 +343,15 @@ button,
  Date: 2021-04-01
  ***************************************
 */
-/*
- ***************************************
- FirsPaint
- Author: Shawn Sandy
- Component: elements.scss
- Date: 2021-04-01
- ***************************************
-*/
+/*  Component: elements.scss */
+/* flex styles */
+[style*="--flex"] {
+  display: var(--dsp, flex);
+  --dsp: flex;
+  --gap: 1rem;
+}
+
+/** styles **/
 /*
 **************************************
 Author: Shawn Sandy

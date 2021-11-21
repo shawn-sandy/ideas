@@ -22,6 +22,29 @@
  Date: 2021-04-01
  ***************************************
 */
+nav {
+  --dsp: flex;
+  --w: 100%;
+  --align: center;
+  --justify: space-between;
+}
+nav section {
+  --dsp: flex;
+  --align: center;
+}
+
+/* menubar */
+ul[role=menubar] {
+  --dsp: flex;
+  --gap: 1rem;
+  --fs: 0.8rem;
+  --py: 1rem;
+}
+ul[role=menubar] li,
+ul[role=menubar] :any-link {
+  --fs: 0.9rem;
+}
+
 /*
  ***************************************
  FirsPaint
@@ -30,6 +53,14 @@
  Date: 2021-04-01
  ***************************************
 */
+/** banner.scss */
+[role=banner] {
+  --dsp: flex;
+  --align: center;
+  --min-h: 40vh;
+  --justify: center;
+}
+
 /*
  ***************************************
  FirsPaint
@@ -46,13 +77,6 @@
  Date: 2021-04-01
  ***************************************
 */
-/*
- ***************************************
- FirsPaint
- Author: Shawn Sandy
- Component: foundation.scss
- Date: 2021-04-01
- ***************************************
-*/
+/* Component: foundation.scss */
 
 /*# sourceMappingURL=foundation.css.map */

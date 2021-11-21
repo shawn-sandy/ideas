@@ -1,11 +1,4 @@
-/*
- ***************************************
- FirsPaint
- Author: Shawn Sandy
- Component: foundation.scss
- Date: 2021-04-01
- ***************************************
-*/
+/* Component: foundation.scss */
 
 //header
 @use "./sections/header.scss";
@@ -13,8 +6,12 @@
 @use "./sections/footer.scss";
 // nav
 @use "./sections/nav.scss";
+// menubar
+@use "./sections/menubar.scss";
 // main
 @use "./sections/main.scss";
+// banners
+@use "./sections/banner.scss";
 // section
 @use "./sections/section.scss";
 // aside

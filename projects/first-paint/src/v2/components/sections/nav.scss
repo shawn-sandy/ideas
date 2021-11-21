@@ -8,3 +8,14 @@
 */
 
 @use "../../modules/utilities/maps";
+
+nav {
+  --dsp: flex;
+  --w: 100%;
+  --align: center;
+  --justify: space-between;
+  section {
+    --dsp: flex;
+    --align: center;
+  }
+}
