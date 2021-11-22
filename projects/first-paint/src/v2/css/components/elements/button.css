@@ -8,16 +8,20 @@
 */
 button,
 [style*="--btn"] {
-  --bg: darkgray;
+  --bg: lightgray;
   --dsp: inline-flex;
   --align: center;
   --h: calc(36rem / 16);
   --px: 1.5rem;
   --border: var(--line);
+  --b-rds: var(--btn-rds, var(--rds));
 }
-button > :any-link,
-[style*="--btn"] > :any-link {
+button:any-link,
+button a,
+[style*="--btn"]:any-link,
+[style*="--btn"] a {
   --txd: none;
+  --cl: var(--btn-cl, var(--dark));
 }
 button:hover,
 [style*="--btn"]:hover {

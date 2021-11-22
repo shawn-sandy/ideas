@@ -14,8 +14,12 @@ nav {
   --w: 100%;
   --align: center;
   --justify: space-between;
+  --h: var(--nav-h, var(--s8));
   section {
     --dsp: flex;
     --align: center;
+    + section {
+      --py: 0;
+    }
   }
 }

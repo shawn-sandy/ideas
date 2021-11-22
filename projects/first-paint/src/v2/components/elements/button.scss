@@ -11,14 +11,17 @@
 
 button,
 [style*="--btn"] {
-  --bg: darkgray;
+  --bg: lightgray;
   --dsp: inline-flex;
   --align: center;
   --h: calc(36rem / 16);
   --px: 1.5rem;
   --border: var(--line);
-  > :any-link {
+  --b-rds: var(--btn-rds, var(--rds));
+  &:any-link,
+  a {
     --txd: none;
+    --cl: var(--btn-cl, var(--dark));
   }
   &:hover {
     --cursor: pointer;

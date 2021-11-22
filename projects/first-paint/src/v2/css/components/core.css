@@ -97,6 +97,13 @@
   --vw-lg: 50vw;
   --vw-xl: 70vw;
   --vw-2xl: 90vw;
+  --rds: 0.2rem;
+  --rds-xs: 0.3rem;
+  --rds-sm: 0.5rem;
+  --rds-md: 0.8rem;
+  --rds-lg: 1.3rem;
+  --rds-xl: 1.8rem;
+  --rds-pill: 99rem;
   --off-white: hsl(240, 100%, 96%);
   --dark: hsl(0, 0%, 9%);
   --light: lightgray;
@@ -129,11 +136,13 @@
   max-width: var(--max-w);
   justify-content: var(--justify, initial);
   text-align: var(--txa);
+  border-radius: var(--b-rds);
 }
 
 :root {
-  --line: thin solid grey;
+  --line: thin solid lightgray;
   --cursor: auto;
+  --rad: intial;
 }
 
 footer[role=contentinfo],
