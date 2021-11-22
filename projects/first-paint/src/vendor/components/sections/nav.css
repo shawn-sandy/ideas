@@ -1,11 +1,4 @@
-/*
- ***************************************
- FirsPaint
- Author: Shawn Sandy
- Component: nav.scss
- Date: 2021-04-01
- ***************************************
-*/
+/*  Component: nav.scss */
 nav {
   --dsp: flex;
   --w: 100%;
@@ -16,7 +9,7 @@ nav {
 }
 @media (min-width: 61.25rem) {
   nav {
-    --max-w: var(--container, var(--pct-8));
+    --max-w: var(--container-md, var(--pct-8));
   }
 }
 nav section {

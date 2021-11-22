@@ -237,6 +237,11 @@ i {
 }
 
 :root {
+  --container-sm: calc(1280rem / 16);
+  --container-md: calc(1440rem / 16);
+  --container-lg: calc(1600rem / 16);
+  --container-xl: calc(1980rem / 16);
+  --container: 100%;
   --line: thin solid lightgray;
   --cursor: auto;
   --rad: intial;
@@ -265,7 +270,7 @@ footer {
   main,
 body > section,
 footer {
-    --max-w: var(--container, var(--pct-8));
+    --max-w: var(--container-md, var(--pct-8));
     --px: 0;
   }
 }
@@ -376,14 +381,7 @@ footer[role=contentinfo] > div {
   --justify: center;
 }
 
-/*
- ***************************************
- FirsPaint
- Author: Shawn Sandy
- Component: nav.scss
- Date: 2021-04-01
- ***************************************
-*/
+/*  Component: nav.scss */
 nav {
   --dsp: flex;
   --w: 100%;
@@ -394,7 +392,7 @@ nav {
 }
 @media (min-width: 61.25rem) {
   nav {
-    --max-w: var(--container, var(--pct-8));
+    --max-w: var(--container-md, var(--pct-8));
   }
 }
 nav section {
@@ -477,14 +475,7 @@ ul[role=menubar] :any-link {
  ***************************************
 */
 /* Component: foundation.scss */
-/*
- ***************************************
- FirsPaint
- Author: Shawn Sandy
- component: button.scss
- Date: 2021-11-01
- ***************************************
-*/
+/* component: button.scss */
 button,
 [style*="--btn"] {
   --bg: lightgray;
@@ -509,6 +500,8 @@ button a,
 button:hover,
 [style*="--btn"]:hover {
   --cursor: pointer;
+  --bg: var(--btn-hover-bg, var(--dark));
+  --cl: var(--btn-hover-cl, var(--light));
 }
 /*
  ***************************************
@@ -571,6 +564,81 @@ ul [role=listitem] * + * {
 }
 
 /** styles **/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  --fw: var(--fw-medium);
+  line-height: var(--line-height);
+  color: var(--cl);
+  margin: var(--m);
+  font-weight: var(--fw);
+  overflow-wrap: var(--overflow, var(--break));
+  word-break: var(--word-break, break-all);
+  -webkit-hyphens: var(--hyphens, auto);
+      -ms-hyphens: var(--hyphens, auto);
+          hyphens: var(--hyphens, auto);
+  --fx-weight: var(--fw-medium);
+  text-shadow: var(--shadow);
+  padding-block: var(--py, var(--p));
+  padding-inline: var(--px, var(--p));
+  display: var(--dsp, block);
+}
+
+h1 {
+  --fs: var(--4xl);
+}
+
+h2 {
+  --fs: var(--3xl);
+}
+
+h3 {
+  --fs: var(--2xl);
+}
+
+h4 {
+  --fs: var(--xl);
+}
+
+h5 {
+  --fs: var(--lg);
+}
+
+h6 {
+  --fs: var(--md);
+}
+
+small,
+time {
+  --fs: var(--fs);
+}
+
+time {
+  padding: 0 0 0.5rem;
+}
+
+p {
+  margin: 0;
+  line-height: 1.7;
+  --fw: normal;
+}
+p i {
+  font-style: italic;
+}
+p strong {
+  font-weight: var(--fw-medium);
+}
+
+p + p,
+p + * {
+  margin-top: 2rem;
+}
+
+/** utility.scss */
 /*
 **************************************
 Author: Shawn Sandy
