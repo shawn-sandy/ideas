@@ -46,6 +46,11 @@ title {
 }
 
 :root {
+  --container-sm: calc(1280rem / 16);
+  --container-md: calc(1440rem / 16);
+  --container-lg: calc(1600rem / 16);
+  --container-xl: calc(1980rem / 16);
+  --container: 100%;
   @include maps.cp(tokens.$modifiers);
 }
 
@@ -68,7 +73,7 @@ footer {
   --py: auto;
   --mx: auto;
   @media (min-width: calc(980rem / 16)) {
-    --max-w: var(--container, var(--pct-8));
+    --max-w: var(--container-md, var(--pct-8));
     --px: 0;
   }
 }
