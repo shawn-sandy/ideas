@@ -12,6 +12,8 @@ div[role="row"],
   --wrap: var(--row-wrap, wrap);
   [role="gridcell"] {
     flex: 1 1 calc(100% / var(--cols, 4) - var(--gap));
+    --py: var(--rem);
+    --px: var(--rem);
     * + * {
       --py: var(--gap) 0;
     }

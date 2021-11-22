@@ -12,6 +12,8 @@ div[role=row],
 div[role=row] [role=gridcell],
 [style="--role"] [role=gridcell] {
   flex: 1 1 calc(100% / var(--cols, 4) - var(--gap));
+  --py: var(--rem);
+  --px: var(--rem);
 }
 div[role=row] [role=gridcell] * + *,
 [style="--role"] [role=gridcell] * + * {
