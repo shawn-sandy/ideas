@@ -371,14 +371,7 @@ footer[role=contentinfo] > div {
   --justify: center;
 }
 
-/*
- ***************************************
- FirsPaint
- Author: Shawn Sandy
- Component: nav.scss
- Date: 2021-04-01
- ***************************************
-*/
+/*  Component: nav.scss */
 nav {
   --dsp: flex;
   --w: 100%;
@@ -469,14 +462,7 @@ ul[role=menubar] :any-link {
  ***************************************
 */
 /* Component: foundation.scss */
-/*
- ***************************************
- FirsPaint
- Author: Shawn Sandy
- component: button.scss
- Date: 2021-11-01
- ***************************************
-*/
+/* component: button.scss */
 button,
 [style*="--btn"] {
   --bg: lightgray;
@@ -497,6 +483,8 @@ button a,
 button:hover,
 [style*="--btn"]:hover {
   --cursor: pointer;
+  --bg: var(--btn-hover-bg, var(--dark));
+  --cl: var(--btn-hover-cl, var(--light));
 }
 /*
  ***************************************

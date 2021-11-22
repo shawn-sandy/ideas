@@ -1,11 +1,4 @@
-/*
- ***************************************
- FirsPaint
- Author: Shawn Sandy
- component: button.scss
- Date: 2021-11-01
- ***************************************
-*/
+/* component: button.scss */
 
 @use "../../modules/utilities/maps";
 
@@ -25,6 +18,8 @@ button,
   }
   &:hover {
     --cursor: pointer;
+    --bg: var(--btn-hover-bg, var(--dark));
+    --cl: var(--btn-hover-cl, var(--light));
   }
   &[type="submit"] {
   }
