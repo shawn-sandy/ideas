@@ -19,3 +19,22 @@ div[role="row"],
     }
   }
 }
+
+section,
+div,
+ul {
+  &[role="list"],
+  &[style*="--list"] {
+    --dsp: flex;
+    --gap: var(--rem);
+    --wrap: var(--row-wrap, wrap);
+  }
+  [role="listitem"] {
+    flex: 1 1 calc(100% / var(--cols, 3) - var(--gap));
+    --py: var(--rem);
+    --px: var(--rem);
+    * + * {
+      --py: var(--gap) 0;
+    }
+  }
+}

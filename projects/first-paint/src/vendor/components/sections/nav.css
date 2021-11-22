@@ -1,0 +1,22 @@
+/*
+ ***************************************
+ FirsPaint
+ Author: Shawn Sandy
+ Component: nav.scss
+ Date: 2021-04-01
+ ***************************************
+*/
+nav {
+  --dsp: flex;
+  --w: 100%;
+  --align: center;
+  --justify: space-between;
+  --h: var(--nav-h, var(--s8));
+}
+nav section {
+  --dsp: flex;
+  --align: center;
+}
+nav section + section {
+  --py: 0;
+}

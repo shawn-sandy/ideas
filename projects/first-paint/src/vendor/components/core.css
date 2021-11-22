@@ -127,7 +127,8 @@
   align-items: var(--align);
   background-color: var(--bg, white);
   border: var(--border, 0);
-  text-decoration: var(--txd);
+  -webkit-text-decoration: var(--txd);
+          text-decoration: var(--txd);
   cursor: var(--cursor);
   width: var(--w);
   min-height: var(--min-h);
@@ -161,8 +162,8 @@ body > section,
 footer {
   --dsp: block;
   --px: 1rem;
-  --py: auto;
 }
+
 header,
 nav {
   --px: 0;
@@ -206,11 +207,20 @@ blockquote {
   --h: auto;
 }
 
+:-webkit-any-link {
+  --cl: blue;
+  --txd: none;
+  --cursor: pointer;
+}
+
 :any-link,
 a {
   --cl: blue;
   --txd: none;
   --cursor: pointer;
+}
+:-webkit-any-link:visited, :-webkit-any-link :active {
+  --cl: navy;
 }
 :any-link:visited,
 :any-link :active,
@@ -222,5 +232,3 @@ a :active {
 p + p {
   --py: 1rem 0;
 }
-
-/*# sourceMappingURL=core.css.map */

@@ -65,6 +65,12 @@ body > section,
 footer {
   --dsp: block;
   --px: 1rem;
+  --py: auto;
+  @media (min-width: calc(980rem / 16)) {
+    // --max-w: var(--pct-8);
+    // --dsp: flex;
+    // --justify: center;
+  }
 }
 
 header,

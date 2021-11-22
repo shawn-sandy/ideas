@@ -1,0 +1,33 @@
+/*
+ ***************************************
+ FirsPaint
+ Author: Shawn Sandy
+ component: button.scss
+ Date: 2021-11-01
+ ***************************************
+*/
+button,
+[style*="--btn"] {
+  --bg: lightgray;
+  --dsp: inline-flex;
+  --align: center;
+  --h: calc(36rem / 16);
+  --px: 1.5rem;
+  --border: var(--line);
+  --b-rds: var(--btn-rds, var(--rds));
+}
+button:-webkit-any-link, [style*="--btn"]:-webkit-any-link {
+  --txd: none;
+  --cl: var(--btn-cl, var(--dark));
+}
+button:any-link,
+button a,
+[style*="--btn"]:any-link,
+[style*="--btn"] a {
+  --txd: none;
+  --cl: var(--btn-cl, var(--dark));
+}
+button:hover,
+[style*="--btn"]:hover {
+  --cursor: pointer;
+}

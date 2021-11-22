@@ -16,6 +16,10 @@ button,
   --border: var(--line);
   --b-rds: var(--btn-rds, var(--rds));
 }
+button:-webkit-any-link, [style*="--btn"]:-webkit-any-link {
+  --txd: none;
+  --cl: var(--btn-cl, var(--dark));
+}
 button:any-link,
 button a,
 [style*="--btn"]:any-link,
@@ -57,28 +61,4 @@ div[role=row] [role=gridcell] * + *,
   --py: var(--gap) 0;
 }
 
-section[role=list], section[style*="--list"],
-div[role=list],
-div[style*="--list"],
-ul[role=list],
-ul[style*="--list"] {
-  --dsp: flex;
-  --gap: var(--rem);
-  --wrap: var(--row-wrap, wrap);
-}
-section [role=listitem],
-div [role=listitem],
-ul [role=listitem] {
-  flex: 1 1 calc(100% / var(--cols, 3) - var(--gap));
-  --py: var(--rem);
-  --px: var(--rem);
-}
-section [role=listitem] * + *,
-div [role=listitem] * + *,
-ul [role=listitem] * + * {
-  --py: var(--gap) 0;
-}
-
 /*  Component: elements.scss */
-
-/*# sourceMappingURL=elements.css.map */

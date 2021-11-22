@@ -223,7 +223,8 @@ i {
   align-items: var(--align);
   background-color: var(--bg, white);
   border: var(--border, 0);
-  text-decoration: var(--txd);
+  -webkit-text-decoration: var(--txd);
+          text-decoration: var(--txd);
   cursor: var(--cursor);
   width: var(--w);
   min-height: var(--min-h);
@@ -257,8 +258,8 @@ body > section,
 footer {
   --dsp: block;
   --px: 1rem;
-  --py: auto;
 }
+
 header,
 nav {
   --px: 0;
@@ -302,11 +303,20 @@ blockquote {
   --h: auto;
 }
 
+:-webkit-any-link {
+  --cl: blue;
+  --txd: none;
+  --cursor: pointer;
+}
+
 :any-link,
 a {
   --cl: blue;
   --txd: none;
   --cursor: pointer;
+}
+:-webkit-any-link:visited, :-webkit-any-link :active {
+  --cl: navy;
 }
 :any-link:visited,
 :any-link :active,
@@ -364,6 +374,9 @@ ul[role=menubar] {
   --gap: 1rem;
   --fs: 0.8rem;
   --py: var(--rem);
+}
+ul[role=menubar] :-webkit-any-link {
+  --fs: var(--s2);
 }
 ul[role=menubar] li,
 ul[role=menubar] :any-link {
@@ -445,6 +458,10 @@ button,
   --border: var(--line);
   --b-rds: var(--btn-rds, var(--rds));
 }
+button:-webkit-any-link, [style*="--btn"]:-webkit-any-link {
+  --txd: none;
+  --cl: var(--btn-cl, var(--dark));
+}
 button:any-link,
 button a,
 [style*="--btn"]:any-link,
@@ -486,28 +503,6 @@ div[role=row] [role=gridcell] * + *,
   --py: var(--gap) 0;
 }
 
-section[role=list], section[style*="--list"],
-div[role=list],
-div[style*="--list"],
-ul[role=list],
-ul[style*="--list"] {
-  --dsp: flex;
-  --gap: var(--rem);
-  --wrap: var(--row-wrap, wrap);
-}
-section [role=listitem],
-div [role=listitem],
-ul [role=listitem] {
-  flex: 1 1 calc(100% / var(--cols, 3) - var(--gap));
-  --py: var(--rem);
-  --px: var(--rem);
-}
-section [role=listitem] * + *,
-div [role=listitem] * + *,
-ul [role=listitem] * + * {
-  --py: var(--gap) 0;
-}
-
 /*  Component: elements.scss */
 /* flex styles */
 [style*="--flex"] {
@@ -529,5 +524,3 @@ Website: https://shawnsandy.github.io/first-paint/
 License: MIT
 ***************************************
 */
-
-/*# sourceMappingURL=index.css.map */
