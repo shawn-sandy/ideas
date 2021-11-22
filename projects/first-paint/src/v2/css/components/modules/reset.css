@@ -76,7 +76,7 @@ video,
   justify-content: var(--justify, initial);
   align-items: var(--align, initial);
   gap: var(--gap, initial);
-  wrap: var(--wrap, initial);
+  flex-wrap: var(--wrap, initial);
   grow: var(--grow, initial);
   shrink: var(--shrink, initial);
   --dsp: block;
