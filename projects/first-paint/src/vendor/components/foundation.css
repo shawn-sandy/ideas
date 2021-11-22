@@ -14,6 +14,23 @@
  Date: 2021-04-01
  ***************************************
 */
+footer[role=contentinfo] > section,
+footer[role=contentinfo] > div {
+  --dsp: flex;
+  --wrap: wrap;
+  --py: 3rem;
+}
+footer[role=contentinfo] > section > div {
+  flex: 1 1 calc(100% / var(--cols, 3) - var(--gap));
+}
+footer[role=contentinfo] > section > div + * {
+  --py: 0;
+}
+footer[role=contentinfo] > div {
+  --w: 100%;
+  --justify: center;
+}
+
 /*
  ***************************************
  FirsPaint
@@ -28,6 +45,12 @@ nav {
   --align: center;
   --justify: space-between;
   --h: var(--nav-h, var(--s8));
+  --mx: auto;
+}
+@media (min-width: 61.25rem) {
+  nav {
+    --max-w: var(--container, var(--pct-8));
+  }
 }
 nav section {
   --dsp: flex;
