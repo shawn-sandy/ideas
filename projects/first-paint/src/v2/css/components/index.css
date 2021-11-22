@@ -258,7 +258,17 @@ footer {
   --dsp: block;
   --px: 1rem;
   --py: auto;
+  --mx: auto;
 }
+@media (min-width: 61.25rem) {
+  main,
+body > section,
+footer {
+    --max-w: var(--container, var(--pct-8));
+    --px: 0;
+  }
+}
+
 header,
 nav {
   --px: 0;
@@ -319,6 +329,10 @@ p + p {
   --py: 1rem 0;
 }
 
+hr {
+  --border: none;
+}
+
 /*
  ***************************************
  FirsPaint
@@ -349,6 +363,12 @@ nav {
   --align: center;
   --justify: space-between;
   --h: var(--nav-h, var(--s8));
+  --mx: auto;
+}
+@media (min-width: 61.25rem) {
+  nav {
+    --max-w: var(--container, var(--pct-8));
+  }
 }
 nav section {
   --dsp: flex;

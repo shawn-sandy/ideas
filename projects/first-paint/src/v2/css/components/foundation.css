@@ -28,6 +28,12 @@ nav {
   --align: center;
   --justify: space-between;
   --h: var(--nav-h, var(--s8));
+  --mx: auto;
+}
+@media (min-width: 61.25rem) {
+  nav {
+    --max-w: var(--container, var(--pct-8));
+  }
 }
 nav section {
   --dsp: flex;

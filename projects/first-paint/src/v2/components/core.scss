@@ -66,10 +66,10 @@ footer {
   --dsp: block;
   --px: 1rem;
   --py: auto;
+  --mx: auto;
   @media (min-width: calc(980rem / 16)) {
-    // --max-w: var(--pct-8);
-    // --dsp: flex;
-    // --justify: center;
+    --max-w: var(--container, var(--pct-8));
+    --px: 0;
   }
 }
 
@@ -135,4 +135,8 @@ p {
   + p {
     --py: 1rem 0;
   }
+}
+
+hr {
+  --border: none;
 }

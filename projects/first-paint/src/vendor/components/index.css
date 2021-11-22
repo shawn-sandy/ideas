@@ -258,8 +258,8 @@ body > section,
 footer {
   --dsp: block;
   --px: 1rem;
+  --py: auto;
 }
-
 header,
 nav {
   --px: 0;
@@ -500,6 +500,28 @@ div[role=row] [role=gridcell],
 }
 div[role=row] [role=gridcell] * + *,
 [style="--role"] [role=gridcell] * + * {
+  --py: var(--gap) 0;
+}
+
+section[role=list], section[style*="--list"],
+div[role=list],
+div[style*="--list"],
+ul[role=list],
+ul[style*="--list"] {
+  --dsp: flex;
+  --gap: var(--rem);
+  --wrap: var(--row-wrap, wrap);
+}
+section [role=listitem],
+div [role=listitem],
+ul [role=listitem] {
+  flex: 1 1 calc(100% / var(--cols, 3) - var(--gap));
+  --py: var(--rem);
+  --px: var(--rem);
+}
+section [role=listitem] * + *,
+div [role=listitem] * + *,
+ul [role=listitem] * + * {
   --py: var(--gap) 0;
 }
 

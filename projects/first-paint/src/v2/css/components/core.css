@@ -162,7 +162,17 @@ footer {
   --dsp: block;
   --px: 1rem;
   --py: auto;
+  --mx: auto;
 }
+@media (min-width: 61.25rem) {
+  main,
+body > section,
+footer {
+    --max-w: var(--container, var(--pct-8));
+    --px: 0;
+  }
+}
+
 header,
 nav {
   --px: 0;
@@ -221,6 +231,10 @@ a :active {
 
 p + p {
   --py: 1rem 0;
+}
+
+hr {
+  --border: none;
 }
 
 /*# sourceMappingURL=core.css.map */

@@ -15,6 +15,10 @@ nav {
   --align: center;
   --justify: space-between;
   --h: var(--nav-h, var(--s8));
+  --mx: auto;
+  @media (min-width: calc(980rem / 16)) {
+    --max-w: var(--container, var(--pct-8));
+  }
   section {
     --dsp: flex;
     --align: center;

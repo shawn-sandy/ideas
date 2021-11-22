@@ -162,8 +162,8 @@ body > section,
 footer {
   --dsp: block;
   --px: 1rem;
+  --py: auto;
 }
-
 header,
 nav {
   --px: 0;
