@@ -6,7 +6,7 @@ h5,
 h6,
 p {
   --fw: var(--fw-medium);
-  line-height: var(--line-height);
+  line-height: var(--lh);
   color: var(--cl);
   margin: var(--m);
   font-weight: var(--fw);
@@ -46,7 +46,7 @@ h6 {
 
 small,
 time {
-  --fs: var(--fs);
+  --fs: var(--s1);
 }
 
 time {
@@ -55,11 +55,11 @@ time {
 
 p {
   margin: 0;
-  line-height: 1.7;
+  --fw: normal;
+  --lh: 1.7;
   i {
     font-style: italic;
   }
-  --fw: normal;
   strong {
     font-weight: var(--fw-medium);
   }

@@ -137,6 +137,7 @@
   justify-content: var(--justify, initial);
   text-align: var(--txa);
   border-radius: var(--b-rds);
+  line-height: var(--lh);
 }
 
 :root {

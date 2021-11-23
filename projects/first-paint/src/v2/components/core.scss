@@ -43,6 +43,7 @@ title {
   justify-content: var(--justify, initial);
   text-align: var(--txa);
   border-radius: var(--b-rds);
+  line-height: var(--lh);
 }
 
 :root {
@@ -52,6 +53,10 @@ title {
   --container-xl: calc(1980rem / 16);
   --container: 100%;
   @include maps.cp(tokens.$modifiers);
+}
+
+body {
+
 }
 
 footer[role="contentinfo"],
