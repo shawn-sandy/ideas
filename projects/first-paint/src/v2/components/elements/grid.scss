@@ -18,16 +18,21 @@ div[role="row"],
   --wrap: var(--row-wrap, wrap);
 }
 
-[role="grid"],
-[role="list"] {
-  [role="gridcell"],
-  [role="list"],
-  [role="listitem"] {
-    flex: var(--col-flex, 1 1 calc(100% / var(--cols, 4) - var(--gap)));
-    --py: var(--rem);
-    --px: var(--rem);
-    * + * {
-      --py: var(--rem) 0;
-    }
+[role="gridcell"],
+[role="listitem"],
+[style*="--grid"] {
+  flex: var(--col-flex, 1 1 calc(100% / var(--cols, 4) - var(--gap)));
+  --py: var(--rem);
+  --px: var(--rem);
+  * + * {
+    --py: var(--rem) 0;
   }
+}
+
+[role="gridcell"] {
+  --cols: 4;
+}
+
+[role="listitem"] {
+  --cols: 3;
 }

@@ -47,23 +47,25 @@ div[role=row],
   --wrap: var(--row-wrap, wrap);
 }
 
-[role=grid] [role=gridcell],
-[role=grid] [role=list],
-[role=grid] [role=listitem],
-[role=list] [role=gridcell],
-[role=list] [role=list],
-[role=list] [role=listitem] {
+[role=gridcell],
+[role=listitem],
+[style*="--grid"] {
   flex: var(--col-flex, 1 1 calc(100% / var(--cols, 4) - var(--gap)));
   --py: var(--rem);
   --px: var(--rem);
 }
-[role=grid] [role=gridcell] * + *,
-[role=grid] [role=list] * + *,
-[role=grid] [role=listitem] * + *,
-[role=list] [role=gridcell] * + *,
-[role=list] [role=list] * + *,
-[role=list] [role=listitem] * + * {
+[role=gridcell] * + *,
+[role=listitem] * + *,
+[style*="--grid"] * + * {
   --py: var(--rem) 0;
+}
+
+[role=gridcell] {
+  --cols: 4;
+}
+
+[role=listitem] {
+  --cols: 3;
 }
 
 /*  Component: elements.scss */
