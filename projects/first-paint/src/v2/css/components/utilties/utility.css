@@ -10,9 +10,8 @@ p {
   color: var(--cl);
   margin: var(--m);
   font-weight: var(--fw);
-  overflow-wrap: var(--overflow, var(--break));
-  word-break: var(--word-break, break-all);
-  hyphens: var(--hyphens, auto);
+  overflow-wrap: var(--overflow);
+  word-break: var(--word-break, break-word);
   --fx-weight: var(--fw-medium);
   text-shadow: var(--shadow);
   padding-block: var(--py, var(--p));
