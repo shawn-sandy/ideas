@@ -9,8 +9,10 @@ nav {
   --justify: space-between;
   --h: var(--nav-h, var(--s8));
   --mx: auto;
+  --bg: whitesmoke;
   @media (min-width: calc(980rem / 16)) {
-    --max-w: var(--container-md, var(--pct-8));
+    // --max-w: var(--container-md, var(--pct-8));
+    --px: calc(10% - 1rem);
   }
   section {
     --dsp: flex;
@@ -18,5 +20,9 @@ nav {
     + section {
       --py: 0;
     }
+  }
+
+  img {
+    --px: 0 var(--s1);
   }
 }

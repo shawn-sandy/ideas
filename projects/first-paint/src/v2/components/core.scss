@@ -13,8 +13,7 @@ title {
   // display: none !important;
 }
 
-*,
-[style] {
+* {
   @include maps.cp(tokens.$styles);
   @include maps.cp(tokens.$layout);
   @include maps.cp(tokens.$units);
@@ -55,8 +54,8 @@ title {
   @include maps.cp(tokens.$modifiers);
 }
 
-body {
-
+body * {
+  // display: var(--dsp);
 }
 
 footer[role="contentinfo"],
@@ -78,8 +77,8 @@ footer {
   --py: auto;
   --mx: auto;
   @media (min-width: calc(980rem / 16)) {
-    --max-w: var(--container-md, var(--pct-8));
-    --px: 0;
+    // --max-w: var(--container-md, var(--pct-8));
+    --px: calc(10% - 1rem);
   }
 }
 

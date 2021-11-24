@@ -69,8 +69,7 @@ ruby,
 section,
 summary,
 audio,
-video,
-[style] {
+video {
   display: var(--dsp, initial);
   flex-direction: var(--direction, initial);
   justify-content: var(--justify, initial);
@@ -100,8 +99,7 @@ i {
  ***************************************
 */
 /* Name: core.scss */
-*,
-[style] {
+* {
   --cl: var(--color, initial);
   --fs: var(--font-size, 1rem);
   --fst: var(--font-style, normal);
@@ -270,8 +268,7 @@ footer {
   main,
 body > section,
 footer {
-    --max-w: var(--container-md, var(--pct-8));
-    --px: 0;
+    --px: calc(10% - 1rem);
   }
 }
 
@@ -380,10 +377,11 @@ nav {
   --justify: space-between;
   --h: var(--nav-h, var(--s8));
   --mx: auto;
+  --bg: whitesmoke;
 }
 @media (min-width: 61.25rem) {
   nav {
-    --max-w: var(--container-md, var(--pct-8));
+    --px: calc(10% - 1rem);
   }
 }
 nav section {
@@ -392,6 +390,9 @@ nav section {
 }
 nav section + section {
   --py: 0;
+}
+nav img {
+  --px: 0 var(--s1);
 }
 
 /* menubar */

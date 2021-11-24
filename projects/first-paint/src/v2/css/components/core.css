@@ -4,8 +4,7 @@
  ***************************************
 */
 /* Name: core.scss */
-*,
-[style] {
+* {
   --cl: var(--color, initial);
   --fs: var(--font-size, 1rem);
   --fst: var(--font-style, normal);
@@ -174,8 +173,7 @@ footer {
   main,
 body > section,
 footer {
-    --max-w: var(--container-md, var(--pct-8));
-    --px: 0;
+    --px: calc(10% - 1rem);
   }
 }
 

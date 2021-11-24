@@ -39,10 +39,11 @@ nav {
   --justify: space-between;
   --h: var(--nav-h, var(--s8));
   --mx: auto;
+  --bg: whitesmoke;
 }
 @media (min-width: 61.25rem) {
   nav {
-    --max-w: var(--container-md, var(--pct-8));
+    --px: calc(10% - 1rem);
   }
 }
 nav section {
@@ -51,6 +52,9 @@ nav section {
 }
 nav section + section {
   --py: 0;
+}
+nav img {
+  --px: 0 var(--s1);
 }
 
 /* menubar */

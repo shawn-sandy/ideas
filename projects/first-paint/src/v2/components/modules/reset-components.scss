@@ -69,8 +69,7 @@ ruby,
 section,
 summary,
 audio,
-video,
-[style] {
+video {
   display: var(--dsp, initial);
   flex-direction: var(--direction, initial);
   justify-content: var(--justify, initial);

@@ -36,6 +36,7 @@
   },
   "scripts": {
     "start": "run-p watch:* 11ty",
+    "serve": "serve dist/index.html",
     "watch": "run-p watch:*",
     "11ty": "eleventy --serve",
     "11ty-prod": "eleventy",

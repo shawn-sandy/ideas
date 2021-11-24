@@ -69,8 +69,7 @@ ruby,
 section,
 summary,
 audio,
-video,
-[style] {
+video {
   display: var(--dsp, initial);
   flex-direction: var(--direction, initial);
   justify-content: var(--justify, initial);
@@ -94,4 +93,4 @@ i {
   --dsp: inline-block;
 }
 
-/*# sourceMappingURL=reset.css.map */
+/*# sourceMappingURL=reset-components.css.map */
