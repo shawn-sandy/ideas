@@ -1,30 +1,43 @@
 /* component: button.scss */
-button,
+button[type],
 [style*="--btn"] {
   --pill: 99rem;
   --bg: lightgray;
   --dsp: inline-flex;
   --align: center;
+  --lh: 1;
   --h: calc(36rem / 16);
   --px: 1.5rem;
+  --py: 1rem;
   --border: var(--line);
-  --b-rds: var(--btn-rds, var(--rds));
+  --rads: var(--btn-rds, var(--rds));
+  --fs: var(--s2);
 }
-button:any-link,
-button a,
+button[type]:any-link,
+button[type] a,
 [style*="--btn"]:any-link,
 [style*="--btn"] a {
   --txd: none;
   --cl: var(--btn-cl, var(--dark));
 }
-button:hover,
+button[type]:hover,
 [style*="--btn"]:hover {
   --cursor: pointer;
   --bg: var(--btn-hover-bg, var(--dark));
   --cl: var(--btn-hover-cl, var(--light));
 }
-[style*="--btn-rds"] {
-  --b-rds: var(--btn-rds, var(--pill));
+button[type][type=reset],
+[style*="--btn"][type=reset] {
+  --line: medium solid var(--btn-cl, lightgray);
+  --bg: transparent;
+}
+button[type][type=reset]:hover,
+[style*="--btn"][type=reset]:hover {
+  --btn-hover-cl: var(--dark);
+}
+
+button[type][style*="--btn-pill"] {
+  --rads: var(--btn-pill, var(--pill));
 }
 
 /*# sourceMappingURL=button.css.map */

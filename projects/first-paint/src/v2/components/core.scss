@@ -41,7 +41,7 @@ title {
   max-width: var(--max-w);
   justify-content: var(--justify, initial);
   text-align: var(--txa);
-  border-radius: var(--b-rds);
+  border-radius: var(--rads);
   line-height: var(--lh);
 }
 
@@ -148,4 +148,9 @@ p {
 
 hr {
   --border: none;
+}
+
+button,
+[style*="--btn"] {
+  font-size: var(--fs);
 }

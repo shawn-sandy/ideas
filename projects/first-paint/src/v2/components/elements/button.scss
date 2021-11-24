@@ -2,16 +2,19 @@
 
 @use "../../modules/utilities/maps";
 
-button,
+button[type],
 [style*="--btn"] {
   --pill: 99rem;
   --bg: lightgray;
   --dsp: inline-flex;
   --align: center;
+  --lh: 1;
   --h: calc(36rem / 16);
   --px: 1.5rem;
+  --py: 1rem;
   --border: var(--line);
-  --b-rds: var(--btn-rds, var(--rds));
+  --rads: var(--btn-rds, var(--rds));
+  --fs: var(--s2);
   &:any-link,
   a {
     --txd: none;
@@ -25,9 +28,14 @@ button,
   &[type="submit"] {
   }
   &[type="reset"] {
+    --line: medium solid var(--btn-cl, lightgray);
+    --bg: transparent;
+    &:hover {
+      --btn-hover-cl: var(--dark);
+    }
   }
 }
 
-[style*="--btn-rds"] {
-  --b-rds: var(--btn-rds, var(--pill));
+button[type][style*="--btn-pill"] {
+  --rads: var(--btn-pill, var(--pill));
 }
