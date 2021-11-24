@@ -4,6 +4,7 @@
 
 button,
 [style*="--btn"] {
+  --pill: 99rem;
   --bg: lightgray;
   --dsp: inline-flex;
   --align: center;
@@ -25,4 +26,8 @@ button,
   }
   &[type="reset"] {
   }
+}
+
+[style*="--btn-pill"] {
+  --btn-rds: var(--btn-pill, --pill);
 }

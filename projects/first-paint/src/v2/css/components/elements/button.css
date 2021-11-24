@@ -1,6 +1,7 @@
 /* component: button.scss */
 button,
 [style*="--btn"] {
+  --pill: 99rem;
   --bg: lightgray;
   --dsp: inline-flex;
   --align: center;
@@ -21,6 +22,9 @@ button:hover,
   --cursor: pointer;
   --bg: var(--btn-hover-bg, var(--dark));
   --cl: var(--btn-hover-cl, var(--light));
+}
+[style*="--btn-pill"] {
+  --btn-rds: var(--btn-pill, --pill);
 }
 
 /*# sourceMappingURL=button.css.map */
