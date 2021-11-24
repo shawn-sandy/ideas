@@ -27,7 +27,3 @@ button,
   &[type="reset"] {
   }
 }
-
-[style*="--btn-pill"] {
-  --btn-rds: var(--btn-pill, --pill);
-}
