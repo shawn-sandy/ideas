@@ -1,40 +1,33 @@
-div,
-section {
-  &[role="grid"] {
-    --py: var(--rem);
-  }
+[role="grid"] {
+  --py: var(--rem);
 }
 
 div[role="row"],
-[style="--role"] {
+[style="--row"] {
   --dsp: flex;
   --gap: var(--rem);
   --wrap: var(--row-wrap, wrap);
   [role="gridcell"] {
-    flex: 1 1 calc(100% / var(--cols, 4) - var(--gap));
-    --py: var(--rem);
-    --px: var(--rem);
-    * + * {
-      --py: var(--gap) 0;
-    }
   }
 }
 
-section,
-div,
-ul {
-  &[role="list"],
-  &[style*="--list"] {
-    --dsp: flex;
-    --gap: var(--rem);
-    --wrap: var(--row-wrap, wrap);
-  }
+[role="list"],
+[style*="--list"] {
+  --dsp: flex;
+  --gap: var(--rem);
+  --wrap: var(--row-wrap, wrap);
+}
+
+[role="grid"],
+[role="list"] {
+  [role="gridcell"],
+  [role="list"],
   [role="listitem"] {
-    flex: 1 1 calc(100% / var(--cols, 3) - var(--gap));
+    flex: var(--col-flex, 1 1 calc(100% / var(--cols, 4) - var(--gap)));
     --py: var(--rem);
     --px: var(--rem);
     * + * {
-      --py: var(--gap) 0;
+      --py: var(--rem) 0;
     }
   }
 }
