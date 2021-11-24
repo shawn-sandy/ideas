@@ -548,6 +548,10 @@ button:hover,
   --bg: var(--btn-hover-bg, var(--dark));
   --cl: var(--btn-hover-cl, var(--light));
 }
+[style*="--btn-rds"] {
+  --b-rds: var(--btn-rds, var(--pill));
+}
+
 /*
  ***************************************
  FirsPaint

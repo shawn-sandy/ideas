@@ -1,0 +1,14 @@
+// footer[role="contentinfo"] {
+//   position: sticky;
+//   margin-top: 500px;
+// }
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  main {
+    --py: 3rem;
+    --dsp: grid;
+    place-items: center;
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "layout": "components.njk",
+  "layout": "elements.njk",
   "title": "Components",
   "tags": "components",
   "category": "components",

@@ -10,20 +10,23 @@
       <link rel="stylesheet" href="/v2/css/index.css"/>
     {% endblock %}
   </head>
-  <body>
+  <body class="{{ title | slug }}">
     <header>
-      {% include "./_partials/navbar-mobile.html" %}
+      {% block nav %}
+        {% include "./_partials/navbar-mobile.html" %}
+      {% endblock %}
       <!-- banner -->
-      {% include "./_partials/header.html" %}
+      {% block header %}
+        {% include "./_partials/header.html" %}
+      {% endblock %}
     </header>
     <!-- feature section -->
     {% block feature %}
       <section aria-label="feature">
         {% include "./_partials/grid.html" %}
       </section>
-      {% include "./_partials/grid-component.html" %}
+      {% include "./_partials/grid-component.html" %} <hr/>
     {% endblock %}
-    <hr/>
     <main>
       {% block main %}
         {%- include "_partials/main-content.html" %}

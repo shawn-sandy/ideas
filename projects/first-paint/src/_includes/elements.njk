@@ -1,0 +1,14 @@
+{% extends 'index.njk' %}
+{% block styles %}
+  <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css"/>
+  <link rel="stylesheet" href="/v2/css/components/index.css"/>
+  <link rel="stylesheet" href="/v2/css/components/layouts/cover.css"/>
+{% endblock %}
+{% block header %}{% endblock %}
+{% block feature %}{% endblock %}
+{% block main %}
+  {{ content | safe }}
+  <div>
+    {{ description | safe }}
+  </div>
+{% endblock %}
