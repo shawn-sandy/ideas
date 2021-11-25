@@ -146,8 +146,12 @@ p {
   }
 }
 
-hr {
+hr,
+[style*="--hr"] {
   --border: none;
+  height: 1px;
+  border-bottom: var(--hr-border, 1px solid var(--light));
+  --my: var(--hr-my, 2rem);
 }
 
 button,
