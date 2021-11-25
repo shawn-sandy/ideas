@@ -12,7 +12,7 @@ button[type],
   --h: calc(44rem / 16);
   --h-sm: calc(32rem / 16);
   --h-lg: calc(60rem / 16);
-  --px: 2.3rem;
+  --px: 2.1rem;
   --py: var(--btn-py-sm);
   --border: var(--line);
   --rads: var(--btn-rds, var(--rds));
@@ -61,7 +61,7 @@ button[type][style*="--btn-sm"],
 [style*="--btn-sm"] {
   --h: var(--btn-sm, var(--h-sm));
   --fs: var(--s1);
-  --px: var(--px-sm, 1.5rem);
+  --px: var(--px-sm, 1.2rem);
 }
 
 button[type][style*="--btn-lg"],
