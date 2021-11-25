@@ -4,9 +4,9 @@
 
 button[type],
 [style*="--btn"] {
-  --btn-py-sm: 1rem 0.8rem;
-  --btn-py-md: 1.3rem 1.1rem;
-  --btn-py-lg: 1.5rem 1.2rem;
+  --btn-py-sm: 1rem 0.9rem;
+  --btn-py-md: 1.3rem 1.2rem;
+  --btn-py-lg: 1.5rem 1.4rem;
   --pill: 99rem;
   --bg: lightgray;
   --dsp: inline-flex;
@@ -39,6 +39,7 @@ button[type],
   }
 }
 
-button[type][style*="--btn-pill"] {
+button[type][style*="--btn-pill"],
+[style*="--btn-pill"] {
   --rads: var(--btn-pill, var(--pill));
 }
