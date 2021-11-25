@@ -602,7 +602,7 @@ button[type][style*="--btn-lg"],
   --h: var(--btn-lg, var(--h-lg));
   --fs: var(--rem);
   --py: var(--btn-py-lg);
-  --px: var(--px-lg, 2.5rem);
+  --px: var(--px-lg, 2.7rem);
 }
 
 /*
