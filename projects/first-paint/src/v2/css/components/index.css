@@ -531,6 +531,9 @@ ul[role=menubar] :any-link {
 /* component: button.scss */
 button[type],
 [style*="--btn"] {
+  --btn-py-sm: 1rem 0.8rem;
+  --btn-py-md: 1.3rem 1.1rem;
+  --btn-py-lg: 1.5rem 1.2rem;
   --pill: 99rem;
   --bg: lightgray;
   --dsp: inline-flex;
@@ -538,7 +541,7 @@ button[type],
   --lh: 1;
   --h: calc(36rem / 16);
   --px: 1.5rem;
-  --py: 1rem 0.8rem;
+  --py: var(--btn-py-sm);
   --border: var(--line);
   --rads: var(--btn-rds, var(--rds));
   --fs: var(--s2);
