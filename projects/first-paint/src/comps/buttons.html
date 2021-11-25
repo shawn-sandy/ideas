@@ -3,21 +3,55 @@ title: Button Components
 description: Button Components example with
 ---
 
-<div>
+
+<section>
   <div>
-    <button>Undefined Button</button>
+    <button type="button" style="--btn-sm">Small Button</button>
   </div>
   <div>
-    <button type="button">Simple Button</button>
+    <button type="submit" style="--btn-sm">Submit</button>
   </div>
   <div>
-    <button type="submit">Submit Button</button>
-  </div>
-  <div>
-    <button type="reset">Reset Button</button>
+    <button type="reset" style="--btn-sm">Reset</button>
   </div>
 
   <div>
-    <button type="button" style="--btn-pill: 99rem">Pill Button</button>
+    <button type="button" style="--btn-pill; --btn-sm">
+      Pill Button
+    </button>
   </div>
-</div>
+</section>
+
+<section>
+  <div>
+    <button type="button">Default Button</button>
+  </div>
+  <div>
+    <button type="submit">Submit</button>
+  </div>
+  <div>
+    <button type="reset">Reset</button>
+  </div>
+
+  <div>
+    <button type="button" style="--btn-pill">Pill Button</Button:disabled></button>
+  </div>
+</section>
+
+<section>
+  <div>
+    <button type="button" style="--btn-lg">Large Button</button>
+  </div>
+  <div>
+    <button type="submit" style="--btn-lg">Submit</button>
+  </div>
+  <div>
+    <button type="reset" style="--btn-lg">Reset</button>
+  </div>
+
+  <div>
+    <button type="button" style="--btn-pill: 50rem; --btn-lg">
+      Pill Button
+    </button>
+  </div>
+</section>

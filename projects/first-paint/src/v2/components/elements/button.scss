@@ -12,12 +12,15 @@ button[type],
   --dsp: inline-flex;
   --align: center;
   --lh: 1;
-  --h: calc(36rem / 16);
-  --px: 1.5rem;
+  --h: calc(44rem / 16);
+  --h-sm: calc(32rem / 16);
+  --h-lg: calc(60rem / 16);
+  --px: 2.3rem;
   --py: var(--btn-py-sm);
   --border: var(--line);
   --rads: var(--btn-rds, var(--rds));
   --fs: var(--s2);
+  --fw: var(--btn-fw, 700);
   &:any-link,
   a {
     --txd: none;
@@ -25,16 +28,24 @@ button[type],
   }
   &:hover {
     --cursor: pointer;
+    --cl: var(--btn-hover-cl, var(--white));
     --bg: var(--btn-hover-bg, var(--dark));
-    --cl: var(--btn-hover-cl, var(--light));
   }
+
   &[type="submit"] {
-  }
-  &[type="reset"] {
-    --line: medium solid var(--btn-cl, lightgray);
-    --bg: transparent;
+    --bg: var(--submit-bg, navy);
+    --cl: var(--btn-cl, var(--white));
+    // --line: medium solid var(--btn-cl, var(--bg));
     &:hover {
-      --btn-hover-cl: var(--dark);
+      --bg: var(--submit-hover-bg, var(--dark));
+    }
+  }
+
+  &[type="reset"] {
+    --bg: var(--reset-bg, transparent);
+    --line: medium solid var(--reset-cl, lightgray);
+    &:hover {
+      --bg: var(--reset-hover-bg, var(--dark));
     }
   }
 }
@@ -42,4 +53,19 @@ button[type],
 button[type][style*="--btn-pill"],
 [style*="--btn-pill"] {
   --rads: var(--btn-pill, var(--pill));
+}
+
+button[type][style*="--btn-sm"],
+[style*="--btn-sm"] {
+  --h: var(--btn-sm, var(--h-sm));
+  --fs: var(--s1);
+  --px: var(--px-sm, 1.5rem);
+}
+
+button[type][style*="--btn-lg"],
+[style*="--btn-lg"] {
+  --h: var(--btn-lg, var(--h-lg));
+  --fs: var(--s3);
+  --py: var(--btn-py-lg);
+  --px: var(--px-lg, 3rem);
 }

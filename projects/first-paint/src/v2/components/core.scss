@@ -153,4 +153,5 @@ hr {
 button,
 [style*="--btn"] {
   font-size: var(--fs);
+  box-sizing: border-box;
 }

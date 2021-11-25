@@ -60,6 +60,8 @@ $modifiers: (
 
 $colors: (
   // named colors
+  "black": #000,
+  "white": #fff,
   "off-white": "hsl(240, 100%, 96%)",
   "dark": "hsl(0, 0%, 9%)",
   "light": "lightgray",
@@ -136,7 +138,7 @@ $units: (
   "vw-xl": 70vw,
   "vw-2xl": 90vw,
   // radius
-  "rds": 0.2rem,
+  "rds": 0.17rem,
   "rds-xs": 0.3rem,
   "rds-sm": 0.5rem,
   "rds-md": 0.8rem,

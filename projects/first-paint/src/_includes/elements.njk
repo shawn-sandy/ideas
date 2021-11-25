@@ -7,8 +7,10 @@
 {% block header %}{% endblock %}
 {% block feature %}{% endblock %}
 {% block main %}
-  {{ content | safe }}
-  <div>
-    {{ description | safe }}
-  </div>
-{% endblock %}
+  <h3>{{ title }}</h3>
+  <hr>
+    {{ content | safe }}
+    <div>
+      {{ description | safe }}
+    </div>
+  {% endblock %}

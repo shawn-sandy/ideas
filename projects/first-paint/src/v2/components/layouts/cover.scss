@@ -10,5 +10,13 @@ body {
     --py: 3rem;
     --dsp: grid;
     place-items: center;
+    > section,
+    div {
+      --dsp: flex;
+      --align: center;
+      + div {
+        --py: 0;
+      }
+    }
   }
 }

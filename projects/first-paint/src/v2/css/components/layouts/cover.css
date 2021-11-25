@@ -7,5 +7,14 @@ body main {
   --dsp: grid;
   place-items: center;
 }
+body main > section,
+body main div {
+  --dsp: flex;
+  --align: center;
+}
+body main > section + div,
+body main div + div {
+  --py: 0;
+}
 
 /*# sourceMappingURL=cover.css.map */

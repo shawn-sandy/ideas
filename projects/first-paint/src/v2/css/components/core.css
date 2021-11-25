@@ -96,13 +96,15 @@
   --vw-lg: 50vw;
   --vw-xl: 70vw;
   --vw-2xl: 90vw;
-  --rds: 0.2rem;
+  --rds: 0.17rem;
   --rds-xs: 0.3rem;
   --rds-sm: 0.5rem;
   --rds-md: 0.8rem;
   --rds-lg: 1.3rem;
   --rds-xl: 1.8rem;
   --rds-pill: 99rem;
+  --black: #000;
+  --white: #fff;
   --off-white: hsl(240, 100%, 96%);
   --dark: hsl(0, 0%, 9%);
   --light: lightgray;
@@ -244,6 +246,7 @@ hr {
 button,
 [style*="--btn"] {
   font-size: var(--fs);
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=core.css.map */
