@@ -21,6 +21,7 @@ button[type],
   --rads: var(--btn-rds, var(--rds));
   --fs: var(--s2);
   --fw: var(--btn-fw, 700);
+  transition: background-color 1s ease-out;
   &:any-link,
   a {
     --txd: none;

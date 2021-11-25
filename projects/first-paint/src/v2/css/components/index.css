@@ -551,6 +551,7 @@ button[type],
   --rads: var(--btn-rds, var(--rds));
   --fs: var(--s2);
   --fw: var(--btn-fw, 700);
+  transition: background-color 1s ease-out;
 }
 button[type]:any-link,
 button[type] a,
