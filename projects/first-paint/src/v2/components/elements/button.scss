@@ -20,7 +20,8 @@ button[type],
   --border: var(--line);
   --rads: var(--btn-rds, var(--rds));
   --fs: var(--s2);
-  --fw: var(--btn-fw, 700);
+  --fw: var(--btn-fw, 500);
+  --cl: var(--btn-cl, var(--dark));
   transition: background-color 1s ease-out;
   &:any-link,
   a {

@@ -246,6 +246,7 @@ hr {
 button,
 [style*="--btn"] {
   font-size: var(--fs);
+  font-weight: var(--fw);
   box-sizing: border-box;
 }
 
