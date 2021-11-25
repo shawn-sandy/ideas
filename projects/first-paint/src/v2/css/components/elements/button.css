@@ -67,7 +67,7 @@ button[type][style*="--btn-sm"],
 button[type][style*="--btn-lg"],
 [style*="--btn-lg"] {
   --h: var(--btn-lg, var(--h-lg));
-  --fs: var(--s3);
+  --fs: var(--rem);
   --py: var(--btn-py-lg);
   --px: var(--px-lg, 2.5rem);
 }
