@@ -538,7 +538,7 @@ button[type],
   --lh: 1;
   --h: calc(36rem / 16);
   --px: 1.5rem;
-  --py: 1rem;
+  --py: 1rem 0.8rem;
   --border: var(--line);
   --rads: var(--btn-rds, var(--rds));
   --fs: var(--s2);
