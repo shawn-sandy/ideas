@@ -1,16 +1,16 @@
 body {
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: var(--grid-rows, auto 1fr auto);
 }
 body main {
   --py: 3rem;
   --dsp: grid;
-  place-items: center;
+  place-items: var(--placement, center);
 }
 body main > section,
 body main div {
   --dsp: flex;
-  --align: center;
+  --align: flex-start;
 }
 body main > section + div,
 body main div + div {

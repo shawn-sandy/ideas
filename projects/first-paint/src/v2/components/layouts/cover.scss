@@ -5,15 +5,15 @@
 
 body {
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: var(--grid-rows, auto 1fr auto);
   main {
     --py: 3rem;
     --dsp: grid;
-    place-items: center;
+    place-items: var(--placement, center);
     > section,
     div {
       --dsp: flex;
-      --align: center;
+      --align: flex-start;
       + div {
         --py: 0;
       }
