@@ -10,7 +10,8 @@
     <h2>Components</h2>
     <hr>
       <section>
-        {% for item in collections['components'] %}
+        {% set components = collections['components'].sort() %}
+        {% for item in components %}
           <article>
             <h5>
               <a href="{{ item.url }}" style="--fs: var(--lg); --cl: var(--dark); --my: 0 var(--rem)">{{ item.data.title }}</a>
@@ -26,4 +27,7 @@
           {% endfor %}
         </section>
       </section>
+    {% endblock %}
+    {% block scripts %}
+      <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
     {% endblock %}
