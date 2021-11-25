@@ -9,6 +9,7 @@ body {
   main {
     --py: 3rem;
     --dsp: grid;
+    --min-w: 100%;
     place-items: var(--placement, center);
     > section,
     div {

@@ -6,23 +6,24 @@
 {% endblock %}
 {% block feature %}{% endblock %}
 {% block main %}
-  <section style="--direction: column; --justify: flex-start; --align:initial">
+  <section style="--direction: column; --justify: flex-start; --align:initial; --min-w: 100%">
     <h2>Components</h2>
     <hr>
-      <article>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa repellendus facilis inventore in eaque voluptatibus
-          dolorem. Ratione quidem quasi magnam officiis molestiae omnis fugiat blanditiis, repudiandae sed exercitationem
-          repellat. Aliquam?</p>
-      </article>
-      <article>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa repellendus facilis inventore in eaque voluptatibus
-          dolorem. Ratione quidem quasi magnam officiis molestiae omnis fugiat blanditiis, repudiandae sed exercitationem
-          repellat. Aliquam?</p>
-      </article>
-      <article>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa repellendus facilis inventore in eaque voluptatibus
-          dolorem. Ratione quidem quasi magnam officiis molestiae omnis fugiat blanditiis, repudiandae sed exercitationem
-          repellat. Aliquam?</p>
-      </article>
-    </section>
-  {% endblock %}
+      <section>
+        {% for item in collections['components'] %}
+          <article>
+            <h5>
+              <a href="{{ item.url }}" style="--fs: var(--lg); --cl: var(--dark); --my: 0 var(--rem)">{{ item.data.title }}</a>
+            </h5>
+            <p style="--fs: var(--md); --cl: gray">
+              {{ item.data.description }}
+            </p>
+            <p>
+              <a href="{{ item.url }}" style="--btn-pill">View Component</a>
+            </p>
+          </article>
+          <hr style="hr-my: var(--rem)">
+          {% endfor %}
+        </section>
+      </section>
+    {% endblock %}

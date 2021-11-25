@@ -74,7 +74,7 @@ p strong {
 
 p + p,
 p + * {
-  margin-top: 2rem;
+  margin-top: var(--rem);
 }
 
 p + * {
@@ -263,8 +263,8 @@ img[alt] {
 }
 img[alt]::after {
   min-height: 48px;
-  height: calc(200rem / 16);
-  width: calc(200rem / 16);
+  height: 12.5rem;
+  width: 12.5rem;
   content: "•" " " attr(alt);
   position: absolute;
   top: 0;

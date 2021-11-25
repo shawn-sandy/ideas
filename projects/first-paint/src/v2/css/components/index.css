@@ -734,7 +734,7 @@ p strong {
 
 p + p,
 p + * {
-  margin-top: 2rem;
+  margin-top: var(--rem);
 }
 
 /** utility.scss */

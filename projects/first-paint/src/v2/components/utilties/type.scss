@@ -66,5 +66,5 @@ p {
 
 p + p,
 p + * {
-  margin-top: 2rem;
+  margin-top: var(--rem);
 }
