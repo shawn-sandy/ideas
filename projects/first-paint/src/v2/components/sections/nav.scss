@@ -14,6 +14,13 @@ nav {
     // --max-w: var(--container-md, var(--pct-8));
     --px: calc(10% - 1rem);
   }
+  @media (max-width: calc(700rem / 16)) {
+    --dsp: block;
+    --w: 100%;
+    --h: auto;
+    --py: var(--rem);
+    --justify: center;
+  }
   section {
     --dsp: flex;
     --align: center;

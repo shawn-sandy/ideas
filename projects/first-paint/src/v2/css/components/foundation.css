@@ -46,6 +46,15 @@ nav {
     --px: calc(10% - 1rem);
   }
 }
+@media (max-width: 43.75rem) {
+  nav {
+    --dsp: block;
+    --w: 100%;
+    --h: auto;
+    --py: var(--rem);
+    --justify: center;
+  }
+}
 nav section {
   --dsp: flex;
   --align: center;
