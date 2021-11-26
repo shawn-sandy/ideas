@@ -138,11 +138,11 @@ div[role=row],
     --cols: var(--cols-lg, 4);
   }
 }
-@media (min-width: 87.5rem) {
+@media (min-width: 100rem) {
   [role=gridcell],
 [role=listitem],
 [style*="--grid"] {
-    --cols: var(--cols-lg, 5);
+    --cols: var(--cols-xxl, 5);
   }
 }
 

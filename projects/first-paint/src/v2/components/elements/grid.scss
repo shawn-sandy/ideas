@@ -41,7 +41,7 @@ div[role="row"],
   @media (max-width: calc(1400rem /16)) and (min-width: calc(1280rem /16)) {
     --cols: var(--cols-lg, 4);
   }
-  @media (min-width: calc(1400rem /16)) {
-    --cols: var(--cols-lg, 5);
+  @media (min-width: calc(1600rem /16)) {
+    --cols: var(--cols-xxl, 5);
   }
 }

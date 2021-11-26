@@ -15,7 +15,7 @@ $font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
   "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
   "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 
-$styles: (
+$props: (
   "cl": var(--color, initial),
   "fs": var(--font-size, 1rem),
   "fst": var(--font-style, normal),
@@ -39,9 +39,6 @@ $styles: (
   "wsp": var(--word-spacing, normal),
   "before": intial,
   "after": intial,
-);
-
-$layout: (
   "w": var(--width, auto),
   "h": var(--height, auto),
   "p": var(--padding, initial),
@@ -52,9 +49,6 @@ $layout: (
   "my": var(--margin-block, initial),
   "dsp": initial,
   "pos": var(--position, initial),
-);
-
-$modifiers: (
   "line": thin solid lightgray,
   "cursor": auto,
   "rad": intial,
@@ -147,4 +141,11 @@ $units: (
   "rds-lg": 1.3rem,
   "rds-xl": 1.8rem,
   "rds-pill": 99rem,
+  // containers
+  "container-xs": calc(768rem / 16),
+  "container-sm": calc(992rem / 16),
+  "container-md": calc(1280rem / 16),
+  "container-lg": calc(1400rem / 16),
+  "container-xl": calc(1600rem / 16),
+  "container": 100%,
 );

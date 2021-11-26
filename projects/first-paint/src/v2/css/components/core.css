@@ -38,6 +38,37 @@
   --my: var(--margin-block, initial);
   --dsp: initial;
   --pos: var(--position, initial);
+  --line: thin solid lightgray;
+  --cursor: auto;
+  --rad: intial;
+  box-sizing: border-box;
+  font-family: var(--ff);
+  font-size: var(--fs);
+  padding-inline: var(--px);
+  padding-block: var(--py);
+  margin-inline: var(--mx);
+  margin-block: var(--my);
+  width: var(--w);
+  height: var(--h);
+  list-style: var(--li-style);
+  color: var(--cl, black);
+  align-items: var(--align);
+  background-color: var(--bg, white);
+  border: var(--border, 0);
+  text-decoration: var(--txd);
+  cursor: var(--cursor);
+  width: var(--w);
+  min-height: var(--min-h);
+  max-height: var(--max-h);
+  min-width: var(--min-w);
+  max-width: var(--max-w);
+  justify-content: var(--justify, initial);
+  text-align: var(--txa);
+  border-radius: var(--rads);
+  line-height: var(--lh);
+}
+
+:root {
   --gap: 1rem;
   --gap-sm: var(--sm);
   --gap-md: var(--md);
@@ -105,6 +136,12 @@
   --rds-lg: 1.3rem;
   --rds-xl: 1.8rem;
   --rds-pill: 99rem;
+  --container-xs: 48rem;
+  --container-sm: 62rem;
+  --container-md: 80rem;
+  --container-lg: 87.5rem;
+  --container-xl: 100rem;
+  --container: 100%;
   --black: #000;
   --white: #fff;
   --off-white: hsl(240, 100%, 96%);
@@ -116,42 +153,6 @@
   --danger: hsl(348, 98%, 38%);
   --highlight: hsl(54, 100%, 90%);
   --text: var(dark);
-  box-sizing: border-box;
-  font-family: var(--ff);
-  font-size: var(--fs);
-  padding-inline: var(--px);
-  padding-block: var(--py);
-  margin-inline: var(--mx);
-  margin-block: var(--my);
-  width: var(--w);
-  height: var(--h);
-  list-style: var(--li-style);
-  color: var(--cl, black);
-  align-items: var(--align);
-  background-color: var(--bg, white);
-  border: var(--border, 0);
-  text-decoration: var(--txd);
-  cursor: var(--cursor);
-  width: var(--w);
-  min-height: var(--min-h);
-  max-height: var(--max-h);
-  min-width: var(--min-w);
-  max-width: var(--max-w);
-  justify-content: var(--justify, initial);
-  text-align: var(--txa);
-  border-radius: var(--rads);
-  line-height: var(--lh);
-}
-
-:root {
-  --container-sm: calc(1280rem / 16);
-  --container-md: calc(1440rem / 16);
-  --container-lg: calc(1600rem / 16);
-  --container-xl: calc(1980rem / 16);
-  --container: 100%;
-  --line: thin solid lightgray;
-  --cursor: auto;
-  --rad: intial;
 }
 
 ::before {

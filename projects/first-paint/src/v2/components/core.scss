@@ -14,10 +14,7 @@ title {
 }
 
 * {
-  @include maps.cp(tokens.$styles);
-  @include maps.cp(tokens.$layout);
-  @include maps.cp(tokens.$units);
-  @include maps.cp(tokens.$colors);
+  @include maps.cp(tokens.$props);
   box-sizing: border-box;
   font-family: var(--ff);
   font-size: var(--fs);
@@ -46,13 +43,8 @@ title {
 }
 
 :root {
-  --container-sm: calc(1280rem / 16);
-  --container-md: calc(1440rem / 16);
-  --container-lg: calc(1600rem / 16);
-  --container-xl: calc(1980rem / 16);
-  --container: 100%;
-
-  @include maps.cp(tokens.$modifiers);
+  @include maps.cp(tokens.$units);
+  @include maps.cp(tokens.$colors);
 }
 
 ::before {
