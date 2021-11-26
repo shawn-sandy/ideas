@@ -26,6 +26,8 @@
   --lts: var(--letter-spacing, normal);
   --ws: var(--white-space, normal);
   --wsp: var(--word-spacing, normal);
+  --before: intial;
+  --after: intial;
   --w: var(--width, auto);
   --h: var(--height, auto);
   --p: var(--padding, initial);
@@ -150,6 +152,14 @@
   --line: thin solid lightgray;
   --cursor: auto;
   --rad: intial;
+}
+
+::before {
+  content: var(--before);
+}
+
+::after {
+  content: var(--after);
 }
 
 footer[role=contentinfo],

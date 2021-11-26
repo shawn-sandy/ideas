@@ -51,7 +51,16 @@ title {
   --container-lg: calc(1600rem / 16);
   --container-xl: calc(1980rem / 16);
   --container: 100%;
+
   @include maps.cp(tokens.$modifiers);
+}
+
+::before {
+  content: var(--before);
+}
+
+::after {
+  content: var(--after);
 }
 
 body * {

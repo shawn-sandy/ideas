@@ -37,6 +37,8 @@ $styles: (
   "lts": var(--letter-spacing, normal),
   "ws": var(--white-space, normal),
   "wsp": var(--word-spacing, normal),
+  "before": intial,
+  "after": intial,
 );
 
 $layout: (
