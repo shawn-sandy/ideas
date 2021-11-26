@@ -139,6 +139,9 @@ a {
   :active {
     --cl: navy;
   }
+  * {
+    --cursor: pointer;
+  }
 }
 
 p {

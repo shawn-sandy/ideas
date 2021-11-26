@@ -399,6 +399,10 @@ a:visited,
 a :active {
   --cl: navy;
 }
+:any-link *,
+a * {
+  --cursor: pointer;
+}
 
 p + p {
   --py: 1rem 0;
