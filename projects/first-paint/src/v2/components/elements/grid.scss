@@ -27,12 +27,21 @@ div[role="row"],
   * + * {
     --py: var(--rem) 0;
   }
-}
+  @media (max-width: calc(768rem /16)) {
+    --cols: var(--cols-xs, 1);
+  }
+  @media (max-width: calc(992rem /16)) and (min-width: calc(768rem /16)) {
+    --cols: var(--cols-sm, 2);
+  }
 
-[role="gridcell"] {
-  --cols: 4;
-}
+  @media (max-width: calc(1280rem /16)) and (min-width: calc(992rem /16)) {
+    --cols: var(--cols-md, 3);
+  }
 
-[role="listitem"] {
-  --cols: 3;
+  @media (max-width: calc(1400rem /16)) and (min-width: calc(1280rem /16)) {
+    --cols: var(--cols-lg, 4);
+  }
+  @media (min-width: calc(1400rem /16)) {
+    --cols: var(--cols-lg, 5);
+  }
 }

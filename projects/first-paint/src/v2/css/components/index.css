@@ -648,13 +648,40 @@ div[role=row],
 [style*="--grid"] * + * {
   --py: var(--rem) 0;
 }
-
-[role=gridcell] {
-  --cols: 4;
+@media (max-width: 48rem) {
+  [role=gridcell],
+[role=listitem],
+[style*="--grid"] {
+    --cols: var(--cols-xs, 1);
+  }
 }
-
-[role=listitem] {
-  --cols: 3;
+@media (max-width: 62rem) and (min-width: 48rem) {
+  [role=gridcell],
+[role=listitem],
+[style*="--grid"] {
+    --cols: var(--cols-sm, 2);
+  }
+}
+@media (max-width: 80rem) and (min-width: 62rem) {
+  [role=gridcell],
+[role=listitem],
+[style*="--grid"] {
+    --cols: var(--cols-md, 3);
+  }
+}
+@media (max-width: 87.5rem) and (min-width: 80rem) {
+  [role=gridcell],
+[role=listitem],
+[style*="--grid"] {
+    --cols: var(--cols-lg, 4);
+  }
+}
+@media (min-width: 87.5rem) {
+  [role=gridcell],
+[role=listitem],
+[style*="--grid"] {
+    --cols: var(--cols-lg, 5);
+  }
 }
 
 /*  Component: elements.scss */
