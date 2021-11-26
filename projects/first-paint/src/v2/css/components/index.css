@@ -410,6 +410,7 @@ hr,
   height: 1px;
   border-bottom: var(--hr-border, 1px solid var(--light));
   --my: var(--hr-my, 2rem);
+  --min-width: 100%;
 }
 
 button,
@@ -557,6 +558,7 @@ button[type],
   --bg: lightgray;
   --dsp: inline-flex;
   --align: center;
+  --justify: center;
   --lh: 1;
   --h: calc(44rem / 16);
   --h-sm: calc(32rem / 16);
@@ -698,9 +700,11 @@ div[role=row],
 /*  Component: elements.scss */
 /* flex styles */
 [style*="--flex"] {
-  display: var(--dsp, flex);
   --dsp: flex;
-  --gap: 1rem;
+  --gap: var(--flex-gap, 1rem);
+  --wrap: var(--flex-wrap, wrap);
+  --align: var(--flex-align, center);
+  --justify: var(--flex-justify, start);
 }
 
 /** styles **/

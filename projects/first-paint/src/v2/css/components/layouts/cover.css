@@ -6,7 +6,7 @@ body main {
   --py: 3rem;
   --dsp: grid;
   --min-w: 100%;
-  place-items: var(--placement, center);
+  place-items: var(--placement, start);
 }
 body main > section,
 body main div {

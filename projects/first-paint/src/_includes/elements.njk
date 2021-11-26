@@ -13,4 +13,16 @@
     <div>
       {{ description | safe }}
     </div>
-  {% endblock %}
+    <hr>
+      {% set components = collections['components'] %}
+      {{ hlp.sort(components, 'fileSlug') }}
+      <div style="--flex-justify: flex-start; --min-w: 100%; --py: var(--s4)">
+        {% for item in components %}
+          <a href="{{ item.url }}" style="--btn-lg; --btn-pill; --min-w: 100px">
+            {{ item.data.title }}
+            <span class="icon-arrow-right"></span>
+          </a>
+        {% endfor %}
+      </div>
+      <hr>
+      {% endblock %}

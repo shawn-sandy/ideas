@@ -8,6 +8,7 @@ button[type],
   --bg: lightgray;
   --dsp: inline-flex;
   --align: center;
+  --justify: center;
   --lh: 1;
   --h: calc(44rem / 16);
   --h-sm: calc(32rem / 16);

@@ -10,7 +10,7 @@ body {
     --py: 3rem;
     --dsp: grid;
     --min-w: 100%;
-    place-items: var(--placement, center);
+    place-items: var(--placement, start);
     > section,
     div {
       --dsp: flex;

@@ -71,9 +71,11 @@ p + * {
 
 /* flex styles */
 [style*="--flex"] {
-  display: var(--dsp, flex);
   --dsp: flex;
-  --gap: 1rem;
+  --gap: var(--flex-gap, 1rem);
+  --wrap: var(--flex-wrap, wrap);
+  --align: var(--flex-align, center);
+  --justify: var(--flex-justify, start);
 }
 
 /** utility.scss */
