@@ -1,8 +1,8 @@
 {
-  "title": "FirstPaint (v.2.B)",
+  "title": "FirstPaint",
   "subtitle": "Lightweight, Fast, Accessible, Inclusive",
   "url": "https://shawnsandy.dev",
-  "description": "First paint is a performance-first, accessibility-driven, classless, SCSS/CSS micro-framework for modern frontend development.",
+  "description": "First paint is a performance-first, accessibility-driven, SCSS/CSS micro-framework",
   "logo_url": "/images/nav-logo.svg",
   "feed": {
     "subtitle": "A UI toolkit for creating and managing design/style systems, pattern libraries, style-guides, etc",

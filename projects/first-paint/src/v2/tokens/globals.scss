@@ -2,6 +2,7 @@
  ***************************************
  FirsPaint
  Author: Shawn Sandy
+ Tokens: Globals
  Date: 2021-04-01
  ***************************************
 */
@@ -115,6 +116,11 @@ $globals: (
 );
 
 // custom properties mixin
+
+$styles: (
+  // colors
+  "cl": var(--color, initial)
+);
 
 @mixin custom-properties {
 }
