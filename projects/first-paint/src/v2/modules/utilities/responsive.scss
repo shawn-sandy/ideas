@@ -6,9 +6,9 @@
 
 @include media-query(980px) {
   [data-show-mobile] {
-    display: none;
+    // display: none;
   }
   [data-show-desktop] {
-    display: inline-flex;
+    //display: inline-flex;
   }
 }

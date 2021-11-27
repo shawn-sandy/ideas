@@ -98,12 +98,15 @@ $tokens: ();
     box-sizing: var(--box);
     border: var(--border-w) var(--border-s) var(--border-cl);
     display: var(--dsp, var(--display));
-    width: var(--w, var(--width));
-    padding-block: var(--px);
-    padding-inline: var(--py);
+    width: var(--w);
+    padding-block: var(--py);
+    padding-inline: var(--px);
+    margin-block: var(--my);
+    margin-inline: var(--mx);
     color: var(--cl, var(--color));
     padding: var(--p, var(--padding));
     font-size: var(--fs, var(--font-size));
+    z-index: var(--z, var(--layer));
   }
 
   q,
@@ -153,7 +156,6 @@ $tokens: ();
   audio,
   video {
     --dsp: inline;
-    font-size: var(--fs);
   }
 
   // style section elements
@@ -172,7 +174,7 @@ $tokens: ();
   ul,
   div,
   summary {
-    --dsp: block;
+    display: var(--dsp, block);
     align-items: var(--align-items);
     font-size: var(--fs);
     min-height: var(--min-h, var(--h));
@@ -180,13 +182,14 @@ $tokens: ();
     padding-block: var(--py);
     padding-inline: var(--px);
     text-align: var(--align, var(--text-align));
+    z-index: var(--z, var(--layer));
   }
 
   section {
     gap: var(--gap);
     &:not(body > section) {
-      padding-block: var(--px, initial);
-      padding-inline: var(--py);
+      padding-block: var(--py, initial);
+      padding-inline: var(--px);
     }
   }
 }
@@ -194,6 +197,7 @@ $tokens: ();
 @mixin layout-containers {
   summary,
   details,
+  blockquote,
   figcaption {
     padding-block: var(--py);
     padding-inline: var(--px);

@@ -1,0 +1,21 @@
+body {
+  display: grid;
+  grid-template-rows: var(--grid-rows, auto 1fr auto);
+}
+body main {
+  --py: 3rem;
+  --dsp: grid;
+  --min-w: 100%;
+  place-items: var(--placement, start);
+}
+body main > section,
+body main div {
+  --dsp: flex;
+  --align: flex-start;
+}
+body main > section + div,
+body main div + div {
+  --py: 0;
+}
+
+/*# sourceMappingURL=cover.css.map */

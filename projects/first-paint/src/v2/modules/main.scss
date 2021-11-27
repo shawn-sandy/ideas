@@ -17,7 +17,7 @@ $tokens: (
 }
 
 @mixin mix-main {
-  min-height: var(--min-height);
+  min-height: var(--min-h var(--min-height));
   padding-block: var(--md);
   > section {
     --px: 0;

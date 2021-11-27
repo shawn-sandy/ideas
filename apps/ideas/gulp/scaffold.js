@@ -27,15 +27,16 @@ const arg = ((argList) => {
 
 const scaffold = (sourceFolder, targetFolder = "packages") => {
   let packageName = arg.name || arg.n;
+  // deepcode ignore GlobalReplacementRegex: <please specify a reason of ignoring this>
   let packageTitle = capitalize(packageName.replace("-", " "));
   const dirs = [
     `scaffolds/${sourceFolder}/**/*`,
     `scaffolds/${sourceFolder}/.*`,
-    `scaffolds/${sourceFolder}/*.*`,
+    `scaffolds/${sourceFolder}/*.*`
   ];
   gulp
     .src(dirs, {
-      base: `./scaffolds/${sourceFolder}`,
+      base: `./scaffolds/${sourceFolder}`
     })
     .pipe(replace("package-name", packageName))
     .pipe(replace("package-title", packageTitle))

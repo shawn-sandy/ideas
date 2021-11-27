@@ -15,14 +15,22 @@ $render: true !default;
 }
 
 @mixin nav {
-  display: var(--dsp);
-
+  display: var(--nav-dsp, var(--dsp));
+  --py: var(--nav-py, 1rem);
+  background: var(--bg, #fff);
+  --mx: var(--nav-py, 0rem);
+  --px: var(--nav-py, 1rem);
   @media (min-width: 980px) {
-    --dsp: flex;
-    --align: center;
+    --dsp: var(--nav-dsp, flex);
+    --align: var(--nav-align, center);
     --min-h: 80px;
-    justify-content: var(--justify-b);
+    --py: 0;
+    --px: 0;
+    --mx: auto;
+    --position: fixed;
+    justify-content: var(--justify, space-between);
     height: var(--nav-height);
+    --bg: transparent;
   }
 
   @media (max-width: 780px) {
@@ -33,6 +41,11 @@ $render: true !default;
   li {
     font-size: var(--fs);
     --fs: var(--sm);
+  }
+  :any-link {
+    &:hover {
+      --decoration: underline;
+    }
   }
   span {
     --bg: transparent;
@@ -47,6 +60,8 @@ $render: true !default;
       &:hover {
         --decoration: none;
       }
+      @media (max-width: 780px) {
+      }
     }
     span {
       --dsp: inline-block;
@@ -56,6 +71,7 @@ $render: true !default;
 
   :where(> section, ul) {
     --dsp: flex;
+    flex-direction: var(--direction);
     --px: 0;
     --h: 60px;
     --align: center;
@@ -65,6 +81,11 @@ $render: true !default;
     font-size: var(--font-size);
     :any-link {
       font-size: var(--font-size);
+    }
+    @media (max-width: 780px) {
+      --direction: column;
+      --align: left;
+      --w: 100%;
     }
   }
 
@@ -78,6 +99,11 @@ $render: true !default;
       --ml: var(--s1);
     }
     --max: var(--2xl);
+  }
+
+  &:target {
+    display: flex;
+    visibility: visible;
   }
 }
 

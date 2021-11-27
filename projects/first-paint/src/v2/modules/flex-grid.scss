@@ -34,10 +34,17 @@ $tokens: (
   justify-content: var(--justify-b, space-between);
   gap: var(--gap, 1rem);
 
-  [role="listitem"] {
+  [role="listitem"],
+  [style*="--card"] {
+    flex-direction: var(--card-direction, column);
+    --dsp: flex;
     flex: var(--grid-flex);
     line-height: 1.6;
     width: var(--grid-w);
+    > * + * {
+      --mt: 1rem;
+      margin-top: var(--mt, 1rem);
+    }
 
     @media (min-width: 1680px) {
       --grid-flex: 1 1 24%;
@@ -52,6 +59,12 @@ $tokens: (
     @media (max-width: 680px) {
       --grid-flex: 1 1 98%;
       --grid-w: 49%;
+    }
+    section {
+      --dsp: flex;
+      --direction: column;
+      --grow: 1;
+      --flex: 2;
     }
   }
 }

@@ -1,11 +1,12 @@
-<nav data-mobile role="navigation">
-  <section>
-    <section data-show-mobile>
+<nav data-mobile role="menubar">
+  <section style="--gap: 1rem">
+    <section style="--mobile: ">
       <a
         role="button"
         aria-label="Navigation button"
         href="#sidebar"
         data-sidebar-button
+        onclick=""
       >
         <small>
           <span>
@@ -24,26 +25,25 @@
     </section>
     <section data-brand="">
       <h1>
-        <a href="/">
-          <img data-show-desktop data-brand src="/img/fp.svg" alt="" /><span
+        <a href="/" style="--flex">
+          <img style="--w: 3.5rem" data-brand src="/img/fp.svg" alt="" /><span
             data-show-desktop=""
           >
-            FirstPaint
+            {{ settings.title }} (ver{{ pkg.version}} Beta)
           </span>
         </a>
       </h1>
     </section>
   </section>
 
-  <section id="sidebar">
-    <ul>
+  <section id="sidebar" style="--laptop: ">
+    <ul role="menubar">
       <li><a href="/cover">CoverPage</a></li>
       <li><a href="/dashboard">Dashboard</a></li>
-      <li><a href="/v2">v2</a></li>
+      <li><a href="/v2">V2.0 Beta</a></li>
       <li>Text</li>
       <li>
-        <div data-show-mobile>
-          <hr />
+        <div data-show-mobile style="--mobile: ">
           <a href="#" data-sidebar-button>
             <span>
               <svg

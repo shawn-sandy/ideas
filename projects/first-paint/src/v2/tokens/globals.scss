@@ -2,6 +2,7 @@
  ***************************************
  FirsPaint
  Author: Shawn Sandy
+ Tokens: Globals
  Date: 2021-04-01
  ***************************************
 */
@@ -56,7 +57,7 @@ $globals: (
   // max-height
   "max-h": initial,
   // width
-  "w": initial,
+  "w": auto,
   // min-width
   "min-w": initial,
   // max-width
@@ -68,7 +69,7 @@ $globals: (
   // font-family
   "family": initial,
   // text-decoration
-  "decoration": initial,
+  "decoration": none,
   // text-transform
   "tts": initial,
   // shadow
@@ -105,6 +106,21 @@ $globals: (
   "align": initial,
   // gap
   "gap": initial,
+  // text-align
+  "t-align": initial,
+  "align-t": initial,
   // vertical-align
-  "valign": initial
+  "valign": initial,
+  // z-index
+  "z": initial
 );
+
+// custom properties mixin
+
+$styles: (
+  // colors
+  "cl": var(--color, initial)
+);
+
+@mixin custom-properties {
+}

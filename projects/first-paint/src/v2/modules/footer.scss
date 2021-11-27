@@ -30,11 +30,12 @@ $tokens: ();
       --p: var(--rem);
       --py: var(--xl);
       --gap: var(--rem);
+      --px: 0;
     }
     > div {
-      --align: center;
-      --p: 1rem;
-      --py: var(--xl);
+      --dsp: block;
+      --align-txt: center;
+      --py: 1rem;
     }
   }
 }

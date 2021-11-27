@@ -10,18 +10,32 @@
       <link rel="stylesheet" href="/v2/css/index.css"/>
     {% endblock %}
   </head>
-  <body>
+  <body class="{{ title | slug }}">
     <header>
-      {% include "./_partials/navbar-mobile.html" %}
+      {% block nav %}
+        {% include "./_partials/navbar-mobile.html" %}
+      {% endblock %}
       <!-- banner -->
-      {% include "./_partials/header.html" %}
+      {% block header %}
+        {% include "./_partials/header.html" %}
+      {% endblock %}
     </header>
     <!-- feature section -->
-    <section aria-label="feature">
-      {% include "./_partials/grid.html" %}
-    </section>
-    <hr/>
-    <main>{%- include "_partials/main-content.html" %}</main>
-    {% include "./_partials/footer.html" %}
+    {% block feature %}
+      <section aria-label="feature">
+        {% include "./_partials/grid.html" %}
+      </section>
+      {% include "./_partials/grid-component.html" %} <hr/>
+    {% endblock %}
+    <main>
+      {% block main %}
+        {%- include "_partials/main-content.html" %}
+      {% endblock %}
+    </main>
+    {% block footer %}
+      {% include "./_partials/footer.html" %}
+    {% endblock %}
+    {# <script src="https://cdn.jsdelivr.net/npm/@shawnsandy/code-clipper@0.2.0/lib/clipper.min.js"></script> #}
+    {% block scripts %}{% endblock %}
   </body>
 </html>

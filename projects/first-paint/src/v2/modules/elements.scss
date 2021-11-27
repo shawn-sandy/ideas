@@ -1,3 +1,11 @@
+/*
+ ***************************************
+ FirsPaint
+ Author: Shawn Sandy
+ Date: 2021-04-01
+ ***************************************
+*/
+
 // set variables
 // TODO Search and replace name with CSS tag/element name
 @use "./utilities/maps";
@@ -10,38 +18,46 @@ $tokens: ();
 // render component mixin
 @mixin renderComponent($renderContent: $render, $className: null) {
   @if ($renderContent) {
-    html {
-      @include maps.customProperties($tokens, $prefix);
-    }
-    @include elements();
+    // @include elements();
   }
 }
 
-@mixin elements() {
-  // TODO add mixin code
-  p,
-  li,
-  blockquote {
-    --dsp: block;
-    font-size: var(--fs);
-    text-decoration: var(--decoration);
-    border: var(--border);
-    padding: var(--p);
-    margin: var(--m);
-  }
+*,
+*::before,
+*::after,
+*::after {
+  box-sizing: border-box;
 }
 
+body {
+  color: var(--cl);
+  min-height: var(--min-h, 100vh);
+}
+
+// TODO add mixin code
+
+blockquote {
+  --dsp: block;
+}
+
+// layout containers
 header,
 footer,
 section {
-  min-height: var(--h);
+  min-height: var(--min-h);
   min-width: var(--w);
 }
 
 :any-link {
   color: var(--cl, var(--color));
-  text-decoration: var(--decoration);
+  text-decoration: var(--decoration, none);
   font-size: var(--fs);
+  border-width: var(--border-w);
+  border-style: var(--border-s);
+  border-color: var(--border-cl);
+  padding-inline: var(--x);
+  padding-block: var(--y);
+  border-radius: var(--border-rad);
   + * {
     margin-inline-start: var(--ml);
     --ml: var(--rem);
@@ -63,17 +79,8 @@ section {
 
   strong,
   div {
-    --dsp: var(--dsp-i);
-    display: inline-flex;
+    --dsp: block;
   }
-
-  &:hover {
-    --decoration: underline;
-  }
-}
-
-button {
-  @include mix.button();
 }
 
 blockquote {
@@ -86,44 +93,37 @@ blockquote {
   border-left: var(--border-w) var(--border-s) var(--border-cl);
 }
 
-article {
-  + article {
-    margin-block-start: var(--mt);
-  }
-}
-
 hr {
-  --py: var(--2xl);
-  margin-block: var(--py);
-  border: none;
+  --my: var(--2xl);
   --border-w: thin;
   --border-s: solid;
   --border-cl: var(--light);
   border-bottom: var(--border-w) var(--border-s) var(--border-cl);
 }
 
-[role="banner"] {
-  background: var(--bg, var(--bg-cl));
-  background-image: var(--bg-img);
-  min-height: var(--h, var(--height));
-  display: var(--dsp, flex);
-  flex-direction: var(--direction);
-  justify-content: var(--justify);
-  align-items: var(--align, center);
-  padding-block: var(--py, var(--p));
-  padding-inline: var(--px, var(--p));
-}
-
-img[alt] {
-  vertical-align: var(--valign, middle);
-  width: var(--w);
-  height: var(--h);
-  padding: var(--p);
-}
-
 @mixin config($_color: null, $_background-color: null) {
   $elements-color: $_color !global;
   $elements-background-color: $_background-color !global;
+}
+// label element
+label[for] {
+  em {
+    font-style: var(--fs-style);
+
+    &::before {
+      content: var(--content, "\2217");
+      color: var(--danger, var(--border-cl));
+    }
+  }
+
+  font-size: var(--fs, 0.9rem);
+  display: var(--dsp, block);
+  margin-bottom: var(--mb, 0.5rem);
+}
+
+:any-link:where(em strong b),
+button {
+  --fs-style: normal;
 }
 
 @include renderComponent();
