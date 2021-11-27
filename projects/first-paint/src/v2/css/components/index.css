@@ -360,7 +360,7 @@ footer {
   --py: auto;
   --mx: auto;
 }
-@media (min-width: 61.25rem) {
+@media (min-width: 62rem) {
   main,
 body > section,
 footer {

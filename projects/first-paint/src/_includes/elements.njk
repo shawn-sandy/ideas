@@ -13,6 +13,7 @@
     <div>
       {{ description | safe }}
     </div>
+    <hr/> {% include "./_partials/codesandbox.html" %}
     <hr>
       {% set components = collections['components'] %}
       {{ hlp.sort(components, 'fileSlug') }}
@@ -24,5 +25,4 @@
           </a>
         {% endfor %}
       </div>
-      <hr>
-      {% endblock %}
+    {% endblock %}

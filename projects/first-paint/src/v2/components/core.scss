@@ -92,8 +92,7 @@ footer {
   --px: 1rem;
   --py: auto;
   --mx: auto;
-  @media (min-width: calc(980rem / 16)) {
-    // --max-w: var(--container-md, var(--pct-8));
+  @media (min-width: calc(992rem / 16)) {
     --px: calc(10% - 1rem);
   }
 }
