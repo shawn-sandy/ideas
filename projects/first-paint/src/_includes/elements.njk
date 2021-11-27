@@ -13,7 +13,7 @@
     <div>
       {{ description | safe }}
     </div>
-    <hr/> {% include "./_partials/codesandbox.html" %}
+    {% include "./_partials/codesandbox.html" %}
     <hr>
       {% set components = collections['components'] %}
       {{ hlp.sort(components, 'fileSlug') }}
@@ -26,3 +26,4 @@
         {% endfor %}
       </div>
     {% endblock %}
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
