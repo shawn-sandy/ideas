@@ -13,7 +13,9 @@
     <div>
       {{ description | safe }}
     </div>
-    {% include "./_partials/codesandbox.html" %}
+    {% if codesandbox %}
+      {% include "./_partials/codesandbox.html" %}
+    {% endif %}
     <hr>
       {% set components = collections['components'] %}
       {{ hlp.sort(components, 'fileSlug') }}
