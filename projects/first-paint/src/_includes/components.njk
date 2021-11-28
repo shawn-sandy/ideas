@@ -12,11 +12,11 @@
       {{ hlp.sort(components, 'fileSlug') }}
       {% for item in components %}
         <span role="gridcell">
-          <div style="--card: ;--min-h: calc(220rem / 16)">
+          <div style="--card: ;--min-h: calc(260rem / 16)">
             <h5>
               <a href="{{ item.url }}" style="--fs: var(--lg); --cl: var(--dark); --my: 0 var(--rem)">{{ item.data.title }}</a>
             </h5>
-            <div style="--grow: 1">
+            <div>
               <p style="--cl: gray; --truncate: 3">
                 {{ item.data.description }}
               </p>

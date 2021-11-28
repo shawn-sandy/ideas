@@ -4,6 +4,7 @@
   grid-template-rows: auto 1fr auto;
   --h: 100%;
   --align: stretch;
+  --gap: var(--card-gap, 0) ;
 }
 
 /*# sourceMappingURL=card.css.map */
