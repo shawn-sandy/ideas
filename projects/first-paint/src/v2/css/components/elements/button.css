@@ -8,12 +8,12 @@ button[type],
   --bg: lightgray;
   --dsp: inline-flex;
   --align: center;
-  --justify: center;
+  --justify: space-between;
   --lh: 1;
   --h: calc(44rem / 16);
   --h-sm: calc(32rem / 16);
   --h-lg: calc(60rem / 16);
-  --px: 2.1rem;
+  --px: 1.9rem;
   --py: var(--btn-py-sm);
   --border: var(--line);
   --rads: var(--btn-rds, var(--rds));
@@ -47,7 +47,7 @@ button[type][type=submit]:hover,
 button[type][type=reset],
 [style*="--btn"][type=reset] {
   --bg: var(--reset-bg, transparent);
-  --line: medium solid var(--reset-cl, lightgray);
+  --line: thin solid var(--reset-cl, lightgray);
 }
 button[type][type=reset]:hover,
 [style*="--btn"][type=reset]:hover {
@@ -71,7 +71,7 @@ button[type][style*="--btn-lg"],
   --h: var(--btn-lg, var(--h-lg));
   --fs: var(--rem);
   --py: var(--btn-py-lg);
-  --px: var(--px-lg, 2.7rem);
+  --px: var(--px-lg, 2.8rem);
 }
 
 /*# sourceMappingURL=button.css.map */
