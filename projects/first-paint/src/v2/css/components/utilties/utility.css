@@ -69,6 +69,13 @@ p + * {
   margin-top: var(--rem);
 }
 
+[style*="--truncate"] {
+  --clamp: var(--truncate, 1);
+  --dsp: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 /* flex styles */
 [style*="--flex"] {
   --dsp: flex;

@@ -69,4 +69,11 @@ p + * {
   margin-top: var(--rem);
 }
 
+[style*="--truncate"] {
+  --clamp: var(--truncate, 1);
+  --dsp: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 /*# sourceMappingURL=type.css.map */

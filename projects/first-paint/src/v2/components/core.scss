@@ -35,6 +35,7 @@
   text-align: var(--txa);
   border-radius: var(--rads);
   line-height: var(--lh);
+  -webkit-line-clamp: var(--clamp, initial);
 }
 
 :root {

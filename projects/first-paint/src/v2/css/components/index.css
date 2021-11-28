@@ -220,6 +220,7 @@ i {
   text-align: var(--txa);
   border-radius: var(--rads);
   line-height: var(--lh);
+  -webkit-line-clamp: var(--clamp, initial);
 }
 
 :root {
@@ -814,6 +815,13 @@ p strong {
 p + p,
 p + * {
   margin-top: var(--rem);
+}
+
+[style*="--truncate"] {
+  --clamp: var(--truncate, 1);
+  --dsp: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 /** Card component **/
