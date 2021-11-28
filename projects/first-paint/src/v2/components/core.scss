@@ -140,8 +140,8 @@ blockquote {
   py: 1rem;
   mx: var(--elm-mx, --mx);
   my: var(--elm-my, --my);
-  --w: auto;
-  --h: auto;
+  --w: initial;
+  --h: initial;
 }
 
 :any-link,

@@ -119,7 +119,7 @@ video {
   align-items: var(--align, initial);
   gap: var(--gap, initial);
   flex-wrap: var(--wrap, initial);
-  grow: var(--grow, initial);
+  flex-grow: var(--grow, initial);
   shrink: var(--shrink, initial);
   --dsp: block;
 }
@@ -407,8 +407,8 @@ blockquote {
   py: 1rem;
   mx: var(--elm-mx, --mx);
   my: var(--elm-my, --my);
-  --w: auto;
-  --h: auto;
+  --w: initial;
+  --h: initial;
 }
 
 :any-link,
@@ -814,6 +814,14 @@ p strong {
 p + p,
 p + * {
   margin-top: var(--rem);
+}
+
+/** Card component **/
+[style*="--card"] {
+  --dsp: grid;
+  grid-template-rows: auto 1fr auto;
+  --h: 100%;
+  --align: stretch;
 }
 
 /** utility.scss */

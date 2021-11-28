@@ -1,0 +1,9 @@
+/** Card component **/
+[style*="--card"] {
+  --dsp: grid;
+  grid-template-rows: auto 1fr auto;
+  --h: 100%;
+  --align: stretch;
+}
+
+/*# sourceMappingURL=card.css.map */

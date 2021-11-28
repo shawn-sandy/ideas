@@ -11,23 +11,26 @@
       {% set components = collections['components'] %}
       {{ hlp.sort(components, 'fileSlug') }}
       {% for item in components %}
-        <span role="gridcell">
-          <h5>
-            <a href="{{ item.url }}" style="--fs: var(--lg); --cl: var(--dark); --my: 0 var(--rem)">{{ item.data.title }}</a>
-          </h5>
-          {# <p style="--fs: var(--md); --cl: gray">
-                                                    {{ item.data.description }}
-                                                  </p> #}
-          <hr>
-            <p>
+        <span role="gridcell" style="--h: 100%">
+          <div style="--card">
+            <h5>
+              <a href="{{ item.url }}" style="--fs: var(--lg); --cl: var(--dark); --my: 0 var(--rem)">{{ item.data.title }}</a>
+            </h5>
+            <div style="--grow: 1">
+              <p style="--fs: var(--md); --cl: gray">
+                {{ item.data.description }}
+              </p>
+            </div>
+            <div>
               <a href="{{ item.url }}" style="--btn-pill">View Component</a>
-            </p>
-          </span>
-        {% endfor %}
-      </div>
-    </section>
-  {% endblock %}
-  {% block scripts %}
-    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
-    {# <script src="/js/scripts.js"></script> #}
-  {% endblock %}
+            </div>
+          </div>
+        </span>
+      {% endfor %}
+    </div>
+  </section>
+{% endblock %}
+{% block scripts %}
+  <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
+  {# <script src="/js/scripts.js"></script> #}
+{% endblock %}

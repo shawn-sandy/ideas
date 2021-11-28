@@ -1,6 +1,6 @@
 image[alt] {
   --dsp: inline-block;
-  vertical-align: center;
+  vertical-align: var(--v-align, center);
   --w: 100%;
   --h: auto;
 }
