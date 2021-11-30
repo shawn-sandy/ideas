@@ -247,6 +247,7 @@ link,
 ul,
 p,
 form,
+code,
 blockquote {
   width: var(--w);
   height: var(--h);
@@ -293,6 +294,15 @@ button,
   font-size: var(--fs);
   font-weight: var(--fw);
   box-sizing: border-box;
+}
+
+code {
+  --cl: var(--code-cl, red);
+  --fs: var(--code-fs, var(--sm));
+  --px: var(--code-px, 0.5rem);
+  font-style: var(--code-fst, var(--fst, italic));
+  --py: var(--code-py, 0.1rem);
+  --rads: var(--code-rads, 0.2rem);
 }
 
 /*# sourceMappingURL=core.css.map */

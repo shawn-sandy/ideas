@@ -32,7 +32,7 @@ module.exports = function (eleventyConfig) {
       data: "/_data",
       output: "./dist",
     },
-    templateFormats: ["njk", "html"],
+    templateFormats: ["njk", "html", 'md'],
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk",
     passthroughFileCopy: true,

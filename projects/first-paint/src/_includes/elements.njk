@@ -10,9 +10,6 @@
   <h3>{{ title }}</h3>
   <hr>
     {{ content | safe }}
-    <div>
-      {{ description | safe }}
-    </div>
     {% if sandbox %}
       {% include "./_partials/codesandbox.html" %}
     {% endif %}

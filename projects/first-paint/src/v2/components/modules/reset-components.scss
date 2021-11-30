@@ -62,7 +62,6 @@ acronym,
 address,
 big,
 cite,
-code,
 del,
 dfn,
 img,
@@ -147,7 +146,8 @@ select,
 textarea,
 em,
 s,
-i {
+i,
+code {
   display: var(--dsp);
   --dsp: inline-block;
 }
