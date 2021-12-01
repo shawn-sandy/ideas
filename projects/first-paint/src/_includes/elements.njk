@@ -6,15 +6,16 @@
 {% endblock %}
 {% block header %}{% endblock %}
 {% block feature %}{% endblock %}
+{% import "_partials/sandbox.njk" as box %}
 {% block main %}
-  <h3>{{ title }}</h3>
+  <h2>{{ title }}</h2>
   <p style="--p-fs:var(--p-lg)">{{ description }}</p>
   {{ content | safe }}
   {% if sandbox %}
-    {% include "./_partials/codesandbox.html" %}
+    {{ box.demo(sandbox, title) }}
   {% endif %}
+  {% set components = collections['components'] %}
   <hr>
-    {% set components = collections['components'] %}
     {{ hlp.sort(components, 'fileSlug') }}
     <div style="--flex-justify: flex-start; --min-w: 100%; --py: var(--s4)">
       {% for item in components %}
