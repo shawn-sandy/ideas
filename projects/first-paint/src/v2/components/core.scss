@@ -146,6 +146,20 @@ blockquote {
   --h: initial;
 }
 
+div {
+  --dsp: block;
+  --px: 1rem;
+  --py: 1rem;
+  --mx: auto;
+  --my: auto;
+}
+
+button,
+link,
+ul {
+  display: var(--dsp, inline-block);
+}
+
 :any-link,
 a {
   --cl: blue;
@@ -180,14 +194,4 @@ button,
   font-size: var(--fs);
   font-weight: var(--fw);
   box-sizing: border-box;
-}
-
-code {
-  // --bg: var(--code-bg, var(--light));
-  --cl: var(--code-cl, red);
-  --fs: var(--code-fs, var(--sm));
-  --px: var(--code-px, 0.5rem);
-  font-style: var(--code-fst, var(--fst, italic));
-  --py: var(--code-py, 0.1rem);
-  --rads: var(--code-rads, 0.2rem);
 }

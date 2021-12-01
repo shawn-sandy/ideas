@@ -1,7 +1,7 @@
 pre,
 textarea[role=presentation],
 div[contenteditable] {
-  padding: 2rem;
+  padding: 1rem;
   margin: 2rem 0;
   background-color: var(--code-bg, var(--bg, #2b2b2b));
   line-height: 1.8;
@@ -37,16 +37,16 @@ div[contenteditable]::-webkit-scrollbar-thumb {
 pre code,
 textarea[role=presentation] code,
 div[contenteditable] code {
-  color: lightgray;
+  color: var(--alert);
+  line-height: var(--code-lh, 1.8);
   --bg: transparent;
   --w: 90%;
+  font-style: var(--code-fst, normal);
 }
 
-textarea[role=presentation],
-div[contenteditable] {
-  overflow: auto;
-  color: lightgray;
-  min-height: 300px;
+code {
+  --cl: var(--code-cl, #b61111);
+  font-style: italic;
 }
 
 /*# sourceMappingURL=code.css.map */

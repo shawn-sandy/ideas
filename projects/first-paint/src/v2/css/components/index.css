@@ -260,6 +260,8 @@ code {
   --8xl: var(--s12);
   --9xl: var(--s13);
   --10xl: var(--s14);
+  --lead: var(--s3);
+  --pitch: var(--s3);
   --d: var(--rem);
   --pct-1: 10%;
   --pct-2: 20%;
@@ -413,6 +415,20 @@ blockquote {
   --h: initial;
 }
 
+div {
+  --dsp: block;
+  --px: 1rem;
+  --py: 1rem;
+  --mx: auto;
+  --my: auto;
+}
+
+button,
+link,
+ul {
+  display: var(--dsp, inline-block);
+}
+
 :any-link,
 a {
   --cl: blue;
@@ -448,15 +464,6 @@ button,
   font-size: var(--fs);
   font-weight: var(--fw);
   box-sizing: border-box;
-}
-
-code {
-  --cl: var(--code-cl, red);
-  --fs: var(--code-fs, var(--sm));
-  --px: var(--code-px, 0.5rem);
-  font-style: var(--code-fst, var(--fst, italic));
-  --py: var(--code-py, 0.1rem);
-  --rads: var(--code-rads, 0.2rem);
 }
 
 /*
@@ -532,7 +539,6 @@ ul[role=menubar] {
   --dsp: flex;
   --gap: 1rem;
   --fs: 0.8rem;
-  --py: var(--rem);
 }
 ul[role=menubar] li,
 ul[role=menubar] :any-link {
@@ -748,7 +754,7 @@ div[role=row],
 pre,
 textarea[role=presentation],
 div[contenteditable] {
-  padding: 2rem;
+  padding: 1rem;
   margin: 2rem 0;
   background-color: var(--code-bg, var(--bg, #2b2b2b));
   line-height: 1.8;
@@ -784,16 +790,16 @@ div[contenteditable]::-webkit-scrollbar-thumb {
 pre code,
 textarea[role=presentation] code,
 div[contenteditable] code {
-  color: lightgray;
+  color: var(--alert);
+  line-height: var(--code-lh, 1.8);
   --bg: transparent;
   --w: 90%;
+  font-style: var(--code-fst, normal);
 }
 
-textarea[role=presentation],
-div[contenteditable] {
-  overflow: auto;
-  color: lightgray;
-  min-height: 300px;
+code {
+  --cl: var(--code-cl, #b61111);
+  font-style: italic;
 }
 
 /*  Component: elements.scss */
@@ -861,15 +867,22 @@ time {
   padding: 0 0 0.5rem;
 }
 
-p {
-  margin: 0;
+p,
+[style*="--p-"] {
+  --p-sm: var(--sm);
+  --p-md: var(--md);
+  --p-lg: var(--lg);
+  --fs: var(--p-fs, var(--rem));
+  margin: var(--p-m, 0);
   --fw: normal;
   --lh: 1.7;
 }
-p i {
+p i,
+[style*="--p-"] i {
   font-style: italic;
 }
-p strong {
+p strong,
+[style*="--p-"] strong {
   font-weight: var(--fw-medium);
 }
 

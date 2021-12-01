@@ -52,8 +52,13 @@ time {
   padding: 0 0 0.5rem;
 }
 
-p {
-  margin: 0;
+p,
+[style*="--p-"] {
+  --p-sm: var(--sm);
+  --p-md: var(--md);
+  --p-lg: var(--lg);
+  --fs: var(--p-fs, var(--rem));
+  margin: var(--p-m, 0);
   --fw: normal;
   --lh: 1.7;
   i {
