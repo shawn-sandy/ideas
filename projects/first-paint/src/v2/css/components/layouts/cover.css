@@ -12,6 +12,9 @@ body main > section,
 body main div {
   --dsp: flex;
   --align: flex-start;
+  --justify: flex-start;
+  --w: 100%;
+  --px: 0;
 }
 body main > section + div,
 body main div + div {

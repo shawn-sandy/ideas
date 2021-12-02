@@ -98,7 +98,11 @@ p + * {
   grid-template-rows: auto 1fr auto;
   --h: 100%;
   --align: stretch;
-  --gap: var(--card-gap, 0) ;
+  --gap: var(--card-gap, 0);
+}
+[style*="--card"] > div {
+  --h: 100%;
+  --w: 100%;
 }
 
 /** utility.scss */

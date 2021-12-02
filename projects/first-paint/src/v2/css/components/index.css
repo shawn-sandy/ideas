@@ -407,20 +407,17 @@ code,
 blockquote {
   width: var(--w);
   height: var(--h);
-  px: 1rem;
-  py: 1rem;
-  mx: var(--elm-mx, --mx);
-  my: var(--elm-my, --my);
+  --mx: var(--elm-mx, --mx);
+  --my: var(--elm-my, --my);
   --w: initial;
   --h: initial;
 }
 
 div {
   --dsp: block;
-  --px: 1rem;
-  --py: 1rem;
   --mx: auto;
   --my: auto;
+  --w: auto;
 }
 
 button,
@@ -904,7 +901,11 @@ p + * {
   grid-template-rows: auto 1fr auto;
   --h: 100%;
   --align: stretch;
-  --gap: var(--card-gap, 0) ;
+  --gap: var(--card-gap, 0);
+}
+[style*="--card"] > div {
+  --h: 100%;
+  --w: 100%;
 }
 
 /** utility.scss */

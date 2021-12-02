@@ -253,20 +253,17 @@ code,
 blockquote {
   width: var(--w);
   height: var(--h);
-  px: 1rem;
-  py: 1rem;
-  mx: var(--elm-mx, --mx);
-  my: var(--elm-my, --my);
+  --mx: var(--elm-mx, --mx);
+  --my: var(--elm-my, --my);
   --w: initial;
   --h: initial;
 }
 
 div {
   --dsp: block;
-  --px: 1rem;
-  --py: 1rem;
   --mx: auto;
   --my: auto;
+  --w: auto;
 }
 
 button,

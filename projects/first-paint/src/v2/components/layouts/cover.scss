@@ -15,6 +15,9 @@ body {
     div {
       --dsp: flex;
       --align: flex-start;
+      --justify: flex-start;
+      --w: 100%;
+      --px: 0;
       + div {
         --py: 0;
       }
