@@ -63,5 +63,8 @@
     "MD025": {
       "front_matter_title": ""
     }
-  }
+  },
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "markdown.replaceSmartQuotes": true
 }
