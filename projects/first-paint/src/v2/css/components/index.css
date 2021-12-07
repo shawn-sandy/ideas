@@ -703,14 +703,28 @@ div[role=row],
 [role=gridcell],
 [role=listitem],
 [style*="--grid"] {
+  --dsp: flex;
   flex: var(--col-flex, 1 1 calc(100% / var(--cols, 4) - var(--gap)));
   --py: var(--rem);
   --px: var(--rem);
+  --direction: var(--col-direction, column);
 }
 [role=gridcell] * + *,
 [role=listitem] * + *,
 [style*="--grid"] * + * {
   --py: var(--rem) 0;
+}
+[role=gridcell] section,
+[role=gridcell] [style*="--card-main"],
+[role=listitem] section,
+[role=listitem] [style*="--card-main"],
+[style*="--grid"] section,
+[style*="--grid"] [style*="--card-main"] {
+  --dsp: flex;
+  --direction: column;
+  --grow: 1;
+  --flex: 2;
+  height: var(--card-main-h);
 }
 @media (max-width: 48rem) {
   [role=gridcell],
@@ -746,6 +760,43 @@ div[role=row],
 [style*="--grid"] {
     --cols: var(--cols-xxl, 5);
   }
+}
+
+[style*="--fx-card"] {
+  flex-direction: var(--fx-card-direction, column);
+  --dsp: flex;
+  flex: var(--grid-flex);
+  line-height: 1.6;
+  width: var(--grid-w);
+}
+[style*="--fx-card"] > * + * {
+  --mt: 1rem;
+  margin-top: var(--mt, 1rem);
+}
+@media (min-width: 1680px) {
+  [style*="--fx-card"] {
+    --grid-flex: 1 1 24%;
+    --grid-w: 24%;
+  }
+}
+@media (max-width: 980px) {
+  [style*="--fx-card"] {
+    --grid-flex: 1 1 48%;
+    --grid-w: 48%;
+  }
+}
+@media (max-width: 680px) {
+  [style*="--fx-card"] {
+    --grid-flex: 1 1 98%;
+    --grid-w: 49%;
+  }
+}
+[style*="--fx-card"] section,
+[style*="--fx-card"] [style="--fx-card-main"] {
+  --dsp: flex;
+  --direction: column;
+  --grow: 1;
+  --flex: 2;
 }
 
 pre,
