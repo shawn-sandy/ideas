@@ -35,7 +35,8 @@
     "git:add": "git add .",
     "git:cz": "git cz",
     "git:push": "git push",
-    "commit": "run-s git:add git:cz git:push"
+    "commit": "run-s git:add git:cz git:push",
+    "prepare": "husky install"
   },
   "directories": {
     "lib": "dist",
@@ -88,6 +89,7 @@
     "gulp-sizereport": "^1.2.1",
     "gulp-string-replace": "^1.1.2",
     "html-minifier": "^4.0.0",
+    "husky": "^7.0.0",
     "lerna": "^4.0.0",
     "lerna-script": "^1.4.0",
     "lighthouse": "^7.4.0",
@@ -95,7 +97,7 @@
     "mvp": "git+https://github.com/shawn-sandy/mvp.git",
     "node-fetch": "^2.6.5",
     "npm-run-all": "^4.1.5",
-    "parcel": "2.0.0-beta.2",
+    "parcel": "^2.0.1",
     "require-dir": "^1.2.0",
     "sass": "^1.35.1",
     "standard": "^16.0.3",
