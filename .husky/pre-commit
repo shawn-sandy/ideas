@@ -3,3 +3,6 @@
 
 # npm test
 npx pretty-quick --staged
+
+# lint-stages
+npx lint-staged

@@ -106,9 +106,8 @@ div[role='row'],
     --grid-w: 49%;
   }
 }
-
-section,
-[style='--main:'] {
+[style*='--fx-card'] section,
+[style*='--fx-card'] div[style='--main:'] {
   flex: 1 0 auto;
 }
 
