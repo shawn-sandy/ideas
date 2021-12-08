@@ -2,12 +2,17 @@
 . "$(dirname "$0")/_/husky.sh"
 
 # npm test
-npx pretty-quick --staged
+npx pretty-quick --staged || (
+  echo "Prettier tests failed"
+  false
+)
 
 # lint-stages
 npx lint-staged||
 (
-        echo '😤🏀👋😤 Get that weak s**t out of here! 😤🏀👋😤
-                ESLint Check Failed. Make the required changes listed above, add changes and try to commit again.'
-        false;
+  echo "Eslint tests failed"
+  false
 )
+
+# If everything passes... Now we can commit
+echo '✅✅✅✅ Excellent all test passed, I am committing this now. ✅✅✅✅'
