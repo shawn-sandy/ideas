@@ -2,5 +2,4 @@
 . "$(dirname "$0")/_/husky.sh"
 
 # npm test
-npx pretty-quick --staged && exit 1
-# "echo ”[Husky] pre-commit”"
+npx pretty-quick --staged

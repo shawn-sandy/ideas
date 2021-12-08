@@ -59,8 +59,8 @@ div[role='row'],
 }
 
 [style*='--fx-card'] {
-  display: flex;
   flex-direction: var(--fx-card-direction, column);
+  --dsp: flex;
   flex: var(--grid-flex);
   line-height: 1.6;
   width: var(--grid-w);
@@ -83,9 +83,8 @@ div[role='row'],
     --grid-flex: 1 1 98%;
     --grid-w: 49%;
   }
-  section,
-  [style='--fx-card-body'] {
-    display: flex;
-    flex: 1 0 auto;
-  }
+}
+section,
+[style='--main:'] {
+  flex: 1 0 auto;
 }
