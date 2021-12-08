@@ -113,7 +113,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged && exit 1"
+      "pre-commit": "echo \"[Husky] pre-commit\""
     }
   }
 }
