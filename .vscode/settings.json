@@ -61,5 +61,7 @@
   },
   "javascript.preferences.quoteStyle": "single",
   "typescript.preferences.quoteStyle": "single",
-  "markdown.replaceSmartQuotes": true
+  "markdown.replaceSmartQuotes": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true
 }
