@@ -15,7 +15,7 @@ $title-font-size: 1.5rem !default;
 $brand-img-height: null !default;
 $align-items: flex-start !default;
 $justify-content: space-between !default;
-$brand-name: "brand name" !default;
+$brand-name: 'brand name' !default;
 
 @mixin renderComponent($renderComponent: $render, $className: null) {
   @if $renderComponent {
@@ -34,7 +34,7 @@ $brand-name: "brand name" !default;
       padding: $padding-y $padding-x;
       margin: 0 auto;
       margin-bottom: 0rem;
-      border-bottom: #{if($max-width, $border, "none")};
+      border-bottom: #{if($max-width, $border, 'none')};
       width: 100%;
 
       @media (min-width: 980px) {
@@ -129,7 +129,7 @@ $brand-name: "brand name" !default;
           }
         }
 
-        &[role="region"][aria-label] {
+        &[role='region'][aria-label] {
           flex-direction: row;
           justify-content: space-between;
         }
@@ -164,7 +164,7 @@ $brand-name: "brand name" !default;
             margin-top: 0;
           }
 
-          [role="region"][aria-label] {
+          [role='region'][aria-label] {
             width: auto;
             max-width: auto;
           }
@@ -177,7 +177,7 @@ $brand-name: "brand name" !default;
         }
 
         button[type],
-        a[role="button"] {
+        a[role='button'] {
           margin-bottom: 0;
         }
 
@@ -195,7 +195,7 @@ $brand-name: "brand name" !default;
       }
 
       h1,
-      [aria-label="#{$brand-name}"] {
+      [aria-label='#{$brand-name}'] {
         display: block;
         text-align: center;
         height: 100%;

@@ -63,11 +63,11 @@
   <!--  -->
   {% include "./table.html" %}
 
-<p>
+  <div>
     {% clipbutton "Copy Code", ".btn btn-primary" %} String to copy {%
     endclipbutton %}
-    <hr>
-<textarea id="mx-clip" role="presentation">
+    <hr />
+    <textarea id="mx-clip" role="presentation">
   <img src=" img/fp.svg" alt="" />
   <h2>Lightweight, Fast, Accessible, Inclusive</h2>
   <p>
@@ -76,11 +76,10 @@
   </p>
   <a href="#" role="button" aria-label="Add word, cta action, to your button title">
   <span>Get Started</span></a>
-</textarea>
-{% clip  "#mx-clip", '.btn btn-primaty' %}
-Copy Code
-{% endclip %}
-</p>
+</textarea
+    >
+    {% clip "#mx-clip", '.btn btn-primaty' %} Copy Code {% endclip %}
+  </div>
 </section>
 <aside>
   <h4>Sidebar</h4>

@@ -9,41 +9,41 @@
 // Utility styles for padding
 
 // set the padding properties for all padding
-[style*="--p"] {
+[style*='--p'] {
   padding-top: var(--pt);
   padding-right: var(--pr);
   padding-bottom: var(--pb);
   padding-left: var(--pl);
 }
 
-[style*="--py"] {
+[style*='--py'] {
   padding-block: var(--py);
 }
 
-[style*="--px"] {
+[style*='--px'] {
   padding-inline: var(--px);
 }
 
 // set the padding properties for left padding
-[style*="--pl"] {
+[style*='--pl'] {
   padding-left: var(--pl);
   padding-inline-start: var(--pl);
 }
 
 // set the padding properties for right padding
-[style*="--pr"] {
+[style*='--pr'] {
   padding-right: var(--pr);
   padding-inline-end: var(--pr);
 }
 
 // set the padding properties for top padding
-[style*="--pt"] {
+[style*='--pt'] {
   padding-top: var(--pt);
   padding-block-start: var(--pt);
 }
 
 // set the padding properties for bottom padding
-[style*="--pb"] {
+[style*='--pb'] {
   padding-bottom: var(--pb);
   padding-block-end: var(--pb);
 }
@@ -51,26 +51,26 @@
 // Utility styles for margin
 
 // set the margin properties for all margins
-[style*="--m"] {
+[style*='--m'] {
   margin: var(--ml) var(--mr) var(--mt) var(--mb);
 }
 
 // set the margin properties for left margin
-[style*="--ml"] {
+[style*='--ml'] {
   margin-left: var(--ml);
 }
 
 // set the margin properties for right margin
-[style*="--mr"] {
+[style*='--mr'] {
   margin-right: var(--mr);
 }
 
 //set the margin properties for top margin
-[style*="--mt"] {
+[style*='--mt'] {
   margin-top: var(--mt);
 }
 
 // set the margin properties for bottom margin
-[style*="--mb"] {
+[style*='--mb'] {
   margin-bottom: var(--mb);
 }

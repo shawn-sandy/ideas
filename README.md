@@ -10,11 +10,11 @@ IDEAS (ideas) is a simple and easy to use HTML, CSS and JAVASCRIPT UI Toolkit fo
 
 **IDEA~** an Eleventy toolkit for building and managing your teams design systems. [READ ME](/apps/ideas/ELEVENTY.md)
 
-* Eleventy plugin [READ ME](/apps/ideas/ELEVENTY.md)
+- Eleventy plugin [READ ME](/apps/ideas/ELEVENTY.md)
 
-* **Markdown** An Eleventy markdown plugin for writing/parsing MARKDOWN syntax in your HTML content. [READ ME](./apps/ideas/MARKDOWN.md)
+- **Markdown** An Eleventy markdown plugin for writing/parsing MARKDOWN syntax in your HTML content. [READ ME](./apps/ideas/MARKDOWN.md)
 
-* **Clipboard** add copy and paste functionality to your static eleventy site with clipboard.js
+- **Clipboard** add copy and paste functionality to your static eleventy site with clipboard.js
   [Comming soon](/README.md)
 
 #### First Paint

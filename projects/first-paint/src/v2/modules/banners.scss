@@ -4,12 +4,12 @@ $render-header: true;
 $header-color: black;
 $background-color: null;
 $tokens: (
-  "bg": var(--bg),
-  "h": var(--h),
-  "dp": var(--dsp),
-  "al": var(--al),
-  "js": var(justify-s),
-  "row": var(--row),
+  'bg': var(--bg),
+  'h': var(--h),
+  'dp': var(--dsp),
+  'al': var(--al),
+  'js': var(justify-s),
+  'row': var(--row)
 );
 // render component mixin
 @mixin renderComponent($renderContent: $render-header, $className: null) {
@@ -48,7 +48,7 @@ $tokens: (
 @mixin header {
   // background-color: var(--hd-bg, $background-color);
 
-  [role="banner"] {
+  [role='banner'] {
     @include banner();
   }
 }

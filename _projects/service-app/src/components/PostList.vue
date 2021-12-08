@@ -32,18 +32,18 @@
 </template>
 
 <script>
-import DataModel from './DataModel';
+import DataModel from './DataModel'
 
 export default {
   name: `PostList`,
   components: {
-    DataModel,
+    DataModel
   },
   props: {
     posts: {
       type: Array,
-      default: () => [],
-    },
-  },
-};
+      default: () => []
+    }
+  }
+}
 </script>

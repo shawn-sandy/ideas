@@ -3,8 +3,7 @@ $render: true !default;
 $min-height: 30vh !default;
 
 @mixin main($renderContent: $render, $className: null) {
-  @if($renderContent) {
-
+  @if ($renderContent) {
     #{if($className, $className, '.fp-main')},
     main {
       @include mix-main();
@@ -13,31 +12,29 @@ $min-height: 30vh !default;
 }
 
 @mixin mix-main {
-
   min-height: $min-height;
   padding: 2rem 0;
 
-  >section {
+  > section {
     width: 100%;
     font-size: 1rem;
     padding-bottom: 2rem;
 
-    >*+* {
+    > * + * {
       margin-top: 2rem;
     }
   }
 
-
-  article+aside,
-  section+aside {
+  article + aside,
+  section + aside {
     // width: 100%;
     min-width: 25%;
     font-size: 0.95rem;
   }
 
   footer {
-    font-size: .95rem;
-    padding: .7rem 0;
+    font-size: 0.95rem;
+    padding: 0.7rem 0;
     margin-top: 1rem;
     // border-top: solid 1px whitesmoke;
   }
@@ -45,17 +42,16 @@ $min-height: 30vh !default;
   @media all and (min-width: 1280px) {
     display: flex;
 
-
-    >section {
+    > section {
       max-width: 75%;
     }
 
     align-items: flex-start;
 
-    section+aside,
-    aside+section,
-    section+[role="complementary"],
-    [role="complementary"]+section {
+    section + aside,
+    aside + section,
+    section + [role='complementary'],
+    [role='complementary'] + section {
       padding: 0 1rem 0 1.5rem;
       min-width: 25%;
       max-width: 25%;
@@ -63,4 +59,4 @@ $min-height: 30vh !default;
   }
 }
 
-@include main()
+@include main();

@@ -18,7 +18,7 @@ $background-color: null !default;
     }
 
     #{if($className, $className, '.fp-header')},
-    header > [role="banner"] {
+    header > [role='banner'] {
       @include banner();
     }
   }

@@ -1,8 +1,8 @@
 /* Name: core.scss */
 
-@use "../modules/utilities/maps";
+@use '../modules/utilities/maps';
 
-@use "./tokens.scss";
+@use './tokens.scss';
 
 @mixin display {
   display: var(--dsp, block);
@@ -75,7 +75,7 @@ body * {
   // display: var(--dsp);
 }
 
-footer[role="contentinfo"],
+footer[role='contentinfo'],
 header,
 main,
 ul,
@@ -178,7 +178,7 @@ p {
 }
 
 hr,
-[style*="--hr"] {
+[style*='--hr'] {
   --border: none;
   height: 1px;
   border-bottom: var(--hr-border, 1px solid var(--light));
@@ -187,7 +187,7 @@ hr,
 }
 
 button,
-[style*="--btn"] {
+[style*='--btn'] {
   font-size: var(--fs);
   font-weight: var(--fw);
   box-sizing: border-box;

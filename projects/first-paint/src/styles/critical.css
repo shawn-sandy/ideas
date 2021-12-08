@@ -124,7 +124,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 
@@ -163,30 +163,41 @@ html *:after {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI',
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   background-color: #ffffff;
   color: #262626;
 }
 
-body > section, body > main, body > header > section, body > footer > section {
+body > section,
+body > main,
+body > header > section,
+body > footer > section {
   padding: 1rem;
   max-width: 90%;
   margin: 0 auto;
 }
 
 @media (min-width: 980px) {
-  body > section, body > main, body > header > section, body > footer > section {
+  body > section,
+  body > main,
+  body > header > section,
+  body > footer > section {
     max-width: 80%;
     width: 80%;
   }
 }
 @media (min-width: 1980px) {
-  body > section, body > main, body > header > section, body > footer > section {
+  body > section,
+  body > main,
+  body > header > section,
+  body > footer > section {
     max-width: 80%;
     font-size: 110%;
   }
 }
-body > [role=region][aria-label] {
+body > [role='region'][aria-label] {
   width: 100%;
   max-width: 100%;
 }
@@ -246,7 +257,7 @@ nav section li + li {
   }
 
   nav section li,
-nav section a {
+  nav section a {
     margin-top: 0;
   }
 }
@@ -268,7 +279,7 @@ nav section a {
 }
 
 nav section button[type],
-nav section a[role=button] {
+nav section a[role='button'] {
   margin-bottom: 0;
 }
 
@@ -282,7 +293,7 @@ nav section ul {
 }
 
 nav h1,
-nav [aria-label="brand name"] {
+nav [aria-label='brand name'] {
   display: block;
   text-align: center;
   height: 100%;
@@ -293,19 +304,19 @@ nav [aria-label="brand name"] {
 
 @media (min-width: 960px) {
   nav h1,
-nav [aria-label="brand name"] {
+  nav [aria-label='brand name'] {
     display: flex;
     align-items: center;
   }
 }
 nav h1 a,
-nav [aria-label="brand name"] a {
+nav [aria-label='brand name'] a {
   font-size: 1.5rem;
   padding: 0;
 }
 
 .fp-header,
-header > [role=banner] {
+header > [role='banner'] {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -315,7 +326,7 @@ header > [role=banner] {
 
 .fp-header > section,
 .fp-header > div,
-header > [role=banner] > section,
-header > [role=banner] > div {
+header > [role='banner'] > section,
+header > [role='banner'] > div {
   text-align: center;
 }

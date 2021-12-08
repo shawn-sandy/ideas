@@ -28,30 +28,41 @@ html *:after {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI',
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   background-color: #ffffff;
   color: #262626;
 }
 
-body > section, body > main, body > header > section, body > footer > section {
+body > section,
+body > main,
+body > header > section,
+body > footer > section {
   padding: 1rem;
   max-width: 90%;
   margin: 0 auto;
 }
 
 @media (min-width: 980px) {
-  body > section, body > main, body > header > section, body > footer > section {
+  body > section,
+  body > main,
+  body > header > section,
+  body > footer > section {
     max-width: 80%;
     width: 80%;
   }
 }
 @media (min-width: 1980px) {
-  body > section, body > main, body > header > section, body > footer > section {
+  body > section,
+  body > main,
+  body > header > section,
+  body > footer > section {
     max-width: 80%;
     font-size: 110%;
   }
 }
-body > [role=region][aria-label] {
+body > [role='region'][aria-label] {
   width: 100%;
   max-width: 100%;
 }
@@ -166,7 +177,7 @@ nav section li + li {
   }
 
   nav section li,
-nav section a {
+  nav section a {
     margin-top: 0;
   }
 }
@@ -188,7 +199,7 @@ nav section a {
 }
 
 nav section button[type],
-nav section a[role=button] {
+nav section a[role='button'] {
   margin-bottom: 0;
 }
 
@@ -202,7 +213,7 @@ nav section ul {
 }
 
 nav h1,
-nav [aria-label="brand name"] {
+nav [aria-label='brand name'] {
   display: block;
   text-align: center;
   height: 100%;
@@ -213,19 +224,19 @@ nav [aria-label="brand name"] {
 
 @media (min-width: 960px) {
   nav h1,
-nav [aria-label="brand name"] {
+  nav [aria-label='brand name'] {
     display: flex;
     align-items: center;
   }
 }
 nav h1 a,
-nav [aria-label="brand name"] a {
+nav [aria-label='brand name'] a {
   font-size: 1.5rem;
   padding: 0;
 }
 
 .fp-footer,
-footer[role=contentinfo] {
+footer[role='contentinfo'] {
   display: flex;
   flex-direction: column;
   font-size: 0.9rem;
@@ -234,19 +245,19 @@ footer[role=contentinfo] {
 }
 
 .fp-footer section,
-footer[role=contentinfo] section {
+footer[role='contentinfo'] section {
   display: flex;
   justify-content: center;
 }
 
 .fp-footer section > div,
-footer[role=contentinfo] section > div {
+footer[role='contentinfo'] section > div {
   flex: 1;
 }
 
 @media (min-width: 980px) {
   .fp-footer section,
-footer[role=contentinfo] section {
+  footer[role='contentinfo'] section {
     display: flex;
     align-items: stretch;
     align-content: stretch;
@@ -254,9 +265,9 @@ footer[role=contentinfo] section {
   }
 
   .fp-footer section > aside + aside,
-.fp-footer section > div + div,
-footer[role=contentinfo] section > aside + aside,
-footer[role=contentinfo] section > div + div {
+  .fp-footer section > div + div,
+  footer[role='contentinfo'] section > aside + aside,
+  footer[role='contentinfo'] section > div + div {
     margin-left: 1rem;
   }
 }
@@ -271,7 +282,7 @@ header {
   height: 85vh;
 }
 
-header > [role=banner] {
+header > [role='banner'] {
   flex-grow: 1;
   display: flex;
   align-items: center;
@@ -280,13 +291,13 @@ header > [role=banner] {
   min-height: 25rem;
 }
 
-header > [role=banner] > section,
-header > [role=banner] > div {
+header > [role='banner'] > section,
+header > [role='banner'] > div {
   text-align: center;
 }
 
-a[role=button],
-.fp-button-link[role=button] {
+a[role='button'],
+.fp-button-link[role='button'] {
   display: inline-flex;
   text-decoration: none;
   background-color: transparent;
@@ -295,19 +306,21 @@ a[role=button],
   color: darkblue;
 }
 
-a[role=button]:hover, a[role=button]:active, a[role=button]:focus,
-.fp-button-link[role=button]:hover,
-.fp-button-link[role=button]:active,
-.fp-button-link[role=button]:focus {
+a[role='button']:hover,
+a[role='button']:active,
+a[role='button']:focus,
+.fp-button-link[role='button']:hover,
+.fp-button-link[role='button']:active,
+.fp-button-link[role='button']:focus {
   border: none;
 }
 
-a[role=button] > span,
-a[role=button] > strong,
-a[role=button] > em,
-.fp-button-link[role=button] > span,
-.fp-button-link[role=button] > strong,
-.fp-button-link[role=button] > em {
+a[role='button'] > span,
+a[role='button'] > strong,
+a[role='button'] > em,
+.fp-button-link[role='button'] > span,
+.fp-button-link[role='button'] > strong,
+.fp-button-link[role='button'] > em {
   border: 1px transparent solid;
   padding: 0.6rem 1.5rem;
   border: 1px solid #e4e4e4;
@@ -315,30 +328,32 @@ a[role=button] > em,
   font-style: normal;
 }
 
-a[role=button] > span:hover,
-a[role=button] > strong:hover,
-a[role=button] > em:hover,
-.fp-button-link[role=button] > span:hover,
-.fp-button-link[role=button] > strong:hover,
-.fp-button-link[role=button] > em:hover {
+a[role='button'] > span:hover,
+a[role='button'] > strong:hover,
+a[role='button'] > em:hover,
+.fp-button-link[role='button'] > span:hover,
+.fp-button-link[role='button'] > strong:hover,
+.fp-button-link[role='button'] > em:hover {
   background-color: #cbcbcb;
 }
 
-a[role=button] > strong,
-.fp-button-link[role=button] > strong {
+a[role='button'] > strong,
+.fp-button-link[role='button'] > strong {
   background-color: #e4e4e4;
 }
 
-a[role=button] > em,
-.fp-button-link[role=button] > em {
+a[role='button'] > em,
+.fp-button-link[role='button'] > em {
   background-color: #e4e4e4;
   border-radius: 6.1875rem;
 }
 
-a[role=button] > em:active, a[role=button] > em:hover, a[role=button] > em:focus,
-.fp-button-link[role=button] > em:active,
-.fp-button-link[role=button] > em:hover,
-.fp-button-link[role=button] > em:focus {
+a[role='button'] > em:active,
+a[role='button'] > em:hover,
+a[role='button'] > em:focus,
+.fp-button-link[role='button'] > em:active,
+.fp-button-link[role='button'] > em:hover,
+.fp-button-link[role='button'] > em:focus {
   border-radius: 6.1875rem !important;
   background-color: #cbcbcb;
 }

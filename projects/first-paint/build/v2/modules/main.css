@@ -32,22 +32,22 @@ main footer {
 }
 @media all and (min-width: 1280px) {
   .fp-main,
-main {
+  main {
     display: flex;
     align-items: flex-start;
   }
   .fp-main > section,
-main > section {
+  main > section {
     max-width: 75%;
   }
   .fp-main section + aside,
-.fp-main aside + section,
-.fp-main section + [role=complementary],
-.fp-main [role=complementary] + section,
-main section + aside,
-main aside + section,
-main section + [role=complementary],
-main [role=complementary] + section {
+  .fp-main aside + section,
+  .fp-main section + [role='complementary'],
+  .fp-main [role='complementary'] + section,
+  main section + aside,
+  main aside + section,
+  main section + [role='complementary'],
+  main [role='complementary'] + section {
     padding: 0 1rem 0 1.5rem;
     min-width: 25%;
     max-width: 25%;

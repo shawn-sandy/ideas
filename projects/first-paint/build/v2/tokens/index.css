@@ -33,7 +33,7 @@
   --row: row;
   --col: column;
   --dp: var(--dp-b);
-  --direction: var("row");
+  --direction: var('row');
   --shrink: 1;
   --grow: 1;
   --basis: 30%;
@@ -116,7 +116,9 @@
   --h: var(--d);
   --w: auto;
   --fs: clamp(var(--s1), var(--d), var(--s4));
-  --fs-family: -apple-system, BlinkMacSystemFont, Roboto, Segoe UI, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --fs-family: -apple-system, BlinkMacSystemFont, Roboto, Segoe UI,
+    Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   --fs-d: var(--d);
   --fw-medium: 500;
   --fw-bold: 700;

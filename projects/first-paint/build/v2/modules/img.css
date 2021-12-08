@@ -32,7 +32,7 @@ picture img[alt]::after {
   --fs: 0.8rem;
   width: 100%;
   height: 100%;
-  content: "" " " attr(alt);
+  content: '' ' ' attr(alt);
   position: absolute;
   font-size: var(--fs);
   top: 0;

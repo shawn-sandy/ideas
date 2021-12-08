@@ -6,13 +6,13 @@
  ***************************************
 */
 
-[style="--mobile"],
-[style="--desktop"],
-[style="--laptop"] {
+[style='--mobile'],
+[style='--desktop'],
+[style='--laptop'] {
 }
 
 // display mobile
-[style*="--mobile"] {
+[style*='--mobile'] {
   --dsp: none;
   @media (max-width: 980px) {
     --dsp: var(--mobile, flex);
@@ -20,7 +20,7 @@
 }
 
 //display laptop
-[style*="--laptop"] {
+[style*='--laptop'] {
   --dsp: none;
   @media (min-width: 980px) {
     --dsp: var(--laptop, flex);
@@ -31,7 +31,7 @@
 }
 
 //display laptop
-[style*="--desktop"] {
+[style*='--desktop'] {
   --dsp: none;
 
   @media (min-width: 1280px) {

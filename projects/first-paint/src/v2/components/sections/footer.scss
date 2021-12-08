@@ -7,9 +7,9 @@
  ***************************************
 */
 
-@use "../../modules/utilities/maps";
+@use '../../modules/utilities/maps';
 
-footer[role="contentinfo"] {
+footer[role='contentinfo'] {
   > section,
   > div {
     --dsp: flex;

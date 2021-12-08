@@ -53,7 +53,7 @@ time {
 }
 
 p,
-[style*="--p-"] {
+[style*='--p-'] {
   --p-sm: var(--sm);
   --p-md: var(--md);
   --p-lg: var(--lg);
@@ -74,7 +74,7 @@ p + * {
   margin-top: var(--rem);
 }
 
-[style*="--truncate"] {
+[style*='--truncate'] {
   --clamp: var(--truncate, 1);
   --dsp: -webkit-box;
   -webkit-box-orient: vertical;

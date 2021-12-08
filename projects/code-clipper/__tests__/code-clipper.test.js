@@ -1,7 +1,7 @@
-'use strict';
+'use strict'
 
-const codeClipper = require('..');
+const codeClipper = require('..')
 
 describe('@shawnsandy/code-clipper', () => {
-    it('needs tests');
-});
+  it('needs tests')
+})

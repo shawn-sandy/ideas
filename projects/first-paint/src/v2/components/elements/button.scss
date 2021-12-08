@@ -1,9 +1,9 @@
 /* component: button.scss */
 
-@use "../../modules/utilities/maps";
+@use '../../modules/utilities/maps';
 
 button[type],
-[style*="--btn"] {
+[style*='--btn'] {
   --btn-py-sm: 1rem 0.9rem;
   --btn-py-md: 1.3rem 1.2rem;
   --btn-py-lg: 1.5rem 1.4rem;
@@ -35,7 +35,7 @@ button[type],
     --bg: var(--btn-hover-bg, var(--dark));
   }
 
-  &[type="submit"] {
+  &[type='submit'] {
     --bg: var(--submit-bg, navy);
     --cl: var(--btn-cl, var(--white));
     // --line: medium solid var(--btn-cl, var(--bg));
@@ -44,7 +44,7 @@ button[type],
     }
   }
 
-  &[type="reset"] {
+  &[type='reset'] {
     --bg: var(--reset-bg, transparent);
     --line: thin solid var(--reset-cl, lightgray);
     &:hover {
@@ -53,20 +53,20 @@ button[type],
   }
 }
 
-button[type][style*="--btn-pill"],
-[style*="--btn-pill"] {
+button[type][style*='--btn-pill'],
+[style*='--btn-pill'] {
   --rads: var(--btn-pill, var(--pill));
 }
 
-button[type][style*="--btn-sm"],
-[style*="--btn-sm"] {
+button[type][style*='--btn-sm'],
+[style*='--btn-sm'] {
   --h: var(--btn-sm, var(--h-sm));
   --fs: var(--s1);
   --px: var(--px-sm, 1.2rem);
 }
 
-button[type][style*="--btn-lg"],
-[style*="--btn-lg"] {
+button[type][style*='--btn-lg'],
+[style*='--btn-lg'] {
   --h: var(--btn-lg, var(--h-lg));
   --fs: var(--rem);
   --py: var(--btn-py-lg);

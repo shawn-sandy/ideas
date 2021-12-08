@@ -1,8 +1,6 @@
 # Creating/Customizing an HTML5 page with FirstPaint
 
- Copy and add the stylesheet below into the `<head></head>` of you HTML page
-
-
+Copy and add the stylesheet below into the `<head></head>` of you HTML page
 
 ```html
 <link
@@ -25,11 +23,10 @@ Add Normalize CSS (CDN) copy and insert the snippet below into between the `<hea
 > Normalize.css makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing.
 
 ```html
-
- <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
-  />
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+/>
 ```
 
 ### HTML5 Page
@@ -68,23 +65,22 @@ Or you can just copy and create your page using the snippet below.
     <!-- <script src="index.js"></script> -->
   </body>
 </html>
-
-
 ```
 
 ```html
- <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
-  />
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+/>
 ```
+
 #### HTML snippets markup
 
 Copy and paste these snippets to build custom templates using fist-paint-CSS
 
 #### Header
 
-``` html
+```html
 <header>
   <section>
     <img src="img/fp.svg" alt="" />
@@ -104,7 +100,6 @@ Copy and paste these snippets to build custom templates using fist-paint-CSS
     >
   </section>
 </header>
-
 ```
 
 #### Main
@@ -114,18 +109,21 @@ Copy and paste these snippets to build custom templates using fist-paint-CSS
   <article>
     <h2>Sample Article 1</h2>
     <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
-      doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+      assumenda odio rem maiores ad minima doloribus. Pariatur quibusdam dolorum
+      distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
       voluptatibus eaque!
     </p>
     <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
-      doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+      assumenda odio rem maiores ad minima doloribus. Pariatur quibusdam dolorum
+      distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
       voluptatibus eaque!
     </p>
     <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
-      doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+      assumenda odio rem maiores ad minima doloribus. Pariatur quibusdam dolorum
+      distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
       voluptatibus eaque!
     </p>
 
@@ -138,19 +136,17 @@ Copy and paste these snippets to build custom templates using fist-paint-CSS
   <aside>
     <h4>Sidebar</h4>
     <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos error, quas at facilis temporibus optio rem,
-      doloremque, modi numquam commodi illum cumque. Sit eveniet, quod expedita libero obcaecati a laudantium.
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos error, quas
+      at facilis temporibus optio rem, doloremque, modi numquam commodi illum
+      cumque. Sit eveniet, quod expedita libero obcaecati a laudantium.
     </p>
   </aside>
 </section>
-
 ```
-
 
 #### Navbar
 
 ```html
-
 <nav role="navigation" aria-label="Main navigation">
   <section id="navigation">
     <h1>
@@ -182,7 +178,6 @@ Copy and paste these snippets to build custom templates using fist-paint-CSS
     </div>
   </section>
 </nav>
-
 ```
 
 #### Page Footer
@@ -241,21 +236,19 @@ Copy and paste these snippets to build custom templates using fist-paint-CSS
     itaque ea, corporis odio.
   </div>
 </div>
-
 ```
 
 #### Grid Row
 
 ```html
 <div role="listitem">
-    <h3>Feature...</h3>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-    consectetur assumenda, porro repudiandae repellendus placeat iure officia
-    inventore sint voluptas et blanditiis facilis voluptate quas accusamus
-    itaque ea, corporis odio.
-  </div>
+  <h3>Feature...</h3>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur
+  assumenda, porro repudiandae repellendus placeat iure officia inventore sint
+  voluptas et blanditiis facilis voluptate quas accusamus itaque ea, corporis
+  odio.
+</div>
 ```
-
 
 #### Img
 
@@ -264,7 +257,6 @@ Copy and paste these snippets to build custom templates using fist-paint-CSS
   <img src="" alt="Image" />
 </picture>
 ```
-
 
 #### Ordered List
 
@@ -276,10 +268,7 @@ Copy and paste these snippets to build custom templates using fist-paint-CSS
   <li>Four</li>
   <li>Five</li>
 </ol>
-
-
 ```
-
 
 #### Unordered List
 
@@ -291,10 +280,7 @@ Copy and paste these snippets to build custom templates using fist-paint-CSS
   <li>Four</li>
   <li>Five</li>
 </ul>
-
-
 ```
-
 
 #### Ordered List (unstyled)
 
@@ -308,10 +294,7 @@ Copy and paste these snippets to build custom templates using fist-paint-CSS
     <li>Five</li>
   </ol>
 </span>
-
-
 ```
-
 
 #### Unordered List (unstyled)
 
@@ -325,7 +308,6 @@ Copy and paste these snippets to build custom templates using fist-paint-CSS
     <li>Five</li>
   </ul>
 </span>
-
 ```
 
 #### Input
@@ -335,11 +317,9 @@ Copy and paste these snippets to build custom templates using fist-paint-CSS
   <label for="input">Text Input Component</label>
   <input type="text" id="input" placeholder="Text input placeholder" />
 </div>
-
 ```
 
 #### Label Required
-
 
 ```html
 <label for="input-required">
@@ -351,13 +331,8 @@ Copy and paste these snippets to build custom templates using fist-paint-CSS
 
 ```html
 <label for="email-address">Text Input Component</label>
-<input
-  type="email"
-  id="email-address"
-  placeholder="Text input placeholder"
-/>
+<input type="email" id="email-address" placeholder="Text input placeholder" />
 ```
-
 
 #### Checkbox
 
@@ -379,7 +354,6 @@ Copy and paste these snippets to build custom templates using fist-paint-CSS
   <input id="radio-off" type="radio" name="radio-button" />
   <label for="radio-off"><em> Radio</em></label>
 </span>
-
 ```
 
 #### Select
@@ -391,7 +365,6 @@ Copy and paste these snippets to build custom templates using fist-paint-CSS
   <option value="">Options</option>
   <option value="">Options</option>
 </select>
-
 ```
 
 #### Textarea

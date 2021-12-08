@@ -10,9 +10,9 @@ $margin: 0 auto !default;
 $height: null !default;
 $padding: 0 1rem !default;
 $brand-img-height: 2rem;
-$font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
-  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI',
+  'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !default;
 
 // set variables
 
@@ -74,7 +74,7 @@ $font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
         }
       }
 
-      [role="region"][aria-label] {
+      [role='region'][aria-label] {
         width: 100%;
         max-width: 100%;
       }

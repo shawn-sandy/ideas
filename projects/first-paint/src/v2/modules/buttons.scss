@@ -6,9 +6,9 @@
  ***************************************
 */
 
-@use "./utilities/maps";
-@use "./utilities/mixins" as mix;
-@use "./utilities/functions" as fn; // set variables
+@use './utilities/maps';
+@use './utilities/mixins' as mix;
+@use './utilities/functions' as fn; // set variables
 // TODO Search and replace button with CSS tag/element name
 $render: true !default;
 
@@ -20,7 +20,7 @@ $render: true !default;
     // ".fp-link"},
     button {
       --bg: transparent;
-      --justify: "center";
+      --justify: 'center';
       --min: 2.5rem;
       --px: var(--s4);
       --pl: var(--rem);
@@ -30,11 +30,11 @@ $render: true !default;
         --bg: var(--light);
         @include button();
       }
-      &[type="submit"] {
+      &[type='submit'] {
         --bg: var(--dark);
         --cl: var(--light);
       }
-      &[type="reset"] {
+      &[type='reset'] {
         --bg: transparent;
         --fw: var(--fw-medium);
         --border-s: solid;
@@ -45,7 +45,7 @@ $render: true !default;
           --cl: var(--bg);
         }
       }
-      &[type="button"] {
+      &[type='button'] {
         --bg: var(--light);
         &:hover {
           //--bg: lighten(var(--bg), 10%);

@@ -5,7 +5,7 @@ $background-color: null !default;
 @mixin renderComponent($renderContent: $render, $className: null) {
   @if ($renderContent) {
     #{if($className, $className, '.fp-footer')},
-    footer[role="contentinfo"] {
+    footer[role='contentinfo'] {
       @include footer();
     }
   }

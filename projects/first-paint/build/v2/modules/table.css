@@ -8,7 +8,8 @@ table {
   --tb-border-width: var(--border-w);
   --tb-border-style: var(--border-style);
   --tb-border-color: var(--border-cl);
-  --tb-border: var(--tb-border-width) var(--tb-border-style) var(--tb-border-color);
+  --tb-border: var(--tb-border-width) var(--tb-border-style)
+    var(--tb-border-color);
   --mx: var(--sm-x);
   --my: 0;
   --collapse: collapse;

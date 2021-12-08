@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from 'axios'
 
 export default {
   props: {
@@ -6,12 +6,12 @@ export default {
       type: String,
       // The JSONPlaceholder API is a fake API
       // basically a Lorem Ipsum JSON API.
-      default: `https://jsonplaceholder.typicode.com`,
+      default: `https://jsonplaceholder.typicode.com`
     },
     endpoint: {
       type: String,
-      required: true,
-    },
+      required: true
+    }
   },
   data() {
     return {
@@ -20,8 +20,8 @@ export default {
       api: axios.create({ baseURL: this.baseUrl }),
       data: null,
       error: null,
-      loading: false,
-    };
+      loading: false
+    }
   },
   methods: {
     // The `query` method will handle
@@ -29,20 +29,20 @@ export default {
     async query(type, ...params) {
       // If we're currently loading content
       // we don't submit an additional request.
-      if (this.loading) return;
+      if (this.loading) return
 
-      this.loading = true;
+      this.loading = true
       try {
-        const response = await this.api[type](...params);
-        this.data = response.data;
-        this.error = null;
-        this.$emit(`success`, response);
+        const response = await this.api[type](...params)
+        this.data = response.data
+        this.error = null
+        this.$emit(`success`, response)
       } catch (error) {
-        this.data = null;
-        this.error = error.response;
-        this.$emit(`error`, error);
+        this.data = null
+        this.error = error.response
+        this.$emit(`error`, error)
       }
-      this.loading = false;
-    },
-  },
-};
+      this.loading = false
+    }
+  }
+}

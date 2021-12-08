@@ -15,51 +15,51 @@
 @use '../utilities/mixins' as mix;
 
 // get utility maps;
-@use "../utilities/maps";
+@use '../utilities/maps';
 
 //Display properties
 $dsp: (
-  flexbox: "fx",
-  inline: "in",
-  inline-block: "inb",
-  inline-flex: "infx",
-  none: "none",
-  table: "ta",
-  grid: "grid",
-  inline-table: "inta",
-  inline-grid: "ingrid",
+  flexbox: 'fx',
+  inline: 'in',
+  inline-block: 'inb',
+  inline-flex: 'infx',
+  none: 'none',
+  table: 'ta',
+  grid: 'grid',
+  inline-table: 'inta',
+  inline-grid: 'ingrid'
 );
 
 // set flex box direction
 $direction: (
-  row: "row",
-  row-reverse: "row-v",
-  column: "col",
-  column-reverse: "col-v",
+  row: 'row',
+  row-reverse: 'row-v',
+  column: 'col',
+  column-reverse: 'col-v'
 );
 
 // set flex box wrap
 $wrap: (
-  nowrap: "nw",
-  wrap: "w",
-  wrap-reverse: "wr",
+  nowrap: 'nw',
+  wrap: 'w',
+  wrap-reverse: 'wr'
 );
 
 // set flex box justify
 $justify: (
-  flex-start: "fst",
-  flex-end: "fend",
-  center: "ce",
-  space-between: "sb",
-  space-around: "sa",
+  flex-start: 'fst',
+  flex-end: 'fend',
+  center: 'ce',
+  space-between: 'sb',
+  space-around: 'sa'
 );
 
 // set flex box align
 $align: (
-  flex-start: "start",
-  flex-end: "end",
-  center: "center",
-  stretch: "stretch",
+  flex-start: 'start',
+  flex-end: 'end',
+  center: 'center',
+  stretch: 'stretch'
 );
 :root {
   @include maps.styleProps($align);
@@ -68,13 +68,13 @@ $align: (
   @include maps.styleProps($wrap);
   @include maps.styleProps($dsp);
 }
-@include maps.styleUtilities("dsp", "display", $dsp);
-@include maps.styleUtilities("fxd", "flex-direction", $direction);
-@include maps.styleUtilities("wrap", "flex-wrap", $wrap);
-@include maps.styleUtilities("just", "justify-content", $justify);
-@include maps.styleUtilities("align", "align-items", $align);
+@include maps.styleUtilities('dsp', 'display', $dsp);
+@include maps.styleUtilities('fxd', 'flex-direction', $direction);
+@include maps.styleUtilities('wrap', 'flex-wrap', $wrap);
+@include maps.styleUtilities('just', 'justify-content', $justify);
+@include maps.styleUtilities('align', 'align-items', $align);
 
 // set flex shrink properties
-[style*="shrink"] {
+[style*='shrink'] {
   flex-shrink: var(--shrink);
 }

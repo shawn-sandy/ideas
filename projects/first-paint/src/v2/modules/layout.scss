@@ -1,10 +1,10 @@
 // set variables
 // TODO Search and replace name with CSS tag/element name
-@use "./utilities/maps";
-@use "./utilities/mixins" as mix;
+@use './utilities/maps';
+@use './utilities/mixins' as mix;
 
 $render: true !default;
-$prefix: "layout";
+$prefix: 'layout';
 $tokens: ();
 // render component mixin
 @mixin renderComponent($renderContent: $render, $className: null) {
@@ -80,7 +80,7 @@ $tokens: ();
   figure,
   figcaption,
   footer,
-  footer[role="contentinfo"],
+  footer[role='contentinfo'],
   header,
   hgroup,
   menu,
