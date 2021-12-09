@@ -109,6 +109,8 @@
     "sass": "^1.35.1",
     "standard": "^16.0.3",
     "style-dictionary": "^3.0.1",
+    "stylelint": "^14.1.0",
+    "stylelint-config-standard": "^24.0.0",
     "trash-cli": "^4.0.0"
   },
   "config": {
@@ -117,11 +119,10 @@
     }
   },
   "husky": {
-    "hooks": {
-
-    }
+    "hooks": {}
   },
   "lint-staged": {
-    "*.js": "eslint --fix"
+    "*.js": "eslint --fix",
+    "*.{scss, css}": "stylelint --fix"
   }
 }
