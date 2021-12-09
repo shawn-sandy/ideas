@@ -1,7 +1,7 @@
 // commitlint.types.js, will be picked up by commitlint.config.js
 module.exports = {
   'type-enum': [
-    2,
+    0,
     'always',
     [
       'feat',

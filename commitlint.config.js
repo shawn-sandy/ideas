@@ -19,7 +19,7 @@ const Configuration = {
    */
   rules: {
     'type-enum': [
-      2,
+      0,
       'always',
       [
         'feat',
