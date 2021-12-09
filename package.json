@@ -63,6 +63,8 @@
     "@babel/cli": "^7.15.4",
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@shawnsandy/bootstrap-lite": "^0.2.6",
     "@shawnsandy/first-paint": "^1.2.1",
@@ -121,5 +123,4 @@
   "lint-staged": {
     "*.js": "eslint --fix"
   }
-
 }
