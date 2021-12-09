@@ -2,19 +2,15 @@
 . "$(dirname "$0")/_/husky.sh"
 
 # npm test
-npx pretty-quick --staged || (
-  echo "Prettier tests failed"
-  false
-)
+echo 'Starting prettier...'
+npx pretty-quick --staged
 
 # lint-stages
-npx lint-staged||
-(
-  echo "Eslint tests failed"
-  false
-)
+echo 'Starting eslint...'
+npx lint-staged "$1"
 
 # commitizen
+echo 'Starting commitlint...'
 # npx --no -- commitlint --edit "$1"
 
 # If everything passes... Now we can commit

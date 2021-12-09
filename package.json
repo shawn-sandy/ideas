@@ -71,6 +71,7 @@
     "@shawnsandy/ideas": "^0.3.2",
     "@shawnsandy/mix": "^0.10.21",
     "auto-changelog": "^2.3.0",
+    "conventional-changelog-atom": "^2.0.8",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
@@ -117,7 +118,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npx pretty-quick --staged && exit 1"
+
     }
   },
   "lint-staged": {
