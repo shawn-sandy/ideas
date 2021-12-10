@@ -12,13 +12,23 @@
 
 _It will setup husky, modify package.json and create a sample pre-commit hook that you can edit. By default, it will run npm test when you commit._
 
-## Commit Lint
+### Commit Lint
 
-Commit lint helps your team adhering to a commit convention. By supporting npm-installed configurations it makes sharing of commit conventions easy. [https://commitlint.js.org/](https://commitlint.js.org/)
+> Commit lint helps your team adhering to a commit convention. By supporting npm-installed configurations it makes sharing of commit conventions easy. [more info](https://commitlint.js.org/)
 
-Commit ling config `commitlint.config.js`
+Install commitlint globally
 
-```json
+```bash
+npm install -g @commitlint/cli @commitlint/config-conventional
+```
+
+```bash
+npm install @commitlint/cli @commitlint/config-conventional
+```
+
+Copy the code below to your `commitlint.config.js`
+
+```js
 const Configuration = {
   /*
    * Resolve and load @commitlint/config-conventional from node_modules.
@@ -45,5 +55,181 @@ const Configuration = {
 }
 
 module.exports = Configuration
+```
+
+### PRETTY QUICK
+
+> Runs Prettier on your changed files [more info](https://github.com/okonet/lint-staged).
+
+Install
+
+```bash
+npm install --save-dev prettier pretty-quick
+```
+
+Add this code to you `.husky/precommit` file
+
+```property
+echo 'Starting prettier...'
+npx pretty-quick --staged
+```
+
+### LINT STAGED
+
+> Run linters against staged git files and don't let 💩 slip into your code base! [more info](https://github.com/okonet/lint-staged)
+
+Install
+``bash
+npm install -D lint-staged
+
+`
+
+````
+
+Add the following to your `.husky/precommit` file
+
+```bash
+# lint-stages
+echo 'Starting eslint...'
+npx lint-staged "$1"
+````
+
+## ESLINT setup
+
+Intall ESLint
+
+```bash
+npm install eslint --save-dev
+```
+
+Create an eslint config file
+
+Use the eslint config interactive command tool
+
+```base
+npx eslint --init
+```
+
+or create using the following
+
+`
+
+````bash
+
+```json
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": ["standard"],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "script"
+  },
+  "rules": {},
+  "ignorePatterns": ["temp.js", "**/vendor/*.js", "**/node_modules/*.js"]
+}
+````
+
+Create a `.eslintignore` file in your project root
+
+```txt
+node_modules
+package-lock.json
+
+# Cache
+.npm
+.cache
+.eslintcache
+
+# ignore built packages
+dist
+esm
+public
+generated
+*.min.js
+
+# Coverage
+coverage
+
+# Output of 'npm pack'
+*.tgz
+
+# Mac files
+.DS_Store
+
+# Logs
+logs
+*.log
+
+*.hbs
+**/node_modules/**
+**/build/**
+**/coverage/**
+**/docs/**
+**/dist/**
+```
+
+## STYLELINT
+
+> A mighty, modern linter that helps you avoid errors and enforce conventions in your styles. [more info](https://stylelint.io/)
+
+Install
+
+```bash
+npm install --save-dev stylelint stylelint-config-standard
+```
+
+Create a .stylelintrc.json configuration file in the root of your project with the following content:
+
+```json
+{
+  "extends": "stylelint-config-standard"
+}
+```
+
+### Update you package.json
+
+```json
+"config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {}
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix",
+    "*.{scss, css}": "stylelint --fix"
+  }
+```
+
+## GIST
+
+You can get all the files from on gist (updated) [open](https://gist.github.com/shawn-sandy/137ade88316323150e08878d2ef54d08)
+
+### Complete Husky `pre-commit` file
+
+```bash
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# npm test
+echo 'Starting prettier...'
+npx pretty-quick --staged "$1"
+
+# lint-stages
+echo 'Starting eslint...'
+npx lint-staged "$1"
+
+# commitizen
+echo 'Starting commitlint...'
+npx --no -- commitlint --edit "$1"
+
+# If everything passes... Now we can commit
+echo '✅✅✅✅ Excellent all test passed, I am committing this now...'
 
 ```
