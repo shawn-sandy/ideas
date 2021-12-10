@@ -84,6 +84,8 @@ npm install -D lint-staged
 
 `
 
+`
+
 ````
 
 Add the following to your `.husky/precommit` file
@@ -111,6 +113,8 @@ npx eslint --init
 ```
 
 or create using the following
+
+`
 
 `
 
@@ -232,4 +236,69 @@ npx --no -- commitlint --edit "$1"
 # If everything passes... Now we can commit
 echo '✅✅✅✅ Excellent all test passed, I am committing this now...'
 
+# ignore built packages
+dist
+esm
+public
+generated
+*.min.js
+
+# Coverage
+coverage
+
+# Output of 'npm pack'
+*.tgz
+
+# Mac files
+.DS_Store
+
+# Logs
+logs
+*.log
+
+*.hbs
+**/node_modules/**
+**/build/**
+**/coverage/**
+**/docs/**
+**/dist/**
 ```
+
+## STYLELINT
+
+> A mighty, modern linter that helps you avoid errors and enforce conventions in your styles. [more info](https://stylelint.io/)
+
+Install
+
+```bash
+npm install --save-dev stylelint stylelint-config-standard
+```
+
+Create a .stylelintrc.json configuration file in the root of your project with the following content:
+
+```json
+{
+  "extends": "stylelint-config-standard"
+}
+```
+
+### Update you package.json
+
+```json
+"config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {}
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix",
+    "*.{scss, css}": "stylelint --fix"
+  }
+```
+
+## GIST
+
+You can get all the files from on gist (updated) [open](https://gist.github.com/shawn-sandy/137ade88316323150e08878d2ef54d08)
