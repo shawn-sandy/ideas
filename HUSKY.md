@@ -86,6 +86,8 @@ npm install -D lint-staged
 
 `
 
+`
+
 ````
 
 Add the following to your `.husky/precommit` file
@@ -113,6 +115,8 @@ npx eslint --init
 ```
 
 or create using the following
+
+`
 
 `
 
@@ -297,6 +301,28 @@ Create a .stylelintrc.json configuration file in the root of your project with t
     "*.js": "eslint --fix",
     "*.{scss, css}": "stylelint --fix"
   }
+```
+
+HUSKY PRE-COMMIT
+
+```bash
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# npm test
+echo 'Starting prettier...'
+npx pretty-quick --staged "$1"
+
+# lint-stages
+echo 'Starting eslint...'
+npx lint-staged "$1"
+
+# commitizen
+echo 'Starting commitlint...'
+npx --no -- commitlint --edit "$1"
+
+# If everything passes... Now we can commit
+echo '✅✅✅✅ Excellent all test passed, I am committing this now...'
 ```
 
 ## GIST
