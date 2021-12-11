@@ -82,15 +82,11 @@ Install
 ``bash
 npm install -D lint-staged
 
-`
+```
 
-`
+Husky config for lint-staged
 
-`
-
-`
-
-````
+```
 
 Add the following to your `.husky/precommit` file
 
@@ -98,7 +94,7 @@ Add the following to your `.husky/precommit` file
 # lint-stages
 echo 'Starting eslint...'
 npx lint-staged "$1"
-````
+```
 
 ## ESLINT setup
 
@@ -116,17 +112,7 @@ Use the eslint config interactive command tool
 npx eslint --init
 ```
 
-or create using the following
-
-`
-
-`
-
-`
-
-`
-
-````bash
+or create the file nad paste using the following
 
 ```json
 {
@@ -143,7 +129,7 @@ or create using the following
   "rules": {},
   "ignorePatterns": ["temp.js", "**/vendor/*.js", "**/node_modules/*.js"]
 }
-````
+```
 
 Create a `.eslintignore` file in your project root
 
