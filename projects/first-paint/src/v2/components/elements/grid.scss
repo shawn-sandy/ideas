@@ -83,8 +83,7 @@ div[role='row'],
     --grid-flex: 1 1 98%;
     --grid-w: 49%;
   }
-  section,
-  div[style='--main:'] {
-    flex: 1 0 auto;
-  }
+}
+[style*='--main:'] {
+  flex: 1 0 auto;
 }

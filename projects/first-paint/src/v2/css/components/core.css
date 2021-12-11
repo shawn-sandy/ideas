@@ -261,8 +261,8 @@ blockquote {
 
 div {
   --dsp: block;
-  --mx: auto;
-  --my: auto;
+  --mx: initial;
+  --my: initial;
   --w: auto;
 }
 

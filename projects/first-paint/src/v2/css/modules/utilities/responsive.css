@@ -1,8 +1,1 @@
-@media (min-width: 980px) {
-  [data-show-mobile] {
-    display: none;
-  }
-  [data-show-desktop] {
-    display: inline-flex;
-  }
-} /*# sourceMappingURL=responsive.css.map */
+@media(min-width: 980px){[data-show-mobile]{display:none}[data-show-desktop]{display:inline-flex}}/*# sourceMappingURL=responsive.css.map */
