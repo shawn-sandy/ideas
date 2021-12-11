@@ -88,6 +88,8 @@ npm install -D lint-staged
 
 `
 
+`
+
 ````
 
 Add the following to your `.husky/precommit` file
@@ -115,6 +117,8 @@ npx eslint --init
 ```
 
 or create using the following
+
+`
 
 `
 
@@ -286,6 +290,28 @@ Create a .stylelintrc.json configuration file in the root of your project with t
 }
 ```
 
+## WEBHINT
+
+> webhint helps you improve your site's accessibility, speed, cross-browser compatibility, and more by checking your code for best practices and common errors. [more info](https://webhint.io/)
+
+Install
+
+```bash
+npm i -D hint
+```
+
+Create a `hintrc`
+
+run `npx create hintrc` to create a hintrc file
+
+Add a `.hintrc` file to you project root
+
+```json
+{
+  "extends": ["accessibility"]
+}
+```
+
 ### Update you package.json
 
 ```json
@@ -328,3 +354,30 @@ echo '✅✅✅✅ Excellent all test passed, I am committing this now...'
 ## GIST
 
 You can get all the files from on gist (updated) [open](https://gist.github.com/shawn-sandy/137ade88316323150e08878d2ef54d08)
+
+## RESOURCES
+
+### Conventional Commits
+
+The Conventional Commits specification is a lightweight convention on top of commit messages. It provides an easy set of rules for creating an explicit commit history; which makes it easier to write automated tools on top of. This convention dovetails with SemVer, by describing the features, fixes, and breaking changes made in commit messages [more info](https://www.conventionalcommits.org/en/v1.0.0/).
+
+The commit message should be structured as follows:
+
+```txt
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+
+### Commit Message editor
+
+A VS code extension that allows to write quickly write standard conventional commit messages [Download](https://marketplace.visualstudio.com/items?itemName=adam-bender.commit-message-editor&utm_source=pocket_mylist)
+
+## Tips
+
+### Commit lint has an error from current or previous commit
+
+- Open the `.git/COMMIT_EDITMSG` file and remove all content.
+- Create a new commit with the `--amend` option
