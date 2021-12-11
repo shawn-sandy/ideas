@@ -2,12 +2,13 @@
 . "$(dirname "$0")/_/husky.sh"
 
 # npm test
+
+# lint-staged
+echo 'Starting lint-staged...'
+npx lint-staged "$1"
+
 echo 'Starting prettier...'
 npx pretty-quick --staged
-
-# lint-stages
-echo 'Starting eslint...'
-npx lint-staged "$1"
 
 # commitizen
 echo 'Starting commitlint...'
