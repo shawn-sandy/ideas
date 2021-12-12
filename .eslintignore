@@ -33,5 +33,5 @@ logs
 **/docs/**
 **/dist/**
 
-/plopfile.js
+# /plopfile.js
 
