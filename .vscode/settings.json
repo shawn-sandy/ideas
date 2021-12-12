@@ -64,5 +64,11 @@
   "markdown.replaceSmartQuotes": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnPaste": true,
-  "commit-message-editor.view.defaultView": "form"
+  "commit-message-editor.view.defaultView": "form",
+  "stylelint.ignoreDisables": true,
+  "stylelint.validate": ["css", "scss", "less"],
+  "[scss]": {
+    "editor.defaultFormatter": "MikeBovenlander.formate"
+  },
+  "prettier.singleQuote": true
 }
