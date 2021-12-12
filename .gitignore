@@ -109,3 +109,4 @@ www
 projects/fp-mix/builds/
 /projects/fp-mix/.parcel-cache
 .dccache
+/plopfile.js
