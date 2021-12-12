@@ -10,20 +10,25 @@ export default function (plop) {
     ], // array of inquirer prompts
     actions: [] // array of actions
   })
-  plop.setGenerator('controller', {
-    description: 'application controller logic',
+  plop.setGenerator('readme', {
+    description: 'create a readme',
     prompts: [
       {
         type: 'input',
         name: 'name',
-        message: 'controller name please'
+        message: 'Readme name please'
+      },
+      {
+        type: 'input',
+        name: 'description',
+        message: 'Readme description please'
       }
     ],
     actions: [
       {
         type: 'add',
-        path: 'src/{{name}}.js',
-        templateFile: 'plop-templates/controller.hbs'
+        path: '{{constantCase name}}.md',
+        templateFile: 'plop-templates/readme.hbs'
       }
     ]
   })
