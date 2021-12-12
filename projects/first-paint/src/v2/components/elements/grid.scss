@@ -2,7 +2,7 @@
   --py: var(--rem);
 }
 
-div[role='row'],
+[role='row'],
 [style='--row'] {
   --dsp: flex;
   --gap: var(--rem);

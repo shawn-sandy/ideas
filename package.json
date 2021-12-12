@@ -124,7 +124,6 @@
     "hooks": {}
   },
   "lint-staged": {
-    "*.{js, jsx}": "eslint --fix",
-    "*.{scss, css}": "stylelint --fix"
+    "*.{js, jsx}": "eslint --fix"
   }
 }
