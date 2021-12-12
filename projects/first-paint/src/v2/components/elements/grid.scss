@@ -26,18 +26,7 @@ div[role='row'],
   --py: var(--rem);
   --px: var(--rem);
   --direction: var(--col-direction, column);
-  * + * {
-    --py: var(--rem) 0;
-  }
-
-  section,
-  [style*='--card-main'] {
-    --dsp: flex;
-    --direction: column;
-    --grow: 1;
-    --flex: 2;
-    height: var(--card-main-h);
-  }
+  --max-w: calc(100% / var(--cols, 4) - var(--gap));
 
   @media (max-width: calc(768rem /16)) {
     --cols: var(--cols-xs, 1);

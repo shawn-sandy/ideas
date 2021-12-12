@@ -63,5 +63,6 @@
   "typescript.preferences.quoteStyle": "single",
   "markdown.replaceSmartQuotes": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnPaste": true
+  "editor.formatOnPaste": true,
+  "commit-message-editor.view.defaultView": "form"
 }
