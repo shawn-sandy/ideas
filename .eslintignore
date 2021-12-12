@@ -32,3 +32,6 @@ logs
 **/coverage/**
 **/docs/**
 **/dist/**
+
+/plopfile.js
+

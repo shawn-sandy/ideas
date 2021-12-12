@@ -70,5 +70,8 @@
   "[scss]": {
     "editor.defaultFormatter": "MikeBovenlander.formate"
   },
-  "prettier.singleQuote": true
+  "prettier.singleQuote": true,
+  "[handlebars]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  }
 }
