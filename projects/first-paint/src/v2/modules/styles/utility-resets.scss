@@ -7,9 +7,9 @@ Description: setup custom props defaults
  ***************************************
 */
 
-@use "../utilities/maps";
-@use "../utilities/mixins" as mix;
-@use "../utilities/functions" as fn;
+@use '../utilities/maps';
+@use '../utilities/mixins' as mix;
+@use '../utilities/functions' as fn;
 
 * {
   font-size: var(--fs, var(--font-size, initial));
@@ -102,7 +102,7 @@ embed,
 figure,
 figcaption,
 footer,
-footer[role="contentinfo"],
+footer[role='contentinfo'],
 header,
 hgroup,
 menu,
@@ -247,8 +247,8 @@ figcaption {
 // elements containers
 div,
 section,
-[role="list"],
-[role="listitem"],
+[role='list'],
+[role='listitem'],
 aside {
   display: var(--dsp);
   justify-content: var(--justify);
@@ -336,7 +336,7 @@ img[alt] {
   padding: var(--p);
 }
 
-[role="banner"] {
+[role='banner'] {
   background: var(--bg, var(--bg-cl));
   background-image: var(--bg-img);
   min-height: var(--min-h, var(--h));
@@ -356,7 +356,7 @@ button {
   @include mix.button();
 }
 
-footer[role="contentinfo"] {
+footer[role='contentinfo'] {
   background: var(--bg, var(--bg-cl));
   background-image: var(--bg-img);
   min-height: var(--min-h, var(--h));

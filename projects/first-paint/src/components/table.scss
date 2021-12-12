@@ -5,12 +5,12 @@ $bg-color: whitesmoke !default;
 $bg-color-row: ghostwhite !default;
 $border-color: lightgray !default;
 
-
 // render component mixin
 @mixin renderComponent($renderContent: true, $className: null) {
-  @if($renderContent) {
-
-    #{$className, $className, '.fp-table'},
+  @if ($renderContent) {
+    #{$className,
+    $className,
+    '.fp-table'},
     table {
       @include table();
     }
@@ -34,9 +34,8 @@ $border-color: lightgray !default;
 
   th,
   td {
-    padding: .75rem 1rem;
+    padding: 0.75rem 1rem;
   }
-
 
   tbody tr {
     border-bottom: thin solid $bg-color;

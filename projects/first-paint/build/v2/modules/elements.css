@@ -18,7 +18,7 @@
   padding-block-end: var(--pb);
   padding-inline-start: var(--pl);
   padding-inline-end: var(--pr);
-  --justify: "center";
+  --justify: 'center';
   --min: 2.5rem;
   --py: var(--s4);
   --pl: var(--rem);
@@ -69,7 +69,7 @@ button {
   padding-block-end: var(--pb);
   padding-inline-start: var(--pl);
   padding-inline-end: var(--pr);
-  --justify: "center";
+  --justify: 'center';
   --min: 2.5rem;
   --py: var(--s4);
   --pl: var(--rem);

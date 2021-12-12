@@ -13,7 +13,7 @@ $tokens: (
   border-width: var(--border-w, thin),
   border-style: var(--border-s, solid),
   border-color: var(--border-cl, currentColor),
-  border: var(--tb-border-width) var(--tb-border-style) var(--tb-border-color),
+  border: var(--tb-border-width) var(--tb-border-style) var(--tb-border-color)
 );
 
 // render component mixin
@@ -21,9 +21,9 @@ $tokens: (
   @if ($renderContent) {
     #{$className,
     $className,
-    ".fp-table"},
+    '.fp-table'},
     table {
-      @include map.cp($tokens, "tb");
+      @include map.cp($tokens, 'tb');
       @include table();
     }
   }

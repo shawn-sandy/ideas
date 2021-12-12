@@ -40,62 +40,73 @@ First Paint is an easy to use CSS/SCSS starter library that contains accessibili
 
 **Install**
 
-* Install `npm i @shawnsandy/first-paint` stable version
+- Install `npm i @shawnsandy/first-paint` stable version
 
-* Install `npm i @shawnsandy/first-paint@next` latest version (next)
-* Yarn install `yarn add @shawnsandy/first-paint`
+- Install `npm i @shawnsandy/first-paint@next` latest version (next)
+- Yarn install `yarn add @shawnsandy/first-paint`
 
 **Simple & Easy copy paste option**
 
-* Create an empty html page
-* Copy and paste the code from [Gist](https://gist.githubusercontent.com/shawn-sandy/8460e6e400d3206c8a073367855ae381/raw/5309ceec672aa8a5332f2a8a52ed1efa6d63f63c/sample.html) this gist into your new HTML page
-* Edit/customize your page `markup and content`
-* Launch you page in your browser
-* Edit some more
-* Publish to the web :)
+- Create an empty html page
+- Copy and paste the code from [Gist](https://gist.githubusercontent.com/shawn-sandy/8460e6e400d3206c8a073367855ae381/raw/5309ceec672aa8a5332f2a8a52ed1efa6d63f63c/sample.html) this gist into your new HTML page
+- Edit/customize your page `markup and content`
+- Launch you page in your browser
+- Edit some more
+- Publish to the web :)
 
 ## Customized Build
 
-* Copy and add the stylesheet below into the `<head></head>` of you HTML page
+- Copy and add the stylesheet below into the `<head></head>` of you HTML page
 
-``` html
-<link rel="stylesheet" src="https://cdn.jsdelivr.net/npm/@shawnsandy/first-paint/dist/css/index.css" />
+```html
+<link
+  rel="stylesheet"
+  src="https://cdn.jsdelivr.net/npm/@shawnsandy/first-paint/dist/css/index.css"
+/>
 ```
 
 <script src="https://gist.github.com/shawn-sandy/bcc3739439954599280f6acd6432c127.js"></script>
 
 ## Creating/Customizing an HTML5 page with FirstPaint
 
- Copy and add the stylesheet below into the `<head></head>` of you HTML page
+Copy and add the stylesheet below into the `<head></head>` of you HTML page
 
-``` html
-<link rel="stylesheet" src="https://cdn.jsdelivr.net/npm/@shawnsandy/first-paint/dist/css/index.css" />
+```html
+<link
+  rel="stylesheet"
+  src="https://cdn.jsdelivr.net/npm/@shawnsandy/first-paint/dist/css/index.css"
+/>
 ```
 
 **Minified version**
 
-``` html
-<link rel="stylesheet" src="https://cdn.jsdelivr.net/npm/@shawnsandy/first-paint@0.2.1/dist/css/index.css" />
+```html
+<link
+  rel="stylesheet"
+  src="https://cdn.jsdelivr.net/npm/@shawnsandy/first-paint@0.2.1/dist/css/index.css"
+/>
 ```
 
 Add Normalize CSS (CDN) copy and insert the snippet below into between the `<head></head>` of your page
 
 > Normalize.css makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing.
 
-``` html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" />
+```html
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+/>
 ```
 
 ### HTML5 Page
 
 Or you can just copy and create your page using the snippet below.
 
-``` html
+```html
 <!DOCTYPE html>
 
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -103,20 +114,25 @@ Or you can just copy and create your page using the snippet below.
     <meta name="description" content="title" />
     <meta name="author" content="author" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" />
-    <link rel="stylesheet" src="https://cdn.jsdelivr.net/npm/@shawnsandy/first-paint/dist/css/index.css" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      src="https://cdn.jsdelivr.net/npm/@shawnsandy/first-paint/dist/css/index.css"
+    />
+  </head>
 
-<body>
+  <body>
     <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquam quos
-        blanditiis reiciendis facilis eum. Repellendus qui eius debitis, fugit
-        aspernatur a molestiae ducimus nemo deleniti tempora exercitationem esse
-        at.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquam quos
+      blanditiis reiciendis facilis eum. Repellendus qui eius debitis, fugit
+      aspernatur a molestiae ducimus nemo deleniti tempora exercitationem esse
+      at.
     </p>
     <!-- <script src="index.js"></script> -->
-</body>
-
+  </body>
 </html>
 ```
 
@@ -130,98 +146,109 @@ Copy and paste these snippets to build custom templates using fist-paint-CSS
 
 ### Header
 
-``` html
+```html
 <header>
-    <section>
-        <img src="img/fp.svg" alt="" />
-        <h2>Lightweight, Fast, Accessible, Inclusive</h2>
-        <p>
-            <span>First Paint is lightweight easy to use CSS/SCSS starter library for
-                quickly scaffolding/building modern, mobile friendly websites.</span>
-        </p>
-        <a href="#" role="button" aria-label="Add word, cta action, to your button title">
-            <span>Get Started</span></a>
-    </section>
+  <section>
+    <img src="img/fp.svg" alt="" />
+    <h2>Lightweight, Fast, Accessible, Inclusive</h2>
+    <p>
+      <span
+        >First Paint is lightweight easy to use CSS/SCSS starter library for
+        quickly scaffolding/building modern, mobile friendly websites.</span
+      >
+    </p>
+    <a
+      href="#"
+      role="button"
+      aria-label="Add word, cta action, to your button title"
+    >
+      <span>Get Started</span></a
+    >
+  </section>
 </header>
 ```
 
 ### Main
 
-``` html
+```html
 <section id="articles">
-    <article>
-        <h2>Sample Article 1</h2>
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
-            doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
-            voluptatibus eaque!
-        </p>
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
-            doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
-            voluptatibus eaque!
-        </p>
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio rem maiores ad minima
-            doloribus. Pariatur quibusdam dolorum distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
-            voluptatibus eaque!
-        </p>
+  <article>
+    <h2>Sample Article 1</h2>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+      assumenda odio rem maiores ad minima doloribus. Pariatur quibusdam dolorum
+      distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
+      voluptatibus eaque!
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+      assumenda odio rem maiores ad minima doloribus. Pariatur quibusdam dolorum
+      distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
+      voluptatibus eaque!
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+      assumenda odio rem maiores ad minima doloribus. Pariatur quibusdam dolorum
+      distinctio repellendus vero natus explicabo mollitia ea, nemo sunt
+      voluptatibus eaque!
+    </p>
 
-        <footer>
-            <p>
-                <a href="" role="button">Read more</a>
-            </p>
-        </footer>
-    </article>
+    <footer>
+      <p>
+        <a href="" role="button">Read more</a>
+      </p>
+    </footer>
+  </article>
 </section>
 <aside>
-    <h4>Sidebar</h4>
-    <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos error, quas at facilis temporibus optio rem,
-        doloremque, modi numquam commodi illum cumque. Sit eveniet, quod expedita libero obcaecati a laudantium.
-    </p>
+  <h4>Sidebar</h4>
+  <p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos error, quas
+    at facilis temporibus optio rem, doloremque, modi numquam commodi illum
+    cumque. Sit eveniet, quod expedita libero obcaecati a laudantium.
+  </p>
 </aside>
 ```
 
 ### Navbar
 
-``` html
+```html
 <nav role="navigation" aria-label="Main navigation">
-    <section id="navigation">
-        <h1>
-            <a href="#" aria-label="Site logo">
-                <img src="/img/fp.svg" alt="" />
-                <span aria-label="logo text">FirstPaint</span>
-            </a>
-        </h1>
-    </section>
-    <ul>
-        <li>
-            <a href="#">Navbar Items</a>
-        </li>
-        <li>
-            <a href="#">Navbar Items</a>
-        </li>
-        <li>
-            <a href="#">Navbar Items</a>
-        </li>
-    </ul>
-    <section>
-        <div>
-            <a href="#">Blog</a>
-            <a href="#">About</a>
-            <a href="http://">Documentation</a>
-            <a href="http://">Repository</a>
-            <a href="#">Contact Us</a>
-            <button type="button">Button</button>
-        </div>
-    </section>
+  <section id="navigation">
+    <h1>
+      <a href="#" aria-label="Site logo">
+        <img src="/img/fp.svg" alt="" />
+        <span aria-label="logo text">FirstPaint</span>
+      </a>
+    </h1>
+  </section>
+  <ul>
+    <li>
+      <a href="#">Navbar Items</a>
+    </li>
+    <li>
+      <a href="#">Navbar Items</a>
+    </li>
+    <li>
+      <a href="#">Navbar Items</a>
+    </li>
+  </ul>
+  <section>
+    <div>
+      <a href="#">Blog</a>
+      <a href="#">About</a>
+      <a href="http://">Documentation</a>
+      <a href="http://">Repository</a>
+      <a href="#">Contact Us</a>
+      <button type="button">Button</button>
+    </div>
+  </section>
 </nav>
 ```
 
 ### Page Footer
 
-``` html
+```html
 <footer>
     <section>
         <p>
@@ -240,177 +267,177 @@ Copy and paste these snippets to build custom templates using fist-paint-CSS
 
 ### Button
 
-``` html
+```html
 <button type="button">Button</button>
 ```
 
 ### Link Button
 
-``` html
+```html
   <a href="#" role="button" aria-label="Add word, cta action, to your button title">
       <span>Get Started</span></a
 ```
 
 ### Grid (w/list)
 
-``` html
+```html
 <div role="list">
-    <div role="listitem">
-        <h3>Feature...</h3>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-        consectetur assumenda, porro repudiandae repellendus placeat iure officia
-        inventore sint voluptas et blanditiis facilis voluptate quas accusamus
-        itaque ea, corporis odio.
-    </div>
-    <div role="listitem">
-        <h3>Feature...</h3>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-        consectetur assumenda, porro repudiandae repellendus placeat iure officia
-        inventore sint voluptas et blanditiis facilis voluptate quas accusamus
-        itaque ea, corporis odio.
-    </div>
-</div>
-```
-
-### Grid Row
-
-``` html
-<div role="listitem">
+  <div role="listitem">
     <h3>Feature...</h3>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
     consectetur assumenda, porro repudiandae repellendus placeat iure officia
     inventore sint voluptas et blanditiis facilis voluptate quas accusamus
     itaque ea, corporis odio.
+  </div>
+  <div role="listitem">
+    <h3>Feature...</h3>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+    consectetur assumenda, porro repudiandae repellendus placeat iure officia
+    inventore sint voluptas et blanditiis facilis voluptate quas accusamus
+    itaque ea, corporis odio.
+  </div>
+</div>
+```
+
+### Grid Row
+
+```html
+<div role="listitem">
+  <h3>Feature...</h3>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur
+  assumenda, porro repudiandae repellendus placeat iure officia inventore sint
+  voluptas et blanditiis facilis voluptate quas accusamus itaque ea, corporis
+  odio.
 </div>
 ```
 
 ### Img
 
-``` html
+```html
 <picture>
-    <img src="" alt="Image" />
+  <img src="" alt="Image" />
 </picture>
 ```
 
 ### Ordered List
 
-``` html
+```html
 <ol>
-    <li>One</li>
-    <li>Two</li>
-    <li>Three</li>
-    <li>Four</li>
-    <li>Five</li>
+  <li>One</li>
+  <li>Two</li>
+  <li>Three</li>
+  <li>Four</li>
+  <li>Five</li>
 </ol>
 ```
 
 ### Unordered List
 
-``` html
+```html
 <ul>
-    <li>One</li>
-    <li>Two</li>
-    <li>Three</li>
-    <li>Four</li>
-    <li>Five</li>
+  <li>One</li>
+  <li>Two</li>
+  <li>Three</li>
+  <li>Four</li>
+  <li>Five</li>
 </ul>
 ```
 
 ### Ordered List (unstyled)
 
-``` html
+```html
 <span>
-    <ol>
-        <li>One</li>
-        <li>Two</li>
-        <li>Three</li>
-        <li>Four</li>
-        <li>Five</li>
-    </ol>
+  <ol>
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+    <li>Four</li>
+    <li>Five</li>
+  </ol>
 </span>
 ```
 
 ### Unordered List (unstyled)
 
-``` html
+```html
 <span>
-    <ul>
-        <li>One</li>
-        <li>Two</li>
-        <li>Three</li>
-        <li>Four</li>
-        <li>Five</li>
-    </ul>
+  <ul>
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+    <li>Four</li>
+    <li>Five</li>
+  </ul>
 </span>
 ```
 
 ### Input
 
-``` html
+```html
 <div role="listitem">
-    <label for="input">Text Input Component</label>
-    <input type="text" id="input" placeholder="Text input placeholder" />
+  <label for="input">Text Input Component</label>
+  <input type="text" id="input" placeholder="Text input placeholder" />
 </div>
 ```
 
 ### Label Required
 
-``` html
+```html
 <label for="input-required">
-    <em>Text Required Input Component</em>
+  <em>Text Required Input Component</em>
 </label>
 ```
 
 ### Email
 
-``` html
+```html
 <label for="email-address">Text Input Component</label>
 <input type="email" id="email-address" placeholder="Text input placeholder" />
 ```
 
 ### Checkbox
 
-``` html
+```html
 <span>
-    <input id="checkbox" type="checkbox" />
-    <label for="checkbox"><em> Checkbox</em></label>
+  <input id="checkbox" type="checkbox" />
+  <label for="checkbox"><em> Checkbox</em></label>
 </span>
 ```
 
 ### Radio
 
-``` html
+```html
 <span>
-    <input id="radio" type="radio" name="radio-button" />
-    <label for="radio"><em> Radio</em></label>
+  <input id="radio" type="radio" name="radio-button" />
+  <label for="radio"><em> Radio</em></label>
 </span>
 <span>
-    <input id="radio-off" type="radio" name="radio-button" />
-    <label for="radio-off"><em> Radio</em></label>
+  <input id="radio-off" type="radio" name="radio-button" />
+  <label for="radio-off"><em> Radio</em></label>
 </span>
 ```
 
 ### Select
 
-``` html
+```html
 <label for="select">Text Input Component</label>
 <select id="select">
-    <option value="">Select</option>
-    <option value="">Options</option>
-    <option value="">Options</option>
+  <option value="">Select</option>
+  <option value="">Options</option>
+  <option value="">Options</option>
 </select>
 ```
 
 ### Textarea
 
-``` html
+```html
 <label for="textarea">Textarea Component</label>
 <textarea id="textarea" cols="30" rows="10"></textarea>
 ```
 
 ### Textarea for code
 
-``` html
+```html
 <textarea role="presentation" name="" id="" cols="30">
 <h3>Subtitle</h3>
 <p>
@@ -419,48 +446,49 @@ Copy and paste these snippets to build custom templates using fist-paint-CSS
     laudantium commodi quis, facere aspernatur sapiente, molestias quidem
     molestiae repellat adipisci?
 </p>
-  </textarea>
+  </textarea
+>
 ```
 
 ### Table
 
-``` html
+```html
 <table>
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Points</th>
-            <th>Name</th>
-            <th>Points</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Dom</td>
-            <td>6000</td>
-            <td>Dom</td>
-            <td>6000</td>
-        </tr>
-        <tr class="active-row">
-            <td>Melissa</td>
-            <td>5150</td>
-            <td>Melissa</td>
-            <td>5150</td>
-        </tr>
-        <tr class="active-row">
-            <td>Melissa</td>
-            <td>5150</td>
-            <td>Melissa</td>
-            <td>5150</td>
-        </tr>
-        <tr class="active-row">
-            <td>Melissa</td>
-            <td>5150</td>
-            <td>Melissa</td>
-            <td>5150</td>
-        </tr>
-        <!-- and so on... -->
-    </tbody>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Points</th>
+      <th>Name</th>
+      <th>Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dom</td>
+      <td>6000</td>
+      <td>Dom</td>
+      <td>6000</td>
+    </tr>
+    <tr class="active-row">
+      <td>Melissa</td>
+      <td>5150</td>
+      <td>Melissa</td>
+      <td>5150</td>
+    </tr>
+    <tr class="active-row">
+      <td>Melissa</td>
+      <td>5150</td>
+      <td>Melissa</td>
+      <td>5150</td>
+    </tr>
+    <tr class="active-row">
+      <td>Melissa</td>
+      <td>5150</td>
+      <td>Melissa</td>
+      <td>5150</td>
+    </tr>
+    <!-- and so on... -->
+  </tbody>
 </table>
 ```
 
@@ -476,9 +504,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Contribute
 
-* Clone repo
-* Edit code `projects/ideas`
-* Submit pull request
+- Clone repo
+- Edit code `projects/ideas`
+- Submit pull request
 
 ## Enjoy
 

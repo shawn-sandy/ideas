@@ -12,7 +12,7 @@ $flex-media-980: 1 1 28% !default;
     #{if($className, $className, '.fp-grid')},
     section,
     div {
-      &[role="list"] {
+      &[role='list'] {
         @include grid();
       }
     }
@@ -27,7 +27,7 @@ $flex-media-980: 1 1 28% !default;
   justify-content: $justify-content;
   gap: 1.2rem;
 
-  [role="listitem"] {
+  [role='listitem'] {
     flex: 1 1 100%;
     line-height: 1.6;
     padding: 1rem;

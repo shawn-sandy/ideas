@@ -12,7 +12,7 @@ label[for] em {
   font-style: normal;
 }
 label[for] em::after {
-  content: "∗";
+  content: '∗';
   color: var(--danger);
 }
 
@@ -30,7 +30,8 @@ select[id] {
   --border-rad: 0.2rem;
   border-radius: var(--border-rad);
 }
-input[id]:focus, input[id]:focus-within,
+input[id]:focus,
+input[id]:focus-within,
 textarea[id]:focus,
 textarea[id]:focus-within,
 select[id]:focus,

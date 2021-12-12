@@ -4,7 +4,7 @@
   "private": true,
   "description": "A UI toolkit for creating and managing style-guides, design systems, pattern libraries, apps, digital products, etc.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\"",
     "start": "run-s clean && run-p watch:* js:* serve",
     "serve": "eleventy --serve",
     "eleventy": "run-s eleventy --serve",
@@ -35,7 +35,8 @@
     "git:add": "git add .",
     "git:cz": "git cz",
     "git:push": "git push",
-    "commit": "run-s git:add git:cz git:push"
+    "commit": "run-s git:add git:cz git:push",
+    "prepare": "husky install"
   },
   "directories": {
     "lib": "dist",
@@ -62,14 +63,19 @@
     "@babel/cli": "^7.15.4",
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
     "@fortawesome/fontawesome-free": "^5.15.4",
+    "@hint/configuration-accessibility": "^2.0.15",
     "@shawnsandy/bootstrap-lite": "^0.2.6",
     "@shawnsandy/first-paint": "^1.2.1",
     "@shawnsandy/ideas": "^0.3.2",
     "@shawnsandy/mix": "^0.10.21",
     "auto-changelog": "^2.3.0",
+    "conventional-changelog-atom": "^2.0.8",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-node": "^11.1.0",
@@ -87,24 +93,38 @@
     "gulp-shell": "^0.8.0",
     "gulp-sizereport": "^1.2.1",
     "gulp-string-replace": "^1.1.2",
+    "hint": "^6.1.9",
     "html-minifier": "^4.0.0",
+    "husky": "^7.0.0",
     "lerna": "^4.0.0",
     "lerna-script": "^1.4.0",
     "lighthouse": "^7.4.0",
+    "lint-staged": "^12.1.2",
     "lodash": "^4.17.21",
     "mvp": "git+https://github.com/shawn-sandy/mvp.git",
     "node-fetch": "^2.6.5",
     "npm-run-all": "^4.1.5",
-    "parcel": "2.0.0-beta.2",
+    "parcel": "^2.0.1",
+    "prettier": "^2.5.1",
+    "pretty-quick": "^3.1.2",
     "require-dir": "^1.2.0",
     "sass": "^1.35.1",
     "standard": "^16.0.3",
     "style-dictionary": "^3.0.1",
+    "stylelint": "^14.1.0",
+    "stylelint-config-standard": "^24.0.0",
     "trash-cli": "^4.0.0"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "husky": {
+    "hooks": {}
+  },
+  "lint-staged": {
+    "*.{js, jsx}": "eslint --fix",
+    "*.{js,jsx,ts,tsx,md,html,css, scss}": "prettier --write"
   }
 }

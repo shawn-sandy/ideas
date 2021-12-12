@@ -1,9 +1,9 @@
 // set variables
 // TODO Search and replace name with CSS tag/element name
-@use "./utilities/maps";
-@use "./utilities/mixins" as mix;
+@use './utilities/maps';
+@use './utilities/mixins' as mix;
 $render: true !default;
-$prefix: "layout";
+$prefix: 'layout';
 $tokens: ();
 
 // render component mixin
@@ -11,7 +11,7 @@ $tokens: ();
   @if ($renderContent) {
     #{$className,
     $className,
-    ".fp-footer"},
+    '.fp-footer'},
     footer {
       @include maps.customProperties($tokens, $prefix);
       @include footer();
@@ -20,7 +20,7 @@ $tokens: ();
 }
 
 @mixin footer {
-  &[role="contentinfo"] {
+  &[role='contentinfo'] {
     --fs: var(--s2) !important;
     --px: var(--xl);
     > section {

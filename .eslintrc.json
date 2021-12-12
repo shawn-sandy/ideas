@@ -4,12 +4,11 @@
     "es2021": true,
     "node": true
   },
-  "extends": [
-    "standard"
-  ],
+  "extends": ["standard"],
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": "script"
   },
-  "rules": {}
+  "rules": {},
+  "ignorePatterns": ["temp.js", "**/vendor/*.js", "**/node_modules/*.js"]
 }

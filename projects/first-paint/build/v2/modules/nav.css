@@ -1,4 +1,4 @@
-@import "../modules/utilities/functions" as fn;
+@import '../modules/utilities/functions' as fn;
 nav {
   --nav-dp: var(--dsp-f);
   --nav-align: var(--al);

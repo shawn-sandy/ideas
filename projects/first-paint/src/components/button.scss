@@ -23,7 +23,7 @@ $transform: scale(0.98) !default;
 // ******************** imports ********************
 // *************************************************
 
-@use "styles.scss";
+@use 'styles.scss';
 
 @mixin renderComponent($renderComponent: $render, $className: null) {
   @if $renderComponent {
@@ -58,9 +58,9 @@ TODO: deprecate this mixin
     transform: $transform;
   }
 
-  &[type="reset"],
-  &[type="button"],
-  &[type="submit"] {
+  &[type='reset'],
+  &[type='button'],
+  &[type='submit'] {
     padding: $button-padding;
     border: $border-default;
 
@@ -79,7 +79,7 @@ TODO: deprecate this mixin
   @warn '@mixin links() uses [role=button] on href tags; some consider this an anti-pattern you can use the linkBtn() instead';
   a,
   .fp-button-link {
-    &[role="button"] {
+    &[role='button'] {
       display: inline-flex;
       text-decoration: none;
       background-color: transparent;
@@ -137,7 +137,7 @@ TODO: deprecate this mixin
 @mixin linkBtn() {
   a,
   a[onclick],
-  a[tabindex="0"],
+  a[tabindex='0'],
   a[aria-pressed],
   a[aria-label] {
     //text-decoration: none;

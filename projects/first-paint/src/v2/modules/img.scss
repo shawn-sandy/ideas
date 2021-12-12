@@ -13,7 +13,7 @@ $renderImg: true !default;
 
     #{$className,
     $className,
-    ".fp-picture"},
+    '.fp-picture'},
     picture {
       // display: flex;
       --dsp: flex;
@@ -41,7 +41,7 @@ $renderImg: true !default;
           --fs: 0.8rem;
           width: 100%;
           height: 100%;
-          content: "" " " attr(alt);
+          content: '' ' ' attr(alt);
           position: absolute;
           font-size: var(--fs);
           top: 0;

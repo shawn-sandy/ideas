@@ -6,30 +6,32 @@
 {% endblock %}
 {% block feature %}{% endblock %}
 {% block main %}
-  <section id="components" style="--direction: column; --justify: flex-start; --align:initial; --min-w: 100%">
+  <section>
     <h2>Components</h2>
-    <hr>
-      <section>
+  </section>
+  <hr>
+    <section role="grid" style="--w: 100%">
+      <div role="row" style="--w: 100%">
         {% set components = collections['components'] %}
         {{ hlp.sort(components, 'fileSlug') }}
         {% for item in components %}
-          <article class="title">
+          <div role="gridcell">
             <h5>
               <a href="{{ item.url }}" style="--fs: var(--lg); --cl: var(--dark); --my: 0 var(--rem)">{{ item.data.title }}</a>
             </h5>
-            <p style="--fs: var(--md); --cl: gray">
-              {{ item.data.description }}
-            </p>
+            <div style="--main:;">
+              <p style="--cl: gray; --truncate: 2">
+                {{ item.data.description }}
+              </p>
+            </div>
             <p>
               <a href="{{ item.url }}" style="--btn-pill">View Component</a>
             </p>
-          </article>
-          <hr style="hr-my: var(--rem)">
-          {% endfor %}
-        </section>
-      </section>
+          </div>
+        {% endfor %}
+      </div>
     {% endblock %}
     {% block scripts %}
       <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
-      {# <script src="/js/scripts.js"></script> #}
+      <script src="/js/scripts.js"></script>
     {% endblock %}

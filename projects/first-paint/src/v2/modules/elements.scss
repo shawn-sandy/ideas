@@ -8,11 +8,11 @@
 
 // set variables
 // TODO Search and replace name with CSS tag/element name
-@use "./utilities/maps";
-@use "./utilities/mixins" as mix;
-@use "./utilities/functions" as fn;
+@use './utilities/maps';
+@use './utilities/mixins' as mix;
+@use './utilities/functions' as fn;
 $render: true !default;
-$prefix: "layout";
+$prefix: 'layout';
 $tokens: ();
 
 // render component mixin
@@ -111,7 +111,7 @@ label[for] {
     font-style: var(--fs-style);
 
     &::before {
-      content: var(--content, "\2217");
+      content: var(--content, '\2217');
       color: var(--danger, var(--border-cl));
     }
   }

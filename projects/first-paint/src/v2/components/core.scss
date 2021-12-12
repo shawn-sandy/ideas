@@ -8,11 +8,6 @@
   display: var(--dsp, block);
 }
 
-script,
-title {
-  // display: none !important;
-}
-
 * {
   @include maps.cp(tokens.$props);
   box-sizing: border-box;
@@ -40,6 +35,7 @@ title {
   text-align: var(--txa);
   border-radius: var(--rads);
   line-height: var(--lh);
+  -webkit-line-clamp: var(--clamp, initial);
 }
 
 :root {
@@ -55,6 +51,26 @@ title {
   content: var(--after);
 }
 
+html {
+  font-size: var(--page-fs, 100%);
+
+  @media screen and (max-width: calc(768rem / 16)) {
+    font-size: var(--page-fs-xs, 82%);
+  }
+
+  @media screen and (max-width: calc(992rem / 16)) and (min-width: calc(768rem / 16)) {
+    font-size: var(--page-fs-sm, 87%);
+  }
+
+  @media screen and (max-width: calc(1280rem / 16)) and (min-width: calc(992rem / 16)) {
+    font-size: var(--page-fs-md, 90%);
+  }
+
+  @media screen and (max-width: calc(1400rem / 16)) and (min-width: calc(1280rem / 16)) {
+    font-size: var(--page-fs-lg, 95%);
+  }
+}
+
 body * {
   // display: var(--dsp);
 }
@@ -65,20 +81,20 @@ main,
 ul,
 ol,
 div,
-> nav,
-> section {
+>nav,
+>section {
   --px: 1.2rem;
 }
 
 main,
-body > section,
+body>section,
 footer {
   --dsp: block;
   --px: 1rem;
   --py: auto;
   --mx: auto;
-  @media (min-width: calc(980rem / 16)) {
-    // --max-w: var(--container-md, var(--pct-8));
+
+  @media (min-width: calc(992rem / 16)) {
     --px: calc(10% - 1rem);
   }
 }
@@ -90,12 +106,12 @@ nav {
   --w: 100%;
 }
 
-> * + * {
+>*+* {
   --py: 1rem;
 }
 
 header {
-  > section {
+  >section {
     --px: 1rem;
   }
 }
@@ -105,8 +121,8 @@ ul {
   --mx: 1rem;
 }
 
-section + section,
-div + div {
+section+section,
+div+div {
   --dsp: block;
   --py: 1rem 0;
 }
@@ -119,15 +135,27 @@ link,
 ul,
 p,
 form,
+code,
 blockquote {
   width: var(--w);
   height: var(--h);
-  px: 1rem;
-  py: 1rem;
-  mx: var(--elm-mx, --mx);
-  my: var(--elm-my, --my);
+  --mx: var(--elm-mx, --mx);
+  --my: var(--elm-my, --my);
+  --w: initial;
+  --h: initial;
+}
+
+div {
+  --dsp: block;
+  --mx: initial;
+  --my: initial;
   --w: auto;
-  --h: auto;
+}
+
+button,
+link,
+ul {
+  display: var(--dsp, inline-block);
 }
 
 :any-link,
@@ -135,17 +163,19 @@ a {
   --cl: blue;
   --txd: none;
   --cursor: pointer;
+
   &:visited,
   :active {
     --cl: navy;
   }
+
   * {
     --cursor: pointer;
   }
 }
 
 p {
-  + p {
+  +p {
     --py: 1rem 0;
   }
 }

@@ -60,7 +60,7 @@ $font-family: var(--fs-family) !default;
     & > section,
     main,
     nav,
-    footer[role="contentinfo"] {
+    footer[role='contentinfo'] {
       @media screen and (max-width: 980px) {
         --w: auto;
         padding-inline: var(--px);

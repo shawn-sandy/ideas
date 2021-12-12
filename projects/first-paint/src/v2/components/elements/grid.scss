@@ -2,34 +2,36 @@
   --py: var(--rem);
 }
 
-div[role="row"],
+[role="row"],
 [style="--row"] {
-  --dsp: flex;
-  --gap: var(--rem);
+  --dsp : flex;
+  --gap : var(--rem);
   --wrap: var(--row-wrap, wrap);
-  [role="gridcell"] {
-  }
+
+  [role="gridcell"] {}
 }
 
 [role="list"],
 [style*="--list"] {
-  --dsp: flex;
-  --gap: var(--rem);
+  --dsp : flex;
+  --gap : var(--rem);
   --wrap: var(--row-wrap, wrap);
 }
 
 [role="gridcell"],
 [role="listitem"],
 [style*="--grid"] {
-  flex: var(--col-flex, 1 1 calc(100% / var(--cols, 4) - var(--gap)));
-  --py: var(--rem);
-  --px: var(--rem);
-  * + * {
-    --py: var(--rem) 0;
-  }
+  --dsp      : flex;
+  flex       : var(--col-flex, 1 1 calc(100% / var(--cols, 4) - var(--gap)));
+  --py       : var(--rem);
+  --px       : var(--rem);
+  --direction: var(--col-direction, column);
+  --max-w    : calc(100% / var(--cols, 4) - var(--gap));
+
   @media (max-width: calc(768rem /16)) {
     --cols: var(--cols-xs, 1);
   }
+
   @media (max-width: calc(992rem /16)) and (min-width: calc(768rem /16)) {
     --cols: var(--cols-sm, 2);
   }
@@ -41,7 +43,14 @@ div[role="row"],
   @media (max-width: calc(1400rem /16)) and (min-width: calc(1280rem /16)) {
     --cols: var(--cols-lg, 4);
   }
+
   @media (min-width: calc(1600rem /16)) {
     --cols: var(--cols-xxl, 5);
   }
 }
+
+[style*="--main:"] {
+  flex: 1 0 auto;
+}
+
+.empty-check {}

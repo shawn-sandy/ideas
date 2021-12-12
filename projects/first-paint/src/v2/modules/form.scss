@@ -30,7 +30,7 @@ $background-color: transparent !default;
       font-style: var(--fs-style);
 
       &::after {
-        content: "\2217";
+        content: '\2217';
         color: var(--danger);
         // font-size: larger;
       }
@@ -101,7 +101,7 @@ $background-color: transparent !default;
       cursor: pointer;
 
       &::before {
-        content: "";
+        content: '';
         display: inline-flex;
         width: 1rem;
         height: 1rem;
@@ -112,15 +112,15 @@ $background-color: transparent !default;
       }
     }
 
-    > [type="checkbox"]:checked + label[for],
-    [type="radio"]:checked + label[for] {
+    > [type='checkbox']:checked + label[for],
+    [type='radio']:checked + label[for] {
       &::before {
         background-color: gray;
       }
     }
 
-    > [type="checkbox"],
-    > [type="radio"] {
+    > [type='checkbox'],
+    > [type='radio'] {
       width: 1px;
       height: 1px;
       opacity: 0;
@@ -129,17 +129,17 @@ $background-color: transparent !default;
       padding: 0;
     }
 
-    > [type="radio"] {
+    > [type='radio'] {
       display: block;
     }
 
-    > [type="radio"] + label {
+    > [type='radio'] + label {
       &::before {
         border-radius: 50%;
       }
     }
 
-    [type="checkbox"] {
+    [type='checkbox'] {
       display: none;
     }
   }

@@ -7,22 +7,22 @@
 {% block header %}{% endblock %}
 {% block feature %}{% endblock %}
 {% block main %}
-  <h3>{{ title }}</h3>
+  <h2>{{ title }}</h2>
+  <p style="--p-fs:var(--p-lg)">{{ description }}</p>
+  {{ content | safe }}
+  {% if sandbox %}
+    {{ box.demo(sandbox, title) }}
+  {% endif %}
+  {% set components = collections['components'] %}
   <hr>
-    {{ content | safe }}
-    <div>
-      {{ description | safe }}
+    {{ hlp.sort(components, 'fileSlug') }}
+    <div style="--flex-justify: flex-start; --min-w: 100%; --py: var(--s4)">
+      {% for item in components %}
+        <a href="{{ item.url }}" style="--btn-pill; --min-w: 100px">
+          {{ item.data.title }}
+          <span class="icon-arrow-right"></span>
+        </a>
+      {% endfor %}
     </div>
-    <hr>
-      {% set components = collections['components'] %}
-      {{ hlp.sort(components, 'fileSlug') }}
-      <div style="--flex-justify: flex-start; --min-w: 100%; --py: var(--s4)">
-        {% for item in components %}
-          <a href="{{ item.url }}" style="--btn-lg; --btn-pill; --min-w: 100px">
-            {{ item.data.title }}
-            <span class="icon-arrow-right"></span>
-          </a>
-        {% endfor %}
-      </div>
-      <hr>
-      {% endblock %}
+  {% endblock %}
+  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>

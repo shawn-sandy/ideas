@@ -52,21 +52,35 @@ time {
   padding: 0 0 0.5rem;
 }
 
-p {
-  margin: 0;
+p,
+[style*="--p-"] {
+  --p-sm: var(--sm);
+  --p-md: var(--md);
+  --p-lg: var(--lg);
+  --fs: var(--p-fs, var(--rem));
+  margin: var(--p-m, 0);
   --fw: normal;
   --lh: 1.7;
 }
-p i {
+p i,
+[style*="--p-"] i {
   font-style: italic;
 }
-p strong {
+p strong,
+[style*="--p-"] strong {
   font-weight: var(--fw-medium);
 }
 
 p + p,
 p + * {
   margin-top: var(--rem);
+}
+
+[style*="--truncate"] {
+  --clamp: var(--truncate, 1);
+  --dsp: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=type.css.map */

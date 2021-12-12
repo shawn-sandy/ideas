@@ -51,7 +51,7 @@ $props: (
   "pos": var(--position, initial),
   "line": thin solid lightgray,
   "cursor": auto,
-  "rad": intial,
+  "rad": intial
 );
 
 $colors: (
@@ -68,6 +68,7 @@ $colors: (
   "highlight": "hsl(54, 100%, 90%)",
   "text": "var(dark)"
 );
+
 $units: (
   "gap": 1rem,
   "gap-sm": var(--sm),
@@ -86,7 +87,7 @@ $units: (
   "s7": rems(60),
   "s8": rems(72),
   "s9": rems(80),
-  p "s10": rems(120),
+  "s10": rems(120),
   "s11": rems(144),
   "s12": rems(192),
   "s13": rems(240),
@@ -107,6 +108,8 @@ $units: (
   "8xl": var(--s12),
   "9xl": var(--s13),
   "10xl": var(--s14),
+  "lead": var(--s3),
+  "pitch": var(--s3),
   "d": var(--rem),
   // percentages
   "pct-1": 10%,
@@ -147,5 +150,5 @@ $units: (
   "container-md": calc(1280rem / 16),
   "container-lg": calc(1400rem / 16),
   "container-xl": calc(1600rem / 16),
-  "container": 100%,
+  "container": 100%
 );

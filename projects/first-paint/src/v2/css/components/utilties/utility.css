@@ -52,15 +52,22 @@ time {
   padding: 0 0 0.5rem;
 }
 
-p {
-  margin: 0;
+p,
+[style*='--p-'] {
+  --p-sm: var(--sm);
+  --p-md: var(--md);
+  --p-lg: var(--lg);
+  --fs: var(--p-fs, var(--rem));
+  margin: var(--p-m, 0);
   --fw: normal;
   --lh: 1.7;
 }
-p i {
+p i,
+[style*='--p-'] i {
   font-style: italic;
 }
-p strong {
+p strong,
+[style*='--p-'] strong {
   font-weight: var(--fw-medium);
 }
 
@@ -69,13 +76,63 @@ p + * {
   margin-top: var(--rem);
 }
 
+[style*='--truncate'] {
+  --clamp: var(--truncate, 1);
+  --dsp: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 /* flex styles */
-[style*="--flex"] {
+[style*='--flex'] {
   --dsp: flex;
   --gap: var(--flex-gap, 1rem);
   --wrap: var(--flex-wrap, wrap);
   --align: var(--flex-align, center);
   --justify: var(--flex-justify, start);
+}
+
+/** Card component **/
+[style*='--card'] {
+  --dsp: grid;
+  grid-template-rows: auto 1fr auto;
+  --h: 100%;
+  --align: stretch;
+  --gap: var(--card-gap, 0);
+}
+[style*='--card'] > div {
+  --h: 100%;
+  --w: 100%;
+}
+
+[style*='--fx-card'] {
+  flex-direction: var(--fx-card-direction, column);
+  --dsp: flex;
+  flex: var(--grid-flex);
+  line-height: 1.6;
+  width: var(--grid-w);
+}
+[style*='--fx-card'] > * + * {
+  --mt: 1rem;
+  margin-top: var(--mt, 1rem);
+}
+@media (min-width: 1680px) {
+  [style*='--fx-card'] {
+    --grid-flex: 1 1 24%;
+    --grid-w: 24%;
+  }
+}
+@media (max-width: 980px) {
+  [style*='--fx-card'] {
+    --grid-flex: 1 1 48%;
+    --grid-w: 48%;
+  }
+}
+@media (max-width: 680px) {
+  [style*='--fx-card'] {
+    --grid-flex: 1 1 98%;
+    --grid-w: 49%;
+  }
 }
 
 /** utility.scss */

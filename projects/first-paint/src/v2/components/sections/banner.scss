@@ -1,7 +1,7 @@
 /** banner.scss */
 
-[role="banner"],
-[style*="--banner"] {
+[role='banner'],
+[style*='--banner'] {
   --dsp: flex;
   --align: var(--banner-align, center);
   --justify: var(--banner-justify, center);
@@ -20,7 +20,7 @@
   p > * {
     --fs: var(--banner-p, var(--s4));
   }
-  [style*="--btn:"] {
+  [style*='--btn:'] {
     --fs: var(--btn-fs, var(--rem));
     --h: var(--banner-btn-h, var(--s6));
   }

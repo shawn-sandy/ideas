@@ -3,7 +3,8 @@
   box-sizing: border-box;
   color: var(--cl);
 }
-*:before, *:after {
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -47,7 +48,7 @@ body {
 :where(body) > section,
 :where(body) main,
 :where(body) nav,
-:where(body) footer[role=contentinfo] {
+:where(body) footer[role='contentinfo'] {
   padding-block: var(--px);
   padding-inline: var(--py);
   width: 80%;
@@ -55,9 +56,9 @@ body {
 }
 @media screen and (max-width: 980px) {
   :where(body) > section,
-:where(body) main,
-:where(body) nav,
-:where(body) footer[role=contentinfo] {
+  :where(body) main,
+  :where(body) nav,
+  :where(body) footer[role='contentinfo'] {
     width: 100%;
     padding-inline: var(--py);
   }
@@ -65,12 +66,12 @@ body {
 
 @media (max-width: 980px) {
   section,
-article,
-aside,
-summary,
-ul,
-ol,
-div {
+  article,
+  aside,
+  summary,
+  ul,
+  ol,
+  div {
     padding: 1rem;
   }
 }

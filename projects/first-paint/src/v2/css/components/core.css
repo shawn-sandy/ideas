@@ -66,6 +66,7 @@
   text-align: var(--txa);
   border-radius: var(--rads);
   line-height: var(--lh);
+  -webkit-line-clamp: var(--clamp, initial);
 }
 
 :root {
@@ -85,7 +86,7 @@
   --s7: 3.75rem;
   --s8: 4.5rem;
   --s9: 5rem;
-  --p s10: 7.5rem;
+  --s10: 7.5rem;
   --s11: 9rem;
   --s12: 12rem;
   --s13: 15rem;
@@ -105,6 +106,8 @@
   --8xl: var(--s12);
   --9xl: var(--s13);
   --10xl: var(--s14);
+  --lead: var(--s3);
+  --pitch: var(--s3);
   --d: var(--rem);
   --pct-1: 10%;
   --pct-2: 20%;
@@ -163,6 +166,30 @@
   content: var(--after);
 }
 
+html {
+  font-size: var(--page-fs, 100%);
+}
+@media screen and (max-width: 48rem) {
+  html {
+    font-size: var(--page-fs-xs, 82%);
+  }
+}
+@media screen and (max-width: 62rem) and (min-width: 48rem) {
+  html {
+    font-size: var(--page-fs-sm, 87%);
+  }
+}
+@media screen and (max-width: 80rem) and (min-width: 62rem) {
+  html {
+    font-size: var(--page-fs-md, 90%);
+  }
+}
+@media screen and (max-width: 87.5rem) and (min-width: 80rem) {
+  html {
+    font-size: var(--page-fs-lg, 95%);
+  }
+}
+
 footer[role=contentinfo],
 header,
 main,
@@ -182,7 +209,7 @@ footer {
   --py: auto;
   --mx: auto;
 }
-@media (min-width: 61.25rem) {
+@media (min-width: 62rem) {
   main,
 body > section,
 footer {
@@ -222,15 +249,27 @@ link,
 ul,
 p,
 form,
+code,
 blockquote {
   width: var(--w);
   height: var(--h);
-  px: 1rem;
-  py: 1rem;
-  mx: var(--elm-mx, --mx);
-  my: var(--elm-my, --my);
+  --mx: var(--elm-mx, --mx);
+  --my: var(--elm-my, --my);
+  --w: initial;
+  --h: initial;
+}
+
+div {
+  --dsp: block;
+  --mx: initial;
+  --my: initial;
   --w: auto;
-  --h: auto;
+}
+
+button,
+link,
+ul {
+  display: var(--dsp, inline-block);
 }
 
 :any-link,

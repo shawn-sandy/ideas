@@ -1,5 +1,6 @@
-const sort = {
-  valueNames: ["title"],
-};
-
-const sortList = new List("components", sort);
+// @ts-check
+document.getElementsByClassName('lang')
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('scripts loaded')
+  // alert('DOM ready!')
+})

@@ -5,31 +5,23 @@ $width: 12px !default;
 $background-color: darkgray !default;
 $thumb-color: lightgray !default;
 
-
-
 // render component mixin
 
 @mixin renderComponent($renderContent: $render, $className: null) {
-  @if($renderContent) {
-
-    @if($className) {
+  @if ($renderContent) {
+    @if ($className) {
       .#{$className} {
-
         @include scrollbar();
       }
-
     }
-
   }
 }
 
 // include render component
 
 @mixin scrollbar {
-
   scrollbar-width: $width;
   scrollbar-color: $thumb-color $background-color;
-
 
   &::-webkit-scrollbar {
     width: $width;
@@ -44,8 +36,6 @@ $thumb-color: lightgray !default;
     border-radius: 6px;
     border: 3px solid $background-color;
   }
-
 }
-
 
 @include renderComponent();

@@ -47,13 +47,8 @@
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
-  "conventionalCommits.scopes": [
-    "2.0",
-    "wip"
-  ],
-  "cssVariables.lookupFiles": [
-    "projects/first-paint/src/v2"
-  ],
+  "conventionalCommits.scopes": ["2.0", "wip"],
+  "cssVariables.lookupFiles": ["projects/first-paint/src/v2"],
   "conventionalCommits.lineBreak": "\\",
   "prettier.semi": false,
   "javascript.format.semicolons": "remove",
@@ -63,5 +58,17 @@
     "MD025": {
       "front_matter_title": ""
     }
-  }
+  },
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "markdown.replaceSmartQuotes": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "commit-message-editor.view.defaultView": "form",
+  "stylelint.ignoreDisables": true,
+  "stylelint.validate": ["css", "scss", "less"],
+  "[scss]": {
+    "editor.defaultFormatter": "MikeBovenlander.formate"
+  },
+  "prettier.singleQuote": true
 }

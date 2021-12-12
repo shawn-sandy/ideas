@@ -1,6 +1,6 @@
 /* component: button.scss */
 button[type],
-[style*="--btn"] {
+[style*='--btn'] {
   --btn-py-sm: 1rem 0.9rem;
   --btn-py-md: 1.3rem 1.2rem;
   --btn-py-lg: 1.5rem 1.4rem;
@@ -8,12 +8,12 @@ button[type],
   --bg: lightgray;
   --dsp: inline-flex;
   --align: center;
-  --justify: center;
+  --justify: space-between;
   --lh: 1;
   --h: calc(44rem / 16);
   --h-sm: calc(32rem / 16);
   --h-lg: calc(60rem / 16);
-  --px: 2.1rem;
+  --px: 1.9rem;
   --py: var(--btn-py-sm);
   --border: var(--line);
   --rads: var(--btn-rds, var(--rds));
@@ -24,54 +24,54 @@ button[type],
 }
 button[type]:any-link,
 button[type] a,
-[style*="--btn"]:any-link,
-[style*="--btn"] a {
+[style*='--btn']:any-link,
+[style*='--btn'] a {
   --txd: none;
   --cl: var(--btn-cl, var(--dark));
 }
 button[type]:hover,
-[style*="--btn"]:hover {
+[style*='--btn']:hover {
   --cursor: pointer;
   --cl: var(--btn-hover-cl, var(--white));
   --bg: var(--btn-hover-bg, var(--dark));
 }
-button[type][type=submit],
-[style*="--btn"][type=submit] {
+button[type][type='submit'],
+[style*='--btn'][type='submit'] {
   --bg: var(--submit-bg, navy);
   --cl: var(--btn-cl, var(--white));
 }
-button[type][type=submit]:hover,
-[style*="--btn"][type=submit]:hover {
+button[type][type='submit']:hover,
+[style*='--btn'][type='submit']:hover {
   --bg: var(--submit-hover-bg, var(--dark));
 }
-button[type][type=reset],
-[style*="--btn"][type=reset] {
+button[type][type='reset'],
+[style*='--btn'][type='reset'] {
   --bg: var(--reset-bg, transparent);
-  --line: medium solid var(--reset-cl, lightgray);
+  --line: thin solid var(--reset-cl, lightgray);
 }
-button[type][type=reset]:hover,
-[style*="--btn"][type=reset]:hover {
+button[type][type='reset']:hover,
+[style*='--btn'][type='reset']:hover {
   --bg: var(--reset-hover-bg, var(--dark));
 }
 
-button[type][style*="--btn-pill"],
-[style*="--btn-pill"] {
+button[type][style*='--btn-pill'],
+[style*='--btn-pill'] {
   --rads: var(--btn-pill, var(--pill));
 }
 
-button[type][style*="--btn-sm"],
-[style*="--btn-sm"] {
+button[type][style*='--btn-sm'],
+[style*='--btn-sm'] {
   --h: var(--btn-sm, var(--h-sm));
   --fs: var(--s1);
   --px: var(--px-sm, 1.2rem);
 }
 
-button[type][style*="--btn-lg"],
-[style*="--btn-lg"] {
+button[type][style*='--btn-lg'],
+[style*='--btn-lg'] {
   --h: var(--btn-lg, var(--h-lg));
   --fs: var(--rem);
   --py: var(--btn-py-lg);
-  --px: var(--px-lg, 2.7rem);
+  --px: var(--px-lg, 2.8rem);
 }
 
 /*
@@ -82,69 +82,122 @@ button[type][style*="--btn-lg"],
  Date: 2021-04-01
  ***************************************
 */
-[role=grid] {
+[role='grid'] {
   --py: var(--rem);
 }
 
-div[role=row],
-[style="--row"] {
+[role='row'],
+[style='--row'] {
   --dsp: flex;
   --gap: var(--rem);
   --wrap: var(--row-wrap, wrap);
 }
-[role=list],
-[style*="--list"] {
+[role='list'],
+[style*='--list'] {
   --dsp: flex;
   --gap: var(--rem);
   --wrap: var(--row-wrap, wrap);
 }
 
-[role=gridcell],
-[role=listitem],
-[style*="--grid"] {
+[role='gridcell'],
+[role='listitem'],
+[style*='--grid'] {
+  --dsp: flex;
   flex: var(--col-flex, 1 1 calc(100% / var(--cols, 4) - var(--gap)));
   --py: var(--rem);
   --px: var(--rem);
-}
-[role=gridcell] * + *,
-[role=listitem] * + *,
-[style*="--grid"] * + * {
-  --py: var(--rem) 0;
+  --direction: var(--col-direction, column);
+  --max-w: calc(100% / var(--cols, 4) - var(--gap));
 }
 @media (max-width: 48rem) {
-  [role=gridcell],
-[role=listitem],
-[style*="--grid"] {
+  [role='gridcell'],
+  [role='listitem'],
+  [style*='--grid'] {
     --cols: var(--cols-xs, 1);
   }
 }
 @media (max-width: 62rem) and (min-width: 48rem) {
-  [role=gridcell],
-[role=listitem],
-[style*="--grid"] {
+  [role='gridcell'],
+  [role='listitem'],
+  [style*='--grid'] {
     --cols: var(--cols-sm, 2);
   }
 }
 @media (max-width: 80rem) and (min-width: 62rem) {
-  [role=gridcell],
-[role=listitem],
-[style*="--grid"] {
+  [role='gridcell'],
+  [role='listitem'],
+  [style*='--grid'] {
     --cols: var(--cols-md, 3);
   }
 }
 @media (max-width: 87.5rem) and (min-width: 80rem) {
-  [role=gridcell],
-[role=listitem],
-[style*="--grid"] {
+  [role='gridcell'],
+  [role='listitem'],
+  [style*='--grid'] {
     --cols: var(--cols-lg, 4);
   }
 }
 @media (min-width: 100rem) {
-  [role=gridcell],
-[role=listitem],
-[style*="--grid"] {
+  [role='gridcell'],
+  [role='listitem'],
+  [style*='--grid'] {
     --cols: var(--cols-xxl, 5);
   }
+}
+
+[style*='--main:'] {
+  flex: 1 0 auto;
+}
+
+pre,
+textarea[role='presentation'],
+div[contenteditable] {
+  padding: 1rem;
+  margin: 2rem 0;
+  background-color: var(--code-bg, var(--bg, #2b2b2b));
+  line-height: 1.8;
+  border-radius: 0.2rem;
+  border-color: #2b2b2b;
+  border-style: solid;
+  font-size: 0.9rem;
+  overflow-x: auto;
+  min-height: 150px;
+  max-height: 500px;
+  display: flex;
+  align-items: center;
+  --w: var(--code-w, 80%);
+  --px: 1rem;
+  --py: 1rem;
+}
+pre::-webkit-scrollbar,
+textarea[role='presentation']::-webkit-scrollbar,
+div[contenteditable]::-webkit-scrollbar {
+  width: 0.5rem;
+}
+pre::-webkit-scrollbar-track,
+textarea[role='presentation']::-webkit-scrollbar-track,
+div[contenteditable]::-webkit-scrollbar-track {
+  background: #2b2b2b;
+}
+pre::-webkit-scrollbar-thumb,
+textarea[role='presentation']::-webkit-scrollbar-thumb,
+div[contenteditable]::-webkit-scrollbar-thumb {
+  background-color: ghostwhite;
+  outline: none;
+}
+pre code,
+textarea[role='presentation'] code,
+div[contenteditable] code {
+  color: var(--alert);
+  line-height: var(--code-lh, 1.8);
+  --bg: transparent;
+  --w: 90%;
+  font-style: var(--code-fst, normal);
+}
+
+code {
+  --cl: var(--code-cl, #b61111);
+  font-style: italic;
 }
 
 /*  Component: elements.scss */

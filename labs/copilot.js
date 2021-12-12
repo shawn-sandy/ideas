@@ -14,7 +14,7 @@ const fetchCommits = async (repo, branch = 'main') => {
     .then((res) => res.json())
     .catch((err) => console.log(err))
   return commits
-};
+}
 
 fetchCommits('shawn-sandy/ideas')
   .then((commits) => {

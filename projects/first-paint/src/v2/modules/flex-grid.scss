@@ -1,12 +1,12 @@
 // set variables
 // TODO Search and replace name with CSS tag/element name
 
-@use "./utilities/maps";
+@use './utilities/maps';
 
 $render: true !default;
 $tokens: (
-  "w": "30%",
-  "flex": "1 1 30%",
+  'w': '30%',
+  'flex': '1 1 30%'
 );
 // render component mixin
 @mixin renderComponent($renderContent: $render, $className: null) {
@@ -15,8 +15,8 @@ $tokens: (
     section,
     div,
     ul {
-      &[role="list"] {
-        @include maps.customProperties($tokens, "grid");
+      &[role='list'] {
+        @include maps.customProperties($tokens, 'grid');
         --grid-size: 30%;
         --flex: var(--flex);
         @include flex-grid();
@@ -34,8 +34,8 @@ $tokens: (
   justify-content: var(--justify-b, space-between);
   gap: var(--gap, 1rem);
 
-  [role="listitem"],
-  [style*="--card"] {
+  [role='listitem'],
+  [style*='--card'] {
     flex-direction: var(--card-direction, column);
     --dsp: flex;
     flex: var(--grid-flex);

@@ -1,6 +1,6 @@
 @mixin clip-arrow($border-color: #c9c9c9) {
   &::after {
-    content: "";
+    content: '';
     border-style: solid;
     border-width: 8px 7px 0 7px;
     border-color: $border-color transparent transparent transparent;
@@ -22,8 +22,8 @@
     padding: 0.5rem 1rem;
   }
 
-  li+li {
-    margin-top: .5rem;
+  li + li {
+    margin-top: 0.5rem;
   }
 }
 
@@ -38,7 +38,6 @@ li {
     filter: opacity(0.8);
   }
 }
-
 
 .dl-hide {
   opacity: 0;

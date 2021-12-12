@@ -1,8 +1,8 @@
 // set variables
 // TODO Search and replace name with CSS tag/element name
-@use "./utilities/maps";
+@use './utilities/maps';
 $render: true !default;
-$prefix: "layout";
+$prefix: 'layout';
 $tokens: ();
 
 // render component mixin
@@ -10,7 +10,7 @@ $tokens: ();
   @if ($renderContent) {
     #{$className,
     $className,
-    ".fp-header"},
+    '.fp-header'},
     header {
       @include maps.customProperties($tokens, $prefix);
       @include header();

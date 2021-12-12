@@ -9,6 +9,7 @@
     {% block styles %}
       <link rel="stylesheet" href="/v2/css/index.css"/>
     {% endblock %}
+    {% import "_partials/sandbox.html" as box with context %}
   </head>
   <body class="{{ title | slug }}">
     <header>

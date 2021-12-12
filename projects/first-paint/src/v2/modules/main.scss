@@ -3,7 +3,7 @@ $renderMain: true !default;
 $min-height: 30vh !default;
 
 $tokens: (
-  min-height: $min-height,
+  min-height: $min-height
 );
 
 @mixin main($renderContent: $renderMain, $className: null) {
@@ -57,8 +57,8 @@ $tokens: (
 
     section + aside,
     aside + section,
-    section + [role="complementary"],
-    [role="complementary"] + section {
+    section + [role='complementary'],
+    [role='complementary'] + section {
       padding: 0 1rem 0 1.5rem;
       min-width: 25%;
       max-width: 25%;
