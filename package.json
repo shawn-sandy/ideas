@@ -124,6 +124,7 @@
     "hooks": {}
   },
   "lint-staged": {
-    "*.{js, jsx}": "eslint --fix"
+    "*.{js, jsx}": "eslint --fix",
+    "*.{js, jsx, ts}": "prettier --write"
   }
 }
