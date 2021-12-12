@@ -126,7 +126,7 @@
     "hooks": {}
   },
   "lint-staged": {
-    "*.{js, jsx}": "eslint --fix",
+    "*.{js, jsx}": "eslint --cache --fix",
     "*.{js,jsx,ts,tsx,md,html,css, scss}": "prettier --write"
   },
   "type": "module"
