@@ -36,7 +36,8 @@
     "git:cz": "git cz",
     "git:push": "git push",
     "commit": "run-s git:add git:cz git:push",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "plop": "plop"
   },
   "directories": {
     "lib": "dist",
@@ -127,5 +128,6 @@
   "lint-staged": {
     "*.{js, jsx}": "eslint --fix",
     "*.{js,jsx,ts,tsx,md,html,css, scss}": "prettier --write"
-  }
+  },
+  "type": "module"
 }
