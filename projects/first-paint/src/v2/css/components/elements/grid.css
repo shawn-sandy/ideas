@@ -62,7 +62,7 @@
 }
 
 [style*='--main:'] {
-  flex: 1 0 auto;
+  flex: var(--fx-auto-col);
 }
 
 /*# sourceMappingURL=grid.css.map */

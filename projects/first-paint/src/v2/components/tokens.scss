@@ -11,12 +11,20 @@
   @return $remValue;
 }
 
-$font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
-  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family: -apple-system,
+BlinkMacSystemFont,
+Roboto,
+"Segoe UI",
+"Helvetica Neue",
+Arial,
+"Noto Sans",
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+"Noto Color Emoji" !default;
 
-$props: (
-  "cl": var(--color, initial),
+$props: ("cl": var(--color, initial),
   "fs": var(--font-size, 1rem),
   "fst": var(--font-style, normal),
   "fw": var(--font-weight, normal),
@@ -51,11 +59,9 @@ $props: (
   "pos": var(--position, initial),
   "line": thin solid lightgray,
   "cursor": auto,
-  "rad": intial
-);
+  "rad": intial);
 
-$colors: (
-  // named colors
+$colors: ( // named colors
   "black": #000,
   "white": #fff,
   "off-white": "hsl(240, 100%, 96%)",
@@ -69,8 +75,7 @@ $colors: (
   "text": "var(dark)"
 );
 
-$units: (
-  "gap": 1rem,
+$units: ("gap": 1rem,
   "gap-sm": var(--sm),
   "gap-md": var(--md),
   "gap-lg": var(--lg),
@@ -150,5 +155,10 @@ $units: (
   "container-md": calc(1280rem / 16),
   "container-lg": calc(1400rem / 16),
   "container-xl": calc(1600rem / 16),
-  "container": 100%
-);
+  "container": 100%);
+
+
+$flex: ("fx-auto": 1 0 auto,
+  "fx-max-w": calc(100% - var(--col, 4) - var(--gap, 1rem)),
+  "fx-cols" :var(--col-flex, 1 1 calc(100% / var(--cols, 4) - var(--fx-gap, var(--gap)))),
+  "fx-auto-col": 1 0 auto)
