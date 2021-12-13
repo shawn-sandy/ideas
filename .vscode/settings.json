@@ -68,7 +68,7 @@
   "stylelint.ignoreDisables": true,
   "stylelint.validate": ["css", "scss", "less"],
   "[scss]": {
-    "editor.defaultFormatter": "MikeBovenlander.formate"
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
   },
   "prettier.singleQuote": true,
   "[handlebars]": {
