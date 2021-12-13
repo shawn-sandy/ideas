@@ -115,6 +115,7 @@
     "style-dictionary": "^3.0.1",
     "stylelint": "^14.1.0",
     "stylelint-config-standard": "^24.0.0",
+    "stylelint-scss": "^4.0.1",
     "trash-cli": "^4.0.0"
   },
   "config": {
@@ -127,7 +128,8 @@
   },
   "lint-staged": {
     "*.{js, jsx}": "eslint --cache --fix",
-    "*.{js,jsx,ts,tsx,md,html,css, scss}": "prettier --write"
+    "*.{js,jsx,ts,tsx,md,html,css, scss}": "prettier --write",
+    "*.{scss}": "stylelint"
   },
   "type": "module"
 }
