@@ -7,8 +7,6 @@
   --dsp: flex;
   --gap: var(--rem);
   --wrap: var(--row-wrap, wrap);
-
-  [role="gridcell"] {}
 }
 
 [role="list"],
@@ -24,8 +22,8 @@
   --dsp: flex;
 
   flex: var(--col-flex, 1 1 calc(100% / var(--cols, 4) - var(--gap)));
-  --py: var(--rem);
 
+  --py: var(--rem);
   --px: var(--rem);
   --direction: var(--col-direction, column);
   --max-w: calc(100% / var(--cols, 4) - var(--gap));
@@ -54,5 +52,3 @@
 [style*="--main:"] {
   flex: var(--fx-auto-col);
 }
-
-.empty-check {}
