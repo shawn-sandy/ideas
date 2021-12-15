@@ -157,6 +157,8 @@ $units: ("gap": 1rem,
 "container-xl": calc(1600rem / 16),
 "container": 100%);
 
-$flex: ("fxs-auto": 1 0 auto,
-"fx-max-w": calc(100% - var(--col, 4) - var(--gap, 1rem)),
-"fx-cols" :var(--col-flex, 1 1 calc(100% / var(--cols, 4) - var(--fx-gap, var(--gap)))));
+$flex: (
+  "fx-auto-size": 1 0 auto,
+  "fx-max-w": calc(100% - var(--col, 4) - var(--gap, 1rem)),
+  "fx-cols" :var(--col-flex, 1 1 calc(100% / var(--cols, 4) - var(--fx-gap, var(--gap))))
+);

@@ -12,8 +12,8 @@
   --ff: var(
     --font-family,
     -apple-system,
-    blinkmacsystemfont,
     roboto,
+    blinkmacsystemfont,
     'Segoe UI',
     'Helvetica Neue',
     arial,
@@ -170,7 +170,7 @@
   --danger: hsl(348, 98%, 38%);
   --highlight: hsl(54, 100%, 90%);
   --text: var(dark);
-  --fxs-auto: 1 0 auto;
+  --fx-auto-size: 1 0 auto;
   --fx-max-w: calc(100% - var(--col, 4) - var(--gap, 1rem));
   --fx-cols: var(
     --col-flex,
