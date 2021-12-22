@@ -31,8 +31,7 @@ button[type],
   }
   &:hover {
     --cursor: pointer;
-    --cl: var(--btn-hover-cl, var(--white));
-    --bg: var(--btn-hover-bg, var(--dark));
+    filter: var(--dark-mode)
   }
 
   &[type='submit'] {
@@ -40,15 +39,16 @@ button[type],
     --cl: var(--btn-cl, var(--white));
     // --line: medium solid var(--btn-cl, var(--bg));
     &:hover {
-      --bg: var(--submit-hover-bg, var(--dark));
+      // --bg: var(--submit-hover-bg, var(--dark));
     }
   }
 
   &[type='reset'] {
     --bg: var(--reset-bg, transparent);
+    --cl: var(--dark);
     --line: thin solid var(--reset-cl, lightgray);
     &:hover {
-      --bg: var(--reset-hover-bg, var(--dark));
+      filter: var(--dark-mode)
     }
   }
 }

@@ -1,6 +1,6 @@
 /* component: button.scss */
 button[type],
-[style*="--btn"] {
+[style*='--btn'] {
   --btn-py-sm: 1rem 0.9rem;
   --btn-py-md: 1.3rem 1.2rem;
   --btn-py-lg: 1.5rem 1.4rem;
@@ -24,50 +24,46 @@ button[type],
 }
 button[type]:any-link,
 button[type] a,
-[style*="--btn"]:any-link,
-[style*="--btn"] a {
+[style*='--btn']:any-link,
+[style*='--btn'] a {
   --txd: none;
   --cl: var(--btn-cl, var(--dark));
 }
 button[type]:hover,
-[style*="--btn"]:hover {
+[style*='--btn']:hover {
   --cursor: pointer;
-  --cl: var(--btn-hover-cl, var(--white));
-  --bg: var(--btn-hover-bg, var(--dark));
+  filter: var(--dark-mode);
 }
-button[type][type=submit],
-[style*="--btn"][type=submit] {
+button[type][type='submit'],
+[style*='--btn'][type='submit'] {
   --bg: var(--submit-bg, navy);
   --cl: var(--btn-cl, var(--white));
 }
-button[type][type=submit]:hover,
-[style*="--btn"][type=submit]:hover {
-  --bg: var(--submit-hover-bg, var(--dark));
-}
-button[type][type=reset],
-[style*="--btn"][type=reset] {
+button[type][type='reset'],
+[style*='--btn'][type='reset'] {
   --bg: var(--reset-bg, transparent);
+  --cl: var(--dark);
   --line: thin solid var(--reset-cl, lightgray);
 }
-button[type][type=reset]:hover,
-[style*="--btn"][type=reset]:hover {
-  --bg: var(--reset-hover-bg, var(--dark));
+button[type][type='reset']:hover,
+[style*='--btn'][type='reset']:hover {
+  filter: var(--dark-mode);
 }
 
-button[type][style*="--btn-pill"],
-[style*="--btn-pill"] {
+button[type][style*='--btn-pill'],
+[style*='--btn-pill'] {
   --rads: var(--btn-pill, var(--pill));
 }
 
-button[type][style*="--btn-sm"],
-[style*="--btn-sm"] {
+button[type][style*='--btn-sm'],
+[style*='--btn-sm'] {
   --h: var(--btn-sm, var(--h-sm));
   --fs: var(--s1);
   --px: var(--px-sm, 1.2rem);
 }
 
-button[type][style*="--btn-lg"],
-[style*="--btn-lg"] {
+button[type][style*='--btn-lg'],
+[style*='--btn-lg'] {
   --h: var(--btn-lg, var(--h-lg));
   --fs: var(--rem);
   --py: var(--btn-py-lg);

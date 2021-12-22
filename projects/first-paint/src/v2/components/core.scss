@@ -42,6 +42,7 @@
   @include maps.cp(tokens.$units);
   @include maps.cp(tokens.$colors);
   @include maps.cp(tokens.$flex);
+  @include maps.cp(tokens.$filter);
 }
 
 ::before {

@@ -79,6 +79,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-standard": "^5.0.0",
@@ -130,7 +131,6 @@
   },
   "lint-staged": {
     "*.{js, jsx}": "standard --fix",
-    "*.{js,jsx,ts,tsx,md,html,css, scss}": "prettier --write",
-    "*.{scss}": "stylelint --cache --fix"
+    "*.{js,jsx,ts,tsx,md,html,css, scss}": "prettier --write"
   }
 }

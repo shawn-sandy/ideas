@@ -330,6 +330,7 @@ code {
     --col-flex,
     1 1 calc(100% / var(--cols, 4) - var(--fx-gap, var(--gap)))
   );
+  --dark-mode: invert(1) hue-rotate(180deg);
 }
 
 ::before {
@@ -653,26 +654,22 @@ button[type] a,
 button[type]:hover,
 [style*='--btn']:hover {
   --cursor: pointer;
-  --cl: var(--btn-hover-cl, var(--white));
-  --bg: var(--btn-hover-bg, var(--dark));
+  filter: var(--dark-mode);
 }
 button[type][type='submit'],
 [style*='--btn'][type='submit'] {
   --bg: var(--submit-bg, navy);
   --cl: var(--btn-cl, var(--white));
 }
-button[type][type='submit']:hover,
-[style*='--btn'][type='submit']:hover {
-  --bg: var(--submit-hover-bg, var(--dark));
-}
 button[type][type='reset'],
 [style*='--btn'][type='reset'] {
   --bg: var(--reset-bg, transparent);
+  --cl: var(--dark);
   --line: thin solid var(--reset-cl, lightgray);
 }
 button[type][type='reset']:hover,
 [style*='--btn'][type='reset']:hover {
-  --bg: var(--reset-hover-bg, var(--dark));
+  filter: var(--dark-mode);
 }
 
 button[type][style*='--btn-pill'],

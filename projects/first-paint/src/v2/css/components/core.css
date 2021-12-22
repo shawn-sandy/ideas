@@ -176,6 +176,7 @@
     --col-flex,
     1 1 calc(100% / var(--cols, 4) - var(--fx-gap, var(--gap)))
   );
+  --dark-mode: invert(1) hue-rotate(180deg);
 }
 
 ::before {

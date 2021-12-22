@@ -72,7 +72,8 @@ $colors: ( // named colors
 "warning": "hsl(33, 100%, 50%)",
 "danger": "hsl(348, 98%, 38%)",
 "highlight": "hsl(54, 100%, 90%)",
-"text": "var(dark)"
+"text": "var(dark)",
+
 );
 
 $units: ("gap": 1rem,
@@ -150,7 +151,7 @@ $units: ("gap": 1rem,
 "rds-xl": 1.8rem,
 "rds-pill": 99rem,
 // containers
-  "container-xs": calc(768rem / 16),
+"container-xs": calc(768rem / 16),
 "container-sm": calc(992rem / 16),
 "container-md": calc(1280rem / 16),
 "container-lg": calc(1400rem / 16),
@@ -161,4 +162,8 @@ $flex: (
   "fx-auto-size": 1 0 auto,
   "fx-max-w": calc(100% - var(--col, 4) - var(--gap, 1rem)),
   "fx-cols" :var(--col-flex, 1 1 calc(100% / var(--cols, 4) - var(--fx-gap, var(--gap))))
+);
+
+$filter: (
+  "dark-mode": invert(1) hue-rotate(180deg)
 );
