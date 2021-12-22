@@ -4,10 +4,11 @@
     "es2021": true,
     "node": true
   },
-  "extends": ["standard"],
+  "extends": ["standard", "plugin:jsx-a11y/recommended"],
   "parserOptions": {
     "sourceType": "module"
   },
+  "plugins": ["jsx-a11y"],
   "rules": {},
   "ignorePatterns": ["temp.js", "**/vendor/*.js", "**/node_modules/*.js"]
 }
