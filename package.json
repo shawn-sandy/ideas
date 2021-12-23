@@ -37,7 +37,8 @@
     "git:push": "git push",
     "commit": "run-s git:add git:cz git:push",
     "prepare": "husky install",
-    "plop": "plop"
+    "plop": "plop",
+    "eslint": "eslint '**/src/**/*.jsx'"
   },
   "directories": {
     "lib": "dist",
@@ -133,5 +134,6 @@
   "lint-staged": {
     "*.{js,ts,jsx}": "eslint --fix",
     "*.{js,jsx,ts,tsx,md,html,css,scss,json,md}": "prettier --write"
+
   }
 }
