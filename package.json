@@ -127,7 +127,6 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "stylelint --cache --fix"
     }
   },
   "lint-staged": {
