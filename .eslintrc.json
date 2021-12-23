@@ -2,13 +2,18 @@
   "env": {
     "browser": true,
     "es2021": true,
-    "node": true
+    "node": true,
+    "jest/globals": true
   },
-  "extends": ["standard", "plugin:jsx-a11y/recommended"],
+  "extends": [
+    "standard",
+    "plugin:jsx-a11y/recommended",
+    "plugin:jest/recommended"
+  ],
   "parserOptions": {
     "sourceType": "module"
   },
-  "plugins": ["jsx-a11y"],
+  "plugins": ["jsx-a11y", "jest"],
   "rules": {},
   "ignorePatterns": [
     "temp.js",
