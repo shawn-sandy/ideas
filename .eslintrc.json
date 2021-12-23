@@ -10,5 +10,23 @@
   },
   "plugins": ["jsx-a11y"],
   "rules": {},
-  "ignorePatterns": ["temp.js", "**/vendor/*.js", "**/node_modules/*.js"]
+  "ignorePatterns": [
+    "temp.js",
+    "**/vendor/*.js",
+    "**/node_modules/*.js",
+    "**/*.test.js"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "**/*.spec.js",
+        "**/*.spec.jsx",
+        "**/*.test.js",
+        "**/*.test.jsx"
+      ],
+      "env": {
+        "jest": true
+      }
+    }
+  ]
 }
