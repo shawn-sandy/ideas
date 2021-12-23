@@ -36,6 +36,7 @@
     ]
   },
   "devDependencies": {
-    "sass": "^1.45.1"
+    "sass": "^1.45.1",
+    "eslint-plugin-jsx-a11y": "^6.5.1"
   }
 }
