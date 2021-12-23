@@ -5,7 +5,7 @@
   },
   "extends": [
     "plugin:react/recommended",
-    "plugin:jsx-a11y/strict",
+    "@azimutlabs/eslint-config-jsx-a11y",
     "standard",
     "eslint:recommended"
   ],

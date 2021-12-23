@@ -61,6 +61,7 @@
     "@11ty/eleventy-cache-assets": "^2.3.0",
     "@11ty/eleventy-navigation": "^0.3.2",
     "@11ty/eleventy-plugin-rss": "^1.1.1",
+    "@azimutlabs/eslint-config-jsx-a11y": "^1.1.1",
     "@babel/cli": "^7.15.4",
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
