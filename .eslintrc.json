@@ -5,11 +5,7 @@
     "node": true,
     "jest/globals": true
   },
-  "extends": [
-    "standard",
-    "plugin:jsx-a11y/recommended",
-    "plugin:jest/recommended"
-  ],
+  "extends": ["standard", "plugin:jsx-a11y/strict", "plugin:jest/recommended"],
   "parserOptions": {
     "sourceType": "module"
   },
