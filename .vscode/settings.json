@@ -76,5 +76,7 @@
   },
   "prettier.jsxSingleQuote": true,
   "svelte.plugin.svelte.format.config.singleQuote": true,
-  "yaml.format.singleQuote": true
+  "yaml.format.singleQuote": true,
+  "prettier.insertPragma": true,
+  "prettier.vueIndentScriptAndStyle": true
 }
