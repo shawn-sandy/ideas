@@ -78,11 +78,12 @@
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-jest": "^25.3.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-standard": "^5.0.0",
     "eslint-plugin-vue": "^7.17.0",
     "flat-cache": "^3.0.4",
@@ -126,11 +127,11 @@
     }
   },
   "husky": {
-    "hooks": {
-    }
+    "hooks": {}
   },
   "lint-staged": {
-    "*.{js, jsx}": ["eslint --fix", "prettier --write"],
+    "*.{js, jsx}":
+      "eslint --fix",
     "*.{js,jsx,ts,tsx,md,html,css, scss}": "prettier --write"
   }
 }
