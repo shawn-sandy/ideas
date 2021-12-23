@@ -73,5 +73,8 @@
   "prettier.singleQuote": true,
   "[handlebars]": {
     "editor.defaultFormatter": "vscode.html-language-features"
-  }
+  },
+  "prettier.jsxSingleQuote": true,
+  "svelte.plugin.svelte.format.config.singleQuote": true,
+  "yaml.format.singleQuote": true
 }
