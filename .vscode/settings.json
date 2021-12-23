@@ -78,5 +78,6 @@
   "svelte.plugin.svelte.format.config.singleQuote": true,
   "yaml.format.singleQuote": true,
   "prettier.insertPragma": true,
-  "prettier.vueIndentScriptAndStyle": true
+  "prettier.vueIndentScriptAndStyle": true,
+  "eslint.run": "onSave"
 }
