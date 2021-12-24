@@ -38,7 +38,8 @@
     "commit": "run-s git:add git:cz git:push",
     "prepare": "husky install",
     "plop": "plop",
-    "eslint": "eslint '**/src/**/*.jsx'"
+    "eslint": "eslint '**/src/**/*.jsx'",
+    "pre-commit": "eslint '**/src/**/*.jsx'"
   },
   "directories": {
     "lib": "dist",

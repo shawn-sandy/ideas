@@ -3,8 +3,6 @@
 
 # npm run test
 
-
 # If everything passes... Now we can commit
 echo '✅✅✅✅ Excellent all test passed, I am pushing this now.'
 
-npx --no-install commitlint --edit "$1"
