@@ -9,7 +9,7 @@ const Configuration = {
    * Custom URL to show upon failure
    */
   helpUrl:
-    'https://github.com/conventional-changelog/commitlint/#what-is-commitlint',
+    'https://github.com/conventional-changelog/commitlint/#what-is-commitlint'
 
 }
 

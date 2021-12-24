@@ -17,4 +17,4 @@ echo '✅✅✅✅ Excellent all test passed, I am committing this now.'
 
 # commitizen
 echo 'Starting commitlint...'
-npx commitlint --verbose -c -e "$1"
+npx --no-install commitlint --edit "$1"
