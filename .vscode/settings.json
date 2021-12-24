@@ -80,5 +80,8 @@
   "prettier.insertPragma": true,
   "prettier.vueIndentScriptAndStyle": true,
   "eslint.run": "onSave",
-  "stylelint.snippet": ["css", "less", "postcss", "scss"]
+  "stylelint.snippet": ["css", "less", "postcss", "scss"],
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  }
 }

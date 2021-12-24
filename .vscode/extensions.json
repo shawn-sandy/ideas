@@ -8,6 +8,7 @@
     "dzhavat.css-flexbox-cheatsheet",
     "mikestead.dotenv",
     "vunguyentuan.vscode-css-variables",
-    "d-koppenhagen.vscode-code-review"
+    "d-koppenhagen.vscode-code-review",
+    "deque-systems.vscode-axe-linter"
   ]
 }

@@ -4,9 +4,9 @@
     "es2021": true
   },
   "extends": [
+    "standard",
     "plugin:react/recommended",
     "@azimutlabs/eslint-config-jsx-a11y",
-    "standard",
     "eslint:recommended"
   ],
   "parserOptions": {
@@ -17,5 +17,7 @@
     "sourceType": "module"
   },
   "plugins": ["react", "jsx-a11y"],
-  "rules": {}
+  "rules": {
+    "jsx-quotes": ["error", "prefer-single"]
+  }
 }
