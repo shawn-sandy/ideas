@@ -124,11 +124,6 @@
     "stylelint-scss": "^4.0.1",
     "trash-cli": "^4.0.0"
   },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
   "lint-staged": {
     "**/.*.{js,ts,jsx}": "eslint --fix",
     "**/.*.{js,jsx,ts,tsx,md,html,scss,json,md}": "prettier --write",
