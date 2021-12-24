@@ -18,9 +18,9 @@ button[type],
   --border: var(--line);
   --rads: var(--btn-rds, var(--rds));
   --fs: var(--s2);
-  --fw: var(--btn-fw, 500);
+  --fw: var(--btn-fw, normal);
   --cl: var(--btn-cl, var(--dark));
-  transition: background-color 1s ease-out;
+  transition: all 0.8s ease-out;
 }
 button[type]:any-link,
 button[type] a,
