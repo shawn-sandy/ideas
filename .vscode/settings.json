@@ -66,9 +66,9 @@
   "editor.formatOnPaste": true,
   "commit-message-editor.view.defaultView": "form",
   "stylelint.ignoreDisables": true,
-  "stylelint.validate": ["css", "scss", "less"],
+  "stylelint.validate": ["css", "scss", "less", "scss"],
   "[scss]": {
-    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "prettier.singleQuote": true,
   "[handlebars]": {
@@ -79,5 +79,6 @@
   "yaml.format.singleQuote": true,
   "prettier.insertPragma": true,
   "prettier.vueIndentScriptAndStyle": true,
-  "eslint.run": "onSave"
+  "eslint.run": "onSave",
+  "stylelint.snippet": ["css", "less", "postcss", "scss"]
 }

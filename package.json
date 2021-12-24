@@ -132,9 +132,8 @@
     "hooks": {}
   },
   "lint-staged": {
-    "**.*.{js,ts,jsx}": "eslint --fix",
-    "**.*.{js,jsx,ts,tsx,md,html,css,scss,json,md}": "prettier --write",
-    "**.*.css": "stylelint --fix"
+    "**/.*.{js,ts,jsx}": "eslint --fix",
+    "**/.*.{js,jsx,ts,tsx,md,html,scss,json,md}": "prettier --write"
 
   }
 }

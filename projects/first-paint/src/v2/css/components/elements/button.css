@@ -47,7 +47,7 @@ button[type][type=reset],
 }
 button[type][type=reset]:hover,
 [style*="--btn"][type=reset]:hover {
-  filter: var(--dark-mode);
+  filter: none;
 }
 
 button[type][style*="--btn-pill"],

@@ -31,7 +31,7 @@ button[type],
   }
   &:hover {
     --cursor: pointer;
-    filter: var(--dark-mode)
+    filter: var(--dark-mode);
   }
 
   &[type='submit'] {
@@ -48,7 +48,7 @@ button[type],
     --cl: var(--dark);
     --line: thin solid var(--reset-cl, lightgray);
     &:hover {
-      filter: var(--dark-mode)
+      filter: none;
     }
   }
 }
