@@ -9,7 +9,7 @@
 
 # commitizen
 echo 'Starting commitlint...'
-npx --no -- commitlint --edit "$1"
+npx --no-install commitlint --edit $1
 
 # lint-staged
 echo 'Starting lint-staged...'
