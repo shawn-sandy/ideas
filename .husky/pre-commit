@@ -12,7 +12,7 @@ npx lint-staged "$1"
 
 # commitizen
 echo 'Starting commitlint...'
-npx --no-install commitlint --edit "$1"
+npx --no-install commitlint --edit --verbose "$1"
 
 # If everything passes... Now we can commit
 echo '✅✅✅✅ Excellent all test passed, I am committing this now.'
