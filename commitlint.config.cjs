@@ -10,17 +10,7 @@ const Configuration = {
    */
   helpUrl:
     'https://github.com/conventional-changelog/commitlint/#what-is-commitlint',
-  /*
-   * Custom prompt configs
-   */
-  prompt: {
-    messages: {},
-    questions: {
-      type: {
-        description: 'please input type:'
-      }
-    }
-  }
+
 }
 
 module.exports = Configuration
