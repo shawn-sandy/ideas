@@ -125,7 +125,6 @@
     "trash-cli": "^4.0.0"
   },
   "lint-staged": {
-    "*": "git add -A",
     "**/.*.{js,ts,jsx}": "eslint --fix",
     "**/.*.{js,jsx,ts,tsx,md,html,scss,json,md}": "prettier --write"
 
