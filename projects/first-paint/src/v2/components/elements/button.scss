@@ -2,7 +2,7 @@
 
 @use "../../modules/utilities/maps";
 
-button[type],
+button,
 [style*="--btn"] {
   // padding block variables
   --btn-py-sm: 1rem 0.9rem;
@@ -57,6 +57,7 @@ button[type],
       border-color: var(--dark);
     }
   }
+}
 
 [style*="--btn-pill"] {
   --rads: var(--btn-pill, var(--pill));

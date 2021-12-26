@@ -1,18 +1,201 @@
-/* Error: expected "}".
- *    ,
- * 76 | }
- *    |  ^
- *    '
- *   src\v2\components\elements\button.scss 76:2  @use
- *   src\v2\components\elements.scss 6:1          root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "}".\a    \2577 \a 76 \2502  }\a    \2502   ^\a    \2575 \a   src\\v2\\components\\elements\\button.scss 76:2  @use\a   src\\v2\\components\\elements.scss 6:1          root stylesheet';
+/* component: button.scss */
+button,
+[style*="--btn"] {
+  --btn-py-sm: 1rem 0.9rem;
+  --btn-py-md: 1.3rem 1.2rem;
+  --btn-py-lg: 1.5rem 1.4rem;
+  --h: calc(44rem / 16);
+  --h-sm: calc(32rem / 16);
+  --h-lg: calc(60rem / 16);
+  --pill: 99rem;
+  --bg: lightgray;
+  --dsp: inline-flex;
+  --align: center;
+  --justify: space-between;
+  --lh: 1;
+  --px: 1.9rem;
+  --py: var(--btn-py-sm);
+  --border: var(--border);
+  --rads: var(--btn-rds, var(--rds));
+  --fs: var(--s2);
+  --fw: var(--btn-fw, normal);
+  --cl: var(--btn-cl, var(--dark));
+  box-sizing: border-box;
+  transition: all 0.3s ease-out;
 }
+button:any-link,
+button a,
+[style*="--btn"]:any-link,
+[style*="--btn"] a {
+  --txd: none;
+  --cl: var(--btn-cl, var(--dark));
+}
+button:hover,
+[style*="--btn"]:hover {
+  --cursor: pointer;
+  filter: var(--dark-mode);
+}
+button[type=submit],
+[style*="--btn"][type=submit] {
+  --bg: var(--submit-bg, navy);
+  --cl: var(--btn-cl, var(--white));
+}
+button[type=reset],
+[style*="--btn"][type=reset] {
+  --bg: var(--reset-bg, transparent);
+  --cl: var(--dark);
+  --border: thin solid var(--reset-cl, lightgray);
+}
+button[type=reset]:hover,
+[style*="--btn"][type=reset]:hover {
+  filter: none;
+  border-color: var(--dark);
+}
+
+[style*="--btn-pill"] {
+  --rads: var(--btn-pill, var(--pill));
+}
+
+[style*="--btn-sm"] {
+  --h: var(--btn-sm, var(--h-sm));
+  --fs: var(--s1);
+  --px: var(--px-sm, 1.2rem);
+}
+
+[style*="--btn-lg"] {
+  --h: var(--btn-lg, var(--h-lg));
+  --fs: var(--rem);
+  --py: var(--btn-py-lg);
+  --px: var(--px-lg, 2.8rem);
+}
+
+/*
+ ***************************************
+ FirsPaint
+ Author: Shawn Sandy
+ Component: div.scss
+ Date: 2021-04-01
+ ***************************************
+*/
+[role=grid] {
+  --py: var(--rem);
+}
+
+[role=row],
+[style="--row"] {
+  --dsp: flex;
+  --gap: var(--rem);
+  --wrap: var(--row-wrap, wrap);
+}
+
+[role=list],
+[style*="--list"] {
+  --dsp: flex;
+  --gap: var(--rem);
+  --wrap: var(--row-wrap, wrap);
+}
+
+[role=gridcell],
+[role=listitem],
+[style*="--grid"] {
+  --dsp: flex;
+  flex: var(--col-flex, 1 1 calc(100% / var(--cols, 4) - var(--gap)));
+  --py: var(--rem);
+  --px: var(--rem);
+  --direction: var(--col-direction, column);
+  --max-w: calc(100% / var(--cols, 4) - var(--gap));
+}
+@media (max-width: 48rem) {
+  [role=gridcell],
+[role=listitem],
+[style*="--grid"] {
+    --cols: var(--cols-xs, 1);
+  }
+}
+@media (max-width: 62rem) and (min-width: 48rem) {
+  [role=gridcell],
+[role=listitem],
+[style*="--grid"] {
+    --cols: var(--cols-sm, 2);
+  }
+}
+@media (max-width: 80rem) and (min-width: 62rem) {
+  [role=gridcell],
+[role=listitem],
+[style*="--grid"] {
+    --cols: var(--cols-md, 3);
+  }
+}
+@media (max-width: 87.5rem) and (min-width: 80rem) {
+  [role=gridcell],
+[role=listitem],
+[style*="--grid"] {
+    --cols: var(--cols-lg, 4);
+  }
+}
+@media (min-width: 100rem) {
+  [role=gridcell],
+[role=listitem],
+[style*="--grid"] {
+    --cols: var(--cols-xxl, 5);
+  }
+}
+
+[style*="--main:"] {
+  flex: var(--fx-auto-size);
+}
+
+pre,
+textarea[role=presentation],
+div[contenteditable] {
+  padding: 1rem;
+  margin: 2rem 0;
+  background-color: var(--code-bg, var(--bg, #2b2b2b));
+  line-height: 1.8;
+  border-radius: 0.2rem;
+  border-color: #2b2b2b;
+  border-style: solid;
+  font-size: 0.9rem;
+  overflow-x: auto;
+  min-height: 150px;
+  max-height: 500px;
+  display: flex;
+  align-items: center;
+  --w: var(--code-w, 80%);
+  --px: 1rem;
+  --py: 1rem;
+}
+pre::-webkit-scrollbar,
+textarea[role=presentation]::-webkit-scrollbar,
+div[contenteditable]::-webkit-scrollbar {
+  width: 0.5rem;
+}
+pre::-webkit-scrollbar-track,
+textarea[role=presentation]::-webkit-scrollbar-track,
+div[contenteditable]::-webkit-scrollbar-track {
+  background: #2b2b2b;
+}
+pre::-webkit-scrollbar-thumb,
+textarea[role=presentation]::-webkit-scrollbar-thumb,
+div[contenteditable]::-webkit-scrollbar-thumb {
+  background-color: ghostwhite;
+  outline: none;
+}
+pre code,
+textarea[role=presentation] code,
+div[contenteditable] code {
+  color: var(--alert);
+  line-height: var(--code-lh, 1.8);
+  --bg: transparent;
+  --w: 90%;
+  font-style: var(--code-fst, normal);
+}
+
+code {
+  --cl: var(--code-cl, #b61111);
+  font-style: italic;
+}
+
+/*  Component: elements.scss */
+
+/*# sourceMappingURL=elements.css.map */
