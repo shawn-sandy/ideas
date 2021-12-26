@@ -55,7 +55,7 @@
   align-items: var(--align);
   background-color: var(--bg, white);
   border: var(--border, 0);
-  text-decoration: var(--txd);
+  text-decoration: var(--decoration, var(--txd));
   cursor: var(--cursor);
   width: var(--w);
   min-height: var(--min-h);

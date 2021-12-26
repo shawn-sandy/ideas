@@ -24,7 +24,7 @@
   align-items: var(--align);
   background-color: var(--bg, white);
   border: var(--border, 0);
-  text-decoration: var(--txd);
+  text-decoration: var(--decoration, var(--txd));
   cursor: var(--cursor);
   width: var(--w);
   min-height: var(--min-h);
@@ -83,13 +83,13 @@ main,
 ul,
 ol,
 div,
->nav,
->section {
+> nav,
+> section {
   --px: 1.2rem;
 }
 
 main,
-body>section,
+body > section,
 footer {
   --dsp: block;
   --px: 1rem;
@@ -108,12 +108,12 @@ nav {
   --w: 100%;
 }
 
->*+* {
+> * + * {
   --py: 1rem;
 }
 
 header {
-  >section {
+  > section {
     --px: 1rem;
   }
 }
@@ -123,8 +123,8 @@ ul {
   --mx: 1rem;
 }
 
-section+section,
-div+div {
+section + section,
+div + div {
   --dsp: block;
   --py: 1rem 0;
 }
@@ -177,7 +177,7 @@ a {
 }
 
 p {
-  +p {
+  + p {
     --py: 1rem 0;
   }
 }
