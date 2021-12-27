@@ -7,9 +7,10 @@
  ***************************************
 */
 
-@use '../../modules/utilities/maps';
+@use "../../modules/utilities/maps";
 
-footer[role='contentinfo'] {
+footer[role="contentinfo"],
+[style*="--footer"] {
   > section,
   > div {
     --dsp: flex;
@@ -18,7 +19,8 @@ footer[role='contentinfo'] {
   }
   > section {
     > div {
-      flex: 1 1 calc(100% / var(--cols, 3) - var(--gap));
+      flex: 1 1
+        calc(100% / var(--footer-cols, 3) - var(--footer-gap, var(--gap)));
       + * {
         --py: 0;
       }
