@@ -16,6 +16,11 @@ footer[role="contentinfo"],
     --dsp: flex;
     --wrap: wrap;
     --py: 3rem;
+    --direction: column;
+
+    @media (min-width: calc(768rem / 16)) {
+      --direction: row;
+    }
   }
   > section {
     > div {

@@ -13,6 +13,15 @@ footer[role=contentinfo] > div,
   --dsp: flex;
   --wrap: wrap;
   --py: 3rem;
+  --direction: column;
+}
+@media (min-width: 48rem) {
+  footer[role=contentinfo] > section,
+footer[role=contentinfo] > div,
+[style*="--footer"] > section,
+[style*="--footer"] > div {
+    --direction: row;
+  }
 }
 footer[role=contentinfo] > section > div,
 [style*="--footer"] > section > div {
