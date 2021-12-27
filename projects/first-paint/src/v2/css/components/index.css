@@ -221,6 +221,7 @@ code {
   border-radius: var(--rads);
   line-height: var(--lh);
   -webkit-line-clamp: var(--clamp, initial);
+  letter-spacing: var(--lts);
 }
 
 :root {
@@ -638,6 +639,8 @@ button,
   --fs: var(--s2);
   --fw: var(--btn-fw, normal);
   --cl: var(--btn-cl, var(--dark));
+  --lh: var(--btn-lh, 1);
+  --lts: var(--btn-lts, 0.08);
   box-sizing: border-box;
   transition: all 0.3s ease-out;
 }
@@ -655,8 +658,9 @@ button:hover,
 }
 button[type=submit],
 [style*="--btn"][type=submit] {
-  --bg: var(--submit-bg, navy);
+  --bg: var(--submit-bg, royalblue);
   --cl: var(--btn-cl, var(--white));
+  --btn-lts: 0.08rem;
 }
 button[type=reset],
 [style*="--btn"][type=reset] {

@@ -27,6 +27,8 @@ button,
   --fs: var(--s2);
   --fw: var(--btn-fw, normal);
   --cl: var(--btn-cl, var(--dark));
+  --lh: var(--btn-lh, 1);
+  --lts: var(--btn-lts, 0.08);
   box-sizing: border-box;
   transition: all 0.3s ease-out;
   &:any-link,
@@ -40,8 +42,9 @@ button,
   }
 
   &[type="submit"] {
-    --bg: var(--submit-bg, navy);
+    --bg: var(--submit-bg, royalblue);
     --cl: var(--btn-cl, var(--white));
+    --btn-lts: 0.08rem;
     // --border: medium solid var(--btn-cl, var(--bg));
     &:hover {
       // --bg: var(--submit-hover-bg, var(--dark));
