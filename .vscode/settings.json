@@ -83,5 +83,11 @@
   "stylelint.snippet": ["css", "less", "postcss", "scss"],
   "[javascript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": true,
+    "markdown": true
   }
 }
