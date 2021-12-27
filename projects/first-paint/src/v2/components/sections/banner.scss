@@ -1,27 +1,30 @@
 /** banner.scss */
 
-[role='banner'],
-[style*='--banner'] {
+[role="banner"],
+[style*="--banner"] {
+  // custom properties
+  --banner-sm: 20vh;
+  --banner-md: 36vh;
+  --banner-lg: 50vh;
+  --bg: var(--banner-bg, transparent);
   --dsp: flex;
   --align: var(--banner-align, center);
   --justify: var(--banner-justify, center);
-  --min-h: var(--banner-vh, var(--vh-lg));
+  --min-h: var(--banner-h, var(--banner-lg));
   --max-w: var(--pct-8);
   --py: var(--banner-px, var(--rem));
   --px: var(--banner-py, var(--rem));
   --mx: var(--banner-mx, auto);
   > * {
-    --txa: var(--banner-txa, left);
+    --tx-align: var(--banner-txa, left);
   }
-  h1 {
-    --fs: var(--banner-h1, var(--s8));
-  }
-  p,
-  p > * {
-    --fs: var(--banner-p, var(--s4));
-  }
-  [style*='--btn:'] {
+
+  [style*="--btn:"] {
     --fs: var(--btn-fs, var(--rem));
     --h: var(--banner-btn-h, var(--s6));
   }
+}
+
+[style*="--banner-h"] {
+  --min-h: var(--banner-h);
 }
