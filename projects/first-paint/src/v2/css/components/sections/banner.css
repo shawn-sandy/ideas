@@ -1,31 +1,31 @@
 /** banner.scss */
 [role=banner],
-[style*="--banr"] {
-  --banr-sm: 20vh;
-  --banr-md: 36vh;
-  --banr-lg: 50vh;
-  --bg: var(--banr-bg, transparent);
+[style*="--bnr"] {
+  --bnr-sm: 30vh;
+  --bnr-md: 50vh;
+  --bnr-lg: 80vh;
+  --bg: var(--bnr-bg, transparent);
   --dsp: flex;
-  --align: var(--banr-align, center);
-  --justify: var(--banr-justify, center);
-  --min-h: var(--banr-h, var(--banr-lg));
+  --align: var(--bnr-align, center);
+  --justify: var(--bnr-justify, center);
+  --min-h: var(--bnr-h, var(--bnr-lg));
   --max-w: var(--pct-8);
-  --py: var(--banr-px, var(--rem));
-  --px: var(--banr-py, var(--rem));
-  --mx: var(--banr-mx, auto);
+  --py: var(--bnr-px, var(--rem));
+  --px: var(--bnr-py, var(--rem));
+  --mx: var(--bnr-mx, auto);
 }
 [role=banner] > *,
-[style*="--banr"] > * {
-  --tx-align: var(--banr-txa, left);
+[style*="--bnr"] > * {
+  --tx-align: var(--bnr-txa, left);
 }
 [role=banner] [style*="--btn:"],
-[style*="--banr"] [style*="--btn:"] {
+[style*="--bnr"] [style*="--btn:"] {
   --fs: var(--btn-fs, var(--rem));
-  --h: var(--banr-btn-h, var(--s6));
+  --h: var(--bnr-btn-h, var(--s6));
 }
 
-[style*="--banr-h"] {
-  --min-h: var(--banr-h);
+[style*="--bnr-h"] {
+  --min-h: var(--bnr-h);
 }
 
 /*# sourceMappingURL=banner.css.map */
