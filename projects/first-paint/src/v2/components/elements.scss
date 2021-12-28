@@ -3,10 +3,12 @@
 // elements components
 
 // button
-@use './elements/button.scss';
+@use "./elements/button.scss";
 // links
-@use './elements/links.scss';
+@use "./elements/links.scss";
 
-@use './elements/grid.scss';
+@use "./elements/grid.scss";
 
-@use './elements/code.scss';
+@use "./elements/code.scss";
+
+@use "./elements/table.scss";

@@ -1,6 +1,6 @@
 // set variables
 // TODO Search and replace name with CSS tag/element name
-@use './utilities/maps' as map;
+@use "./utilities/maps" as map;
 
 $renderTable: true !default;
 
@@ -21,9 +21,9 @@ $tokens: (
   @if ($renderContent) {
     #{$className,
     $className,
-    '.fp-table'},
+    ".fp-table"},
     table {
-      @include map.cp($tokens, 'tb');
+      @include map.cp($tokens, "tb");
       @include table();
     }
   }
@@ -55,7 +55,6 @@ $tokens: (
   td {
     --py: 0.75rem;
     --px: 0.75rem;
-    // padding: 0.75rem 1rem;
     padding-inline: var(--py);
     padding-block: var(--px);
   }
@@ -68,8 +67,8 @@ $tokens: (
   }
 
   tbody tr:last-of-type {
-    --tb-border: medium solid var(--tb-border-color);
-    border-bottom: var(--tb-border);
+    --tbl-border: medium solid var(--tb-border-color);
+    border-bottom: var(--tbl-border);
   }
 }
 
