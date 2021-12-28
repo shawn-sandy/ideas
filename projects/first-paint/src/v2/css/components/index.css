@@ -870,12 +870,12 @@ h4,
 h5,
 h6,
 p {
-  --h1: var(--4xl)
-  --h2: var(--3xl)
-  --h3: var(--2xl)
-  --h4: var(--xl)
-  --h5: var(--lg)
-  --h6: var(--md)
+  --h1: var(--4xl);
+  --h2: var(--3xl);
+  --h3: var(--2xl);
+  --h4: var(--xl);
+  --h5: var(--lg);
+  --h6: var(--md);
   --fw: var(--fw-medium);
   line-height: var(--lh);
   color: var(--cl);

@@ -5,12 +5,12 @@ h4,
 h5,
 h6,
 p {
-  --h1: var(--4xl)
-  --h2: var(--3xl)
-  --h3: var(--2xl)
-  --h4: var(--xl)
-  --h5: var(--lg)
-  --h6: var(--md)
+  --h1: var(--4xl);
+  --h2: var(--3xl);
+  --h3: var(--2xl);
+  --h4: var(--xl);
+  --h5: var(--lg);
+  --h6: var(--md);
   --fw: var(--fw-medium);
   line-height: var(--lh);
   color: var(--cl);
@@ -59,7 +59,7 @@ time {
 }
 
 p,
-[style*='--p-'] {
+[style*="--p-"] {
   --p-sm: var(--sm);
   --p-md: var(--md);
   --p-lg: var(--lg);
@@ -80,7 +80,7 @@ p + * {
   margin-top: var(--rem);
 }
 
-[style*='--truncate'] {
+[style*="--truncate"] {
   --clamp: var(--truncate, 1);
   --dsp: -webkit-box;
   -webkit-box-orient: vertical;
