@@ -102,32 +102,32 @@ ul[role=menubar] :any-link {
 */
 /** banner.scss */
 [role=banner],
-[style*="--banner"] {
-  --banner-sm: 20vh;
-  --banner-md: 36vh;
-  --banner-lg: 50vh;
-  --bg: var(--banner-bg, transparent);
+[style*="--banr"] {
+  --banr-sm: 20vh;
+  --banr-md: 36vh;
+  --banr-lg: 50vh;
+  --bg: var(--banr-bg, transparent);
   --dsp: flex;
-  --align: var(--banner-align, center);
-  --justify: var(--banner-justify, center);
-  --min-h: var(--banner-h, var(--banner-lg));
+  --align: var(--banr-align, center);
+  --justify: var(--banr-justify, center);
+  --min-h: var(--banr-h, var(--banr-lg));
   --max-w: var(--pct-8);
-  --py: var(--banner-px, var(--rem));
-  --px: var(--banner-py, var(--rem));
-  --mx: var(--banner-mx, auto);
+  --py: var(--banr-px, var(--rem));
+  --px: var(--banr-py, var(--rem));
+  --mx: var(--banr-mx, auto);
 }
 [role=banner] > *,
-[style*="--banner"] > * {
-  --tx-align: var(--banner-txa, left);
+[style*="--banr"] > * {
+  --tx-align: var(--banr-txa, left);
 }
 [role=banner] [style*="--btn:"],
-[style*="--banner"] [style*="--btn:"] {
+[style*="--banr"] [style*="--btn:"] {
   --fs: var(--btn-fs, var(--rem));
-  --h: var(--banner-btn-h, var(--s6));
+  --h: var(--banr-btn-h, var(--s6));
 }
 
-[style*="--banner-h"] {
-  --min-h: var(--banner-h);
+[style*="--banr-h"] {
+  --min-h: var(--banr-h);
 }
 
 /*
