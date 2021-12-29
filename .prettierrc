@@ -2,7 +2,7 @@
   "bracketSpacing": true,
   "semi": false,
   "trailingComma": "none",
-  "printWidth": 80,
+  "printWidth": 60,
   "endOfLine": "lf",
   "tabWidth": 2
 }

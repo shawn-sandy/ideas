@@ -25,6 +25,15 @@ p {
   display: var(--dsp, block);
 }
 
+h1 + p,
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p,
+h6 + p {
+  margin-top: var(--rem);
+}
+
 h1 {
   --fs: var(--4xl);
 }
@@ -83,7 +92,8 @@ p + * {
 }
 
 [style*="--truncate"] {
-  --clamp: var(--truncate, 1);
+  --truncate-lns: 1;
+  --clamp: var(--truncate, var(--truncate-lns));
   --dsp: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;

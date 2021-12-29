@@ -5,7 +5,7 @@ const Configuration = {
    */
   extends: ['@commitlint/config-conventional'],
   rules: {
-    'type-enum': [2, 'always', ['ci', 'chore', 'docs', 'feat', 'fix', 'perf', 'refactor', 'revert', 'style']]
+    'type-enum': [2, 'always', ['feat', 'fix', 'perf', 'refactor', 'ci', 'chore', 'docs', 'revert', 'style']]
   },
 
   /*
