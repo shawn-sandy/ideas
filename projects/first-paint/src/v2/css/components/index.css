@@ -622,7 +622,7 @@ button,
   --bg: lightgray;
   --dsp: inline-flex;
   --align: center;
-  --justify: space-between;
+  --justify: center;
   --lh: 1;
   --px: 1.9rem;
   --py: var(--btn-py-sm);

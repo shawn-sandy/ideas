@@ -24,7 +24,7 @@
     {{ hlp.sort(components, 'fileSlug') }}
     <div style="--flex-justify: flex-start; --min-w: 100%; --py: var(--s4)">
       {% for item in components %}
-        <a href="{{ item.url }}" style="--btn-pill; --min-w: 100px">
+        <a href="{{ item.url }}" style="--btn-pill; --min-w: calc(100% / 5 - 1rem)">
           {{ item.data.title }}
           <span class="icon-arrow-right"></span>
         </a>
