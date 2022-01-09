@@ -1,7 +1,13 @@
 import './App.css'
 import logo from './logo.svg'
 
-function App () {
+
+/**
+ * This function returns a div element with a header and a link.
+ * @returns A div with a class of App.
+ */
+
+function App() {
   return (
     <div className='App'>
       <header className='App-header'>
