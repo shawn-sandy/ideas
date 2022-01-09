@@ -8,6 +8,7 @@
     "vivaxy.vscode-conventional-commits",
     "dzhavat.css-flexbox-cheatsheet",
     "mikestead.dotenv",
-    "vunguyentuan.vscode-css-variables"
+    "vunguyentuan.vscode-css-variables",
+    "jevakallio.vscode-live-frame"
   ]
 }

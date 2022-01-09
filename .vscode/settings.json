@@ -73,5 +73,6 @@
   "prettier.singleQuote": true,
   "[handlebars]": {
     "editor.defaultFormatter": "vscode.html-language-features"
-  }
+  },
+  "liveFrame.url": "http://localhost:8080/"
 }
