@@ -42,11 +42,9 @@
     "lint-staged": "lint-staged",
     "commitlint": "npx commitlint"
   },
-  "precommit": {
+  "pre-commit": {
     "run": [
-      "lint-staged",
-      "eslint",
-      "commitlint"
+      "test"
     ]
   },
   "directories": {
