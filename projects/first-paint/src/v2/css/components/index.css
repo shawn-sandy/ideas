@@ -960,6 +960,20 @@ p strong,
   font-weight: var(--fw-medium);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: var(--fs);
+  --h1: var(--4xl);
+  --h2: var(--3xl);
+  --h3: var(--2xl);
+  --h4: var(--xl);
+  --h5: var(--lg);
+  --h6: var(--md);
+}
 h1 + p,
 h2 + p,
 h3 + p,
@@ -1010,7 +1024,7 @@ p + * {
 [style*="--truncate"] {
   --truncate-lns: 1;
   --clamp: var(--truncate, var(--truncate-lns));
-  --dsp: -webkit-box;
+  --dsp: --webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
