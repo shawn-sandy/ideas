@@ -9,7 +9,7 @@
   --fs: var(--font-size, 1rem);
   --fst: var(--font-style, normal);
   --fw: var(--font-weight, normal);
-  --ff: var(--font-family, -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+  --ff: var(--font-family, roboto, "Segoe UI", -apple-system, blinkmacsystemfont, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
   --lh: var(--line-height, 1.2);
   --txa: var(--text-align, left);
   --txd: var(--text-decoration, none);
@@ -55,7 +55,7 @@
   align-items: var(--align);
   background-color: var(--bg, white);
   border: var(--border, 0);
-  text-decoration: var(--txd);
+  text-decoration: var(--decoration, var(--txd));
   cursor: var(--cursor);
   width: var(--w);
   min-height: var(--min-h);
@@ -63,10 +63,11 @@
   min-width: var(--min-w);
   max-width: var(--max-w);
   justify-content: var(--justify, initial);
-  text-align: var(--txa);
+  text-align: var(--tx-align);
   border-radius: var(--rads);
   line-height: var(--lh);
   -webkit-line-clamp: var(--clamp, initial);
+  letter-spacing: var(--lts);
 }
 
 :root {
@@ -156,6 +157,10 @@
   --danger: hsl(348, 98%, 38%);
   --highlight: hsl(54, 100%, 90%);
   --text: var(dark);
+  --fx-auto-size: 1 0 auto;
+  --fx-max-w: calc(100% - var(--col, 4) - var(--gap, 1rem));
+  --fx-cols: var(--col-flex, 1 1 calc(100% / var(--cols, 4) - var(--fx-gap, var(--gap))));
+  --dark-mode: invert(1) hue-rotate(180deg);
 }
 
 ::before {

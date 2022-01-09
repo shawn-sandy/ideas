@@ -5,6 +5,12 @@ h4,
 h5,
 h6,
 p {
+  --h1: var(--4xl);
+  --h2: var(--3xl);
+  --h3: var(--2xl);
+  --h4: var(--xl);
+  --h5: var(--lg);
+  --h6: var(--md);
   --fw: var(--fw-medium);
   line-height: var(--lh);
   color: var(--cl);
@@ -17,6 +23,34 @@ p {
   padding-block: var(--py, var(--p));
   padding-inline: var(--px, var(--p));
   display: var(--dsp, block);
+}
+
+p,
+[style*="--p-"] {
+  --p-sm: var(--sm);
+  --p-md: var(--md);
+  --p-lg: var(--lg);
+  --fs: var(--p-fs, var(--rem));
+  margin: var(--p-m, 0);
+  --fw: normal;
+  --lh: 1.7;
+}
+p i,
+[style*="--p-"] i {
+  font-style: italic;
+}
+p strong,
+[style*="--p-"] strong {
+  font-weight: var(--fw-medium);
+}
+
+h1 + p,
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p,
+h6 + p {
+  margin-top: var(--rem);
 }
 
 h1 {
@@ -52,32 +86,14 @@ time {
   padding: 0 0 0.5rem;
 }
 
-p,
-[style*="--p-"] {
-  --p-sm: var(--sm);
-  --p-md: var(--md);
-  --p-lg: var(--lg);
-  --fs: var(--p-fs, var(--rem));
-  margin: var(--p-m, 0);
-  --fw: normal;
-  --lh: 1.7;
-}
-p i,
-[style*="--p-"] i {
-  font-style: italic;
-}
-p strong,
-[style*="--p-"] strong {
-  font-weight: var(--fw-medium);
-}
-
 p + p,
 p + * {
   margin-top: var(--rem);
 }
 
 [style*="--truncate"] {
-  --clamp: var(--truncate, 1);
+  --truncate-lns: 1;
+  --clamp: var(--truncate, var(--truncate-lns));
   --dsp: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;

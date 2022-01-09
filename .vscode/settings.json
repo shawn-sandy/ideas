@@ -48,7 +48,9 @@
   "less.validate": false,
   "scss.validate": false,
   "conventionalCommits.scopes": ["2.0", "wip"],
-  "cssVariables.lookupFiles": ["projects/first-paint/src/v2"],
+  "cssVariables.lookupFiles": [
+    "projects/first-paint/src/v2"
+  ],
   "conventionalCommits.lineBreak": "\\",
   "prettier.semi": false,
   "javascript.format.semicolons": "remove",
@@ -66,13 +68,29 @@
   "editor.formatOnPaste": true,
   "commit-message-editor.view.defaultView": "form",
   "stylelint.ignoreDisables": true,
-  "stylelint.validate": ["css", "scss", "less"],
+  "stylelint.validate": ["css", "scss", "less", "scss"],
   "[scss]": {
-    "editor.defaultFormatter": "MikeBovenlander.formate"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "prettier.singleQuote": true,
   "[handlebars]": {
     "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "prettier.jsxSingleQuote": true,
+  "svelte.plugin.svelte.format.config.singleQuote": true,
+  "yaml.format.singleQuote": true,
+  "prettier.insertPragma": true,
+  "prettier.vueIndentScriptAndStyle": true,
+  "eslint.run": "onSave",
+  "stylelint.snippet": ["css", "less", "postcss", "scss"],
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": true,
+    "markdown": true
   },
   "liveFrame.url": "http://localhost:8080/"
 }

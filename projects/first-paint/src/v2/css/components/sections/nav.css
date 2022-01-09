@@ -29,8 +29,9 @@ nav section {
 nav section + section {
   --py: 0;
 }
-nav img {
+nav img[alt] {
   --px: 0 var(--s1);
+  --w: var(--brand-w, 3.6rem);
 }
 
 /*# sourceMappingURL=nav.css.map */

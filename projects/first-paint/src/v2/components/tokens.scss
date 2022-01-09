@@ -3,16 +3,16 @@
  Name: tokens.scss
  ***************************************
 */
-// reusable function
 @use "sass:math";
 
 @function rems($value: 16) {
   $remValue: math.div($value, 16) + rem;
+
   @return $remValue;
 }
 
-$font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
-  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+$font-family: roboto, "Segoe UI", -apple-system, blinkmacsystemfont,
+  "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji",
   "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 
 $props: (
@@ -151,4 +151,15 @@ $units: (
   "container-lg": calc(1400rem / 16),
   "container-xl": calc(1600rem / 16),
   "container": 100%
+);
+
+$flex: (
+  "fx-auto-size": 1 0 auto,
+  "fx-max-w": calc(100% - var(--col, 4) - var(--gap, 1rem)),
+  "fx-cols":
+    var(--col-flex, 1 1 calc(100% / var(--cols, 4) - var(--fx-gap, var(--gap))))
+);
+
+$filter: (
+  "dark-mode": invert(1) hue-rotate(180deg)
 );

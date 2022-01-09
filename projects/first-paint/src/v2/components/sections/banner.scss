@@ -1,27 +1,30 @@
 /** banner.scss */
 
-[role='banner'],
-[style*='--banner'] {
+[role="banner"],
+[style*="--bnr"] {
+  // custom properties
+  --bnr-sm: 30vh;
+  --bnr-md: 50vh;
+  --bnr-lg: 80vh;
+  --bg: var(--bnr-bg, transparent);
   --dsp: flex;
-  --align: var(--banner-align, center);
-  --justify: var(--banner-justify, center);
-  --min-h: var(--banner-vh, var(--vh-lg));
+  --align: var(--bnr-align, center);
+  --justify: var(--bnr-justify, center);
+  --min-h: var(--bnr-h, var(--bnr-md));
   --max-w: var(--pct-8);
-  --py: var(--banner-px, var(--rem));
-  --px: var(--banner-py, var(--rem));
-  --mx: var(--banner-mx, auto);
+  --py: var(--bnr-px, var(--rem));
+  --px: var(--bnr-py, var(--rem));
+  --mx: var(--bnr-mx, auto);
   > * {
-    --txa: var(--banner-txa, left);
+    --tx-align: var(--bnr-txa, left);
   }
-  h1 {
-    --fs: var(--banner-h1, var(--s8));
-  }
-  p,
-  p > * {
-    --fs: var(--banner-p, var(--s4));
-  }
-  [style*='--btn:'] {
+
+  [style*="--btn:"] {
     --fs: var(--btn-fs, var(--rem));
-    --h: var(--banner-btn-h, var(--s6));
+    --h: var(--bnr-btn-h, var(--s6));
   }
+}
+
+[style*="--bnr-h"] {
+  --min-h: var(--bnr-h);
 }

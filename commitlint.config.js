@@ -4,23 +4,16 @@ const Configuration = {
    * Referenced packages must be installed
    */
   extends: ['@commitlint/config-conventional'],
+  rules: {
+    'type-enum': [2, 'always', ['feat', 'fix', 'perf', 'refactor', 'ci', 'chore', 'docs', 'revert', 'style']]
+  },
 
   /*
    * Custom URL to show upon failure
    */
   helpUrl:
-    'https://github.com/conventional-changelog/commitlint/#what-is-commitlint',
-  /*
-   * Custom prompt configs
-   */
-  prompt: {
-    messages: {},
-    questions: {
-      type: {
-        description: 'please input type:'
-      }
-    }
-  }
+    'https://github.com/conventional-changelog/commitlint/#what-is-commitlint'
+
 }
 
 module.exports = Configuration

@@ -37,7 +37,9 @@
     "git:push": "git push",
     "commit": "run-s git:add git:cz git:push",
     "prepare": "husky install",
-    "plop": "plop"
+    "plop": "plop",
+    "eslint": "eslint '**/src/**/*.jsx'",
+    "pre-commit": "eslint '**/src/**/*.jsx'"
   },
   "directories": {
     "lib": "dist",
@@ -61,6 +63,7 @@
     "@11ty/eleventy-cache-assets": "^2.3.0",
     "@11ty/eleventy-navigation": "^0.3.2",
     "@11ty/eleventy-plugin-rss": "^1.1.1",
+    "@azimutlabs/eslint-config-jsx-a11y": "^1.1.1",
     "@babel/cli": "^7.15.4",
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
@@ -78,9 +81,12 @@
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jest": "^25.3.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-standard": "^5.0.0",
     "eslint-plugin-vue": "^7.17.0",
     "flat-cache": "^3.0.4",
@@ -115,19 +121,12 @@
     "style-dictionary": "^3.0.1",
     "stylelint": "^14.1.0",
     "stylelint-config-standard": "^24.0.0",
+    "stylelint-scss": "^4.0.1",
     "trash-cli": "^4.0.0"
   },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
-  "husky": {
-    "hooks": {}
-  },
   "lint-staged": {
-    "*.{js, jsx}": "eslint --cache --fix",
-    "*.{js,jsx,ts,tsx,md,html,css, scss}": "prettier --write"
-  },
-  "type": "module"
+    "**/.*.{js,ts,jsx}": "eslint --fix",
+    "**/.*.{js,jsx,ts,tsx,md,html,scss,json,md}": "prettier --write"
+
+  }
 }

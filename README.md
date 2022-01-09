@@ -1,5 +1,7 @@
 # IDEA~
 
+> This repository will be archived at the end of the year (2021). All active plugin/components will be moved to a new repository.
+
 ## A UI toolkit for creating and managing digital products.
 
 IDEAS (ideas) is a simple and easy to use HTML, CSS and JAVASCRIPT UI Toolkit for creating and managing digital products--style/design systems, pattern libraries, UI Kits, style-guides, prototypes or even JAMSTACK sites.
@@ -10,11 +12,11 @@ IDEAS (ideas) is a simple and easy to use HTML, CSS and JAVASCRIPT UI Toolkit fo
 
 **IDEA~** an Eleventy toolkit for building and managing your teams design systems. [READ ME](/apps/ideas/ELEVENTY.md)
 
-- Eleventy plugin [READ ME](/apps/ideas/ELEVENTY.md)
+* Eleventy plugin [READ ME](/apps/ideas/ELEVENTY.md)
 
-- **Markdown** An Eleventy markdown plugin for writing/parsing MARKDOWN syntax in your HTML content. [READ ME](./apps/ideas/MARKDOWN.md)
+* **Markdown** An Eleventy markdown plugin for writing/parsing MARKDOWN syntax in your HTML content. [READ ME](./apps/ideas/MARKDOWN.md)
 
-- **Clipboard** add copy and paste functionality to your static eleventy site with clipboard.js
+* **Clipboard** add copy and paste functionality to your static eleventy site with clipboard.js
   [Comming soon](/README.md)
 
 #### First Paint

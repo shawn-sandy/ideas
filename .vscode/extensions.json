@@ -1,7 +1,6 @@
 {
   "recommendations": [
     "royaction.color-manager",
-    "coenraads.bracket-pair-colorizer",
     "shawnsandy.codestudio",
     "vsls-contrib.codetour",
     "naumovs.color-highlight",
@@ -9,6 +8,9 @@
     "dzhavat.css-flexbox-cheatsheet",
     "mikestead.dotenv",
     "vunguyentuan.vscode-css-variables",
-    "jevakallio.vscode-live-frame"
+    "d-koppenhagen.vscode-code-review",
+    "deque-systems.vscode-axe-linter",
+    "jevakallio.vscode-live-frame",
+    "mintlify.document"
   ]
 }

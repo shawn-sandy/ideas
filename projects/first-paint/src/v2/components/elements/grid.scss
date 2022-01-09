@@ -1,32 +1,27 @@
 [role="grid"] {
-  --py: var(--rem);
+  --dsp: block;
 }
 
 [role="row"],
-[style="--row"] {
-  --dsp : flex;
-  --gap : var(--rem);
-  --wrap: var(--row-wrap, wrap);
-
-  [role="gridcell"] {}
-}
-
+[style*="--row"],
 [role="list"],
 [style*="--list"] {
-  --dsp : flex;
-  --gap : var(--rem);
+  --dsp: flex;
+  --gap: var(--rem);
   --wrap: var(--row-wrap, wrap);
 }
 
 [role="gridcell"],
 [role="listitem"],
 [style*="--grid"] {
-  --dsp      : flex;
-  flex       : var(--col-flex, 1 1 calc(100% / var(--cols, 4) - var(--gap)));
-  --py       : var(--rem);
-  --px       : var(--rem);
-  --direction: var(--col-direction, column);
-  --max-w    : calc(100% / var(--cols, 4) - var(--gap));
+  --dsp: flex;
+
+  flex: var(--col-flex, 1 1 calc(100% / var(--cols, 4) - var(--gap)));
+
+  --py: var(--grid-py, var(--rem));
+  --px: var(--grid-px, var(--rem));
+  --direction: var(--grid-direction, column);
+  --max-w: calc(100% / var(--cols, 4) - var(--gap));
 
   @media (max-width: calc(768rem /16)) {
     --cols: var(--cols-xs, 1);
@@ -50,7 +45,5 @@
 }
 
 [style*="--main:"] {
-  flex: 1 0 auto;
+  flex: var(--fx-auto-size);
 }
-
-.empty-check {}

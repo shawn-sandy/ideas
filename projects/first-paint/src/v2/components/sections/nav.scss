@@ -1,6 +1,6 @@
 /*  Component: nav.scss */
 
-@use '../../modules/utilities/maps';
+@use "../../modules/utilities/maps";
 
 nav {
   --dsp: flex;
@@ -29,7 +29,8 @@ nav {
     }
   }
 
-  img {
+  img[alt] {
     --px: 0 var(--s1);
+    --w: var(--brand-w, 3.6rem);
   }
 }

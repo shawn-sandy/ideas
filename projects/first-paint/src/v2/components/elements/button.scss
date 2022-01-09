@@ -1,29 +1,36 @@
 /* component: button.scss */
 
-@use '../../modules/utilities/maps';
+@use "../../modules/utilities/maps";
 
-button[type],
-[style*='--btn'] {
+button,
+[style*="--btn"] {
+  // padding block variables
   --btn-py-sm: 1rem 0.9rem;
   --btn-py-md: 1.3rem 1.2rem;
   --btn-py-lg: 1.5rem 1.4rem;
-  --pill: 99rem;
-  --bg: lightgray;
-  --dsp: inline-flex;
-  --align: center;
-  --justify: space-between;
-  --lh: 1;
+  // height variables
   --h: calc(44rem / 16);
   --h-sm: calc(32rem / 16);
   --h-lg: calc(60rem / 16);
+  // border radius variables
+  --pill: 99rem;
+  // custom button properties
+  --bg: lightgray;
+  --dsp: inline-flex;
+  --align: center;
+  --justify: center;
+  --lh: 1;
   --px: 1.9rem;
   --py: var(--btn-py-sm);
-  --border: var(--line);
+  --border: var(--border);
   --rads: var(--btn-rds, var(--rds));
   --fs: var(--s2);
-  --fw: var(--btn-fw, 500);
+  --fw: var(--btn-fw, normal);
   --cl: var(--btn-cl, var(--dark));
-  transition: background-color 1s ease-out;
+  --lh: var(--btn-lh, 1);
+  --lts: var(--btn-lts, 0.08);
+  box-sizing: border-box;
+  transition: all 0.3s ease-out;
   &:any-link,
   a {
     --txd: none;
@@ -31,42 +38,41 @@ button[type],
   }
   &:hover {
     --cursor: pointer;
-    --cl: var(--btn-hover-cl, var(--white));
-    --bg: var(--btn-hover-bg, var(--dark));
+    filter: var(--dark-mode);
   }
 
-  &[type='submit'] {
-    --bg: var(--submit-bg, navy);
+  &[type="submit"] {
+    --bg: var(--submit-bg, royalblue);
     --cl: var(--btn-cl, var(--white));
-    // --line: medium solid var(--btn-cl, var(--bg));
+    --btn-lts: 0.08rem;
+    // --border: medium solid var(--btn-cl, var(--bg));
     &:hover {
-      --bg: var(--submit-hover-bg, var(--dark));
+      // --bg: var(--submit-hover-bg, var(--dark));
     }
   }
 
-  &[type='reset'] {
+  &[type="reset"] {
     --bg: var(--reset-bg, transparent);
-    --line: thin solid var(--reset-cl, lightgray);
+    --cl: var(--dark);
+    --border: thin solid var(--reset-cl, lightgray);
     &:hover {
-      --bg: var(--reset-hover-bg, var(--dark));
+      filter: none;
+      border-color: var(--dark);
     }
   }
 }
 
-button[type][style*='--btn-pill'],
-[style*='--btn-pill'] {
+[style*="--btn-pill"] {
   --rads: var(--btn-pill, var(--pill));
 }
 
-button[type][style*='--btn-sm'],
-[style*='--btn-sm'] {
+[style*="--btn-sm"] {
   --h: var(--btn-sm, var(--h-sm));
   --fs: var(--s1);
   --px: var(--px-sm, 1.2rem);
 }
 
-button[type][style*='--btn-lg'],
-[style*='--btn-lg'] {
+[style*="--btn-lg"] {
   --h: var(--btn-lg, var(--h-lg));
   --fs: var(--rem);
   --py: var(--btn-py-lg);

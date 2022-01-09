@@ -32,6 +32,10 @@ logs
 **/coverage/**
 **/docs/**
 **/dist/**
+**/*.spec.js,
+**/*.spec.jsx,
+**/*.test.js,
+**/*.test.jsx
 
-/plopfile.js
+# /plopfile.js
 

@@ -1,68 +1,64 @@
-[role='grid'] {
-  --py: var(--rem);
+[role=grid] {
+  --dsp: block;
 }
 
-[role='row'],
-[style='--row'] {
-  --dsp: flex;
-  --gap: var(--rem);
-  --wrap: var(--row-wrap, wrap);
-}
-[role='list'],
-[style*='--list'] {
+[role=row],
+[style*="--row"],
+[role=list],
+[style*="--list"] {
   --dsp: flex;
   --gap: var(--rem);
   --wrap: var(--row-wrap, wrap);
 }
 
-[role='gridcell'],
-[role='listitem'],
-[style*='--grid'] {
+[role=gridcell],
+[role=listitem],
+[style*="--grid"] {
   --dsp: flex;
   flex: var(--col-flex, 1 1 calc(100% / var(--cols, 4) - var(--gap)));
-  --py: var(--rem);
-  --px: var(--rem);
-  --direction: var(--col-direction, column);
+  --py: var(--grid-py, var(--rem));
+  --px: var(--grid-px, var(--rem));
+  --direction: var(--grid-direction, column);
   --max-w: calc(100% / var(--cols, 4) - var(--gap));
 }
 @media (max-width: 48rem) {
-  [role='gridcell'],
-  [role='listitem'],
-  [style*='--grid'] {
+  [role=gridcell],
+[role=listitem],
+[style*="--grid"] {
     --cols: var(--cols-xs, 1);
   }
 }
 @media (max-width: 62rem) and (min-width: 48rem) {
-  [role='gridcell'],
-  [role='listitem'],
-  [style*='--grid'] {
+  [role=gridcell],
+[role=listitem],
+[style*="--grid"] {
     --cols: var(--cols-sm, 2);
   }
 }
 @media (max-width: 80rem) and (min-width: 62rem) {
-  [role='gridcell'],
-  [role='listitem'],
-  [style*='--grid'] {
+  [role=gridcell],
+[role=listitem],
+[style*="--grid"] {
     --cols: var(--cols-md, 3);
   }
 }
 @media (max-width: 87.5rem) and (min-width: 80rem) {
-  [role='gridcell'],
-  [role='listitem'],
-  [style*='--grid'] {
+  [role=gridcell],
+[role=listitem],
+[style*="--grid"] {
     --cols: var(--cols-lg, 4);
   }
 }
 @media (min-width: 100rem) {
-  [role='gridcell'],
-  [role='listitem'],
-  [style*='--grid'] {
+  [role=gridcell],
+[role=listitem],
+[style*="--grid"] {
     --cols: var(--cols-xxl, 5);
   }
 }
 
-[style*='--main:'] {
-  flex: 1 0 auto;
+[style*="--main:"] {
+  flex: var(--fx-auto-size);
 }
 
 /*# sourceMappingURL=grid.css.map */
