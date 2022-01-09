@@ -39,7 +39,12 @@
     "prepare": "husky install",
     "plop": "plop",
     "eslint": "eslint '**/src/**/*.jsx'",
-    "pre-commit": "eslint '**/src/**/*.jsx'"
+    "lint-staged": "lint-staged"
+  },
+  "pre-commit": {
+    "run": [
+      "lint-staged"
+    ]
   },
   "directories": {
     "lib": "dist",
