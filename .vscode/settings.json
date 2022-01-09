@@ -48,7 +48,9 @@
   "less.validate": false,
   "scss.validate": false,
   "conventionalCommits.scopes": ["2.0", "wip"],
-  "cssVariables.lookupFiles": ["projects/first-paint/src/v2"],
+  "cssVariables.lookupFiles": [
+    "projects/first-paint/src/v2"
+  ],
   "conventionalCommits.lineBreak": "\\",
   "prettier.semi": false,
   "javascript.format.semicolons": "remove",
@@ -89,5 +91,6 @@
     "yaml": true,
     "plaintext": true,
     "markdown": true
-  }
+  },
+  "liveFrame.url": "http://localhost:8080/"
 }
