@@ -102,7 +102,7 @@
   --fs: var(--font-size, 1rem);
   --fst: var(--font-style, normal);
   --fw: var(--font-weight, normal);
-  --ff: var(--font-family, "Inter", roboto, "Segoe UI", -apple-system, blinkmacsystemfont, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+  --ff: var(--font-family, roboto, "Segoe UI", -apple-system, blinkmacsystemfont, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
   --ff-inter: 'Inter', sans-serif;
   --lh: var(--line-height, 1.2);
   --txa: var(--text-align, left);
