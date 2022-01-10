@@ -8,6 +8,13 @@
   display: var(--dsp, block);
 }
 
+:root {
+  @include maps.cp(tokens.$units);
+  @include maps.cp(tokens.$colors);
+  @include maps.cp(tokens.$flex);
+  @include maps.cp(tokens.$filter);
+}
+
 * {
   @include maps.cp(tokens.$props);
   box-sizing: border-box;
@@ -37,13 +44,6 @@
   line-height: var(--lh);
   -webkit-line-clamp: var(--clamp, initial);
   letter-spacing: var(--lts);
-}
-
-:root {
-  @include maps.cp(tokens.$units);
-  @include maps.cp(tokens.$colors);
-  @include maps.cp(tokens.$flex);
-  @include maps.cp(tokens.$filter);
 }
 
 ::before {
