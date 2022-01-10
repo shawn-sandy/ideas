@@ -150,6 +150,7 @@
   background-color: var(--bg, white);
   border: var(--border, 0);
   text-decoration: var(--decoration, var(--txd));
+  text-transform: var(--transform, var(--txt));
   cursor: var(--cursor);
   width: var(--w);
   min-height: var(--min-h);

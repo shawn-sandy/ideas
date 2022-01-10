@@ -296,6 +296,7 @@ code {
   background-color: var(--bg, white);
   border: var(--border, 0);
   text-decoration: var(--decoration, var(--txd));
+  text-transform: var(--transform, var(--txt));
   cursor: var(--cursor);
   width: var(--w);
   min-height: var(--min-h);
@@ -968,6 +969,7 @@ h6 {
   --h4: var(--xl);
   --h5: var(--lg);
   --h6: var(--md);
+  --ff: var(--ff-inter);
 }
 h1 + p,
 h2 + p,
