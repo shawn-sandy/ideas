@@ -55,6 +55,9 @@
 }
 
 html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
   font-size: var(--page-fs, 100%);
 
   @media screen and (max-width: calc(768rem / 16)) {
