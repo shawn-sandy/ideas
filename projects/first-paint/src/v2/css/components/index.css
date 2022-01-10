@@ -150,72 +150,6 @@ code {
  ***************************************
 */
 /* Name: core.scss */
-* {
-  --cl: var(--color, initial);
-  --fs: var(--font-size, 1rem);
-  --fst: var(--font-style, normal);
-  --fw: var(--font-weight, normal);
-  --ff: var(--font-family, roboto, "Segoe UI", -apple-system, blinkmacsystemfont, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
-  --lh: var(--line-height, 1.2);
-  --txa: var(--text-align, left);
-  --txd: var(--text-decoration, none);
-  --txt: var(--text-transform, none);
-  --li-style: var(--list-style, none);
-  --visible: var(--visibility, visible);
-  --border: var(--brd, initial);
-  --min-w: var(--min-width, auto);
-  --min-h: var(--min-height, auto);
-  --max-w: var(--max-width, auto);
-  --max-h: var(--max-height, auto);
-  --fv: var(--font-variant, normal);
-  --fk: var(--font-kerning, normal);
-  --lts: var(--letter-spacing, normal);
-  --ws: var(--white-space, normal);
-  --wsp: var(--word-spacing, normal);
-  --before: intial;
-  --after: intial;
-  --w: var(--width, auto);
-  --h: var(--height, auto);
-  --p: var(--padding, initial);
-  --m: var(--margin, initial);
-  --px: var(--padding-inline, initial);
-  --py: var(--padding-block, initial);
-  --mx: var(--margin-inline, initial);
-  --my: var(--margin-block, initial);
-  --dsp: initial;
-  --pos: var(--position, initial);
-  --line: thin solid lightgray;
-  --cursor: auto;
-  --rad: intial;
-  box-sizing: border-box;
-  font-family: var(--ff);
-  font-size: var(--fs);
-  padding-inline: var(--px);
-  padding-block: var(--py);
-  margin-inline: var(--mx);
-  margin-block: var(--my);
-  width: var(--w);
-  height: var(--h);
-  list-style: var(--li-style);
-  color: var(--cl, black);
-  align-items: var(--align);
-  background-color: var(--bg, white);
-  border: var(--border, 0);
-  text-decoration: var(--decoration, var(--txd));
-  cursor: var(--cursor);
-  width: var(--w);
-  min-height: var(--min-h);
-  max-height: var(--max-h);
-  min-width: var(--min-w);
-  max-width: var(--max-w);
-  justify-content: var(--justify, initial);
-  text-align: var(--tx-align);
-  border-radius: var(--rads);
-  line-height: var(--lh);
-  -webkit-line-clamp: var(--clamp, initial);
-  letter-spacing: var(--lts);
-}
-
 :root {
   --gap: 1rem;
   --gap-sm: var(--sm);
@@ -307,6 +241,73 @@ code {
   --fx-max-w: calc(100% - var(--col, 4) - var(--gap, 1rem));
   --fx-cols: var(--col-flex, 1 1 calc(100% / var(--cols, 4) - var(--fx-gap, var(--gap))));
   --dark-mode: invert(1) hue-rotate(180deg);
+}
+
+* {
+  --cl: var(--color, initial);
+  --fs: var(--font-size, 1rem);
+  --fst: var(--font-style, normal);
+  --fw: var(--font-weight, normal);
+  --ff: var(--font-family, "Inter", roboto, "Segoe UI", -apple-system, blinkmacsystemfont, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+  --ff-inter: 'Inter', sans-serif;
+  --lh: var(--line-height, 1.2);
+  --txa: var(--text-align, left);
+  --txd: var(--text-decoration, none);
+  --txt: var(--text-transform, none);
+  --li-style: var(--list-style, none);
+  --visible: var(--visibility, visible);
+  --border: var(--brd, initial);
+  --min-w: var(--min-width, auto);
+  --min-h: var(--min-height, auto);
+  --max-w: var(--max-width, auto);
+  --max-h: var(--max-height, auto);
+  --fv: var(--font-variant, normal);
+  --fk: var(--font-kerning, normal);
+  --lts: var(--letter-spacing, normal);
+  --ws: var(--white-space, normal);
+  --wsp: var(--word-spacing, normal);
+  --before: intial;
+  --after: intial;
+  --w: var(--width, auto);
+  --h: var(--height, auto);
+  --p: var(--padding, initial);
+  --m: var(--margin, initial);
+  --px: var(--padding-inline, initial);
+  --py: var(--padding-block, initial);
+  --mx: var(--margin-inline, initial);
+  --my: var(--margin-block, initial);
+  --dsp: initial;
+  --pos: var(--position, initial);
+  --line: thin solid lightgray;
+  --cursor: auto;
+  --rad: intial;
+  box-sizing: border-box;
+  font-family: var(--ff);
+  font-size: var(--fs);
+  padding-inline: var(--px);
+  padding-block: var(--py);
+  margin-inline: var(--mx);
+  margin-block: var(--my);
+  width: var(--w);
+  height: var(--h);
+  list-style: var(--li-style);
+  color: var(--cl, black);
+  align-items: var(--align);
+  background-color: var(--bg, white);
+  border: var(--border, 0);
+  text-decoration: var(--decoration, var(--txd));
+  cursor: var(--cursor);
+  width: var(--w);
+  min-height: var(--min-h);
+  max-height: var(--max-h);
+  min-width: var(--min-w);
+  max-width: var(--max-w);
+  justify-content: var(--justify, initial);
+  text-align: var(--tx-align);
+  border-radius: var(--rads);
+  line-height: var(--lh);
+  -webkit-line-clamp: var(--clamp, initial);
+  letter-spacing: var(--lts);
 }
 
 ::before {

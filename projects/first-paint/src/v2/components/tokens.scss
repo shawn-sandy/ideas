@@ -11,9 +11,10 @@
   @return $remValue;
 }
 
-$font-family: roboto, "Segoe UI", -apple-system, blinkmacsystemfont,
-  "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family: "Inter", roboto, "Segoe UI", -apple-system,
+  blinkmacsystemfont, "Helvetica Neue", arial, "Noto Sans",
+  sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol", "Noto Color Emoji" !default;
 
 $props: (
   "cl": var(--color, initial),
@@ -21,6 +22,7 @@ $props: (
   "fst": var(--font-style, normal),
   "fw": var(--font-weight, normal),
   "ff": var(--font-family, $font-family),
+  "ff-inter": "'Inter', sans-serif",
   "lh": var(--line-height, 1.2),
   "txa": var(--text-align, left),
   "txd": var(--text-decoration, none),
@@ -157,7 +159,13 @@ $flex: (
   "fx-auto-size": 1 0 auto,
   "fx-max-w": calc(100% - var(--col, 4) - var(--gap, 1rem)),
   "fx-cols":
-    var(--col-flex, 1 1 calc(100% / var(--cols, 4) - var(--fx-gap, var(--gap))))
+    var(
+      --col-flex,
+      1 1
+        calc(
+          100% / var(--cols, 4) - var(--fx-gap, var(--gap))
+        )
+    )
 );
 
 $filter: (
