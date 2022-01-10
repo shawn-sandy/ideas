@@ -580,7 +580,7 @@ ul[role=menubar] :any-link {
 }
 [role=banner] > *,
 [style*="--bnr"] > * {
-  --tx-align: var(--bnr-txa, left);
+  --tx-align: var(--bnr-tx-align, center);
 }
 [role=banner] [style*="--btn:"],
 [style*="--bnr"] [style*="--btn:"] {
