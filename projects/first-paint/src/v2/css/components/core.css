@@ -176,6 +176,7 @@
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
   font-size: var(--page-fs, 100%);
 }
 @media screen and (max-width: 48rem) {

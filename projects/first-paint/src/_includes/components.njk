@@ -9,38 +9,37 @@
 {% endblock %}
 {% block feature %}{% endblock %}
 {% block main %}
+  <section>
+    {% include './_partials/props-list.njk' %}
+  </section>
   <hr>
     <section>
-      {% include './_partials/props-list.njk' %}
+      <h2 style="--fs: var(--h3)" id="components">Components</h2>
+      {# <hr/> #}
     </section>
-    <hr>
-      <section>
-        <h2 style="--fs: var(--h3)" id="components">Components</h2>
-        {# <hr/> #}
-      </section>
-      {{ content | safe }}
-      <section role="grid" style="--w: 100%">
-        <div role="row" style="--w: 100%">
-          {% set components = collections['components'] %}
-          {{ hlp.sort(components, 'fileSlug') }}
-          {% for item in components %}
-            <div role="gridcell">
-              <h3>
-                <a href="{{ item.url }}" style="--fs: var(--lg); --cl: var(--dark); --my: 0 var(--rem)">{{ item.data.title }}</a>
-              </h3>
-              <div style="--main:;">
-                <p style="--truncate: 2">
-                  {{ item.data.description }}
-                </p>
-              </div>
-              <p>
-                <a href="{{ item.url }}" style="--btn-pill">View Component</a>
+    {{ content | safe }}
+    <section role="grid" style="--w: 100%">
+      <div role="row" style="--w: 100%">
+        {% set components = collections['components'] %}
+        {{ hlp.sort(components, 'fileSlug') }}
+        {% for item in components %}
+          <div role="gridcell">
+            <h3>
+              <a href="{{ item.url }}" style="--fs: var(--lg); --cl: var(--dark); --my: 0 var(--rem)">{{ item.data.title }}</a>
+            </h3>
+            <div style="--main:;">
+              <p style="--truncate: 2">
+                {{ item.data.description }}
               </p>
             </div>
-          {% endfor %}
-        </div>
-      </section>
-    {% endblock %}
-    {% block scripts %}
-      <script src="/js/scripts.js"></script>
-    {% endblock %}
+            <p>
+              <a href="{{ item.url }}" style="--btn-pill">View Component</a>
+            </p>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+  {% endblock %}
+  {% block scripts %}
+    <script src="/js/scripts.js"></script>
+  {% endblock %}
