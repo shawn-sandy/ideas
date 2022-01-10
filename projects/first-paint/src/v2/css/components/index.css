@@ -745,14 +745,6 @@ button[type=reset]:hover,
     --cols: var(--cols-lg, 4);
   }
 }
-@media (min-width: 100rem) {
-  [role=gridcell],
-[role=listitem],
-[style*="--grid"] {
-    --cols: var(--cols-xxl, 5);
-  }
-}
-
 [style*="--main:"] {
   flex: var(--fx-auto-size);
 }

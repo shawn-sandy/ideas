@@ -16,7 +16,10 @@
 [style*="--grid"] {
   --dsp: flex;
 
-  flex: var(--col-flex, 1 1 calc(100% / var(--cols, 4) - var(--gap)));
+  flex: var(
+    --col-flex,
+    1 1 calc(100% / var(--cols, 4) - var(--gap))
+  );
 
   --py: var(--grid-py, var(--rem));
   --px: var(--grid-px, var(--rem));
@@ -40,7 +43,7 @@
   }
 
   @media (min-width: calc(1600rem /16)) {
-    --cols: var(--cols-xxl, 5);
+    // --cols: var(--cols-xxl, 5);
   }
 }
 
