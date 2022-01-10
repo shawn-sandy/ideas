@@ -5,30 +5,31 @@
   <link rel="stylesheet" href="/v2/css/components/layouts/cover.css"/>
 {% endblock %}
 {% block header %}
-  <section role="banner" style="--bnr-h: var(--bnr-sm); --bnr-justify: flex-start-">
+  <section role="banner" style="--bnr-h: var(--bnr-sm); --bnr-justify: center">
     <div>
       <h2>{{ title }}</h2>
       <h4 role="none" style="--fs: var(--h5)">{{ description }}</h4>
     </div>
   </section>
-{% endblock %}
-{% block feature %}{% endblock %}
-{% block main %}
-  {{ content | safe }}
-  {% if sandbox %}
-    {# {{ box.demo(sandbox, title) }} #}
-  {% endif %}
-  <hr style="--py: 4rem">
-    <h4 style="">Components</h4>
-    {% set components = collections['components'] %}
-    {{ hlp.sort(components, 'fileSlug') }}
-    <div style="--flex-justify: flex-start; --min-w: 100%; --py: var(--s4)">
-      {% for item in components %}
-        <a href="{{ item.url }}" style="--btn-pill; --min-w: calc(100% / 5 - 1rem)">
-          {{ item.data.title }}
-          <span class="icon-arrow-right"></span>
-        </a>
-      {% endfor %}
-    </div>
+  <hr>
   {% endblock %}
-  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+  {% block feature %}{% endblock %}
+  {% block main %}
+    {{ content | safe }}
+    {% if sandbox %}
+      {# {{ box.demo(sandbox, title) }} #}
+    {% endif %}
+    <hr style="--py: 4rem">
+      <h4 style="">Components</h4>
+      {% set components = collections['components'] %}
+      {{ hlp.sort(components, 'fileSlug') }}
+      <div style="--flex-justify: flex-start; --min-w: 100%; --py: var(--s4)">
+        {% for item in components %}
+          <a href="{{ item.url }}" style="--btn-pill; --min-w: calc(100% / 5 - 1rem)">
+            {{ item.data.title }}
+            <span class="icon-arrow-right"></span>
+          </a>
+        {% endfor %}
+      </div>
+    {% endblock %}
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
