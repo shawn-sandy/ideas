@@ -14,7 +14,7 @@
   @include maps.cp(tokens.$flex);
   @include maps.cp(tokens.$filter);
 }
-
+// custom props
 * {
   @include maps.cp(tokens.$props);
   box-sizing: border-box;

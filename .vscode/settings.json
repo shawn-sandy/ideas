@@ -92,5 +92,6 @@
     "plaintext": true,
     "markdown": true
   },
-  "liveFrame.url": "http://localhost:8080/"
+  "liveFrame.url": "http://localhost:8080/",
+  "docwriter.style": "JSDoc"
 }

@@ -1,0 +1,5 @@
+@use "sass:meta";
+
+.fp {
+  @include meta.load-css("./index.scss");
+}
