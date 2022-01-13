@@ -11,6 +11,7 @@
     "d-koppenhagen.vscode-code-review",
     "deque-systems.vscode-axe-linter",
     "jevakallio.vscode-live-frame",
-    "mintlify.document"
+    "mintlify.document",
+    "antfu.i18n-ally"
   ]
 }
