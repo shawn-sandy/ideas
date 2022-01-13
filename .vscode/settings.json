@@ -93,5 +93,8 @@
     "markdown": true
   },
   "liveFrame.url": "http://localhost:8080/",
-  "docwriter.style": "JSDoc"
+  "docwriter.style": "JSDoc",
+  "i18n-ally.enabledFrameworks": ["vue", "react", "vscode"],
+  "i18n-ally.editor.preferEditor": true,
+  "i18n-ally.extract.keyMaxLength": 50
 }
