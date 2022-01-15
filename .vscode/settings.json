@@ -96,5 +96,8 @@
   "docwriter.style": "JSDoc",
   "i18n-ally.enabledFrameworks": ["vue", "react", "vscode"],
   "i18n-ally.editor.preferEditor": true,
-  "i18n-ally.extract.keyMaxLength": 50
+  "i18n-ally.extract.keyMaxLength": 50,
+  "i18n-ally.localesPaths": [
+    "../../../../../Users/shawn/devbox/ideas/localization"
+  ]
 }

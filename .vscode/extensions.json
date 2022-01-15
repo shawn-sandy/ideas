@@ -12,6 +12,7 @@
     "deque-systems.vscode-axe-linter",
     "jevakallio.vscode-live-frame",
     "mintlify.document",
-    "antfu.i18n-ally"
+    "antfu.i18n-ally",
+    "aaron-bond.better-comments"
   ]
 }

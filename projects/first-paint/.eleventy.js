@@ -1,10 +1,10 @@
-const markdown = require('@shawnsandy/marked')
+const markdown = require("@shawnsandy/marked")
 
-const CleanCSS = require('clean-css')
+const CleanCSS = require("clean-css")
 
 module.exports = function (eleventyConfig) {
   // css-min filter
-  eleventyConfig.addFilter('cssmin', (code) => {
+  eleventyConfig.addFilter("cssmin", (code) => {
     return new CleanCSS({}).minify(code).styles
   })
 
@@ -13,28 +13,45 @@ module.exports = function (eleventyConfig) {
     open: true
   })
 
-  eleventyConfig.addPassthroughCopy('./src/*.css', './dist')
-  eleventyConfig.addPassthroughCopy('./src/v2/css/**/*.css', './dist')
-  eleventyConfig.addPassthroughCopy('./src/css', './dist')
-  eleventyConfig.addPassthroughCopy('./src/img', './dist')
-  eleventyConfig.addPassthroughCopy('./src/js', './dist')
+  eleventyConfig.addPassthroughCopy("./src/*.css", "./dist")
+  eleventyConfig.addPassthroughCopy(
+    "./src/v2/css/**/*.css",
+    "./dist"
+  )
+  eleventyConfig.addPassthroughCopy("./src/css", "./dist")
+  eleventyConfig.addPassthroughCopy("./src/img", "./dist")
+  eleventyConfig.addPassthroughCopy("./src/js", "./dist")
 
   eleventyConfig.addPlugin(markdown)
 
   eleventyConfig.setQuietMode(true)
 
-  eleventyConfig.addPlugin(require('@shawnsandy/code-clipper'))
+  eleventyConfig.addPlugin(
+    require("@shawnsandy/code-clipper")
+  )
+
+  // add  paired shortcodes
+  eleventyConfig.addPairedShortcode(
+    "looper",
+    function (content) {
+      for (let i = 1; i < 10; i++) {
+        /* do something here */
+
+        console.log(1)
+      }
+    }
+  )
 
   return {
     dir: {
-      input: './src',
-      includes: '/_includes',
-      data: '/_data',
-      output: './dist'
+      input: "./src",
+      includes: "/_includes",
+      data: "/_data",
+      output: "./dist"
     },
-    templateFormats: ['njk', 'html', 'md'],
-    htmlTemplateEngine: 'njk',
-    markdownTemplateEngine: 'njk',
+    templateFormats: ["njk", "html", "md"],
+    htmlTemplateEngine: "njk",
+    markdownTemplateEngine: "njk",
     passthroughFileCopy: true
     // pathPrefix: "/"
   }
