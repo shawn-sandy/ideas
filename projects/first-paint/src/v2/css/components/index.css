@@ -638,12 +638,8 @@ button,
   --cl: var(--btn-cl, var(--dark));
   --lh: var(--btn-lh, 1);
   --lts: var(--btn-lts, 0.08);
-  box-sizing: border-box;
-  transition: all 0.3s ease-out;
 }
-button:any-link,
 button a,
-[style*="--btn"]:any-link,
 [style*="--btn"] a {
   --txd: none;
   --cl: var(--btn-cl, var(--dark));

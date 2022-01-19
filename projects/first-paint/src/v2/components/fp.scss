@@ -1,5 +1,5 @@
 @use "sass:meta";
 
-.fp {
-  @include meta.load-css("./index.scss");
+body {
+  @include meta.load-css("./modules/buttons");
 }

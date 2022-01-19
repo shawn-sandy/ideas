@@ -1,4 +1,4 @@
-body button {
+button {
   background: var(--color-primary);
   font-size: var(--font-size-button);
   padding: var(--space-s);
@@ -6,4 +6,4 @@ body button {
   border-radius: var(--border-radius-button);
 }
 
-/*# sourceMappingURL=fp.css.map */
+/*# sourceMappingURL=buttons.css.map */
