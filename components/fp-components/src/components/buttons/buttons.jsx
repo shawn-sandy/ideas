@@ -9,7 +9,7 @@ const Button = ({ children, onClick, ...props }) => {
   )
 }
 
-Button.PropTypes = {
+Button.propTypes = {
   children: PropTypes.any,
   onClick: PropTypes.func
 }
