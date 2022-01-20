@@ -1,7 +1,10 @@
+// @ts-check
 /* eslint-disable react/react-in-jsx-scope */
 import { useState } from 'react'
+// @ts-ignore
 import logo from './logo.svg'
 import './App.css'
+import Button from './components/buttons/buttons.jsx'
 
 const App = () => {
   const [count, setCount] = useState(0)
@@ -18,6 +21,9 @@ const App = () => {
         </p>
         <p>
           Edit <code>App.jsx</code> and save to test HMR updates.
+        </p>
+        <p>
+          <Button onClick='test' />
         </p>
         <p>
           <a
