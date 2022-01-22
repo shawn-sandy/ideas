@@ -1,10 +1,10 @@
 // @ts-check
-/* eslint-disable react/react-in-jsx-scope */
-import { useState } from 'react'
+import React, { useState } from 'react'
 // @ts-ignore
 import logo from './logo.svg'
 import './App.css'
-import Button from './components/buttons/buttons.jsx'
+import Button from './components/buttons/button.jsx'
+'
 
 const App = () => {
   const [count, setCount] = useState(0)

@@ -1,17 +1,15 @@
 import './App.css'
-import logo from './logo.svg'
-
+import Button from './components/buttons/button'
 
 /**
  * This function returns a div element with a header and a link.
  * @returns A div with a class of App.
  */
 
-function App() {
+const App = () => {
   return (
     <div className='App'>
       <header className='App-header'>
-        <img src={logo} className='App-logo' />
         <a
           className='App-link'
           href='https://beta.reactjs.org'
@@ -20,7 +18,11 @@ function App() {
         >
           Learn React....
         </a>
+        <p>
+          <Button />
+        </p>
       </header>
+
     </div>
   )
 }

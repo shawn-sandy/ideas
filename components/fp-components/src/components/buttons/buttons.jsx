@@ -3,9 +3,12 @@ import PropTypes from 'prop-types'
 
 const Button = ({ children, onClick, ...props }) => {
   const demoClick = () => console.log('clicked')
+  const styles = {
+    back: 'var(bts-bg, lightGray)'
+  }
 
   return (
-    <button {...props} onClick={onClick || demoClick}> {children || 'Button'}</button>
+    <button {...props} onClick={onClick || demoClick} stylt={styles}> {children || 'Button'}</button>
   )
 }
 
