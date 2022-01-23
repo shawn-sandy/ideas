@@ -17,7 +17,7 @@
   {% block main %}
     {{ content | safe }}
     {% if sandbox %}
-      {# {{ box.demo(sandbox, title) }} #}
+      {{ box.demo(sandbox, title) }}
     {% endif %}
     <hr style="--py: 4rem">
       <h4 style="">Components</h4>

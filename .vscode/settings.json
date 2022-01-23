@@ -93,6 +93,10 @@
     "markdown": true
   },
   "liveFrame.url": "http://localhost:8080/",
+  // Optional: Title for the pane tab heading
+  "liveFrame.title": "Local Development",
+  // Optional: Which pane to open the frame in
+  "liveFrame.pane": "Beside",
   "docwriter.style": "JSDoc",
   "i18n-ally.enabledFrameworks": ["vue", "react", "vscode"],
   "i18n-ally.editor.preferEditor": true,
