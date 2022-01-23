@@ -38,10 +38,4 @@ button[style*="--btn"]:hover {
   border-radius: var(--btn-radius);
 }
 
-[style*="--btn-circle"] {
-  --btn-radius: 99rem;
-  height: var(--btn-circle, 2.5rem);
-  width: var(--btn-circle, 2.5rem);
-}
-
 /*# sourceMappingURL=buttons.css.map */

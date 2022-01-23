@@ -39,10 +39,3 @@ button[style*="--btn"] {
 [style*="--btn-radius"] {
   border-radius: var(--btn-radius);
 }
-
-[style*="--btn-circle"] {
-  --btn-radius: 99rem;
-
-  height: var(--btn-circle, calc(40rem / 16));
-  width: var(--btn-circle, calc(40rem / 16));
-}
