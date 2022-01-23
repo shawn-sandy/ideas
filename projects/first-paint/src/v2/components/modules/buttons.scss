@@ -1,7 +1,48 @@
-button {
-  background: var(--color-primary);
-  font-size: var(--font-size-button);
-  padding: var(--space-s);
-  margin: auto;
-  border-radius: var(--border-radius-button);
+button,
+button[style*="--btn"] {
+  --bg: var(--btn-bg, var(--bg));
+  --btn-fs-lg: var(--fs-lg, calc(21rem / 16));
+  --btn-fs-md: var(--fs-md, calc(14rem / 16));
+  --btn-fs-sm: var(--fs-sm, calc(13rem / 16));
+  --btn-fs-xl: var(--fs-xl, calc(24rem / 16));
+  --btn-fs-xs: var(--fs-xs, calc(12rem / 16));
+  --btn-pill: 99rem;
+  --btn-rds-lg: 0.6rem;
+  --btn-rds-md: 0.4rem;
+  --btn-rds-pill: 99rem;
+  --btn-rds-round: 99rem;
+  --btn-rds-sm: 0.2rem;
+
+  background-color: var(--btn-bg, blue);
+  border-radius: var(--btn-rds, var(--radius, 0.05rem));
+  border: var(--btn-border, none);
+  color: var(--btn-color, var(--clr, white));
+  cursor: var(--btn-cursor, pointer);
+  display: var(--btn-dsp, var(--dsp, inline-flex));
+  font-size: var(--btn-fs, calc(13rem / 16));
+  gap: var(--btn-gap, var(--gap, 1rem));
+  min-height: var(--btn-h, calc(40rem / 16));
+  padding-inline: var(--btn-px, var(--px, 2rem));
+  place-items: var(--btn-place, var(--place, center));
+
+  &:hover {
+    --btn-color: var(--btn-color-hover, white);
+    --btn-bg: var(--btn-bg-hover, darkblue);
+  }
+}
+
+[style*="--btn-size"] {
+  // font-size: calc(var(--btn-size) / 60);
+  min-height: var(--btn-size, var(--h));
+}
+
+[style*="--btn-radius"] {
+  border-radius: var(--btn-radius);
+}
+
+[style*="--btn-circle"] {
+  --btn-radius: 99rem;
+
+  height: var(--btn-circle, calc(40rem / 16));
+  width: var(--btn-circle, calc(40rem / 16));
 }
