@@ -6,7 +6,6 @@ button[style*="--btn"] {
   --btn-fs-sm: var(--fs-sm, calc(13rem / 16));
   --btn-fs-xl: var(--fs-xl, calc(24rem / 16));
   --btn-fs-xs: var(--fs-xs, calc(12rem / 16));
-  --btn-pill: 99rem;
   --btn-rds-lg: 0.6rem;
   --btn-rds-md: 0.4rem;
   --btn-pill: 99rem;
@@ -36,6 +35,15 @@ button[style*="--btn"] {
   &:hover {
     --btn-color: var(--btn-color-hover, white);
     --btn-bg: var(--btn-bg-hover, darkblue);
+  }
+
+  &:active,
+  &:focus,
+  &:visited {
+    color: var(
+      --btn-color-active,
+      var(--btn-color, whitesmoke)
+    );
   }
 }
 
