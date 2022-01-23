@@ -24,6 +24,7 @@ button[style*="--btn"] {
   min-height: var(--btn-h, calc(40rem / 16));
   padding-inline: var(--btn-px, var(--px, 2rem));
   place-items: var(--btn-place, var(--place, center));
+  width: var(--btn-w, var(--w, auto));
 
   &:hover {
     --btn-color: var(--btn-color-hover, white);
