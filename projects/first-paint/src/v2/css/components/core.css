@@ -102,7 +102,7 @@
   --fs: var(--font-size, 1rem);
   --fst: var(--font-style, normal);
   --fw: var(--font-weight, normal);
-  --ff: var(--font-family, "Inter", roboto, "Segoe UI", -apple-system, blinkmacsystemfont, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+  --ff: var(--font-family, roboto, "Segoe UI", -apple-system, blinkmacsystemfont, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
   --ff-inter: 'Inter', sans-serif;
   --lh: var(--line-height, 1.2);
   --txa: var(--text-align, left);
@@ -150,6 +150,7 @@
   background-color: var(--bg, white);
   border: var(--border, 0);
   text-decoration: var(--decoration, var(--txd));
+  text-transform: var(--transform, var(--txt));
   cursor: var(--cursor);
   width: var(--w);
   min-height: var(--min-h);
@@ -173,6 +174,9 @@
 }
 
 html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
   font-size: var(--page-fs, 100%);
 }
 @media screen and (max-width: 48rem) {

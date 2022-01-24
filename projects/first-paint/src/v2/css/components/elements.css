@@ -22,12 +22,8 @@ button,
   --cl: var(--btn-cl, var(--dark));
   --lh: var(--btn-lh, 1);
   --lts: var(--btn-lts, 0.08);
-  box-sizing: border-box;
-  transition: all 0.3s ease-out;
 }
-button:any-link,
 button a,
-[style*="--btn"]:any-link,
 [style*="--btn"] a {
   --txd: none;
   --cl: var(--btn-cl, var(--dark));
@@ -131,14 +127,6 @@ button[type=reset]:hover,
     --cols: var(--cols-lg, 4);
   }
 }
-@media (min-width: 100rem) {
-  [role=gridcell],
-[role=listitem],
-[style*="--grid"] {
-    --cols: var(--cols-xxl, 5);
-  }
-}
-
 [style*="--main:"] {
   flex: var(--fx-auto-size);
 }

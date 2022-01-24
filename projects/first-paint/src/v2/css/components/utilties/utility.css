@@ -57,6 +57,7 @@ h6 {
   --h4: var(--xl);
   --h5: var(--lg);
   --h6: var(--md);
+  --ff: var(--ff-inter);
 }
 h1 + p,
 h2 + p,

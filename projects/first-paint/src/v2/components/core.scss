@@ -14,7 +14,7 @@
   @include maps.cp(tokens.$flex);
   @include maps.cp(tokens.$filter);
 }
-
+// custom props
 * {
   @include maps.cp(tokens.$props);
   box-sizing: border-box;
@@ -32,6 +32,7 @@
   background-color: var(--bg, white);
   border: var(--border, 0);
   text-decoration: var(--decoration, var(--txd));
+  text-transform: var(--transform, var(--txt));
   cursor: var(--cursor);
   width: var(--w);
   min-height: var(--min-h);
@@ -55,6 +56,10 @@
 }
 
 html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+
   font-size: var(--page-fs, 100%);
 
   @media screen and (max-width: calc(768rem / 16)) {
