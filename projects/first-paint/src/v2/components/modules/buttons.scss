@@ -16,7 +16,7 @@ button[style*="--btn"] {
   --btn-md: calc(51rem / 16);
   --btn-lg: calc(58rem / 16);
 
-  background-color: var(--btn-bg, var(--bg, blue));
+  background-color: var(--btn-bgc, var(--bg, blue));
   border-radius: var(--btn-rds, var(--radius, 0.12rem));
   border: var(--btn-border, none);
   color: var(--btn-color, var(--clr, white));
@@ -43,6 +43,22 @@ button[style*="--btn"] {
     color: var(
       --btn-color-active,
       var(--btn-color, whitesmoke)
+    );
+  }
+
+  &[type="submit"] {
+    color: var(--submit-clr, var(--btn-color, white));
+    background-color: var(
+      --submit-bg,
+      var(--btn-bg, royalblue)
+    );
+  }
+
+  &[type="reset"] {
+    color: var(--reset-clr, var(--btn-color, white));
+    background-color: var(
+      --reset-bg,
+      var(--btn-bg, royalblue)
     );
   }
 }
