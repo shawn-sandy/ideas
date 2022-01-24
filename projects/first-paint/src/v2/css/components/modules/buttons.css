@@ -23,13 +23,14 @@ button[style*="--btn"] {
   display: var(--btn-dsp, var(--dsp, inline-flex));
   font-size: var(--btn-fs, 0.8125rem);
   gap: var(--btn-gap, var(--gap, 1rem));
-  min-height: var(--btn-size, var(--btn-h, 2.5rem));
   padding-inline: var(--btn-px, var(--px, 2rem));
   place-items: var(--btn-place, var(--place, center));
   width: var(--btn-w, var(--w, auto));
+  min-height: var(--btn-size, var(--btn-h, 2.5rem));
 }
 button:hover,
 button[style*="--btn"]:hover {
+  border: var(--hover-border, var(--btn-border));
   --btn-color: var(--btn-color-hover, white);
   --btn-bg: var(--btn-bg-hover, darkblue);
 }
@@ -42,11 +43,13 @@ button[style*="--btn"]:visited {
 button[type=submit],
 button[style*="--btn"][type=submit] {
   color: var(--submit-clr, var(--btn-color, white));
+  border: var(--submit-border, var(--btn-border));
   background-color: var(--submit-bg, var(--btn-bg, royalblue));
 }
 button[type=reset],
 button[style*="--btn"][type=reset] {
   color: var(--reset-clr, var(--btn-color, white));
+  border: var(--reset-border, var(--btn-border));
   background-color: var(--reset-bg, var(--btn-bg, royalblue));
 }
 
