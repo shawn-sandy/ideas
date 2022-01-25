@@ -1,3 +1,5 @@
+/* stylelint-disable declaration-colon-newline-after */
+/* stylelint-disable declaration-colon-newline-after */
 @mixin utility {
   --bg: var(--btn-bg, var(--bg));
   --btn-fs-lg: var(--fs-lg, calc(21rem / 16));
@@ -14,6 +16,9 @@
   --btn-sm: calc(28rem / 16);
   --btn-md: calc(51rem / 16);
   --btn-lg: calc(58rem / 16);
+  --btn-trans: transition: all .2s ease!important;
+  --btn-hover-trans: none;
+  --btn-hover-transF: transform: scale(.98);
 
   background-color: var(--btn-bgc, var(--bg, blue));
   border-radius: var(--btn-rds, var(--radius, 0.12rem));
@@ -26,6 +31,8 @@
   padding-inline: var(--btn-px, var(--px, 2rem));
   place-items: var(--btn-place, var(--place, center));
   width: var(--btn-w, var(--w, auto));
+  transition: var(--btn-trans, var(--trans));
+
   min-height: var(
     --btn-size,
     var(--btn-h, calc(40rem / 16))
@@ -35,15 +42,22 @@
     border: var(--hover-border, var(--btn-border));
     --btn-color: var(--btn-color-hover, white);
     --btn-bg: var(--btn-bg-hover, darkblue);
+    transition: var(--btn-hover-trans);
+    transform: var(--btn-hover-transF);
   }
 
   &:active,
   &:focus,
   &:visited {
     color: var(
-      --btn-color-active,
-      var(--btn-color, whitesmoke)
+      --btn-state-color,
+      var(--btn-color, lightgray)
     );
+  }
+
+  &:disabled {
+    opacity: var(--btn-disabled-opacity, var(--opacity, 0.5));
+    cursor: var(--btn-disabled-cursor, var(--cursor, not-allowed));
   }
 
   &[type="submit"] {
@@ -62,6 +76,7 @@
       --reset-bg,
       var(--btn-bg, royalblue)
     );
+
   }
   @content;
 }
