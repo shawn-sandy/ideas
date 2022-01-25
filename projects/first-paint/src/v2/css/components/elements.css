@@ -1,3 +1,5 @@
+/* stylelint-disable declaration-colon-newline-after */
+/* stylelint-disable declaration-colon-newline-after */
 /* component: button.scss */
 button,
 [style*="--btn"] {
@@ -22,11 +24,6 @@ button,
   --cl: var(--btn-cl, var(--dark));
   --lh: var(--btn-lh, 1);
   --lts: var(--btn-lts, 0.08);
-}
-button a,
-[style*="--btn"] a {
-  --txd: none;
-  --cl: var(--btn-cl, var(--dark));
 }
 button:hover,
 [style*="--btn"]:hover {
