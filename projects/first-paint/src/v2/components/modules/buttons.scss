@@ -1,5 +1,6 @@
-button,
-button[style*="--btn"] {
+@mixin button {
+  @content;
+
   --bg: var(--btn-bg, var(--bg));
   --btn-fs-lg: var(--fs-lg, calc(21rem / 16));
   --btn-fs-md: var(--fs-md, calc(14rem / 16));
@@ -64,6 +65,12 @@ button[style*="--btn"] {
       var(--btn-bg, royalblue)
     );
   }
+}
+
+button,
+button[style*="--btn"],
+[role="button"] {
+  @include button();
 }
 
 [style*="--btn-size"] {

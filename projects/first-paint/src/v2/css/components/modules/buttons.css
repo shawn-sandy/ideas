@@ -1,5 +1,6 @@
 button,
-button[style*="--btn"] {
+button[style*="--btn"],
+[role=button] {
   --bg: var(--btn-bg, var(--bg));
   --btn-fs-lg: var(--fs-lg, calc(21rem / 16));
   --btn-fs-md: var(--fs-md, calc(14rem / 16));
@@ -29,7 +30,8 @@ button[style*="--btn"] {
   min-height: var(--btn-size, var(--btn-h, 2.5rem));
 }
 button:hover,
-button[style*="--btn"]:hover {
+button[style*="--btn"]:hover,
+[role=button]:hover {
   border: var(--hover-border, var(--btn-border));
   --btn-color: var(--btn-color-hover, white);
   --btn-bg: var(--btn-bg-hover, darkblue);
@@ -37,17 +39,22 @@ button[style*="--btn"]:hover {
 button:active, button:focus, button:visited,
 button[style*="--btn"]:active,
 button[style*="--btn"]:focus,
-button[style*="--btn"]:visited {
+button[style*="--btn"]:visited,
+[role=button]:active,
+[role=button]:focus,
+[role=button]:visited {
   color: var(--btn-color-active, var(--btn-color, whitesmoke));
 }
 button[type=submit],
-button[style*="--btn"][type=submit] {
+button[style*="--btn"][type=submit],
+[role=button][type=submit] {
   color: var(--submit-clr, var(--btn-color, white));
   border: var(--submit-border, var(--btn-border));
   background-color: var(--submit-bg, var(--btn-bg, royalblue));
 }
 button[type=reset],
-button[style*="--btn"][type=reset] {
+button[style*="--btn"][type=reset],
+[role=button][type=reset] {
   color: var(--reset-clr, var(--btn-color, white));
   border: var(--reset-border, var(--btn-border));
   background-color: var(--reset-bg, var(--btn-bg, royalblue));
