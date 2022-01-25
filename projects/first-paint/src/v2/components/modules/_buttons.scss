@@ -1,4 +1,4 @@
-@mixin button {
+@mixin utility {
   --bg: var(--btn-bg, var(--bg));
   --btn-fs-lg: var(--fs-lg, calc(21rem / 16));
   --btn-fs-md: var(--fs-md, calc(14rem / 16));
@@ -66,12 +66,14 @@
   @content;
 }
 
-button,
-button[style*="--btn"],
-[role="button"] {
-  @include button();
-}
+@mixin components {
+  button,
+  button[style*="--btn"],
+  [role="button"] {
+    @include utility();
+  }
 
-[style*="--btn-size"] {
-  min-height: var(--btn-size, var(--ht));
+  [style*="--btn-size"] {
+    min-height: var(--btn-size, var(--ht));
+  }
 }
