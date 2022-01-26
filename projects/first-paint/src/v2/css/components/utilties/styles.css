@@ -1,11 +1,11 @@
-/** utility styles **/
+/** dynamic utility styles **/
 [style*="--is"] {
   display: var(--is-dsp, var(--dsp));
 }
 
-:empty,
+:empty:not(img),
 [style="--is-empty"] {
-  --is-dsp: var(--is-empty, none);
+  display: var(--is-empty, none);
 }
 
 @media screen and (max-width: 62rem) and (min-width: 48rem) {
