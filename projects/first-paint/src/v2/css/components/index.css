@@ -615,7 +615,6 @@ ul[role=menubar] :any-link {
 */
 /* Component: foundation.scss */
 /* stylelint-disable declaration-colon-newline-after */
-/* stylelint-disable declaration-colon-newline-after */
 /* component: button.scss */
 button,
 [style*="--btn"] {

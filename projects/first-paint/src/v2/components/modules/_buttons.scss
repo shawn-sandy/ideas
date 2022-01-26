@@ -1,5 +1,4 @@
 /* stylelint-disable declaration-colon-newline-after */
-/* stylelint-disable declaration-colon-newline-after */
 @mixin utility {
   --bg: var(--btn-bg, var(--bg));
   --btn-fs-lg: var(--fs-lg, calc(21rem / 16));
@@ -39,9 +38,10 @@
   );
 
   &:hover {
-    border: var(--hover-border, var(--btn-border));
     --btn-color: var(--btn-color-hover, white);
     --btn-bg: var(--btn-bg-hover, darkblue);
+
+    border: var(--hover-border, var(--btn-border));
     transition: var(--btn-hover-trans);
     transform: var(--btn-hover-transF);
   }
