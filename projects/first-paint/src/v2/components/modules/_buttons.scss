@@ -1,5 +1,5 @@
 /* stylelint-disable declaration-colon-newline-after */
-@mixin utility {
+@mixin rules {
   --bg: var(--btn-bg, var(--bg));
   --btn-fs-lg: var(--fs-lg, calc(21rem / 16));
   --btn-fs-md: var(--fs-md, calc(14rem / 16));
@@ -85,7 +85,7 @@
   button,
   button[style*="--btn"],
   [role="button"] {
-    @include utility();
+    @include rules();
   }
 
   [style*="--btn-size"] {
