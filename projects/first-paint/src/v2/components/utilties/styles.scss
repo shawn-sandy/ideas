@@ -1,0 +1,40 @@
+/** utility styles **/
+
+[style*="--is"] {
+  display: var(--is-dsp, var(--dsp));
+}
+
+:empty,
+[style="--is-empty"] {
+  --is-dsp: var(--is-empty, none);
+}
+
+[style*="--is-phone"] {
+  @media screen and (max-width: calc(992rem / 16)) and (min-width: calc(768rem / 16)) {
+    display: var(--is-phone);
+  }
+}
+
+[style*="--is-tablet"] {
+  @media screen and (max-width: calc(992rem / 16)) and (min-width: calc(768rem / 16)) {
+    display: var(--is-mobile);
+  }
+}
+
+[style*="--is-mobile"] {
+  @media screen and (max-width: calc(768rem / 16)) {
+    display: var(--is-mobile);
+  }
+}
+
+[style*="--is-laptop"] {
+  @media screen and (max-width: calc(1280rem / 16)) and (min-width: calc(992rem / 16)) {
+    display: var(--is-laptop);
+  }
+}
+
+[style*="--is-desktop"] {
+  @media screen and (max-width: calc(1400rem / 16)) and (min-width: calc(1280rem / 16)) {
+    display: var(--is-desktop);
+  }
+}
