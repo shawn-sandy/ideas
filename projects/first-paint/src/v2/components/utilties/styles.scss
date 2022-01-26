@@ -4,6 +4,11 @@
   display: var(--is-dsp, var(--dsp));
 }
 
+//**
+//* quickly hide empty elements
+//* that are not self-closing tags
+//* turn it off using style="--is-empty: block;"
+//**/
 :empty:not(hr, img, input, br) {
   display: var(--is-empty, var(--dsp, none));
 }
