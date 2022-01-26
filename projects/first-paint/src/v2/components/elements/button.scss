@@ -1,6 +1,7 @@
 /* component: button.scss */
 
 @use "../../modules/utilities/maps";
+@use "../modules/buttons";
 
 button,
 [style*="--btn"] {
@@ -29,10 +30,7 @@ button,
   --cl: var(--btn-cl, var(--dark));
   --lh: var(--btn-lh, 1);
   --lts: var(--btn-lts, 0.08);
-  a {
-    --txd: none;
-    --cl: var(--btn-cl, var(--dark));
-  }
+
   &:hover {
     --cursor: pointer;
     filter: var(--dark-mode);

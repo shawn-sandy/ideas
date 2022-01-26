@@ -1,5 +1,5 @@
-button,
-button[style*="--btn"] {
+/* stylelint-disable declaration-colon-newline-after */
+@mixin rules {
   --bg: var(--btn-bg, var(--bg));
   --btn-fs-lg: var(--fs-lg, calc(21rem / 16));
   --btn-fs-md: var(--fs-md, calc(14rem / 16));
@@ -15,6 +15,9 @@ button[style*="--btn"] {
   --btn-sm: calc(28rem / 16);
   --btn-md: calc(51rem / 16);
   --btn-lg: calc(58rem / 16);
+  --btn-trans: transition: all .2s ease!important;
+  --btn-hover-trans: none;
+  --btn-hover-transF: transform: scale(.98);
 
   background-color: var(--btn-bgc, var(--bg, blue));
   border-radius: var(--btn-rds, var(--radius, 0.12rem));
@@ -27,24 +30,34 @@ button[style*="--btn"] {
   padding-inline: var(--btn-px, var(--px, 2rem));
   place-items: var(--btn-place, var(--place, center));
   width: var(--btn-w, var(--w, auto));
+  transition: var(--btn-trans, var(--trans));
+
   min-height: var(
     --btn-size,
     var(--btn-h, calc(40rem / 16))
   );
 
   &:hover {
-    border: var(--hover-border, var(--btn-border));
     --btn-color: var(--btn-color-hover, white);
     --btn-bg: var(--btn-bg-hover, darkblue);
+
+    border: var(--hover-border, var(--btn-border));
+    transition: var(--btn-hover-trans);
+    transform: var(--btn-hover-transF);
   }
 
   &:active,
   &:focus,
   &:visited {
     color: var(
-      --btn-color-active,
-      var(--btn-color, whitesmoke)
+      --btn-state-color,
+      var(--btn-color, lightgray)
     );
+  }
+
+  &:disabled {
+    opacity: var(--btn-disabled-opacity, var(--opacity, 0.5));
+    cursor: var(--btn-disabled-cursor, var(--cursor, not-allowed));
   }
 
   &[type="submit"] {
@@ -63,9 +76,19 @@ button[style*="--btn"] {
       --reset-bg,
       var(--btn-bg, royalblue)
     );
+
   }
+  @content;
 }
 
-[style*="--btn-size"] {
-  min-height: var(--btn-size, var(--ht));
+@mixin components {
+  button,
+  button[style*="--btn"],
+  [role="button"] {
+    @include rules();
+  }
+
+  [style*="--btn-size"] {
+    min-height: var(--btn-size, var(--ht));
+  }
 }

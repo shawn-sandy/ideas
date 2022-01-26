@@ -614,6 +614,7 @@ ul[role=menubar] :any-link {
  ***************************************
 */
 /* Component: foundation.scss */
+/* stylelint-disable declaration-colon-newline-after */
 /* component: button.scss */
 button,
 [style*="--btn"] {
@@ -638,11 +639,6 @@ button,
   --cl: var(--btn-cl, var(--dark));
   --lh: var(--btn-lh, 1);
   --lts: var(--btn-lts, 0.08);
-}
-button a,
-[style*="--btn"] a {
-  --txd: none;
-  --cl: var(--btn-cl, var(--dark));
 }
 button:hover,
 [style*="--btn"]:hover {
@@ -1063,6 +1059,49 @@ p + * {
   [style*="--fx-card"] {
     --grid-flex: 1 1 98%;
     --grid-w: 49%;
+  }
+}
+
+/** dynamic utility styles **/
+[style*="--is"] {
+  display: var(--is-dsp, var(--dsp));
+}
+
+:empty:not(hr, img, input, br) {
+  display: var(--is-empty, var(--dsp, none));
+}
+
+[style="--is-empty"] {
+  display: var(--is-empty, none);
+}
+
+@media screen and (max-width: 62rem) and (min-width: 48rem) {
+  [style*="--is-phone"] {
+    display: var(--is-phone);
+  }
+}
+
+@media screen and (max-width: 62rem) and (min-width: 48rem) {
+  [style*="--is-tablet"] {
+    display: var(--is-mobile);
+  }
+}
+
+@media screen and (max-width: 48rem) {
+  [style*="--is-mobile"] {
+    display: var(--is-mobile);
+  }
+}
+
+@media screen and (max-width: 80rem) and (min-width: 62rem) {
+  [style*="--is-laptop"] {
+    display: var(--is-laptop);
+  }
+}
+
+@media screen and (max-width: 87.5rem) and (min-width: 80rem) {
+  [style*="--is-desktop"] {
+    display: var(--is-desktop);
   }
 }
 
