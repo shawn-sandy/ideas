@@ -1,13 +1,16 @@
 /** dynamic utility styles **/
 
+:empty:empty:not(hr, img, input, br),
 [style*="--is"] {
-  display: var(--is-dsp, var(--dsp));
+  display: var(--dsp);
 }
 
 //**
+//* utility-style to
 //* quickly hide empty elements
-//* that are not self-closing tags
-//* turn it off using style="--is-empty: block;"
+//* that are not (hr, img, input, br) self-closing tags
+//* turn it off using css custom properties
+//* style="--is-empty: block;"
 //**/
 :empty:not(hr, img, input, br) {
   display: var(--is-empty, var(--dsp, none));

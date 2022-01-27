@@ -1,6 +1,7 @@
 /** dynamic utility styles **/
+:empty:empty:not(hr, img, input, br),
 [style*="--is"] {
-  display: var(--is-dsp, var(--dsp));
+  display: var(--dsp);
 }
 
 :empty:not(hr, img, input, br) {

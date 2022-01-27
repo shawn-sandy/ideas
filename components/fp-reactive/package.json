@@ -15,7 +15,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "dev": "styleguidist server --open"
+    "dev": "styleguidist server"
   },
   "eslintConfig": {
     "extends": [
