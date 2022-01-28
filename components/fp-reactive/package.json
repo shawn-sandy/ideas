@@ -12,12 +12,13 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "start-storybook -p 6006 -s public",
+    "start:react": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "dev": "styleguidist server",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -o ./www/components"
   },
   "eslintConfig": {
     "extends": [
