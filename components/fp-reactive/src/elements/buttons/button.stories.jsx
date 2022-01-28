@@ -14,3 +14,10 @@ Default.args = {
   children: 'Default Button',
   onClick: () => console.log('Clicked Default Button')
 }
+
+export const Red = Template.bind({})
+Red.args = {
+  children: 'Red Button',
+  styles: { '--btn-bg': 'red', '--btn-color': 'white' },
+  onClick: () => console.log('Clicked Default Button')
+}
