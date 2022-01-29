@@ -2,7 +2,7 @@ import React from 'react'
 import Article from './article'
 
 export default {
-  title: 'Plugins/Loaders',
+  title: 'Plugins/ScreenLoaders',
   component: Article
 }
 
@@ -13,8 +13,8 @@ ArticleLoader.args = {
   speed: 2
 }
 
-export const LightBlueLoader = Template.bind({})
-LightBlueLoader.args = {
+export const ArticleBlue = Template.bind({})
+ArticleBlue.args = {
   speed: 5,
   backgroundColor: 'lightblue',
   width: 400
