@@ -11,7 +11,7 @@ export default create({
   appBg: 'white',
   appContentBg: 'white',
   appBorderColor: 'lightgrey',
-  colorSecondary: 'black',
+  colorSecondary: '#767676',
   // Text colors
   textColor: 'black',
   textInverseColor: 'rgba(255,255,255,0.9)',
