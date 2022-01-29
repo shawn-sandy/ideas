@@ -1,4 +1,5 @@
-{% macro demo(id, title ='', split = '40') %}
+{% macro demo(id, title ='', editorView ='editor', split =
+'40') %}
 <h5 style="--w: 100%; --py: 3rem">{{ title }} Sandbox</h5>
 <section
   style="
@@ -10,7 +11,7 @@
   "
 >
   <iframe
-    src="https://codesandbox.io/embed/{{ id }}?fontsize=11&hidenavigation=1&theme=light&codemirror=1&view=preview"
+    src="https://codesandbox.io/embed/{{ id }}?fontsize=11&hidenavigation=1&theme=light&codemirror=1&view={{editorView}}"
     style="
       width: 100%;
       height: 500px;
