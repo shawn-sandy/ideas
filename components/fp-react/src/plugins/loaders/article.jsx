@@ -2,15 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import ContentLoader from 'react-content-loader'
 
-const Article = (props) => {
+const Article = (props, speed = 2, backgroundColor = 'lightgray', foregroundColor = '#ecebeb') => {
   return (
     <ContentLoader
-      speed={2}
+      speed={{ speed }}
       width={476}
       height={124}
       viewBox='0 0 476 124'
-      backgroundColor='lightgray'
-      foregroundColor='#ecebeb'
+      backgroundColor={backgroundColor}
+      foregroundColor={foregroundColor}
       {...props}
     >
       <rect x='48' y='8' rx='3' ry='3' width='88' height='6' />
@@ -27,6 +27,14 @@ Article.propTypes = {
   /**
    * Speed of the animation
    */
-  speed: PropTypes.number
+  speed: PropTypes.number,
+  /**
+   * Background color of the animation
+   */
+  backgroundColor: PropTypes.string,
+  /**
+   * Foreground color of the animation
+   */
+  foregroundColor: PropTypes.string
 }
 export default Article
