@@ -16,5 +16,6 @@ ArticleLoader.args = {
 export const LightBlueLoader = Template.bind({})
 LightBlueLoader.args = {
   speed: 5,
-  backgroundColor: 'lightblue'
+  backgroundColor: 'lightblue',
+  width: 400
 }
