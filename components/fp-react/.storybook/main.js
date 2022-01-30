@@ -5,6 +5,7 @@ module.exports = {
     "../src/components/**/*.stories.jsx",
     "../src/modules/**/*.stories.jsx",
     "../src/pages/**/*.stories.jsx",
+    "../src/services/**/*.stories.jsx",
     "../src/**/*.stories.@(js|jsx|ts|tsx)",
     "../src/**/*.stories.mdx",
   ],
