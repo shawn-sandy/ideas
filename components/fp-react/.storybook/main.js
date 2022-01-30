@@ -3,7 +3,7 @@ module.exports = {
     "../src/guides/**/*.stories.mdx",
     "../src/elements/**/*.stories.jsx",
     "../src/components/**/*.stories.jsx",
-    "../src/plugins/**/*.stories.jsx",
+    "../src/modules/**/*.stories.jsx",
     "../src/**/*.stories.@(js|jsx|ts|tsx)",
     "../src/**/*.stories.mdx",
   ],

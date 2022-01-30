@@ -2,7 +2,7 @@ import React from 'react'
 import Article from './article'
 
 export default {
-  title: 'Plugins/ScreenLoaders',
+  title: 'Modules/ScreenLoaders',
   component: Article
 }
 
