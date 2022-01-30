@@ -10,7 +10,7 @@ export default create({
   // UI settings
   appBg: 'white',
   appContentBg: 'white',
-  appBorderColor: 'lightgrey',
+  appBorderColor: 'whitesmoke',
   colorSecondary: '#767676',
   // Text colors
   textColor: 'black',
