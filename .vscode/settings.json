@@ -109,5 +109,8 @@
     "cSpell",
     "markdownlint(MD041)"
   ],
-  "html-css-class-completion.enableEmmetSupport": true
+  "html-css-class-completion.enableEmmetSupport": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.scrollToSwitchTabs": true,
+  "workbench.editor.wrapTabs": true
 }
