@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import ContentLoader from 'react-content-loader'
 
-const Article = (props, speed = 2, backgroundColor = 'lightgray', foregroundColor = '#ecebeb', width = 400, height = 160) => {
+const Article = ({ props, speed = 2, backgroundColor = 'lightgray', foregroundColor = '#ecebeb', width = 400, height = 160 }) => {
   const viewBox = `0 0 ${width} ${height}`
   return (
     <ContentLoader
