@@ -9,7 +9,6 @@ export default {
 const Template = (args) => <Button {...args} />
 
 export const Default = Template.bind({})
-
 Default.args = {
   children: 'Default Button',
   onClick: () => console.log('Clicked Default Button')

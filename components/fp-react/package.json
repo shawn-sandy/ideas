@@ -1,5 +1,5 @@
 {
-  "name": "@shawnsandy/fp-reactive",
+  "name": "@shawnsandy/fp-react",
   "version": "0.0.1",
   "private": false,
   "dependencies": {
@@ -61,6 +61,7 @@
     "axe-core": "^4.3.5",
     "crypto-browserify": "^3.12.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
+    "react-content-loader": "^6.1.0",
     "react-styleguidist": "11.2.0",
     "sass": "^1.49.0",
     "webpack": "^5.67.0"

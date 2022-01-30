@@ -27,10 +27,4 @@ Container.propTypes = {
   classes: PropTypes.string
 }
 
-export const Box = ({ type, children, onClick, ...props }) => {
-  return (
-    <div>Box</div>
-  )
-}
-
 export default Container
