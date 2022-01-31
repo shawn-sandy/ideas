@@ -12,10 +12,10 @@ const DetailsSummary = ({ content, classes, styles = {}, summary = 'Details/Summ
   }
   const summaryStyle = {
     fontSize: 'var(--summary-fs, 1.1rem)',
-    color: 'var(--sumary-color, currentColor)',
+    color: 'var(--summary-color, currentColor)',
     paddingBlock: 'var(--summary-pb, 1rem)',
     backgroundColor: 'var(--summary-bg, transparent)',
-    listStyle: 'var(--sumary-ls, none)'
+    listStyle: 'var(--summary-ls, none)'
   }
 
   return (
