@@ -42,6 +42,13 @@ module.exports = function (eleventyConfig) {
     }
   )
 
+  eleventyConfig.addPairedShortcode(
+    "highlight",
+    (content, lang = "html") => {
+      return `<div class="shj-lang-${lang}">${content}</div>`
+    }
+  )
+
   return {
     dir: {
       input: "./src",
