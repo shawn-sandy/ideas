@@ -18,6 +18,11 @@
       <h3 role="none">{{ description }}</h3>
     </section>
     {{ content | safe }}
+    {% highlight %}
+    <code>
+      {{ content }}
+    </code>
+    {% endhighlight %}
     {% if sandbox %}
       {{ box.demo(sandbox, title) }}
     {% endif %}
@@ -35,4 +40,3 @@
         {% endfor %}
       </div>
     {% endblock %}
-    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
