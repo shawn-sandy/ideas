@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import './Layout.scss'
 
 const Layout = ({ tag = 'section', children, styles, classes, ...props }) => {
   const Tag = (tag)

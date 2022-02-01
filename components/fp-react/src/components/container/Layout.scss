@@ -1,0 +1,7 @@
+:where(div, main, section, article, footer, header),
+[style*="--box"] {
+  display: var(--box-dsp, var(--dsp, block));
+  margin: 0 auto;
+  padding: 0;
+  max-width: var(--box-max-w, 100%);
+}
