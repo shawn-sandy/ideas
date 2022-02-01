@@ -1,14 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Container = ({ tag, children, styles, classes, ...props }) => {
-  const Tag = (tag) || 'section'
+const Layout = ({ tag = 'section', children, styles, classes, ...props }) => {
+  const Tag = (tag)
   return (
     <Tag className={classes} style={styles} {...props}>{children}</Tag>
   )
 }
 
-Container.propTypes = {
+Layout.propTypes = {
   /**
    * Tag to use for the container
    */
@@ -27,4 +27,4 @@ Container.propTypes = {
   classes: PropTypes.string
 }
 
-export default Container
+export default Layout

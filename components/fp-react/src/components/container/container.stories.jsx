@@ -1,18 +1,17 @@
 import React from 'react'
 
-import Container from './container'
+import Layout from './container'
 
 export default {
-  title: 'Components/Container',
-  component: Container
+  title: 'Components/Layout',
+  component: Layout
 }
 
-const Template = (args) => <Container {...args} />
+const Template = (args) => <Layout {...args} />
 
-export const Default = Template.bind({})
+export const Section = Template.bind({})
 
-Default.args = {
+Section.args = {
 
   children: 'The is a default container, can be added using the children prop'
 }
-
