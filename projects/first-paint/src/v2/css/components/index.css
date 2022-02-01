@@ -138,8 +138,7 @@ select,
 textarea,
 em,
 s,
-i,
-code {
+i {
   display: var(--dsp);
   --dsp: inline-block;
 }
@@ -405,7 +404,6 @@ link,
 ul,
 p,
 form,
-code,
 blockquote {
   width: var(--w);
   height: var(--h);
@@ -778,20 +776,6 @@ textarea[role=presentation]::-webkit-scrollbar-thumb,
 div[contenteditable]::-webkit-scrollbar-thumb {
   background-color: ghostwhite;
   outline: none;
-}
-pre code,
-textarea[role=presentation] code,
-div[contenteditable] code {
-  color: var(--alert);
-  line-height: var(--code-lh, 1.8);
-  --bg: transparent;
-  --w: 90%;
-  font-style: var(--code-fst, normal);
-}
-
-code {
-  --cl: var(--code-cl, #b61111);
-  font-style: italic;
 }
 
 table {

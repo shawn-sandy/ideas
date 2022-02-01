@@ -138,8 +138,8 @@ select,
 textarea,
 em,
 s,
-i,
-code {
+i {
   display: var(--dsp);
+
   --dsp: inline-block;
 }

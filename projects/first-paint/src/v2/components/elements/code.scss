@@ -1,5 +1,5 @@
 pre,
-textarea[role='presentation'],
+textarea[role="presentation"],
 div[contenteditable] {
   padding: 1rem;
   margin: 2rem 0;
@@ -14,6 +14,7 @@ div[contenteditable] {
   max-height: 500px;
   display: flex;
   align-items: center;
+
   --w: var(--code-w, 80%);
   --px: 1rem;
   --py: 1rem;
@@ -30,17 +31,4 @@ div[contenteditable] {
     background-color: ghostwhite;
     outline: none;
   }
-
-  code {
-    color: var(--alert);
-    line-height: var(--code-lh, 1.8);
-    --bg: transparent;
-    --w: 90%;
-    font-style: var(--code-fst, normal);
-  }
-}
-
-code {
-  --cl: var(--code-cl, #b61111);
-  font-style: italic;
 }

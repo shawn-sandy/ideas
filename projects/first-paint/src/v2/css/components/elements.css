@@ -163,20 +163,6 @@ div[contenteditable]::-webkit-scrollbar-thumb {
   background-color: ghostwhite;
   outline: none;
 }
-pre code,
-textarea[role=presentation] code,
-div[contenteditable] code {
-  color: var(--alert);
-  line-height: var(--code-lh, 1.8);
-  --bg: transparent;
-  --w: 90%;
-  font-style: var(--code-fst, normal);
-}
-
-code {
-  --cl: var(--code-cl, #b61111);
-  font-style: italic;
-}
 
 table {
   --mx: var(--sm-x);

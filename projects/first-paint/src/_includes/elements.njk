@@ -19,9 +19,7 @@
     </section>
     {{ content | safe }}
     {% highlight %}
-    <code>
-      {{ content }}
-    </code>
+    {{ content }}
     {% endhighlight %}
     {% if sandbox %}
       {{ box.demo(sandbox, title) }}
