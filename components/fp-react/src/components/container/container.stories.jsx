@@ -7,11 +7,14 @@ export default {
   component: Layout
 }
 
-const Template = (args) => <Layout {...args} />
+const Template = (args) => (
+  <Layout {...args} styles={{ '--box-max-w': '100%' }}>
+    <p>Some content can go here to see that happens</p>
+  </Layout>
+)
 
 export const Section = Template.bind({})
 
 Section.args = {
 
-  children: 'The is a default container, can be added using the children prop'
 }

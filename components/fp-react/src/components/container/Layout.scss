@@ -1,7 +1,29 @@
+/* stylelint-disable declaration-empty-line-before */
+/* stylelint-disable declaration-empty-line-before */
+/* stylelint-disable declaration-colon-newline-after */
 :where(div, main, section, article, footer, header),
 [style*="--box"] {
+  --box-flow: column wrap;
+  --box-align: flex-start;
+  --box-justify: flex-start;
+
   display: var(--box-dsp, var(--dsp, block));
-  margin: 0 auto;
-  padding: 0;
+  margin-inline: var(--box-x, var(--mx, initial));
+  margin-block: var(--box-y, var(--my, initial));
   max-width: var(--box-max-w, 100%);
+  width: var(--box-w, var(--w, initial));
+  height: var(--box-h, var(--h, initial));
+  min-width: var(--box-min-w, initial);
+}
+
+[style*="--box-flex"] {
+  --box-dsp: var(--box-flex-dsp, flex);
+
+  flex-flow: var(--box-flex-flow, var(--flow));
+  align-items: var(--box-flex-align, var(--box-align));
+
+  justify-content: var(
+    --box-flex-justify,
+    var(--box-justify)
+  );
 }
