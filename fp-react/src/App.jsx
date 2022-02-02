@@ -1,6 +1,7 @@
 import './App.css'
-import Button from './components/buttons/button'
+import Button from './elements/buttons/button'
 import Contain from './components/container/container'
+import Details, { Summary } from './elements/details-summary/details-summary'
 
 /**
  * This function returns a div element with a header and a link.
@@ -13,6 +14,11 @@ const App = () => {
       <Contain tag='main' styles={{ padding: '2rem' }}>
         <h1>Hello World</h1>
         <p>lorem</p>
+        <Details>
+          <Summary>Summary title</Summary>
+          <p>This is the content for the details summary, a native accordion component</p>
+
+        </Details>
       </Contain>
 
       <Contain className='App'>

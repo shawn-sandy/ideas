@@ -10,10 +10,21 @@ export default {
   }
 }
 
-const Template = (args) => <Details {...args}><Summary /></Details>
+export const DetailsTempalte = (...args) => (
+  <Details {...args}>
+    <Summary>Summary title</Summary>
+    <p>This is the content for the details summary, a native accordion component</p>
+  </Details>
+)
+
+const Template = (args) => (
+  <Details {...args}>
+    <Summary>Template Title</Summary>
+    {args.children}
+  </Details>)
 
 export const DetailsElement = Template.bind({})
 
 DetailsElement.args = {
-  content: 'This is the content for the details summary, a native accordion component'
+  children: 'This is the content for the details summary, a native accordion component'
 }

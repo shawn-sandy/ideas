@@ -2,17 +2,17 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './details-summary.scss'
 
-const Details = ({ content, classes, styles = {}, ...rest }) => {
+const Details = ({ children, classes, styles = {}, ...rest }) => {
   return (
     <details style={{ styles }} className={classes}>
-      {content}
+      {children}
     </details>
   )
 }
 
-export const Summary = ({ summary = 'Summary', summaryClasses, summaryStyles = {}, ...rest }) => {
+export const Summary = ({ children = 'Summary', summaryClasses, summaryStyles = {}, ...rest }) => {
   return (
-    <summary style={{ summaryStyles }} className={summaryClasses} {...rest}>{summary}</summary>
+    <summary style={{ summaryStyles }} className={summaryClasses} {...rest}>{children}</summary>
   )
 }
 
