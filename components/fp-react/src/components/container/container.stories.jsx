@@ -4,7 +4,11 @@ import Layout from './container'
 
 export default {
   title: 'Components/Layout',
-  component: Layout
+  component: Layout,
+  parameters: {
+    layout: 'padded'
+  }
+
 }
 
 const Template = (args) => (
@@ -14,5 +18,6 @@ const Template = (args) => (
 export const Section = Template.bind({})
 
 Section.args = {
+  children: 'First paint is a performance-first, accessibility-driven, SCSS/CSS micro-framework'
 
 }

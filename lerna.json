@@ -1,4 +1,4 @@
 {
-  "packages": ["projects/*", "apps/*", "system/*", "components/*"],
+  "packages": ["projects/*", "apps/*", "system/*", "components/*", "fp-react/"],
   "version": "independent"
 }
