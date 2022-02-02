@@ -1,0 +1,16 @@
+details {
+  font-size: var(--detail-fs, 1rem);
+  color: var(--detail-color, currentColor);
+  padding-block: var(--detail-pb, 1rem);
+  background-color: var(--detail-bg, none);
+  border: var(--detail-border, none);
+  cursor: var(--detail-cursor, pointer);
+
+  summary {
+    font-size: var(--summary-fs, 1.1rem);
+    color: var(--summary-color, currentColor);
+    padding-block: var(--summary-pb, 1rem);
+    background-color: var(--summary-bg, transparent);
+    list-style: var(--summary-ls, none);
+  }
+}

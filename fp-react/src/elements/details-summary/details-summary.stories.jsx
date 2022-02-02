@@ -1,12 +1,16 @@
 import React from 'react'
-import DetailsSummary from './details-summary'
+import Details, { Summary } from './details-summary'
 
 export default {
-  title: 'Elements/DetailsElement',
-  component: DetailsSummary
+  title: 'Elements/Details',
+  component: Details,
+  subcomponents: { Summary },
+  parameters: {
+    layout: 'padded'
+  }
 }
 
-const Template = (args) => <DetailsSummary {...args} />
+const Template = (args) => <Details {...args}><Summary /></Details>
 
 export const DetailsElement = Template.bind({})
 

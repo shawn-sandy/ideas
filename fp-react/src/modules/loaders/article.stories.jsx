@@ -2,7 +2,7 @@ import React from 'react'
 import Article from './article'
 
 export default {
-  title: 'Modules/Articles',
+  title: 'Modules/Loaders',
   component: Article
 }
 

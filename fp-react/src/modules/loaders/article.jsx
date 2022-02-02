@@ -6,7 +6,7 @@ const Article = ({ props, speed = 2, backgroundColor = 'lightgray', foregroundCo
   const viewBox = `0 0 ${width} ${height}`
   return (
     <ContentLoader
-      speed={{ speed }}
+      speed={speed}
       width={width}
       height={height}
       viewBox={viewBox}

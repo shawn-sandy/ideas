@@ -1,32 +1,22 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import './details-summary.scss'
 
-const DetailsSummary = ({ content, classes, styles = {}, summary = 'Details/Summary Component', summaryClasses, summaryStyles = {}, ...rest }) => {
-  const detailStyles = {
-    fontSize: 'var(--detail-fs, 1rem)',
-    color: 'var(--detail-color, currentColor)',
-    paddingBlock: 'var(--detail-pb, 1rem)',
-    backgroundColor: 'var(--detail-bg, none)',
-    border: 'var(--detail-border, none)',
-    cursor: 'var(--detail-cursor, pointer)'
-  }
-  const summaryStyle = {
-    fontSize: 'var(--summary-fs, 1.1rem)',
-    color: 'var(--summary-color, currentColor)',
-    paddingBlock: 'var(--summary-pb, 1rem)',
-    backgroundColor: 'var(--summary-bg, transparent)',
-    listStyle: 'var(--summary-ls, none)'
-  }
-
+const Details = ({ content, classes, styles = {}, ...rest }) => {
   return (
-    <details style={{ ...detailStyles, ...styles }} className={classes}>
-      <summary style={{ ...summaryStyle, ...styles }} {...rest}>{summary}</summary>
+    <details style={{ styles }} className={classes}>
       {content}
     </details>
   )
 }
 
-DetailsSummary.propTypes = {
+export const Summary = ({ summary = 'Summary', summaryClasses, summaryStyles = {}, ...rest }) => {
+  return (
+    <summary style={{ summaryStyles }} className={summaryClasses} {...rest}>{summary}</summary>
+  )
+}
+
+Details.propTypes = {
 
   /**
    * Content to render inside the container
@@ -39,7 +29,11 @@ DetailsSummary.propTypes = {
   /**
    * Classes to apply to the container
    */
-  classes: PropTypes.string,
+  classes: PropTypes.string
+
+}
+
+Summary.propTypes = {
   /**
    * Summary to display in the summary tag
    */
@@ -54,4 +48,4 @@ DetailsSummary.propTypes = {
   summaryStyles: PropTypes.object
 }
 
-export default DetailsSummary
+export default Details
