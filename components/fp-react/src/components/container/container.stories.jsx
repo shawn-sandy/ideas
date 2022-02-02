@@ -8,9 +8,7 @@ export default {
 }
 
 const Template = (args) => (
-  <Layout {...args} styles={{ '--box-max-w': '100%' }}>
-    <p>Some content can go here to see that happens</p>
-  </Layout>
+  <Layout {...args} styles={{ '--box-max-w': '100%' }} />
 )
 
 export const Section = Template.bind({})
