@@ -1,5 +1,6 @@
 import React from 'react'
 import Details, { Summary } from './details-summary'
+// import './index.css'
 
 export default {
   title: 'Elements/Details',

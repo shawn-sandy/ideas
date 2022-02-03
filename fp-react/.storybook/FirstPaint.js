@@ -10,16 +10,16 @@ export default create({
   // UI settings
   appBg: 'white',
   appContentBg: 'white',
-  appBorderColor: 'whitesmoke',
-  colorSecondary: 'darkgreen',
+  appBorderColor: 'transparent',
+  colorSecondary: 'dimgray',
   // Text colors
   textColor: 'black',
   textInverseColor: 'rgba(255,255,255,0.9)',
 
   // Toolbar default and active colors
   barTextColor: 'sliver',
-  barSelectedColor: 'green',
-  barBg: 'whitesmoke',
+  barSelectedColor: 'dimgray',
+  barBg: 'transparent',
 
   // Form colors
   inputBg: 'white',

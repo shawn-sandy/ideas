@@ -2,7 +2,7 @@ import React from 'react'
 import Button from './button'
 
 export default {
-  title: 'Elements/Button',
+  title: 'Elements/Buttons',
   component: Button
 }
 
