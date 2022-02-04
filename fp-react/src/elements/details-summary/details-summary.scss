@@ -14,7 +14,7 @@ details {
   border-radius: 0.5rem;
 
   :where(div, aside, p, ul) {
-    padding: var(--details-pd);
+    padding: var(--summary-pd, 0 1rem 1rem 1rem);
   }
 
   summary {

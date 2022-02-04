@@ -10,9 +10,9 @@ const Details = ({ children, classes, styles = {}, ...rest }) => {
   )
 }
 
-export const Summary = ({ children = 'Summary', summaryClasses, summaryStyles = {}, ...rest }) => {
+export const Summary = ({ children = 'Summary', classes, styles = {}, ...rest }) => {
   return (
-    <summary style={{ summaryStyles }} className={summaryClasses} {...rest}>{children}</summary>
+    <summary style={{ styles }} className={classes} {...rest}>{children}</summary>
   )
 }
 
@@ -41,11 +41,11 @@ Summary.propTypes = {
   /**
    * Classes to apply to the summary tag
    */
-  summaryClasses: PropTypes.string,
+  classes: PropTypes.string,
   /**
    * Styles to apply to the summary tag
    */
-  summaryStyles: PropTypes.object
+  styles: PropTypes.object
 }
 
 export default Details
