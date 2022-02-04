@@ -6,6 +6,7 @@ import { SummaryElement } from './summary.stories'
 export default {
   title: 'Elements/Details',
   component: Details,
+  subcomponents: { SummaryElement },
   parameters: {
     layout: 'padded'
   }
