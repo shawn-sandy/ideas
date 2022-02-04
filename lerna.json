@@ -1,4 +1,11 @@
 {
-  "packages": ["projects/*", "apps/*", "system/*", "components/*"],
+  "packages": [
+    "projects/*",
+    "apps/*",
+    "system/*",
+    "components/*",
+    "fp-react/",
+    "first-paint/"
+  ],
   "version": "independent"
 }

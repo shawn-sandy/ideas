@@ -1,0 +1,29 @@
+html {
+  --ff: "Source Sans Pro", Arial, sans-serif;
+
+  font-family: var(--ff, var(--ff));
+}
+
+details {
+  --details-pd: 1rem;
+
+  font-size: var(--detail-fs, 1rem);
+  color: var(--detail-color, currentColor);
+  background-color: var(--detail-bg, whitesmoke);
+  border: var(--detail-border, none);
+  border-radius: 0.5rem;
+
+  :where(div, aside, p, ul) {
+    padding: var(--details-pd);
+  }
+
+  summary {
+    font-size: var(--summary-fs, 1.1rem);
+    color: var(--summary-color, currentColor);
+    padding: var(--details-pd);
+    background-color: var(--summary-bg, transparent);
+    list-style: var(--summary-ls, none);
+    cursor: var(--detail-cursor, pointer);
+    border-bottom: var(--summary-border, solid lightgray);
+  }
+}

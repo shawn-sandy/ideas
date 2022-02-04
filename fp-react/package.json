@@ -1,0 +1,74 @@
+{
+  "name": "@shawnsandy/fp-react",
+  "version": "0.0.1",
+  "private": false,
+  "dependencies": {
+    "@storybook/addon-a11y": "^6.4.17",
+    "@storybook/addon-storysource": "^6.4.17",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "5.0.0",
+    "react-content-loader": "^6.1.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "start-storybook -p 6006 -s public",
+    "start:react": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "dev": "styleguidist server",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -o ./www/components"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@axe-core/react": "^4.3.2",
+    "@storybook/addon-actions": "^6.4.14",
+    "@storybook/addon-essentials": "^6.4.14",
+    "@storybook/addon-links": "^6.4.14",
+    "@storybook/builder-webpack5": "^6.4.14",
+    "@storybook/manager-webpack5": "^6.4.14",
+    "@storybook/node-logger": "^6.4.14",
+    "@storybook/preset-create-react-app": "^4.0.0",
+    "@storybook/react": "^6.4.14",
+    "axe-core": "^4.3.5",
+    "crypto-browserify": "^3.12.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "react-styleguidist": "11.2.0",
+    "sass": "^1.49.0",
+    "webpack": "^5.67.0"
+  },
+  "browser": {
+    "crypto": false
+  }
+}
