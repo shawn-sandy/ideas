@@ -2,7 +2,10 @@
   "packages": [
     "projects/*",
     "apps/*",
-    "system/*"
+    "system/*",
+    "components/*",
+    "fp-react/",
+    "first-paint/"
   ],
   "version": "independent"
 }

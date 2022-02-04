@@ -1,5 +1,7 @@
 # IDEA~
 
+> This repository will be archived at the end of the year (2021). All active plugin/components will be moved to a new repository.
+
 ## A UI toolkit for creating and managing digital products.
 
 IDEAS (ideas) is a simple and easy to use HTML, CSS and JAVASCRIPT UI Toolkit for creating and managing digital products--style/design systems, pattern libraries, UI Kits, style-guides, prototypes or even JAMSTACK sites.

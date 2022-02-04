@@ -1,4 +1,4 @@
-import queryMixin from './mixins/query';
+import queryMixin from './mixins/query'
 
 export default {
   mixins: [queryMixin],
@@ -6,8 +6,8 @@ export default {
     // Provide a filter to limit the
     // results of the API request.
     filter: {
-      type: Object,
-    },
+      type: Object
+    }
   },
   watch: {
     // Load the data from the given endpoint
@@ -15,13 +15,13 @@ export default {
     // every time the filter property changes.
     filter: {
       immediate: true,
-      handler: `load`,
-    },
+      handler: `load`
+    }
   },
   methods: {
     load() {
-      return this.query(`get`, this.endpoint, { params: this.filter });
-    },
+      return this.query(`get`, this.endpoint, { params: this.filter })
+    }
   },
   render() {
     // Render the default scoped slot and
@@ -31,7 +31,7 @@ export default {
       data: this.data,
       error: this.error,
       load: this.load,
-      loading: this.loading,
-    });
-  },
-};
+      loading: this.loading
+    })
+  }
+}

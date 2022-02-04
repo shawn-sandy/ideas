@@ -1,15 +1,23 @@
 {
   "env": {
     "browser": true,
-    "es2021": true,
-    "node": true
+    "es2021": true
   },
   "extends": [
-    "standard"
+    "standard",
+    "plugin:react/recommended",
+    "@azimutlabs/eslint-config-jsx-a11y",
+    "eslint:recommended"
   ],
   "parserOptions": {
-    "ecmaVersion": 6,
-    "sourceType": "script"
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
   },
-  "rules": {}
+  "plugins": ["react", "jsx-a11y"],
+  "rules": {
+    "jsx-quotes": ["error", "prefer-single"]
+  }
 }
