@@ -17,9 +17,9 @@ const Template = (args) => (
     <p>{args.children}</p>
   </Details>)
 
-export const DetailsElement = Template.bind({})
-
 DetailsElement.args = {
   children: 'Add some content here to make it work',
-  title: "Element Title"
+  title: 'Element Title'
 }
+
+export const DetailsElement = Template.bind({})
