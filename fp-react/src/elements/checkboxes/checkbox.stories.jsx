@@ -2,7 +2,7 @@ import React from 'react'
 import Checkbox from './checkbox'
 
 export default {
-  title: 'Elements/Checkboxes',
+  title: 'Elements/Checkbox/Input',
   component: Checkbox,
   parameters: {
     layout: 'padded',
