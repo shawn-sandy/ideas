@@ -14,6 +14,5 @@ const Template = (args) => <Checkbox {...args} />
 export const Base = Template.bind({})
 
 Base.args = {
-  children: 'Check me out',
-  onClick: () => console.log('Clicked DefaultName Example')
+  click: () => console.log('Clicked DefaultName Example')
 }
