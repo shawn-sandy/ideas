@@ -113,5 +113,10 @@
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.scrollToSwitchTabs": true,
   "workbench.editor.wrapTabs": true,
-  "standard.enable": false
+  "standard.enable": false,
+  "emmet.excludeLanguages": [],
+  "emmet.includeLanguages": {
+    "mdx": "html",
+    "jsx": "javascriptreact"
+  }
 }
