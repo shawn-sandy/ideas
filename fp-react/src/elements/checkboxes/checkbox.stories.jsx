@@ -2,7 +2,7 @@ import React from 'react'
 import Checkbox from './checkbox'
 
 export default {
-  title: 'Elements/Checkbox',
+  title: 'Elements/Checkboxes',
   component: Checkbox,
   parameters: {
     layout: 'padded',
@@ -11,9 +11,9 @@ export default {
 
 const Template = (args) => <Checkbox {...args} />
 
-export const Checkboxes = Template.bind({})
+export const Base = Template.bind({})
 
-Checkboxes.args = {
+Base.args = {
   children: 'Check me out',
   onClick: () => console.log('Clicked DefaultName Example')
 }

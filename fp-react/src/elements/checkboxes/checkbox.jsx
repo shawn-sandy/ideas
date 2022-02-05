@@ -3,21 +3,45 @@ import PropTypes from 'prop-types'
 import './checkbox.scss'
 
 
-const Checkbox = ({ id, classes, styles = {}, children = 'Default Checkbox', click, ...props }) => {
+export const Label = ({ name, classes, styles = {}, children = 'Default Checkbox', ...props }) => {
   return (
-    <label htmlFor={id} {...props}>
-      <input className={classes} type="checkbox" id={id} onClick={click} /> {children}
-    </label>
+    <label htmlFor={name} className={`checkbox ${classes}`} style={styles}  {...props}>{children}</label>
+  )
+}
+
+const Checkbox = ({ name, classes, styles = {}, click, ...props }) => {
+  return (
+    <input className={classes} styles={styles} type="checkbox" id={name} onClick={click} />
   )
 }
 
 export default Checkbox
 
+Label.propTypes = {
+  /**
+   * The name of the checkbox required
+   */
+  name: PropTypes.string.isRequired,
+  /**
+   * The classes to apply to the checkbox
+   */
+  classes: PropTypes.string,
+  /**
+   * The styles to apply to the checkbox
+   */
+  styles: PropTypes.object,
+  /**
+   * The content of the checkbox
+   */
+  children: PropTypes.node
+
+}
+
 Checkbox.propTypes = {
   /**
    * id for the checkbox
    */
-  id: PropTypes.string,
+  name: PropTypes.string.isRequired,
   /**
    * classes for the checkbox
    */
@@ -27,11 +51,7 @@ Checkbox.propTypes = {
    */
   styles: PropTypes.object,
   /**
-   * label for children   *
-   */
-  children: PropTypes.any,
-  /**
    * click function for the checkbox
    */
-  click: PropTypes.func,
+  click: PropTypes.func
 }
