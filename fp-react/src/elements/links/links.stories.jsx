@@ -11,9 +11,9 @@ export default {
 
 const Template = (args) => <Links {...args} />
 
-export const Element = Template.bind({})
+export const Link = Template.bind({})
 
-Element.args = {
+Link.args = {
   children: 'Click me...',
   to: '#'
 }
@@ -25,9 +25,9 @@ const OpenTemplate = (args) => (
   </>
 )
 
-export const OpenTarget = OpenTemplate.bind({})
+export const ExternalLink = OpenTemplate.bind({})
 
-OpenTarget.args = {
+ExternalLink.args = {
   children: 'Click me...',
   to: '/'
 }
