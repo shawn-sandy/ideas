@@ -3,12 +3,13 @@ import PropTypes from 'prop-types'
 import './checkbox.scss'
 
 /**
- * Label element provides a wrapper for checkbox input
+ * Label Component provides a wrapper for checkbox input
  * * Customs styles the default input checkbox
  * * Wraps a label around the checkbox
  * * Adds a click event to the checkbox
  * * Ensured that the label is accessible
  * * Full keyboard accessibility
+ * * [Accessibility Info](https://www.w3.org/TR/wai-aria-practices-1.1/#checkbox)
  */
 export const Label = ({ name, classes, styles = '', children = 'Default Checkbox', ...props }) => {
   return (
