@@ -29,6 +29,12 @@ Button.propTypes = {
   /**
    * Set the Button type - default is 'button'
    */
-  type: PropTypes.oneOf(['button', 'submit', 'reset'])
+  type: PropTypes.oneOf(['button', 'submit', 'reset']),
+  /**
+   * Set the Button styles w/style attribute
+   * `{'--btn-bg': 'red', '--btn-color': 'white'}`
+   * changes the button background and text color
+   */
+  styles: PropTypes.object
 }
 export default Button
