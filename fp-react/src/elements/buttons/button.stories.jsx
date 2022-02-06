@@ -11,15 +11,22 @@ const Template = (args) => <Button {...args} />
 export const Default = Template.bind({})
 Default.args = {
   children: 'Default Button',
-  onClick: () => console.log('Clicked Default Button')
+  click: () => console.log('Clicked Default Button')
 }
 
 /**
  * General component description in JSDoc format. Markdown is *supported*.
  */
-export const Red = Template.bind({})
-Red.args = {
-  children: 'Red Button',
+export const RedStyle = Template.bind({})
+RedStyle.args = {
+  children: 'Red Custom Style',
   styles: { '--btn-bg': 'red', '--btn-color': 'white' },
-  onClick: () => console.log('Clicked Default Button')
+  click: () => console.log('Clicked red Button')
+}
+
+export const Disabled = Template.bind({})
+Disabled.args = {
+  disabled: true,
+  children: 'Disabled Button',
+  click: () => console.log('Clicked Disabled Button')
 }
