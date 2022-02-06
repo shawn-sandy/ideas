@@ -3,7 +3,7 @@ import React from 'react'
 import Layout from './container'
 
 export default {
-  title: 'Components/Layout',
+  title: 'Components/Layout/Sections',
   component: Layout,
   parameters: {
     layout: 'padded'
