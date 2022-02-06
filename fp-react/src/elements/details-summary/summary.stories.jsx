@@ -2,7 +2,7 @@ import React from 'react'
 import { Summary } from './details-summary'
 
 export default {
-  title: 'Elements/Summary',
+  title: 'Elements/Details/Summary',
   component: Summary,
   parameters: {
     layout: 'padded'

@@ -1,6 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+/**
+ * General component description in JSDoc format. Markdown is *supported*.
+ */
 const Button = ({ type = 'button', styles = {}, children = 'Default Button', onClick, ...props }) => {
   const demoClick = () => console.log(`Clicked ${children}`)
   const defaultStyles = {

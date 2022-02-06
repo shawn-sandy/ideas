@@ -4,7 +4,7 @@ import { SummaryElement } from './summary.stories'
 // import './index.css'
 
 export default {
-  title: 'Elements/Details',
+  title: 'Elements/Details/Component',
   component: Details,
   subcomponents: { SummaryElement },
   parameters: {

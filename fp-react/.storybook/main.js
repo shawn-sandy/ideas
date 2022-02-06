@@ -15,7 +15,18 @@ module.exports = {
     "@storybook/addon-essentials",
     '@storybook/addon-a11y',
     "@storybook/preset-create-react-app",
-    "@storybook/addon-storysource"
+    "@storybook/addon-storysource",
+    'storybook-design-token',
+    'storybook-addon-designs',
+    {
+      name: '@storybook/addon-docs',
+      options: {
+        sourceLoaderOptions: {
+          injectStoryParameters: false,
+        },
+      },
+    },
+
   ],
   "framework": "@storybook/react",
   "core": {
