@@ -10,14 +10,25 @@ export default {
 }
 
 const Template = (args) => (
-  <label>
-    <Checkbox {...args} />
-  </label>
+  <Checkbox {...args} />
 )
 
 export const InputField = Template.bind({})
 
 InputField.args = {
-  name: 'checkbox',
+  name: 'checkbox-input',
+  click: () => console.log('Clicked DefaultName Example')
+}
+
+const CheckboxTemplate = (args) => (
+  <label>
+    <Checkbox {...args} />
+  </label>
+)
+
+export const CheckboxInput = CheckboxTemplate.bind({})
+
+CheckboxInput.args = {
+  name: 'checkbox-component',
   click: () => console.log('Clicked DefaultName Example')
 }
