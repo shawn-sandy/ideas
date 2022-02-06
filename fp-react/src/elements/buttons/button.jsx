@@ -1,26 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import './button.scss'
 
 /**
- * General component description in JSDoc format. Markdown is *supported*.
+ *  ## Button Element.
+ * * Submit, Reset, and Button styles
+ * * Disabled state and default styles
+ * * [Button documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button)
+ * * [Accessibility Info](https://www.w3.org/TR/wai-aria-practices-1.2/#button)
  */
-const Button = ({ type = 'button', styles = {}, children = 'Default Button', onClick, ...props }) => {
+const Button = ({ type = 'button', styles = {}, children = 'Default Button', click, ...props }) => {
   const demoClick = () => console.log(`Clicked ${children}`)
-  const defaultStyles = {
-    fontSize: 'var(--btn-fs, calc(13rem /16))',
-    color: 'var(--btn-color, white)',
-    backgroundColor: 'var(--btn-bg, gray)',
-    display: 'var(--btn-dsp, inline-flex)',
-    gap: 'var(--btn-gap, 1rem)',
-    minHeight: 'calc(40rem /16 )',
-    placeItems: 'var(--btn-place, center)',
-    paddingInline: 'var(--btn-px, 2rem)',
-    border: 'var(--btn-border, none)',
-    cursor: 'var(--btn-cursor, pointer)'
-  }
 
   return (
-    <button type={type} style={{ ...defaultStyles, ...styles }} onClick={onClick || demoClick} {...props}> {children || 'Buttons'}</button>
+    <button type={type} style={styles} onClick={click || demoClick} {...props}> {children || 'Buttons'}</button>
   )
 }
 
@@ -32,10 +25,10 @@ Button.propTypes = {
   /**
    * Button onClick function - use to override default click handler
    */
-  onClick: PropTypes.func,
+  click: PropTypes.func,
   /**
    * Set the Button type - default is 'button'
    */
-  type: PropTypes.string
+  type: PropTypes.oneOf(['button', 'submit', 'reset'])
 }
 export default Button

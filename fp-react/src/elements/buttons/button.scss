@@ -1,0 +1,30 @@
+/* stylelint-disable declaration-colon-newline-after */
+:where(button, [style*="--btn"]) {
+  color: var(--btn-color, currentColor);
+  font-size: var(--btn-fs, calc(13rem / 16));
+  display: var(--btn-dsp, inline-flex);
+  background-color: var(--btn-bg, lightgray);
+  gap: var(--btn-gap, 1rem);
+  min-height: calc(40rem / 16);
+  place-items: var(--btn-place, center);
+  padding-inline: var(--btn-px, 1.2rem);
+  border: var(--btn-border, none);
+  border-radius: 0.15rem;
+  cursor: var(--btn-cursor, pointer);
+
+  &[disabled] {
+    cursor: var(--btn-cursor-disabled, not-allowed);
+    opacity: var(--btn-opacity-disabled, 0.5);
+  }
+}
+
+:where(button[type="submit"], [style*="--btn: submit"]) {
+  --btn-bg: darkblue;
+  --btn-color: white;
+}
+
+:where(button[type="reset"], [style*="--btn: 'reset'"]) {
+  --btn-bg: transparent;
+  --btn-color: gray;
+  --btn-border: gray medium solid;
+}
