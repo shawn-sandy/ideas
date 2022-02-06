@@ -15,19 +15,25 @@ export const Link = Template.bind({})
 
 Link.args = {
   children: 'Click me...',
-  to: '#'
+  to: '#',
+  title: 'Title of the link',
 }
 
 const OpenTemplate = (args) => (
   <>
-    <p>Open link in new</p>
-    <Open {...args} />
+    <p>
+      Creates an external link that opens in a new window {" "}
+    </p>
+    <p>
+      <Open {...args} />
+    </p>
   </>
 )
 
 export const ExternalLink = OpenTemplate.bind({})
 
 ExternalLink.args = {
-  children: 'Click me...',
-  to: '/'
+  children: 'Open in new tab',
+  to: '/',
+  title: 'Title of the link',
 }
