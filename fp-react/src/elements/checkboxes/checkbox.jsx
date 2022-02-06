@@ -4,6 +4,11 @@ import './checkbox.scss'
 
 /**
  * Label element provides a wrapper for checkbox input
+ * * Customs styles the default input checkbox
+ * * Wraps a label around the checkbox
+ * * Adds a click event to the checkbox
+ * * Ensured that the label is accessible
+ * * Full keyboard accessibility
  */
 export const Label = ({ name, classes, styles = '', children = 'Default Checkbox', ...props }) => {
   return (
