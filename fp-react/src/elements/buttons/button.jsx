@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import './button.scss'
 
 /**
- *  ## Button Element.
+ * Button Element.
  * * Submit, Reset, and Button styles
  * * Disabled state and default styles
  * * [Button documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button)

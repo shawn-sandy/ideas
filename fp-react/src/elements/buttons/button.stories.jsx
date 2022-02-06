@@ -19,7 +19,7 @@ Default.args = {
  */
 export const RedStyle = Template.bind({})
 RedStyle.args = {
-  children: 'Red Button',
+  children: 'Red Custom Style',
   styles: { '--btn-bg': 'red', '--btn-color': 'white' },
   click: () => console.log('Clicked red Button')
 }
