@@ -5,7 +5,7 @@ export default {
   title: "Elements/Links/Element",
   component: Links,
   parameters: {
-    layout: 'padded',
+    // layout: 'padded',
   }
 }
 
@@ -36,4 +36,13 @@ ExternalLink.args = {
   children: 'Open in new tab',
   to: '/',
   title: 'Title of the link',
+}
+
+export const ButtonLink = Template.bind({})
+
+ButtonLink.args = {
+  children: 'Open in new tab',
+  to: '#',
+  title: 'Title of the link',
+  styles: { '--btn-bg': 'red', '--btn-color': 'white' }
 }

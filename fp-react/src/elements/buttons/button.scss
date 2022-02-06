@@ -10,6 +10,7 @@
   padding-inline: var(--btn-px, 1.2rem);
   border: var(--btn-border, none);
   border-radius: 0.15rem;
+  text-decoration: var(--btn-dect, underline);
   cursor: var(--btn-cursor, pointer);
 
   &[disabled] {

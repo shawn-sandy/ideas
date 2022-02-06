@@ -9,7 +9,7 @@ import PropTypes from 'prop-types'
 const Links = ({ to = '#', classes, styles, title, target, rel, download, children, ...props }) => {
   return (
     <a href={to} className={classes} title
-      ={title} styles={styles} target={target} rel={rel} {...props}>{children}</a>
+      ={title} style={styles} target={target} rel={rel} {...props}>{children}</a>
   )
 }
 
