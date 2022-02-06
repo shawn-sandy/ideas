@@ -118,5 +118,6 @@
   "emmet.includeLanguages": {
     "mdx": "html",
     "jsx": "javascriptreact"
-  }
+  },
+  "markdown-preview-enhanced.codeBlockTheme": "default.css"
 }

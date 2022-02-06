@@ -6,7 +6,7 @@ import FirstPaint from './FirstPaint'
 
 addons.setConfig({
   isFullscreen: false,
-  showNav: true,
+  showNav: false,
   showPanel: true,
   panelPosition: 'bottom',
   enableShortcuts: true,
@@ -20,7 +20,7 @@ addons.setConfig({
   },
   toolbar: {
     title: { hidden: false, },
-    zoom: { hidden: false, },
+    zoom: { hidden: true, },
     eject: { hidden: false, },
     copy: { hidden: false, },
     fullscreen: { hidden: true, }
