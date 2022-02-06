@@ -9,7 +9,11 @@ export default {
   }
 }
 
-const Template = (args) => <Checkbox {...args} />
+const Template = (args) => (
+  <label>
+    <Checkbox {...args} />
+  </label>
+)
 
 export const InputField = Template.bind({})
 
