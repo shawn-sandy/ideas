@@ -2,16 +2,18 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './checkbox.scss'
 
-
-export const Label = ({ name, classes, styles = {}, children = 'Default Checkbox', ...props }) => {
+/**
+ * Label element provides a wrapper for checkbox input
+ */
+export const Label = ({ name, classes, styles = '', children = 'Default Checkbox', ...props }) => {
   return (
-    <label htmlFor={name} className={`checkbox ${classes}`} style={styles}  {...props}>{children}</label>
+    <label htmlFor={name} className={classes} style={{ styles }}  {...props}>{children}</label>
   )
 }
 
-const Checkbox = ({ name, classes, styles = {}, click, ...props }) => {
+const Checkbox = ({ name, classes, styles = '', click, ...props }) => {
   return (
-    <input className={classes} styles={styles} type="checkbox" id={name} onClick={click} />
+    <input className={classes} styles={styles} type="checkbox" id={name} onClick={click} {...props} />
   )
 }
 

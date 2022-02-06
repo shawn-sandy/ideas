@@ -13,6 +13,7 @@ Default.args = {
   children: 'Default Button',
   onClick: () => console.log('Clicked Default Button')
 }
+
 /**
  * General component description in JSDoc format. Markdown is *supported*.
  */
