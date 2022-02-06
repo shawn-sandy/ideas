@@ -38,10 +38,10 @@ ExternalLink.args = {
   title: 'Title of the link',
 }
 
-export const ButtonLink = Template.bind({})
+export const LinkButton = Template.bind({})
 
-ButtonLink.args = {
-  children: 'Open in new tab',
+LinkButton.args = {
+  children: 'Link Button',
   to: '#',
   title: 'Title of the link',
   styles: { '--btn-bg': 'red', '--btn-color': 'white', '--btn-deco': 'none' }

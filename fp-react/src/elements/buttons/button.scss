@@ -1,7 +1,7 @@
 /* stylelint-disable declaration-colon-newline-after */
 :where(button, [style*="--btn"]) {
   color: var(--btn-color, currentColor);
-  font-size: var(--btn-fs, calc(13rem / 16));
+  font-size: var(--btn-fs, calc(14rem / 16));
   display: var(--btn-dsp, inline-flex);
   background-color: var(--btn-bg, lightgray);
   gap: var(--btn-gap, 1rem);
