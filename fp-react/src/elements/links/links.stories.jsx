@@ -44,5 +44,5 @@ ButtonLink.args = {
   children: 'Open in new tab',
   to: '#',
   title: 'Title of the link',
-  styles: { '--btn-bg': 'red', '--btn-color': 'white' }
+  styles: { '--btn-bg': 'red', '--btn-color': 'white', '--btn-deco': 'none' }
 }
