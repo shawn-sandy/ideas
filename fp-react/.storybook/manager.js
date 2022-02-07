@@ -15,7 +15,7 @@ addons.setConfig({
   initialActive: 'sidebar',
   theme: FirstPaint,
   sidebar: {
-    showRoots: false,
+    showRoots: true,
     collapsedRoots: ['other'],
   },
   toolbar: {

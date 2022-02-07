@@ -41,5 +41,5 @@ Img.propTypes = {
   /**
    * The height of the image
    */
-  height: PropTypes.string,
+  height: PropTypes.string
 }

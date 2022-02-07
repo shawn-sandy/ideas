@@ -2,7 +2,7 @@ import React from 'react'
 import Img from './img'
 
 export default {
-  title: 'Elements/Media/Img',
+  title: 'Elements/Media/Images',
   component: Img,
   parameters: {
     layout: 'centered',
