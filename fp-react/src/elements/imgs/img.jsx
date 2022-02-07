@@ -10,7 +10,7 @@ import PropTypes from 'prop-types'
  * @param  {String} classes
  * @param  {} =>{return(<imgsrc={src}alt={alt}{...props}/>
  */
-const Img = ({ src, alt = '', styles, classes, ...props }) => {
+const Img = ({ src, alt = '', styles, classes, width, height, ...props }) => {
   return (
     <img src={src} alt={alt} {...props} />
   )
@@ -35,5 +35,13 @@ Img.propTypes = {
   /**
    * The classes to apply to the image
    */
-  classes: PropTypes.string
+  classes: PropTypes.string,
+  /**
+   * The width of the image
+   */
+  width: PropTypes.string,
+  /**
+   * The height of the image
+   */
+  height: PropTypes.string
 }
