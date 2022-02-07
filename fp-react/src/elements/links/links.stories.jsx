@@ -44,5 +44,5 @@ LinkButton.args = {
   children: 'Link Button',
   to: '#',
   title: 'Title of the link',
-  styles: { '--btn-bg': 'red', '--btn-color': 'white', '--btn-deco': 'none' }
+  styles: { '--btn-bg': 'darkblue', '--btn-color': 'white', '--btn-deco': 'none' }
 }
