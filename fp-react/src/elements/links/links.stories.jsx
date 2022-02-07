@@ -4,6 +4,7 @@ import Links, { Open } from './links'
 export default {
   title: "Elements/Links/Element",
   component: Links,
+  subcomponents: { Open },
   parameters: {
     // layout: 'padded',
   }
