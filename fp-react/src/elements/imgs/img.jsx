@@ -8,7 +8,7 @@ import './img.scss'
  * [Documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img)
  * [Accessibility Info](https://www.w3.org/TR/wai-aria-practices-1.2/#img)
  */
-const Img = ({ src, alt = '', width, height, styles, classes, srcset, ...props }) => {
+const Img = ({ src, alt = '', width, height, styles, classes, ...props }) => {
   return (
     <img src={src} alt={alt} width={width} height={height} {...props} />
   )
@@ -42,8 +42,4 @@ Img.propTypes = {
    * The height of the image
    */
   height: PropTypes.string,
-  /**
-   * The srcset attribute for the image
-   */
-  srcset: PropTypes.string
 }
