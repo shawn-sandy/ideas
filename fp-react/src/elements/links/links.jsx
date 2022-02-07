@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
  * Link Element.
  * Provides the heavy lifting for creating links
  * * Adds a click event to the link
+ * * [Link Documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a)
  */
 const Links = ({ to = '#', classes, styles, title, target, rel, download, children, ...props }) => {
   return (
