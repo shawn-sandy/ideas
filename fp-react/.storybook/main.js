@@ -18,6 +18,7 @@ module.exports = {
     "@storybook/addon-storysource",
     'storybook-design-token',
     'storybook-addon-designs',
+    'storybook-addon-performance/register',
     {
       name: '@storybook/addon-docs',
       options: {
