@@ -12,5 +12,11 @@ export const parameters = {
     },
   },
   layout: 'centered',
+  html: {
+    highlighter: {
+      showLineNumbers: true, // default: false
+      wrapLines: false, // default: true
+    },
+  }
 
 }
