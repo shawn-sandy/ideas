@@ -3,12 +3,7 @@ import PropTypes from 'prop-types'
 
 
 /**
- * Image Element
- * @param  {String} {src
- * @param  {String} alt=''
- * @param  {Object} styles
- * @param  {String} classes
- * @param  {} =>{return(<imgsrc={src}alt={alt}{...props}/>
+ * React Image Element
  */
 const Img = ({ src, alt = '', styles, classes, width, height, ...props }) => {
   return (

@@ -18,9 +18,11 @@ Image.args = {
   alt: 'Placeholder Image'
 }
 
-// export const Red = Template.bind({})
-// Red.args = {
-//   children: 'Red Example',
-//   styles: { '--btn-bg': 'red', '--btn-color': 'white' },
-//   onClick: () => console.log('Clicked DefaultName Example')
-// }
+export const ImageMedium = ImgTemplate.bind({})
+
+ImageMedium.args = {
+  src: 'https://via.placeholder.com/300',
+  alt: 'Placeholder Image',
+  width: '300',
+  height: '300'
+}
