@@ -14,7 +14,7 @@ const Links = ({ to = '#', classes, styles, title, target, rel, download, childr
   )
 }
 
-export const Open = ({ to = '#', classes, styles, title, target, rel, download, children, ...props }) => {
+export const OpenTab = ({ to = '#', classes, styles, title, target, rel, download, children, ...props }) => {
   return (
     <Links to={to} className={classes} title target='_blank' rel='nofollow noopener'>{children}</Links>
   )

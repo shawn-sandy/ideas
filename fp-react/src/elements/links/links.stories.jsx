@@ -1,10 +1,10 @@
 import React from 'react'
-import Links, { Open } from './links'
+import Links, { OpenTab } from './links'
 
 export default {
   title: "Elements/Links/Element",
   component: Links,
-  subcomponents: { Open },
+  subcomponents: { OpenTab },
   parameters: {
     // layout: 'padded',
   }
@@ -26,7 +26,7 @@ const OpenTemplate = (args) => (
       Creates an external link that opens in a new window {" "}
     </p>
     <p>
-      <Open {...args} />
+      <OpenTab {...args} />
     </p>
   </>
 )

@@ -6,7 +6,7 @@ import FirstPaint from './FirstPaint'
 
 addons.setConfig({
   isFullscreen: false,
-  showNav: false,
+  showNav: true,
   showPanel: true,
   panelPosition: 'bottom',
   enableShortcuts: true,
