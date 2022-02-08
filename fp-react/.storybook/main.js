@@ -20,6 +20,7 @@ module.exports = {
     'storybook-design-token',
     'storybook-addon-designs',
     'storybook-addon-performance/register',
+    "storybook-addon-pseudo-states",
     {
       name: '@storybook/addon-docs',
       options: {
