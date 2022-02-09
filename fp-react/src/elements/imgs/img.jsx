@@ -51,8 +51,11 @@ Img.propTypes = {
  * the block display.
  */
 export const ImgBox = ({ children, styles, classes, width, height, ...props }) => {
+  const defStyles = {
+    '--pic-w': width || '500px',
+  }
   return (
-    <picture className={classes} style={styles}>
+    <picture className={classes} style={{ ...defStyles, ...styles }}>
       {children}
     </picture>
   )
@@ -76,6 +79,7 @@ ImgBox.propTypes = {
   /**
    * The width of the image box
    */
+
 
 
 }
