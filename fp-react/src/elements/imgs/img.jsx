@@ -50,7 +50,7 @@ Img.propTypes = {
  * in a the picture and change the display without removing
  * the block display.
  */
-export const ImgBox = ({ children, styles, classes, width, height, ...props }) => {
+export const Pics = ({ children, styles, classes, width, height, ...props }) => {
   const defStyles = {
     '--pic-w': width || '500px',
   }
@@ -62,7 +62,7 @@ export const ImgBox = ({ children, styles, classes, width, height, ...props }) =
 }
 
 
-ImgBox.propTypes = {
+Pics.propTypes = {
   /**
    * Image content for wrapper
    */

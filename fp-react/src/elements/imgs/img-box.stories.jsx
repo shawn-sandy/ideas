@@ -1,15 +1,15 @@
 import React from 'react'
-import { ImgBox } from './img'
+import { Pics } from './img'
 
 export default {
   title: 'Elements/Media/Images',
-  component: ImgBox,
+  component: Pics,
   parameters: {
     layout: 'centered'
   }
 }
 
-const Template = (args) => <ImgBox {...args} />
+const Template = (args) => <Pics {...args} />
 
 export const Box = Template.bind({})
 
