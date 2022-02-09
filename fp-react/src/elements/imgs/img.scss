@@ -1,8 +1,6 @@
-
-
 img {
   --img-xs: 10vw;
-  --img-sm: 25vw,
+  --img-sm: 25vw;
   --img-md: 50vw;
   --img-lg: 75vw;
   --img-xl: 90vw;
@@ -30,8 +28,8 @@ picture {
   width: var(--pic-w, auto);
   display: var(--pic-dsp, flex);
   place-content: var(--place-x, center);
-  place-items: var(--place-y, center) ;
+  place-items: var(--place-y, center);
   height: var(--pic-h, auto);
-  padding-block: var(--pic-py, .5re,);
-  padding-inline: var(--pic-px, .5re,);
+  padding-block: var(--pic-py, 0.5re);
+  padding-inline: var(--pic-px, 0.5re);
 }
