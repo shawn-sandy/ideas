@@ -30,6 +30,6 @@ picture {
   place-content: var(--place-x, center);
   place-items: var(--place-y, center);
   height: var(--pic-h, auto);
-  padding-block: var(--pic-py, 0.5re);
-  padding-inline: var(--pic-px, 0.5re);
+  padding-block: var(--pic-py, 0.5rem);
+  padding-inline: var(--pic-px, 0.5rem);
 }
