@@ -1,4 +1,13 @@
+
+
 img {
+  --img-xs: 10vw;
+  --img-sm: 25vw,
+  --img-md: 50vw;
+  --img-lg: 75vw;
+  --img-xl: 90vw;
+  --img-100: 100vw;
+
   max-width: 100%;
 
   &[width] {
