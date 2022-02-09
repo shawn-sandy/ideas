@@ -19,5 +19,10 @@ img {
 picture {
   max-width: var(--pic-max-w, 100%);
   width: var(--pic-w, auto);
+  display: var(--pic-dsp, flex);
+  place-content: var(--place-x, center);
+  place-items: var(--place-y, center) ;
   height: var(--pic-h, auto);
+  padding-block: var(--pic-py, .5re,);
+  padding-inline: var(--pic-px, .5re,);
 }

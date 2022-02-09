@@ -43,3 +43,39 @@ Img.propTypes = {
    */
   height: PropTypes.string
 }
+
+/**
+ * Images are displayed in blocks by default
+ * The image box wrapper allows you to wrap the image
+ * in a the picture and change the display without removing
+ * the block display.
+ */
+export const ImgBox = ({ children, styles, classes, width, height, ...props }) => {
+  return (
+    <picture className={classes} style={styles}>
+      {children}
+    </picture>
+  )
+}
+
+
+ImgBox.propTypes = {
+  /**
+   * Image content for wrapper
+   */
+
+  children: PropTypes.string.isRequired,
+  /**
+   * The style to apply to `style` attribute
+   */
+  styles: PropTypes.object,
+  /**
+   * The classes to apply to the `class` attribute
+   */
+  classes: PropTypes.string,
+  /**
+   * The width of the image box
+   */
+
+
+}

@@ -5,7 +5,7 @@ export default {
   title: 'Elements/Media/Images',
   component: Img,
   parameters: {
-    layout: 'centered',
+    layout: 'centered'
   }
 }
 
