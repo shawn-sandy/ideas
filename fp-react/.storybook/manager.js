@@ -6,7 +6,7 @@ import FirstPaint from './FirstPaint'
 
 addons.setConfig({
   isFullscreen: false,
-  showNav: false,
+  showNav: true,
   showPanel: true,
   panelPosition: 'bottom',
   enableShortcuts: true,
@@ -15,7 +15,7 @@ addons.setConfig({
   initialActive: 'sidebar',
   theme: FirstPaint,
   sidebar: {
-    showRoots: false,
+    showRoots: true,
     collapsedRoots: ['other'],
   },
   toolbar: {

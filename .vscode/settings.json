@@ -119,5 +119,7 @@
     "mdx": "html",
     "jsx": "javascriptreact"
   },
-  "markdown-preview-enhanced.codeBlockTheme": "default.css"
+  "markdown-preview-enhanced.codeBlockTheme": "default.css",
+  "editor.wordWrap": "on",
+  "html.format.wrapLineLength": 80
 }
