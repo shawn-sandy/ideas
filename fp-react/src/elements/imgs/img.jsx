@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './img.scss'
 
-
 /**
  * React Image Element
  * [Documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img)
@@ -80,6 +79,25 @@ Pics.propTypes = {
    * The width of the image box
    */
 
+}
 
+export const Caption = ({ children, styles, classes, ...props }) => {
+  return (
+    <figcaption className={classes} style={styles} {...props}>{children}</figcaption>
+  )
+}
 
+Caption.propTypes = {
+  /**
+   * The content of the caption
+   */
+  children: PropTypes.node,
+  /**
+   * The styles to apply to the caption
+   */
+  styles: PropTypes.object,
+  /**
+   * The classes to apply to the caption
+   */
+  classes: PropTypes.string
 }
