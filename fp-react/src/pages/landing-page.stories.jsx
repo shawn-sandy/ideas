@@ -3,7 +3,10 @@ import LandingPage from './landing-page'
 
 export default {
   title: 'Pages/LandingPage',
-  component: LandingPage
+  component: LandingPage,
+  parameters: {
+    layout: 'padded',
+  }
 }
 
 const Template = (args) => <LandingPage {...args} />

@@ -13,11 +13,14 @@ module.exports = {
   "addons": [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
+    '@whitespace/storybook-addon-html',
+    "@storybook/addon-storysource",
     '@storybook/addon-a11y',
     "@storybook/preset-create-react-app",
-    "@storybook/addon-storysource",
     'storybook-design-token',
     'storybook-addon-designs',
+    'storybook-addon-performance/register',
+    "storybook-addon-pseudo-states",
     {
       name: '@storybook/addon-docs',
       options: {
