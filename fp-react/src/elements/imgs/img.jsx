@@ -49,19 +49,19 @@ Img.propTypes = {
  * in a the picture and change the display without removing
  * the block display.
  */
-export const Pics = ({ children, styles, classes, width, height, ...props }) => {
+export const Fig = ({ children, styles, classes, width, height, ...props }) => {
   const defStyles = {
     '--pic-w': width || '500px',
   }
   return (
-    <picture className={classes} style={{ ...defStyles, ...styles }}>
+    <figure className={classes} style={{ ...defStyles, ...styles }}>
       {children}
-    </picture>
+    </figure>
   )
 }
 
 
-Pics.propTypes = {
+Fig.propTypes = {
   /**
    * Image content for wrapper
    */

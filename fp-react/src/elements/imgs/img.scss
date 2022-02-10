@@ -23,10 +23,12 @@ img {
   }
 }
 
-picture {
+picture,
+figure {
   max-width: var(--pic-max-w, 100%);
   width: var(--pic-w, auto);
   display: var(--pic-dsp, flex);
+  flex-direction: var(--pic-flex-dir, column);
   place-content: var(--place-x, center);
   place-items: var(--place-y, center);
   height: var(--pic-h, auto);
@@ -34,11 +36,12 @@ picture {
   padding-inline: var(--pic-px, 0.5rem);
 }
 
-caption {
-  font-size: var(--cap-fs, inherit);
-  display: var(--cap-dsp, block);
-  place-content: var(--place-x, center);
+figcaption {
+  font-size: var(--fcap-fs, inherit);
+  display: var(--fcap-dsp, flex);
+  place-content: var(--place-x, flex-start);
   place-items: var(--place-y, center);
-  padding-block: var(--cap-py, 0.5rem);
-  padding-inline: var(--cap-px, 0.5rem);
+  padding-block: var(--fcap-py, 0.5rem);
+  padding-inline: var(--fcap-px, 0.5rem);
+  padding-block: var(--fcap-py, 0.5rem);
 }

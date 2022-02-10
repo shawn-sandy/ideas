@@ -3,7 +3,7 @@ import { Caption } from './img'
 
 
 export default {
-  title: 'Elements/Media/Images',
+  title: 'Elements/Media/Images/Figure',
   component: Caption,
   parameters: {
     layout: 'centered',
@@ -12,8 +12,8 @@ export default {
 
 const ComponentTemplate = (args) => <Caption {...args} />
 
-export const ImgCaption = ComponentTemplate.bind({})
+export const FigCaption = ComponentTemplate.bind({})
 
-ImgCaption.args = {
+FigCaption.args = {
   children: 'You can add a caption to an image',
 }
