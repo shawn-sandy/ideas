@@ -3,9 +3,11 @@ import PropTypes from 'prop-types'
 import './img.scss'
 
 /**
- * React Image Element
- * [Documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img)
- * [Accessibility Info](https://www.w3.org/TR/wai-aria-practices-1.2/#img)
+ * `FpImage` React Image element
+ * * `FpCaption` : Adds a caption to an image
+ * * `FpFig` : Adds a figure to an image
+ * * [Documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img)
+ * * [Accessibility Info](https://www.w3.org/TR/wai-aria-practices-1.2/#img)
  */
 const FpImg = ({ src, alt = '', width, height, styles, classes, ...props }) => {
   return (
@@ -59,7 +61,6 @@ export const FpFig = ({ children, styles, classes, width, height, ...props }) =>
     </figure>
   )
 }
-
 
 FpFig.propTypes = {
   /**
