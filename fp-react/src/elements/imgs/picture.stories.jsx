@@ -1,10 +1,10 @@
 import React from 'react'
-import { Fig } from './img'
+import { FpFig } from './img'
 import { FigCaption } from './img-caption.stories'
 
 export default {
   title: 'Elements/Media/Images/Figure',
-  component: Fig,
+  component: FpFig,
   subcomponents: { ImgCaption: FigCaption },
   parameters: {
     layout: 'centered'
@@ -18,7 +18,7 @@ const ChildElement = (args) => (
   </>
 )
 
-const ComponentTemplate = (args) => <Fig {...args} />
+const ComponentTemplate = (args) => <FpFig {...args} />
 
 export const Figure = ComponentTemplate.bind({})
 

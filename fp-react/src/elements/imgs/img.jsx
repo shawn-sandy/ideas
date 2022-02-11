@@ -7,15 +7,15 @@ import './img.scss'
  * [Documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img)
  * [Accessibility Info](https://www.w3.org/TR/wai-aria-practices-1.2/#img)
  */
-const Img = ({ src, alt = '', width, height, styles, classes, ...props }) => {
+const FpImg = ({ src, alt = '', width, height, styles, classes, ...props }) => {
   return (
     <img src={src} alt={alt} width={width} height={height} {...props} />
   )
 }
 
-export default Img
+export default FpImg
 
-Img.propTypes = {
+FpImg.propTypes = {
   /**
    * The url to the image
    */
@@ -49,7 +49,7 @@ Img.propTypes = {
  * in a the picture and change the display without removing
  * the block display.
  */
-export const Fig = ({ children, styles, classes, width, height, ...props }) => {
+export const FpFig = ({ children, styles, classes, width, height, ...props }) => {
   const defStyles = {
     '--pic-w': width || '500px',
   }
@@ -61,7 +61,7 @@ export const Fig = ({ children, styles, classes, width, height, ...props }) => {
 }
 
 
-Fig.propTypes = {
+FpFig.propTypes = {
   /**
    * Image content for wrapper
    */
@@ -81,13 +81,13 @@ Fig.propTypes = {
 
 }
 
-export const Caption = ({ children, styles, classes, ...props }) => {
+export const FpCaption = ({ children, styles, classes, ...props }) => {
   return (
     <figcaption className={classes} style={styles} {...props}>{children}</figcaption>
   )
 }
 
-Caption.propTypes = {
+FpCaption.propTypes = {
   /**
    * The content of the caption
    */

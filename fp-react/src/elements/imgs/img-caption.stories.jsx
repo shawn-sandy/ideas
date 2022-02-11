@@ -1,16 +1,16 @@
 import React from 'react'
-import { Caption } from './img'
+import { FpCaption } from './img'
 
 
 export default {
   title: 'Elements/Media/Images/Figure',
-  component: Caption,
+  component: FpCaption,
   parameters: {
     layout: 'centered',
   }
 }
 
-const ComponentTemplate = (args) => <Caption {...args} />
+const ComponentTemplate = (args) => <FpCaption {...args} />
 
 export const FigCaption = ComponentTemplate.bind({})
 

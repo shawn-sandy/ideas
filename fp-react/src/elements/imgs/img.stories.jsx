@@ -1,15 +1,15 @@
 import React from 'react'
-import Img from './img'
+import FpImg from './img'
 
 export default {
   title: 'Elements/Media/Images',
-  component: Img,
+  component: FpImg,
   parameters: {
     layout: 'centered'
   }
 }
 
-const ImgTemplate = (args) => <Img {...args} />
+const ImgTemplate = (args) => <FpImg {...args} />
 
 export const Image = ImgTemplate.bind({})
 
