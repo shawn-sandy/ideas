@@ -42,6 +42,7 @@
     "davidanson.vscode-markdownlint",
     "maxvanderschee.web-accessibility",
     "usernamehw.errorlens",
-    "infeng.vscode-react-typescript"
+    "infeng.vscode-react-typescript",
+    "kiteco.kite"
   ]
 }
