@@ -11,7 +11,7 @@ import './img.scss'
  */
 const FpImg = ({ src, alt = '', width, height, styles, classes, ...props }) => {
   return (
-    <img src={src} alt={alt} width={width} height={height} {...props} />
+    <img src={ src } alt={ alt } width={ width } height={ height } { ...props } />
   )
 }
 
@@ -56,8 +56,8 @@ export const FpFig = ({ children, styles, classes, width, height, ...props }) =>
     '--pic-w': width || '500px',
   }
   return (
-    <figure className={classes} style={{ ...defStyles, ...styles }}>
-      {children}
+    <figure className={ classes } style={ { ...defStyles, ...styles } }>
+      { children }
     </figure>
   )
 }
@@ -84,7 +84,7 @@ FpFig.propTypes = {
 
 export const FpCaption = ({ children, styles, classes, ...props }) => {
   return (
-    <figcaption className={classes} style={styles} {...props}>{children}</figcaption>
+    <figcaption className={ classes } style={ styles } { ...props }>{ children }</figcaption>
   )
 }
 
@@ -102,3 +102,4 @@ FpCaption.propTypes = {
    */
   classes: PropTypes.string
 }
+
