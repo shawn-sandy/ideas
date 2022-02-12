@@ -5,12 +5,14 @@ export default {
   title: 'Elements/Inputs/Checkbox',
   component: Checkbox,
   parameters: {
-    // layout: 'padded',
+    status: {
+      type: 'alpha',
+    },
   }
 }
 
 const Template = (args) => (
-  <Checkbox {...args} />
+  <Checkbox { ...args } />
 )
 
 export const InputField = Template.bind({})
@@ -22,7 +24,7 @@ InputField.args = {
 
 const CheckboxTemplate = (args) => (
   <label>
-    <Checkbox {...args} />
+    <Checkbox { ...args } />
   </label>
 )
 
