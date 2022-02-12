@@ -5,11 +5,16 @@ export default {
   title: 'Elements/Media/Images',
   component: FpImg,
   parameters: {
-    layout: 'centered'
+    layout: 'centered',
+    status: {
+      type: 'beta', // 'beta' | 'stable' | 'deprecated' | 'releaseCandidate'
+      // url: 'http://www.url.com/status', // will make the tag a link
+      // statuses: { ...} // add custom statuses for this story here
+    }
   }
 }
 
-const ImgTemplate = (args) => <FpImg {...args} />
+const ImgTemplate = (args) => <FpImg { ...args } />
 
 export const Image = ImgTemplate.bind({})
 

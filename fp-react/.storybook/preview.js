@@ -17,6 +17,20 @@ export const parameters = {
       showLineNumbers: true, // default: false
       wrapLines: false, // default: true
     },
-  }
+  },
+  status: {
+    statuses: {
+      released: {
+        background: '#0000ff',
+        color: '#ffffff',
+        description: 'This component is stable and released',
+      },
+      alpha: {
+        background: '#ff0000',
+        color: '#ffffff',
+        description: 'This component is still in development',
+      }
+    },
+  },
 
 }
