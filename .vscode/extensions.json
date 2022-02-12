@@ -42,6 +42,6 @@
     "davidanson.vscode-markdownlint",
     "maxvanderschee.web-accessibility",
     "usernamehw.errorlens",
-    "SonarSource.sonarlint-vscode"
+    "infeng.vscode-react-typescript"
   ]
 }
