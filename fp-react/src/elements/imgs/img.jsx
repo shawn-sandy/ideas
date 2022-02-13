@@ -11,15 +11,23 @@ import './img.scss'
  * * handle image alt text
  * * `fit`: `fill` | `contain` | `cover` | `none` | `scale-down`
  * * loading: how to handle image loading
- * * [Documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img)
+ * * *TODO*: handle image complete event
+ * * [Image Documentation (MDN)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img)
  * * [Accessibility Info](https://www.w3.org/TR/wai-aria-practices-1.2/#img)
  */
-const FpImg = ({ src, alt = '', fit, width, height, loading = 'lazy', styles, classes, ...props }) => {
+const FpImg = ({ src, alt = '', fit, width, height, loading = 'lazy', styles, classes, imgError, imgPlaceholder = 'https://via.placeholder.com/800', ...props }) => {
+
+  const _onError = (e) => {
+    e.target.src = imgPlaceholder
+    // console.log('error', e.target.src)
+  }
+
   const defStyles = {
     '--img-obj-fit': `${fit}`,
   }
+
   return (
-    <img src={ src } style={ { ...defStyles, ...styles } } width={ width } height={ height } loading={ loading } alt={ alt } { ...props } />
+    <img src={ src } style={ { ...defStyles, ...styles } } width={ width } height={ height } loading={ loading } alt={ alt } onError={ imgError || _onError } { ...props } />
   )
 }
 
@@ -36,6 +44,13 @@ FpImg.propTypes = {
    */
   alt: PropTypes.string,
   /**
+   * The object-fit style property/rule of the image
+   * * default: cover
+   * * [Documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit)
+   */
+  fit: PropTypes.oneOf(['fill', 'contain', 'cover', 'none', 'scale-down']),
+
+  /**
    * The styles to apply to the image
    */
   styles: PropTypes.object,
@@ -50,7 +65,15 @@ FpImg.propTypes = {
   /**
    * The height of the image
    */
-  height: PropTypes.string
+  height: PropTypes.string,
+  /**
+   * Image loading error handler
+   */
+  imgError: PropTypes.func,
+  /**
+   * Image loading placeholder for when the image is not found
+   */
+  imgPlaceholder: PropTypes.string,
 }
 
 /**
@@ -111,3 +134,9 @@ FpCaption.propTypes = {
   classes: PropTypes.string
 }
 
+const imgError = (e) => (
+  <svg width="1258" height="701" viewBox="0 0 1258 701" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1258" height="701" fill="#EEEEEE" />
+  </svg>
+
+)

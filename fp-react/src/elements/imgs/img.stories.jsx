@@ -20,7 +20,10 @@ export const Image = ImgTemplate.bind({})
 
 Image.args = {
   src: 'https://source.unsplash.com/random?w=800',
-  alt: 'Placeholder Image'
+  alt: 'Placeholder Image',
+  styles: {
+    '--img-w': '480px',
+  }
 }
 
 export const ImageMedium = ImgTemplate.bind({})
@@ -32,7 +35,7 @@ ImageMedium.args = {
   height: '300',
   fit: 'fill',
   styles: {
-    '--img-w': '550px',
-    '--img-h': '550px',
+    '--img-w': '350px',
+    '--img-h': '350px',
   }
 }

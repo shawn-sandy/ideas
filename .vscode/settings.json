@@ -124,5 +124,6 @@
   "html.format.wrapLineLength": 80,
   "html-css-class-completion.includeGlobPattern": "**/*.{css,html,jsx}",
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
-  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+  "html.format.wrapAttributes": "force"
 }
