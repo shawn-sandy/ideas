@@ -1,19 +1,22 @@
 import React from 'react'
-import { Caption } from './img'
+import { FpCaption } from './img'
 
 
 export default {
   title: 'Elements/Media/Images',
-  component: Caption,
+  component: FpCaption,
   parameters: {
     layout: 'centered',
+    status: {
+      type: 'beta'
+    }
   }
 }
 
-const ComponentTemplate = (args) => <Caption {...args} />
+const ComponentTemplate = (args) => <FpCaption { ...args } />
 
-export const ImgCaption = ComponentTemplate.bind({})
+export const Caption = ComponentTemplate.bind({})
 
-ImgCaption.args = {
+Caption.args = {
   children: 'You can add a caption to an image',
 }

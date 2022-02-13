@@ -6,13 +6,16 @@ export default {
   title: 'Components/Layout/Sections',
   component: Layout,
   parameters: {
-    layout: 'padded'
+    layout: 'padded',
+    status: {
+      type: 'alpha',
+    }
   }
 
 }
 
 const Template = (args) => (
-  <Layout {...args} styles={{ '--box-max-w': '100%' }} />
+  <Layout { ...args } styles={ { '--box-max-w': '100%' } } />
 )
 
 export const Section = Template.bind({})

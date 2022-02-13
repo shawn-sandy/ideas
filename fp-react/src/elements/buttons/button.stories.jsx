@@ -3,10 +3,15 @@ import Button from './button'
 
 export default {
   title: 'Elements/Buttons',
-  component: Button
+  component: Button,
+  parameters: {
+    status: {
+      type: 'beta',
+    },
+  }
 }
 
-const Template = (args) => <Button {...args} />
+const Template = (args) => <Button { ...args } />
 
 export const Default = Template.bind({})
 Default.args = {

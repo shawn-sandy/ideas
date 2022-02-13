@@ -3,19 +3,41 @@ import PropTypes from 'prop-types'
 import './img.scss'
 
 /**
- * React Image Element
- * [Documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img)
- * [Accessibility Info](https://www.w3.org/TR/wai-aria-practices-1.2/#img)
+ * `FpImage` React Image element
+ * `FpCaption` : Adds a caption to an image
+ * `FpFig` : Adds a figure to an image
+ *
+ * * handle image loading errors
+ * * handle image alt text
+ * * `fit`: `fill` | `contain` | `cover` | `none` | `scale-down`
+ * * loading: how to handle image loading
+ * * *TODO*: handle image complete event
+ * * [Image Documentation (MDN)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img)
+ * * [Accessibility Info](https://www.w3.org/TR/wai-aria-practices-1.2/#img)
  */
-const Img = ({ src, alt = '', width, height, styles, classes, ...props }) => {
+const FpImg = ({ src, alt = '', fit, width, height, styles, classes, imgError, loading = 'lazy', ratio = 'auto 4 / 3', imgPlaceholder = 'https://via.placeholder.com/800', ...props }) => {
+
+  const _onError = (e) => {
+    if (e.target.src !== imgPlaceholder) {
+      e.target.src = imgPlaceholder        // imgError = null
+      imgError = () => null
+    }
+    console.log('error', e.target.src)
+  }
+
+  const defStyles = {
+    '--img-obj-fit': `${fit}`,
+    '--img-ratio': `${ratio}`,
+  }
+
   return (
-    <img src={src} alt={alt} width={width} height={height} {...props} />
+    <img src={ src } style={ { ...defStyles, ...styles } } width={ width } height={ height } loading={ loading } alt={ alt } onError={ imgError || _onError } { ...props } />
   )
 }
 
-export default Img
+export default FpImg
 
-Img.propTypes = {
+FpImg.propTypes = {
   /**
    * The url to the image
    */
@@ -25,6 +47,12 @@ Img.propTypes = {
    * @default ''
    */
   alt: PropTypes.string,
+  /**
+   * The object-fit style property/rule of the image
+   * * default: cover
+   * * [Documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit)
+   */
+  fit: PropTypes.oneOf(['fill', 'contain', 'cover', 'none', 'scale-down']),
   /**
    * The styles to apply to the image
    */
@@ -40,7 +68,19 @@ Img.propTypes = {
   /**
    * The height of the image
    */
-  height: PropTypes.string
+  height: PropTypes.string,
+  /**
+   * Image loading error handler
+   */
+  imgError: PropTypes.func,
+  /**
+   * Aspect ratio of the image
+   */
+  ratio: PropTypes.string,
+  /**
+   * Image loading placeholder for when the image is not found
+   */
+  imgPlaceholder: PropTypes.string,
 }
 
 /**
@@ -49,19 +89,18 @@ Img.propTypes = {
  * in a the picture and change the display without removing
  * the block display.
  */
-export const Pics = ({ children, styles, classes, width, height, ...props }) => {
+export const FpFig = ({ children, styles, classes, width, height, ...props }) => {
   const defStyles = {
     '--pic-w': width || '500px',
   }
   return (
-    <picture className={classes} style={{ ...defStyles, ...styles }}>
-      {children}
-    </picture>
+    <figure className={ classes } style={ { ...defStyles, ...styles } }>
+      { children }
+    </figure>
   )
 }
 
-
-Pics.propTypes = {
+FpFig.propTypes = {
   /**
    * Image content for wrapper
    */
@@ -81,13 +120,13 @@ Pics.propTypes = {
 
 }
 
-export const Caption = ({ children, styles, classes, ...props }) => {
+export const FpCaption = ({ children, styles, classes, ...props }) => {
   return (
-    <figcaption className={classes} style={styles} {...props}>{children}</figcaption>
+    <figcaption className={ classes } style={ styles } { ...props }>{ children }</figcaption>
   )
 }
 
-Caption.propTypes = {
+FpCaption.propTypes = {
   /**
    * The content of the caption
    */
@@ -101,3 +140,4 @@ Caption.propTypes = {
    */
   classes: PropTypes.string
 }
+
