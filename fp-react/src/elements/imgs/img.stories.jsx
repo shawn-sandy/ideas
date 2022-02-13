@@ -1,28 +1,41 @@
 import React from 'react'
-import Img from './img'
+import FpImg from './img'
 
 export default {
   title: 'Elements/Media/Images',
-  component: Img,
+  component: FpImg,
   parameters: {
-    layout: 'centered'
+    layout: 'centered',
+    status: {
+      type: 'beta', // 'beta' | 'stable' | 'deprecated' | 'releaseCandidate'
+      // url: 'http://www.url.com/status', // will make the tag a link
+      // statuses: { ...} // add custom statuses for this story here
+    }
   }
 }
 
-const ImgTemplate = (args) => <Img {...args} />
+const ImgTemplate = (args) => <FpImg { ...args } />
 
 export const Image = ImgTemplate.bind({})
 
 Image.args = {
-  src: 'https://via.placeholder.com/150',
-  alt: 'Placeholder Image'
+  src: 'https://source.unsplash.com/random?w=800',
+  alt: 'Placeholder Image',
+  styles: {
+    '--img-w': '480px',
+  }
 }
 
 export const ImageMedium = ImgTemplate.bind({})
 
 ImageMedium.args = {
-  src: 'https://via.placeholder.com/300',
+  src: 'https://source.unsplash.com/random?w=800',
   alt: 'Placeholder Image',
   width: '300',
-  height: '300'
+  height: '300',
+  fit: 'fill',
+  styles: {
+    '--img-w': '350px',
+    '--img-h': '350px',
+  }
 }

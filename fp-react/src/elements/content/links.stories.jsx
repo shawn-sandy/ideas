@@ -2,7 +2,7 @@ import React from 'react'
 import Links, { OpenTab } from './links'
 
 export default {
-  title: "Elements/Links/Element",
+  title: "Elements/Content/Links",
   component: Links,
   subcomponents: { OpenTab },
   parameters: {

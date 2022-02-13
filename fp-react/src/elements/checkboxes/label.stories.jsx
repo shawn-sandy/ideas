@@ -6,10 +6,13 @@ export default {
   component: Label,
   parameters: {
     // layout: 'padded',
+    status: {
+      type: 'alpha',
+    },
   }
 }
 
-const LabelTemplate = (args) => <Label {...args} />
+const LabelTemplate = (args) => <Label { ...args } />
 
 export const LabelElement = LabelTemplate.bind({})
 

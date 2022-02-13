@@ -21,6 +21,7 @@ module.exports = {
     'storybook-addon-designs',
     'storybook-addon-performance/register',
     "storybook-addon-pseudo-states",
+    '@etchteam/storybook-addon-status',
     {
       name: '@storybook/addon-docs',
       options: {
