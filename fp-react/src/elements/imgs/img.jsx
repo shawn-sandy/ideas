@@ -15,7 +15,7 @@ import './img.scss'
  * * [Image Documentation (MDN)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img)
  * * [Accessibility Info](https://www.w3.org/TR/wai-aria-practices-1.2/#img)
  */
-const FpImg = ({ src, alt = '', fit, width, height, loading = 'lazy', styles, classes, imgError, imgPlaceholder = 'https://via.placeholder.com/800', ...props }) => {
+const FpImg = ({ src, alt = '', fit, width, height, styles, classes, imgError, loading = 'lazy', ratio = 'auto 4 / 3', imgPlaceholder = 'https://via.placeholder.com/800', ...props }) => {
 
   const _onError = (e) => {
     if (e.target.src !== imgPlaceholder) {
@@ -27,6 +27,7 @@ const FpImg = ({ src, alt = '', fit, width, height, loading = 'lazy', styles, cl
 
   const defStyles = {
     '--img-obj-fit': `${fit}`,
+    '--img-ratio': `${ratio}`,
   }
 
   return (
@@ -52,7 +53,6 @@ FpImg.propTypes = {
    * * [Documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit)
    */
   fit: PropTypes.oneOf(['fill', 'contain', 'cover', 'none', 'scale-down']),
-
   /**
    * The styles to apply to the image
    */
@@ -73,6 +73,10 @@ FpImg.propTypes = {
    * Image loading error handler
    */
   imgError: PropTypes.func,
+  /**
+   * Aspect ratio of the image
+   */
+  ratio: PropTypes.string,
   /**
    * Image loading placeholder for when the image is not found
    */

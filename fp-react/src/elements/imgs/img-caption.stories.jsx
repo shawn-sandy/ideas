@@ -3,7 +3,7 @@ import { FpCaption } from './img'
 
 
 export default {
-  title: 'Elements/Media/Images/Figure',
+  title: 'Elements/Media/Images',
   component: FpCaption,
   parameters: {
     layout: 'centered',
@@ -15,8 +15,8 @@ export default {
 
 const ComponentTemplate = (args) => <FpCaption { ...args } />
 
-export const FigCaption = ComponentTemplate.bind({})
+export const Caption = ComponentTemplate.bind({})
 
-FigCaption.args = {
+Caption.args = {
   children: 'You can add a caption to an image',
 }

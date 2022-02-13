@@ -10,6 +10,7 @@ img {
   width: var(--img-w, auto);
   object-fit: var(--img-obj-fit, cover);
   object-position: var(--img-obj-position, center center);
+  aspect-ratio: var(--img-ratio, auto 2/3);
 
   &[width] {
     width: var(--img-w, auto);
