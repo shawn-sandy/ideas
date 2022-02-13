@@ -7,6 +7,8 @@ img {
   --img-100: 100vw;
 
   max-width: 100%;
+  object-fit: var(--img-obj-fit, cover);
+  object-position: var(--img-obj-position, center center);
 
   &[width] {
     width: var(--img-w, auto);

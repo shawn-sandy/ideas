@@ -19,15 +19,20 @@ const ImgTemplate = (args) => <FpImg { ...args } />
 export const Image = ImgTemplate.bind({})
 
 Image.args = {
-  src: 'https://via.placeholder.com/150',
+  src: 'https://source.unsplash.com/random?w=800',
   alt: 'Placeholder Image'
 }
 
 export const ImageMedium = ImgTemplate.bind({})
 
 ImageMedium.args = {
-  src: 'https://via.placeholder.com/300',
+  src: 'https://source.unsplash.com/random?w=800',
   alt: 'Placeholder Image',
   width: '300',
-  height: '300'
+  height: '300',
+  fit: 'fill',
+  styles: {
+    '--img-w': '550px',
+    '--img-h': '550px',
+  }
 }

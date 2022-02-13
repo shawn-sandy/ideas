@@ -7,10 +7,13 @@ export default {
   component: FpCaption,
   parameters: {
     layout: 'centered',
+    status: {
+      type: 'alpha'
+    }
   }
 }
 
-const ComponentTemplate = (args) => <FpCaption {...args} />
+const ComponentTemplate = (args) => <FpCaption { ...args } />
 
 export const FigCaption = ComponentTemplate.bind({})
 

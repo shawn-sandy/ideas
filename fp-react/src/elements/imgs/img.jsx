@@ -4,14 +4,22 @@ import './img.scss'
 
 /**
  * `FpImage` React Image element
- * * `FpCaption` : Adds a caption to an image
- * * `FpFig` : Adds a figure to an image
+ * `FpCaption` : Adds a caption to an image
+ * `FpFig` : Adds a figure to an image
+ *
+ * * handle image loading errors
+ * * handle image alt text
+ * * `fit`: `fill` | `contain` | `cover` | `none` | `scale-down`
+ * * loading: how to handle image loading
  * * [Documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img)
  * * [Accessibility Info](https://www.w3.org/TR/wai-aria-practices-1.2/#img)
  */
-const FpImg = ({ src, alt = '', width, height, styles, classes, ...props }) => {
+const FpImg = ({ src, alt = '', fit, width, height, loading = 'lazy', styles, classes, ...props }) => {
+  const defStyles = {
+    '--img-obj-fit': `${fit}`,
+  }
   return (
-    <img src={ src } alt={ alt } width={ width } height={ height } { ...props } />
+    <img src={ src } style={ { ...defStyles, ...styles } } width={ width } height={ height } loading={ loading } alt={ alt } { ...props } />
   )
 }
 
