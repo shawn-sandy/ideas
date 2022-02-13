@@ -7,7 +7,10 @@ export default {
   component: FpFig,
   subcomponents: { ImgCaption: Caption },
   parameters: {
-    layout: 'centered'
+    layout: 'centered',
+    status: {
+      type: 'beta'
+    }
   }
 }
 

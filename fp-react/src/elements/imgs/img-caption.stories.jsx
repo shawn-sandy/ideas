@@ -8,7 +8,7 @@ export default {
   parameters: {
     layout: 'centered',
     status: {
-      type: 'alpha'
+      type: 'beta'
     }
   }
 }
