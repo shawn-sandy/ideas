@@ -1,6 +1,15 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import './button.scss'
+import React from "react"
+import PropTypes from "prop-types"
+import "./button.scss"
+
+type ButtonProps = {
+  children: React.ReactNode
+  className?: string
+  disabled?: boolean
+  buttonType?: "button" | "submit" | "reset" | undefined
+  click?: () => void
+  styles?: React.CSSProperties
+}
 
 /**
  * Button Element.
@@ -9,11 +18,25 @@ import './button.scss'
  * * [Button documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button)
  * * [Accessibility Info](https://www.w3.org/TR/wai-aria-practices-1.2/#button)
  */
-const Button = ({ type = 'button', styles = {}, children = 'Default Button', click, ...props }) => {
+const Button = ({
+  buttonType = "button",
+  styles = {},
+  children = "Default Button",
+  click,
+  ...props
+}: ButtonProps) => {
   const demoClick = () => console.log(`Clicked ${children}`)
 
   return (
-    <button type={type} style={styles} onClick={click || demoClick} {...props}> {children || 'Buttons'}</button>
+    <button
+      type={buttonType}
+      style={styles}
+      onClick={click || demoClick}
+      {...props}
+    >
+      {" "}
+      {children || "Buttons"}
+    </button>
   )
 }
 
@@ -29,7 +52,7 @@ Button.propTypes = {
   /**
    * Set the Button type - default is 'button'
    */
-  type: PropTypes.oneOf(['button', 'submit', 'reset']),
+  type: PropTypes.oneOf(["button", "submit", "reset"]),
   /**
    * Set the Button styles w/style attribute
    * `{'--btn-bg': 'red', '--btn-color': 'white'}`
