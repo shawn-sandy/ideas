@@ -1,5 +1,4 @@
 import React from "react"
-import PropTypes from "prop-types"
 import "./checkbox.scss"
 
 type LabelProps = {
@@ -69,45 +68,3 @@ const Checkbox = ({
 }
 
 export default Checkbox
-
-Label.propTypes = {
-  /**
-   * The name of the checkbox required
-   */
-  name: PropTypes.string.isRequired,
-  /**
-   * The value of the checkbox required
-   */
-  value: PropTypes.string.isRequired,
-  /**
-   * The classes to apply to the checkbox
-   */
-  classes: PropTypes.string,
-  /**
-   * The styles to apply to the checkbox
-   */
-  styles: PropTypes.object,
-  /**
-   * The content of the checkbox
-   */
-  children: PropTypes.node
-}
-
-Checkbox.propTypes = {
-  /**
-   * id for the checkbox
-   */
-  name: PropTypes.string.isRequired,
-  /**
-   * classes for the checkbox
-   */
-  classes: PropTypes.string,
-  /**
-   * styles for the checkbox
-   */
-  styles: PropTypes.object,
-  /**
-   * click function for the checkbox
-   */
-  click: PropTypes.func
-}
