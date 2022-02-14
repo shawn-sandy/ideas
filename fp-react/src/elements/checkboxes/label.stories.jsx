@@ -2,7 +2,7 @@ import React from 'react'
 import { Label } from './checkbox'
 
 export default {
-  title: 'Elements/Inputs/Checkbox',
+  title: 'Elements/Checkbox',
   component: Label,
   parameters: {
     // layout: 'padded',
@@ -14,9 +14,9 @@ export default {
 
 const LabelTemplate = (args) => <Label { ...args } />
 
-export const LabelElement = LabelTemplate.bind({})
+export const Labels = LabelTemplate.bind({})
 
-LabelElement.args = {
+Labels.args = {
   children: 'Label Element',
   name: 'label'
 }

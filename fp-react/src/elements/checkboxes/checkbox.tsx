@@ -1,6 +1,13 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import './checkbox.scss'
+import React from "react"
+import PropTypes from "prop-types"
+import "./checkbox.scss"
+
+type LabelProps = {
+  children: React.ReactNode
+  classes?: string
+  name?: string
+  styles?: React.CSSProperties
+}
 
 /**
  * Label Component provides a wrapper for custom styled checkbox input
@@ -12,15 +19,52 @@ import './checkbox.scss'
  * * [Checkbox Documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox)
  * * [Accessibility Info](https://www.w3.org/TR/wai-aria-practices-1.1/#checkbox)
  */
-export const Label = ({ name, classes, styles = '', children = 'Default Checkbox', ...props }) => {
+export const Label = ({
+  name,
+  classes,
+  styles,
+  children = "Default Checkbox",
+  ...props
+}: LabelProps): JSX.Element => {
   return (
-    <label htmlFor={name} className={classes} style={{ styles }}  {...props}>{children}</label>
+    <label
+      htmlFor={name}
+      className={classes}
+      style={styles}
+      {...props}
+    >
+      {children}
+    </label>
   )
 }
 
-const Checkbox = ({ name, value, classes, styles = '', click, ...props }) => {
+type CheckboxProps = {
+  children: React.ReactNode
+  classes?: string
+  name?: string
+  styles?: React.CSSProperties
+  click?: () => void
+  value?: string
+}
+
+const Checkbox = ({
+  name,
+  value,
+  classes,
+  styles,
+  click,
+  ...props
+}: CheckboxProps) => {
   return (
-    <input className={classes} styles={styles} type="checkbox" id={name} value={value} onClick={click} {...props} />
+    <input
+      className={classes}
+      style={styles}
+      type="checkbox"
+      id={name}
+      value={value}
+      onClick={click}
+      {...props}
+    />
   )
 }
 
@@ -47,7 +91,6 @@ Label.propTypes = {
    * The content of the checkbox
    */
   children: PropTypes.node
-
 }
 
 Checkbox.propTypes = {
