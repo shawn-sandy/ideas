@@ -2,15 +2,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import "./button.scss"
 
-type ButtonProps = {
-  children: React.ReactNode
-  className?: string
-  disabled?: boolean
-  buttonType?: "button" | "submit" | "reset" | undefined
-  click?: () => void
-  styles?: React.CSSProperties
-}
-
 /**
  * Button Element.
  * * Submit, Reset, and Button styles
@@ -39,6 +30,16 @@ const Button = ({
     </button>
   )
 }
+export default Button
+
+type ButtonProps = {
+  children: React.ReactNode
+  className?: string
+  disabled?: boolean
+  buttonType?: "button" | "submit" | "reset" | undefined
+  click?: () => void
+  styles?: React.CSSProperties
+}
 
 Button.propTypes = {
   /**
@@ -60,4 +61,3 @@ Button.propTypes = {
    */
   styles: PropTypes.object
 }
-export default Button

@@ -9,7 +9,8 @@ type LabelProps = {
 }
 
 /**
- * Label Component provides a wrapper for custom styled checkbox input
+ * Label Component provides a wrapper for custom styled checkbox
+ * using just CSS.
  * * Customs styles the default input checkbox
  * * Wraps a label around the checkbox
  * * Adds a click event to the checkbox
@@ -18,13 +19,13 @@ type LabelProps = {
  * * [Checkbox Documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox)
  * * [Accessibility Info](https://www.w3.org/TR/wai-aria-practices-1.1/#checkbox)
  */
-export const Label = ({
+export const Label: React.FC<LabelProps> = ({
   name,
   classes,
   styles,
   children = "Default Checkbox",
   ...props
-}: LabelProps): JSX.Element => {
+}) => {
   return (
     <label
       htmlFor={name}
@@ -38,22 +39,21 @@ export const Label = ({
 }
 
 type CheckboxProps = {
-  children: React.ReactNode
   classes?: string
-  name?: string
+  name: string
   styles?: React.CSSProperties
   click?: () => void
   value?: string
 }
 
-const Checkbox = ({
+const Checkbox: React.VFC<CheckboxProps> = ({
   name,
   value,
   classes,
   styles,
   click,
   ...props
-}: CheckboxProps) => {
+}) => {
   return (
     <input
       className={classes}

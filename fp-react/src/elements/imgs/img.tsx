@@ -1,6 +1,6 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import './img.scss'
+import React from "react"
+import PropTypes from "prop-types"
+import "./img.scss"
 
 /**
  * `FpImage` React Image element
@@ -15,24 +15,60 @@ import './img.scss'
  * * [Image Documentation (MDN)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img)
  * * [Accessibility Info](https://www.w3.org/TR/wai-aria-practices-1.2/#img)
  */
-const FpImg = ({ src, alt = '', fit, width, height, styles, classes, imgError, loading = 'lazy', ratio = 'auto 4 / 3', imgPlaceholder = 'https://via.placeholder.com/800', ...props }) => {
-
-  const _onError = (e) => {
+const FpImg: React.VFC<FpImgProps> = ({
+  src,
+  alt = "",
+  fit,
+  width,
+  height,
+  styles,
+  classes,
+  imgError,
+  loading = "lazy",
+  ratio = "auto 4 / 3",
+  imgPlaceholder = "https://via.placeholder.com/800",
+  ...props
+}) => {
+  const _onError = (e: any) => {
     if (e.target.src !== imgPlaceholder) {
-      e.target.src = imgPlaceholder        // imgError = null
+      e.target.src = imgPlaceholder // imgError = null
       imgError = () => null
     }
-    console.log('error', e.target.src)
+    console.log("error", e.target.src)
   }
 
   const defStyles = {
-    '--img-obj-fit': `${fit}`,
-    '--img-ratio': `${ratio}`,
+    "--img-obj-fit": `${fit}`,
+    "--img-ratio": `${ratio}`
   }
 
   return (
-    <img src={ src } style={ { ...defStyles, ...styles } } width={ width } height={ height } loading={ loading } alt={ alt } onError={ imgError || _onError } { ...props } />
+    <img
+      src={src}
+      style={{ ...defStyles, ...styles }}
+      width={width}
+      height={height}
+      loading={loading}
+      alt={alt}
+      onError={imgError || _onError}
+      {...props}
+    />
   )
+}
+
+interface FpImgProps
+  extends React.ImgHTMLAttributes<HTMLImageElement> {
+  // src: string
+  // alt?: string
+  fit?: string
+  // width?: string
+  // height?: string
+  styles?: React.CSSProperties
+  classes?: string
+  imgError?: () => void
+  // loading?: "eager" | "lazy"
+  ratio?: string
+  imgPlaceholder?: string
 }
 
 export default FpImg
@@ -52,7 +88,13 @@ FpImg.propTypes = {
    * * default: cover
    * * [Documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit)
    */
-  fit: PropTypes.oneOf(['fill', 'contain', 'cover', 'none', 'scale-down']),
+  fit: PropTypes.oneOf([
+    "fill",
+    "contain",
+    "cover",
+    "none",
+    "scale-down"
+  ]),
   /**
    * The styles to apply to the image
    */
@@ -80,7 +122,15 @@ FpImg.propTypes = {
   /**
    * Image loading placeholder for when the image is not found
    */
-  imgPlaceholder: PropTypes.string,
+  imgPlaceholder: PropTypes.string
+}
+
+type FpFigProps = {
+  children: React.ReactNode
+  classes?: string
+  styles?: React.CSSProperties
+  width?: string
+  height?: string
 }
 
 /**
@@ -89,13 +139,23 @@ FpImg.propTypes = {
  * in a the picture and change the display without removing
  * the block display.
  */
-export const FpFig = ({ children, styles, classes, width, height, ...props }) => {
+export const FpFig: React.FC<FpFigProps> = ({
+  children,
+  styles,
+  classes,
+  width,
+  height,
+  ...props
+}) => {
   const defStyles = {
-    '--pic-w': width || '500px',
+    "--pic-w": width || "500px"
   }
   return (
-    <figure className={ classes } style={ { ...defStyles, ...styles } }>
-      { children }
+    <figure
+      className={classes}
+      style={{ ...defStyles, ...styles }}
+    >
+      {children}
     </figure>
   )
 }
@@ -113,16 +173,32 @@ FpFig.propTypes = {
   /**
    * The classes to apply to the `class` attribute
    */
-  classes: PropTypes.string,
+  classes: PropTypes.string
   /**
    * The width of the image box
    */
-
 }
 
-export const FpCaption = ({ children, styles, classes, ...props }) => {
+type FpCaptionProps = {
+  children: React.ReactNode
+  classes?: string
+  styles?: React.CSSProperties
+}
+
+export const FpCaption: React.FC<FpCaptionProps> = ({
+  children,
+  styles,
+  classes,
+  ...props
+}) => {
   return (
-    <figcaption className={ classes } style={ styles } { ...props }>{ children }</figcaption>
+    <figcaption
+      className={classes}
+      style={styles}
+      {...props}
+    >
+      {children}
+    </figcaption>
   )
 }
 
@@ -140,4 +216,3 @@ FpCaption.propTypes = {
    */
   classes: PropTypes.string
 }
-
