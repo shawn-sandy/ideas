@@ -58,15 +58,10 @@ const FpImg: React.VFC<FpImgProps> = ({
 
 interface FpImgProps
   extends React.ImgHTMLAttributes<HTMLImageElement> {
-  // src: string
-  // alt?: string
   fit?: string
-  // width?: string
-  // height?: string
   styles?: React.CSSProperties
   classes?: string
   imgError?: () => void
-  // loading?: "eager" | "lazy"
   ratio?: string
   imgPlaceholder?: string
 }
