@@ -125,5 +125,6 @@
   "html-css-class-completion.includeGlobPattern": "**/*.{css,html,jsx}",
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
   "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
-  "html.format.wrapAttributes": "force"
+  "html.format.wrapAttributes": "force",
+  "typescript.tsdk": "node_modules\\typescript\\lib"
 }

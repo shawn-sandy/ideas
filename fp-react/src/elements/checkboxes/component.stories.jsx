@@ -4,15 +4,15 @@ import { Label } from './checkbox'
 import { InputField } from './checkbox.stories'
 
 export default {
-  title: 'Components/Inputs/Checkbox',
+  title: 'Elements/Checkbox/Component',
   component: Label,
   parameters: {
     // layout: 'padded',
   }
 }
 
-const Template = (args) => <Label {...args} >
-  <InputField id={args.name} /> {args.children}
+const Template = (args) => <Label { ...args } >
+  <InputField id={ args.name } /> { args.children }
 </Label>
 
 export const CheckboxComponent = Template.bind({})

@@ -11,7 +11,7 @@ import Details, { Summary } from './elements/details-summary/details-summary'
 const App = () => {
   return (
     <>
-      <Contain tag='main' styles={{ padding: '2rem' }}>
+      <Contain tag='main' styles={ { padding: '2rem' } }>
         <h1>Hello World</h1>
         <p>lorem</p>
         <Details>
@@ -32,7 +32,7 @@ const App = () => {
             Learn React....
           </a>
           <p>
-            <Button />
+            <Button type='button' >Simple button</Button>
           </p>
         </header>
       </Contain>
