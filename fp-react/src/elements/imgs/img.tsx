@@ -43,7 +43,7 @@ const FpImg: React.VFC<FpImgProps> = ({
   const _onLoad = (
     e: React.SyntheticEvent<HTMLImageElement, Event>
   ) => {
-    // console.log("load", e.currentTarget.src)
+    console.log("Image loaded", e.currentTarget.src)
   }
 
   const defStyles = {
@@ -66,69 +66,39 @@ const FpImg: React.VFC<FpImgProps> = ({
   )
 }
 
-interface FpImgProps
-  extends React.ImgHTMLAttributes<HTMLImageElement> {
-  fit?: string
-  styles?: React.CSSProperties
-  classes?: string
-  imgError?: () => void
-  imgLoaded?: () => void
-  ratio?: string
-  imgPlaceholder?: string
-}
-
 export default FpImg
 
-FpImg.propTypes = {
+interface FpImgProps
+  extends React.ImgHTMLAttributes<HTMLImageElement> {
   /**
-   * The url to the image
+   * set the object-fit style on the image
    */
-  src: PropTypes.string.isRequired,
+  fit?: string
   /**
-   * The alt text for the image
-   * @default ''
+   * Image styles object
    */
-  alt: PropTypes.string,
+  // styles?: string | React.CSSProperties
+  styles?: any
   /**
-   * The object-fit style property/rule of the image
-   * * default: cover
-   * * [Documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit)
+   * Image class names
    */
-  fit: PropTypes.oneOf([
-    "fill",
-    "contain",
-    "cover",
-    "none",
-    "scale-down"
-  ]),
+  classes?: string
   /**
-   * The styles to apply to the image
+   * Handles the image error event for the image
    */
-  styles: PropTypes.object,
+  imgError?: () => void
   /**
-   * The classes to apply to the image
+   * Handles the image loaded event for the image
    */
-  classes: PropTypes.string,
+  imgLoaded?: () => void
   /**
-   * The width of the image
+   * Sets the image aspect ratio property
    */
-  width: PropTypes.string,
+  ratio?: string
   /**
-   * The height of the image
+   * Sets the image placeholder for image errors
    */
-  height: PropTypes.string,
-  /**
-   * Image loading error handler
-   */
-  imgError: PropTypes.func,
-  /**
-   * Aspect ratio of the image
-   */
-  ratio: PropTypes.string,
-  /**
-   * Image loading placeholder for when the image is not found
-   */
-  imgPlaceholder: PropTypes.string
+  imgPlaceholder?: string
 }
 
 type FpFigProps = {
