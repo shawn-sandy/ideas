@@ -24,17 +24,26 @@ const FpImg: React.VFC<FpImgProps> = ({
   styles,
   classes,
   imgError,
+  imgLoaded,
   loading = "lazy",
   ratio = "auto 4 / 3",
   imgPlaceholder = "https://via.placeholder.com/800",
   ...props
 }) => {
-  const _onError = (e: any) => {
-    if (e.target.src !== imgPlaceholder) {
-      e.target.src = imgPlaceholder // imgError = null
+  const _onError = (
+    e: React.SyntheticEvent<HTMLImageElement, Event>
+  ) => {
+    if (e.currentTarget.src !== imgPlaceholder) {
+      e.currentTarget.src = imgPlaceholder // imgError = null
       imgError = () => null
     }
-    console.log("error", e.target.src)
+    console.log("error", e.currentTarget.src)
+  }
+
+  const _onLoad = (
+    e: React.SyntheticEvent<HTMLImageElement, Event>
+  ) => {
+    // console.log("load", e.currentTarget.src)
   }
 
   const defStyles = {
@@ -50,6 +59,7 @@ const FpImg: React.VFC<FpImgProps> = ({
       height={height}
       loading={loading}
       alt={alt}
+      onLoad={imgLoaded || _onLoad}
       onError={imgError || _onError}
       {...props}
     />
@@ -62,6 +72,7 @@ interface FpImgProps
   styles?: React.CSSProperties
   classes?: string
   imgError?: () => void
+  imgLoaded?: () => void
   ratio?: string
   imgPlaceholder?: string
 }
