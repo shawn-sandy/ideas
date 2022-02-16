@@ -136,25 +136,6 @@ export const FpFig: React.FC<FpFigProps> = ({
   )
 }
 
-FpFig.propTypes = {
-  /**
-   * Image content for wrapper
-   */
-
-  children: PropTypes.string.isRequired,
-  /**
-   * The style to apply to `style` attribute
-   */
-  styles: PropTypes.object,
-  /**
-   * The classes to apply to the `class` attribute
-   */
-  classes: PropTypes.string
-  /**
-   * The width of the image box
-   */
-}
-
 type FpCaptionProps = {
   children: React.ReactNode
   classes?: string
@@ -176,19 +157,4 @@ export const FpCaption: React.FC<FpCaptionProps> = ({
       {children}
     </figcaption>
   )
-}
-
-FpCaption.propTypes = {
-  /**
-   * The content of the caption
-   */
-  children: PropTypes.node,
-  /**
-   * The styles to apply to the caption
-   */
-  styles: PropTypes.object,
-  /**
-   * The classes to apply to the caption
-   */
-  classes: PropTypes.string
 }
