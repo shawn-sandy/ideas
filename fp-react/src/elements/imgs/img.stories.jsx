@@ -39,3 +39,17 @@ ImageMedium.args = {
     '--img-h': '350px',
   }
 }
+
+export const ImageError = ImgTemplate.bind({})
+
+ImageError.args = {
+  src: 'https://source.unsplash',
+  alt: 'Image not found',
+  width: '300',
+  height: '300',
+  fit: 'fill',
+  styles: {
+    '--img-w': '350px',
+    '--img-h': '350px',
+  }
+}
