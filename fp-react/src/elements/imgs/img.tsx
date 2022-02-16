@@ -103,7 +103,7 @@ interface FpImgProps
 type FpFigProps = {
   children: React.ReactNode
   classes?: string
-  styles?: React.CSSProperties
+  styles?: any
   width?: string
   height?: string
 }
@@ -138,7 +138,7 @@ export const FpFig: React.FC<FpFigProps> = ({
 type FpCaptionProps = {
   children: React.ReactNode
   classes?: string
-  styles?: React.CSSProperties
+  styles?: any
 }
 
 export const FpCaption: React.FC<FpCaptionProps> = ({
