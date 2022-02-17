@@ -1,4 +1,4 @@
-import React from "react"
+import * as React from "react"
 import "./img.scss"
 
 /**
@@ -6,13 +6,6 @@ import "./img.scss"
  * `FpCaption` : Adds a caption to an image
  * `FpFig` : Adds a figure to an image
  *
- * * handle image loading errors
- * * handle image alt text
- * * `fit`: `fill` | `contain` | `cover` | `none` | `scale-down`
- * * loading: how to handle image loading
- * * *TODO*: handle image complete event
- * * [Image Documentation (MDN)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img)
- * * [Accessibility Info](https://www.w3.org/TR/wai-aria-practices-1.2/#img)
  */
 const FpImg: React.VFC<FpImgProps> = ({
   src,
