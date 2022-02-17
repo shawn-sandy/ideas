@@ -9,7 +9,7 @@ import { Caption } from "./img-caption.stories"
 export default {
   title: "Elements/Media/Images",
   component: FpFig,
-  subcomponents: { ImgCaption: Caption },
+  subcomponents: { Caption },
   parameters: {
     layout: "centered",
     status: {
@@ -18,7 +18,7 @@ export default {
   }
 } as ComponentMeta<typeof FpFig>
 
-const ChildElement = () => (
+const ChildElement: React.VFC = () => (
   <>
     <img
       src="https://source.unsplash.com/random?w=800"
@@ -33,7 +33,6 @@ const ComponentTemplate: ComponentStory<typeof FpFig> = (
 ) => <FpFig {...args} />
 
 export const Figure = ComponentTemplate.bind({})
-
 Figure.args = {
   children: (
     <img
@@ -47,6 +46,14 @@ Figure.args = {
 export const FigureCaption = ComponentTemplate.bind({})
 
 FigureCaption.args = {
-  children: <ChildElement />,
+  children: (
+   <>
+    <img
+      src="https://source.unsplash.com/random?w=800"
+      alt=""
+    />
+    <Caption>A Caption for my image</Caption>
+  </>
+    ),
   styles: { "--pic-w": "250px" }
 }

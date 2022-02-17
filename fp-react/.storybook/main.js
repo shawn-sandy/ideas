@@ -19,7 +19,7 @@ module.exports = {
     "@storybook/preset-create-react-app",
     'storybook-design-token',
     'storybook-addon-designs',
-    'storybook-addon-performance/register',
+    // 'storybook-addon-performance/register',
     "storybook-addon-pseudo-states",
     '@etchteam/storybook-addon-status',
     {
