@@ -18,19 +18,9 @@ export default {
   }
 } as ComponentMeta<typeof FpFig>
 
-const ChildElement: React.VFC = () => (
-  <>
-    <img
-      src="https://source.unsplash.com/random?w=800"
-      alt=""
-    />
-    <Caption>A Caption for my image</Caption>
-  </>
-)
-
-const ComponentTemplate: ComponentStory<typeof FpFig> = (
-  args
-) => <FpFig {...args} />
+const ComponentTemplate: ComponentStory<typeof FpFig> = ({
+  ...args
+}) => <FpFig {...args} />
 
 export const Figure = ComponentTemplate.bind({})
 Figure.args = {
@@ -47,13 +37,24 @@ export const FigureCaption = ComponentTemplate.bind({})
 
 FigureCaption.args = {
   children: (
-   <>
+    <>
+      <img
+        src="https://source.unsplash.com/random?w=800"
+        alt=""
+      />
+      <Caption>A Caption for my image</Caption>
+    </>
+  ),
+  styles: { "--pic-w": "250px" }
+}
+
+export const ChildElement: React.VFC = ({ ...args }) => (
+  <>
     <img
       src="https://source.unsplash.com/random?w=800"
       alt=""
+      style={{ width: "450px" }}
     />
-    <Caption>A Caption for my image</Caption>
+    <Caption {...args}>The image caption...</Caption>
   </>
-    ),
-  styles: { "--pic-w": "250px" }
-}
+)
