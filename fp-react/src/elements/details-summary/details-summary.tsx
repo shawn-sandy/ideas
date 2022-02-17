@@ -1,15 +1,20 @@
 import * as React from "react"
-import PropTypes from "prop-types"
 import "./details-summary.scss"
 
 const Details: React.FC<DetailsProps> = ({
   children,
   classes,
   styles = {},
+  toggle,
   ...rest
 }) => {
   return (
-    <details style={styles} className={classes}>
+    <details
+      style={styles}
+      className={classes}
+      onToggle={toggle}
+      {...rest}
+    >
       {children}
     </details>
   )
@@ -31,7 +36,8 @@ export const Summary: React.FC<DetailsProps> = ({
 interface DetailsProps {
   children: React.ReactNode
   classes?: string
-  styles?: any
+  toggle?: () => void
+  styles?: any | object
 }
 
 export default Details
