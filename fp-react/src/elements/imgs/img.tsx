@@ -29,7 +29,9 @@ const FpImg: React.VFC<FpImgProps> = ({
       e.currentTarget.src = imgPlaceholder // imgError = null
       imgError = () => null
     }
-    console.log("error", e.currentTarget.src)
+    return new Error(
+      `Error loading image - ${e.currentTarget.src}`
+    )
   }
 
   const _onLoad = (
