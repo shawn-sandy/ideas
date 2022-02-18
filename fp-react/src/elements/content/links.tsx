@@ -1,5 +1,5 @@
 import * as React from "react"
-import PropTypes, { InferProps } from "prop-types"
+// import PropTypes, { InferProps } from "prop-types"
 
 /**
  * Link Element.
