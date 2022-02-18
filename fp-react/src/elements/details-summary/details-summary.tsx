@@ -49,11 +49,23 @@ export const Summary: React.FC<DetailsProps> = ({
 }
 
 interface DetailsProps {
+  /**
+   * Children elements
+   */
   children: React.ReactNode
+  /**
+   * Element classes
+   */
   classes?: string
+  /**
+   * Toggle event function
+   */
   toggle?: (
     event: React.SyntheticEvent<HTMLDetailsElement>
   ) => void
+  /**
+   * Styles object
+   */
   styles?: any | object
 }
 
