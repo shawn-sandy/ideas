@@ -1,3 +1,4 @@
+import { isFunction } from "@babel/types"
 import * as React from "react"
 import "./details-summary.scss"
 
@@ -8,11 +9,22 @@ const Details: React.FC<DetailsProps> = ({
   toggle,
   ...rest
 }) => {
+  const toggleElement = (
+    event: React.SyntheticEvent<HTMLDetailsElement>
+  ) => {
+    if (event.currentTarget.open)
+      // TODO: Add aria-expanded to the details element
+      event.currentTarget.ariaExpanded = "true"
+    else event.currentTarget.ariaExpanded = "false"
+    // !TEST call toggle function
+    if (typeof toggle === "function") toggle(event)
+  }
+
   return (
     <details
       style={styles}
       className={classes}
-      onToggle={toggle}
+      onToggle={toggleElement}
       {...rest}
     >
       {children}
@@ -36,7 +48,9 @@ export const Summary: React.FC<DetailsProps> = ({
 interface DetailsProps {
   children: React.ReactNode
   classes?: string
-  toggle?: () => void
+  toggle?: (
+    event: React.SyntheticEvent<HTMLDetailsElement>
+  ) => void
   styles?: any | object
 }
 
