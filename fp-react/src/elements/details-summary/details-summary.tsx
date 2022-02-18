@@ -1,4 +1,3 @@
-import { isFunction } from "@babel/types"
 import * as React from "react"
 import "./details-summary.scss"
 
