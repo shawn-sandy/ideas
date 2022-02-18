@@ -1,4 +1,5 @@
 import * as React from "react"
+import PropTypes, { InferProps } from "prop-types"
 
 /**
  * Link Element.
@@ -6,7 +7,7 @@ import * as React from "react"
  * * Adds a click event to the link
  * * [Link `a` Documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a)
  */
-const Links: React.FC<LinkProps> = ({
+const FpLinks: React.FC<LinkProps> = ({
   to = "#",
   classes,
   styles,
@@ -33,6 +34,9 @@ const Links: React.FC<LinkProps> = ({
 }
 
 interface LinkProps {
+  /**
+   * The link destination
+   */
   to: string
   classes?: string
   styles?: any
@@ -55,15 +59,15 @@ export const OpenTab: React.FC<LinkProps> = ({
   ...props
 }) => {
   return (
-    <Links
+    <FpLinks
       to={to}
       title={title}
       target="_blank"
       rel="nofollow noopener"
     >
       {children}
-    </Links>
+    </FpLinks>
   )
 }
 
-export default Links
+export default FpLinks

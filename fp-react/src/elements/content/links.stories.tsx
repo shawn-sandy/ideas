@@ -1,5 +1,5 @@
 import React from "react"
-import Links, { OpenTab } from "./links"
+import FpLinks, { OpenTab } from "./links"
 import {
   ComponentStory,
   ComponentMeta
@@ -7,7 +7,7 @@ import {
 
 export default {
   title: "Elements/Content/Links",
-  component: Links,
+  component: FpLinks,
   subcomponents: { OpenTab },
   parameters: {
     // layout: 'padded',
@@ -15,13 +15,13 @@ export default {
       type: "beta"
     }
   }
-} as ComponentMeta<typeof Links>
+} as ComponentMeta<typeof FpLinks>
 
-const Template: ComponentStory<typeof Links> = (args) => (
-  <Links {...args} />
+const Template: ComponentStory<typeof FpLinks> = (args) => (
+  <FpLinks {...args} />
 )
 
-export const Link: ComponentStory<typeof Links> =
+export const Link: ComponentStory<typeof FpLinks> =
   Template.bind({})
 
 Link.args = {
@@ -30,7 +30,7 @@ Link.args = {
   title: "Title of the link"
 }
 
-const OpenTemplate: ComponentStory<typeof Links> = (
+const OpenTemplate: ComponentStory<typeof FpLinks> = (
   args
 ) => (
   <>
@@ -43,7 +43,7 @@ const OpenTemplate: ComponentStory<typeof Links> = (
   </>
 )
 
-export const ExternalLink: ComponentStory<typeof Links> =
+export const ExternalLink: ComponentStory<typeof FpLinks> =
   OpenTemplate.bind({})
 
 ExternalLink.args = {
