@@ -2,6 +2,10 @@ import { isFunction } from "@babel/types"
 import * as React from "react"
 import "./details-summary.scss"
 
+/**
+ * `FpDetailsSummary` React Details Summary element
+ *  * [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)
+ */
 const Details: React.FC<DetailsProps> = ({
   children,
   classes,
