@@ -5,7 +5,8 @@
     "system/*",
     "components/*",
     "fp-react/",
-    "first-paint/"
+    "first-paint/",
+    "fpreact/"
   ],
   "version": "independent"
 }
