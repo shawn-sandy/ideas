@@ -26,8 +26,8 @@ export const parameters = {
         description: 'This component is stable and released',
       },
       alpha: {
-        background: 'dimgray',
-        color: '#ffffff',
+        background: 'lightgray',
+        color: 'gray',
         description: 'This component is still in development',
       }
     },

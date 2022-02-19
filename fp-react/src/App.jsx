@@ -1,6 +1,6 @@
 import './App.css'
 import Button from './elements/buttons/button'
-import Contain from './components/container/container'
+import Contain from './components/container/layout'
 import Details, { Summary } from './elements/details-summary/details-summary'
 
 /**
@@ -21,7 +21,7 @@ const App = () => {
         </Details>
       </Contain>
 
-      <Contain className='App'>
+      <Contain tag="p" classes='App'>
         <header className='App-header'>
           <a
             className='App-link'

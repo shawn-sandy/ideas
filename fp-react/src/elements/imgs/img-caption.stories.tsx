@@ -16,9 +16,7 @@ export default {
   }
 } as ComponentMeta<typeof FpCaption>
 
-const ComponentTemplate: ComponentStory<
-  typeof FpCaption
-> = (args) => <FpCaption {...args} />
+const ComponentTemplate: ComponentStory<typeof FpCaption> = (args) => <FpCaption {...args} />
 
 export const Caption = ComponentTemplate.bind({})
 
