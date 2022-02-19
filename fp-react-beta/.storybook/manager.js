@@ -2,7 +2,7 @@
 
 import { addons } from '@storybook/addons'
 import { themes } from '@storybook/theming'
-import BaseTheme from './BaseTheme'
+import FirstPaint from './FirstPaint'
 
 addons.setConfig({
   isFullscreen: false,
@@ -13,7 +13,7 @@ addons.setConfig({
   isToolshown: true,
   selectedPanel: undefined,
   initialActive: 'sidebar',
-  theme: BaseTheme,
+  theme: FirstPaint,
   sidebar: {
     showRoots: true,
     collapsedRoots: ['other'],
