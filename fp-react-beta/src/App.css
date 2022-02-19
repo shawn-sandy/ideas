@@ -1,3 +1,7 @@
+html {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -32,7 +36,13 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+:root {
+  --btn-bg: black;
+  --btn-color: white;
 }
