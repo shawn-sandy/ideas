@@ -19,11 +19,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "dev": "start-storybook -p 6006 -s public",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "storybook-docs": "start-storybook --docs --no-manager-cache",
+    "build-storybook": "build-storybook -o ./www/components"
   },
   "eslintConfig": {
     "extends": [
@@ -55,13 +56,16 @@
   },
   "devDependencies": {
     "@axe-core/react": "^4.3.2",
+    "@etchteam/storybook-addon-status": "^4.2.0",
     "@storybook/addon-actions": "^6.4.19",
     "@storybook/addon-a11y": "^6.4.18",
     "@storybook/addon-essentials": "^6.4.19",
     "@storybook/addon-interactions": "^6.4.19",
     "@storybook/addon-links": "^6.4.19",
+    "storybook-addon-performance": "^0.16.1",
     "@storybook/addon-storysource": "^6.4.18",
     "storybook-addon-pseudo-states": "^1.0.0",
+
     "@storybook/builder-webpack5": "^6.4.19",
     "@storybook/manager-webpack5": "^6.4.19",
     "@whitespace/storybook-addon-html": "^5.0.0",
@@ -71,6 +75,7 @@
     "@storybook/testing-library": "0.0.9",
     "axe-core": "^4.4.0",
     "chromatic": "^6.4.3",
+    "sass": "^1.49.7",
     "storybook-design-token": "^1.4.0",
     "webpack": "^5.69.1"
   }
