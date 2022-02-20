@@ -117,7 +117,9 @@
   "emmet.excludeLanguages": [],
   "emmet.includeLanguages": {
     "mdx": "html",
-    "jsx": "javascriptreact"
+    "jsx": "javascriptreact",
+    "javascript": "javascriptreact",
+    "tsx": "javascriptreact"
   },
   "markdown-preview-enhanced.codeBlockTheme": "default.css",
   "editor.wordWrap": "on",

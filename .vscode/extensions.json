@@ -38,11 +38,11 @@
     "stylelint.vscode-stylelint",
     "cssho.vscode-svgviewer",
     "gruntfuggly.todo-tree",
-    "hollowtree.vue-snippets",
     "davidanson.vscode-markdownlint",
     "maxvanderschee.web-accessibility",
     "usernamehw.errorlens",
     "infeng.vscode-react-typescript",
-    "kiteco.kite"
+    "kiteco.kite",
+    "Equinusocio.vsc-material-theme"
   ]
 }
