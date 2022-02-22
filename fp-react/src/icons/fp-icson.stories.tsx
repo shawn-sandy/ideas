@@ -73,7 +73,7 @@ export const Comment = ComponentTemplate.bind({})
 Comment.args = {
   title: "Got to next page",
   fill: "lightgray",
-  size: "48",
+  size: "64",
   children: (
     <>
       <path
