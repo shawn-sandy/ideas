@@ -4,7 +4,7 @@ export interface FpIconProps {
   /**
    * The title attribute of the icon
    */
-  title?: string
+  title: string
   /**
    * The size of the icon
    */
@@ -23,8 +23,13 @@ export interface FpIconProps {
   children?: React.ReactNode
 }
 
+/**
+ * Icon container component
+ * [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/svg)
+ * [SVG Accessibility](https://www.w3.org/TR/SVG11/coords.html)
+ */
 export const FpIcon: React.FC<FpIconProps> = ({
-  title,
+  title = "Icons",
   size,
   height,
   fill,
@@ -37,8 +42,17 @@ export const FpIcon: React.FC<FpIconProps> = ({
       fill={fill}
       viewBox="0 0 512 512"
       xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+      aria-labelledby={
+        title ? `icon-${title?.replace(" ", "-")}` : ""
+      }
     >
-      <title>{title}</title>
+      <title
+        id={title ? `icon-${title?.replace(" ", "-")}` : ""}
+      >
+        {title}
+      </title>
       {children}
     </svg>
   )

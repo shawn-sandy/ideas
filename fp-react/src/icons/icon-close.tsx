@@ -2,7 +2,7 @@ import * as React from "react"
 import FpIcon, { FpIconProps } from "./fp-icons"
 
 const WindowClose: React.FC<FpIconProps> = ({
-  title = "Window Close",
+  title = "Close window",
   size = "24",
   height,
   fill = "gray"
