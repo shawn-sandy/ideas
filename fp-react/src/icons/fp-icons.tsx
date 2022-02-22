@@ -35,7 +35,7 @@ export const FpIcon: React.FC<FpIconProps> = ({
   title = "Icons",
   size = "24",
   height,
-  fill = "gray",
+  fill = "currentColor",
   children,
   viewBox = "0 0 512 512"
 }) => {
