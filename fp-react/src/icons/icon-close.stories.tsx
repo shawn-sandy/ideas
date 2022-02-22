@@ -20,7 +20,7 @@ const ComponentTemplate: ComponentStory<
   typeof WindowClose
 > = (args) => <WindowClose {...args} />
 
-export const CustomIcom = ComponentTemplate.bind({})
+export const CustomIcon = ComponentTemplate.bind({})
 
 // WindowCloseIcon.args = {
 // }
