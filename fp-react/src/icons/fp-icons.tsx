@@ -20,7 +20,10 @@ export interface FpIconProps {
   /**
    * The children react node
    */
-  children?: React.ReactNode
+  /**
+   * ViewBox of the icon
+   */
+  viewBox?: string
 }
 
 /**
@@ -30,17 +33,18 @@ export interface FpIconProps {
  */
 export const FpIcon: React.FC<FpIconProps> = ({
   title = "Icons",
-  size,
+  size = "24",
   height,
-  fill,
-  children
+  fill = "gray",
+  children,
+  viewBox = "0 0 512 512"
 }) => {
   return (
     <svg
       height={height || size}
       width={size}
       fill={fill}
-      viewBox="0 0 512 512"
+      viewBox={viewBox}
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden="true"
       focusable="false"
@@ -53,7 +57,7 @@ export const FpIcon: React.FC<FpIconProps> = ({
       >
         {title}
       </title>
-      {children}
+      <g fill={fill}>{children}</g>
     </svg>
   )
 }
