@@ -18,7 +18,7 @@ export interface FpIconProps {
    */
   fill?: string
   /**
-   * The children react node
+   * The svg path(s) for the icon
    */
   /**
    * ViewBox of the icon
