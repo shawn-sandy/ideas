@@ -46,4 +46,25 @@ export const Layout: React.FC<LayoutProps> = ({
   )
 }
 
+export interface CardProps extends LayoutProps {
+  /**
+   * The tag to use for the layout
+   */
+  elements?: "section" | "div" | "aside" | "article"
+}
+export const Card: React.FC<CardProps> = ({
+  elements = "div",
+  children,
+  styles,
+  classes,
+  ...props
+}) => {
+  const Tag: any = elements
+  return (
+    <Tag className={classes} style={styles} {...props}>
+      {children}
+    </Tag>
+  )
+}
+
 export default Layout
