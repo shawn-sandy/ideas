@@ -11,7 +11,6 @@ export interface LayoutProps {
     | "main"
     | "header"
     | "footer"
-    | "article"
     | "aside"
     | "nav"
   /**
@@ -32,7 +31,7 @@ export interface LayoutProps {
  * The layout component is used to wrap content in a container
  * - Dynamic add tag name
  */
-const Layout: React.FC<LayoutProps> = ({
+export const Layout: React.FC<LayoutProps> = ({
   tag = "section",
   children,
   styles,

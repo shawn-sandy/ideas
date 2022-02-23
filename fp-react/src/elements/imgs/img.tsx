@@ -64,7 +64,7 @@ const FpImg: React.VFC<FpImgProps> = ({
 
 export default FpImg
 
-interface FpImgProps
+export interface FpImgProps
   extends React.ImgHTMLAttributes<HTMLImageElement> {
   /**
    * set the object-fit style on the image
