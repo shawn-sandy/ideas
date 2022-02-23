@@ -1,6 +1,33 @@
 import * as React from "react"
 import "./Layout.scss"
 
+export interface LayoutProps {
+  /**
+   * The tag to use for the layout
+   */
+  tag?:
+    | "section"
+    | "div"
+    | "main"
+    | "header"
+    | "footer"
+    | "article"
+    | "aside"
+    | "nav"
+  /**
+   * The content to render
+   */
+  children: React.ReactNode
+  /**
+   * The styles to apply to the layout/container
+   */
+  styles?: any
+  /**
+   * The classes to apply to the layout/container
+   */
+  classes?: string
+}
+
 /**
  * The layout component is used to wrap content in a container
  * - Dynamic add tag name
@@ -20,21 +47,4 @@ const Layout: React.FC<LayoutProps> = ({
   )
 }
 
-interface LayoutProps {
-  /**
-   * The tag to use for the layout
-   */
-  tag?:
-    | "section"
-    | "div"
-    | "main"
-    | "header"
-    | "footer"
-    | "article"
-    | "aside"
-    | "nav"
-  children: React.ReactNode
-  styles?: any
-  classes?: string
-}
 export default Layout
