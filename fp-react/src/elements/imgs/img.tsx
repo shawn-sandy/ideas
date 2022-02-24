@@ -20,6 +20,7 @@ const FpImg: React.VFC<FpImgProps> = ({
   loading = "lazy",
   ratio = "auto 4 / 3",
   imgPlaceholder = "https://via.placeholder.com/800",
+  ariaLabel,
   ...props
 }) => {
   const _onError = (
@@ -53,6 +54,7 @@ const FpImg: React.VFC<FpImgProps> = ({
       height={height}
       loading={loading}
       alt={alt}
+      aria-label={ariaLabel}
       onLoad={imgLoaded || _onLoad}
       onError={imgError || _onError}
       {...props}
@@ -62,7 +64,7 @@ const FpImg: React.VFC<FpImgProps> = ({
 
 export default FpImg
 
-interface FpImgProps
+export interface FpImgProps
   extends React.ImgHTMLAttributes<HTMLImageElement> {
   /**
    * set the object-fit style on the image
@@ -93,6 +95,10 @@ interface FpImgProps
    * Sets the image placeholder for image errors
    */
   imgPlaceholder?: string
+  /**
+   * Aria label for the image
+   */
+  ariaLabel?: string
 }
 
 type FpFigProps = {
