@@ -47,7 +47,7 @@
     "build-v21": "postcss ./src/v21/**/*.css --base src/v21 -d ./dist/v21/ --ext min.css --map",
     "watch-components": "sass --watch src/v2/components:src/v2/css/components/. --load-path=node_modules --source-map",
     "watch-scss": "sass --style --update compressed src/components:dist/css/. src/index.scss:dist/css/index.css src/styles:src/styles/. --load-path=node_modules --color",
-    "build:css": "postcss ./dist/css/*.css --dir ./dist/css/ --ext min.css",
+    "build-css": "postcss ./dist/css/*.css --dir ./dist/css/ --ext min.css",
     "build": "run-s build:*",
     "test": "echo \"Error: run tests from root\" && exit 1",
     "production": "11ty-prod",
@@ -58,20 +58,20 @@
     "url": "https://github.com/shawn-sandy/ideas/issues"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^1.0.0",
     "@shawnsandy/code-clipper": "^0.2.8",
     "@shawnsandy/ideas": "^0.3.5",
     "@shawnsandy/marked": "^0.2.6",
     "@shawnsandy/mix": "^0.10.25",
-    "autoprefixer": "^10.4.0",
-    "clean-css": "^5.2.2",
-    "cssnano": "^5.0.12",
+    "autoprefixer": "^10.4.2",
+    "clean-css": "^5.2.4",
+    "cssnano": "^5.0.17",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.5",
+    "postcss": "^8.4.7",
     "postcss-cli": "^9.1.0",
-    "postcss-modules": "^4.3.0",
+    "postcss-modules": "^4.3.1",
     "posthtml-include": "^1.7.2",
-    "sass": "^1.48.0",
+    "sass": "^1.49.9",
     "trash-cli": "^5.0.0"
   },
   "resolutions": {
@@ -82,7 +82,7 @@
     "not dead"
   ],
   "dependencies": {
-    "concurrently": "^6.2.1",
+    "concurrently": "^7.0.0",
     "modern-css-reset": "^1.4.0"
   }
 }
