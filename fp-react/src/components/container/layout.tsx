@@ -52,6 +52,7 @@ export interface CardProps extends LayoutProps {
    */
   elements?: "section" | "div" | "aside" | "article"
 }
+
 export const Card: React.FC<CardProps> = ({
   elements = "div",
   children,
