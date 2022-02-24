@@ -1,6 +1,9 @@
 /* stylelint-disable declaration-colon-newline-after */
 /* stylelint-disable declaration-empty-line-before */
 /* stylelint-disable declaration-colon-newline-after */
+
+@use "@shawnsandy/first-paint/src/v21/index.scss";
+
 :where(div, main, section, article, footer, header),
 [style*="--bx"] {
   --bx-flow: column wrap;
