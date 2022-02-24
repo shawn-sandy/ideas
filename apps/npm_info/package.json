@@ -46,7 +46,7 @@
     "parcel": "^1.12.4",
     "snowpack": "^1.4.0"
   },
-  "gitHead": "47c160bd86cbb8207bbeb71678fe0de83d545be0",
+  "gitHead": "c9ba0ce84cec5d621770fdc53c2dd5325eebafe4",
   "dependencies": {
     "concurrently": "^6.2.1",
     "npm-run-all": "^4.1.5",
