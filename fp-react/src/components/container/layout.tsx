@@ -12,7 +12,9 @@ export interface LayoutProps {
     | "header"
     | "footer"
     | "aside"
+    | "article"
     | "nav"
+
   /**
    * The content to render
    */
@@ -20,7 +22,7 @@ export interface LayoutProps {
   /**
    * The styles to apply to the layout/container
    */
-  styles?: any
+  styles?: object
   /**
    * The classes to apply to the layout/container
    */
@@ -48,9 +50,14 @@ export const Container: React.FC<LayoutProps> = ({
 
 export interface CardProps extends LayoutProps {
   /**
-   * The tag to use for the layout
+   * The tag to use for the card elements
    */
-  elements?: "section" | "div" | "aside" | "article"
+  elements?:
+    | "div"
+    | "aside"
+    | "figure"
+    | "blockquote"
+    | "details"
 }
 
 export const Card: React.FC<CardProps> = ({
