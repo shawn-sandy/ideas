@@ -28,17 +28,24 @@
   );
 }
 
-[style*="--card"] {
+[style*="--card"],
+[style*="--cd"] {
   --cd-sm: 1rem;
   --cd-md: 1.5rem;
   --cd-lg: 2rem;
   --cd-xl: 3rem;
+  // TODO: decide which variable name works best
+  --card-sm: 1rem;
+  --card-md: 1.5rem;
+  --card-lg: 2rem;
+  --card-xl: 3rem;
+  --cd-shadow-sm: 0 0.1rem 0.15rem rgba(0, 0, 0, 0.1);
+  --cd-shadow-md: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.1);
+  --cd-shadow-lg: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
+
   padding: var(--card, var(--card-sm));
   border-radius: var(--card-radius, 0.2rem);
   background-color: var(--card-bg, var(--bg, #fff));
-  // box-shadow: var(
-  //   --card-shadow,
-  //   0 0.25rem 0.5rem rgba(0, 0, 0, 0.1)
-  // );
+  box-shadow: var(--cd-shadow);
   border: var(--card-border, thin solid whitesmoke);
 }

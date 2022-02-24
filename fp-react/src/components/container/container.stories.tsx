@@ -7,7 +7,7 @@ import {
 import Container from "./layout"
 
 export default {
-  title: "Components/Layout",
+  title: "Components/Containers",
   component: Container,
   parameters: {
     layout: "padded",
