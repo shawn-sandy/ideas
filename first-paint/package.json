@@ -1,6 +1,7 @@
 {
   "name": "@shawnsandy/first-paint",
   "version": "2.1.0",
+  "private": false,
   "description": "First Paint is an easy to use CSS/SCSS starter library that contains accessibility focused, classless, semantic HTML elements and components for quickly scaffolding/building modern, lightweight mobile friendly websites.",
   "keywords": [
     "CSS",
@@ -84,5 +85,6 @@
   "dependencies": {
     "concurrently": "^7.0.0",
     "modern-css-reset": "^1.4.0"
-  }
+  },
+  "gitHead": "47c160bd86cbb8207bbeb71678fe0de83d545be0"
 }

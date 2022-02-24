@@ -78,5 +78,6 @@
     "storybook-addon-pseudo-states": "^1.0.0",
     "storybook-design-token": "^1.4.0",
     "webpack": "^5.69.1"
-  }
+  },
+  "gitHead": "47c160bd86cbb8207bbeb71678fe0de83d545be0"
 }

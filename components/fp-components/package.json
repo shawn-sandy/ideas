@@ -1,6 +1,7 @@
 {
   "name": "@shawnsandy/fp-components",
   "version": "0.0.1",
+  "private": true,
   "scripts": {
     "start": "vite",
     "dev": "vite",
@@ -26,5 +27,6 @@
       "import": "./dist/my-lib.es.js",
       "require": "./dist/my-lib.umd.js"
     }
-  }
+  },
+  "gitHead": "47c160bd86cbb8207bbeb71678fe0de83d545be0"
 }
