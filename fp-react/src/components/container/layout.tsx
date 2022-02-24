@@ -60,8 +60,15 @@ export const Card: React.FC<CardProps> = ({
   ...props
 }) => {
   const Tag: any = elements
+  const defStyles = {
+    "--card": "var(--cd-md)"
+  }
   return (
-    <Tag className={classes} style={styles} {...props}>
+    <Tag
+      className={classes}
+      style={{ ...defStyles, ...styles }}
+      {...props}
+    >
       {children}
     </Tag>
   )

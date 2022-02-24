@@ -26,9 +26,9 @@ const Template: ComponentStory<typeof Layout> = ({
   ></Layout>
 )
 
-export const Section = Template.bind({})
+export const LayoutSection = Template.bind({})
 
-Section.args = {
+LayoutSection.args = {
   children:
     "First paint is a performance-first, accessibility-driven, SCSS/CSS micro-framework..."
 }

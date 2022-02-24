@@ -25,5 +25,28 @@ const ComponentTemplate: ComponentStory<typeof Card> = (
 export const Cards = ComponentTemplate.bind({})
 
 Cards.args = {
-  children: "You can add a caption to an image"
+  children: (
+    <>
+      <h3>Card Title</h3>
+      <p>
+        First paint is a performance-first,
+        accessibility-driven, SCSS/CSS micro-framework...
+      </p>
+    </>
+  )
+}
+
+export const CardLg = ComponentTemplate.bind({})
+
+CardLg.args = {
+  styles: { "--card": "var(--cd-lg)" },
+  children: (
+    <>
+      <h3>Card Title</h3>
+      <p>
+        First paint is a performance-first,
+        accessibility-driven, SCSS/CSS micro-framework...
+      </p>
+    </>
+  )
 }
