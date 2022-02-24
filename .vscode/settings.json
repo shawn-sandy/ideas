@@ -117,7 +117,9 @@
   "emmet.excludeLanguages": [],
   "emmet.includeLanguages": {
     "mdx": "html",
-    "jsx": "javascriptreact"
+    "jsx": "javascriptreact",
+    "javascript": "javascriptreact",
+    "tsx": "javascriptreact"
   },
   "markdown-preview-enhanced.codeBlockTheme": "default.css",
   "editor.wordWrap": "on",
@@ -125,5 +127,6 @@
   "html-css-class-completion.includeGlobPattern": "**/*.{css,html,jsx}",
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
   "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
-  "html.format.wrapAttributes": "force"
+  "html.format.wrapAttributes": "force",
+  "typescript.tsdk": "node_modules\\typescript\\lib"
 }

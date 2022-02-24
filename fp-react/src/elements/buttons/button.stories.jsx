@@ -19,6 +19,13 @@ Default.args = {
   click: () => console.log('Clicked Default Button')
 }
 
+export const Disabled = Template.bind({})
+Disabled.args = {
+  disabled: true,
+  children: 'Disabled Button',
+  click: () => console.log('Clicked Disabled Button')
+}
+
 /**
  * General component description in JSDoc format. Markdown is *supported*.
  */
@@ -29,9 +36,10 @@ RedStyle.args = {
   click: () => console.log('Clicked red Button')
 }
 
-export const Disabled = Template.bind({})
-Disabled.args = {
+export const RedDisabled = Template.bind({})
+RedDisabled.args = {
   disabled: true,
-  children: 'Disabled Button',
+  children: 'Red Disabled',
+  styles: { '--btn-bg': 'red', '--btn-color': 'white' },
   click: () => console.log('Clicked Disabled Button')
 }
