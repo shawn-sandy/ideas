@@ -1,6 +1,6 @@
 {
   "name": "@fp/react",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
@@ -57,7 +57,7 @@
   "devDependencies": {
     "@axe-core/react": "^4.4.0",
     "@etchteam/storybook-addon-status": "^4.2.0",
-    "@shawnsandy/first-paint": "^2.0.10",
+    "@shawnsandy/first-paint": "^2.1.0",
     "@storybook/addon-a11y": "^6.4.19",
     "@storybook/addon-actions": "^6.4.19",
     "@storybook/addon-essentials": "^6.4.19",

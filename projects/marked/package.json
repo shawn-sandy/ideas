@@ -1,6 +1,6 @@
 {
   "name": "@shawnsandy/marked",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "A markdown plugin for 11ty",
   "keywords": [
     "11ty",

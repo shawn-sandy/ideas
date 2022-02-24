@@ -1,6 +1,6 @@
 {
   "name": "@shawnsandy/fp-components",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "start": "vite",
     "dev": "vite",
@@ -13,10 +13,12 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.7",
-    "vite": "^2.7.2",
-    "prop-types": "^15.8.1"
+    "prop-types": "^15.8.1",
+    "vite": "^2.7.2"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "./dist/my-lib.umd.js",
   "module": "./dist/my-lib.es.js",
   "exports": {
