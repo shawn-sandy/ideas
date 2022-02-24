@@ -22,9 +22,9 @@ const ComponentTemplate: ComponentStory<typeof Card> = (
   args
 ) => <Card {...args} />
 
-export const Cards = ComponentTemplate.bind({})
+export const CardSM = ComponentTemplate.bind({})
 
-Cards.args = {
+CardSM.args = {
   children: (
     <>
       <h3>Card Title</h3>
@@ -36,9 +36,9 @@ Cards.args = {
   )
 }
 
-export const CardLg = ComponentTemplate.bind({})
+export const CardLG = ComponentTemplate.bind({})
 
-CardLg.args = {
+CardLG.args = {
   styles: { "--card": "var(--cd-lg)" },
   children: (
     <>

@@ -31,7 +31,7 @@ export interface LayoutProps {
  * The layout component is used to wrap content in a container
  * - Dynamic add tag name
  */
-export const Layout: React.FC<LayoutProps> = ({
+export const Container: React.FC<LayoutProps> = ({
   tag = "section",
   children,
   styles,
@@ -74,4 +74,4 @@ export const Card: React.FC<CardProps> = ({
   )
 }
 
-export default Layout
+export default Container

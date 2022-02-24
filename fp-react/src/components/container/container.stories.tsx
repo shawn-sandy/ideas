@@ -4,31 +4,31 @@ import {
   ComponentStory
 } from "@storybook/react"
 
-import Layout from "./layout"
+import Container from "./layout"
 
 export default {
   title: "Components/Layout",
-  component: Layout,
+  component: Container,
   parameters: {
     layout: "padded",
     status: {
       type: "alpha"
     }
   }
-} as ComponentMeta<typeof Layout>
+} as ComponentMeta<typeof Container>
 
-const Template: ComponentStory<typeof Layout> = ({
+const Template: ComponentStory<typeof Container> = ({
   ...args
 }) => (
-  <Layout
+  <Container
     {...args}
     styles={{ "--box-max-w": "100%" }}
-  ></Layout>
+  ></Container>
 )
 
-export const LayoutSection = Template.bind({})
+export const ContainerSection = Template.bind({})
 
-LayoutSection.args = {
+ContainerSection.args = {
   children:
     "First paint is a performance-first, accessibility-driven, SCSS/CSS micro-framework..."
 }
