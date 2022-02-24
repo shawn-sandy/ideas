@@ -1,12 +1,12 @@
 module.exports = {
   "stories": [
     "../src/guides/**/*.stories.mdx",
-    "../src/tokens/**/*.stories.jsx",
-    "../src/elements/**/*.stories.jsx",
-    "../src/components/**/*.stories.jsx",
-    "../src/modules/**/*.stories.jsx",
-    "../src/pages/**/*.stories.jsx",
-    "../src/services/**/*.stories.jsx",
+    "../src/tokens/**/*.stories.@(js|jsx|ts|tsx)",
+    "../src/elements/**/*.stories.@(js|jsx|ts|tsx)",
+    "../src/components/**/*.stories.@(js|jsx|ts|tsx)",
+    "../src/modules/**/*.stories.@(js|jsx|ts|tsx)",
+    "../src/pages/**/*.stories.@(js|jsx|ts|tsx)",
+    "../src/services/**/*.stories.@(js|jsx|ts|tsx)",
     "../src/**/*.stories.@(js|jsx|ts|tsx)",
     "../src/**/*.stories.mdx",
   ],

@@ -1,5 +1,5 @@
 import * as React from "react"
-import "./Layout.scss"
+import "./Container.scss"
 
 export interface LayoutProps {
   /**
