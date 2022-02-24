@@ -1,2 +1,14 @@
 @use "./modules/reset.scss";
 @use "./modules/global.scss";
+// import modules
+@use "./modules/container";
+@use "./modules/button";
+@use "./modules/checkbox";
+@use "./modules/img";
+@use "modules/details-summary";
+
+@include container.container();
+@include button.button();
+@include checkbox.checkbox();
+@include img.img();
+@include details-summary.details-summary();
