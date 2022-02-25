@@ -50,7 +50,7 @@
     "marked": "^4.0.10",
     "snowpack": "^3.6.2"
   },
-  "gitHead": "3481fc6cdb89ec633d019feaabd011106ac99d1f",
+  "gitHead": "5ceb95c74b18da641d388b96660617599f4f71f7",
   "dependencies": {
     "concurrently": "^6.2.1",
     "flat-cache": "^3.0.4",
