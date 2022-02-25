@@ -5,6 +5,9 @@
   "publishConfig": {
     "access": "public"
   },
+  "author": "shawnsandy <shawnsandy04@gmail.com>",
+  "homepage": "https://github.com/shawn-sandy/idea#readme",
+  "license": "MIT",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.3",
