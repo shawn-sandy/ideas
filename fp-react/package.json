@@ -1,6 +1,6 @@
 {
   "name": "@fp/react",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "private": false,
   "publishConfig": {
     "access": "public"
@@ -60,7 +60,7 @@
   "devDependencies": {
     "@axe-core/react": "^4.4.0",
     "@etchteam/storybook-addon-status": "^4.2.0",
-    "@shawnsandy/first-paint": "^2.1.4",
+    "@shawnsandy/first-paint": "^2.2.0",
     "@storybook/addon-a11y": "^6.4.19",
     "@storybook/addon-actions": "^6.4.19",
     "@storybook/addon-essentials": "^6.4.19",
@@ -82,5 +82,5 @@
     "storybook-design-token": "^1.4.0",
     "webpack": "^5.69.1"
   },
-  "gitHead": "465ecd9870faa0f5113d7f3323df9b4159b4147e"
+  "gitHead": "3481fc6cdb89ec633d019feaabd011106ac99d1f"
 }

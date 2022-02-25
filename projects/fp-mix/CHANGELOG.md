@@ -1,3 +1,16 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [0.10.30](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/fp-mix@0.10.29...@shawnsandy/fp-mix@0.10.30) (2022-02-25)
+
+**Note:** Version bump only for package @shawnsandy/fp-mix
+
+
+
+
+
 ### Changelog
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.

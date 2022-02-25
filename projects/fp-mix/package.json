@@ -1,6 +1,6 @@
 {
   "name": "@shawnsandy/fp-mix",
-  "version": "0.10.29",
+  "version": "0.10.30",
   "description": "AtomMix--A toolkit for generating utility classes, components and styles-sheets for your design system, style-guide or website from SASS MAPS",
   "keywords": [
     "SASS",
@@ -64,5 +64,5 @@
     "doc": "docs",
     "lib": "lib"
   },
-  "gitHead": "0bca93f5b010d1f62ae6df9eb1fd47861a8101db"
+  "gitHead": "3481fc6cdb89ec633d019feaabd011106ac99d1f"
 }
