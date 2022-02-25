@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.1](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/first-paint@2.3.0...@shawnsandy/first-paint@2.3.1) (2022-02-25)
+
+**Note:** Version bump only for package @shawnsandy/first-paint
+
+
+
+
+
 # [2.3.0](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/first-paint@2.1.4...@shawnsandy/first-paint@2.3.0) (2022-02-25)
 
 
