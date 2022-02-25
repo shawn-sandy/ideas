@@ -11,7 +11,7 @@
     --nav-dsp: flex;
     --nav-direction: row;
     --nav-w: 100%;
-    --nav-h: var(--nav-h, var(--s8));
+    --nav-h: calc(50rem / 16);
     --nav-align: center;
     --nav-justify: space-between;
     --nav-mx: auto;
@@ -43,6 +43,16 @@
     > ul {
       --nav-dsp: flex;
       --nav-align: center;
+      --nav-gap: .5rem;
+      --nav-px: 1rem;
+
+      display: var(--nav-dsp, var(--dsp));
+      gap: var(--nav-gap, var(--gap));
+      font-size: var(--nav-fs, .9rem);
+      padding-block: var(--nav-py, var(--py));
+      padding-inline: var(--nav-px, var(--px));
+      align-items: var(--nav-align, var(--align));
+      width: 100%;
     }
     > section {
       > div {
@@ -50,8 +60,13 @@
       }
     }
     ul {
+
       > li {
+
         --py: 0;
+        list-style: none;
+        margin: 0;
+        padding: 0;
       }
     }
 
