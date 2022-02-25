@@ -1,4 +1,4 @@
-/* https://piccalil.li/blog/a-modern-css-reset/ */
+/* https://piccalil.li/blog/a-modern-css-reset/ (modified)*/
 
 /* Box sizing rules */
 
@@ -6,6 +6,26 @@
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+html {
+  /* Declare your font family type in the html selector, then your font-family in the body selector */
+  font-family: sans-serif | serif | monospace | cursive |
+    fantasy;
+
+  /* Make base font-size 100% of browser font-size */
+  font-size: 100%;
+}
+
+::selection {
+  /* Optional */
+  /* It can be really hard to read highlighted text with a text-shadow, it should be removed when selected */
+  text-shadow: none;
+
+  /* NOTE: Using this means the color and background-color are set to transparent for selected text... */
+  /* So you can customise your styles below */
+  color: #fff;
+  background-color: #00f;
 }
 
 /*
