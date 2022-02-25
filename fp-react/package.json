@@ -1,7 +1,7 @@
 {
   "name": "@fp/react",
   "version": "0.3.0",
-  "private": false,
+  "private": true,
   "publishConfig": {
     "access": "public"
   },
