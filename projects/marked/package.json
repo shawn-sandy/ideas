@@ -1,6 +1,6 @@
 {
   "name": "@shawnsandy/marked",
-  "version": "0.2.6",
+  "version": "0.2.10",
   "description": "A markdown plugin for 11ty",
   "keywords": [
     "11ty",
@@ -34,5 +34,6 @@
   },
   "dependencies": {
     "concurrently": "^6.2.1"
-  }
+  },
+  "gitHead": "0bca93f5b010d1f62ae6df9eb1fd47861a8101db"
 }

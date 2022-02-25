@@ -1,6 +1,6 @@
 {
   "name": "@shawnsandy/vue-services",
-  "version": "0.2.26",
+  "version": "0.2.30",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -33,5 +33,5 @@
     "snowpack": "^1.7.1",
     "vue-template-compiler": "^2.6.12"
   },
-  "gitHead": "4577741794f126834eade633db5dd9e94cd6ec62"
+  "gitHead": "0bca93f5b010d1f62ae6df9eb1fd47861a8101db"
 }

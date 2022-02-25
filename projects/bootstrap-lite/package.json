@@ -1,6 +1,6 @@
 {
   "name": "@shawnsandy/bootstrap-lite",
-  "version": "0.2.10",
+  "version": "0.2.14",
   "description": "Bootstrap Lite",
   "main": "dist/bootstrap-lite.min.css",
   "repository": {
@@ -43,5 +43,5 @@
     "parcel": "^1.12.4",
     "trash-cli": "^3.1.0"
   },
-  "gitHead": "4577741794f126834eade633db5dd9e94cd6ec62"
+  "gitHead": "0bca93f5b010d1f62ae6df9eb1fd47861a8101db"
 }
