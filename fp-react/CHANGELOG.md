@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/shawn-sandy/ideas/compare/@fp/react@0.3.1...@fp/react@0.4.0) (2022-02-26)
+
+
+### Features
+
+* scaffold out the base navbar ([7cbc009](https://github.com/shawn-sandy/ideas/commit/7cbc009cf071e764c964dc9d7beb7de78bb3de74))
+
+
+
+
+
 ## [0.3.1](https://github.com/shawn-sandy/ideas/compare/@fp/react@0.3.0...@fp/react@0.3.1) (2022-02-25)
 
 **Note:** Version bump only for package @fp/react
