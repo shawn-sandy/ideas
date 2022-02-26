@@ -1,6 +1,6 @@
 {
   "name": "@shawnsandy/ideas",
-  "version": "0.3.9",
+  "version": "0.3.12",
   "description": "Eleventy toolkit",
   "keywords": [
     "design",
@@ -50,7 +50,7 @@
     "marked": "^4.0.10",
     "snowpack": "^3.6.2"
   },
-  "gitHead": "0bca93f5b010d1f62ae6df9eb1fd47861a8101db",
+  "gitHead": "5ceb95c74b18da641d388b96660617599f4f71f7",
   "dependencies": {
     "concurrently": "^6.2.1",
     "flat-cache": "^3.0.4",

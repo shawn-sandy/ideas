@@ -1,1 +1,2 @@
-@use "@shawnsandy/first-paint/src/v21/index.scss";
+@use "@shawnsandy/first-paint/src/v21/modules/details-summary";
+@include details-summary.details-summary();

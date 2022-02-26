@@ -6,9 +6,11 @@
 @use "./modules/checkbox";
 @use "./modules/img";
 @use "modules/details-summary";
+@use "modules/nav";
 
 @include container.container();
-@include button.button();
-@include checkbox.checkbox();
-@include img.img();
+@include nav.nav();
 @include details-summary.details-summary();
+@include img.img();
+@include checkbox.checkbox();
+@include button.button();
