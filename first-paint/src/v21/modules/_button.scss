@@ -8,33 +8,40 @@
 
 /* stylelint-disable declaration-colon-newline-after */
 
-@mixin button() {
-  :where(button, [style*="--btn"]) {
-    color: var(--btn-color, currentColor);
-    font-size: var(--btn-fs, calc(14rem / 16));
-    display: var(--btn-dsp, inline-flex);
-    background-color: var(--btn-bg, lightgray);
-    gap: var(--btn-gap, 1rem);
-    min-height: calc(40rem / 16);
-    place-items: var(--btn-place, center);
-    padding-inline: var(--btn-px, 1.2rem);
-    border: var(--btn-border, none);
-    border-radius: 0.15rem;
-    text-decoration: var(--btn-deco, none);
-    // cursor: var(--btn-cursor, pointer);
-    transition: all 0.2s ease !important;
+@mixin props {
+  @content;
+}
+@mixin rules() {
+  @include props;
 
-    &[disabled] {
-      cursor: var(--btn-cursor-disabled, not-allowed);
-      opacity: var(--btn-opacity-disabled, 0.5);
-    }
+  color: var(--btn-color, currentColor);
+  font-size: var(--btn-fs, calc(14rem / 16));
+  display: var(--btn-dsp, inline-flex);
+  background-color: var(--btn-bg, lightgray);
+  gap: var(--btn-gap, 1rem);
+  min-height: calc(40rem / 16);
+  place-items: var(--btn-place, center);
+  padding-inline: var(--btn-px, 1.2rem);
+  border: var(--btn-border, none);
+  border-radius: 0.15rem;
+  text-decoration: var(--btn-deco, none);
+  // cursor: var(--btn-cursor, pointer);
+  transition: all 0.2s ease !important;
 
-    &:hover {
-      filter: invert(1) hue-rotate(180deg);
-      // transform: scale(0.98);
-    }
+  &[disabled] {
+    cursor: var(--btn-cursor-disabled, not-allowed);
+    opacity: var(--btn-opacity-disabled, 0.5);
   }
 
+  &:hover {
+    filter: invert(1) hue-rotate(180deg);
+    // transform: scale(0.98);
+  }
+
+  @content;
+}
+
+@mixin styles {
   :where(button[type="submit"], [style*="--btn: submit"]) {
     --btn-bg: darkblue;
     --btn-color: white;
@@ -45,4 +52,11 @@
     --btn-color: gray;
     --btn-border: gray medium solid;
   }
+}
+
+@mixin button {
+  :where(button, [style*="--btn"]) {
+    @include rules;
+  }
+  @include styles;
 }
