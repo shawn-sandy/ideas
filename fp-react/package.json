@@ -1,7 +1,13 @@
 {
-  "name": "@fp/react",
-  "version": "0.1.0",
-  "private": false,
+  "name": "@shawnsandy/fp-react",
+  "version": "0.4.0",
+  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "shawnsandy <shawnsandy04@gmail.com>",
+  "homepage": "https://github.com/shawn-sandy/idea#readme",
+  "license": "MIT",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.3",
@@ -11,8 +17,8 @@
     "@types/react": "^17.0.39",
     "@types/react-dom": "^17.0.11",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2",
     "react-content-loader": "^6.1.0",
+    "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
     "typescript": "^4.5.5",
     "web-vitals": "^2.1.4"
@@ -57,26 +63,27 @@
   "devDependencies": {
     "@axe-core/react": "^4.4.0",
     "@etchteam/storybook-addon-status": "^4.2.0",
-    "@storybook/addon-actions": "^6.4.19",
+    "@shawnsandy/first-paint": "^2.4.0",
     "@storybook/addon-a11y": "^6.4.19",
+    "@storybook/addon-actions": "^6.4.19",
     "@storybook/addon-essentials": "^6.4.19",
     "@storybook/addon-interactions": "^6.4.19",
     "@storybook/addon-links": "^6.4.19",
-    "storybook-addon-performance": "^0.16.1",
     "@storybook/addon-storysource": "^6.4.19",
-    "storybook-addon-pseudo-states": "^1.0.0",
-
     "@storybook/builder-webpack5": "^6.4.19",
     "@storybook/manager-webpack5": "^6.4.19",
-    "@whitespace/storybook-addon-html": "^5.0.0",
     "@storybook/node-logger": "^6.4.19",
     "@storybook/preset-create-react-app": "^4.0.1",
     "@storybook/react": "^6.4.19",
     "@storybook/testing-library": "0.0.9",
+    "@whitespace/storybook-addon-html": "^5.0.0",
     "axe-core": "^4.4.1",
     "chromatic": "^6.4.3",
     "sass": "^1.49.8",
+    "storybook-addon-performance": "^0.16.1",
+    "storybook-addon-pseudo-states": "^1.0.0",
     "storybook-design-token": "^1.4.0",
     "webpack": "^5.69.1"
-  }
+  },
+  "gitHead": "5ceb95c74b18da641d388b96660617599f4f71f7"
 }

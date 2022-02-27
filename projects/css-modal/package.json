@@ -1,6 +1,6 @@
 {
   "name": "@shawnsandy/css-modal",
-  "version": "0.3.20",
+  "version": "0.3.27",
   "scripts": {
     "start": "es-dev-server --compatibility all --legacy --app-index index.html --node-resolve --open",
     "serve": "vue-cli-service serve",
@@ -48,5 +48,5 @@
     "parcel": "^1.12.4",
     "snowpack": "^1.7.1"
   },
-  "gitHead": "4577741794f126834eade633db5dd9e94cd6ec62"
+  "gitHead": "5ceb95c74b18da641d388b96660617599f4f71f7"
 }

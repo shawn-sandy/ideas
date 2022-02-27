@@ -1,6 +1,6 @@
 {
   "name": "@shawnsandy/code-clipper",
-  "version": "0.2.8",
+  "version": "0.2.15",
   "description": "A code clipper plugin for vs 11ty",
   "keywords": [
     "code",
@@ -39,5 +39,6 @@
   },
   "devDependencies": {
     "esbuild": "^0.11.18"
-  }
+  },
+  "gitHead": "5ceb95c74b18da641d388b96660617599f4f71f7"
 }
