@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.5.0](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/first-paint@2.4.0...@shawnsandy/first-paint@2.5.0) (2022-02-27)
+
+
+### Bug Fixes
+
+* remove old html page resolve issue with marked ([b989c49](https://github.com/shawn-sandy/ideas/commit/b989c495ea9c9b0eacd2baac7b03007c130465fd))
+
+
+### Features
+
+* add links to cdn styles ([0938e2a](https://github.com/shawn-sandy/ideas/commit/0938e2a3d0e5f797ff4c5e66084274776b9269ec))
+* add links to cdn styles ([ddd2533](https://github.com/shawn-sandy/ideas/commit/ddd25335673f5669feac26da7ef7b104a8756656))
+
+
+
+
+
+
 # [2.4.0](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/first-paint@2.3.1...@shawnsandy/first-paint@2.4.0) (2022-02-26)
 
 
