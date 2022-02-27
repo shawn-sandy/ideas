@@ -17,9 +17,9 @@
   @include props;
 
   color: var(--btn-color, currentColor);
+  background-color: var(--btn-bg, lightgray);
   font-size: var(--btn-fs, calc(14rem / 16));
   display: var(--btn-dsp, inline-flex);
-  background-color: var(--btn-bg, lightgray);
   gap: var(--btn-gap, 1rem);
   min-height: calc(40rem / 16);
   place-items: var(--btn-place, center);
@@ -50,7 +50,9 @@
 
     &:hover {
       // filter: invert(1) hue-rotate(180deg);
-      transform: scale(1.05);
+      //transform: scale(1.05);
+      --btn-bg: var(--btn-color)
+      --btn-color: var(--btn-bg);
     }
     &[type="reset"],
     &[style*="--btn: 'reset'"] {
