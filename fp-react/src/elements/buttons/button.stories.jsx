@@ -43,3 +43,10 @@ RedDisabled.args = {
   styles: { '--btn-bg': 'red', '--btn-color': 'white' },
   click: () => console.log('Clicked Disabled Button')
 }
+
+export const LargeButton = Template.bind({})
+LargeButton.args = {
+  children: 'Large Button',
+  styles: { '--btn-fs': 'var(--btn-lg)' },
+  click: () => console.log('Large Button')
+}
