@@ -28,7 +28,7 @@
   font-family: sans-serif;
   min-width: var(--tb-width, 100%);
   width: var(--tb-width, 100%);
-  border: var(--tb-border);
+  border: var(--tb-border, thin solid lightgray);
   display: var(--tb-dsp, table);
   // box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.15);
 
@@ -45,10 +45,10 @@
 
   th,
   td {
-    --py: 0.75rem;
+    --py: 0.5rem;
     --px: 0.75rem;
-    padding-inline: var(--py);
-    padding-block: var(--px);
+    padding-block: var(--py);
+    padding-inline: var(--px);
   }
 
   tbody tr {
