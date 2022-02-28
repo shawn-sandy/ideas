@@ -1,0 +1,76 @@
+/**
+ * **************************************
+ *  FirsPaint
+ *  Author: Shawn Sandy
+ *  Date: 2021-04-01
+ * **************************************
+ * @format
+ */
+
+@mixin props() {
+  // * css custom properties
+  --mx: var(--sm-x);
+  --my: 0;
+  --collapse: collapse;
+  --border-w: thin;
+  --border-s: solid;
+  --border-cl: var(--light);
+
+  @content;
+}
+
+@mixin rules {
+  @include props;
+
+  border-collapse: var(--collapse);
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: var(--tb-width);
+  border: var(--tb-border);
+  // box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.15);
+
+  thead tr {
+    --text-align: left;
+    background-color: var(--tb-bg);
+    text-align: var(--text-align);
+    border-bottom: var(--tb-border);
+  }
+
+  th,
+  td {
+    --py: 0.75rem;
+    --px: 0.75rem;
+    padding-inline: var(--py);
+    padding-block: var(--px);
+  }
+
+  tbody tr {
+  }
+
+  tbody tr:nth-of-type(even) {
+    background-color: var(--tb-bg);
+  }
+
+  tbody tr:last-of-type {
+    --tbl-border: medium solid var(--tb-border-color);
+    border-bottom: var(--tbl-border);
+  }
+
+  @content;
+}
+
+@mixin styles {
+  // * css style utilities
+  @content;
+}
+
+/**
+* tag or classname name nav, .nav
+*/
+@mixin tables {
+  table {
+    @include rules;
+    @include styles;
+  }
+}

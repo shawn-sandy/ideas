@@ -29,6 +29,11 @@ export const parameters = {
         background: 'lightgray',
         color: 'gray',
         description: 'This component is still in development',
+      },
+      canary: {
+        background: 'lightyellow',
+        color: 'gray',
+        description: 'This component is still in development',
       }
     },
   },
