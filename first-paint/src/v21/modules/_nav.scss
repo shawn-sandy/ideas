@@ -80,7 +80,7 @@
   @content;
 }
 
-@mixin nav {
+@mixin module {
   nav {
     @include rules();
   }

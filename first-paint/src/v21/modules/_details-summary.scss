@@ -36,7 +36,7 @@
   }
 }
 
-@mixin details-summary {
+@mixin module {
   details {
     @include rules;
   }

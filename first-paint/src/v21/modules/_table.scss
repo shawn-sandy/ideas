@@ -26,15 +26,21 @@
   margin: 25px 0;
   font-size: 0.9em;
   font-family: sans-serif;
-  min-width: var(--tb-width);
+  min-width: var(--tb-width, 100%);
+  width: var(--tb-width, 100%);
   border: var(--tb-border);
+  display: var(--tb-dsp, table);
   // box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.15);
 
   thead tr {
     --text-align: left;
-    background-color: var(--tb-bg);
+    background-color: var(--tb-bg, lightgray);
     text-align: var(--text-align);
-    border-bottom: var(--tb-border);
+    border-bottom: var(
+      --tb-border,
+      var(--tb-border) var(--tb-border-w),
+      var(--tb-border-color)
+    );
   }
 
   th,
@@ -48,8 +54,8 @@
   tbody tr {
   }
 
-  tbody tr:nth-of-type(even) {
-    background-color: var(--tb-bg);
+  tr:nth-of-type(even) {
+    background-color: var(--tb-bg, whitesmoke);
   }
 
   tbody tr:last-of-type {
@@ -68,7 +74,7 @@
 /**
 * tag or classname name nav, .nav
 */
-@mixin tables {
+@mixin module {
   table {
     @include rules;
     @include styles;

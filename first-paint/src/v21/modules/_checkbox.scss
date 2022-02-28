@@ -46,7 +46,7 @@
   @content;
 }
 
-@mixin checkbox {
+@mixin module {
   :where(label) {
     @include rules;
   }

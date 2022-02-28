@@ -67,7 +67,7 @@
   }
 }
 
-@mixin container {
+@mixin module {
   :where(div, main, section, article, footer, header),
   [style*="--bx"] {
     @include rules;

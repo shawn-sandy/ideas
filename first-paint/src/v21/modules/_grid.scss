@@ -79,7 +79,7 @@
 /**
 * tag or classname name nav, .nav
 */
-@mixin grid {
+@mixin module {
   [role="grid"] {
     @include rules;
   }

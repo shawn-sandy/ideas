@@ -10,11 +10,11 @@
 @use "modules/table";
 @use "modules/grid";
 
-@include container.container();
-@include nav.nav();
-@include table.table();
-@include details-summary.details-summary();
-@include img.img();
-@include checkbox.checkbox();
-@include grid.grid();
-@include button.button();
+@include container.module();
+@include nav.module();
+@include table.module();
+@include details-summary.module();
+@include img.module();
+@include checkbox.module();
+@include grid.module();
+@include button.module();

@@ -71,7 +71,7 @@
   }
 }
 
-@mixin button {
+@mixin module {
   :where(button, [style*="--btn"]) {
     @include rules;
   }
