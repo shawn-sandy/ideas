@@ -9,6 +9,8 @@
 /* stylelint-disable declaration-colon-newline-after */
 
 @mixin props {
+  --btn-sm: calc(12rem / 16);
+  --btn-md: calc(16rem / 16);
   --btn-lg: calc(21rem / 16);
   --btn-pill: 99rem;
   @content;
@@ -49,11 +51,12 @@
     }
 
     &:hover {
-      // filter: invert(1) hue-rotate(180deg);
-      //transform: scale(1.05);
-      --btn-bg: var(--btn-color)
-      --btn-color: var(--btn-bg);
+      filter: invert(1) hue-rotate (180deg);
+      transform: scale(1.05);
+      // --btn-bg: var(--btn-color, blue);
+      // --btn-color: var(--btn-bg, lightgray);
     }
+
     &[type="reset"],
     &[style*="--btn: 'reset'"] {
       --btn-bg: transparent;
@@ -61,7 +64,7 @@
       --btn-border: gray medium solid;
     }
 
-    [style="--btn-fs: var(--btn-lg)"] {
+    &[style*="lg"] {
       --btn-fs: var(--btn-lg);
       --btn-min-h: 60px;
     }

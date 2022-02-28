@@ -7,10 +7,12 @@
 @use "./modules/img";
 @use "modules/details-summary";
 @use "modules/nav";
+@use "modules/grid";
 
 @include container.container();
 @include nav.nav();
 @include details-summary.details-summary();
 @include img.img();
 @include checkbox.checkbox();
+@include grid.grid();
 @include button.button();

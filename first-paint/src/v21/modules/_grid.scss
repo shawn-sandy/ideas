@@ -1,0 +1,88 @@
+/**
+ * **************************************
+ *  FirsPaint
+ *  Author: Shawn Sandy
+ *  Date: 2021-04-01
+ * **************************************
+ * @format
+ */
+
+@mixin props() {
+  // * css custom properties
+  --grid-dsp: flex;
+
+  --gap: var(--rem, 1rem);
+  --wrap: var(--row-wrap, wrap);
+  display: flex;
+  max-width: 100%;
+  @content;
+}
+
+@mixin rules {
+  @include props;
+
+  [role="row"],
+  [style*="--row"],
+  [role="list"],
+  [style*="--list"] {
+    display: var(--row-dsp, flex);
+    gap: var(--row-gap, 1rem);
+    wrap: var(--row-wrap, wrap);
+  }
+
+  [role="gridcell"],
+  [role="listitem"],
+  [style*="--gridcell"] {
+    // display: flex;
+
+    flex: var(
+      --col-flex,
+      1 1 calc(100% / var(--cols, 4) - var(--gap))
+    );
+
+    padding-inline: var(--grid-py, var(--rem));
+    padding-block: var(--grid-px, var(--rem));
+    direction: var(--grid-direction, column);
+    max-width: calc(100% / var(--cols, 4) - var(--gap));
+
+    @media (max-width: calc(768rem /16)) {
+      --cols: var(--cols-xs, 1);
+    }
+
+    @media (max-width: calc(992rem /16)) and (min-width: calc(768rem /16)) {
+      --cols: var(--cols-sm, 2);
+    }
+
+    @media (max-width: calc(1280rem /16)) and (min-width: calc(992rem /16)) {
+      --cols: var(--cols-md, 3);
+    }
+
+    @media (max-width: calc(1400rem /16)) and (min-width: calc(1280rem /16)) {
+      --cols: var(--cols-lg, 4);
+    }
+
+    @media (min-width: calc(1600rem /16)) {
+      // --cols: var(--cols-xxl, 5);
+    }
+  }
+
+  [style*="--main:"] {
+    flex: var(--fx-auto-size);
+  }
+  @content;
+}
+
+@mixin styles {
+  // * css style utilities
+  @content;
+}
+
+/**
+* tag or classname name nav, .nav
+*/
+@mixin grid {
+  [role="grid"] {
+    @include rules;
+  }
+  @include styles;
+}

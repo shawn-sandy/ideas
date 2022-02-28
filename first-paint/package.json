@@ -40,7 +40,7 @@
     "serve": "serve dist/index.html",
     "watch": "run-p watch:*",
     "11ty": "eleventy --serve",
-    "11ty-prod": " && build",
+    "11ty-prod": "eleventy && build",
     "build": "run-s build:*",
     "watch:index": "sass --watch src/index.scss:src/index.css src/custom-styles.scss:src/custom-styles.css src/components.scss:src/components.css  src/styles:src/css/. --load-path=node_modules --no-source-map",
     "watch:v21": "sass --watch --style compressed src/v21/index.scss:src/v21/css/index.css src/v21/tokens:src/v21/css/tokens/.  src/v21/modules:src/v21/css/modules/. src/v21/components:src/v21/css/components/.--load-path=node_modules --source-map",
