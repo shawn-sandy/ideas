@@ -1,6 +1,6 @@
 {
   "name": "@shawnsandy/first-paint",
-  "version": "2.4.0",
+  "version": "2.7.2",
   "private": false,
   "description": "First Paint is an easy to use CSS/SCSS starter library that contains accessibility focused, semantic HTML elements and components for quickly scaffolding/building modern, lightweight mobile friendly websites.",
   "keywords": [
@@ -40,7 +40,7 @@
     "serve": "serve dist/index.html",
     "watch": "run-p watch:*",
     "11ty": "eleventy --serve",
-    "11ty-prod": "eleventy",
+    "11ty-prod": "eleventy && build",
     "build": "run-s build:*",
     "watch:index": "sass --watch src/index.scss:src/index.css src/custom-styles.scss:src/custom-styles.css src/components.scss:src/components.css  src/styles:src/css/. --load-path=node_modules --no-source-map",
     "watch:v21": "sass --watch --style compressed src/v21/index.scss:src/v21/css/index.css src/v21/tokens:src/v21/css/tokens/.  src/v21/modules:src/v21/css/modules/. src/v21/components:src/v21/css/components/.--load-path=node_modules --source-map",
@@ -64,10 +64,10 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
-    "@shawnsandy/code-clipper": "^0.2.15",
-    "@shawnsandy/ideas": "^0.3.12",
-    "@shawnsandy/marked": "^0.2.13",
-    "@shawnsandy/mix": "^0.10.32",
+    "@shawnsandy/code-clipper": "^0.2.16",
+    "@shawnsandy/ideas": "^0.3.13",
+    "@shawnsandy/marked": "^0.2.14",
+    "@shawnsandy/mix": "^0.10.33",
     "autoprefixer": "^10.4.2",
     "clean-css": "^5.2.4",
     "concurrently": "^7.0.0",

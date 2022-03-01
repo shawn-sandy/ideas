@@ -5,4 +5,4 @@
 @use "@shawnsandy/first-paint/src/v21/modules/reset.scss";
 @use "@shawnsandy/first-paint/src/v21/modules/global.scss";
 @use "@shawnsandy/first-paint/src/v21/modules/container";
-@include container.container();
+@include container.module();

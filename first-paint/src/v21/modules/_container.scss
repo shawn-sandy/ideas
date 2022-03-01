@@ -20,13 +20,14 @@
 @mixin rules() {
   @include props;
 
-  display: var(--bx-dsp, var(--dsp, block));
+  display: var(--bx-dsp, var(--dsp, flex));
   margin-inline: var(--bx-x, var(--mx, initial));
   margin-block: var(--bx-y, var(--my, initial));
+  flex-direction: var(--bx-dir, column);
   max-width: var(--bx-max-w, 100%);
-  width: var(--bx-w, var(--w, initial));
-  height: var(--bx-h, var(--h, initial));
-  min-width: var(--bx-min-w, initial);
+  width: var(--bx-w, var(--w, 100%));
+  height: var(--bx-h, var(--h, auto));
+  min-width: var(--bx-min-w, 100%);
 
   @content;
 }
@@ -67,8 +68,8 @@
   }
 }
 
-@mixin container {
-  :where(div, main, section, article, footer, header),
+@mixin module {
+  :where(main, section, article, footer, header, div, table),
   [style*="--bx"] {
     @include rules;
   }

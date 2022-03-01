@@ -3,6 +3,70 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.7.2](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/first-paint@2.7.1...@shawnsandy/first-paint@2.7.2) (2022-03-01)
+
+**Note:** Version bump only for package @shawnsandy/first-paint
+
+
+
+
+
+## [2.7.1](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/first-paint@2.7.0...@shawnsandy/first-paint@2.7.1) (2022-03-01)
+
+
+### Features
+
+* css colors properties ([b0cf307](https://github.com/shawn-sandy/ideas/commit/b0cf30795e5f5c5bb9065855dc9ed09ac297fa20))
+
+
+
+
+
+# [2.7.0](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/first-paint@2.6.0...@shawnsandy/first-paint@2.7.0) (2022-03-01)
+
+
+### Features
+
+* remove comment ([1f2ac15](https://github.com/shawn-sandy/ideas/commit/1f2ac15e931bcd779f5cf4b010225ddea0722d90))
+
+
+
+
+
+# [2.6.0](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/first-paint@2.5.0...@shawnsandy/first-paint@2.6.0) (2022-03-01)
+
+
+### Features
+
+* **canary:** add components for table elements ([37382f9](https://github.com/shawn-sandy/ideas/commit/37382f9e0e8067e76bbcfc95c358b82bfd8f667a))
+* **canary:** add components for table elements ([42b7564](https://github.com/shawn-sandy/ideas/commit/42b7564b8dc8d74b18f418bd6dc50a2c7521ef8e))
+* **canary:** add components for table elements ([98c69c3](https://github.com/shawn-sandy/ideas/commit/98c69c3cc7c9b0d21d9b941ea29c3c3c94157217))
+* **canary:** scaffold for the table component ([2e6b867](https://github.com/shawn-sandy/ideas/commit/2e6b8673f98fd0660306a28ac8d17c8d1c6b0df2))
+* **canary:** table style ([222d755](https://github.com/shawn-sandy/ideas/commit/222d75553a0fb9ee38342a7f4865cefb03909778))
+* scaffold out grid module/component ([6fad70a](https://github.com/shawn-sandy/ideas/commit/6fad70ad8ad73bcbc44cb96d8abedc2dac49c060))
+
+
+
+
+
+# [2.5.0](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/first-paint@2.4.0...@shawnsandy/first-paint@2.5.0) (2022-02-27)
+
+
+### Bug Fixes
+
+* remove old html page resolve issue with marked ([b989c49](https://github.com/shawn-sandy/ideas/commit/b989c495ea9c9b0eacd2baac7b03007c130465fd))
+
+
+### Features
+
+* add links to cdn styles ([0938e2a](https://github.com/shawn-sandy/ideas/commit/0938e2a3d0e5f797ff4c5e66084274776b9269ec))
+* add links to cdn styles ([ddd2533](https://github.com/shawn-sandy/ideas/commit/ddd25335673f5669feac26da7ef7b104a8756656))
+
+
+
+
+
+
 # [2.4.0](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/first-paint@2.3.1...@shawnsandy/first-paint@2.4.0) (2022-02-26)
 
 

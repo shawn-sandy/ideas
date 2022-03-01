@@ -1,2 +1,3 @@
 @use "../modules/nav";
-@include nav.nav();
+
+@include nav.module();

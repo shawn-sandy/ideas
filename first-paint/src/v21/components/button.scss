@@ -1,2 +1,3 @@
 @use "../modules/button";
-@include button.button();
+
+@include button.module();
