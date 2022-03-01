@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.7.1](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/first-paint@2.7.0...@shawnsandy/first-paint@2.7.1) (2022-03-01)
+
+
+### Features
+
+* css colors properties ([b0cf307](https://github.com/shawn-sandy/ideas/commit/b0cf30795e5f5c5bb9065855dc9ed09ac297fa20))
+
+
+
+
+
 # [2.7.0](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/first-paint@2.6.0...@shawnsandy/first-paint@2.7.0) (2022-03-01)
 
 
