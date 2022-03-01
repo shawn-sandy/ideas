@@ -8,7 +8,7 @@
  */
 
 @mixin props() {
-  // * css custom properties
+  /*  css custom properties */
   --mx: var(--sm-x);
   --my: 0;
   --collapse: collapse;
@@ -30,7 +30,7 @@
   width: var(--tb-width, 100%);
   border: var(--tb-border, thin solid lightgray);
   display: var(--tb-dsp, table);
-  // box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.15); */
 
   thead tr {
     --text-align: left;
@@ -67,7 +67,6 @@
 }
 
 @mixin styles {
-  // * css style utilities
   @content;
 }
 
@@ -77,6 +76,7 @@
 @mixin module {
   table {
     @include rules;
-    @include styles;
   }
+
+  @include styles;
 }

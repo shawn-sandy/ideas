@@ -7,7 +7,12 @@ import {
   ComponentMeta
 } from "@storybook/react"
 
-import FpTable from "./fp-table"
+import FpTable, {
+  FpTableBody,
+  FpTableRow,
+  FpTableHead,
+  FpTableCell
+} from "./fp-table"
 
 export default {
   title: "Components/FpTable",
@@ -57,6 +62,34 @@ export const BasicTable: ComponentStory<
           <td>5150</td>
         </tr>
       </tbody>
+    </FpTable>
+  </section>
+)
+
+export const SimpleTable: ComponentStory<
+  typeof FpTable
+> = () => (
+  <section style={{ width: "100%", minWidth: "85vw" }}>
+    <FpTable>
+      <FpTableHead>
+        <FpTableRow>
+          <FpTableCell cell="td">First Name</FpTableCell>
+          <FpTableCell cell="td">Last Name</FpTableCell>
+          <FpTableCell cell="td">Age</FpTableCell>
+        </FpTableRow>
+      </FpTableHead>
+      <FpTableBody>
+        <FpTableRow>
+          <FpTableCell>John</FpTableCell>
+          <FpTableCell>Hannock</FpTableCell>
+          <FpTableCell>2000</FpTableCell>
+        </FpTableRow>
+        <FpTableRow>
+          <FpTableCell>Jane</FpTableCell>
+          <FpTableCell>Hannock</FpTableCell>
+          <FpTableCell>1900</FpTableCell>
+        </FpTableRow>
+      </FpTableBody>
     </FpTable>
   </section>
 )
