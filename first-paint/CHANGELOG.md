@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.7.0](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/first-paint@2.6.0...@shawnsandy/first-paint@2.7.0) (2022-03-01)
+
+
+### Features
+
+* remove comment ([1f2ac15](https://github.com/shawn-sandy/ideas/commit/1f2ac15e931bcd779f5cf4b010225ddea0722d90))
+
+
+
+
+
 # [2.6.0](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/first-paint@2.5.0...@shawnsandy/first-paint@2.6.0) (2022-03-01)
 
 
