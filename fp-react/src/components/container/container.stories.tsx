@@ -4,7 +4,7 @@ import {
   ComponentStory
 } from "@storybook/react"
 
-import Container from "./layout"
+import Container from "./container"
 
 export default {
   title: "Components/Containers",

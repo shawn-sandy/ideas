@@ -5,7 +5,7 @@ import {
   ComponentMeta,
   ComponentStory
 } from "@storybook/react"
-import { Card } from "./layout"
+import { Card } from "./container"
 
 export default {
   title: "Components/Containers",
