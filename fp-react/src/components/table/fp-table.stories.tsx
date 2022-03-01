@@ -15,7 +15,7 @@ import FpTable, {
 } from "./fp-table"
 
 export default {
-  title: "Components/FpTable",
+  title: "Components/FPTable",
   component: FpTable,
   layout: "centered",
   status: {
