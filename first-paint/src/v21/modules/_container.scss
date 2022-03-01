@@ -20,7 +20,7 @@
 @mixin rules() {
   @include props;
 
-  display: var(--bx-dsp, var(--dsp, block));
+  display: var(--bx-dsp, var(--dsp, flex));
   margin-inline: var(--bx-x, var(--mx, initial));
   margin-block: var(--bx-y, var(--my, initial));
   max-width: var(--bx-max-w, 100%);
