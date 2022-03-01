@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.6.0](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/first-paint@2.5.0...@shawnsandy/first-paint@2.6.0) (2022-03-01)
+
+
+### Features
+
+* **canary:** add components for table elements ([37382f9](https://github.com/shawn-sandy/ideas/commit/37382f9e0e8067e76bbcfc95c358b82bfd8f667a))
+* **canary:** add components for table elements ([42b7564](https://github.com/shawn-sandy/ideas/commit/42b7564b8dc8d74b18f418bd6dc50a2c7521ef8e))
+* **canary:** add components for table elements ([98c69c3](https://github.com/shawn-sandy/ideas/commit/98c69c3cc7c9b0d21d9b941ea29c3c3c94157217))
+* **canary:** scaffold for the table component ([2e6b867](https://github.com/shawn-sandy/ideas/commit/2e6b8673f98fd0660306a28ac8d17c8d1c6b0df2))
+* **canary:** table style ([222d755](https://github.com/shawn-sandy/ideas/commit/222d75553a0fb9ee38342a7f4865cefb03909778))
+* scaffold out grid module/component ([6fad70a](https://github.com/shawn-sandy/ideas/commit/6fad70ad8ad73bcbc44cb96d8abedc2dac49c060))
+
+
+
+
+
 # [2.5.0](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/first-paint@2.4.0...@shawnsandy/first-paint@2.5.0) (2022-02-27)
 
 
