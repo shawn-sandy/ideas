@@ -21,7 +21,7 @@ export default {
 
 export const FPGrid: ComponentStory<typeof Grid> = () => (
   <Grid>
-    <span role="gridcell">
+    <div role="gridcell">
       <h3>Grid col</h3>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing
@@ -33,8 +33,8 @@ export const FPGrid: ComponentStory<typeof Grid> = () => (
       <a href="http://www.w3.org/TR/wai-aria-1.1/">
         ARIA 1.1 Specification
       </a>
-    </span>
-    <span role="gridcell">
+    </div>
+    <div role="gridcell">
       <h3>Grid col</h3>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing
@@ -46,8 +46,8 @@ export const FPGrid: ComponentStory<typeof Grid> = () => (
       <a href="https://www.w3.org/TR/core-aam-1.1/">
         Core Accessibility API Mappings 1.1
       </a>
-    </span>
-    <span role="gridcell">
+    </div>
+    <div role="gridcell">
       <h3>Grid col</h3>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing
@@ -59,8 +59,8 @@ export const FPGrid: ComponentStory<typeof Grid> = () => (
       <a href="https://www.w3.org/WAI/intro/aria.php">
         WAI-ARIA Overview
       </a>
-    </span>
-    <span role="gridcell">
+    </div>
+    <div role="gridcell">
       <h3>Grid col</h3>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing
@@ -72,6 +72,6 @@ export const FPGrid: ComponentStory<typeof Grid> = () => (
       <a href="https://www.w3.org/WAI/intro/wcag">
         WCAG Overview
       </a>
-    </span>
+    </div>
   </Grid>
 )

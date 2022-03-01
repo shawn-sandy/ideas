@@ -23,9 +23,9 @@ export const GridCell: React.FC<GridProps> = ({
   ...props
 }) => {
   return (
-    <span role="gridcell" {...props}>
+    <div role="gridcell" {...props}>
       {children}
-    </span>
+    </div>
   )
 }
 
