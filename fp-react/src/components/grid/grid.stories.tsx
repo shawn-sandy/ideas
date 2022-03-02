@@ -30,9 +30,6 @@ export const FPGrid: ComponentStory<typeof Grid> = () => (
         omnis sit autem temporibus ipsum maxime dignissimos
         id.
       </p>
-      <a href="http://www.w3.org/TR/wai-aria-1.1/">
-        ARIA 1.1 Specification
-      </a>
     </div>
     <div role="gridcell">
       <h3>Grid col</h3>
@@ -43,9 +40,6 @@ export const FPGrid: ComponentStory<typeof Grid> = () => (
         omnis sit autem temporibus ipsum maxime dignissimos
         id.
       </p>
-      <a href="https://www.w3.org/TR/core-aam-1.1/">
-        Core Accessibility API Mappings 1.1
-      </a>
     </div>
     <div role="gridcell">
       <h3>Grid col</h3>
@@ -56,9 +50,6 @@ export const FPGrid: ComponentStory<typeof Grid> = () => (
         omnis sit autem temporibus ipsum maxime dignissimos
         id.
       </p>
-      <a href="https://www.w3.org/WAI/intro/aria.php">
-        WAI-ARIA Overview
-      </a>
     </div>
     <div role="gridcell">
       <h3>Grid col</h3>
@@ -69,9 +60,6 @@ export const FPGrid: ComponentStory<typeof Grid> = () => (
         omnis sit autem temporibus ipsum maxime dignissimos
         id.
       </p>
-      <a href="https://www.w3.org/WAI/intro/wcag">
-        WCAG Overview
-      </a>
     </div>
   </Grid>
 )
