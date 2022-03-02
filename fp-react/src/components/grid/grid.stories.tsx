@@ -63,3 +63,57 @@ export const FPGrid: ComponentStory<typeof Grid> = () => (
     </div>
   </Grid>
 )
+
+const Template: ComponentStory<typeof Grid> = (args) => (
+  <Grid>
+    <div role="gridcell">
+      <h3>Grid col</h3>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing
+        elit. Quod nulla totam dolorem nemo facere ex
+        expedita illum laboriosam sit. Ea laboriosam rem
+        omnis sit autem temporibus ipsum maxime dignissimos
+        id.
+      </p>
+    </div>
+    <div role="gridcell">
+      <h3>Grid col</h3>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing
+        elit. Quod nulla totam dolorem nemo facere ex
+        expedita illum laboriosam sit. Ea laboriosam rem
+        omnis sit autem temporibus ipsum maxime dignissimos
+        id.
+      </p>
+    </div>
+    <div role="gridcell">
+      <h3>Grid col</h3>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing
+        elit. Quod nulla totam dolorem nemo facere ex
+        expedita illum laboriosam sit. Ea laboriosam rem
+        omnis sit autem temporibus ipsum maxime dignissimos
+        id.
+      </p>
+    </div>
+    <div role="gridcell">
+      <h3>Grid col</h3>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing
+        elit. Quod nulla totam dolorem nemo facere ex
+        expedita illum laboriosam sit. Ea laboriosam rem
+        omnis sit autem temporibus ipsum maxime dignissimos
+        id.
+      </p>
+    </div>
+  </Grid>
+)
+
+//👇 Each story then reuses that template
+export const StyledGrid = Template.bind({})
+// Primary.args = { backgroundColor: "#ff0", label: "Example" }
+StyledGrid.args = {
+  styles: {
+    "--grid-count": "2"
+  }
+}
