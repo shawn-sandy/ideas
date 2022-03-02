@@ -64,8 +64,10 @@ export const FPGrid: ComponentStory<typeof Grid> = () => (
   </Grid>
 )
 
-const Template: ComponentStory<typeof Grid> = (args) => (
-  <Grid>
+const Template: ComponentStory<typeof Grid> = ({
+  ...args
+}) => (
+  <Grid {...args}>
     <div role="gridcell">
       <h3>Grid col</h3>
       <p>
