@@ -25,9 +25,9 @@
   margin-block: var(--bx-y, var(--my, initial));
   flex-direction: var(--bx-dir, column);
   max-width: var(--bx-max-w, 100%);
-  width: var(--bx-w, var(--w, 100%));
+  // min-width: var(--bx-min-w, 100%);
+  width: var(--bx-w, var(--w, auto));
   height: var(--bx-h, var(--h, auto));
-  min-width: var(--bx-min-w, 100%);
 
   @content;
 }
