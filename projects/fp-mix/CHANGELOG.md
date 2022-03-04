@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.34](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/fp-mix@0.10.33...@shawnsandy/fp-mix@0.10.34) (2022-03-04)
+
+**Note:** Version bump only for package @shawnsandy/fp-mix
+
+
+
+
+
 ## [0.10.33](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/fp-mix@0.10.32...@shawnsandy/fp-mix@0.10.33) (2022-02-27)
 
 **Note:** Version bump only for package @shawnsandy/fp-mix

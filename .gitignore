@@ -111,3 +111,4 @@ projects/fp-mix/builds/
 .dccache
 /plopfile.js
 /.stylelintcache
+fp-react/lib/
