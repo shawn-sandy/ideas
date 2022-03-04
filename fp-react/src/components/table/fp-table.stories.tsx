@@ -69,7 +69,7 @@ export const BasicTable: ComponentStory<
 export const SimpleTable: ComponentStory<
   typeof FpTable
 > = () => (
-  <section style={{ minWidth: "100%" }}>
+  <section style={{ width: "min(80vw, 100vw)" }}>
     <FpTable>
       <FpTableHead>
         <FpTableRow>

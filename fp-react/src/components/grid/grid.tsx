@@ -2,16 +2,29 @@ import * as React from "react"
 import "./grid.scss"
 
 export interface GridProps {
+  /**
+   * The grid's children elements.
+   */
   children?: React.ReactNode
+  /**
+   * Grid styles object
+   */
+  styles?: object
+  /**
+   * Class names
+   */
+  classes?: string
 }
 
 const Grid: React.FC<GridProps> = ({
   children,
+  styles,
+  classes,
   ...props
 }) => {
   return (
     <>
-      <section role="grid" {...props}>
+      <section role="grid" style={styles} {...props}>
         <div role="row">{children}</div>
       </section>
     </>
