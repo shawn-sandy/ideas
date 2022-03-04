@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from './button'
+import './button.scss'
 
 export default {
   title: 'Elements/Buttons',

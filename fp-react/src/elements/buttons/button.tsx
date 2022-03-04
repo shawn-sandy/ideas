@@ -16,17 +16,27 @@ const Button = ({
   click,
   ...props
 }: ButtonProps) => {
+  const buttonStyles = {
+    paddingInline: "1.5rem",
+    paddingBlock: ".5rem",
+    borderRadius: ".2rem",
+    fontSize: "9rem",
+    display: "inline-flex",
+    placeContent: "center",
+    justifyContent: "center"
+  }
+
   const demoClick = () => console.log(`Clicked ${children}`)
 
   return (
     <button
       type={buttonType}
       style={styles}
-      onClick={click || demoClick}
+      onClick={click ?? demoClick}
       {...props}
     >
       {" "}
-      {children || "Buttons"}
+      {children}
     </button>
   )
 }
