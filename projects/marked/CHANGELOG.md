@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.15](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/marked@0.2.14...@shawnsandy/marked@0.2.15) (2022-03-04)
+
+**Note:** Version bump only for package @shawnsandy/marked
+
+
+
+
+
 ## [0.2.14](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/marked@0.2.13...@shawnsandy/marked@0.2.14) (2022-02-27)
 
 **Note:** Version bump only for package @shawnsandy/marked

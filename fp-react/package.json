@@ -1,6 +1,6 @@
 {
   "name": "@shawnsandy/fp-react",
-  "version": "0.7.2",
+  "version": "0.7.3",
   "private": true,
   "publishConfig": {
     "access": "public"
@@ -63,7 +63,7 @@
   "devDependencies": {
     "@axe-core/react": "^4.4.0",
     "@etchteam/storybook-addon-status": "^4.2.0",
-    "@shawnsandy/first-paint": "^2.7.2",
+    "@shawnsandy/first-paint": "^2.7.3",
     "@storybook/addon-a11y": "^6.4.19",
     "@storybook/addon-actions": "^6.4.19",
     "@storybook/addon-essentials": "^6.4.19",
