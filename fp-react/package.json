@@ -35,7 +35,8 @@
     "eject": "react-scripts eject",
     "storybook-docs": "start-storybook --docs --no-manager-cache",
     "build-storybook": "build-storybook -o ./www/components",
-    "compile": "rimraf && rollup -c"
+    "compile": "rollup -c",
+    "compile:clean": "rimraf lib && rollup -c"
   },
   "eslintConfig": {
     "extends": [
