@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.36](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/vue-services@0.2.35...@shawnsandy/vue-services@0.2.36) (2022-03-05)
+
+**Note:** Version bump only for package @shawnsandy/vue-services
+
+
+
+
+
 ## [0.2.35](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/vue-services@0.2.34...@shawnsandy/vue-services@0.2.35) (2022-03-04)
 
 **Note:** Version bump only for package @shawnsandy/vue-services

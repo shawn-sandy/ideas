@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.15](https://github.com/shawn-sandy/idea/compare/@shawnsandy/ideas@0.3.14...@shawnsandy/ideas@0.3.15) (2022-03-05)
+
+**Note:** Version bump only for package @shawnsandy/ideas
+
+
+
+
+
 ## [0.3.14](https://github.com/shawn-sandy/idea/compare/@shawnsandy/ideas@0.3.13...@shawnsandy/ideas@0.3.14) (2022-03-04)
 
 **Note:** Version bump only for package @shawnsandy/ideas

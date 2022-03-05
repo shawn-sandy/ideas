@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.5](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/fp-react@0.7.4...@shawnsandy/fp-react@0.7.5) (2022-03-05)
+
+
+### Features
+
+* **beta:** default styles for the button ([da1d191](https://github.com/shawn-sandy/ideas/commit/da1d1917e1724a674bc6d3a8a58976844e9f1a07))
+* default buttons styles ([a1ecc33](https://github.com/shawn-sandy/ideas/commit/a1ecc33a58c14be022927d2a287b82e0779ee444))
+* storybook args styles ([67797a9](https://github.com/shawn-sandy/ideas/commit/67797a9548f61c6770a61bde74a275fcaaf0072b))
+* **wip:** storybook args ([30bf9e7](https://github.com/shawn-sandy/ideas/commit/30bf9e731189524bedbf60637861c0f9aa774b04))
+
+
+
+
+
 ## [0.7.4](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/fp-react@0.7.3...@shawnsandy/fp-react@0.7.4) (2022-03-04)
 
 **Note:** Version bump only for package @shawnsandy/fp-react
