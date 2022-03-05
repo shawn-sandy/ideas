@@ -77,6 +77,7 @@
     "postcss-cli": "^9.1.0",
     "postcss-modules": "^4.3.1",
     "posthtml-include": "^1.7.2",
+    "rimraf": "^3.0.2",
     "sass": "^1.49.9",
     "trash-cli": "^5.0.0"
   },
@@ -88,7 +89,8 @@
     "not dead"
   ],
   "dependencies": {
-    "modern-css-reset": "^1.4.0"
+    "modern-css-reset": "^1.4.0",
+    "rimraf": "^3.0.2"
   },
   "gitHead": "5ceb95c74b18da641d388b96660617599f4f71f7"
 }

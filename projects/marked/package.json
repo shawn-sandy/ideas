@@ -33,7 +33,11 @@
     "url": "https://github.com/shawn-sandy/ideas/issues"
   },
   "dependencies": {
-    "concurrently": "^6.2.1"
+    "concurrently": "^6.2.1",
+    "rimraf": "^3.0.2"
   },
-  "gitHead": "5ceb95c74b18da641d388b96660617599f4f71f7"
+  "gitHead": "5ceb95c74b18da641d388b96660617599f4f71f7",
+  "devDependencies": {
+    "rimraf": "^3.0.2"
+  }
 }
