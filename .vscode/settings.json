@@ -52,7 +52,8 @@
     "wip",
     "alpha",
     "scss",
-    "canary"
+    "canary",
+    "beta"
   ],
   "cssVariables.lookupFiles": [
     "projects/first-paint/src/v2"

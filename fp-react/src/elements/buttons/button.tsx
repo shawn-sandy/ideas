@@ -1,6 +1,5 @@
 import React from "react"
 import PropTypes from "prop-types"
-// import "./button.scss"
 
 /**
  * Button Element.
@@ -12,18 +11,17 @@ import PropTypes from "prop-types"
 const Button = ({
   buttonType = "button",
   styles = {},
+  classes,
   children = "Default Button",
   click,
   ...props
 }: ButtonProps) => {
-  const buttonStyles = {
-    paddingInline: "1.5rem",
-    paddingBlock: ".5rem",
-    borderRadius: ".2rem",
-    fontSize: "9rem",
-    display: "inline-flex",
-    placeContent: "center",
-    justifyContent: "center"
+  const defStyles = {
+    paddingInline: "var(--btn-px, 1.4rem)",
+    paddingBlock: "var(--btn-py, 0.9rem)",
+    display: "var(--btn-dsp, inline-flex)",
+    placeItems: "var(--btn-place, center)",
+    justifyContent: "var(--btn-justify, center)"
   }
 
   const demoClick = () => console.log(`Clicked ${children}`)
@@ -31,8 +29,9 @@ const Button = ({
   return (
     <button
       type={buttonType}
-      style={styles}
+      style={{ ...defStyles, ...styles }}
       onClick={click ?? demoClick}
+      className={classes}
       {...props}
     >
       {" "}
@@ -43,12 +42,30 @@ const Button = ({
 export default Button
 
 type ButtonProps = {
+  /**
+   * Button label/content
+   */
   children: React.ReactNode
-  className?: string
+  /**
+   * Button classes
+   */
+  classes?: string
+  /**
+   * Set button as disables
+   */
   disabled?: boolean
-  buttonType?: "button" | "submit" | "reset" | undefined
+  /**
+   * button type
+   */
+  buttonType?: "button" | "submit" | "reset"
+  /**
+   * button onClick handler
+   */
   click?: () => void
-  styles?: React.CSSProperties
+  /**
+   * button styles and props
+   */
+  styles?: object
 }
 
 Button.propTypes = {
