@@ -1,5 +1,4 @@
 import React from "react"
-import PropTypes from "prop-types"
 
 /**
  * Button Element.
@@ -66,25 +65,4 @@ type ButtonProps = {
    * button styles and props
    */
   styles?: object
-}
-
-Button.propTypes = {
-  /**
-   * Button content - use html, text
-   */
-  children: PropTypes.any,
-  /**
-   * Button onClick function - use to override default click handler
-   */
-  click: PropTypes.func,
-  /**
-   * Set the Button type - default is 'button'
-   */
-  type: PropTypes.oneOf(["button", "submit", "reset"]),
-  /**
-   * Set the Button styles w/style attribute
-   * `{'--btn-bg': 'red', '--btn-color': 'white'}`
-   * changes the button background and text color
-   */
-  styles: PropTypes.object
 }
