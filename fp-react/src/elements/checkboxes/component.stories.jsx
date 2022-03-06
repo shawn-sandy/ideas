@@ -1,5 +1,6 @@
 import React from 'react'
 import { Label } from './checkbox'
+import "./checkbox.scss"
 
 import { InputField } from './checkbox.stories'
 

@@ -71,7 +71,7 @@
 }
 
 @mixin module {
-  :where(main, section, article, footer, header, div, table),
+  :where(main, section, article, footer, header, table),
   [style*="--bx"] {
     @include rules;
   }

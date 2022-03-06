@@ -33,12 +33,15 @@
 
   [role="row"],
   [style*="--row"] {
-    display: grid;
-    grid-template-columns: repeat(
-      auto-fill,
-      minmax(
-        max(var(--grid-min-width), var(--grid-max-width)),
-        1fr
+    display: var(--grid-dsp, grid);
+    grid-template-columns: var(
+      --grid-cols,
+      repeat(
+        auto-fill,
+        minmax(
+          max(var(--grid-min-width), var(--grid-max-width)),
+          1fr
+        )
       )
     );
     grid-gap: var(--grid-gap);
