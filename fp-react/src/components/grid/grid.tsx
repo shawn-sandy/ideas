@@ -24,9 +24,8 @@ const Grid: React.FC<GridProps> = ({
   const gridStyles = {
     display: "var(--gird-dsp, grid)",
     gridTemplateColumns:
-      "var(--gird-cols, repeat(auto-fill, 200px))",
-    gridGap: "var(--gird-gap, 1em)",
-    maxWidth: "var(--gird-max-width, 100vw)"
+      "var(--gird-cols, repeat(auto-fill, calc(100% / 4)))",
+    gridGap: "var(--gird-gap, 1em)"
   }
   return (
     <>
