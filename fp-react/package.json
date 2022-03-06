@@ -6,7 +6,7 @@
     "access": "public"
   },
   "author": "shawnsandy <shawnsandy04@gmail.com>",
-  "homepage": "https://github.com/shawn-sandy/idea#readme",
+  "homepage": "https://github.com/shawn-sandy/ideas/tree/main/fp-react",
   "license": "MIT",
   "dependencies": {
     "@shawnsandy/first-paint": "^2.7.5",
