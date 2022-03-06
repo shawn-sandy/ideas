@@ -41,8 +41,17 @@ export const Container: React.FC<LayoutProps> = ({
   ...props
 }) => {
   const Tag: any = tag
+  const defStyles = {
+    display: "var(--container-dsp, flex)",
+    flexDirection: "var(--container-direction, column)"
+  }
+
   return (
-    <Tag className={classes} style={styles} {...props}>
+    <Tag
+      className={classes}
+      style={{ ...defStyles, ...styles }}
+      {...props}
+    >
       {children}
     </Tag>
   )
