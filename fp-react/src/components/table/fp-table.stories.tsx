@@ -13,6 +13,7 @@ import FpTable, {
   FpTableHead,
   FpTableCell
 } from "./fp-table"
+import "./table.scss"
 
 export default {
   title: "Components/FPTable",
