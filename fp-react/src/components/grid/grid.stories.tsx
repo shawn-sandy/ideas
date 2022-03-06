@@ -68,7 +68,7 @@ export const FPGrid: ComponentStory<typeof Grid> = () => (
 const Template: ComponentStory<typeof Grid> = ({
   ...args
 }) => (
-  <section style={{ width: "min(80vw, 100vw)" }}>
+  <section style={{ maxWidth: "min(80vw, 100vw)" }}>
     <Grid {...args}>
       <div role="gridcell">
         <h3>Grid col</h3>
