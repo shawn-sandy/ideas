@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.7.5](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/first-paint@2.7.4...@shawnsandy/first-paint@2.7.5) (2022-03-06)
+
+
+### Features
+
+* default styles for grid, checkbox ([2acf47e](https://github.com/shawn-sandy/ideas/commit/2acf47ecb3224fc8c42903b79d380c55d171b00d))
+
+
+
+
+
 ## [2.7.4](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/first-paint@2.7.3...@shawnsandy/first-paint@2.7.4) (2022-03-05)
 
 

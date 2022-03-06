@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.6](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/fp-react@0.7.5...@shawnsandy/fp-react@0.7.6) (2022-03-06)
+
+
+### Features
+
+* add a default grid styles ([ef03f8a](https://github.com/shawn-sandy/ideas/commit/ef03f8ad141018ebd9aa605767eb0c668b60d650))
+* add def container component styles ([0e335a6](https://github.com/shawn-sandy/ideas/commit/0e335a658ad8652ec7b560543829fa90407b01ca))
+* **beta:** add container styles ([1d0c9a7](https://github.com/shawn-sandy/ideas/commit/1d0c9a7fa3de0297c16f0158c8dccc82ffdc9b76))
+* default styles for grid, checkbox ([2acf47e](https://github.com/shawn-sandy/ideas/commit/2acf47ecb3224fc8c42903b79d380c55d171b00d))
+* defaults component style -- container ([2c7831a](https://github.com/shawn-sandy/ideas/commit/2c7831a462df82c8209fa3216207c429e4118a8f))
+
+
+
+
+
 ## [0.7.5](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/fp-react@0.7.4...@shawnsandy/fp-react@0.7.5) (2022-03-05)
 
 
