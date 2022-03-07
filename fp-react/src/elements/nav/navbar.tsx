@@ -1,5 +1,4 @@
 import * as React from "react"
-import "./navbar.scss"
 
 export interface NavbarProps {
   /**
