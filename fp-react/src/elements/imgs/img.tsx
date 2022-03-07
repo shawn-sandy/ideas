@@ -56,8 +56,8 @@ const FpImg: React.VFC<FpImgProps> = ({
       loading={loading}
       alt={alt}
       aria-label={ariaLabel}
-      onLoad={imgLoaded || _onLoad}
-      onError={imgError || _onError}
+      onLoad={imgLoaded ?? _onLoad}
+      onError={imgError ?? _onError}
       {...props}
     />
   )
