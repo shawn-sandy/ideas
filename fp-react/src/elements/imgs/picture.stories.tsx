@@ -5,6 +5,7 @@ import {
   ComponentStory
 } from "@storybook/react"
 import { Caption } from "./img-caption.stories"
+import "./img.scss"
 
 export default {
   title: "Elements/Media/Images",

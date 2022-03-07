@@ -17,10 +17,11 @@ const Button = ({
 }: ButtonProps) => {
   const defStyles = {
     paddingInline: "var(--btn-px, 1.4rem)",
-    paddingBlock: "var(--btn-py, 0.9rem)",
+    paddingBlock: "var(--btn-py, 0.85rem)",
     display: "var(--btn-dsp, inline-flex)",
     placeItems: "var(--btn-place, center)",
-    justifyContent: "var(--btn-justify, center)"
+    justifyContent: "var(--btn-justify, center)",
+    cursor: "var(--btn-cursor, pointer)"
   }
 
   const demoClick = () => console.log(`Clicked ${children}`)

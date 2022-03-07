@@ -1,5 +1,4 @@
 import * as React from "react"
-import "./img.scss"
 
 /**
  * `FpImage` React Image element
@@ -42,8 +41,10 @@ const FpImg: React.VFC<FpImgProps> = ({
   }
 
   const defStyles = {
-    "--img-obj-fit": `${fit}`,
-    "--img-ratio": `${ratio}`
+    objectFit: `var(--img-fit, ${fit})`,
+    aspectRation: `var(--img-ratio, ${ratio})`,
+    width: "var(--img-w, 100%)",
+    height: "var(--img-h, auto)"
   }
 
   return (

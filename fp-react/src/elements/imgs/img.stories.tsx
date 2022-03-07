@@ -4,6 +4,7 @@ import {
   ComponentStory
 } from "@storybook/react"
 import FpImg from "./img"
+import "./img.scss"
 
 export default {
   /**
