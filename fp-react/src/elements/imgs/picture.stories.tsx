@@ -1,5 +1,5 @@
 import React from "react"
-import { FpFig } from "./img"
+import FpFig from "./figure"
 import {
   ComponentMeta,
   ComponentStory
