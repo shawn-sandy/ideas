@@ -9,6 +9,9 @@ import FpTable, {
   FpTableCell
 } from "./components/table/fp-table"
 import FpFig, { FpCaption } from "./elements/imgs/figure"
+import Details, {
+  Summary
+} from "./elements/details-summary/details-summary"
 
 export {
   Button,
@@ -22,5 +25,7 @@ export {
   FpTableCell,
   FpImg,
   FpFig,
-  FpCaption
+  FpCaption,
+  Details,
+  Summary
 }
