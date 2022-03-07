@@ -137,13 +137,13 @@ export const FpFig: React.FC<FpFigProps> = ({
   )
 }
 
-type FpCaptionProps = {
-  children: React.ReactNode
-  classes?: string
-  styles?: any
-}
+// type FpCaptionProps = {
+//   children: React.ReactNode
+//   classes?: string
+//   styles?: any
+// }
 
-export const FpCaption: React.FC<FpCaptionProps> = ({
+export const FpCaption: React.FC<FpFigProps> = ({
   children,
   styles,
   classes,

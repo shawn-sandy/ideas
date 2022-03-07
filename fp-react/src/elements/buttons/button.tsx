@@ -17,7 +17,7 @@ const Button = ({
 }: ButtonProps) => {
   const defStyles = {
     paddingInline: "var(--btn-px, 1.4rem)",
-    paddingBlock: "var(--btn-py, 0.85rem)",
+    paddingBlock: "var(--btn-py, 0.8rem)",
     display: "var(--btn-dsp, inline-flex)",
     placeItems: "var(--btn-place, center)",
     justifyContent: "var(--btn-justify, center)",
