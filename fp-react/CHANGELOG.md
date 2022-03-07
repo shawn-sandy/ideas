@@ -3,6 +3,88 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.10](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/fp-react@0.7.9...@shawnsandy/fp-react@0.7.10) (2022-03-07)
+
+
+### Bug Fixes
+
+* resolve issue with stylesheets imports ([2b904a3](https://github.com/shawn-sandy/ideas/commit/2b904a319956e34ba7a4e57710767dfa5ed2ea61))
+
+
+### Features
+
+* add default styles to navbar component ([9e6a591](https://github.com/shawn-sandy/ideas/commit/9e6a591c383d020b30a219d305259407754709b9))
+* add default summary styles ([556c65e](https://github.com/shawn-sandy/ideas/commit/556c65e859e565f3562e673f44b3adbeb1bb5f20))
+* add default summary styles ([8a20aac](https://github.com/shawn-sandy/ideas/commit/8a20aac6d3e78584e987199b150fb6cad9eadec8))
+* add details/summary component to package ([1e1777f](https://github.com/shawn-sandy/ideas/commit/1e1777fd1f8abfda24f915714d0fb79c4706cf24))
+* add details/summary component to package ([6f4c425](https://github.com/shawn-sandy/ideas/commit/6f4c425d1f8ac5b58ff3779594f6cd585237e893))
+
+
+
+
+
+## [0.7.9](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/fp-react@0.7.8...@shawnsandy/fp-react@0.7.9) (2022-03-07)
+
+**Note:** Version bump only for package @shawnsandy/fp-react
+
+
+
+
+
+## [0.7.8](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/fp-react@0.7.7...@shawnsandy/fp-react@0.7.8) (2022-03-07)
+
+
+### Features
+
+* add default styles to image component ([4490d5d](https://github.com/shawn-sandy/ideas/commit/4490d5dbf883488e52e81e79d3693df503d59c59))
+* add FpTable to component exports ([0910124](https://github.com/shawn-sandy/ideas/commit/0910124a0d2f45af05744ec081fce217fc86e4b7))
+* **alpha:** add default styles for table component ([837cdb1](https://github.com/shawn-sandy/ideas/commit/837cdb1d0222c94a6e1fb96d175899b7799ed9bb))
+* default styles fro image/figure components ([fe910ba](https://github.com/shawn-sandy/ideas/commit/fe910baa22febe8dc5a2e428a90a9c45a7ae660f))
+* img export ([96513f2](https://github.com/shawn-sandy/ideas/commit/96513f237760e870e465b39a97f628bd2d1790ea))
+* move figure  from inside img ([4035811](https://github.com/shawn-sandy/ideas/commit/4035811aa74aaf86bed8ab76f94f7cd67b96f307))
+* remove figure elements from Img component ([57e0c4f](https://github.com/shawn-sandy/ideas/commit/57e0c4f95ea05ac335610e0cf6c74d35afac2828))
+
+
+
+
+
+## [0.7.7](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/fp-react@0.7.6...@shawnsandy/fp-react@0.7.7) (2022-03-06)
+
+**Note:** Version bump only for package @shawnsandy/fp-react
+
+
+
+
+
+## [0.7.6](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/fp-react@0.7.5...@shawnsandy/fp-react@0.7.6) (2022-03-06)
+
+
+### Features
+
+* add a default grid styles ([ef03f8a](https://github.com/shawn-sandy/ideas/commit/ef03f8ad141018ebd9aa605767eb0c668b60d650))
+* add def container component styles ([0e335a6](https://github.com/shawn-sandy/ideas/commit/0e335a658ad8652ec7b560543829fa90407b01ca))
+* **beta:** add container styles ([1d0c9a7](https://github.com/shawn-sandy/ideas/commit/1d0c9a7fa3de0297c16f0158c8dccc82ffdc9b76))
+* default styles for grid, checkbox ([2acf47e](https://github.com/shawn-sandy/ideas/commit/2acf47ecb3224fc8c42903b79d380c55d171b00d))
+* defaults component style -- container ([2c7831a](https://github.com/shawn-sandy/ideas/commit/2c7831a462df82c8209fa3216207c429e4118a8f))
+
+
+
+
+
+## [0.7.5](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/fp-react@0.7.4...@shawnsandy/fp-react@0.7.5) (2022-03-05)
+
+
+### Features
+
+* **beta:** default styles for the button ([da1d191](https://github.com/shawn-sandy/ideas/commit/da1d1917e1724a674bc6d3a8a58976844e9f1a07))
+* default buttons styles ([a1ecc33](https://github.com/shawn-sandy/ideas/commit/a1ecc33a58c14be022927d2a287b82e0779ee444))
+* storybook args styles ([67797a9](https://github.com/shawn-sandy/ideas/commit/67797a9548f61c6770a61bde74a275fcaaf0072b))
+* **wip:** storybook args ([30bf9e7](https://github.com/shawn-sandy/ideas/commit/30bf9e731189524bedbf60637861c0f9aa774b04))
+
+
+
+
+
 ## [0.7.4](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/fp-react@0.7.3...@shawnsandy/fp-react@0.7.4) (2022-03-04)
 
 **Note:** Version bump only for package @shawnsandy/fp-react

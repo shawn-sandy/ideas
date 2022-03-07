@@ -1,5 +1,6 @@
 /** @format */
 import React from "react"
+import "./grid.scss"
 
 import {
   ComponentStory,
@@ -12,7 +13,7 @@ export default {
   title: "Components/Grids",
   component: Grid,
   parameters: {
-    layout: "padded",
+    layout: "fullscreen",
     status: {
       type: "beta"
     }
@@ -67,48 +68,50 @@ export const FPGrid: ComponentStory<typeof Grid> = () => (
 const Template: ComponentStory<typeof Grid> = ({
   ...args
 }) => (
-  <Grid {...args}>
-    <div role="gridcell">
-      <h3>Grid col</h3>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing
-        elit. Quod nulla totam dolorem nemo facere ex
-        expedita illum laboriosam sit. Ea laboriosam rem
-        omnis sit autem temporibus ipsum maxime dignissimos
-        id.
-      </p>
-    </div>
-    <div role="gridcell">
-      <h3>Grid col</h3>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing
-        elit. Quod nulla totam dolorem nemo facere ex
-        expedita illum laboriosam sit. Ea laboriosam rem
-        omnis sit autem temporibus ipsum maxime dignissimos
-        id.
-      </p>
-    </div>
-    <div role="gridcell">
-      <h3>Grid col</h3>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing
-        elit. Quod nulla totam dolorem nemo facere ex
-        expedita illum laboriosam sit. Ea laboriosam rem
-        omnis sit autem temporibus ipsum maxime dignissimos
-        id.
-      </p>
-    </div>
-    <div role="gridcell">
-      <h3>Grid col</h3>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing
-        elit. Quod nulla totam dolorem nemo facere ex
-        expedita illum laboriosam sit. Ea laboriosam rem
-        omnis sit autem temporibus ipsum maxime dignissimos
-        id.
-      </p>
-    </div>
-  </Grid>
+  <section style={{ maxWidth: "min(80vw, 100vw)" }}>
+    <Grid {...args}>
+      <div role="gridcell">
+        <h3>Grid col</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Quod nulla totam dolorem nemo
+          facere ex expedita illum laboriosam sit. Ea
+          laboriosam rem omnis sit autem temporibus ipsum
+          maxime dignissimos id.
+        </p>
+      </div>
+      <div role="gridcell">
+        <h3>Grid col</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Quod nulla totam dolorem nemo
+          facere ex expedita illum laboriosam sit. Ea
+          laboriosam rem omnis sit autem temporibus ipsum
+          maxime dignissimos id.
+        </p>
+      </div>
+      <div role="gridcell">
+        <h3>Grid col</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Quod nulla totam dolorem nemo
+          facere ex expedita illum laboriosam sit. Ea
+          laboriosam rem omnis sit autem temporibus ipsum
+          maxime dignissimos id.
+        </p>
+      </div>
+      <div role="gridcell">
+        <h3>Grid col</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Quod nulla totam dolorem nemo
+          facere ex expedita illum laboriosam sit. Ea
+          laboriosam rem omnis sit autem temporibus ipsum
+          maxime dignissimos id.
+        </p>
+      </div>
+    </Grid>
+  </section>
 )
 
 //👇 Each story then reuses that template

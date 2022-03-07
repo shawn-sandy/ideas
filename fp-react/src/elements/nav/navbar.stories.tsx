@@ -6,6 +6,7 @@ import {
   ComponentStory
 } from "@storybook/react"
 import Navbar from "./navbar"
+import "./navbar.scss"
 
 export default {
   title: "Elements/Nav/Navbar",

@@ -1,5 +1,4 @@
 import * as React from "react"
-import "./grid.scss"
 
 export interface GridProps {
   /**
@@ -22,10 +21,21 @@ const Grid: React.FC<GridProps> = ({
   classes,
   ...props
 }) => {
+  const gridStyles = {
+    display: "var(--gird-dsp, grid)",
+    gridTemplateColumns:
+      "var(--gird-cols, repeat(auto-fill, calc(100% / 4)))",
+    gridGap: "var(--gird-gap, 1em)"
+  }
   return (
     <>
-      <section role="grid" style={styles} {...props}>
-        <div role="row">{children}</div>
+      <section role="grid" {...props}>
+        <div
+          role="row"
+          style={{ ...gridStyles, ...styles }}
+        >
+          {children}
+        </div>
       </section>
     </>
   )

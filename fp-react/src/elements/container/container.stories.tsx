@@ -5,6 +5,7 @@ import {
 } from "@storybook/react"
 
 import Container from "./container"
+import "./Container.scss"
 
 export default {
   title: "Components/Containers",

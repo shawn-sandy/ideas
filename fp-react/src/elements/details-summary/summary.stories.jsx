@@ -1,5 +1,6 @@
 import React from 'react'
 import { Summary } from './details-summary'
+import "./details-summary.scss"
 
 export default {
   title: 'Elements/Details/Summary',

@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import Container from "../components/container/container"
+import Container from "../elements/container/container"
 
 /**
  * landing layout component for a landing page

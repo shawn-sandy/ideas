@@ -30,9 +30,7 @@
   border: var(--btn-border, none);
   border-radius: var(--btn-radius, 0.15rem);
   text-decoration: var(--btn-deco, none);
-  // cursor: var(--btn-cursor, pointer);
   transition: all 0.2s ease !important;
-  // line-height: 1;
 
   @content;
 }

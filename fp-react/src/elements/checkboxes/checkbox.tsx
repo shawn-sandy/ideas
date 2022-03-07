@@ -1,5 +1,5 @@
 import React from "react"
-import "./checkbox.scss"
+
 
 type LabelProps = {
   children: React.ReactNode

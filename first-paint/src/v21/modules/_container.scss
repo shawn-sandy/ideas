@@ -24,8 +24,10 @@
   margin-inline: var(--bx-x, var(--mx, initial));
   margin-block: var(--bx-y, var(--my, initial));
   flex-direction: var(--bx-dir, column);
-  max-width: var(--bx-max-w, 100%);
-  // min-width: var(--bx-min-w, 100%);
+  max-width: var(
+    --bx-max-w,
+    100%
+  ); // min-width: var(--bx-min-w, 100%);
   width: var(--bx-w, var(--w, auto));
   height: var(--bx-h, var(--h, auto));
 
@@ -69,7 +71,7 @@
 }
 
 @mixin module {
-  :where(main, section, article, footer, header, div, table),
+  :where(main, section, article, footer, header, table),
   [style*="--bx"] {
     @include rules;
   }

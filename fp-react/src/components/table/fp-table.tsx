@@ -1,5 +1,4 @@
 import * as React from "react"
-import "./table.scss"
 
 export interface CommonProps {
   /**
@@ -10,20 +9,43 @@ export interface CommonProps {
    * The table row type.
    */
   cell?: "td" | "th"
+  /**
+   * The table's styles.
+   */
+  styles?: any // !style not assignable
 }
 
 const FpTable: React.FC<CommonProps> = ({
   children,
+  styles,
   ...props
 }) => {
-  return <table {...props}>{children}</table>
+  const defStyles = {
+    display: "var(--tbl-dsp, table)",
+    width: "var(--tbl-width, 100%)",
+    borderCollapse: "var(--tbl-collapse, collapse)",
+    minWidth: "var(--tbl-min-w, 100%)"
+  }
+  return (
+    <table style={{ ...defStyles, ...styles }} {...props}>
+      {children}
+    </table>
+  )
 }
 
 export const FpTableHead: React.FC<CommonProps> = ({
   children,
+  styles,
   ...props
 }) => {
-  return <thead>{children}</thead>
+  const defStyles = {
+    backgroundColor: "var(--tbl-head-bg, #f5f5f5)"
+  }
+  return (
+    <thead style={{ ...defStyles, ...styles }}>
+      {children}
+    </thead>
+  )
 }
 
 export const FpTableBody: React.FC<CommonProps> = ({

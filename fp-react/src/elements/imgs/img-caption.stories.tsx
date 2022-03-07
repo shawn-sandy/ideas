@@ -3,7 +3,7 @@ import {
   ComponentMeta,
   ComponentStory
 } from "@storybook/react"
-import { FpCaption } from "./img"
+import { FpCaption } from "./figure"
 
 export default {
   title: "Elements/Media/Images",
@@ -11,12 +11,14 @@ export default {
   parameters: {
     layout: "centered",
     status: {
-      type: "alpha"
+      type: "beta"
     }
   }
 } as ComponentMeta<typeof FpCaption>
 
-const ComponentTemplate: ComponentStory<typeof FpCaption> = (args) => <FpCaption {...args} />
+const ComponentTemplate: ComponentStory<
+  typeof FpCaption
+> = (args) => <FpCaption {...args} />
 
 export const Caption = ComponentTemplate.bind({})
 

@@ -1,10 +1,11 @@
 import React from "react"
-import { FpFig } from "./img"
+import FpFig from "./figure"
 import {
   ComponentMeta,
   ComponentStory
 } from "@storybook/react"
 import { Caption } from "./img-caption.stories"
+import "./img.scss"
 
 export default {
   title: "Elements/Media/Images",
@@ -13,7 +14,7 @@ export default {
   parameters: {
     layout: "centered",
     status: {
-      type: "alpha"
+      type: "beta"
     }
   }
 } as ComponentMeta<typeof FpFig>

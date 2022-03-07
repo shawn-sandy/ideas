@@ -11,9 +11,9 @@ module.exports = {
     "../src/**/*.stories.mdx",
   ],
   "addons": [
+    '@whitespace/storybook-addon-html',
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    '@whitespace/storybook-addon-html',
     "@storybook/addon-storysource",
     '@storybook/addon-a11y',
     "@storybook/preset-create-react-app",

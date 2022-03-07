@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.18](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/code-clipper@0.2.17...@shawnsandy/code-clipper@0.2.18) (2022-03-05)
+
+**Note:** Version bump only for package @shawnsandy/code-clipper
+
+
+
+
+
 ## [0.2.17](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/code-clipper@0.2.16...@shawnsandy/code-clipper@0.2.17) (2022-03-04)
 
 **Note:** Version bump only for package @shawnsandy/code-clipper
