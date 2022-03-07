@@ -15,17 +15,17 @@ import Details, {
 
 export {
   Button,
-  Grid,
   Container,
-  GridCell,
-  FpTable,
-  FpTableHead,
-  FpTableBody,
-  FpTableRow,
-  FpTableCell,
-  FpImg,
-  FpFig,
-  FpCaption,
   Details,
+  FpCaption,
+  FpFig,
+  FpImg,
+  FpTable,
+  FpTableBody,
+  FpTableCell,
+  FpTableHead,
+  FpTableRow,
+  Grid,
+  GridCell,
   Summary
 }
