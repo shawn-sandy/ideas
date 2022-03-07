@@ -26,7 +26,7 @@
     "first-paint": "lerna exec npm start --scope=@shawnsandy/first-paint",
     "build:first-paint": "lerna exec npm run build --scope=@shawnsandy/first-paint",
     "build:code-clipper": "lerna exec npm run build --scope=@shawnsandy/code-clipper",
-    "publish-release": "run-s build:* && HUSKY=0 && lerna publish --conventional-commits -m \"chore(release): publish patch \"",
+    "publish-release": "HUSKY=0 && lerna publish --conventional-commits -m \"chore(release): publish patch \"",
     "publish-next": "HUSKY=0 && lerna publish --dist-tag next patch --conventional-commits -m \"chore(next): publish next release %s\"",
     "publish": "run-s build:* && HUSKY=0 && lerna publish --yes  --dist-tag next --conventional-commits -m \"chore(next): publish @next %s\"",
     "labs": "babel labs/js/ -d labs/js/min --minified --out-file-extension .min.js --ignore ./**/min/",
