@@ -1,6 +1,6 @@
 import Button from "./elements/buttons/button"
-import Grid, { GridCell } from "./components/grid/grid"
-import Container from "./components/container/container"
+import Grid, { GridCell } from "./elements/grid/grid"
+import Container from "./elements/container/container"
 import FpImg from "./elements/imgs/img"
 import FpTable, {
   FpTableHead,
