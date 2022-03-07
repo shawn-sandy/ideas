@@ -18,7 +18,7 @@ export default {
   parameters: {
     layout: "centered",
     status: {
-      type: "alpha" // 'beta' | 'stable' | 'deprecated' | 'releaseCandidate'
+      type: "beta" // 'beta' | 'stable' | 'deprecated' | 'releaseCandidate'
       // url: 'http://www.url.com/status', // will make the tag a link
       // statuses: { ...} // add custom statuses for this story here
     }

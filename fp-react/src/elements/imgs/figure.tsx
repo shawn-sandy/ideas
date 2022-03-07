@@ -38,7 +38,8 @@ const FpFig: React.FC<FpFigProps> = ({
   ...props
 }) => {
   const defStyles = {
-    "--pic-w": width || "500px"
+    width: "var(--pic-w, 500px)",
+    height: "var(--pic-h, auto)"
   }
   return (
     <figure

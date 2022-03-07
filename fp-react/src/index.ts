@@ -8,6 +8,7 @@ import FpTable, {
   FpTableRow,
   FpTableCell
 } from "./components/table/fp-table"
+import FpFig, { FpCaption } from "./elements/imgs/figure"
 
 export {
   Button,
@@ -19,5 +20,7 @@ export {
   FpTableBody,
   FpTableRow,
   FpTableCell,
-  FpImg
+  FpImg,
+  FpFig,
+  FpCaption
 }

@@ -79,7 +79,7 @@ const FpImg: React.VFC<FpImgProps> = ({
 
   const defStyles = {
     objectFit: `var(--img-fit, ${fit})`,
-    aspectRation: `var(--img-ratio, ${ratio})`,
+    aspectRatio: `var(--img-ratio, ${ratio})`,
     width: "var(--img-w, 100%)",
     height: "var(--img-h, auto)"
   }

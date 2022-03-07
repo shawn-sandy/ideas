@@ -42,6 +42,7 @@
 
 @mixin figure-rules {
   @include props();
+
   max-width: var(--pic-max-w, 100%);
   width: var(--pic-w, auto);
   display: var(--pic-dsp, flex);
@@ -55,6 +56,7 @@
 
 @mixin figcaption-rules {
   @include props();
+
   font-size: var(--fcap-fs, inherit);
   display: var(--fcap-dsp, flex);
   place-content: var(--place-x, flex-start);
