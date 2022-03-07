@@ -1,6 +1,27 @@
 import * as React from "react"
 import "./details-summary.scss"
 
+interface DetailsProps {
+  /**
+   * Children elements
+   */
+  children: React.ReactNode
+  /**
+   * Element classes
+   */
+  classes?: string
+  /**
+   * Toggle event function
+   */
+  toggle?: (
+    event: React.SyntheticEvent<HTMLDetailsElement>
+  ) => void
+  /**
+   * Styles object
+   */
+  styles?: any | object
+}
+
 /**
  * `FpDetailsSummary` React Details Summary element
  *  * [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)
@@ -60,27 +81,6 @@ export const Summary: React.FC<DetailsProps> = ({
       {children}
     </summary>
   )
-}
-
-interface DetailsProps {
-  /**
-   * Children elements
-   */
-  children: React.ReactNode
-  /**
-   * Element classes
-   */
-  classes?: string
-  /**
-   * Toggle event function
-   */
-  toggle?: (
-    event: React.SyntheticEvent<HTMLDetailsElement>
-  ) => void
-  /**
-   * Styles object
-   */
-  styles?: any | object
 }
 
 export default Details
