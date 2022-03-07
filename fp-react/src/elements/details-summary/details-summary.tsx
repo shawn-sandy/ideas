@@ -12,6 +12,11 @@ const Details: React.FC<DetailsProps> = ({
   toggle,
   ...rest
 }) => {
+  const defStyles = {
+    fontSize: "var(--detail-fs, 1rem)",
+    color: "var(--detail-cl, currentColor)",
+    backgroundColor: "var(--detail-bg, #whitesmoke)"
+  }
   const toggleElement = (
     event: React.SyntheticEvent<HTMLDetailsElement>
   ) => {
@@ -25,7 +30,7 @@ const Details: React.FC<DetailsProps> = ({
 
   return (
     <details
-      style={styles}
+      style={{ ...defStyles, ...styles }}
       className={classes}
       onToggle={toggleElement}
       {...rest}
@@ -41,8 +46,17 @@ export const Summary: React.FC<DetailsProps> = ({
   styles = {},
   ...rest
 }) => {
+  const defStyles = {
+    padding: "var(--summary-pd, 0.8rem)",
+    backgroundColor: "var(--summary-bg, transparent)",
+    cursor: "var(--summary-cursor, pointer)"
+  }
   return (
-    <summary style={styles} className={classes} {...rest}>
+    <summary
+      style={{ ...defStyles, ...styles }}
+      className={classes}
+      {...rest}
+    >
       {children}
     </summary>
   )
