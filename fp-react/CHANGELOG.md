@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.8](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/fp-react@0.7.7...@shawnsandy/fp-react@0.7.8) (2022-03-07)
+
+
+### Features
+
+* add default styles to image component ([4490d5d](https://github.com/shawn-sandy/ideas/commit/4490d5dbf883488e52e81e79d3693df503d59c59))
+* add FpTable to component exports ([0910124](https://github.com/shawn-sandy/ideas/commit/0910124a0d2f45af05744ec081fce217fc86e4b7))
+* **alpha:** add default styles for table component ([837cdb1](https://github.com/shawn-sandy/ideas/commit/837cdb1d0222c94a6e1fb96d175899b7799ed9bb))
+* default styles fro image/figure components ([fe910ba](https://github.com/shawn-sandy/ideas/commit/fe910baa22febe8dc5a2e428a90a9c45a7ae660f))
+* img export ([96513f2](https://github.com/shawn-sandy/ideas/commit/96513f237760e870e465b39a97f628bd2d1790ea))
+* move figure  from inside img ([4035811](https://github.com/shawn-sandy/ideas/commit/4035811aa74aaf86bed8ab76f94f7cd67b96f307))
+* remove figure elements from Img component ([57e0c4f](https://github.com/shawn-sandy/ideas/commit/57e0c4f95ea05ac335610e0cf6c74d35afac2828))
+
+
+
+
+
 ## [0.7.7](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/fp-react@0.7.6...@shawnsandy/fp-react@0.7.7) (2022-03-06)
 
 **Note:** Version bump only for package @shawnsandy/fp-react

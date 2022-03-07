@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.7.6](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/first-paint@2.7.5...@shawnsandy/first-paint@2.7.6) (2022-03-07)
+
+
+### Features
+
+* **alpha:** add default styles for table component ([837cdb1](https://github.com/shawn-sandy/ideas/commit/837cdb1d0222c94a6e1fb96d175899b7799ed9bb))
+* default styles fro image/figure components ([fe910ba](https://github.com/shawn-sandy/ideas/commit/fe910baa22febe8dc5a2e428a90a9c45a7ae660f))
+
+
+
+
+
 ## [2.7.5](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/first-paint@2.7.4...@shawnsandy/first-paint@2.7.5) (2022-03-06)
 
 
