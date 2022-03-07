@@ -1,4 +1,4 @@
-# A lightweight React component library built for FirstPaint CSS/SCSS toolkit.
+# A lightweight React component library built for FirstPaint--a performance-first, accessibility-driven, SCSS/CSS Micro Framework.
 
 This is beta release and there may be changes to the interface for these components. -backdrop-hue-rotate-15
 

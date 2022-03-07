@@ -5,9 +5,13 @@
   "publishConfig": {
     "access": "public"
   },
-  "author": "shawnsandy <shawnsandy04@gmail.com>",
+  "author": "shawn-sandy <creative@shawnsandy.com>",
   "homepage": "https://github.com/shawn-sandy/ideas/tree/main/fp-react",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shawn-sandy/ideas.git"
+  },
   "dependencies": {
     "@shawnsandy/first-paint": "^2.7.6",
     "@testing-library/jest-dom": "^5.16.2",
