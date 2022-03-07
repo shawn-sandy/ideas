@@ -12,6 +12,7 @@ import FpFig, { FpCaption } from "./elements/imgs/figure"
 import Details, {
   Summary
 } from "./elements/details-summary/details-summary"
+import Navbar from "./elements/nav/navbar"
 
 export {
   Button,
@@ -27,5 +28,6 @@ export {
   FpTableRow,
   Grid,
   GridCell,
+  Navbar,
   Summary
 }
