@@ -1,6 +1,10 @@
 # A lightweight React component library built for FirstPaint CSS/SCSS toolkit.
 
-This is beta release docs and info will be coming soon.
+This is beta release and there may be changes to the interface for these components. -backdrop-hue-rotate-15
+
+## Docs
+Docs and info will be coming soon.
+
 
 Check out a demo of the library here: [FP React Demo](https://fp-react.netlify.app)
 
