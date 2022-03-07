@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.10](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/fp-react@0.7.9...@shawnsandy/fp-react@0.7.10) (2022-03-07)
+
+
+### Bug Fixes
+
+* resolve issue with stylesheets imports ([2b904a3](https://github.com/shawn-sandy/ideas/commit/2b904a319956e34ba7a4e57710767dfa5ed2ea61))
+
+
+### Features
+
+* add default styles to navbar component ([9e6a591](https://github.com/shawn-sandy/ideas/commit/9e6a591c383d020b30a219d305259407754709b9))
+* add default summary styles ([556c65e](https://github.com/shawn-sandy/ideas/commit/556c65e859e565f3562e673f44b3adbeb1bb5f20))
+* add default summary styles ([8a20aac](https://github.com/shawn-sandy/ideas/commit/8a20aac6d3e78584e987199b150fb6cad9eadec8))
+* add details/summary component to package ([1e1777f](https://github.com/shawn-sandy/ideas/commit/1e1777fd1f8abfda24f915714d0fb79c4706cf24))
+* add details/summary component to package ([6f4c425](https://github.com/shawn-sandy/ideas/commit/6f4c425d1f8ac5b58ff3779594f6cd585237e893))
+
+
+
+
+
 ## [0.7.9](https://github.com/shawn-sandy/ideas/compare/@shawnsandy/fp-react@0.7.8...@shawnsandy/fp-react@0.7.9) (2022-03-07)
 
 **Note:** Version bump only for package @shawnsandy/fp-react
