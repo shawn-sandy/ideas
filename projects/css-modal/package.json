@@ -42,7 +42,7 @@
     "last 2 versions"
   ],
   "devDependencies": {
-    "@vue/cli-service": "^3.12.1",
+    "@vue/cli-service": "^5.0.8",
     "browser-sync": "^2.26.14",
     "es-dev-server": "^1.60.2",
     "parcel": "^1.12.4",
